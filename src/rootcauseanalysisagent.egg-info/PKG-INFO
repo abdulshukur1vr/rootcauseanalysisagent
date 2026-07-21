@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: rootcauseanalysisagent
+Version: 0.1.0
+Summary: AI assisted log root cause analysis agent
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: pytest<9.0.0,>=8.3.5; extra == "dev"
+Requires-Dist: pytest-cov<7.0.0,>=6.1.1; extra == "dev"
+Requires-Dist: black<26.0.0,>=25.1.0; extra == "dev"
+Requires-Dist: isort<7.0.0,>=6.0.1; extra == "dev"
+Requires-Dist: flake8<8.0.0,>=7.2.0; extra == "dev"
+Requires-Dist: mypy<2.0.0,>=1.15.0; extra == "dev"
+Provides-Extra: dependencies
+Requires-Dist: openai<3.0.0,>=1.50.0; extra == "dependencies"
+Requires-Dist: PyYAML<7.0.0,>=6.0.2; extra == "dependencies"
+Requires-Dist: pandas<3.0.0,>=2.2.3; extra == "dependencies"
+Requires-Dist: rich<15.0.0,>=14.0.0; extra == "dependencies"
+Requires-Dist: tqdm<5.0.0,>=4.67.1; extra == "dependencies"

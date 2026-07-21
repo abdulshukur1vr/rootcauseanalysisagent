@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+rootcauseanalysisagent/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Runtime data
+input/*
+workspace/*
+output/*
+logs/*
+
+!input/.gitkeep
+!workspace/.gitkeep
+!output/.gitkeep
+!logs/.gitkeep
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
