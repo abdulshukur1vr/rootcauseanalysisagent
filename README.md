@@ -612,6 +612,7 @@ RootCauseAnalysisAgent/
 │   │     pattern_detector.py
 │   │
 │   ├── timeline/
+|   |     models.py
 │   │     timeline_builder.py
 │   │
 │   ├── ai/
@@ -621,11 +622,17 @@ RootCauseAnalysisAgent/
 │   │     report_generator.py
 │   │
 │   └── utils/
-│         filesystem.py
-│         timestamp.py
+│   |     filesystem.py
+│   |     timestamp.py
+|   |
+|   ├── analyzer/
+|   |     __init__.py
+│   |     models.py
+│   |     rules.py
+│   └     rootcause_engine.py
 │
 └── tests/
-
+        test_rootcause_engine.py
 # technology stack
 
 Technology Stack

@@ -1,0 +1,15479 @@
+# Root Cause Analysis Report
+## Root Cause Candidates
+
+### KERNEL_FAILURE
+
+Confidence: 100%
+
+Kernel level failure detected.
+
+
+Evidence:
+
+- 13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+- 13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+- 13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+- 13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+- 13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+### WIFI_DISCONNECT
+
+Confidence: 85%
+
+System failure detected.
+
+
+Evidence:
+
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+## Timeline
+
+1. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+2. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+3. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+4. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+5. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+6. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+7. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+8. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+9. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+10. KERNEL_FAILURE (CRITICAL)
+
+13265  2042 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+
+
+11. KERNEL_FAILURE (CRITICAL)
+
+13265 1212m 42008 12516  9816  2672     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+
+
+12. KERNEL_FAILURE (CRITICAL)
+
+13265 1212m 42008 12540  9816  2696     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+
+
+13. KERNEL_FAILURE (CRITICAL)
+
+13265 1212m 42008 12540  9816  2696     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+
+
+14. KERNEL_FAILURE (CRITICAL)
+
+13265 1212m 42008 12540  9816  2696     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+
+
+15. KERNEL_FAILURE (CRITICAL)
+
+13265 1212m 42008 12540  9816  2696     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+
+
+16. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:18.901086 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+17. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:18.901131 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+18. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:18.901343 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+19. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:44.786896 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+20. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:44.786980 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+21. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:44.787184 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+22. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:48.902929 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+23. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:48.902971 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+24. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:49:48.903163 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+25. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:05.356756 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+26. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:18.904744 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+27. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:18.904791 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+28. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:18.904988 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+29. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:44.874241 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+30. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:44.874303 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+31. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:44.874500 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+32. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:48.906640 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+33. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:48.906688 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+34. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:48.906846 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+35. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:50:56.521831 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+36. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:18.908431 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+37. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:18.908475 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+38. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:18.908672 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+39. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:44.978882 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+40. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:44.978927 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+41. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:44.979088 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+42. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:48.910646 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+43. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:48.910712 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+44. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:51:48.910893 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+45. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:18.912475 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+46. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:18.912518 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+47. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:18.912730 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+48. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:19.855294 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+49. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:20.109689 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+50. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:20.110010 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+51. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:20.110289 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+52. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:20.110777 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+53. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:20.111183 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+54. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:45.083041 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+55. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:45.083112 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+56. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:45.083278 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+57. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:48.914359 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+58. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:48.914403 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+59. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:52:48.914566 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+60. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:18.916290 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+61. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:18.916350 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+62. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:18.916518 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+63. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:45.117000 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+64. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:45.117050 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+65. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:45.117296 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+66. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:48.918115 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+67. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:48.918160 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+68. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:53:48.918377 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+69. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:18.920065 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+70. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:18.920130 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+71. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:18.920394 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+72. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:45.141467 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+73. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:45.141517 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+74. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:45.141675 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+75. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:48.921998 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+76. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:48.922045 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+77. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:54:48.922216 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+78. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:18.923799 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+79. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:18.923865 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+80. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:18.924024 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+81. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:45.164122 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+82. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:45.164168 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+83. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:45.164362 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+84. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:48.925635 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+85. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:48.925684 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+86. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:55:48.925852 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+87. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:18.927399 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+88. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:18.927444 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+89. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:18.927653 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+90. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:45.188470 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+91. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:45.188519 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+92. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:45.188685 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+93. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:48.929151 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+94. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:48.929196 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+95. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:56:48.929363 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+96. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:18.930908 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+97. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:18.930953 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+98. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:18.931149 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+99. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:45.212492 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+100. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:45.212566 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+101. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:45.212741 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+102. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:48.932666 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+103. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:48.932712 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+104. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:57:48.932869 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+105. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:18.934356 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+106. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:18.934413 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+107. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:18.934635 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+108. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:45.234137 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+109. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:45.234186 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+110. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:45.234368 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+111. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:48.936232 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+112. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:48.936299 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+113. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:58:48.936496 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+114. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:18.937933 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+115. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:18.937977 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+116. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:18.938136 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+117. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:45.250836 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+118. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:45.250886 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+119. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:45.251098 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+120. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:48.939571 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+121. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:48.939617 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+122. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 02:59:48.939774 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+123. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:18.941354 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+124. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:18.941407 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+125. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:18.941566 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+126. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:45.277240 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+127. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:45.277295 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+128. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:45.277481 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+129. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:48.943369 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+130. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:48.943437 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+131. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:00:48.943806 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+132. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:18.945542 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+133. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:18.945610 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+134. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:18.945892 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+135. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:45.301604 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+136. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:45.301652 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+137. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:45.301828 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+138. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:48.947473 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+139. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:48.947529 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+140. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:01:48.947716 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+141. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:18.949394 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+142. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:18.949469 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+143. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:18.949681 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+144. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:45.323790 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+145. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:45.323832 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+146. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:45.324009 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+147. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:48.951387 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+148. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:48.951433 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+149. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:02:48.951592 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+150. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:18.953013 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+151. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:18.953057 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+152. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:18.953223 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+153. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:45.342187 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+154. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:45.342260 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+155. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:45.342429 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+156. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:48.954799 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+157. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:48.954846 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+158. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:03:48.955006 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+159. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:18.956587 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+160. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:18.956634 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+161. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:18.956841 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+162. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:45.363003 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+163. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:45.363047 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+164. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:45.363271 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+165. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:48.958473 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+166. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:48.958519 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+167. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:04:48.958676 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+168. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:18.960256 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+169. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:18.960306 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+170. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:18.960442 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+171. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:39.199479 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+172. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:45.467200 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+173. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:45.467276 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+174. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:45.467473 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+175. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:48.961720 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+176. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:48.961763 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+177. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:05:48.961920 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+178. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:18.963473 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+179. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:18.963531 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+180. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:18.963735 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+181. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:43.559173 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+182. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:45.571479 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+183. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:45.571533 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+184. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:45.571728 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+185. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:48.965241 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+186. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:48.965287 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+187. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:06:48.965443 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+188. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:18.966971 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+189. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:18.967016 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+190. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:18.967173 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+191. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:20.112235 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+192. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:20.370686 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+193. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:20.371238 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+194. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:20.371552 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+195. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:20.372073 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+196. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:20.372466 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+197. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:45.593943 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+198. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:45.593996 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+199. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:45.594157 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+200. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:48.968779 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+201. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:48.968833 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+202. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:07:48.969041 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+203. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:18.970574 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+204. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:18.970621 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+205. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:18.970780 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+206. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:45.615241 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+207. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:45.615292 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+208. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:45.615451 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+209. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:48.972352 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+210. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:48.972394 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+211. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:08:48.972592 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+212. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:18.974250 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+213. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:18.974297 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+214. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:18.974491 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+215. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:45.638737 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+216. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:45.638788 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+217. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:45.638966 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+218. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:48.569131 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+219. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:48.976279 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+220. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:48.976341 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+221. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:09:48.976557 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+222. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:18.978393 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+223. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:18.978451 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+224. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:18.978669 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+225. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:45.663234 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+226. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:45.663284 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+227. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:45.663448 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+228. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:48.980179 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+229. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:48.980231 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+230. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:10:48.980396 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+231. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:18.981908 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+232. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:18.981958 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+233. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:18.982158 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+234. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:45.685090 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+235. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:45.685170 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+236. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:45.685382 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+237. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:48.983558 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+238. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:48.983603 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+239. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:11:48.983770 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+240. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:18.985175 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+241. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:18.985225 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+242. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:18.985387 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+243. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:45.706585 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+244. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:45.706642 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+245. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:45.706884 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+246. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:48.989702 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+247. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:48.989768 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+248. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:12:48.989984 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+249. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:18.991578 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+250. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:18.991641 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+251. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:18.991802 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+252. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:32.723039 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+253. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:45.810108 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+254. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:45.810161 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+255. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:45.810344 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+256. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:48.993368 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+257. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:48.993415 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+258. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:13:48.993572 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+259. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:18.995175 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+260. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:18.995251 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+261. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:18.995462 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+262. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:45.876340 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+263. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:45.876396 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+264. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:45.876565 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+265. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:48.996955 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+266. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:48.997010 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+267. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:14:48.997169 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+268. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:18.998757 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+269. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:18.998800 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+270. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:18.998995 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+271. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:27.176112 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+272. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:45.888691 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+273. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:45.888753 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+274. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:45.889025 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+275. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:49.000551 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+276. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:49.000594 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+277. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:15:49.000788 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+278. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:19.002257 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+279. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:19.002312 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+280. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:19.002500 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+281. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:45.903196 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+282. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:45.903296 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+283. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:45.903510 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+284. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:49.004073 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+285. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:49.004117 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+286. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:16:49.004301 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+287. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:19.005803 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+288. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:19.005863 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+289. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:19.006030 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+290. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:22.668016 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+291. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:45.919810 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+292. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:45.919864 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+293. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:45.920027 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+294. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:49.007575 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+295. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:49.007617 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+296. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:17:49.007789 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+297. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:19.009341 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+298. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:19.009395 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+299. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:19.009568 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+300. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:45.992514 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+301. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:45.992589 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+302. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:45.992754 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+303. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:49.011080 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+304. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:49.011130 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+305. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:18:49.011339 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+306. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:19.012850 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+307. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:19.012899 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+308. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:19.013052 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+309. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:46.006104 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+310. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:46.006155 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+311. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:46.006376 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+312. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:49.014665 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+313. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:49.014710 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+314. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:19:49.014868 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+315. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:19.016463 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+316. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:19.016509 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+317. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:19.016668 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+318. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:46.022443 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+319. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:46.022505 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+320. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:46.022744 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+321. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:49.018271 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+322. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:49.018314 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+323. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:20:49.018511 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+324. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:19.020031 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+325. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:19.020075 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+326. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:19.020238 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+327. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:46.035061 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+328. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:46.035111 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+329. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:46.035282 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+330. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:49.021854 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+331. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:49.021911 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+332. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:21:49.022130 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+333. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:19.023724 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+334. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:19.023776 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+335. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:19.023973 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+336. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:20.373544 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+337. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:20.625759 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+338. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:20.626068 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+339. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:20.626354 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+340. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:20.626864 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+341. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:20.627277 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+342. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:46.139842 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+343. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:46.139890 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+344. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:46.140054 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+345. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:49.025524 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+346. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:49.025567 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+347. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:22:49.025764 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+348. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:19.027289 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+349. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:19.027337 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+350. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:19.027494 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+351. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:46.243822 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+352. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:46.243884 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+353. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:46.244198 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+354. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:49.029104 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+355. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:49.029175 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+356. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:23:49.029411 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+357. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:19.031004 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+358. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:19.031050 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+359. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:19.031253 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+360. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:46.335743 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+361. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:46.335796 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+362. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:46.335960 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+363. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:49.032864 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+364. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:49.032911 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+365. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:24:49.033078 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+366. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:19.034533 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+367. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:19.034587 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+368. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:19.034748 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+369. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:46.352475 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+370. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:46.352530 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+371. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:46.352734 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+372. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:49.036280 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+373. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:49.036327 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+374. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:25:49.036487 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+375. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:19.038068 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+376. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:19.038111 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+377. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:19.038334 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+378. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:46.362982 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+379. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:46.363032 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+380. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:46.363200 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+381. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:49.039881 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+382. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:49.039924 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+383. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:26:49.040083 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+384. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:19.041600 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+385. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:19.041646 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+386. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:19.041807 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+387. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:46.387309 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+388. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:46.387375 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+389. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:46.387564 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+390. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:49.043352 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+391. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:49.043396 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+392. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:27:49.043570 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+393. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:19.045167 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+394. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:19.045217 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+395. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:19.045378 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+396. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:46.495641 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+397. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:46.495688 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+398. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:46.495901 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+399. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:49.047037 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+400. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:49.047091 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+401. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:28:49.047315 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+402. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:19.048883 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+403. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:19.048927 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+404. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:19.049122 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+405. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:46.599754 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+406. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:46.599801 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+407. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:46.599965 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+408. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:49.050638 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+409. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:49.050686 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+410. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:29:49.050849 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+411. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:19.052448 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+412. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:19.052496 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+413. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:19.052694 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+414. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:46.703276 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+415. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:46.703328 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+416. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:46.703556 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+417. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:49.054250 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+418. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:49.054321 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+419. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:30:49.054497 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+420. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:19.056127 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+421. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:19.056169 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+422. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:19.056353 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+423. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:46.724847 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+424. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:46.724899 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+425. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:46.725061 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+426. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:49.057814 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+427. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:49.057861 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+428. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:31:49.058016 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+429. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:19.059496 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+430. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:19.059542 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+431. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:19.059737 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+432. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:46.735664 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+433. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:46.735720 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+434. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:46.735897 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+435. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:49.061432 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+436. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:49.061491 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+437. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:32:49.061675 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+438. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:19.063232 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+439. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:19.063279 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+440. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:19.063420 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+441. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:46.749474 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+442. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:46.749523 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+443. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:46.749715 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+444. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:49.064950 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+445. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:49.064992 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+446. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:49.065151 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+447. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:33:50.262921 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+448. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:19.066694 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+449. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:19.066740 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+450. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:19.066899 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+451. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:46.765704 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+452. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:46.765751 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+453. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:46.765953 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+454. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:49.068833 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+455. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:49.068936 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+456. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:34:49.069145 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+457. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:19.070781 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+458. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:19.070852 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+459. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:19.071058 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+460. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:46.770393 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+461. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:46.770441 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+462. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:46.770604 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+463. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:49.072595 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+464. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:49.072641 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+465. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:35:49.072813 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+466. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:19.074314 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+467. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:19.074357 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+468. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:19.074515 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+469. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:46.780641 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+470. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:46.780688 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+471. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:46.780848 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+472. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:49.075944 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+473. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:49.075986 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+474. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:36:49.076145 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+475. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:19.077809 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+476. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:19.077988 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+477. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:19.078406 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+478. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:20.628334 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+479. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:20.880098 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+480. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:20.880510 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+481. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:20.880841 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+482. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:20.881331 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+483. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:20.881724 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+484. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:46.846691 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+485. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:46.846745 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+486. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:46.846966 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+487. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:49.080015 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+488. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:49.080070 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+489. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:37:49.080237 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+490. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:19.081644 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+491. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:19.081688 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+492. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:19.081841 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+493. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:46.857839 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+494. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:46.857889 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+495. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:46.858048 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+496. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:49.083447 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+497. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:49.083491 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+498. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:38:49.083686 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+499. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:19.085361 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+500. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:19.085428 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+501. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:19.085595 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+502. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:46.867677 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+503. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:46.867731 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+504. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:46.867891 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+505. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:49.087140 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+506. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:49.087187 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+507. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:39:49.087372 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+508. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:19.088852 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+509. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:19.088899 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+510. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:19.089059 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+511. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:45.477934 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+512. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:46.874057 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+513. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:46.874103 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+514. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:46.874278 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+515. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:49.090838 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+516. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:49.090913 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+517. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:40:49.091081 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+518. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:19.092686 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+519. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:19.092732 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+520. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:19.092909 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+521. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:46.886582 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+522. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:46.886645 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+523. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:46.886809 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+524. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:49.094432 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+525. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:49.094475 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+526. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:41:49.094631 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+527. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:19.096193 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+528. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:19.096249 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+529. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:19.096425 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+530. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:42.848289 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+531. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:46.990019 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+532. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:46.990068 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+533. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:46.990299 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+534. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:49.097914 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+535. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:49.097958 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+536. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:42:49.098117 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+537. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:19.099586 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+538. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:19.099632 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+539. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:19.099809 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+540. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:47.094365 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+541. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:47.094413 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+542. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:47.094575 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+543. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:49.101513 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+544. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:49.101576 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+545. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:43:49.101780 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+546. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:19.103276 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+547. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:19.103321 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+548. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:19.103527 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+549. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:39.922749 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+550. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:47.198629 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+551. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:47.198678 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+552. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:47.198842 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+553. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:49.105124 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+554. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:49.105174 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+555. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:44:49.105343 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+556. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:19.106865 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+557. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:19.106916 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+558. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:19.107119 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+559. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:26.224557 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+560. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:40.401842 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+561. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:47.215694 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+562. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:47.215753 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+563. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:47.215973 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+564. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:49.108733 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+565. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:49.108780 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+566. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:45:49.108955 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+567. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:19.110582 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+568. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:19.110624 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+569. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:19.110823 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+570. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:47.238431 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+571. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:47.238502 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+572. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:47.238685 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+573. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:49.112386 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+574. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:49.112432 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+575. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:46:49.112590 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+576. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:19.114113 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+577. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:19.114154 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+578. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:19.114359 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+579. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:47.246012 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+580. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:47.246053 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+581. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:47.246224 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+582. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:49.115910 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+583. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:49.115966 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+584. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:47:49.116130 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+585. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:19.117697 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+586. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:19.117742 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+587. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:19.117937 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+588. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:47.261006 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+589. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:47.261055 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+590. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:47.261268 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+591. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:49.119723 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+592. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:49.119840 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+593. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:48:49.120091 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+594. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:19.121796 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+595. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:19.121866 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+596. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:19.122025 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+597. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:47.272867 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+598. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:47.272914 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+599. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:47.273072 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+600. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:49.123842 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+601. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:49.123906 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+602. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:49:49.124074 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+603. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:07.070125 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+604. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:19.125685 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+605. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:19.125729 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+606. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:19.125925 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+607. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:47.304110 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+608. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:47.304158 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+609. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:47.304355 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+610. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:49.127420 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+611. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:49.127463 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+612. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:50:49.127636 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+613. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:19.130220 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+614. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:19.130310 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+615. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:19.130571 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+616. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:47.317084 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+617. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:47.317141 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+618. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:47.317317 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+619. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:49.132101 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+620. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:49.132155 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+621. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:51:49.132337 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+622. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:19.133787 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+623. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:19.133833 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+624. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:19.133992 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+625. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:20.882801 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+626. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:21.110923 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+627. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:21.111271 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+628. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:21.111556 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+629. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:21.112080 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+630. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:21.112504 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+631. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:45.211221 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+632. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:47.388059 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+633. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:47.388108 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+634. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:47.388284 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+635. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:49.135460 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+636. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:49.135502 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+637. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:52:49.135698 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+638. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:19.137093 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+639. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:19.137139 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+640. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:19.137301 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+641. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:47.455834 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+642. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:47.455880 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+643. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:47.456039 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+644. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:49.138696 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+645. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:49.138739 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+646. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:53:49.138885 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+647. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:18.466420 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+648. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:19.140249 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+649. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:19.140293 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+650. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:19.140448 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+651. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:47.525984 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+652. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:47.526030 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+653. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:47.526232 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+654. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:49.141968 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+655. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:49.142019 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+656. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:54:49.142179 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+657. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:19.143586 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+658. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:19.143633 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+659. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:19.143791 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+660. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:47.543714 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+661. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:47.543764 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+662. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:47.543928 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+663. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:49.145578 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+664. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:49.145660 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+665. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:55:49.145907 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+666. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:19.147548 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+667. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:19.147617 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+668. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:19.147804 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+669. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:47.551349 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+670. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:47.551400 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+671. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:47.551559 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+672. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:49.149341 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+673. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:49.149381 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+674. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:56:49.149524 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+675. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:19.151000 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+676. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:19.151043 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+677. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:19.151201 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+678. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:20.209819 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+679. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:47.654997 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+680. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:47.655045 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+681. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:47.655215 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+682. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:49.152904 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+683. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:49.152947 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+684. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:57:49.153130 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+685. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:19.154644 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+686. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:19.154690 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+687. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:19.154887 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+688. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:34.908557 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+689. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:47.722259 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+690. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:47.722316 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+691. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:47.722484 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+692. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:49.156447 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+693. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:49.156491 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+694. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:58:49.156650 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+695. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:19.158091 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+696. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:19.158139 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+697. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:19.158355 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+698. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:47.738052 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+699. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:47.738115 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+700. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:47.738312 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+701. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:49.159933 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+702. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:49.159974 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+703. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 03:59:49.160172 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+704. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:19.161619 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+705. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:19.161663 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+706. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:19.161833 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+707. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:30.205886 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+708. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:47.835953 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+709. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:47.835997 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+710. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:47.836155 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+711. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:49.163397 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+712. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:49.163441 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+713. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:49.163615 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+714. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:00:56.831846 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+715. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:19.165438 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+716. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:19.165509 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+717. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:19.165701 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+718. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:47.895966 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+719. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:47.896024 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+720. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:47.896199 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+721. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:49.167307 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+722. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:49.167362 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+723. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:01:49.167516 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+724. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:19.169046 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+725. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:19.169091 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+726. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:19.169259 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+727. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:47.911623 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+728. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:47.911670 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+729. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:47.911829 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+730. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:49.170764 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+731. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:49.170804 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+732. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:02:49.170952 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+733. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:19.172591 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+734. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:19.172651 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+735. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:19.172856 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+736. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:47.924129 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+737. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:47.924177 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+738. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:47.924355 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+739. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:49.174409 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+740. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:49.174454 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+741. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:03:49.174615 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+742. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:19.176725 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+743. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:19.176802 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+744. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:19.177167 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+745. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:47.945355 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+746. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:47.945409 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+747. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:47.945573 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+748. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:49.178730 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+749. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:49.178775 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+750. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:04:49.178972 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+751. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:19.180679 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+752. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:19.180746 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+753. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:19.180955 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+754. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:47.956513 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+755. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:47.956562 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+756. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:47.956721 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+757. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:49.182512 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+758. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:49.182556 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+759. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:05:49.182714 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+760. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:19.184390 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+761. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:19.184453 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+762. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:19.184624 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+763. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:47.971726 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+764. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:47.971772 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+765. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:47.971932 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+766. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:49.186129 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+767. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:49.186170 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+768. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:06:49.186378 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+769. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:19.188190 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+770. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:19.188281 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+771. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:19.188513 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+772. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:21.113689 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+773. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:21.364314 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+774. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:21.364612 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+775. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:21.364914 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+776. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:21.365422 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+777. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:21.365828 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+778. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:48.044453 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+779. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:48.044517 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+780. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:48.044679 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+781. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:49.190035 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+782. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:49.190089 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+783. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:49.190265 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+784. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:07:58.161624 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+785. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:19.191818 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+786. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:19.191863 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+787. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:19.192064 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+788. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:48.150261 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+789. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:48.150309 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+790. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:48.150454 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+791. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:49.193584 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+792. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:49.193631 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+793. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:08:49.193791 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+794. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:19.195333 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+795. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:19.195377 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+796. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:19.195587 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+797. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:48.254239 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+798. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:48.254289 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+799. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:48.254453 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+800. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:49.197235 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+801. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:49.197284 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+802. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:49.197461 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+803. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:09:58.506674 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+804. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:19.199049 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+805. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:19.199093 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+806. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:19.199315 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+807. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:48.359475 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+808. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:48.359528 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+809. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:48.359699 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+810. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:49.200938 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+811. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:49.200981 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+812. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:10:49.201131 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+813. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:19.202718 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+814. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:19.202760 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+815. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:19.202973 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+816. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:48.427048 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+817. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:48.427099 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+818. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:48.427269 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+819. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:49.204589 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+820. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:49.204635 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+821. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:49.204815 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+822. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:11:57.320678 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+823. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:19.206302 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+824. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:19.206358 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+825. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:19.206554 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+826. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:41.053550 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+827. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:48.530624 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+828. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:48.530672 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+829. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:48.530872 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+830. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:49.208192 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+831. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:49.208243 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+832. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:12:49.208390 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+833. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:19.210000 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+834. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:19.210045 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+835. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:19.210216 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+836. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:48.576707 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+837. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:48.576756 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+838. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:48.576916 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+839. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:49.211820 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+840. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:49.211863 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+841. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:13:49.212088 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+842. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:19.213640 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+843. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:19.213686 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+844. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:19.213849 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+845. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:48.596380 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+846. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:48.596433 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+847. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:48.596597 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+848. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:49.215348 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+849. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:49.215395 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+850. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:14:49.215554 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+851. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:19.217121 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+852. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:19.217168 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+853. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:19.217333 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+854. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:48.702840 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+855. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:48.702885 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+856. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:48.703047 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+857. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:49.218768 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+858. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:49.218812 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+859. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:15:49.218972 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+860. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:19.220468 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+861. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:19.220514 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+862. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:19.220675 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+863. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:48.809844 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+864. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:48.809895 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+865. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:48.810046 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+866. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:49.222275 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+867. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:49.222318 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+868. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:16:49.222482 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+869. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:19.224120 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+870. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:19.224167 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+871. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:19.224388 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+872. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:48.917353 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+873. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:48.917419 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+874. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:48.917975 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+875. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:49.225973 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+876. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:49.226015 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+877. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:17:49.226162 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+878. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:19.227657 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+879. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:19.227701 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+880. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:19.227897 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+881. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:49.022232 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+882. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:49.022292 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+883. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:49.022453 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+884. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:49.229675 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+885. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:49.229734 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+886. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:18:49.229890 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+887. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:19.231820 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+888. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:19.231885 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+889. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:19.232065 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+890. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:49.126424 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+891. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:49.126475 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+892. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:49.126678 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+893. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:49.233796 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+894. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:49.233847 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+895. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:19:49.234005 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+896. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:19.235506 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+897. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:19.235556 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+898. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:19.235718 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+899. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:49.234905 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+900. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:49.234956 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+901. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:49.235118 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+902. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:49.236975 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+903. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:49.237015 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+904. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:20:49.237157 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+905. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:19.238719 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+906. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:19.238766 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+907. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:19.238924 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+908. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:49.240385 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+909. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:49.240428 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+910. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:49.240633 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+911. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:49.345721 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+912. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:49.345778 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+913. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:21:49.345973 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+914. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:19.242200 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+915. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:19.242251 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+916. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:19.242448 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+917. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:21.366905 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+918. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:21.605094 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+919. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:21.605409 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+920. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:21.605688 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+921. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:21.606159 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+922. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:21.606554 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+923. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:49.244090 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+924. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:49.244144 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+925. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:49.244360 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+926. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:49.450167 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+927. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:49.450240 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+928. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:22:49.450404 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+929. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:19.245995 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+930. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:19.246040 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+931. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:19.246250 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+932. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:49.247830 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+933. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:49.247873 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+934. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:49.248072 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+935. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:49.555678 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+936. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:49.555751 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+937. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:23:49.555944 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+938. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:19.249608 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+939. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:19.249656 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+940. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:19.250721 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+941. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:49.252452 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+942. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:49.252513 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+943. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:49.252722 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+944. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:49.660609 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+945. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:49.660653 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+946. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:24:49.660811 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+947. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:19.254295 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+948. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:19.254420 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+949. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:19.254605 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+950. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:49.256297 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+951. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:49.256361 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+952. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:49.256563 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+953. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:49.764993 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+954. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:49.765035 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+955. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:25:49.765257 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+956. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:19.258234 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+957. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:19.258306 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+958. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:19.258486 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+959. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:49.260242 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+960. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:49.260306 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+961. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:49.260516 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+962. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:49.869537 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+963. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:49.869584 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+964. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:26:49.869765 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+965. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:19.262535 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+966. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:19.262614 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+967. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:19.262864 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+968. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:49.264708 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+969. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:49.264775 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+970. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:49.265004 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+971. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:49.975892 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+972. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:49.975938 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+973. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:27:49.976098 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+974. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:03.391374 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+975. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:19.266554 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+976. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:19.266615 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+977. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:19.266857 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+978. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:49.268641 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+979. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:49.268689 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+980. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:49.268920 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+981. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:50.081018 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+982. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:50.081068 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+983. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:28:50.081267 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+984. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:19.270830 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+985. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:19.270924 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+986. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:19.271153 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+987. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:49.272965 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+988. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:49.273033 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+989. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:49.273321 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+990. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:50.185790 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+991. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:50.185846 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+992. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:29:50.186016 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+993. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:19.275121 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+994. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:19.275185 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+995. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:19.275439 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+996. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:49.277274 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+997. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:49.277348 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+998. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:49.277603 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+999. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:50.292956 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1000. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:50.293003 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1001. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:30:50.293173 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1002. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:19.279371 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1003. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:19.279435 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1004. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:19.279649 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1005. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:49.281471 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1006. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:49.281539 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1007. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:49.281770 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1008. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:50.374377 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1009. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:50.374429 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1010. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:31:50.374596 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1011. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:19.284009 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1012. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:19.284068 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1013. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:19.284315 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1014. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:49.285884 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1015. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:49.285929 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1016. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:49.286122 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1017. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:50.481303 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1018. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:50.481379 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1019. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:32:50.481621 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1020. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:19.287665 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1021. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:19.287724 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1022. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:19.287932 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1023. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:49.289418 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1024. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:49.289508 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1025. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:49.289662 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1026. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:50.585688 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1027. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:50.585748 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1028. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:33:50.585999 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1029. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:19.291235 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1030. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:19.291299 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1031. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:19.291483 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1032. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:49.293002 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1033. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:49.293050 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1034. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:49.293285 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1035. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:50.689961 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1036. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:50.690010 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1037. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:34:50.690180 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1038. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:19.295130 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1039. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:19.295184 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1040. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:19.295407 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1041. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:49.297083 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1042. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:49.297127 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1043. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:49.297337 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1044. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:50.797372 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1045. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:50.797427 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1046. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:35:50.797627 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1047. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:19.298938 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1048. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:19.299022 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1049. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:19.299260 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1050. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:49.301044 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1051. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:49.301115 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1052. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:49.301356 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1053. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:50.892723 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1054. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:50.892770 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1055. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:36:50.892931 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1056. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:14.165644 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+1057. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:19.302987 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1058. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:19.303036 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1059. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:19.303248 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1060. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:21.607788 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1061. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:21.865515 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1062. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:21.865824 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1063. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:21.866166 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1064. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:21.866747 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1065. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:21.867194 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1066. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:49.304761 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1067. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:49.304821 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1068. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:49.305055 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1069. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:50.996660 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1070. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:50.996706 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1071. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:37:50.996866 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1072. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:19.306538 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1073. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:19.306603 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1074. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:19.306876 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1075. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:49.308386 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1076. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:49.308444 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1077. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:49.308693 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1078. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:51.101112 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1079. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:51.101168 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1080. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:38:51.101373 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1081. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:14.642914 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+1082. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:19.310227 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1083. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:19.310296 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1084. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:19.310519 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1085. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:49.312202 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1086. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:49.312283 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1087. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:49.312505 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1088. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:51.205321 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1089. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:51.205371 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1090. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:51.205536 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1091. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:39:55.910884 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+1092. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:19.314711 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1093. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:19.314767 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1094. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:19.314928 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1095. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:49.316376 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1096. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:49.316421 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1097. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:49.316577 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1098. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:51.310474 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1099. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:51.310521 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1100. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:40:51.310701 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1101. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:19.318644 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1102. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:19.318734 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1103. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:19.318958 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1104. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:49.320447 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1105. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:49.320496 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1106. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:49.320646 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1107. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:51.416513 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1108. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:51.416580 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1109. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:41:51.416817 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1110. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:19.322172 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1111. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:19.322247 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1112. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:19.322426 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1113. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:49.323979 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1114. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:49.324040 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1115. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:49.324226 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1116. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:51.437395 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1117. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:51.437439 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1118. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:42:51.437600 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1119. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:19.325675 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1120. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:19.325738 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1121. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:19.325894 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1122. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:49.327416 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1123. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:49.327471 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1124. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:49.327639 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1125. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:51.460787 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1126. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:51.460838 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1127. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:43:51.461078 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1128. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:19.329135 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1129. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:19.329225 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1130. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:19.329399 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1131. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:49.331002 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1132. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:49.331058 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1133. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:49.331276 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1134. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:51.482996 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1135. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:51.483040 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1136. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:44:51.483268 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1137. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:19.332873 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1138. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:19.332936 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1139. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:19.333138 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1140. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:49.334643 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1141. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:49.334704 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1142. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:49.334881 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1143. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:51.505349 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1144. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:51.505398 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1145. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:45:51.505559 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1146. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:19.336425 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1147. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:19.336489 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1148. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:19.336649 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1149. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:49.338303 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1150. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:49.338361 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1151. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:49.338571 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1152. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:51.526963 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1153. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:51.527017 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1154. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:46:51.527169 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1155. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:19.340137 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1156. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:19.340180 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1157. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:19.340385 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1158. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:49.341960 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1159. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:49.342005 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1160. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:49.342201 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1161. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:51.542931 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1162. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:51.542977 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1163. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:47:51.543156 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1164. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:19.343822 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1165. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:19.343885 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1166. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:19.344124 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1167. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:49.345754 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1168. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:49.345807 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1169. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:49.346026 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1170. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:51.566958 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1171. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:51.567019 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1172. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:48:51.567249 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1173. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:19.347510 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1174. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:19.347564 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1175. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:19.347757 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1176. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:49.349374 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1177. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:49.349431 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1178. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:49.349660 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1179. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:51.586801 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1180. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:51.586869 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1181. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:49:51.587052 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1182. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:19.351230 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1183. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:19.351283 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1184. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:19.351506 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1185. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:49.353170 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1186. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:49.353252 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1187. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:49.353492 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1188. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:51.601513 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1189. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:51.601568 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1190. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:50:51.601776 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1191. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:19.355098 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1192. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:19.355149 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1193. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:19.355319 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1194. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:49.356935 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1195. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:49.356991 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1196. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:49.357236 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1197. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:51.620171 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1198. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:51.620236 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1199. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:51:51.620402 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1200. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:19.358908 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1201. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:19.358962 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1202. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:19.359165 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1203. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:21.868256 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1204. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:22.073661 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1205. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:22.074059 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1206. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:22.074360 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1207. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:22.074859 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1208. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:22.075272 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1209. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:49.360688 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1210. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:49.360740 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1211. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:49.360933 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1212. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:51.641857 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1213. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:51.641905 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1214. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:52:51.642066 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1215. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:19.362571 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1216. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:19.362630 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1217. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:19.362838 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1218. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:49.364376 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1219. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:49.364422 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1220. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:49.364616 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1221. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:51.666775 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1222. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:51.666825 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1223. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:53:51.667007 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1224. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:19.366257 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1225. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:19.366313 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1226. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:19.366536 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1227. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:49.368179 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1228. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:49.368249 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1229. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:49.368454 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1230. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:51.689894 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1231. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:51.689941 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1232. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:54:51.690107 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1233. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:19.369958 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1234. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:19.370007 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1235. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:19.370169 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1236. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:49.371616 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1237. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:49.371676 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1238. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:49.371838 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1239. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:51.732012 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1240. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:51.732063 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1241. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:55:51.732276 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1242. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:19.373359 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1243. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:19.373425 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1244. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:19.373597 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1245. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:49.375259 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1246. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:49.375327 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1247. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:49.375495 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1248. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:51.756721 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1249. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:51.756775 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1250. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:56:51.756939 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1251. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:19.376941 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1252. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:19.376989 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1253. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:19.377214 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1254. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:49.378862 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1255. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:49.378919 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1256. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:49.379123 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1257. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:51.777925 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1258. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:51.777971 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1259. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:57:51.778149 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1260. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:19.380697 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1261. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:19.380744 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1262. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:19.380946 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1263. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:49.382532 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1264. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:49.382591 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1265. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:49.382755 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1266. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:51.802999 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1267. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:51.803053 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1268. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:58:51.803287 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1269. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:19.384364 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1270. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:19.384437 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1271. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:19.384595 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1272. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:49.386325 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1273. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:49.386389 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1274. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:49.386549 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1275. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:51.822666 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1276. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:51.822715 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1277. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 04:59:51.822876 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1278. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:19.387995 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1279. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:19.388039 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1280. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:19.388192 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1281. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:49.389857 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1282. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:49.389915 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1283. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:49.390142 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1284. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:51.843404 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1285. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:51.843461 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1286. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:00:51.843629 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1287. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:19.391683 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1288. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:19.391728 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1289. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:19.391922 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1290. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:49.393385 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1291. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:49.393432 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1292. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:49.393682 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1293. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:51.866011 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1294. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:51.866071 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1295. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:01:51.866257 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1296. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:19.395231 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1297. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:19.395287 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1298. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:19.395453 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1299. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:23.451915 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+1300. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:49.397068 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1301. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:49.397125 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1302. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:49.397324 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1303. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:51.969992 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1304. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:51.970038 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1305. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:02:51.970224 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1306. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:19.398852 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1307. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:19.398897 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1308. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:19.399106 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1309. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:49.400761 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1310. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:49.400823 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1311. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:49.401040 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1312. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:51.992830 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1313. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:51.992877 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1314. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:03:51.993094 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1315. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:19.402650 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1316. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:19.402698 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1317. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:19.402861 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1318. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:29.814496 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+1319. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:49.404367 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1320. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:49.404413 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1321. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:49.404639 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1322. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:52.016224 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1323. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:52.016276 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1324. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:04:52.016445 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1325. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:19.406162 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1326. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:19.406234 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1327. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:19.406462 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1328. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:49.408008 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1329. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:49.408054 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1330. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:49.408260 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1331. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:52.039250 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1332. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:52.039305 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1333. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:05:52.039467 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1334. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:19.409907 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1335. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:19.409969 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1336. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:19.410140 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1337. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:31.983308 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+1338. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:49.411617 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1339. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:49.411672 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1340. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:49.411831 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1341. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:52.142799 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1342. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:52.142846 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1343. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:06:52.143009 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1344. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:19.414251 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1345. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:19.414314 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1346. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:19.414574 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1347. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:22.076448 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1348. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:22.330259 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1349. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:22.330671 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1350. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:22.330986 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1351. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:22.331481 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1352. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:22.331877 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1353. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:49.416106 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1354. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:49.416153 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1355. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:49.416319 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1356. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:52.247267 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1357. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:52.247328 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1358. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:07:52.247499 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1359. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:19.421374 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1360. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:19.421443 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1361. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:19.421617 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1362. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:49.423036 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1363. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:49.423082 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1364. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:49.423319 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1365. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:52.314684 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1366. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:52.314739 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1367. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:08:52.314898 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1368. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:19.424834 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1369. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:19.424893 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1370. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:19.425112 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1371. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:49.426813 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1372. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:49.426875 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1373. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:49.427094 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1374. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:52.335466 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1375. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:52.335518 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1376. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:09:52.335718 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1377. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:19.428719 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1378. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:19.428784 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1379. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:19.428996 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1380. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:49.431191 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1381. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:49.431305 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1382. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:49.431584 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1383. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:52.357962 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1384. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:52.358007 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1385. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:10:52.358219 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1386. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:19.433247 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1387. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:19.433306 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1388. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:19.433532 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1389. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:49.435238 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1390. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:49.435309 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1391. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:49.435527 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1392. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:52.379425 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1393. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:52.379480 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1394. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:11:52.379660 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1395. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:19.437081 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1396. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:19.437140 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1397. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:19.437373 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1398. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:49.439103 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1399. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:49.439184 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1400. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:49.439426 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1401. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:52.402358 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1402. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:52.402405 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1403. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:12:52.402611 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1404. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:19.440934 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1405. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:19.440991 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1406. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:19.441198 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1407. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:49.442830 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1408. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:49.442888 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1409. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:49.443127 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1410. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:52.428618 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1411. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:52.428683 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1412. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:13:52.428861 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1413. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:19.444782 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1414. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:19.444834 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1415. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:19.445045 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1416. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:49.446564 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1417. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:49.446610 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1418. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:49.446810 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1419. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:52.453617 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1420. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:52.453668 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1421. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:14:52.453834 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1422. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:19.448409 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1423. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:19.448455 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1424. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:19.448655 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1425. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:49.450364 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1426. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:49.450426 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1427. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:49.450644 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1428. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:52.482836 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1429. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:52.482894 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1430. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:15:52.483087 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1431. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:19.452389 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1432. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:19.452449 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1433. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:19.452659 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1434. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:49.454371 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1435. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:49.454428 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1436. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:49.454637 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1437. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:52.505421 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1438. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:52.505476 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1439. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:16:52.505654 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1440. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:19.456336 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1441. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:19.456399 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1442. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:19.456609 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1443. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:49.458275 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1444. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:49.458326 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1445. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:49.458532 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1446. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:52.526646 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1447. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:52.526701 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1448. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:17:52.526870 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1449. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:19.460090 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1450. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:19.460152 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1451. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:19.460405 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1452. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:49.462061 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1453. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:49.462151 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1454. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:49.462389 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1455. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:52.550768 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1456. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:52.550821 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1457. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:18:52.550999 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1458. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:19.463898 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1459. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:19.463941 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1460. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:19.464129 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1461. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:49.465693 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1462. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:49.465760 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1463. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:49.465926 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1464. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:52.577230 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1465. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:52.577286 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1466. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:19:52.577507 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1467. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:19.467543 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1468. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:19.467600 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1469. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:19.467779 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1470. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:49.469441 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1471. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:49.469498 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1472. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:49.469703 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1473. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:52.598325 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1474. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:52.598372 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1475. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:20:52.598574 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1476. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:19.471539 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1477. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:19.471608 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1478. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:19.471836 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1479. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:49.473568 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1480. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:49.473639 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1481. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:49.473861 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1482. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:52.617820 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1483. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:52.617866 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1484. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:21:52.618026 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1485. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:16.475271 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+1486. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:19.475410 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1487. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:19.475455 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1488. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:19.475658 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1489. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:22.333001 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1490. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:22.587823 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1491. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:22.588231 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1492. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:22.588512 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1493. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:22.589013 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1494. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:22.589428 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1495. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:49.477153 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1496. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:49.477213 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1497. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:49.477419 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1498. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:52.638697 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1499. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:52.638767 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1500. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:22:52.638950 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1501. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:19.478982 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1502. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:19.479037 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1503. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:19.479258 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1504. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:49.480830 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1505. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:49.480889 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1506. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:49.481097 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1507. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:52.663394 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1508. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:52.663453 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1509. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:23:52.663623 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1510. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:19.482611 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1511. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:19.482673 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1512. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:19.482897 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1513. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:49.484431 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1514. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:49.484485 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1515. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:49.484641 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1516. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:52.686743 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1517. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:52.686795 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1518. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:24:52.686955 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1519. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:19.486136 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1520. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:19.486189 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1521. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:19.486365 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1522. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:49.487941 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1523. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:49.488001 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1524. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:49.488235 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1525. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:52.709801 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1526. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:52.709860 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1527. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:25:52.710074 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1528. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:19.490001 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1529. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:19.490052 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1530. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:19.490261 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1531. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:49.491852 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1532. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:49.491914 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1533. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:49.492082 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1534. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:52.734610 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1535. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:52.734669 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1536. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:26:52.734830 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1537. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:19.493837 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1538. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:19.493899 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1539. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:19.494084 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1540. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:49.495832 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1541. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:49.495934 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1542. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:49.496161 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1543. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:52.756843 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1544. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:52.756945 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1545. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:27:52.758591 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1546. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:19.497927 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1547. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:19.498003 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1548. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:19.498286 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1549. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:49.500038 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1550. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:49.500100 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1551. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:49.500351 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1552. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:52.780735 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1553. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:52.780782 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1554. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:28:52.780944 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1555. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:19.502092 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1556. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:19.502157 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1557. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:19.502448 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1558. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:36.087030 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+1559. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:49.504114 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1560. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:49.504174 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1561. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:49.504412 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1562. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:52.820482 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1563. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:52.820543 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1564. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:29:52.820714 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1565. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:19.505993 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1566. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:19.506047 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1567. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:19.506229 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1568. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:49.507662 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1569. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:49.507707 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1570. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:49.507909 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1571. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:52.846683 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1572. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:52.846732 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1573. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:30:52.846896 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1574. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:19.509379 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1575. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:19.509435 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1576. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:19.509651 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1577. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:45.491016 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+1578. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:49.511287 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1579. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:49.511333 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1580. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:49.511521 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1581. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:52.950840 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1582. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:52.950902 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1583. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:31:52.951070 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1584. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:19.513004 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1585. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:19.513049 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1586. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:19.513267 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1587. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:49.514943 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1588. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:49.514997 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1589. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:49.515201 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1590. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:53.021195 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1591. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:53.021259 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1592. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:32:53.021421 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1593. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:19.516829 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1594. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:19.516890 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1595. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:19.517104 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1596. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:49.230867 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+1597. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:49.518758 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1598. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:49.518833 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1599. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:49.519050 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1600. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:53.047524 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1601. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:53.047574 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1602. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:33:53.047752 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1603. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:19.520645 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1604. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:19.520692 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1605. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:19.520885 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1606. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:25.681069 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+1607. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:49.522578 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1608. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:49.522633 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1609. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:49.522851 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1610. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:53.151597 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1611. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:53.151647 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1612. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:34:53.151810 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1613. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:19.524568 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1614. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:19.524631 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1615. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:19.524841 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1616. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:49.526524 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1617. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:49.526584 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1618. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:49.526786 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1619. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:53.201897 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1620. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:53.201947 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1621. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:35:53.202110 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1622. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:19.528532 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1623. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:19.528651 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1624. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:19.528887 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1625. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:49.530611 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1626. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:49.530679 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1627. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:49.530891 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1628. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:53.223423 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1629. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:53.223471 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1630. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:36:53.223630 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1631. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:19.532456 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1632. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:19.532524 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1633. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:19.532693 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1634. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:22.590476 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1635. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:22.860288 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1636. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:22.860853 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1637. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:22.861310 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1638. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:22.862066 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1639. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:22.862583 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1640. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:49.534230 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1641. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:49.534302 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1642. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:49.534514 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1643. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:53.241484 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1644. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:53.241549 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1645. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:37:53.241728 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1646. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:19.535967 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1647. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:19.536020 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1648. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:19.536179 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1649. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:49.537698 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1650. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:49.537765 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1651. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:49.537927 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1652. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:53.263007 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1653. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:53.263051 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1654. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:38:53.263266 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1655. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:19.539433 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1656. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:19.539494 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1657. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:19.539736 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1658. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:49.541194 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1659. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:49.541247 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1660. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:49.541459 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1661. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:53.285349 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1662. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:53.285397 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1663. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:39:53.285558 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1664. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:19.542982 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1665. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:19.543028 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1666. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:19.543246 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1667. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:49.544713 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1668. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:49.544757 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1669. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:49.544934 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1670. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:53.307820 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1671. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:53.307866 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1672. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:40:53.308031 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1673. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:19.546415 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1674. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:19.546468 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1675. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:19.547199 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1676. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:49.548714 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1677. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:49.548769 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1678. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:49.548979 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1679. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:53.331537 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1680. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:53.331595 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1681. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:41:53.331822 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1682. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:19.550430 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1683. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:19.550475 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1684. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:19.550668 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1685. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:49.552220 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1686. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:49.552267 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1687. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:49.552481 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1688. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:53.356016 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1689. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:53.356060 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1690. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:42:53.356235 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1691. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:19.553936 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1692. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:19.553994 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1693. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:19.554213 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1694. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:49.555987 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1695. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:49.556043 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1696. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:49.556257 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1697. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:53.380485 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1698. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:53.380543 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1699. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:43:53.380741 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1700. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:19.557784 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1701. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:19.557833 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1702. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:19.558046 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1703. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:49.559596 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1704. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:49.559651 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1705. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:49.559810 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1706. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:53.485849 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1707. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:53.485892 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1708. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:44:53.486053 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1709. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:19.561278 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1710. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:19.561323 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1711. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:19.561527 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1712. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:49.564130 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1713. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:49.564192 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1714. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:49.564441 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1715. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:53.554599 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1716. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:53.554649 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1717. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:45:53.554815 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1718. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:19.566250 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1719. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:19.566314 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1720. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:19.566539 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1721. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:49.568086 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1722. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:49.568137 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1723. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:49.568370 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1724. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:53.576281 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1725. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:53.576327 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1726. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:46:53.576548 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1727. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:19.570817 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1728. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:19.570866 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1729. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:19.571081 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1730. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:49.572863 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1731. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:49.572953 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1732. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:49.573233 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1733. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:53.603344 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1734. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:53.603395 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1735. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:47:53.603589 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1736. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:19.574808 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1737. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:19.574852 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1738. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:19.575063 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1739. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:49.576668 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1740. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:49.576714 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1741. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:49.576886 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1742. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:53.628287 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1743. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:53.628349 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1744. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:48:53.628650 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1745. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:19.578662 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1746. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:19.578747 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1747. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:19.578975 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1748. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:22.934719 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+1749. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:49.580925 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1750. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:49.581011 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1751. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:49.581342 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1752. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:53.649903 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1753. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:53.649968 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1754. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:49:53.650163 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1755. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:19.583121 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1756. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:19.583192 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1757. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:19.583414 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1758. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:49.585013 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1759. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:49.585058 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1760. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:49.585268 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1761. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:53.671643 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1762. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:53.671726 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1763. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:50:53.671911 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1764. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:19.586822 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1765. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:19.586866 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1766. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:19.587081 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1767. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:49.588740 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1768. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:49.588788 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1769. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:49.589006 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1770. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:53.699217 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1771. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:53.699288 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1772. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:51:53.699477 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1773. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:19.590683 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1774. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:19.590762 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1775. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:19.590929 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1776. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:22.863690 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1777. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:23.047132 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1778. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:23.047490 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1779. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:23.047803 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1780. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:23.048297 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1781. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:23.048701 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1782. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:49.592395 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1783. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:49.592440 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1784. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:49.592638 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1785. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:53.739526 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1786. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:53.739580 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1787. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:52:53.739747 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1788. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:19.594098 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1789. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:19.594146 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1790. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:19.594316 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1791. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:49.595815 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1792. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:49.595893 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1793. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:49.596115 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1794. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:53.758397 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1795. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:53.758445 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1796. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:53:53.758606 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1797. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:19.597642 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1798. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:19.597709 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1799. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:19.597921 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1800. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:49.599418 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1801. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:49.599464 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1802. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:49.599674 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1803. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:53.783796 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1804. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:53.783874 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1805. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:54:53.784120 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1806. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:19.601202 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1807. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:19.601255 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1808. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:19.601448 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1809. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:49.603045 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1810. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:49.603093 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1811. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:49.603295 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1812. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:53.805595 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1813. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:53.805678 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1814. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:55:53.805909 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1815. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:19.604826 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1816. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:19.604874 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1817. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:19.605035 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1818. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:48.792564 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+1819. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:49.606454 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1820. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:49.606499 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1821. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:49.606708 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1822. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:53.909315 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1823. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:53.909381 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1824. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:56:53.909583 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1825. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:19.608271 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1826. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:19.608317 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1827. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:19.608528 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1828. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:49.609996 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1829. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:49.610040 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1830. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:49.610232 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1831. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:53.999913 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1832. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:53.999960 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1833. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:57:54.000123 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1834. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:19.611689 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1835. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:19.611745 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1836. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:19.611903 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1837. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:49.613488 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1838. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:49.613549 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1839. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:49.613794 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1840. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:54.021201 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1841. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:54.021262 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1842. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:58:54.021429 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1843. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:01.218846 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+1844. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:19.615425 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1845. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:19.615470 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1846. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:19.615668 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1847. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:49.617364 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1848. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:49.617426 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1849. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:49.617680 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1850. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:54.117857 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1851. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:54.117942 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1852. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 05:59:54.118181 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1853. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:19.619494 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1854. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:19.619555 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1855. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:19.619777 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1856. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:49.621642 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1857. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:49.621723 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1858. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:49.621931 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1859. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:54.136382 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1860. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:54.136436 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1861. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:00:54.136605 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1862. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:06.660591 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+1863. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:19.623676 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1864. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:19.623733 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1865. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:19.624018 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1866. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:40.620045 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+1867. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:49.625803 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1868. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:49.625879 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1869. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:49.626194 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1870. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:54.237434 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1871. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:54.237511 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1872. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:01:54.237748 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1873. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:19.627751 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1874. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:19.627797 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1875. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:19.627957 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1876. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:49.629419 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1877. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:49.629464 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1878. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:49.629677 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1879. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:54.262454 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1880. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:54.262503 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1881. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:02:54.262658 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1882. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:19.631278 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1883. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:19.631323 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1884. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:19.631523 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1885. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:49.633040 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1886. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:49.633088 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1887. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:49.633295 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1888. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:54.276153 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1889. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:54.276202 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1890. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:03:54.276388 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1891. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:19.634811 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1892. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:19.634878 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1893. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:19.635360 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1894. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:49.636938 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1895. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:49.637012 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1896. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:49.637273 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1897. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:54.292124 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1898. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:54.292178 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1899. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:04:54.292393 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1900. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:19.638995 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1901. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:19.639053 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1902. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:19.639295 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1903. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:49.640965 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1904. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:49.641025 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1905. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:49.641236 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1906. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:54.304244 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1907. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:54.304671 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1908. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:05:54.304895 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1909. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:19.642862 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1910. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:19.642927 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1911. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:19.643130 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1912. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:49.644718 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1913. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:49.644765 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1914. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:49.644966 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1915. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:54.322692 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1916. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:54.322758 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1917. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:06:54.323083 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1918. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:19.646427 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1919. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:19.646475 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1920. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:19.646685 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1921. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:23.050598 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+1922. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:23.305633 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+1923. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:23.305942 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+1924. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:23.306227 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+1925. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:23.306708 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+1926. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:23.307106 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+1927. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:49.648282 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1928. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:49.648327 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1929. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:49.648557 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1930. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:54.339232 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1931. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:54.339298 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1932. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:07:54.339553 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1933. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:19.650047 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1934. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:19.650092 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1935. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:19.650287 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1936. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:49.651719 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1937. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:49.651763 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1938. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:49.651942 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1939. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:54.347316 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1940. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:54.347367 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1941. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:08:54.347528 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1942. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:19.653398 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1943. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:19.653443 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1944. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:19.653655 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1945. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:49.655168 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1946. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:49.655240 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1947. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:49.655463 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1948. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:54.360155 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1949. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:54.360214 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1950. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:09:54.360379 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1951. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:19.656958 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1952. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:19.657001 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1953. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:19.657199 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1954. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:49.658728 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1955. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:49.658791 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1956. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:49.658983 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1957. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:54.374783 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1958. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:54.374848 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1959. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:10:54.375059 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1960. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:19.660497 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1961. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:19.660543 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1962. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:19.660752 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1963. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:49.662364 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1964. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:49.662417 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1965. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:49.662627 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1966. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:54.391820 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1967. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:54.391881 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1968. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:11:54.392108 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1969. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:19.664228 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1970. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:19.664274 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1971. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:19.664472 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1972. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:49.666051 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1973. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:49.666093 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1974. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:49.666302 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1975. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:54.402285 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1976. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:54.402345 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1977. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:12:54.402520 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1978. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:19.667823 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1979. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:19.667879 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1980. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:19.668042 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1981. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:49.669483 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1982. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:49.669529 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1983. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:49.669740 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1984. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:54.427625 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1985. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:54.427685 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1986. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:13:54.427896 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1987. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:19.671403 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1988. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:19.671463 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1989. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:19.671681 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1990. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:49.673246 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1991. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:49.673290 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1992. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:49.673452 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1993. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:54.453911 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1994. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:54.453958 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+1995. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:14:54.454124 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+1996. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:19.675042 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+1997. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:19.675088 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+1998. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:19.675292 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+1999. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:49.676844 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2000. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:49.676896 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2001. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:49.677121 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2002. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:54.546775 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2003. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:54.546823 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2004. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:15:54.547028 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2005. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:19.678597 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2006. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:19.678641 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2007. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:19.678850 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2008. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:29.520706 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+2009. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:49.680464 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2010. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:49.680509 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2011. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:49.680708 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2012. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:54.650939 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2013. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:54.650985 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2014. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:16:54.651147 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2015. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:19.682307 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2016. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:19.682354 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2017. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:19.682554 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2018. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:49.684234 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2019. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:49.684301 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2020. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:49.684520 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2021. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:54.691057 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2022. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:54.691103 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2023. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:17:54.691316 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2024. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:19.686195 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2025. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:19.686271 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2026. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:19.686503 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2027. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:49.688071 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2028. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:49.688115 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2029. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:49.688323 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2030. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:54.710725 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2031. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:54.710786 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2032. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:18:54.710954 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2033. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:19.689932 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2034. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:19.689991 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2035. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:19.690202 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2036. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:49.691906 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2037. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:49.691966 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2038. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:49.692175 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2039. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:54.731122 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2040. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:54.731167 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2041. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:19:54.731344 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2042. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:19.693615 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2043. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:19.693660 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2044. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:19.693870 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2045. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:49.695529 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2046. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:49.695590 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2047. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:49.695767 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2048. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:54.750910 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2049. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:54.750971 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2050. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:20:54.751176 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2051. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:19.697405 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2052. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:19.697465 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2053. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:19.697630 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2054. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:49.699159 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2055. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:49.699222 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2056. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:49.699435 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2057. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:54.775949 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2058. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:54.776013 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2059. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:21:54.776225 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2060. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:19.700989 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2061. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:19.701033 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2062. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:19.701235 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2063. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:23.308247 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2064. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:23.568441 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2065. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:23.568791 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2066. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:23.569067 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2067. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:23.569571 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2068. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:23.569968 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2069. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:49.702759 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2070. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:49.702802 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2071. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:49.703007 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2072. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:54.800469 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2073. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:54.800533 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2074. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:22:54.800712 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2075. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:19.704583 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2076. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:19.704655 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2077. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:19.704912 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2078. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:49.706431 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2079. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:49.706490 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2080. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:49.706663 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2081. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:54.821771 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2082. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:54.821823 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2083. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:23:54.821995 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2084. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:01.459046 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+2085. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:19.708108 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2086. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:19.708153 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2087. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:19.708316 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2088. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:49.709782 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2089. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:49.709826 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2090. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:49.710030 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2091. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:54.927422 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2092. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:54.927476 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2093. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:24:54.927641 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2094. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:19.711475 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2095. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:19.711518 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2096. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:19.711725 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2097. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:49.713308 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2098. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:49.713355 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2099. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:49.713570 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2100. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:54.985251 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2101. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:54.985306 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2102. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:25:54.985473 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2103. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:16.999700 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+2104. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:19.714990 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2105. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:19.715049 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2106. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:19.715266 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2107. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:49.716998 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2108. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:49.717064 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2109. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:49.717317 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2110. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:55.088952 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2111. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:55.089000 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2112. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:26:55.089161 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2113. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:19.718875 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2114. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:19.718930 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2115. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:19.719129 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2116. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:49.721020 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2117. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:49.721102 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2118. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:49.721355 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2119. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:55.192939 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2120. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:55.193007 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2121. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:27:55.193166 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2122. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:19.722963 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2123. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:19.723020 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2124. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:19.723313 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2125. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:23.862200 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+2126. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:49.724882 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2127. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:49.724925 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2128. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:49.725088 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2129. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:55.298775 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2130. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:55.298825 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2131. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:55.298989 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2132. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:28:55.501251 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+2133. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:19.726607 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2134. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:19.726652 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2135. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:19.726851 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2136. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:49.728369 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2137. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:49.728412 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2138. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:49.728604 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2139. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:55.324737 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2140. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:55.324786 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2141. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:29:55.324989 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2142. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:19.730193 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2143. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:19.730249 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2144. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:19.730452 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2145. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:49.731979 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2146. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:49.732031 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2147. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:49.732189 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2148. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:55.347109 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2149. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:55.347159 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2150. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:30:55.347335 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2151. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:19.733710 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2152. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:19.733755 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2153. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:19.733951 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2154. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:49.735679 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2155. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:49.735746 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2156. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:49.735951 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2157. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:55.375102 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2158. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:55.375153 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2159. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:31:55.375333 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2160. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:19.737664 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2161. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:19.737722 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2162. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:19.737932 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2163. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:49.739579 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2164. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:49.739628 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2165. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:49.739822 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2166. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:55.394991 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2167. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:55.395038 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2168. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:32:55.395198 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2169. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:19.741512 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2170. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:19.741573 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2171. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:19.741785 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2172. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:49.743486 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2173. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:49.743546 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2174. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:49.743750 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2175. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:55.416823 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2176. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:55.416869 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2177. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:33:55.417035 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2178. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:19.745329 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2179. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:19.745378 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2180. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:19.745601 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2181. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:49.747008 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2182. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:49.747050 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2183. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:49.747234 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2184. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:55.444000 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2185. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:55.444069 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2186. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:34:55.444240 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2187. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:19.748837 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2188. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:19.748881 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2189. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:19.749032 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2190. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:49.750669 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2191. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:49.750731 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2192. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:49.751019 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2193. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:55.459700 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2194. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:55.459749 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2195. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:35:55.459910 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2196. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:19.752545 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2197. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:19.752596 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2198. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:19.752812 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2199. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:49.754290 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2200. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:49.754336 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2201. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:49.754495 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2202. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:55.478729 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2203. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:55.478777 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2204. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:36:55.478938 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2205. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:19.756265 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2206. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:19.756329 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2207. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:19.756562 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2208. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:23.571184 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2209. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:23.823137 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2210. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:23.823463 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2211. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:23.823748 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2212. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:23.824246 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2213. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:23.824642 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2214. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:49.758017 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2215. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:49.758062 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2216. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:49.758226 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2217. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:55.585950 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2218. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:55.586033 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2219. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:37:55.586229 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2220. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:19.759707 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2221. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:19.759753 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2222. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:19.759910 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2223. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:49.761387 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2224. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:49.761432 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2225. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:49.761641 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2226. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:55.609536 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2227. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:55.609582 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2228. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:38:55.609782 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2229. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:19.763104 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2230. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:19.763154 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2231. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:19.763326 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2232. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:49.764790 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2233. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:49.764840 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2234. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:49.765013 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2235. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:55.631817 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2236. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:55.631869 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2237. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:39:55.632077 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2238. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:19.766635 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2239. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:19.766695 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2240. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:19.766907 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2241. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:49.768644 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2242. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:49.768713 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2243. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:49.768934 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2244. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:55.651553 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2245. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:55.651627 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2246. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:40:55.651829 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2247. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:19.770580 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2248. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:19.770631 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2249. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:19.770837 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2250. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:49.772493 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2251. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:49.772551 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2252. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:49.772790 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2253. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:55.668270 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2254. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:55.668321 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2255. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:41:55.668484 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2256. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:19.774635 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2257. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:19.774719 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2258. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:19.774957 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2259. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:49.776392 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2260. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:49.776436 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2261. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:49.776646 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2262. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:55.686233 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2263. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:55.686280 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2264. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:42:55.686444 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2265. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:19.778265 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2266. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:19.778327 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2267. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:19.778537 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2268. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:35.992415 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+2269. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:49.780276 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2270. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:49.780341 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2271. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:49.780554 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2272. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:55.707953 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2273. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:55.708000 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2274. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:43:55.708224 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2275. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:19.782106 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2276. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:19.782150 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2277. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:19.782356 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2278. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:49.783921 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2279. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:49.783985 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2280. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:49.784148 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2281. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:55.728594 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2282. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:55.728642 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2283. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:44:55.728805 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2284. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:19.785602 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2285. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:19.785661 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2286. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:19.785882 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2287. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:49.787538 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2288. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:49.787589 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2289. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:49.787789 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2290. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:55.748947 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2291. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:55.748991 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2292. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:45:55.749155 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2293. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:19.789330 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2294. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:19.789390 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2295. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:19.789560 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2296. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:49.791024 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2297. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:49.791066 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2298. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:49.791281 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2299. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:55.770109 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2300. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:55.770155 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2301. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:46:55.770332 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2302. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:19.792888 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2303. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:19.792946 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2304. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:19.793197 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2305. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:49.794811 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2306. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:49.794855 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2307. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:49.795044 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2308. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:55.792201 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2309. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:55.792272 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2310. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:47:55.792433 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2311. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:19.796620 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2312. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:19.796673 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2313. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:19.796865 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2314. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:49.798477 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2315. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:49.798529 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2316. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:49.798733 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2317. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:55.812874 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2318. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:55.812920 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2319. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:48:55.813065 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2320. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:19.800360 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2321. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:19.800416 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2322. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:19.800623 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2323. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:49.802295 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2324. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:49.802364 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2325. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:49.802578 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2326. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:55.836223 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2327. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:55.836270 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2328. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:49:55.836429 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2329. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:19.804303 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2330. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:19.804366 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2331. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:19.804532 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2332. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:49.805964 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2333. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:49.806008 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2334. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:49.806218 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2335. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:55.855169 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2336. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:55.855231 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2337. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:50:55.855395 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2338. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:14.058046 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+2339. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:19.807880 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2340. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:19.807934 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2341. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:19.808154 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2342. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:49.809788 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2343. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:49.809849 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2344. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:49.810161 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2345. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:55.882657 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2346. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:55.882714 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2347. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:51:55.882877 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2348. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:19.811662 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2349. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:19.811704 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2350. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:19.811901 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2351. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:23.825840 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2352. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:24.067087 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2353. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:24.067800 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2354. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:24.068182 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2355. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:24.068969 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2356. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:24.069458 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2357. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:49.814269 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2358. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:49.814338 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2359. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:49.814569 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2360. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:55.928162 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2361. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:55.928249 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2362. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:52:55.928420 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2363. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:19.816110 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2364. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:19.816156 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2365. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:19.816356 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2366. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:32.836721 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+2367. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:49.817910 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2368. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:49.817953 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2369. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:49.818142 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2370. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:56.028544 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2371. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:56.028606 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2372. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:53:56.028856 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2373. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:19.819649 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2374. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:19.819693 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2375. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:19.819888 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2376. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:49.821458 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2377. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:49.821506 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2378. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:49.821666 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2379. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:56.048264 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2380. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:56.048324 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2381. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:54:56.048540 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2382. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:19.823240 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2383. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:19.823297 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2384. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:19.823469 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2385. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:41.257347 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+2386. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:49.825082 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2387. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:49.825128 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2388. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:49.825349 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2389. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:56.122603 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2390. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:56.122649 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2391. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:55:56.122853 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2392. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:19.826806 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2393. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:19.826857 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2394. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:19.827015 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2395. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:49.828437 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2396. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:49.828481 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2397. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:49.828693 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2398. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:56.221893 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2399. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:56.221943 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2400. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:56:56.222103 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2401. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:19.830367 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2402. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:19.830429 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2403. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:19.830643 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2404. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:49.832251 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2405. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:49.832297 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2406. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:49.832497 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2407. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:56.242137 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2408. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:56.242231 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2409. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:57:56.242408 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2410. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:19.834140 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2411. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:19.834193 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2412. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:19.834438 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2413. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:49.835964 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2414. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:49.836020 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2415. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:49.836179 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2416. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:56.263338 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2417. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:56.263390 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2418. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:58:56.263705 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2419. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:19.837760 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2420. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:19.837824 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2421. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:19.837989 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2422. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:49.839541 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2423. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:49.839600 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2424. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:49.839803 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2425. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:56.286241 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2426. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:56.286291 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2427. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 06:59:56.286453 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2428. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:19.841314 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2429. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:19.841357 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2430. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:19.841513 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2431. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:49.842970 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2432. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:49.843014 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2433. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:49.843242 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2434. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:56.311727 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2435. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:56.311813 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2436. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:00:56.312069 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2437. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:19.844709 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2438. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:19.844756 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2439. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:19.844973 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2440. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:49.846543 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2441. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:49.846605 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2442. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:49.846824 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2443. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:56.334470 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2444. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:56.334525 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2445. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:01:56.334703 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2446. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:19.848276 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2447. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:19.848321 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2448. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:19.848479 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2449. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:49.849887 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2450. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:49.849931 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2451. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:49.850086 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2452. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:56.359656 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2453. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:56.359718 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2454. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:02:56.359891 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2455. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:19.851738 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2456. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:19.851798 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2457. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:19.852018 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2458. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:49.853687 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2459. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:49.853740 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2460. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:49.853942 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2461. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:56.385373 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2462. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:56.385431 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2463. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:03:56.385608 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2464. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:19.855576 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2465. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:19.855627 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2466. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:19.855821 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2467. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:49.857392 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2468. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:49.857437 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2469. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:49.857635 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2470. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:56.401494 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2471. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:56.401557 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2472. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:04:56.401756 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2473. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:19.859090 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2474. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:19.859134 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2475. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:19.859301 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2476. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:49.860705 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2477. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:49.860751 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2478. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:49.860963 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2479. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:56.416596 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2480. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:56.416642 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2481. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:05:56.416801 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2482. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:19.862553 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2483. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:19.862599 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2484. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:19.862797 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2485. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:49.864526 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2486. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:49.864592 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2487. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:49.864845 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2488. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:56.431645 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2489. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:56.431694 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2490. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:06:56.431891 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2491. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:19.866424 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2492. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:19.866468 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2493. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:19.866666 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2494. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:24.070587 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2495. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:24.248353 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2496. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:24.248649 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2497. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:24.248919 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2498. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:24.249408 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2499. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:24.249799 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2500. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:49.868333 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2501. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:49.868400 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2502. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:49.868610 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2503. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:56.453044 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2504. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:56.453089 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2505. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:07:56.453284 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2506. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:19.870184 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2507. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:19.870235 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2508. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:19.870434 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2509. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:49.872013 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2510. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:49.872056 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2511. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:49.872262 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2512. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:56.477326 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2513. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:56.477374 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2514. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:08:56.477583 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2515. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:19.873753 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2516. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:19.873805 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2517. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:19.873957 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2518. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:49.875555 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2519. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:49.875621 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2520. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:49.875782 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2521. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:56.496070 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2522. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:56.496125 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2523. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:09:56.496319 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2524. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:19.877408 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2525. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:19.877455 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2526. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:19.877613 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2527. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:42.512989 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+2528. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:49.881537 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2529. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:49.881614 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2530. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:49.881924 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2531. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:56.549116 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2532. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:56.549166 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2533. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:10:56.549366 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2534. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:19.883479 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2535. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:19.883522 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2536. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:19.883716 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2537. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:49.885352 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2538. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:49.885410 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2539. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:49.885624 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2540. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:56.572869 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2541. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:56.572917 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2542. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:11:56.573080 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2543. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:19.887489 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2544. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:19.887543 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2545. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:19.887767 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2546. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:49.889536 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2547. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:49.889611 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2548. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:49.889849 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2549. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:56.598101 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2550. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:56.598148 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2551. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:12:56.598345 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2552. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:19.891441 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2553. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:19.891485 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2554. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:19.891697 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2555. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:49.893256 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2556. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:49.893301 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2557. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:49.893504 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2558. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:56.617619 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2559. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:56.617666 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2560. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:13:56.617867 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2561. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:19.895082 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2562. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:19.895138 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2563. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:19.895316 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2564. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:49.896923 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2565. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:49.896996 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2566. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:49.897225 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2567. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:56.638452 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2568. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:56.638502 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2569. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:14:56.638668 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2570. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:19.898625 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2571. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:19.898670 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2572. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:19.898823 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2573. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:49.900268 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2574. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:49.900314 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2575. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:49.900469 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2576. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:56.663363 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2577. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:56.663412 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2578. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:15:56.663630 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2579. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:19.901924 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2580. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:19.901971 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2581. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:19.902193 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2582. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:49.903758 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2583. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:49.903804 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2584. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:49.903997 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2585. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:56.689039 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2586. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:56.689084 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2587. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:16:56.689260 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2588. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:19.905712 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2589. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:19.905801 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2590. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:19.906039 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2591. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:49.907945 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2592. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:49.908002 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2593. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:49.908196 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2594. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:56.709790 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2595. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:56.709857 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2596. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:17:56.710021 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2597. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:19.909741 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2598. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:19.909797 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2599. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:19.909991 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2600. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:26.833068 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+2601. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:49.911693 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2602. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:49.911739 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2603. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:49.911902 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2604. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:56.813496 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2605. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:56.813553 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2606. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:18:56.813734 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2607. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:19.913491 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2608. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:19.913535 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2609. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:19.913744 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2610. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:49.915388 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2611. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:49.915448 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2612. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:49.915646 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2613. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:56.830292 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2614. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:56.830339 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2615. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:19:56.830502 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2616. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:19.917162 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2617. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:19.917227 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2618. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:19.917392 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2619. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:48.741410 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+2620. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:49.918860 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2621. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:49.918911 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2622. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:49.919146 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2623. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:56.934127 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2624. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:56.934177 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2625. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:20:56.934372 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2626. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:19.920571 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2627. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:19.920616 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2628. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:19.920799 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2629. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:49.922358 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2630. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:49.922421 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2631. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:49.922584 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2632. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:56.952328 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2633. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:56.952376 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2634. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:21:56.952581 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2635. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:19.924002 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2636. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:19.924046 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2637. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:19.924269 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2638. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:24.250840 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2639. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:24.504216 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2640. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:24.504612 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2641. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:24.504924 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2642. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:24.505447 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2643. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:24.505864 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2644. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:49.925818 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2645. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:49.925863 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2646. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:49.926062 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2647. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:56.971707 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2648. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:56.971757 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2649. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:56.971923 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2650. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:22:58.579553 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+2651. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:19.927537 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2652. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:19.927581 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2653. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:19.927780 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2654. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:25.391259 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+2655. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:49.929404 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2656. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:49.929452 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2657. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:49.929652 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2658. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:57.074969 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2659. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:57.075017 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2660. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:23:57.075185 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2661. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:19.931122 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2662. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:19.931162 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2663. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:19.931364 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2664. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:49.932892 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2665. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:49.932935 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2666. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:49.933133 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2667. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:57.149492 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2668. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:57.149538 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2669. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:24:57.149710 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2670. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:19.934665 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2671. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:19.934709 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2672. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:19.934903 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2673. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:49.936375 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2674. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:49.936417 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2675. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:49.936611 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2676. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:57.169127 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2677. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:57.169172 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2678. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:25:57.169384 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2679. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:19.938191 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2680. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:19.938264 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2681. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:19.938472 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2682. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:49.939970 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2683. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:49.940013 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2684. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:49.940215 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2685. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:57.191913 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2686. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:57.191960 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2687. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:26:57.192118 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2688. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:19.941768 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2689. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:19.941813 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2690. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:19.942008 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2691. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:49.943534 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2692. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:49.943580 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2693. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:49.943774 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2694. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:57.213852 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2695. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:57.213906 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2696. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:27:57.214069 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2697. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:19.945426 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2698. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:19.945486 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2699. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:19.945695 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2700. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:49.947585 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2701. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:49.947669 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2702. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:49.947890 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2703. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:57.236251 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2704. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:57.236304 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2705. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:28:57.236459 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2706. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:19.949374 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2707. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:19.949419 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2708. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:19.949610 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2709. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:49.951081 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2710. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:49.951123 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2711. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:49.951284 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2712. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:57.259447 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2713. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:57.259518 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2714. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:29:57.259667 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2715. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:19.952874 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2716. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:19.952917 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2717. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:19.953116 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2718. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:49.954714 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2719. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:49.954778 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2720. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:49.955025 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2721. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:57.279320 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2722. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:57.279375 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2723. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:30:57.279538 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2724. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:19.956463 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2725. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:19.956509 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2726. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:19.956704 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2727. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:49.958217 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2728. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:49.958273 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2729. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:49.958492 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2730. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:57.301703 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2731. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:57.301750 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2732. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:31:57.301951 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2733. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:19.960168 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2734. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:19.960238 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2735. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:19.960446 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2736. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:49.961952 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2737. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:49.961996 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2738. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:49.962188 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2739. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:57.323515 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2740. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:57.323566 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2741. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:32:57.323769 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2742. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:19.963767 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2743. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:19.963816 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2744. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:19.964013 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2745. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:49.965540 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2746. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:49.965589 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2747. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:49.965789 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2748. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:57.348303 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2749. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:57.348379 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2750. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:33:57.348546 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2751. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:19.967167 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2752. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:19.967218 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2753. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:19.967421 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2754. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:49.969019 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2755. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:49.969063 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2756. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:49.969266 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2757. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:57.371132 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2758. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:57.371180 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2759. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:34:57.371359 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2760. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:19.970894 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2761. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:19.970935 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2762. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:19.971128 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2763. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:49.972666 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2764. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:49.972710 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2765. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:49.972908 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2766. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:57.397542 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2767. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:57.397620 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2768. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:35:57.397805 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2769. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:19.974378 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2770. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:19.974431 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2771. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:19.974649 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2772. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:49.976304 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2773. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:49.976358 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2774. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:49.976575 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2775. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:57.421299 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2776. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:57.421353 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2777. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:36:57.421518 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2778. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:19.978082 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2779. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:19.978145 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2780. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:19.978383 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2781. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:24.507016 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2782. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:24.768000 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2783. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:24.768497 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2784. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:24.768866 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2785. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:24.769568 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2786. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:24.770076 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2787. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:49.034529 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+2788. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:49.979983 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2789. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:49.980027 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2790. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:49.980241 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2791. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:57.530103 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2792. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:57.530148 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2793. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:37:57.530335 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2794. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:19.981930 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2795. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:19.981996 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2796. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:19.982244 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2797. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:49.983935 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2798. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:49.983998 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2799. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:49.984230 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2800. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:57.551373 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2801. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:57.551427 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2802. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:38:57.551594 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2803. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:19.985642 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2804. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:19.985689 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2805. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:19.985845 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2806. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:49.987247 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2807. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:49.987292 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2808. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:49.987461 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2809. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:57.575075 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2810. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:57.575122 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2811. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:39:57.575296 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2812. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:19.988844 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2813. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:19.988887 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2814. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:19.989105 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2815. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:49.990710 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2816. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:49.990757 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2817. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:49.990965 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2818. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:57.599981 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2819. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:57.600051 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2820. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:40:57.600261 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2821. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:19.992414 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2822. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:19.992459 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2823. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:19.992670 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2824. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:49.994271 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2825. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:49.994320 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2826. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:49.994532 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2827. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:57.621459 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2828. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:57.621507 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2829. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:41:57.621708 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2830. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:19.996064 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2831. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:19.996107 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2832. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:19.996344 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2833. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:49.997772 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2834. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:49.997816 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2835. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:49.997972 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2836. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:57.644107 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2837. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:57.644151 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2838. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:42:57.644330 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2839. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:19.999390 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2840. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:19.999435 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2841. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:19.999592 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2842. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:50.001057 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2843. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:50.001098 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2844. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:50.001320 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2845. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:57.665223 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2846. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:57.665291 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2847. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:43:57.665495 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2848. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:20.002892 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2849. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:20.002933 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2850. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:20.003091 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2851. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:50.004662 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2852. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:50.004705 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2853. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:50.004919 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2854. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:57.680629 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2855. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:57.680682 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2856. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:44:57.680851 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2857. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:20.006534 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2858. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:20.006580 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2859. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:20.006775 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2860. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:39.520742 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+
+
+2861. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:50.008384 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2862. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:50.008432 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2863. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:50.008624 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2864. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:57.749807 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2865. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:57.749856 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2866. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:45:57.750019 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2867. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:20.010109 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2868. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:20.010152 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2869. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:20.010367 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2870. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:50.012741 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2871. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:50.012791 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2872. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:50.012981 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2873. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:57.773165 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2874. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:57.773224 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2875. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:46:57.773390 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2876. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:20.014526 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2877. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:20.014570 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2878. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:20.014779 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2879. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:50.016489 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2880. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:50.016552 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2881. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:50.016756 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2882. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:57.793513 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2883. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:57.793563 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2884. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:47:57.793724 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2885. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:04.682617 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+
+
+2886. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:20.018237 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2887. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:20.018297 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2888. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:20.018510 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2889. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:50.019918 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2890. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:50.019962 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2891. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:50.020155 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2892. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:57.874388 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2893. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:57.874437 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2894. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:48:57.874602 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2895. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:20.021639 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2896. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:20.021682 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2897. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:20.021881 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2898. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:50.023475 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2899. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:50.023533 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2900. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:50.023760 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2901. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:57.896529 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2902. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:57.896596 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2903. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:49:57.896753 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2904. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:15.912905 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+
+
+2905. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:20.025446 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2906. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:20.025516 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2907. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:20.025756 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2908. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:40.310910 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+
+
+2909. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:50.027500 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2910. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:50.027605 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2911. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:50.028055 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2912. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:57.999971 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2913. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:58.000019 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2914. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:50:58.000238 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2915. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:20.029675 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2916. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:20.029722 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2917. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:20.029920 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2918. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:50.031410 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2919. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:50.031457 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2920. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:50.031668 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2921. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:58.103886 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2922. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:58.103951 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2923. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:51:58.104112 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2924. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:20.033349 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2925. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:20.033405 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2926. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:20.033626 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2927. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:24.771273 [watchdogService 13265] DEBUG processing request GET_ALL_SERVICES
+
+
+2928. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:24.980825 [diag_service 13625] DEBUG collecting stats from watchdogService
+
+
+2929. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:24.981158 [watchdogService 13265] DEBUG processing request GET_RUNTIME_STATS
+
+
+2930. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:24.981456 [telemetry 13625] INFO watchdogService_isRunning_split:true
+
+
+2931. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:24.981971 [telemetry 13625] INFO watchdogService_procDied_split:0.000000
+
+
+2932. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:24.982397 [telemetry 13625] INFO watchdogService_procStartT_split:1783349093981.000000
+
+
+2933. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:50.035175 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2934. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:50.035224 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2935. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:50.035419 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2936. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:58.190787 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2937. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:58.190834 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2938. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:52:58.190998 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2939. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:20.036903 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2940. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:20.036945 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2941. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:20.037139 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2942. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:50.038631 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2943. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:50.038689 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2944. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:50.038851 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2945. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:58.211843 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2946. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:58.211893 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2947. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:53:58.212094 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2948. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:20.040213 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2949. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:20.040259 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2950. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:20.040470 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2951. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:50.041920 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2952. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:50.041962 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2953. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:50.042173 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2954. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:58.234394 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2955. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:58.234443 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2956. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:54:58.234640 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2957. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:20.043654 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2958. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:20.043699 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2959. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:20.043898 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2960. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:50.045384 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2961. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:50.045432 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2962. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:50.045627 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2963. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:58.257085 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2964. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:58.257131 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2965. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:55:58.257310 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2966. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:20.047160 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2967. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:20.047228 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2968. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:20.047437 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2969. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:50.049021 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2970. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:50.049083 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2971. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:50.049324 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2972. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:58.278529 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2973. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:58.278583 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2974. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:56:58.278749 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2975. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:20.050935 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2976. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:20.050980 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2977. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:20.051179 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2978. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:50.052679 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2979. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:50.052723 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2980. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:50.052945 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2981. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:58.297829 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2982. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:58.297882 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2983. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:57:58.298085 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2984. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:20.054385 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2985. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:20.054456 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2986. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:20.054651 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2987. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:50.056283 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2988. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:50.056353 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2989. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:50.056533 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2990. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:58.315714 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2991. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:58.315764 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+2992. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:58:58.315926 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+2993. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:20.058156 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2994. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:20.058203 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2995. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:20.058373 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2996. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:50.059904 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+2997. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:50.059958 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+2998. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:50.060172 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+2999. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:58.338746 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3000. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:58.338793 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3001. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 07:59:58.338957 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3002. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:20.061747 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3003. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:20.061813 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3004. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:20.062024 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3005. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:50.063420 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3006. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:50.063465 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3007. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:50.063625 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3008. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:58.359156 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3009. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:58.359266 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3010. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:00:58.359462 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3011. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:20.065178 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3012. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:20.065232 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3013. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:20.065391 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3014. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:50.066935 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3015. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:50.066988 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3016. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:50.067197 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3017. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:58.381719 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3018. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:58.381775 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3019. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:01:58.381931 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3020. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:20.068655 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3021. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:20.068699 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3022. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:20.068858 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3023. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:50.070241 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3024. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:50.070298 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3025. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:50.070506 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3026. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:58.405518 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3027. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:58.405578 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3028. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:02:58.405769 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3029. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:20.072164 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3030. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:20.072219 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3031. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:20.072417 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3032. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:50.074013 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3033. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:50.074059 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3034. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:50.074299 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3035. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:58.426681 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3036. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:58.426746 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3037. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:03:58.426970 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3038. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:20.075691 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3039. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:20.075751 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3040. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:20.075956 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3041. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:50.077486 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3042. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:50.077530 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3043. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:50.077688 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3044. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:55.573792 [deviceCommunicationWatchdog 13318] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+
+
+3045. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:58.493168 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3046. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:58.493233 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3047. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:04:58.493451 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3048. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:20.079359 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3049. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:20.079405 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3050. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:20.079603 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3051. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:50.081131 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3052. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:50.081172 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3053. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:50.081374 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3054. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:58.513365 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3055. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:58.513410 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3056. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:05:58.513573 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3057. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:20.082840 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3058. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:20.082894 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3059. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:20.083056 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3060. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:50.084559 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3061. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:50.084606 [SWWDog 13265] DEBUG swWatchdogPet: AWS Channel
+
+
+3062. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:50.084821 [SWWDogClient 13627] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+
+
+3063. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:58.533673 [watchdogService 13265] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+
+
+3064. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:58.533721 [SWWDog 13265] DEBUG swWatchdogPet: heartbeat
+
+
+3065. KERNEL_FAILURE (CRITICAL)
+
+2026-07-07 08:06:58.533921 [SWWDogClient 13318] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+
+
+3066. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+3067. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+
+
+3068. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+
+
+3069. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+
+
+3070. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+3071. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 04:24:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044302.826 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+3072. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 05:59:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050034.994 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+3073. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:07:11.135390<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3074. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:32:58.152049<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+
+
+3075. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:36:39.063028<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:86:b4:88:63:2f:77
+
+
+3076. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:50:04.573152<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+
+
+3077. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:51:51.259259<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:f6:86:1d:6b:95:3b
+
+
+3078. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:52:48.964013<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3079. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:54:27.086666<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:05:41:4e:bf:df
+
+
+3080. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:58:46.390108<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+3081. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:01:07.488342<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+3082. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:13:52.426849<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3083. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:19:07.743145<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3084. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:24:20.054714<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3085. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:12:11.216996<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3086. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:12:42.363283<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+3087. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:15:29.764678<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3088. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:59:49.967532<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+3089. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-06:12:02.941543<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:28:6b:b4:2a:74:1a
+

@@ -17,7 +17,7 @@ import sys
 from core.logger import setup_logging
 from extractor.recursive_extractor import RecursiveExtractor
 from utils.timestamp import create_timestamp_directory
-
+from discovery.log_discovery import LogDiscovery
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -84,6 +84,27 @@ def main() -> int:
             archive
         )
 
+        discovery = LogDiscovery()
+
+        logs = discovery.discover(
+            workspace
+        )
+
+
+        logger.info(
+            "Found %d log files",
+            len(logs)
+        )  
+
+
+        for log_file in logs:
+
+            logger.info(
+                "%s | %s bytes | %s",
+                log_file.filename,
+                log_file.size_bytes,
+                log_file.category
+            )
 
     except Exception:
 

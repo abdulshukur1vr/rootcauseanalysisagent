@@ -1,10 +1,20 @@
 """
-Archive helper functions.
+Archive handling utilities.
+
+Supports:
+
+- tar
+- tar.gz
+- tgz
+- tar.bz2
+- tar.xz
+- zip
 """
 
-import tarfile
 from pathlib import Path
-
+import tarfile
+import zipfile
+import logging
 
 
 class ArchiveError(Exception):
@@ -12,19 +22,44 @@ class ArchiveError(Exception):
 
 
 
-def is_tar_file(
-    file_path: Path
-) -> bool:
+logger = logging.getLogger(__name__)
+
+
+
+def is_archive(path: Path) -> bool:
+    """
+    Detect supported archive formats.
+    """
+
+    if not path.is_file():
+        return False
+
 
     try:
 
-        return tarfile.is_tarfile(
-            file_path
-        )
+        if tarfile.is_tarfile(path):
+            return True
+
+
+        if zipfile.is_zipfile(path):
+            return True
+
 
     except Exception:
 
         return False
+
+
+    return False
+
+
+
+def is_tar_file(path: Path) -> bool:
+    """
+    Backward compatibility for recursive extractor.
+    """
+
+    return is_archive(path)
 
 
 
@@ -32,13 +67,9 @@ def extract_tar(
     archive: Path,
     destination: Path
 ) -> None:
-
-    if not is_tar_file(archive):
-
-        raise ArchiveError(
-            f"Not a valid tar archive: {archive}"
-        )
-
+    """
+    Extract tar or zip archives.
+    """
 
     destination.mkdir(
         parents=True,
@@ -48,18 +79,55 @@ def extract_tar(
 
     try:
 
-        with tarfile.open(
-            archive,
-            "r:*"
-        ) as tar:
+        if tarfile.is_tarfile(archive):
 
-            tar.extractall(
-                destination
+            with tarfile.open(
+                archive,
+                "r:*"
+            ) as tar:
+
+                tar.extractall(
+                    destination
+                )
+
+
+            logger.info(
+                "Extracted TAR %s",
+                archive
             )
+
+            return
+
+
+
+        if zipfile.is_zipfile(archive):
+
+            with zipfile.ZipFile(
+                archive,
+                "r"
+            ) as zipf:
+
+                zipf.extractall(
+                    destination
+                )
+
+
+            logger.info(
+                "Extracted ZIP %s",
+                archive
+            )
+
+            return
+
 
 
     except Exception as exc:
 
         raise ArchiveError(
             f"Failed extracting {archive}: {exc}"
-        ) from exc
+        )
+
+
+    raise ArchiveError(
+        f"Unsupported archive format: {archive}"
+    )
