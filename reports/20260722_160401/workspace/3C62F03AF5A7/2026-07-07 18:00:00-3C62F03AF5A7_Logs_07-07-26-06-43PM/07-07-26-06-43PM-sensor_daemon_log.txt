@@ -1,0 +1,111 @@
+starting Sensor Daemon !!!!
+Config file matching with default conf:/etc/image_config_60Hz.ini
+start SensorDaemon service!
+Conf file /etc/debug.ini open success
+260707-00:00:30.698380 [mod=BREAKPAD, lvl=INFO] [tid=1593] breakpadwrap.cpp(21):Registering breakpad handler... 
+260707-00:00:30.700871 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp rdk logger enabled 
+260707-00:00:30.717085 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(133): Using secure config files. Lux Config: h!B( ,Sensor Config: ˜!B+
+260707-00:00:30.717579 [mod=RBUS, lvl=INFO] [tid=1593] rbus open for component: xsensor_provider
+260707-00:00:30.738704 [mod=RBUS, lvl=INFO] [tid=1593]  rbus open (xsensor_provider) success
+260707-00:00:30.739081 [mod=RBUS, lvl=INFO] [tid=1593] file /tmp/rbus_subs_xsensor_provider
+260707-00:00:30.739254 [mod=RBUS, lvl=ERROR] [tid=1593] failed to open file /tmp/rbus_subs_xsensor_provider
+260707-00:00:30.739325 [mod=RBUS, lvl=WARN] [tid=1593] removing corrupted file /tmp/rbus_subs_xsensor_provider
+260707-00:00:30.739469 [mod=RBUS, lvl=ERROR] [tid=1593] failed to remove /tmp/rbus_subs_xsensor_provider
+260707-00:00:30.795722 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(562) : Invoked XSensor::Init(/etc/image_config_60Hz.ini)
+day2night = 220
+image.brightness = 0
+image.contrast = 64
+image.env = 4
+image.flicker_effect = 1
+image.saturation = 64
+image.sharpness = 6
+image.slow_shutter_enable = 0
+night2day = 320
+260707-00:00:30.798710 [mod=XSENSOR, lvl=WARN] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(576) : Error loading User Settings
+260707-00:00:30.823785 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(643) : Lux User Settings 
+day2night = 220
+enabled = 1
+night2day = 320
+260707-00:00:30.824167 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(164) : Sensor initialization success2128128348 
+Connection established with kernel.
+---load mliso_adj_param---
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_image_priv_spot_mode.c: 669]/etc/idsp/adj_params/jx_f22_mliso_adj_param.bin /etc/idsp/adj_params/jx_f22_aeb_param.bin
+
+>>> pipline:1, hdr_mode:0, expo_num:1, raw_pitch:0
+>>> main:size 1920x1088, raw:1920x1088, resolution:10
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_01_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_02_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_03_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_04_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 153]load file /etc/idsp/reg.bin
+
+no translater for filter 10
+init 3A done
+loop start now
+>>> ======= [DONE] mw_start_aaa ======= 
+260707-02:34:24.884254 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_start_img_process Channel is Normal mode 
+260707-02:34:24.907411 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_enable_ae imghal_enable_ae :: enabled 
+260707-02:34:25.016976 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260707-02:34:25.017401 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_white_balance_settings Environment is Outdoor 
+260707-02:34:25.017558 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(696) : Started sensor with hdrDisabled,Outdoor
+260707-02:34:26.402633 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(187) : Night Vision setting is enabled
+ 260707-02:34:26.403277 [mod=RBUS, lvl=INFO] [tid=1593] rbus open for component: t2_lib_xsensor
+260707-02:34:26.404091 [mod=RBUS, lvl=INFO] [tid=1593]  rbus open (t2_lib_xsensor) success
+260707-02:34:26.418816 [mod=RBUS, lvl=ERROR] [tid=1593] rbus_get for Telemetry.ReportProfiles.xsensor.EventMarkerList failed with error: Entry not found error
+260707-02:34:26.435414 [mod=RBUS, lvl=INFO] [tid=1593] Telemetry.ReportProfiles.ProfilesUpdated subscribe retries succeeded
+260707-02:35:20.058714 [mod=RBUS, lvl=ERROR] [tid=1758] rbus_get for Telemetry.ReportProfiles.xsensor.EventMarkerList failed with error: Entry not found error
+260707-03:29:48.320133 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(256) : Night mode switching Luminance day2nightLumaCount :140,3
+260707-03:29:48.320476 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter enabled
+ 260707-03:29:48.320564 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-03:29:48.320630 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260707-03:29:49.597332 [mod=XSENSOR, lvl=INFO] [tid=1593] Night mode is enabled 
+260707-03:30:18.484210 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(239) : Day mode switching Luminance night2dayLumaCount:3420,3
+260707-03:30:19.763451 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter disabled
+ 260707-03:30:19.763581 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-03:30:19.763678 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is enabled.
+260707-03:30:19.870259 [mod=XSENSOR, lvl=INFO] [tid=1593] Day  mode is enabled 
+260707-06:20:04.101711 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(256) : Night mode switching Luminance day2nightLumaCount :120,3
+260707-06:20:04.101981 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter enabled
+ 260707-06:20:04.102060 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-06:20:04.102122 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260707-06:20:05.374963 [mod=XSENSOR, lvl=INFO] [tid=1593] Night mode is enabled 
+260707-06:20:09.000109 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(239) : Day mode switching Luminance night2dayLumaCount:2880,3
+260707-06:20:10.257285 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter disabled
+ 260707-06:20:10.257686 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-06:20:10.257816 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is enabled.
+260707-06:20:10.371941 [mod=XSENSOR, lvl=INFO] [tid=1593] Day  mode is enabled 
+260707-06:25:03.594230 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(256) : Night mode switching Luminance day2nightLumaCount :100,3
+260707-06:25:03.594501 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter enabled
+ 260707-06:25:03.594583 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-06:25:03.594646 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260707-06:25:04.945079 [mod=XSENSOR, lvl=INFO] [tid=1593] Night mode is enabled 
+260707-08:17:27.072613 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(239) : Day mode switching Luminance night2dayLumaCount:2840,3
+260707-08:17:28.339086 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter disabled
+ 260707-08:17:28.339351 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-08:17:28.339447 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is enabled.
+260707-08:17:28.466949 [mod=XSENSOR, lvl=INFO] [tid=1593] Day  mode is enabled 
+260707-08:20:09.793287 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(256) : Night mode switching Luminance day2nightLumaCount :40,3
+260707-08:20:09.793541 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter enabled
+ 260707-08:20:09.793617 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-08:20:09.793680 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260707-08:20:11.089776 [mod=XSENSOR, lvl=INFO] [tid=1593] Night mode is enabled 
+260707-08:21:36.517440 [mod=RBUS, lvl=ERROR] [tid=1758] rbus_get for Telemetry.ReportProfiles.xsensor.EventMarkerList failed with error: Entry not found error
+260707-11:02:39.872386 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(239) : Day mode switching Luminance night2dayLumaCount:360,3
+260707-11:02:41.205077 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter disabled
+ 260707-11:02:41.205218 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-11:02:41.205292 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is enabled.
+260707-11:02:41.275304 [mod=XSENSOR, lvl=INFO] [tid=1593] Day  mode is enabled 
+260707-11:03:52.912501 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(256) : Night mode switching Luminance day2nightLumaCount :200,3
+260707-11:03:52.912972 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter enabled
+ 260707-11:03:52.913101 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-11:03:52.913235 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260707-11:03:54.235736 [mod=XSENSOR, lvl=INFO] [tid=1593] Night mode is enabled 
+260707-11:04:42.424092 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(239) : Day mode switching Luminance night2dayLumaCount:340,3
+260707-11:04:43.686354 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(347) : slow_shutter disabled
+ 260707-11:04:43.686496 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(348) : anti_flicker_mode enabled 
+260707-11:04:43.686569 [mod=XSENSOR, lvl=INFO] [tid=1593] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is enabled.
+260707-11:04:43.784483 [mod=XSENSOR, lvl=INFO] [tid=1593] Day  mode is enabled 

@@ -1,0 +1,21 @@
+06.07.2026_00:00.14 [start_prvnmanager.sh] INFO Checking SecurePartition mount status
+06.07.2026_00:00.14 [start_prvnmanager.sh] WARN SecurePartition is not mounted (Attempt retry 0 of 10)
+06.07.2026_00:00.15 [start_prvnmanager.sh] WARN SecurePartition is not mounted (Attempt retry 1 of 10)
+06.07.2026_00:00.16 [start_prvnmanager.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+06.07.2026_00:00.16 [start_prvnmanager.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+06.07.2026_00:00.16 Defined Config Files Path as SecurePartition usr_config path in start_prvnmanager.sh
+Starting provision manager services
+ 06.07.2026_00:00.16 waiting for prvnmgr to start
+Conf file /etc/debug.ini open success
+260706-00:00:27.213878 [mod=PRVNMGR, lvl=INFO] [tid=1297] Secure WPA_CONFIG_FILE : /opt/SecurePartition/wifi/wpa_supplicant.conf
+260706-00:00:27.246287 [mod=PRVNMGR, lvl=INFO] [tid=1297] Camera is already provisioned
+260706-00:00:27.246985 [mod=RBUS, lvl=INFO] [tid=1297] rbus open for component: t2_lib_prvnmgr
+260706-00:00:27.256407 [mod=RBUS, lvl=INFO] [tid=1297]  rbus open (t2_lib_prvnmgr) success
+260706-00:00:27.265400 [mod=RBUS, lvl=ERROR] [tid=1297] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260706-00:00:27.266012 [mod=PRVNMGR, lvl=INFO] [tid=1297] Created thread : 1940907056
+260706-00:00:27.268911 [mod=PRVNMGR, lvl=INFO] [tid=1304] Waiting for button press event from XW
+06.07.2026_05:00.01 The hci name doesn't have model name
+< HCI Command: ogf 0x08, ocf 0x0008, plen 1
+  1F 
+> HCI Event: 0x0e plen 4
+  02 08 20 00 

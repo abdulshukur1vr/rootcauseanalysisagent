@@ -1,0 +1,61 @@
+61
+260709-19:05:19.642454 [mod=MESH, lvl=INFO] [tid=12291] Pod link change detected
+260709-19:05:19.642507 [mod=MESH, lvl=INFO] [tid=12291] Event DHCP_ACK_BHAUL_EVENT recvd, moving to state POD_CONNECTED_ST MAC: 8c:c5:b4:e7:8a:cc 
+260709-19:05:19.643250 [mod=MESH, lvl=WARN] [tid=12291] valStructs[0]->parameterValue = false
+260709-19:05:19.664637 Meshwifi has been enabled
+260709-19:05:19.720215 CONNECTED_Pods:Total_WiFi-2.4G_Pods=0
+260709-19:05:19.722321 CONNECTED_Pods:Total_WiFi-5.0G_Pods=1
+260709-19:05:23.147358 POD_BACKHAUL_MAC: 8c:c5:b4:e7:8a:d0,
+260709-19:05:23.149154 POD_BACKHAUL_LINK: WiFi,
+260709-19:05:23.151103 POD_BACKHAUL_PORT: 13
+260709-19:05:47.641207 [mod=MESH, lvl=INFO] [tid=10516] Pod ethernet bhaul mode get
+260709-19:05:49.298381 [mod=MESH, lvl=ERROR] [tid=10873] Received MESH_WIFI_OFF_CHAN_ENABLE Notification
+260709-19:05:49.298431 [mod=MESH, lvl=INFO] [tid=10873] off_channel_enable=true
+260709-19:05:49.298446 [mod=MESH, lvl=INFO] [tid=10873] Sending off chan status to msgQ 
+260709-19:29:55.099369 [mod=MESH, lvl=INFO] [tid=12291] Pod link change detected
+260709-19:29:55.099411 [mod=MESH, lvl=INFO] [tid=12291] Event DHCP_ACK_BHAUL_EVENT recvd, moving to state POD_CONNECTED_ST MAC: 9c:24:72:20:cd:64 
+260709-19:29:55.100130 [mod=MESH, lvl=WARN] [tid=12291] valStructs[0]->parameterValue = false
+260709-19:29:55.121548 Meshwifi has been enabled
+260709-19:29:55.178263 CONNECTED_Pods:Total_WiFi-2.4G_Pods=0
+260709-19:29:55.180415 CONNECTED_Pods:Total_WiFi-5.0G_Pods=1
+260709-19:29:58.467654 POD_BACKHAUL_MAC: 8c:c5:b4:e7:8a:d0,
+260709-19:29:58.469902 POD_BACKHAUL_LINK: WiFi,
+260709-19:29:58.472074 POD_BACKHAUL_PORT: 13
+260709-19:30:42.090692 [mod=MESH, lvl=INFO] [tid=12291] Pod link change detected
+260709-19:30:42.090736 [mod=MESH, lvl=INFO] [tid=12291] Event DHCP_ACK_BHAUL_EVENT recvd, moving to state POD_CONNECTED_ST MAC: 9c:24:72:20:cd:64 
+260709-19:30:42.091495 [mod=MESH, lvl=WARN] [tid=12291] valStructs[0]->parameterValue = false
+260709-19:30:42.112346 Meshwifi has been enabled
+260709-19:30:42.169554 CONNECTED_Pods:Total_WiFi-2.4G_Pods=0
+260709-19:30:42.171775 CONNECTED_Pods:Total_WiFi-5.0G_Pods=1
+260709-19:30:45.408266 POD_BACKHAUL_MAC: 8c:c5:b4:e7:8a:d0,
+260709-19:30:45.410143 POD_BACKHAUL_LINK: WiFi,
+260709-19:30:45.411705 POD_BACKHAUL_PORT: 13
+260709-19:32:45.830068 [mod=MESH, lvl=INFO] [tid=12291] Pod link change detected
+260709-19:32:45.830111 [mod=MESH, lvl=INFO] [tid=12291] Event DHCP_ACK_BHAUL_EVENT recvd, moving to state POD_CONNECTED_ST MAC: 9c:24:72:20:cd:64 
+260709-19:32:45.833813 [mod=MESH, lvl=WARN] [tid=12291] valStructs[0]->parameterValue = false
+260709-19:32:45.856782 Meshwifi has been enabled
+260709-19:32:45.919682 CONNECTED_Pods:Total_WiFi-2.4G_Pods=0
+260709-19:32:45.922012 CONNECTED_Pods:Total_WiFi-5.0G_Pods=1
+260709-19:32:49.195742 POD_BACKHAUL_MAC: 8c:c5:b4:e7:8a:d0,
+260709-19:32:49.197639 POD_BACKHAUL_LINK: WiFi,
+260709-19:32:49.199391 POD_BACKHAUL_PORT: 13
+260709-19:36:08.015424 [mod=MESH, lvl=INFO] [tid=10864] Mesh_ProcessSyncMessage - MESH_BACKUP_NETWORK message received.
+260709-19:36:08.015479 [mod=MESH, lvl=INFO] [tid=10864] Received MESH_BACKUP_NETWORK for Gateway interface : pgd1-85 
+260709-19:36:08.121371 [mod=MESH, lvl=ERROR] [tid=10864] Failed to add VLAN 200 to pgd1-85
+260709-19:36:08.179372 [mod=MESH, lvl=INFO] [tid=10864] Mesh_ext_create_lanVlans lan vlan: pgd1-85.100, bridge: brlan0
+260709-19:36:08.220391 [mod=MESH, lvl=ERROR] [tid=10864] Failed to add VLAN 100 to pgd1-85
+260709-19:36:08.276027 [mod=MESH, lvl=INFO] [tid=10864] Mesh_ext_create_lanVlans lan vlan: pgd1-85.101, bridge: brlan1
+260709-19:36:08.318524 [mod=MESH, lvl=ERROR] [tid=10864] Failed to add VLAN 101 to pgd1-85
+260709-19:36:08.373180 [mod=MESH, lvl=INFO] [tid=10864] Mesh_ext_create_lanVlans lan vlan: pgd1-85.106, bridge: br106
+260709-19:36:08.418752 [mod=MESH, lvl=ERROR] [tid=10864] Failed to add VLAN 106 to pgd1-85
+260709-19:36:08.469351 [mod=MESH, lvl=INFO] [tid=10864] Notify MESH_BACKUP_NETWORK cmd:up connect: 1
+260709-19:36:08.469794 [mod=MESH, lvl=INFO] [tid=10864] Notify MESH_BACKUP_NETWORK current:1, previous:1
+260709-19:36:10.891529 [mod=MESH, lvl=INFO] [tid=12291] Pod link change detected
+260709-19:36:10.891577 [mod=MESH, lvl=INFO] [tid=12291] Event DHCP_ACK_BHAUL_EVENT recvd, moving to state POD_CONNECTED_ST MAC: 9c:24:72:20:cd:64 
+260709-19:36:10.892260 [mod=MESH, lvl=WARN] [tid=12291] valStructs[0]->parameterValue = false
+260709-19:36:10.916446 Meshwifi has been enabled
+260709-19:36:10.982848 CONNECTED_Pods:Total_WiFi-2.4G_Pods=0
+260709-19:36:10.985014 CONNECTED_Pods:Total_WiFi-5.0G_Pods=2
+260709-19:36:14.373721 POD_BACKHAUL_MAC: 8c:c5:b4:e7:8a:d0, 9c:24:72:20:cd:68,
+260709-19:36:14.375946 POD_BACKHAUL_LINK: WiFi, WiFi,
+260709-19:36:14.378026 POD_BACKHAUL_PORT: 13 13

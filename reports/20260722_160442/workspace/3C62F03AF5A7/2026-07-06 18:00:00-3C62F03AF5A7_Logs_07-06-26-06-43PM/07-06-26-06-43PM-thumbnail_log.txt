@@ -1,0 +1,309 @@
+260706-17:11:11.367556 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:11:12.673644 [mod=BREAKPAD, lvl=INFO] [tid=3681] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:11:12.681086 [mod=XSTREAM, lvl=INFO] [tid=3681] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:11:12.691221 [mod=XSTREAM, lvl=INFO] [tid=3681] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:11:12.691380 [mod=XSTREAM, lvl=INFO] [tid=3681] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:11:12.932339 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=3681] main(106): RdkC Snapshooter success
+260706-17:11:12.939301 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=3681] Close(404) RAWClose Successful!!!
+260706-17:11:12.951175 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12129
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:11:13.395005 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 441
+260706-17:11:13.401187 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25678
+260706-17:11:13.412868 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 3
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:11:13.419181 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:11:13.419309 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 28 secs
+260706-17:11:41.421243 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:11:42.900583 [mod=BREAKPAD, lvl=INFO] [tid=3887] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:11:42.906758 [mod=XSTREAM, lvl=INFO] [tid=3887] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:11:42.922162 [mod=XSTREAM, lvl=INFO] [tid=3887] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:11:42.922351 [mod=XSTREAM, lvl=INFO] [tid=3887] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:11:43.286506 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=3887] main(106): RdkC Snapshooter success
+260706-17:11:43.291234 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=3887] Close(404) RAWClose Successful!!!
+260706-17:11:43.309973 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12154
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:11:44.016654 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 704
+260706-17:11:44.023545 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25744
+260706-17:11:44.026886 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 4
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:11:44.036517 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:11:44.036645 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 27 secs
+260706-17:12:11.037779 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:12:12.516653 [mod=BREAKPAD, lvl=INFO] [tid=4478] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:12:12.520174 [mod=XSTREAM, lvl=INFO] [tid=4478] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:12:12.527682 [mod=XSTREAM, lvl=INFO] [tid=4478] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:12:12.527860 [mod=XSTREAM, lvl=INFO] [tid=4478] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:12:12.775265 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=4478] main(106): RdkC Snapshooter success
+260706-17:12:12.779823 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=4478] Close(404) RAWClose Successful!!!
+260706-17:12:12.794411 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12152
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:12:13.222073 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 425
+260706-17:12:13.231967 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25766
+260706-17:12:13.235863 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 5
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:12:13.255820 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:12:13.255973 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 28 secs
+260706-17:12:41.263528 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:12:42.518371 [mod=BREAKPAD, lvl=INFO] [tid=4986] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:12:42.535365 [mod=XSTREAM, lvl=INFO] [tid=4986] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:12:42.541534 [mod=XSTREAM, lvl=INFO] [tid=4986] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:12:42.541679 [mod=XSTREAM, lvl=INFO] [tid=4986] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:12:42.858999 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=4986] main(106): RdkC Snapshooter success
+260706-17:12:42.893021 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=4986] Close(404) RAWClose Successful!!!
+260706-17:12:42.913798 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12574
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:12:43.435149 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 517
+260706-17:12:43.440967 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:26244
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:12:43.445019 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-17:12:43.445144 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+260706-17:16:17.833091 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(603): Wait over due to uploadReady flag!!
+260706-17:16:17.833226 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1391): Ding or Active suration set!!!  need to send thumbnail immediatly 
+Conf file /etc/debug.ini open success
+260706-17:16:19.152825 [mod=BREAKPAD, lvl=INFO] [tid=8439] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:16:19.157082 [mod=XSTREAM, lvl=INFO] [tid=8439] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:16:19.164100 [mod=XSTREAM, lvl=INFO] [tid=8439] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:16:19.164261 [mod=XSTREAM, lvl=INFO] [tid=8439] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:16:19.359387 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=8439] main(106): RdkC Snapshooter success
+260706-17:16:19.363951 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=8439] Close(404) RAWClose Successful!!!
+260706-17:16:19.388197 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12522
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:16:20.230362 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 837
+260706-17:16:20.235461 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25662
+260706-17:16:20.238313 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 1
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:16:20.270599 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:16:20.270958 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 27 secs
+06.07.2026_17:16.46 livecache_enabled=true!
+260706-17:16:47.294897 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:16:48.582202 [mod=BREAKPAD, lvl=INFO] [tid=9068] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:16:48.589628 [mod=XSTREAM, lvl=INFO] [tid=9068] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:16:48.637515 [mod=XSTREAM, lvl=INFO] [tid=9068] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:16:48.637707 [mod=XSTREAM, lvl=INFO] [tid=9068] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:16:49.223923 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=9068] main(106): RdkC Snapshooter success
+260706-17:16:49.264594 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=9068] Close(404) RAWClose Successful!!!
+260706-17:16:49.299263 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12484
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:16:49.916795 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 614
+260706-17:16:49.920111 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:24735
+260706-17:16:49.922656 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 2
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:16:49.932942 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:16:49.933201 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 27 secs
+260706-17:17:16.949772 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:17:18.213095 [mod=BREAKPAD, lvl=INFO] [tid=9662] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:17:18.217385 [mod=XSTREAM, lvl=INFO] [tid=9662] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:17:18.223563 [mod=XSTREAM, lvl=INFO] [tid=9662] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:17:18.224400 [mod=XSTREAM, lvl=INFO] [tid=9662] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:17:18.472542 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=9662] main(106): RdkC Snapshooter success
+260706-17:17:18.492866 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=9662] Close(404) RAWClose Successful!!!
+260706-17:17:18.502473 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12527
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:17:19.017991 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 513
+260706-17:17:19.020836 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25012
+260706-17:17:19.023474 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 3
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:17:19.027282 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:17:19.027435 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 28 secs
+260706-17:17:47.029502 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:17:48.338762 [mod=BREAKPAD, lvl=INFO] [tid=10112] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:17:48.344385 [mod=XSTREAM, lvl=INFO] [tid=10112] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:17:48.364452 [mod=XSTREAM, lvl=INFO] [tid=10112] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:17:48.364635 [mod=XSTREAM, lvl=INFO] [tid=10112] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:17:48.597860 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=10112] main(106): RdkC Snapshooter success
+260706-17:17:48.621914 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=10112] Close(404) RAWClose Successful!!!
+260706-17:17:48.636285 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12529
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:17:49.157498 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 518
+260706-17:17:49.160424 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25523
+260706-17:17:49.163080 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 4
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:17:49.166925 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:17:49.167051 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 28 secs
+260706-17:18:17.168819 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:18:18.421727 [mod=BREAKPAD, lvl=INFO] [tid=10538] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:18:18.425361 [mod=XSTREAM, lvl=INFO] [tid=10538] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:18:18.432909 [mod=XSTREAM, lvl=INFO] [tid=10538] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:18:18.433095 [mod=XSTREAM, lvl=INFO] [tid=10538] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:18:18.715053 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=10538] main(106): RdkC Snapshooter success
+260706-17:18:18.723465 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=10538] Close(404) RAWClose Successful!!!
+260706-17:18:18.746982 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12505
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:18:19.347384 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 598
+260706-17:18:19.355948 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25059
+260706-17:18:19.358938 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1191): Active mode, Upload Count 5
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:18:19.365175 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 30, Enabled = true
+260706-17:18:19.365304 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 28 secs
+260706-17:18:47.367070 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:18:48.668752 [mod=BREAKPAD, lvl=INFO] [tid=10950] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:18:48.683783 [mod=XSTREAM, lvl=INFO] [tid=10950] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:18:48.690692 [mod=XSTREAM, lvl=INFO] [tid=10950] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:18:48.690858 [mod=XSTREAM, lvl=INFO] [tid=10950] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:18:48.915248 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=10950] main(106): RdkC Snapshooter success
+260706-17:18:48.919810 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=10950] Close(404) RAWClose Successful!!!
+260706-17:18:48.946525 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12524
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:18:49.367109 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 418
+260706-17:18:49.370382 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:26423
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:18:49.374349 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-17:18:49.374475 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_17:24.20 livecache_enabled=true!
+260706-17:28:47.374726 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:28:48.638825 [mod=BREAKPAD, lvl=INFO] [tid=20708] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:28:48.653841 [mod=XSTREAM, lvl=INFO] [tid=20708] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:28:48.680527 [mod=XSTREAM, lvl=INFO] [tid=20708] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:28:48.680719 [mod=XSTREAM, lvl=INFO] [tid=20708] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:28:48.909451 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=20708] main(106): RdkC Snapshooter success
+260706-17:28:48.914316 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=20708] Close(404) RAWClose Successful!!!
+260706-17:28:48.923068 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12272
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:28:49.413113 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 483
+260706-17:28:49.415938 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25828
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:28:49.420505 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-17:28:49.420631 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_17:31.53 livecache_enabled=true!
+260706-17:38:47.420822 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:38:48.688156 [mod=BREAKPAD, lvl=INFO] [tid=30118] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:38:48.692082 [mod=XSTREAM, lvl=INFO] [tid=30118] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:38:48.713355 [mod=XSTREAM, lvl=INFO] [tid=30118] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:38:48.715194 [mod=XSTREAM, lvl=INFO] [tid=30118] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:38:48.932763 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=30118] main(106): RdkC Snapshooter success
+260706-17:38:48.937559 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=30118] Close(404) RAWClose Successful!!!
+260706-17:38:48.941664 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12283
+Auth token begins with (Bearer eyJ) and ends with (SmX8c)
+260706-17:38:49.413136 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 468
+260706-17:38:49.416457 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:25701
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:38:49.420168 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-17:38:49.420295 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_17:39.27 livecache_enabled=true!
+06.07.2026_17:47.02 livecache_enabled=true!
+260706-17:48:47.421098 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:48:48.716056 [mod=BREAKPAD, lvl=INFO] [tid=7747] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:48:48.719555 [mod=XSTREAM, lvl=INFO] [tid=7747] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:48:48.725869 [mod=XSTREAM, lvl=INFO] [tid=7747] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:48:48.726169 [mod=XSTREAM, lvl=INFO] [tid=7747] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:48:48.987745 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=7747] main(106): RdkC Snapshooter success
+260706-17:48:49.003253 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=7747] Close(404) RAWClose Successful!!!
+260706-17:48:49.028074 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12273
+Auth token begins with (Bearer eyJ) and ends with (Z__hE)
+260706-17:48:49.509365 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 477
+260706-17:48:49.512834 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:26542
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:48:49.516611 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-17:48:49.516736 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_17:54.36 livecache_enabled=true!
+260706-17:58:47.523023 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-17:58:48.758367 [mod=BREAKPAD, lvl=INFO] [tid=17482] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-17:58:48.762049 [mod=XSTREAM, lvl=INFO] [tid=17482] stream_hal_raw_init(1488): ENCODE is ready
+260706-17:58:48.797399 [mod=XSTREAM, lvl=INFO] [tid=17482] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-17:58:48.797792 [mod=XSTREAM, lvl=INFO] [tid=17482] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-17:58:49.045650 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=17482] main(106): RdkC Snapshooter success
+260706-17:58:49.054174 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=17482] Close(404) RAWClose Successful!!!
+260706-17:58:49.062515 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12254
+Auth token begins with (Bearer eyJ) and ends with (Z__hE)
+260706-17:58:49.541045 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 464
+260706-17:58:49.544036 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:26318
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-17:58:49.548639 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-17:58:49.548763 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_18:02.10 livecache_enabled=true!
+260706-18:08:47.549095 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-18:08:48.836739 [mod=BREAKPAD, lvl=INFO] [tid=27036] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-18:08:48.850967 [mod=XSTREAM, lvl=INFO] [tid=27036] stream_hal_raw_init(1488): ENCODE is ready
+260706-18:08:48.857220 [mod=XSTREAM, lvl=INFO] [tid=27036] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-18:08:48.857374 [mod=XSTREAM, lvl=INFO] [tid=27036] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-18:08:49.135549 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=27036] main(106): RdkC Snapshooter success
+260706-18:08:49.140083 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=27036] Close(404) RAWClose Successful!!!
+260706-18:08:49.146713 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12267
+Auth token begins with (Bearer eyJ) and ends with (Z__hE)
+260706-18:08:49.574283 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 413
+260706-18:08:49.577382 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:26948
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-18:08:49.581320 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-18:08:49.581448 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_18:09.42 livecache_enabled=true!
+06.07.2026_18:17.17 livecache_enabled=true!
+260706-18:18:47.583250 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-18:18:48.839242 [mod=BREAKPAD, lvl=INFO] [tid=4679] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-18:18:48.851432 [mod=XSTREAM, lvl=INFO] [tid=4679] stream_hal_raw_init(1488): ENCODE is ready
+260706-18:18:48.859447 [mod=XSTREAM, lvl=INFO] [tid=4679] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-18:18:48.859609 [mod=XSTREAM, lvl=INFO] [tid=4679] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-18:18:49.126827 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=4679] main(106): RdkC Snapshooter success
+260706-18:18:49.139386 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=4679] Close(404) RAWClose Successful!!!
+260706-18:18:49.165806 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12245
+Auth token begins with (Bearer eyJ) and ends with (Z__hE)
+260706-18:18:49.658430 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 486
+260706-18:18:49.662204 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:27972
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-18:18:49.666861 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-18:18:49.666989 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_18:24.51 livecache_enabled=true!
+260706-18:28:47.667325 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-18:28:48.964868 [mod=BREAKPAD, lvl=INFO] [tid=14273] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-18:28:48.979104 [mod=XSTREAM, lvl=INFO] [tid=14273] stream_hal_raw_init(1488): ENCODE is ready
+260706-18:28:49.010541 [mod=XSTREAM, lvl=INFO] [tid=14273] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-18:28:49.011133 [mod=XSTREAM, lvl=INFO] [tid=14273] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-18:28:49.502989 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=14273] main(106): RdkC Snapshooter success
+260706-18:28:49.562962 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=14273] Close(404) RAWClose Successful!!!
+260706-18:28:49.567054 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12236
+Auth token begins with (Bearer eyJ) and ends with (Z__hE)
+260706-18:28:50.211312 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 641
+260706-18:28:50.221663 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:27850
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-18:28:50.230293 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-18:28:50.237269 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 597 secs
+06.07.2026_18:32.25 livecache_enabled=true!
+260706-18:38:47.237539 [mod=SMARTTHUMBNAIL, lvl=INFO] [tid=21977] waitFor(609): Wait over due to timeout!!
+Conf file /etc/debug.ini open success
+260706-18:38:48.528106 [mod=BREAKPAD, lvl=INFO] [tid=23841] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-18:38:48.532473 [mod=XSTREAM, lvl=INFO] [tid=23841] stream_hal_raw_init(1488): ENCODE is ready
+260706-18:38:48.544082 [mod=XSTREAM, lvl=INFO] [tid=23841] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 2 width 1280 height 720
+260706-18:38:48.544484 [mod=XSTREAM, lvl=INFO] [tid=23841] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260706-18:38:48.790315 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=23841] main(106): RdkC Snapshooter success
+260706-18:38:48.795730 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=23841] Close(404) RAWClose Successful!!!
+260706-18:38:48.799847 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1129): Post file /opt/tn_snapshot.jpg to https://camera-thumbnail-prod-d.cvr.comcast.net/camera/3C62F03AF5A7/thumbnail with size : 12396
+Auth token begins with (Bearer eyJ) and ends with (Z__hE)
+260706-18:38:49.320309 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(896): Data post Successfully, Response Code : 204, Upload Duration(in ms) : 515
+260706-18:38:49.323536 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] Simple Moving Average Upload speed:27814
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-18:38:49.330917 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp: 818: Thumbnail Upload parameters : URL = https://camera-thumbnail-prod-d.cvr.comcast.net/camera, Interval = 600, Enabled = true
+260706-18:38:49.331046 [mod=THUMBNAILUPLOAD, lvl=INFO] [tid=21977] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/thumbnail-camera/git-r0/git/src/thumbnailUpload.cpp(1373): Wait till next upload interval, waiting for 598 secs
+06.07.2026_18:39.59 livecache_enabled=true!

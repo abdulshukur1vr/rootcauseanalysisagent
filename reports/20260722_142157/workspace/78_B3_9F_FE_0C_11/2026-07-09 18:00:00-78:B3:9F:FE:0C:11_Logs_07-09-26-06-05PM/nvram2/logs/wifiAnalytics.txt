@@ -1,0 +1,44 @@
+44
+MGR -> CORE : keep-alive : minutes:4375 user:1.616379 system:1.403671
+HAL -> CORE : radio_stats : Radio0_Stats channel: 6 bw:20MHz noise_floor:-90 channel_util:60 channel_interference:0
+HAL -> CORE : radio_stats : Radio1_Stats channel: 157 bw:80MHz noise_floor:-92 channel_util:41 channel_interference:0
+HAL -> CORE : radio_stats : Radio2_Stats channel: 69 bw:320MHz noise_floor:-86 channel_util:1 channel_interference:0
+"86:05:41:4e:bf:df" -> CORE : stats : rssi:-69dbm good/bad rssi:33/235 rapid reconnects:0 vap index:16
+"78:80:38:d9:b6:5a" -> CORE : stats : rssi:-66dbm good/bad rssi:14/263 rapid reconnects:0 vap index:1
+"4a:0d:d7:1e:65:27" -> CORE : stats : rssi:-67dbm good/bad rssi:272/5 rapid reconnects:0 vap index:1
+"96:ae:3d:3a:20:31" -> CORE : stats : rssi:-53dbm good/bad rssi:277/0 rapid reconnects:0 vap index:1
+"da:5c:01:69:dd:5b" -> CORE : stats : rssi:-57dbm good/bad rssi:277/0 rapid reconnects:0 vap index:1
+"1c:53:f9:8c:e2:f1" -> CORE : stats : rssi:-56dbm good/bad rssi:277/0 rapid reconnects:0 vap index:1
+"28:6b:b4:2a:74:1a" -> CORE : stats : rssi:-59dbm good/bad rssi:282/0 rapid reconnects:0 vap index:0
+"8c:c5:b4:e7:8a:d0" -> CORE : stats : rssi:-60dbm good/bad rssi:275/0 rapid reconnects:0 vap index:13
+"3c:62:f0:39:62:a0" -> CORE : stats : rssi:-64dbm good/bad rssi:171/106 rapid reconnects:0 vap index:1
+"9c:24:72:20:cd:68" -> CORE : stats : rssi:-70dbm good/bad rssi:0/275 rapid reconnects:0 vap index:13
+"a4:57:a0:1f:d9:d5" -> CORE : stats : rssi:-34dbm good/bad rssi:282/0 rapid reconnects:0 vap index:0
+HAL -> CORE : connect : "b6:59:60:77:25:c4" vap index:1
+HAL -> CORE : disconnect : "b6:59:60:77:25:c4" vap index:16 reason:0
+CORE -> OVSM : status : webconfig_subdoc_type_associated_clients
+HAL -> CORE : disconnect : "b6:59:60:77:25:c4" vap index:1 reason:0
+CORE -> OVSM : status : webconfig_subdoc_type_associated_clients
+HAL -> CORE : connect : "b6:59:60:77:25:c4" vap index:16
+CORE -> OVSM : status : webconfig_subdoc_type_associated_clients
+MGR -> CORE : keep-alive : utc:260709-17:47:55.032278 user:1.621922 system:1.261911
+HAL -> CORE : radio_stats : Radio0_Stats channel: 6 bw:20MHz noise_floor:-87 channel_util:53 channel_interference:0
+HAL -> CORE : radio_stats : Radio1_Stats channel: 157 bw:80MHz noise_floor:-93 channel_util:48 channel_interference:0
+HAL -> CORE : radio_stats : Radio2_Stats channel: 69 bw:320MHz noise_floor:-86 channel_util:3 channel_interference:0
+"b6:59:60:77:25:c4" -> CORE : stats : rssi:-66dbm good/bad rssi:122/28 rapid reconnects:0 vap index:16
+"86:05:41:4e:bf:df" -> CORE : stats : rssi:-55dbm good/bad rssi:150/408 rapid reconnects:0 vap index:16
+"78:80:38:d9:b6:5a" -> CORE : stats : rssi:-66dbm good/bad rssi:38/535 rapid reconnects:0 vap index:1
+"4a:0d:d7:1e:65:27" -> CORE : stats : rssi:-58dbm good/bad rssi:519/54 rapid reconnects:0 vap index:1
+"96:ae:3d:3a:20:31" -> CORE : stats : rssi:-52dbm good/bad rssi:573/0 rapid reconnects:0 vap index:1
+"da:5c:01:69:dd:5b" -> CORE : stats : rssi:-62dbm good/bad rssi:573/0 rapid reconnects:0 vap index:1
+"1c:53:f9:8c:e2:f1" -> CORE : stats : rssi:-57dbm good/bad rssi:573/0 rapid reconnects:0 vap index:1
+"28:6b:b4:2a:74:1a" -> CORE : stats : rssi:-64dbm good/bad rssi:580/5 rapid reconnects:0 vap index:0
+"8c:c5:b4:e7:8a:d0" -> CORE : stats : rssi:-60dbm good/bad rssi:567/0 rapid reconnects:0 vap index:13
+"3c:62:f0:39:62:a0" -> CORE : stats : rssi:-66dbm good/bad rssi:250/323 rapid reconnects:0 vap index:1
+"9c:24:72:20:cd:68" -> CORE : stats : rssi:-69dbm good/bad rssi:0/567 rapid reconnects:0 vap index:13
+"a4:57:a0:1f:d9:d5" -> CORE : stats : rssi:-34dbm good/bad rssi:585/0 rapid reconnects:0 vap index:0
+HAL -> CORE : disconnect : "b6:59:60:77:25:c4" vap index:1 reason:0
+HAL -> CORE : disconnect : "9c:24:72:20:cd:68" vap index:13 reason:4
+CORE -> OVSM : status : webconfig_subdoc_type_associated_clients
+HAL -> CORE : connect : "20:f1:b2:8d:c0:a8" vap index:0
+CORE -> OVSM : status : webconfig_subdoc_type_associated_clients

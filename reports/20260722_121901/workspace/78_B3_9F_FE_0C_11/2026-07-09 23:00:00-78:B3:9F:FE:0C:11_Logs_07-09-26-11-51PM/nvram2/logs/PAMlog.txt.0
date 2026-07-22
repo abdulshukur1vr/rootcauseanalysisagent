@@ -1,0 +1,570 @@
+570
+260709-19:05:46.304100 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: CodebigSupport, bsUpdate = 3
+
+260709-19:05:46.304167 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = CodebigSupport
+260709-19:05:46.304200 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.CodebigSupport, value=false, clearDB=0
+260709-19:05:46.306105 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:46.324514 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: ContainerSupport, bsUpdate = 3
+
+260709-19:05:46.324546 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = ContainerSupport
+260709-19:05:46.324575 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.ContainerSupport, value=false, clearDB=0
+260709-19:05:46.325504 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:46.345371 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: ClearDB, bsUpdate = 3
+
+260709-19:05:46.345428 [mod=PAM, lvl=WARN] [tid=6821] g_currentParamFullName = Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.ClearDB
+260709-19:05:46.345446 [mod=PAM, lvl=WARN] [tid=6821] StartRfcProcessing 
+260709-19:05:46.579939 [mod=PAM, lvl=INFO] [tid=6821] [AutoReboot_GetParamBoolValue :] AutoReboot Getparam Enable value
+260709-19:05:46.617962 [mod=PAM, lvl=INFO] [tid=6821] [AutoReboot_GetParamBoolValue :] AutoReboot Getparam Enable value
+260709-19:05:46.618032 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:46.618051 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:46.618078 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.Enable, value=true, clearDB=1
+260709-19:05:46.618099 [mod=PAM, lvl=INFO] [tid=6821] [AutoReboot_GetParamBoolValue :] AutoReboot Getparam Enable value
+260709-19:05:46.618115 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:46.618130 [mod=PAM, lvl=INFO] [tid=6821] [AutoReboot_SetParamBoolValue:] AutoReboot Set current and previous values are same
+260709-19:05:46.710037 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: UpTime, bsUpdate = 3
+
+260709-19:05:46.710094 [mod=PAM, lvl=INFO] [tid=6821] [AutoReboot_SetParamIntValue:] AutoReboot Set uptime 
+260709-19:05:46.710124 [mod=PAM, lvl=INFO] [tid=6821] CosaDmlScheduleAutoReboot Device uptime in days 0 
+260709-19:05:46.710140 [mod=PAM, lvl=INFO] [tid=6821] CosaDmlScheduleAutoReboot Scheduling reboot after 30 days 
+260709-19:05:46.710155 [mod=PAM, lvl=INFO] [tid=6821] CosaDmlScheduleAutoReboot Scheduling cron sh /etc/ScheduleAutoReboot.sh 30 1& 
+260709-19:05:46.804901 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:05:46.805625 [mod=PAM, lvl=WARN] [tid=6821] getTimeOffset: offset_value received from ipv4-timeoffset is @-21600 
+260709-19:05:46.805667 [mod=PAM, lvl=WARN] [tid=6821] CosaDmlTimeGetTimeOffset: pTimeOffset is -21600 
+260709-19:05:47.014853 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: AccountID, bsUpdate = 3
+
+260709-19:05:47.014930 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamStringValue: param = AccountID, value = 3277006077133108326
+260709-19:05:47.014961 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID, value=3277006077133108326, clearDB=1
+260709-19:05:47.014987 [mod=PAM, lvl=WARN] [tid=6821] IsStringSame values are same...
+260709-19:05:47.113409 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:47.113440 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:47.113467 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.WifiClient.ActiveMeasurements.Enable, value=true, clearDB=1
+260709-19:05:47.113889 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:47.837674 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:47.837748 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:47.837776 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.EvoStream_DirectConnect.Enable, value=true, clearDB=1
+260709-19:05:47.837802 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:47.942498 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:47.942532 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:47.942561 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6onXHS.Enable, value=true, clearDB=1
+260709-19:05:47.943092 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:48.035707 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:48.035765 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:48.035793 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6subPrefix.Enable, value=true, clearDB=1
+260709-19:05:48.035819 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:48.136451 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:48.136511 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:48.136540 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6onLnF.Enable, value=true, clearDB=1
+260709-19:05:48.136568 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:48.228013 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:48.228072 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:48.228100 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6subPrefix.Enable, value=true, clearDB=1
+260709-19:05:48.228173 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:48.654099 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:48.654157 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:48.654185 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.newNTP.Enable, value=true, clearDB=1
+260709-19:05:48.654212 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:48.932168 [mod=PAM, lvl=ERROR] [tid=6821] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-19:05:48.932212 [mod=PAM, lvl=ERROR] [tid=6821] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-19:05:48.932228 [mod=PAM, lvl=WARN] [tid=6821] Failed to get parameter value of 'AuthMode'.
+260709-19:05:48.971697 [mod=PAM, lvl=ERROR] [tid=6821] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-19:05:48.971763 [mod=PAM, lvl=ERROR] [tid=6821] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-19:05:48.971786 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: AuthMode, bsUpdate = 3
+
+260709-19:05:48.971805 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamStringValue: param = AuthMode, value = potd
+260709-19:05:48.971832 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.OAUTH.AuthMode, value=potd, clearDB=1
+260709-19:05:48.971860 [mod=PAM, lvl=ERROR] [tid=6821] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-19:05:48.971875 [mod=PAM, lvl=WARN] [tid=6821] IsStringSame values are same...
+260709-19:05:49.125606 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: ServerUrl, bsUpdate = 3
+
+260709-19:05:49.125658 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamStringValue: param = ServerUrl, value = https://websec-oic.cable.comcast.com/as/authorization.oauth2
+260709-19:05:49.125686 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.OAUTH.ServerUrl, value=https://websec-oic.cable.comcast.com/as/authorization.oauth2, clearDB=1
+260709-19:05:49.125724 [mod=PAM, lvl=WARN] [tid=6821] IsStringSame values are same...
+260709-19:05:49.283786 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:49.284247 [mod=PAM, lvl=INFO] [tid=6821] Successfully set 5g off channel scan RFC 
+260709-19:05:49.299676 [mod=PAM, lvl=WARN] [tid=6821] eRT.com.cisco.spvtg.ccsp.pam component calls SET with writeId:0 
+260709-19:05:49.401294 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: DirectOCSP, bsUpdate = 3
+
+260709-19:05:49.499422 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:49.860840 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:49.860900 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:49.860937 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.PeriodicFWCheck.Enable, value=true, clearDB=1
+260709-19:05:49.860966 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:49.954020 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:49.954052 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = Enable
+260709-19:05:49.954080 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.WiFi-Interworking.Enable, value=true, clearDB=1
+260709-19:05:49.954505 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are same...
+260709-19:05:50.055025 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:50.055796 [mod=PAM, lvl=INFO] [tid=6821] Successfully set WiFiPasspointSupport 
+260709-19:05:50.055816 [mod=PAM, lvl=WARN] [tid=6821] eRT.com.cisco.spvtg.ccsp.pam component calls SET with writeId:0 
+260709-19:05:50.206835 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-19:05:50.243238 [mod=PAM, lvl=WARN] [tid=6821] Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.SyndicationFlowControl.Enable - OBJECT  Value is NULL UpdateJsonParam
+260709-19:05:51.398244 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: ClearDBEnd, bsUpdate = 3
+
+260709-19:05:51.398300 [mod=PAM, lvl=WARN] [tid=6821] g_currentParamFullName = Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.ClearDBEnd
+260709-19:05:51.398318 [mod=PAM, lvl=WARN] [tid=6821] EndRfcProcessing 
+260709-19:05:51.442471 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-19:05:51.442529 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x557d924dd8
+260709-19:05:51.442545 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-19:05:51.442561 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-19:05:51.442583 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: RFCUpdateDone, bsUpdate = 3
+
+260709-19:05:51.442602 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = RFCUpdateDone
+260709-19:05:51.442628 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Snmpv3DHKickstart.RFCUpdateDone, value=true, clearDB=0
+260709-19:05:51.443003 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-19:05:51.443020 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x557d924dd8
+260709-19:05:51.443035 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-19:05:51.443052 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-19:05:51.443068 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are different...
+260709-19:05:51.443086 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: hInsContext = 0x0
+260709-19:05:51.443103 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: pKickstart = 0x557d924dd8
+260709-19:05:51.443125 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: ParamName = RFCUpdateDone, bValue = 1
+260709-19:05:51.443144 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: successfully set RFCUpdateDone = TRUE
+260709-19:05:55.531691 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: XconfSelector, bsUpdate = 3
+
+260709-19:05:55.531746 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamStringValue: param = XconfSelector, value = prod
+260709-19:05:55.531774 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.XconfSelector, value=prod, clearDB=0
+260709-19:05:55.532187 [mod=PAM, lvl=WARN] [tid=6821] IsStringSame values are same...
+260709-19:05:55.550190 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: XconfUrl, bsUpdate = 3
+
+260709-19:05:55.550247 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamStringValue: param = XconfUrl, value = https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+260709-19:05:55.550275 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.XconfUrl, value=https://secure.xconfds.coast.xcal.tv/featureControl/getSettings, clearDB=0
+260709-19:05:55.550659 [mod=PAM, lvl=WARN] [tid=6821] IsStringSame values are same...
+260709-19:05:55.605786 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-19:05:55.605840 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x557d924dd8
+260709-19:05:55.605856 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-19:05:55.605872 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-19:05:55.605894 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: RFCUpdateDone, bsUpdate = 3
+
+260709-19:05:55.605936 [mod=PAM, lvl=WARN] [tid=6821] Generic_SetParamBoolValue: param = RFCUpdateDone
+260709-19:05:55.605963 [mod=PAM, lvl=WARN] [tid=6821] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Snmpv3DHKickstart.RFCUpdateDone, value=true, clearDB=0
+260709-19:05:55.606327 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-19:05:55.606346 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x557d924dd8
+260709-19:05:55.606360 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-19:05:55.606375 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-19:05:55.606390 [mod=PAM, lvl=WARN] [tid=6821] IsBoolSame values are different...
+260709-19:05:55.606405 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: hInsContext = 0x0
+260709-19:05:55.606419 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: pKickstart = 0x557d924dd8
+260709-19:05:55.606434 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: ParamName = RFCUpdateDone, bValue = 1
+260709-19:05:55.606450 [mod=PAM, lvl=INFO] [tid=6821] Snmpv3DHKickstart_SetParamBoolValue: successfully set RFCUpdateDone = TRUE
+260709-19:08:48.991267 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-19:08:48.992008 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:08:48.992165 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:08:48.996253 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:08:48.996429 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:08:49.010464 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-19:08:50.010759 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 52
+260709-19:08:50.010820 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 344
+260709-19:08:50.012636 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:08:50.013532 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:08:50.013700 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:08:50.013730 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:10:00.733052 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-19:17:25.697266 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-19:17:25.698041 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:17:25.698201 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:17:25.702568 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:17:25.702753 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:17:25.723609 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-19:17:26.723900 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 76
+260709-19:17:26.723962 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 317
+260709-19:17:26.725804 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:17:26.726700 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:17:26.726858 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:17:26.726887 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:17:35.188424 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:17:35.188609 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:17:35.203105 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-19:17:36.203379 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 61
+260709-19:17:36.203436 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 333
+260709-19:17:36.205259 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:17:36.206169 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:17:36.206325 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:17:36.206356 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:18:33.454037 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-19:18:33.454797 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:18:33.454970 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:18:33.459334 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:18:33.459522 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:18:33.474481 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-19:18:34.474762 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 55
+260709-19:18:34.474821 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 340
+260709-19:18:34.476680 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:18:34.477581 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:18:34.477740 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:18:34.477770 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:19:43.783707 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:19:43.784414 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:19:43.785624 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:19:43.785786 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:19:43.785814 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:19:43.786557 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:19:43.787656 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:19:43.787811 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:19:43.787838 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:19:43.788880 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:19:43.824073 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-19:20:00.741787 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-19:30:00.772391 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-19:34:43.783476 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:34:43.784659 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:34:43.784819 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:34:43.784851 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:34:43.786708 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:34:43.824264 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-19:34:58.937258 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:34:58.938837 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:34:58.940057 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:34:58.940220 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:34:58.940251 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:36:08.469824 [mod=PAM, lvl=WARN] [tid=7061] Ipv6ModeHandler_thrd Recieved notification event  mesh_wan_linkstatus
+260709-19:36:08.470802 [mod=PAM, lvl=WARN] [tid=7061] getMeshWanIfName :Mesh WAN IfName is (brRWAN)
+260709-19:36:08.470969 [mod=PAM, lvl=INFO] [tid=7061] AssignIpv6Addr : interface name=brRWAN , ipv6 address=fd01:1010:b066:798e:3465:bfff:fe1a:8f46/64
+260709-19:40:00.827849 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-19:49:43.783514 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:49:43.785032 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:49:43.785217 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:49:43.785257 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:49:43.787608 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:49:43.822561 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-19:49:59.157645 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-19:49:59.159450 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:49:59.160758 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:49:59.160939 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:49:59.160976 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:50:00.853147 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-19:59:41.920268 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-19:59:41.921126 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:59:41.921280 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:59:41.925925 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:59:41.926105 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:59:41.940444 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-19:59:42.940751 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 57
+260709-19:59:42.940811 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 338
+260709-19:59:42.942849 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-19:59:42.943964 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-19:59:42.944139 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-19:59:42.944188 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:00:00.902091 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-20:00:19.773774 [mod=PAM, lvl=INFO] [tid=6975] RDK_LOG_INFO , Ethernet WAN is enabled
+260709-20:01:13.783748 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:01:13.785286 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:01:13.786529 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:01:13.786679 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:01:13.786708 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:01:43.783806 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:01:43.785329 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:01:43.786578 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:01:43.786727 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:01:43.786756 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:04:43.783425 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:04:43.784707 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:04:43.784858 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:04:43.784888 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:04:43.786748 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:04:43.821145 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-20:05:20.103596 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:05:20.105136 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:05:20.106400 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:05:20.106552 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:05:20.106581 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:10:00.949291 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-20:19:43.783484 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:19:43.784840 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:19:43.784997 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:19:43.785035 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:19:43.786988 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:19:43.821087 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-20:20:01.010730 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-20:20:19.783762 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:20:19.785850 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:20:19.787273 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:20:19.787448 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:20:19.787488 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:30:01.012205 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-20:34:43.783717 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:34:43.785274 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:34:43.785480 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:34:43.785531 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:34:43.787874 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:34:43.823290 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-20:35:19.783673 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:35:19.785264 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:35:19.786528 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:35:19.786676 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:35:19.786704 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:40:00.047982 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-20:49:43.783465 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:49:43.784731 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:49:43.784882 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:49:43.784920 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:49:43.786733 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:49:43.824879 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-20:50:00.081665 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-20:50:19.783591 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-20:50:19.785077 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-20:50:19.786295 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-20:50:19.786446 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-20:50:19.786473 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:00:00.133352 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-21:00:19.773960 [mod=PAM, lvl=INFO] [tid=6975] RDK_LOG_INFO , Ethernet WAN is enabled
+260709-21:01:44.783759 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:01:44.785293 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:01:44.786521 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:01:44.786671 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:01:44.786700 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:02:44.783818 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:02:44.785675 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:02:44.787036 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:02:44.787209 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:02:44.787246 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:04:43.783445 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:04:43.784736 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:04:43.784888 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:04:43.784927 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:04:43.786847 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:04:43.820735 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-21:05:19.783808 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:05:19.785741 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:05:19.787070 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:05:19.787231 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:05:19.787260 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:10:00.171048 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-21:19:43.783502 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:19:43.784865 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:19:43.785023 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:19:43.785055 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:19:43.786966 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:19:43.822676 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-21:20:00.198603 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-21:20:19.783801 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:20:19.785457 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:20:19.786759 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:20:19.786916 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:20:19.786958 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:30:00.218040 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-21:34:43.783321 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:34:43.784599 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:34:43.784750 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:34:43.784782 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:34:43.786658 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:34:43.824776 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-21:35:19.783671 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:35:19.785201 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:35:19.786435 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:35:19.786584 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:35:19.786613 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:40:00.249721 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-21:49:43.783651 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:49:43.785144 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:49:43.785327 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:49:43.785366 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:49:43.787628 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:49:43.826566 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-21:50:00.275602 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-21:50:19.783749 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-21:50:19.785301 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-21:50:19.786536 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-21:50:19.786686 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-21:50:19.786715 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:00:00.313497 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-22:00:19.774150 [mod=PAM, lvl=INFO] [tid=6975] RDK_LOG_INFO , Ethernet WAN is enabled
+260709-22:02:15.783796 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:02:15.785430 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:02:15.786696 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:02:15.786846 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:02:15.786876 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:03:45.783895 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:03:45.785537 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:03:45.786824 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:03:45.786992 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:03:45.787021 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:04:43.783442 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:04:43.784808 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:04:43.784978 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:04:43.785010 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:04:43.786989 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:04:43.820980 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-22:05:19.783595 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:05:19.785088 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:05:19.786305 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:05:19.786455 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:05:19.786484 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:10:00.353378 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-22:19:43.783442 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:19:43.784716 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:19:43.784866 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:19:43.784896 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:19:43.786809 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:19:43.820779 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-22:20:00.385686 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-22:20:19.783651 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:20:19.785155 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:20:19.786372 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:20:19.786521 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:20:19.786550 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:30:00.423688 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-22:34:43.783421 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:34:43.784713 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:34:43.784877 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:34:43.784925 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:34:43.786803 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:34:43.821256 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-22:35:19.783735 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:35:19.785307 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:35:19.786569 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:35:19.786719 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:35:19.786748 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:40:00.451535 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-22:49:43.783398 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:49:43.784701 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:49:43.784864 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:49:43.784896 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:49:43.786744 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:49:43.820766 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-22:50:00.506486 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-22:50:19.783829 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-22:50:19.785384 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-22:50:19.786644 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-22:50:19.786796 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-22:50:19.786826 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:00:00.563017 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-23:00:19.774340 [mod=PAM, lvl=INFO] [tid=6975] RDK_LOG_INFO , Ethernet WAN is enabled
+260709-23:02:46.783845 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:02:46.785746 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:02:46.787287 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:02:46.787477 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:02:46.787524 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:04:43.783550 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:04:43.784978 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:04:43.785147 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:04:43.785187 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:04:43.787360 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:04:43.823118 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-23:04:59.126779 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:04:59.128283 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:04:59.129495 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:04:59.129643 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:04:59.129672 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:05:19.783792 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:05:19.785704 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:05:19.787125 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:05:19.787300 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:05:19.787335 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:10:00.566732 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-23:19:43.783612 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:19:43.784952 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:19:43.785104 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:19:43.785135 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:19:43.787088 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:19:43.821064 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-23:20:00.608777 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-23:20:19.783644 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:20:19.785218 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:20:19.786451 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:20:19.786599 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:20:19.786628 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:30:00.662806 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-23:34:43.783520 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:34:43.784922 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:34:43.785097 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:34:43.785133 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:34:43.788169 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:34:43.838953 [mod=PAM, lvl=WARN] [tid=6821] DynPortMappingCount is 0, we are not adding entry to TR-181/database since these are dynamic entries CosaDmlNatGetPortMappings
+260709-23:35:19.783696 [mod=PAM, lvl=WARN] [tid=6821] CosaNTPInitJournal : Partner = shaw 
+260709-23:35:19.785211 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:35:19.786460 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:35:19.786637 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:35:19.786668 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:40:00.653533 [mod=PAM, lvl=WARN] [tid=6821] Getting Device Networking Mode value for non-xle devices, new value = '0'
+260709-23:41:42.091435 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-23:41:42.092310 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:41:42.092467 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:41:42.098116 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:41:42.098292 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:41:42.125341 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-23:41:43.125633 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 111
+260709-23:41:43.125690 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 284
+260709-23:41:43.127579 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:41:43.128566 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:41:43.128714 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:41:43.128745 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:43:58.845771 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-23:43:58.846625 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:43:58.846795 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:43:58.851722 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:43:58.851887 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:43:58.875010 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-23:43:59.875416 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 72
+260709-23:43:59.875470 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 324
+260709-23:43:59.877382 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:43:59.878416 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:43:59.878563 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:43:59.878593 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:44:20.701049 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:44:20.701209 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:44:20.715011 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-23:44:21.715280 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 72
+260709-23:44:21.715346 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 325
+260709-23:44:21.717193 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:44:21.718192 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:44:21.718349 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:44:21.718378 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:44:47.405143 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-23:44:47.406009 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:44:47.406155 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:44:47.410479 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:44:47.410657 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:44:47.424623 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-23:44:48.424902 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 44
+260709-23:44:48.424966 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 351
+260709-23:44:48.426843 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:44:48.427857 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:44:48.428010 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:44:48.428040 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:45:56.551460 [mod=PAM, lvl=NOTICE] [tid=6821] CosaDmlIPGetIPv6Prefixes...
+260709-23:45:56.552310 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:45:56.552470 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:45:56.556775 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:45:56.556956 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:45:56.571245 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-23:45:57.571535 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 41
+260709-23:45:57.571585 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 355
+260709-23:45:57.573484 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:45:57.574512 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:45:57.574658 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:45:57.574688 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:46:15.181350 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:46:15.181528 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:46:15.205672 [mod=PAM, lvl=WARN] [tid=6821] There are 4 cpus!
+260709-23:46:16.205980 [mod=PAM, lvl=WARN] [tid=6821] UsedTime = 93
+260709-23:46:16.206040 [mod=PAM, lvl=WARN] [tid=6821] IdleTime = 299
+260709-23:46:16.208344 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:46:16.209419 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 0
+260709-23:46:16.209572 [mod=PAM, lvl=INFO] [tid=6821] CosaUtilGetIpv6AddrInfo,Interface scope is : 32
+260709-23:46:16.209606 [mod=PAM, lvl=INFO] [tid=6821] [getStringHandlerWANIP_RBUS]: getStringHandlerWANIP_RBUS success
+260709-23:48:14.093722 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: X_RDKCENTRAL-COM_LastRebootReason, bsUpdate = 3
+
+260709-23:48:14.095881 [mod=PAM, lvl=WARN] [tid=6821] Before committing:Device.DeviceInfo.
+260709-23:48:14.095971 [mod=PAM, lvl=WARN] [tid=6821] After committing:Device.DeviceInfo.:0
+260709-23:48:14.096971 [mod=PAM, lvl=WARN] [tid=6821] DslhObjcoValidate: RebootDevice, bsUpdate = 3
+
+260709-23:48:14.097023 [mod=PAM, lvl=WARN] [tid=6821] Before committing:Device.X_CISCO_COM_DeviceControl.
+260709-23:48:14.102725 [mod=PAM, lvl=WARN] [tid=6821] REBOOT_COUNT : 2 Time : Thu Jul  9 23:48:14 UTC 2026  
+260709-23:48:14.102783 [mod=PAM, lvl=WARN] [tid=6821] RebootDevice:Device is going to reboot after taking log backups 
+260709-23:48:14.102839 [mod=PAM, lvl=INFO] [tid=6821] CosaDmlDcSaveWiFiHealthStatusintoNVRAM - Box Type is SCER11BEL 
+260709-23:48:14.102856 [mod=PAM, lvl=INFO] [tid=6821] CosaDmlDcSaveWiFiHealthStatusintoNVRAM - Taking Backup of wifivAPPercentage
+260709-23:48:14.118388 [mod=PAM, lvl=WARN] [tid=6821] After committing:Device.X_CISCO_COM_DeviceControl.:0

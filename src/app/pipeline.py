@@ -172,7 +172,7 @@ class RCAPipeline:
         # 5. Timeline
         #
 
-        timeline = TimelineBuilder().build(
+        timeline = TimelineBuilder().build_grouped(
             events
         )
 

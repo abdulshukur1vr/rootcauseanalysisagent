@@ -1,0 +1,106 @@
+{
+    "title": "Root Cause Analysis Report",
+    "root_causes": [
+        {
+            "category": "NETWORK_STACK_FAILURE",
+            "confidence": 89,
+            "explanation": "Network stack errors detected. This may indicate socket, routing, or transport layer instability.",
+            "evidence": [
+                "260107-00:00:40.554715 [mod=PRVNMGR, lvl=ERROR] [tid=1410] Device disconnected: Connection reset by peer",
+                "260107-00:09:52.310090 [mod=PRVNMGR, lvl=ERROR] [tid=2887] Device disconnected: Connection reset by peer",
+                "260107-00:03:22.757166 [mod=PRVNMGR, lvl=ERROR] [tid=1315] Device disconnected: Connection reset by peer",
+                "260107-00:01:06.461218 [mod=PRVNMGR, lvl=ERROR] [tid=1304] Device disconnected: Connection reset by peer",
+                "260107-00:04:00.608409 [mod=PRVNMGR, lvl=ERROR] [tid=4667] Device disconnected: Connection reset by peer"
+            ]
+        }
+    ],
+    "failure_distribution": {
+        "NETWORK_STACK_FAILURE": 100.0
+    },
+    "failure_counts": {
+        "NETWORK_STACK_FAILURE": 14
+    },
+    "timeline": [
+        {
+            "category": "NETWORK_STACK_FAILURE",
+            "count": 14,
+            "start_time": "2026-01-07 00:00:40.554715",
+            "end_time": "2026-01-07 00:09:52.310090",
+            "duration_seconds": 551.755375,
+            "largest_gap_seconds": 551.755375,
+            "event_rate_per_hour": 91.34,
+            "sources": [
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak.tar",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak/prvnmgr_log.txt",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak1.tar",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak1/prvnmgr_log.txt",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2.tar",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2/prvnmgr_log.txt",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak3.tar",
+                "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak3/prvnmgr_log.txt"
+            ],
+            "events": [
+                {
+                    "timestamp": "2026-01-07 00:00:40.554715",
+                    "severity": "ERROR",
+                    "message": "260107-00:00:40.554715 [mod=PRVNMGR, lvl=ERROR] [tid=1410] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:09:52.310090",
+                    "severity": "ERROR",
+                    "message": "260107-00:09:52.310090 [mod=PRVNMGR, lvl=ERROR] [tid=2887] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:03:22.757166",
+                    "severity": "ERROR",
+                    "message": "260107-00:03:22.757166 [mod=PRVNMGR, lvl=ERROR] [tid=1315] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak1.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:01:06.461218",
+                    "severity": "ERROR",
+                    "message": "260107-00:01:06.461218 [mod=PRVNMGR, lvl=ERROR] [tid=1304] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:04:00.608409",
+                    "severity": "ERROR",
+                    "message": "260107-00:04:00.608409 [mod=PRVNMGR, lvl=ERROR] [tid=4667] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:05:21.754038",
+                    "severity": "ERROR",
+                    "message": "260107-00:05:21.754038 [mod=PRVNMGR, lvl=ERROR] [tid=11543] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:02:59.280117",
+                    "severity": "ERROR",
+                    "message": "260107-00:02:59.280117 [mod=PRVNMGR, lvl=ERROR] [tid=1303] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak3.tar"
+                },
+                {
+                    "timestamp": "2026-01-07 00:01:06.461218",
+                    "severity": "ERROR",
+                    "message": "260107-00:01:06.461218 [mod=PRVNMGR, lvl=ERROR] [tid=1304] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2/prvnmgr_log.txt"
+                },
+                {
+                    "timestamp": "2026-01-07 00:04:00.608409",
+                    "severity": "ERROR",
+                    "message": "260107-00:04:00.608409 [mod=PRVNMGR, lvl=ERROR] [tid=4667] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2/prvnmgr_log.txt"
+                },
+                {
+                    "timestamp": "2026-01-07 00:05:21.754038",
+                    "severity": "ERROR",
+                    "message": "260107-00:05:21.754038 [mod=PRVNMGR, lvl=ERROR] [tid=11543] Device disconnected: Connection reset by peer",
+                    "source": "reports/20260722_151253/workspace/3C62F03AF5A7/2026-07-12 21:00:00-3C62F03AF5A7_Logs_07-12-26-09-42PM_activation_log/Onboard_FailureLogsBak2/prvnmgr_log.txt"
+                }
+            ]
+        }
+    ]
+}

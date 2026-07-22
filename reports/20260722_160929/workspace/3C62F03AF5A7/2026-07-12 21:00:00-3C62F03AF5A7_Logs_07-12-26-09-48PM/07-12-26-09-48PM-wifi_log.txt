@@ -1,0 +1,513 @@
+07.01.2026_00:00.28 [start_netsrvmgr_service.sh] INFO Checking SecurePartition mount status
+07.01.2026_00:00.28 [start_netsrvmgr_service.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.01.2026_00:00.28 [start_netsrvmgr_service.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+07.01.2026_00:00.28 Defined Config Files Path as SecurePartition usr_config path in start_netsrvmgr_service.sh
+07.01.2026_00:00.29 starting netsrvmgr-service !!!!
+07.01.2026_00:00.29 Setting custom SSL conf file
+07.01.2026_00:00.29 SE051 detected
+07.01.2026_00:00.30 No Disabled network id found
+starting netsrvmgr!!!
+07.01.2026_00:00.30 checkIP - called from 
+Conf file /etc/debug.ini open success
+260107-00:00:31.725198 [mod=DEVICECTL, lvl=INFO] [tid=1518] main(101) isProvisioned(0), deviceConfig(/opt/usr_config/wifiConf),key(********************), secure mount status=1
+260107-00:00:32.727027 [mod=BREAKPAD, lvl=INFO] [tid=1518] breakpadwrap.cpp(21):Registering breakpad handler... 
+260107-00:00:32.730205 [mod=WIFIWPA, lvl=INFO] [tid=1518] Got WiFi interface: wlan0
+wpa_supplicant: Start WiFi management
+wpa_supplicant: Done Start WiFi management
+260107-00:00:33.152989 [mod=DEVICECTL, lvl=INFO] [tid=1518] rtConnectionInit(179): Initialized rtMessage
+260107-00:00:33.227263 [mod=NETSRVMGR, lvl=INFO] [tid=1518] getAccessTokenInfo:963 Failed to open the file (/mnt/ramdisk/env/.lnfttoken)
+AcquireLfatUrl: https://tvxlanf-c3-c00001-b.ch.tvx.comcast.com/lostandfound/v1/acquirelfat
+GetCredentialsUrl: https://tvxlanf-c3-c00001-b.ch.tvx.comcast.com/lostandfound/v1/getcredentials
+MaxRetry: 10
+MaxResponseWaitTime: 20
+SecurityMode: 5
+CAChain: /opt/lnf/ca-chain.cert.pem
+Clientcert: /tmp/client.pem
+Clientkey: /tmp/client.key
+Identity: lnfuser
+ClientKeyPassword: lnfsecretpassphrase
+Ssid1: D375C1D9F8B041E2A1995B784064977B
+SecurityMode1: 9
+PreferFrequency: 2.4GHz
+StaticCertPath: /etc/ssl/certs/staticXpkiCrt.pk12
+DynamicCertPath: /opt/usr_config/xpki.p12
+XfinityCACertECCPath: /etc/ssl/certs/ca-certificates.crt
+XfinityCACertECCICAPath: /etc/ssl/certs/ca-certificates.crt
+KeyGenBinaryPath: /usr/bin/rdkssacli
+GetConfigFilePath: /usr/bin/GetConfigFile
+SecureChipPassword: changeit
+260107-00:00:33.228495 [mod=DEVICECTL, lvl=ERROR] [tid=1518] loadBSSIDs Unable to open file for writing.
+260107-00:00:33.264299 [mod=DEVICECTL, lvl=INFO] [tid=1774] Sleeping for 10secs? Do I really need to wait this much for wifi mgmt to be ready !!!!
+260107-00:00:33.297539 [mod=WIFIWPA, lvl=INFO] [tid=1518] _OnWpaProxyReady
+wpa_supplicant: connected to wpa_supplicant proxy
+wpa_supplicant:OK1
+wpa_supplicant:OK2
+260107-00:00:33.313096 [mod=WIFIWPA, lvl=INFO] [tid=1518] _OnRDKCWpaInterfaceReady
+260107-00:00:33.313280 [mod=WIFIWPA, lvl=INFO] [tid=1518] wpa_supplicant: mWpa_Supplicant.interfacePath: /fi/w1/wpa_supplicant1/Interfaces/0
+260107-00:00:33.475325 [mod=WIFIWPA, lvl=INFO] [tid=1518] [wlan0]WpaInterfaceProxyReadyCb 
+260107-00:00:33.475476 [mod=WIFIWPA, lvl=INFO] [tid=1518] [wlan0]wpa_supplicant: connected to wpa_supplicant interface proxy
+260107-00:00:33.476438 [mod=WIFIWPA, lvl=INFO] [tid=1518] WpaBssProxyReadyCb
+260107-00:00:33.476557 [mod=WIFIWPA, lvl=INFO] [tid=1518] wpa_supplicant: connected to wpa_supplicant bss proxy
+260107-00:00:43.241826 [mod=WIFIWPA, lvl=INFO] [tid=1774] RDKC_Debug getConfiguredNetwork:837 ERROR
+260107-00:00:43.242016 [mod=DEVICECTL, lvl=INFO] [tid=1774] Network is not configured for UNPROVISIONED device 
+[Manufacture]
+def_name=
+conf_status=0
+default_ip=192.168.0.99/255.255.255.0
+max_user=20
+summer_chg=0
+psia_type=0
+mac_address=3C62F03AF5A7
+[SYSTEM]
+cfg_ver=XHC3_0000_0001
+defsys_ver=2.4
+host_name=XHC33AF5A7
+comment=
+time_format=24
+date_format=1
+time_zone=25
+ntp_mode=1
+ntp_best_server_index=0
+ntp_server=ntp.univ-lyon1.fr
+ntp_server2=utcnist.colorado.edu
+ntp_server3=time.nist.gov
+ntp_updated_time=20260709
+ntp_date=0
+ntp_hour=0
+ntp_min=0
+ntp_retry=15/8
+led_mode=1
+irled_mode=1
+irled_lum=30
+pb_mode=1
+ssl_cert_validation=1
+wifi_db_threshold=-70,-60
+boot_debug_enable=1
+bitrate_status=0
+ssl_cert_validation=1
+ssl_crl_validation=0
+reboot_time=01/07/2026 00:14:26
+defsys_excp_ver=1.0
+[LOG]
+log_mode=1
+log_level=3
+syslog_mode=0
+syslog_server=
+syslog_port=514
+log_msg_max=0
+command_max=10
+notify_max=10
+notify_enable=0
+http_https_url=
+xmpp_url=
+poll_url=
+[NETWORK]
+ip_addr=192.168.0.99
+netmask=255.255.255.0
+gateway=
+dhcp=1
+dns_type=0
+dns_server1=
+dns_server2=
+lease_reboot=1
+lease_timeout=60
+wins_type=0
+wins_ip=
+[WIRELESS]
+wlan_type=1
+wlan_essid=ANY
+wlan_channel=11
+wlan_domain=12
+wlan_security=0
+wlan_roaming=1
+wpa_ascii=
+wmm=1
+pin_code=47352209
+auto_switch_lan_wlan=1
+encrypt_key_status=0
+pin_success_flag=0
+timeout=30
+wifi_band=0
+[HTTP]
+http_mode=1
+http_port2=0
+http_port2_num=1024
+https_mode=1
+ssport_enable=0
+ssport_number=1025
+try_times=5
+try_interval=86400
+openhome_poll_mode=0
+openhome_poll_linger=0
+[RTSP_RTP]
+rtsp_port=554
+rtp_port=5000
+rtp_size=1400
+sp_port=554
+p_port=5000
+p_size=1400
+st_enable=0
+st_video_addr=224.2.0.1
+st_video_port=2240
+st_audio_addr=224.2.0.1
+st_audio_port=2242
+st_hops=16
+mcast_enable=0
+mcast_video_addr=224.2.0.1
+mcast_video_port=2240
+mcast_audio_addr=224.2.0.1
+mcast_audio_port=2244
+mcast_hops=16
+[UPNP]
+upnp_mode=1
+upnp_traversal=0
+upnp_camera=0
+[FTP]
+ftp1=1
+ftp1_server=
+ftp1_account=
+ftp1_passwd=
+ftp1_path=
+ftp1_passive=0
+ftp1_port=21
+ftp2=0
+ftp2_server=
+ftp2_account=
+ftp2_passwd=
+ftp2_path=
+ftp2_passive=0
+ftp2_port=21
+[VIDEO]
+video_schedule=0
+video_define1=
+video_define2=
+video_define3=
+video_define4=
+video_define5=
+video_define6=
+video_define7=
+video_define8=
+video_define9=
+video_define10=
+time_stamp=0
+text_overlay=0
+text=
+power_line=60
+color=0
+exposure=4
+sharpness=4
+flip=0
+mirror=0
+saturation=4
+contrast=4
+dn_filter=0
+dn_sch=0
+dn_sch_hr=0
+dn_sch_min=0
+dn_hrend=0
+dn_minend=0
+night_mode=0
+dn_interval=3
+default_channel=1
+hdr=0
+dn_threshold=220,320
+ldc=1
+fov=96
+ldc_strength=90
+ldc_zoom=1490,1530
+wdr=0
+radius=960
+verbose=0
+center=960x540
+aspect_ratio=0
+cropping=0
+cropping2=0
+cropping3=0
+bmp_overlay=1
+bmp_xy=8,200;12,436;20,636
+bmp_alpha=204
+source_buffer_1st_width=1920
+source_buffer_1st_height=1080
+source_buffer_2nd_width=640
+source_buffer_2nd_height=480
+source_buffer_3rd_width=1280
+source_buffer_3rd_height=720
+[H264]
+mode=1
+resolution=5
+quality_type=0
+quality_level=3
+bit_rate=1000
+frame_rate=25
+gov_length=30
+sp_uri=
+profile=66
+audio_enable=1
+mode2=1
+resolution2=4
+quality_type2=0
+quality_level2=3
+bit_rate2=256
+frame_rate2=20
+gov_length2=30
+sp_uri2=
+profile2=66
+audio_enable2=1
+mode3=0
+resolution3=3
+quality_type3=0
+quality_level3=3
+bit_rate3=256
+frame_rate3=15
+gov_length3=30
+sp_uri3=
+profile3=66
+audio_enable3=1
+map_buffer_id1=-1
+map_buffer_id2=-1
+map_buffer_id3=-1
+cropping=0
+cropping2=0
+cropping3=0
+[JPEG]
+mode=0
+resolution=3
+quality_level=3
+frame_rate=30
+sp_uri=
+audio_enable=1
+mode2=0
+resolution2=3
+quality_level2=3
+frame_rate2=30
+sp_uri2=
+audio_enable2=1
+mode3=1
+resolution3=3
+quality_level3=3
+frame_rate3=5
+sp_uri3=
+audio_enable3=1
+cropping=0
+cropping2=0
+cropping3=0
+map_buffer_id1=-1
+map_buffer_id2=-1
+map_buffer_id3=-1
+[STREAMS]
+channel1=H264,1
+channel1_flag=1
+channel1_name=channel1_name
+channel2=H264,2
+channel2_flag=1
+channel2_name=channel2_name
+channel3=JPEG,3
+channel3_flag=1
+channel3_name=channel3_name
+[USER]
+login_check=0
+admin_timeout=5
+admin_name=administrator
+admin_password=hidden
+user1=
+user2=
+user3=
+user4=
+user5=
+user6=
+user7=
+user8=
+user9=
+user10=
+user11=
+user12=
+user13=
+user14=
+user15=
+user16=
+user17=
+user18=
+user19=
+user20=
+audio_in_ctrl=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+audio_out_ctrl=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pt_ctrl=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+io_ctrl=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+adm_ctrl=0
+[PORT_FILTER]
+port_filter=0
+port_filter_policy=0
+port_filter1=80,443,6789
+port_filter2=
+port_filter3=
+port_filter4=
+port_filter5=
+port_filter6=
+port_filter7=
+port_filter8=
+port_filter9=
+port_filter10=
+[EVENT]
+event_trigger=0
+event1_entry=
+event2_entry=
+event3_entry=
+event4_entry=
+event5_entry=
+event6_entry=
+event7_entry=
+event8_entry=
+event9_entry=
+event10_entry=
+event11_entry=
+event_define1=
+event_define2=
+event_define3=
+event_define4=
+event_define5=
+event_define6=
+event_define7=
+event_define8=
+event_define9=
+event_define10=
+event_jpeg_fps=5
+notify_where=0
+[QOS]
+qos_enable=0
+qos_dscp=32
+qos_av_switch=0
+[HTTP_NOTIFY]
+http_notify=1
+http_url=
+http_proxy=
+http_proxy_no=80
+http_method=1
+http_user=
+http_password=
+proxy_user=
+proxy_password=
+event_data_flag=0
+[HTTP_EVENT]
+http_event_en=0
+http_post_en=0
+http_post_user=
+http_post_pass=
+http_post_url=
+[DEBUG]
+syslog_mode=0
+syslog_server=
+syslog_port=514
+system_syslog_level=5
+kernel_syslog_level=5
+sensor_daemon_syslog_level=5
+stream_syslog_level=5
+event_syslog_level=5
+upnpigd_syslog_level=5
+upnp_syslog_level=5
+web_syslog_level=5
+cgi_syslog_level=5
+dhcpc_syslog_level=5
+ntp_syslog_level=5
+ddns_syslog_level=5
+ftpc_syslog_level=5
+smtpc_syslog_level=5
+oem_syslog_level=5
+misc_syslog_level=5
+stunnel_https_syslog_level=5
+bootstrap_syslog_level=5
+xmpp_syslog_level=5
+[AUDIO]
+audio_in=1
+in_pcm_sr=8000,5512
+in_volume=11
+in_audio_type=1,3
+audio_out=1
+out_volume=16
+audio_mode=1
+mic_boost=0
+au_trigger_en=0
+au_trigger_volume=50
+au_trigger_method=0
+[ABR]
+stream1_320x240=40,52,64,80;55,78,112,160;82,118,168,240;137,196,280,400;220,314,448,640
+stream1_640x480=105,131,164,205;140,200,287,410;220,314,448,640;274,392,560,800;549,784,1120,1600
+stream1_1280x720=192,192,256,256;192,384,384,512;192,512,512,768;192,640,768,1024;192,768,768,1024
+stream1_1920x1080=246,307,384,480;329,470,672,960;686,980,1400,2000;1235,1764,2520,3600;1921,2744,3920,5600
+stream2_320x240=40,52,64,80;55,78,112,160;82,118,168,240;137,196,280,400;220,314,448,640
+stream2_640x480=105,131,164,205;140,200,287,410;220,314,448,640;274,392,560,800;549,784,1120,1600
+stream2_1280x720=192,192,256,256;192,384,384,512;192,512,512,768;192,640,768,1024;192,768,768,1024
+stream2_1920x1080=246,307,384,480;329,470,672,960;686,980,1400,2000;1235,1764,2520,3600;1921,2744,3920,5600
+stream3_320x240=40,52,64,80;55,78,112,160;82,118,168,240;137,196,280,400;220,314,448,640
+stream3_640x480=105,131,164,205;140,200,287,410;220,314,448,640;274,392,560,800;549,784,1120,1600
+stream3_1280x720=192,192,256,256;192,384,384,512;192,512,512,768;192,640,768,1024;192,768,768,1024
+stream3_1920x1080=246,307,384,480;329,470,672,960;686,980,1400,2000;1235,1764,2520,3600;1921,2744,3920,5600
+[DDNS]
+ddns_mode=0
+[MOTION]
+md_mode=1
+md_switch1=0
+md_switch2=0
+md_switch3=0
+md_switch4=0
+md_name1=Window 1
+md_name2=Window 2
+md_name3=Window 3
+md_name4=Window 4
+md_window1=0,0,160,120
+md_window2=0,0,160,120
+md_window3=0,0,160,120
+md_window4=0,0,160,120
+md_abs_window1=0,0,320,180/1280,720
+md_abs_window2=0,0,320,180/1280,720
+md_abs_window3=0,0,320,180/1280,720
+md_abs_window4=0,0,320,180/1280,720
+md_threshold1=127
+md_threshold2=127
+md_threshold3=127
+md_threshold4=127
+md_sensitivity1=6
+md_sensitivity2=6
+md_sensitivity3=6
+md_sensitivity4=6
+md_update_freq1=90
+md_update_freq2=90
+md_update_freq3=90
+md_update_freq4=90
+td_switch=0
+td_threshold=85
+td_sensitivity=40
+[IVA]
+od_mode=1
+is_outdoor=1
+od_sensitivity=100
+od_switch1=1
+od_switch2=0
+od_switch3=0
+od_switch4=0
+od_name1=window 1
+od_name2=window 2
+od_name3=window 3
+od_name4=window 4
+od_window1=0,0,1279,719/1280,720
+od_window2=0,0,320,240/1280,720
+od_window3=0,0,320,240/1280,720
+od_window4=0,0,1279,719/1280,720
+od_threshold=50
+od_type1=3
+od_type2=1
+od_type3=1
+od_type4=1
+07.01.2026_00:00.49 RFC_ENABLE_RDKC_WIFI : 
+07.01.2026_00:00.49 [xCAMConnectionStatus.sh] INFO Checking SecurePartition mount status
+07.01.2026_00:00.50 [xCAMConnectionStatus.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.01.2026_00:00.50 [xCAMConnectionStatus.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+07.01.2026_00:00.50 Defined Config Files Path as SecurePartition usr_config path in xCAMConnectionStatus.sh
+07.01.2026_01:37.57 Stopping netsrvmgr as part of recovery due to continuous ping failure
+260107-01:37:57.526787 [mod=NETSRVMGR, lvl=INFO] [tid=1518] on_sigterm(22) Received SIGTERM, quitting main loop.
+07.01.2026_03:12.07 Stopping netsrvmgr as part of recovery due to continuous ping failure
+07.01.2026_04:46.21 Stopping netsrvmgr as part of recovery due to continuous ping failure
+07.01.2026_06:20.35 Stopping netsrvmgr as part of recovery due to continuous ping failure
+07.01.2026_07:54.45 Stopping netsrvmgr as part of recovery due to continuous ping failure
+07.01.2026_09:28.57 Stopping netsrvmgr as part of recovery due to continuous ping failure
+07.01.2026_11:03.11 Stopping netsrvmgr as part of recovery due to continuous ping failure
+07.01.2026_12:37.28 Stopping netsrvmgr as part of recovery due to continuous ping failure

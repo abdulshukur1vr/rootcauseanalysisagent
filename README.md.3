@@ -1,0 +1,454 @@
+# Report Format Specification
+
+The RCA engine produces structured output designed for:
+
+- Human troubleshooting
+- Automated processing
+- Future dashboard visualization
+- API consumption
+- AI-assisted explanation
+
+Each execution creates an isolated timestamped report directory.
+
+Example:
+
+```
+reports/
+
+└── 20260721_153422/
+
+    ├── metadata.json
+
+    ├── report.json
+
+    ├── summary.md
+
+    └── workspace/
+```
+
+---
+
+# Execution Directory
+
+## metadata.json
+
+`metadata.json` describes the analysis execution.
+
+Purpose:
+
+- Identify the analyzer version
+- Track execution time
+- Record input bundle information
+- Provide audit information
+
+Example:
+
+```json
+{
+    "run_time": "2026-07-21T15:34:22.123456",
+
+    "input_bundle": "sample_bundle.tgz",
+
+    "agent": "RootCauseAnalysisAgent",
+
+    "version": "0.1.0"
+}
+```
+
+---
+
+# Future Metadata Extensions
+
+The metadata model is designed to expand.
+
+Future example:
+
+```json
+{
+    "agent": "RootCauseAnalysisAgent",
+
+    "version": "0.1.0",
+
+    "generated_at":
+        "2026-07-21T15:34:22",
+
+    "input_bundle":
+        "sample_bundle.tgz",
+
+    "archive_type":
+        "tgz",
+
+    "execution_time_ms":
+        1834,
+
+    "total_log_files":
+        108,
+
+    "total_events":
+        3089,
+
+    "root_causes_detected":
+        5
+}
+```
+
+---
+
+# report.json
+
+`report.json` is the primary machine-readable output.
+
+It contains:
+
+- RCA findings
+- Failure distribution
+- Timeline
+- Evidence
+- Root cause confidence
+
+This file is the contract between:
+
+```
+RCA Engine
+
+      |
+
+      v
+
+Dashboard / API / AI Assistant
+```
+
+---
+
+# Report Structure
+
+High-level structure:
+
+```json
+{
+    "title": "Root Cause Analysis Report",
+
+    "root_causes": [],
+
+    "timeline": [],
+
+    "failure_distribution": {},
+
+    "failure_counts": {}
+}
+```
+
+---
+
+# Root Cause Model
+
+Each root cause contains:
+
+- Category
+- Confidence
+- Explanation
+- Evidence
+
+Example:
+
+```json
+{
+    "category":
+        "ETHERNET_FAILURE",
+
+    "confidence":
+        92,
+
+    "explanation":
+        "Ethernet interface experienced repeated link failures",
+
+    "evidence": [
+        "kernel.log: NETDEV WATCHDOG timeout"
+    ]
+}
+```
+
+---
+
+# Failure Categories
+
+Current categories:
+
+## Ethernet Failure
+
+```text
+ETHERNET_FAILURE
+```
+
+Examples:
+
+- Link down
+- Driver reset
+- NETDEV watchdog
+- Interface failure
+
+---
+
+## WiFi Client Failure
+
+```text
+WIFI_CLIENT_FAILURE
+```
+
+Examples:
+
+- Authentication failure
+- WPA handshake timeout
+- Association failure
+
+---
+
+# Evidence Model
+
+Evidence connects the RCA result back to the original logs.
+
+Example:
+
+```json
+{
+    "file":
+        "kernel.log",
+
+    "line":
+        245,
+
+    "message":
+        "NETDEV WATCHDOG timeout"
+}
+```
+
+Evidence is critical because RCA decisions must be explainable.
+
+---
+
+# Confidence Model
+
+The Root Cause Engine assigns confidence scores.
+
+Example:
+
+```
+ETHERNET_FAILURE
+
+Confidence:
+
+92%
+```
+
+Confidence is calculated based on:
+
+- Pattern matches
+- Event frequency
+- Timeline position
+- Correlation with other failures
+- Evidence strength
+
+---
+
+# Timeline Model
+
+The timeline represents the sequence of detected events.
+
+Example:
+
+```json
+[
+    {
+        "sequence": 1,
+
+        "timestamp":
+            "10:00:01",
+
+        "category":
+            "ETHERNET_FAILURE",
+
+        "message":
+            "eth0 link down"
+    },
+
+    {
+        "sequence": 2,
+
+        "timestamp":
+            "10:00:05",
+
+        "category":
+            "DHCP_FAILURE",
+
+        "message":
+            "DHCP timeout"
+    }
+]
+```
+
+---
+
+# Failure Distribution Model
+
+The failure analyzer calculates the percentage contribution of each failure category.
+
+Example:
+
+```json
+{
+    "ETHERNET_FAILURE": 45,
+
+    "WIFI_CLIENT_FAILURE": 35,
+
+    "DHCP_FAILURE": 15,
+
+    "OTHER": 5
+}
+```
+
+This data powers:
+
+- Pie charts
+- Bar charts
+- Failure dashboards
+
+---
+
+# Summary Report
+
+## summary.md
+
+The Markdown report is optimized for engineers.
+
+Example:
+
+```markdown
+# Root Cause Analysis Report
+
+
+## Root Cause Candidates
+
+
+### ETHERNET_FAILURE
+
+Confidence:
+
+92%
+
+
+Explanation:
+
+Ethernet interface experienced repeated link failures.
+
+
+Evidence:
+
+- kernel.log: NETDEV WATCHDOG timeout
+
+
+## Timeline
+
+
+1.
+Ethernet link down
+
+
+2.
+DHCP timeout
+```
+
+---
+
+# Workspace Directory
+
+The workspace contains extracted artifacts.
+
+Example:
+
+```
+workspace/
+
+└── sample_bundle/
+
+    ├── nvram2/
+
+    │   └── log/
+
+    │       ├── kernel.log
+
+    │       ├── wifi.log
+
+    │       └── messages.log
+```
+
+The original bundle remains unchanged.
+
+---
+
+# Report Consumption Model
+
+The intended consumption flow:
+
+```
+                  report.json
+
+                       |
+
+        +--------------+--------------+
+
+        |              |              |
+
+        v              v              v
+
+    Dashboard        API        AI Assistant
+```
+
+---
+
+# Dashboard Data Requirements
+
+The report format supports future visualization:
+
+## Failure Charts
+
+Source:
+
+```json
+failure_distribution
+```
+
+Provides:
+
+- Pie charts
+- Bar charts
+- Percent breakdown
+
+
+## Timeline View
+
+Source:
+
+```json
+timeline
+```
+
+Provides:
+
+- Event ordering
+- Failure progression
+- Root cause analysis
+
+
+## Evidence Explorer
+
+Source:
+
+```json
+evidence
+```
+
+Provides:
+
+- Log filename
+- Line number
+- Matching message

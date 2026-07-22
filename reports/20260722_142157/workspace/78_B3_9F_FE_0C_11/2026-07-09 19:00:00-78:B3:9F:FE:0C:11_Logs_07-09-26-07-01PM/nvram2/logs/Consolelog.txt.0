@@ -1,0 +1,201 @@
+201
+260709-18:26:48.411725 [DEBUG] --OUT function backupnvram2logs
+260709-18:26:48.413699 Regular log upload is disabled
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+killall: scer11bel_firmwareDwnld.sh: no process killed
+260709-18:27:16.998404 XCONF SCRIPT: Firmware scheduler cron schedule time is 11 10 * * *
+260709-18:27:17.007320 XCONF SCRIPT: Cron scheduling done, now call download script during bootup
+260709-18:27:17.072098 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  partner_id retrieved from syscfg.db : shaw
+260709-18:27:17.074677 XCONF: calling getMtlsCreds
+260709-18:27:17.406717 XCONF SCRIPT : Done Cleanup
+260709-18:27:17.412887 XCONF SCRIPT : Assigning default image type as: DEV
+260709-18:27:17.424321 XCONF SCRIPT : image_type returned from version.txt is PROD
+260709-18:27:17.427751 XCONF SCRIPT : IMAGE TYPE SET AS PROD
+260709-18:27:17.433886 XCONF SCRIPT : Build type is PROD. Ignoring /nvram/swupdate.conf override. URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:27:17.435743 XCONF SCRIPT : Device retrieves firmware update from url=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:27:17.437980 XCONF SCRIPT : Values written to /tmp/Xconf are URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:27:17.455852 XCONF SCRIPT : erouter0 has an ipv4 address of 24.65.240.148 or an ipv6 address of 2604:3d08:3:33::b50d:1e81
+260709-18:27:17.471960 FWExclusion status is : false
+260709-18:27:17.486322 XCONF SCRIPT : env is PROD
+260709-18:27:17.487950 XCONF SCRIPT : xconf url  is https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:27:17.514580 XCONF SCRIPT : Using Direct connection as the Primary
+260709-18:27:17.527664 XCONF SCRIPT : Device model taken from /etc/device.properties 
+260709-18:27:17.553600 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  partner_id retrieved from syscfg.db : shaw
+260709-18:27:17.571418 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  Checking accountId is alphanumeric and not greater than 32 characters...
+260709-18:27:17.576965 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  accountId is valid and value retrieved from tr181/webpa param...
+260709-18:27:17.662886 XCONF SCRIPT : CURRENT VERSION : SCER11BEL_8.2p11s1_PROD_sey
+260709-18:27:17.664544 XCONF SCRIPT : CURRENT MAC  : 78:B3:9F:FE:0C:11
+260709-18:27:17.666264 XCONF SCRIPT : CURRENT DATE : Thu Jul  9 18:27:17 UTC 2026
+260709-18:27:17.667973 XCONF SCRIPT : DEVICE MODEL : SCER11BEL
+260709-18:27:17.671675 Trying Direct Communication
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   672  100   308  100   364    444    524 --:--:-- --:--:-- --:--:--   968
+260709-18:27:18.505903 Direct Communication - ret:0, http_code:200
+260709-18:27:18.508301 XCONF SCRIPT : HTTP RESPONSE CODE is 200
+260709-18:27:18.511822 XCONF SCRIPT : Print the response -> output of /tmp/response.txt after curl execution is as below
+{"firmwareDownloadProtocol":"http","firmwareFilename":"SCER11BEL_8.2p11s1_PROD_sey-signed.bin","firmwareLocation":"https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl","firmwareVersion":"SCER11BEL_8.2p11s1_PROD_sey","mandatoryUpdate":false,"rebootImmediately":false}
+
+
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:27:18.545114 XCONF SCRIPT : Download image from HTTP server
+260709-18:27:18.584187 XCONF SCRIPT : Protocol :http
+260709-18:27:18.585981 XCONF SCRIPT : Filename :SCER11BEL_8.2p11s1_PROD_sey-signed.bin
+260709-18:27:18.588373 XCONF SCRIPT : Location :https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl
+260709-18:27:18.590139 XCONF SCRIPT : Firmware URL :
+260709-18:27:18.591901 XCONF SCRIPT : Version  :SCER11BEL_8.2p11s1_PROD_sey
+260709-18:27:18.593586 XCONF SCRIPT : Reboot   :false
+260709-18:27:18.595235 XCONF SCRIPT : Delay Time :
+260709-18:27:18.596821 XCONF SCRIPT : factoryResetImmediately :
+260709-18:27:18.598431 XCONF SCRIPT : dlCertBundle :
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:27:18.651605 XCONF SCRIPT : CurrentVersion : scer11bel_8.2p11s1_prod_sey
+260709-18:27:18.653642 XCONF SCRIPT : UpgradeVersion : scer11bel_8.2p11s1_prod_sey
+260709-18:27:18.659183 XCONF SCRIPT : Current image (scer11bel_8.2p11s1_prod_sey) and Requested image (scer11bel_8.2p11s1_prod_sey) are same. No upgrade/downgrade required
+Enable RFC feature
+260709-18:27:34.569305 getAccountId() called from: /lib/rdk/RFCbase.sh -  partner_id retrieved from syscfg.db : shaw
+Initial URL: https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+sh: /lib/rdk/getDeviceDetails.sh: No such file or directory
+260709-18:27:35.948009 getAccountId() called from: /lib/rdk/RFCbase.sh -  partner_id retrieved from syscfg.db : shaw
+RFC: Sending request to URL=https://secure.xconfds.coast.xcal.tv/featureControl/getSettings?
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  8916    0  8916    0     0  10109      0 --:--:-- --:--:-- --:--:-- 10108
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:27:41.849827 [ScheduleAutoReboot.sh]: **************** else > 1
+260709-18:27:41.886706 [ScheduleAutoReboot.sh]: Exiting, NTP synced or RFC triggered
+260709-18:27:41.925029 [ScheduleAutoReboot.sh]start_time: 7200, end_time: 14400
+260709-18:27:41.927044 [ScheduleAutoReboot.sh]time_offset: -21600
+260709-18:27:41.929001 [ScheduleAutoReboot.sh]main_start_time: 28800 , main_end_time= 36000
+260709-18:27:41.930935 [ScheduleAutoReboot.sh]rand_time_in_sec: 32874 ,rand_hr: 9 ,rand_min: 7 ,rand_sec: 54
+260709-18:27:41.939116 Auto Reboot is scheduled at date: 08
+260709-18:27:41.947214 [ScheduleAutoReboot.sh] AutoReboot scheduled cron 7 9 08 08 *
+260709-18:27:41.951923 [ScheduleAutoReboot.sh] Auto Reboot updating the cron job
+260709-18:27:41.958544 [ScheduleAutoReboot.sh] Auto Reboot cron job scheduled
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:30:00.159996 [GUI] Deleted /tmp/rbus_subs__rbus_session_mgr due to session inactivity
+cosa_start_rem script not triggered even after 10 minutes from boot-up so start from selfheal
+flock -x  /nvram/log/event/eventlog rm -r /nvram/log/event/eventlog
+killall: mldproxy: no process killed
+ mldproxy not found 
+260709-18:33:48.737004 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-18:33:48.738871 sync logs to nvram2
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+260709-18:41:05.677826 Uploading backup logs found in /nvram2/logs//../preserveLogs/
+260709-18:41:05.711352 getPartnerId() called from: /rdklogger/uploadRDKBLogs.sh -  partner_id retrieved from syscfg.db : shaw
+urn:settings:LogUploadSettings:UploadRepository' is not found in DCMSettings.conf
+260709-18:41:05.930904 The parameters are - arg1:logs.xcal.tv arg2:HTTP arg3:https://ssr.ccp.xcal.tv/cgi-bin/rdkb.cgi arg4:true arg5: arg6:/nvram2/logs//../preserveLogs/ arg7:true
+260709-18:41:05.950784 getPartnerId() called from: /rdklogger/uploadRDKBLogs.sh -  partner_id retrieved from syscfg.db : shaw
+260709-18:41:05.998548 UPLOAD_LOGS val is false
+260709-18:41:06.078166 curr_time_in_sec:45666
+260709-18:41:06.079892 FW_START:7200
+260709-18:41:06.081581 FW_END:14400
+260709-18:41:06.083335 Outside Maintenance Window
+260709-18:41:06.085388 Log upload is enabled for unscheduledreboot
+260709-18:41:06.089048 logupload: MTLS Logupload Defaulted.
+260709-18:41:06.218001 Upload HTTP_LOGS
+260709-18:41:06.229376 files to be uploaded is : 78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM.tgz
+78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM.tgz
+260709-18:41:06.254927 Using Direct connection as the Primary
+260709-18:41:06.256996 Upload file is : 78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM.tgz
+260709-18:41:06.259085 File to be uploaded: 78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM.tgz
+260709-18:41:06.263313 System Uptime is  18:41:06 up 19 min,  load average: 1.07, 0.83, 0.65
+260709-18:41:06.265947 S3 URL is : https://ssr.ccp.xcal.tv/cgi-bin/rdkb.cgi
+RFC_EncryptCloudUpload_Enable:false
+260709-18:41:06.268245 Trying Direct Communication
+260709-18:41:06.288949 Trial 0 for DIRECT ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   476  100   424  100    52    704     86 --:--:-- --:--:-- --:--:--   792
+260709-18:41:07.035220 Log Upload: TLS Direct Communication - ret:0, http_code:200
+260709-18:41:07.049133 Generated KeyIs : 
+https://rdk-stb-secured-log-upload.s3.dualstack.us-east-1.amazonaws.com/rdkblogs/unencrypted/2026/7/9/18/78%3AB3%3A9F%3AFE%3A0C%3A11_Logs_07-09-26-06-05PM.tgz?<Hidden_Credentials>
+260709-18:41:07.070067 Trial 0...
+260709-18:41:07.072274 Curl Command built: nice -n 20 curl --tlsv1.2 -w '%{http_code}\n' -T 78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM.tgz -o "/tmp/httpresult.txt" --interface erouter0 "https://rdk-stb-secured-log-upload.s3.dualstack.us-east-1.amazonaws.com/rdkblogs/unencrypted/2026/7/9/18/78%3AB3%3A9F%3AFE%3A0C%3A11_Logs_07-09-26-06-05PM.tgz?<Hidden_Credentials>" --cert-status --connect-timeout 30 -m 30
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 50801    0     0  100 50801      0  81932 --:--:-- --:--:-- --:--:-- 81937
+260709-18:41:07.711251 HttpCode received is : 200
+260709-18:41:07.713006 LOGS UPLOADED SUCCESSFULLY, RETURN CODE: 200
+260709-18:41:07.721051 
+260709-18:41:07.723358 Upload file is : 78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM.tgz
+260709-18:41:07.725377 File to be uploaded: 78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM.tgz
+260709-18:41:07.731246 System Uptime is  18:41:07 up 19 min,  load average: 1.07, 0.83, 0.65
+260709-18:41:07.733528 S3 URL is : https://ssr.ccp.xcal.tv/cgi-bin/rdkb.cgi
+RFC_EncryptCloudUpload_Enable:false
+260709-18:41:07.735543 Trying Direct Communication
+260709-18:41:07.754072 Trial 0 for DIRECT ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   476  100   424  100    52    696     85 --:--:-- --:--:-- --:--:--   781
+260709-18:41:08.493979 Log Upload: TLS Direct Communication - ret:0, http_code:200
+260709-18:41:08.502135 Generated KeyIs : 
+https://rdk-stb-secured-log-upload.s3.dualstack.us-east-1.amazonaws.com/rdkblogs/unencrypted/2026/7/9/18/78%3AB3%3A9F%3AFE%3A0C%3A11_Logs_07-09-26-06-23PM.tgz?<Hidden_Credentials>
+260709-18:41:08.520971 Trial 0...
+260709-18:41:08.522721 Curl Command built: nice -n 20 curl --tlsv1.2 -w '%{http_code}\n' -T 78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM.tgz -o "/tmp/httpresult.txt" --interface erouter0 "https://rdk-stb-secured-log-upload.s3.dualstack.us-east-1.amazonaws.com/rdkblogs/unencrypted/2026/7/9/18/78%3AB3%3A9F%3AFE%3A0C%3A11_Logs_07-09-26-06-23PM.tgz?<Hidden_Credentials>" --cert-status --connect-timeout 30 -m 30
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 76918    0     0  100 76918      0   108k --:--:-- --:--:-- --:--:--  109k
+260709-18:41:09.236148 HttpCode received is : 200
+260709-18:41:09.237894 LOGS UPLOADED SUCCESSFULLY, RETURN CODE: 200
+260709-18:41:09.246251 
+260709-18:41:09.248929 http_ret value after upload 200
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+cosa_start_rem script not triggered even after 10 minutes from boot-up so start from selfheal
+260709-18:43:51.149342 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-18:43:51.151228 sync logs to nvram2
+Monitoring current boot: A410DCA0-219E-4D99-86FA-76594ADC6A98
+260709-18:53:53.649008 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-18:53:53.651043 sync logs to nvram2

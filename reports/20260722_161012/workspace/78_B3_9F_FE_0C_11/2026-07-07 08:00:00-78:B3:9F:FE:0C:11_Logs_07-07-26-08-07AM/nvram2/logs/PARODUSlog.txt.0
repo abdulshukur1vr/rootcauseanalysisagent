@@ -1,0 +1,853 @@
+853
+260707-02:49:50.744721 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:50:35.744432 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:50:56.013983 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-02:50:56.014087 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-02:50:56.014119 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-02:50:56.014136 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1721
+260707-02:51:20.744589 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:52:05.744714 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:52:44.001492 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-02:52:44.001576 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-02:52:44.001613 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-02:52:44.001632 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-02:52:44.016021 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-02:52:44.016098 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-02:52:44.016132 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-02:52:44.016149 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-02:52:50.744391 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:53:35.744515 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:54:20.744680 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:55:05.744853 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:55:50.745005 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:56:35.744693 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:57:20.744833 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:57:44.071220 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-02:57:44.071300 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-02:57:44.071333 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-02:57:44.071350 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2172
+260707-02:58:05.745034 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:58:50.744668 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-02:59:35.744825 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:00:20.744473 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:01:05.744634 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:01:50.745278 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:02:35.744959 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:03:20.745309 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:04:05.744778 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:04:50.745487 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:05:35.745089 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:05:56.013747 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:05:56.013817 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-03:05:56.013850 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:05:56.013867 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1721
+260707-03:06:20.745261 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:07:05.745458 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:07:44.001228 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:07:44.001313 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-03:07:44.001350 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:07:44.001368 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-03:07:44.012682 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:07:44.012756 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-03:07:44.012790 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:07:44.012808 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-03:07:50.745064 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:08:35.745252 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:09:20.744887 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:10:05.744626 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:10:50.745192 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:11:35.744841 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:12:20.745536 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:12:44.070845 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:12:44.070928 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-03:12:44.070962 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:12:44.070979 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2172
+260707-03:13:05.744663 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:13:50.744907 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:14:35.744978 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:15:20.745149 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:16:05.744755 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:16:50.744909 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:17:35.753576 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:18:20.744698 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:19:05.744853 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:19:50.745019 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:20:35.745132 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:20:56.015146 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:20:56.015260 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-03:20:56.015297 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:20:56.015315 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1726
+260707-03:21:20.744819 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:22:05.745473 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:22:44.001684 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:22:44.001850 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-03:22:44.001889 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:22:44.001907 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-03:22:44.016551 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:22:44.016644 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-03:22:44.016684 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:22:44.016703 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-03:22:50.745086 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:23:35.745253 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:24:20.745402 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:25:05.745061 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:25:50.745687 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:26:35.745361 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:27:20.745002 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:27:44.076705 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:27:44.076786 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-03:27:44.076819 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:27:44.076836 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2172
+260707-03:28:05.745137 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:28:50.744784 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:29:35.744933 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:30:20.744577 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:31:05.744722 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:31:50.744923 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:32:35.747517 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:33:20.744654 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:34:05.744833 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:34:50.744995 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:35:35.745107 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:35:56.018350 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:35:56.018437 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-03:35:56.018469 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:35:56.018485 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1816
+260707-03:36:20.744759 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:37:05.745403 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:37:44.001496 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:37:44.001569 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-03:37:44.001606 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:37:44.001624 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-03:37:44.011984 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:37:44.012055 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-03:37:44.012087 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:37:44.012105 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-03:37:50.745060 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:38:35.744726 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:39:20.744839 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:40:05.744525 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:40:50.744694 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:41:35.744832 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:42:20.745018 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:42:44.095740 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:42:44.095827 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-03:42:44.095861 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:42:44.095877 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2172
+260707-03:43:05.745617 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:43:50.744740 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:44:35.744918 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:45:20.744587 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:46:05.744687 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:46:50.744867 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:47:35.745725 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:48:20.744641 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:49:05.744780 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:49:50.744955 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:50:35.744611 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:50:56.014291 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:50:56.014361 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-03:50:56.014395 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:50:56.014412 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1727
+260707-03:51:20.744739 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:52:05.744899 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:52:44.001169 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:52:44.001352 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-03:52:44.001396 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:52:44.001415 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-03:52:44.014017 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:52:44.014102 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-03:52:44.014137 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:52:44.014155 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-03:52:50.744527 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:53:35.744650 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:54:20.744810 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:55:05.744938 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:55:50.745572 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:56:35.744722 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:57:20.744854 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:57:44.075344 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-03:57:44.075426 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-03:57:44.075460 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-03:57:44.075478 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2175
+260707-03:58:05.745456 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:58:50.745120 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-03:59:35.744771 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:00:20.744888 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:00:29.237529 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received msg from server
+260707-04:00:29.237605 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: msgType received:3
+260707-04:00:29.237636 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Command line input is *,shaw and msg partner_id is axb3retail
+260707-04:00:29.237653 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: partner_id match found
+260707-04:00:29.237671 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received downstream dest as :config and transaction_uuid :3f290bc7-b51d-4d74-9151-eabfe44a7af4_____00655fd6e7f0982
+260707-04:00:29.237937 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-04:00:29.241744 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:00:29.241809 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:00:29.241844 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:00:29.241862 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2207
+260707-04:00:29.244443 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:00:29.244501 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h002-0z12z0y10u01n1yewp-000.webpa.comcast.net' transaction_uuid: 3f290bc7-b51d-4d74-9151-eabfe44a7af4_____00655fd6e7f0982
+260707-04:00:29.244521 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:00:29.244537 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 931
+260707-04:00:29.245466 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received msg from server
+260707-04:00:29.245498 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: msgType received:3
+260707-04:00:29.245516 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Command line input is *,shaw and msg partner_id is axb3retail
+260707-04:00:29.245532 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: partner_id match found
+260707-04:00:29.245551 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received downstream dest as :config and transaction_uuid :a9e4de1c-c11c-4a4f-95cd-03385b5ac6b2_____00655FD6E7E3604
+260707-04:00:29.245761 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-04:00:29.248045 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received msg from server
+260707-04:00:29.248076 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: msgType received:3
+260707-04:00:29.248092 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Command line input is *,shaw and msg partner_id is axb3retail
+260707-04:00:29.248108 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: partner_id match found
+260707-04:00:29.248126 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received downstream dest as :config and transaction_uuid :c309e046-c21d-47a3-8f5a-1aa272970311_____00655fd6e7f292d
+260707-04:00:29.248344 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-04:00:29.248875 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:00:29.248927 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h202-0z12z0y10u01n1yewp-003.webpa.comcast.net' transaction_uuid: c309e046-c21d-47a3-8f5a-1aa272970311_____00655fd6e7f292d
+260707-04:00:29.248946 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:00:29.248963 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 886
+260707-04:00:29.249115 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:00:29.249185 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h001-0z12z0y10u01n1yewp-002.webpa.comcast.net' transaction_uuid: a9e4de1c-c11c-4a4f-95cd-03385b5ac6b2_____00655FD6E7E3604 traceParent: traceparent: 00-0000000000000000740f55093553dd3d-d65990c40c995b82-01 traceState: tracestate: dd=s:1;o:rum;p:0f9cd3a1220987c3
+260707-04:00:29.249223 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:00:29.249240 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2041
+260707-04:00:59.001321 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:00:59.001401 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:00:59.001435 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:00:59.001452 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2207
+260707-04:01:05.744577 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:01:09.893135 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received msg from server
+260707-04:01:09.893217 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: msgType received:3
+260707-04:01:09.893251 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Command line input is *,shaw and msg partner_id is axb3retail
+260707-04:01:09.893268 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: partner_id match found
+260707-04:01:09.893286 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: Received downstream dest as :config and transaction_uuid :c52682d5-69fa-466f-aed1-d4b1dec9efcf_____00655FD70EB3A91
+260707-04:01:09.893593 [mod=PARODUS, lvl=INFO] [tid=12627] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-04:01:09.897134 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:01:09.897223 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h202-0z12z0y10u01n1yewp-000.webpa.comcast.net' transaction_uuid: c52682d5-69fa-466f-aed1-d4b1dec9efcf_____00655FD70EB3A91 traceParent: traceparent: 00-000000000000000028f82a8c8ee53ce0-b58b5b3df03ae6d5-01 traceState: tracestate: dd=s:1;o:rum;p:0dff487d08712a00
+260707-04:01:09.897245 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:01:09.897262 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2041
+260707-04:01:29.001285 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:01:29.001357 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:01:29.001390 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:01:29.001407 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:01:50.744657 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:01:59.001279 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:01:59.001350 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:01:59.001382 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:01:59.001400 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:02:29.001292 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:02:29.001363 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:02:29.001395 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:02:29.001412 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:02:35.744823 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:02:59.001264 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:02:59.001338 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:02:59.001370 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:02:59.001388 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:03:20.744941 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:03:29.001270 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:03:29.001342 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:03:29.001375 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:03:29.001393 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:03:59.001309 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:03:59.001382 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:03:59.001413 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:03:59.001431 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:04:05.744589 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:04:29.001260 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:04:29.001331 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:04:29.001364 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:04:29.001382 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:04:50.744721 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:04:59.001288 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:04:59.001359 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:04:59.001391 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:04:59.001408 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:05:29.001347 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:05:29.001421 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:05:29.001454 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:05:29.001472 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:05:35.744868 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:05:56.012492 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:05:56.012566 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-04:05:56.012599 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:05:56.012615 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1453
+260707-04:05:59.001108 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:05:59.001185 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:05:59.001225 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:05:59.001244 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:06:20.745498 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:07:05.744661 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:07:44.017078 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:07:44.017185 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-04:07:44.017250 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:07:44.017269 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-04:07:50.744785 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:08:35.744462 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:09:20.744552 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:10:05.744687 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:10:50.744362 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:11:35.744957 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:12:20.744642 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:12:44.072579 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:12:44.072659 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-04:12:44.072694 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:12:44.072712 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-04:13:05.744775 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:13:50.744392 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:14:35.744529 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:15:20.744626 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:16:05.744832 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:16:50.744933 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:17:35.744576 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:18:20.744247 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:19:05.744873 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:19:50.744072 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:20:35.744656 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:20:56.013857 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:20:56.013934 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-04:20:56.013969 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:20:56.013987 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1454
+260707-04:20:59.001120 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:20:59.001196 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:20:59.001252 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:20:59.001270 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:21:20.744781 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:22:05.744923 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:22:44.010100 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:22:44.010185 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-04:22:44.010227 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:22:44.010244 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-04:22:50.744042 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:23:35.744721 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:24:20.745362 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:25:05.744475 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:25:50.744131 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:26:35.744317 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:27:20.743936 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:27:44.069498 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:27:44.069580 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-04:27:44.069615 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:27:44.069633 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-04:28:05.744517 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:28:50.744674 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:29:35.744318 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:30:20.744428 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:31:05.744047 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:31:50.744221 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:32:35.744371 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:33:20.744460 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:34:05.744080 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:34:50.744734 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:35:35.743889 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:35:56.014255 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:35:56.014363 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-04:35:56.014396 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:35:56.014414 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1454
+260707-04:35:59.001151 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:35:59.001261 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:35:59.001293 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:35:59.001310 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:36:20.744495 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:37:05.744139 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:37:44.011086 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:37:44.011185 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-04:37:44.011234 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:37:44.011253 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-04:37:50.743784 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:38:35.743921 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:39:20.746057 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:40:05.743692 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:40:50.744329 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:41:35.744457 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:42:20.744582 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:42:44.073644 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:42:44.073727 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-04:42:44.073759 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:42:44.073776 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-04:43:05.744341 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:43:50.743846 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:44:35.743545 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:45:20.744136 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:46:05.743793 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:46:50.743942 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:47:35.743567 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:48:20.743705 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:49:05.744344 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:49:50.743466 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:50:35.743637 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:50:56.015541 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:50:56.015619 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-04:50:56.015651 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:50:56.015680 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1455
+260707-04:50:59.001128 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:50:59.001211 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-04:50:59.001243 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:50:59.001260 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-04:51:20.743761 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:52:05.743903 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:52:44.015913 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:52:44.015992 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-04:52:44.016028 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:52:44.016046 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-04:52:50.743537 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:53:35.743687 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:54:20.743821 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:55:05.743937 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:55:50.743613 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:56:35.743724 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:57:20.744363 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:57:44.089735 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-04:57:44.089805 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-04:57:44.089838 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-04:57:44.089855 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-04:58:05.743505 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:58:50.743670 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-04:59:35.743810 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:00:20.743461 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:01:05.743579 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:01:50.743709 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:02:35.743353 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:03:20.743509 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:04:05.743124 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:04:50.744274 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:05:35.743414 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:05:56.013221 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:05:56.013297 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-05:05:56.013341 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:05:56.013359 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1455
+260707-05:05:59.001334 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:05:59.001409 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-05:05:59.001443 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:05:59.001460 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-05:06:20.743534 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:07:05.743671 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:07:44.010445 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:07:44.010536 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-05:07:44.010571 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:07:44.010589 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-05:07:50.751367 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:08:35.743479 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:09:20.743107 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:10:05.743757 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:10:50.743430 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:11:35.744019 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:12:20.743684 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:12:44.119910 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:12:44.119990 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-05:12:44.120024 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:12:44.120042 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-05:13:05.743790 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:13:50.743440 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:14:35.743120 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:15:20.743252 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:16:05.743375 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:16:50.743519 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:17:35.743166 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:18:20.743318 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:19:05.743489 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:19:50.743146 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:20:35.743364 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:20:56.012316 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:20:56.012399 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-05:20:56.012430 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:20:56.012448 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1363
+260707-05:20:59.001081 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:20:59.001155 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-05:20:59.001187 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:20:59.001213 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-05:21:20.743522 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:22:05.743664 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:22:44.010708 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:22:44.010791 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-05:22:44.010827 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:22:44.010845 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-05:22:50.743331 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:23:35.743481 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:24:20.743620 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:25:05.743827 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:25:50.743956 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:26:35.743127 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:27:20.743825 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:27:44.076301 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:27:44.076384 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-05:27:44.076415 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:27:44.076433 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-05:28:05.743464 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:28:50.743622 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:29:35.743285 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:30:20.743501 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:31:05.743631 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:31:50.743788 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:32:35.743958 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:33:20.743568 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:34:05.744277 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:34:50.743963 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:35:35.744583 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:35:56.014510 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:35:56.014582 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-05:35:56.014614 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:35:56.014632 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1455
+260707-05:35:59.001125 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:35:59.001201 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-05:35:59.001240 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:35:59.001258 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-05:36:20.743807 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:37:05.744425 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:37:44.010743 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:37:44.010829 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-05:37:44.010862 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:37:44.010880 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-05:37:50.743580 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:38:35.743757 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:39:20.743890 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:40:05.744080 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:40:50.743731 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:41:35.743894 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:42:20.744576 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:42:44.068193 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:42:44.068281 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-05:42:44.068313 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:42:44.068331 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-05:43:05.743730 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:43:50.743386 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:44:35.743540 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:45:20.743688 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:46:05.743967 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:46:50.743525 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:47:35.744216 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:48:20.744510 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:49:05.744053 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:49:50.744188 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:50:35.744846 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:50:56.012899 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:50:56.012970 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-05:50:56.013002 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:50:56.013020 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1455
+260707-05:50:59.001133 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:50:59.001232 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-05:50:59.001265 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:50:59.001282 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-05:51:20.743488 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:52:05.744155 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:52:44.010770 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:52:44.010846 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-05:52:44.010879 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:52:44.010897 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-05:52:50.743801 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:53:35.743459 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:54:20.743635 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:55:05.743817 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:55:50.744465 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:56:35.744173 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:57:20.743773 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:57:44.069691 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-05:57:44.069768 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-05:57:44.069800 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-05:57:44.069817 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-05:58:05.743956 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:58:50.744120 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-05:59:35.744293 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:00:20.744462 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:01:05.744122 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:01:50.746346 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:02:35.744488 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:03:20.744154 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:04:05.744255 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:04:50.743945 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:05:35.744091 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:05:56.013985 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:05:56.014056 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-06:05:56.014088 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:05:56.014105 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1363
+260707-06:05:59.182576 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:05:59.182668 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-06:05:59.182705 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:05:59.182724 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-06:06:20.743727 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:07:05.744430 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:07:44.011782 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:07:44.011857 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-06:07:44.011891 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:07:44.011909 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-06:07:50.744595 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:08:35.744770 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:09:20.743897 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:10:05.744062 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:10:50.743712 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:11:35.744407 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:12:20.744051 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:12:44.092025 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:12:44.092245 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-06:12:44.092282 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:12:44.092299 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-06:13:05.744222 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:13:50.743883 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:14:35.744536 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:15:20.744222 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:16:05.744405 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:16:50.744509 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:17:35.744272 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:18:20.744361 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:19:05.744529 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:19:50.744193 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:20:35.744855 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:20:56.012310 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:20:56.012375 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-06:20:56.012407 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:20:56.012425 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-06:20:59.001142 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:20:59.001226 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-06:20:59.001262 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:20:59.001281 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-06:21:20.744038 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:22:05.745179 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:22:44.010480 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:22:44.010567 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-06:22:44.010604 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:22:44.010621 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-06:22:50.744341 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:23:35.744503 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:24:20.744153 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:25:05.744322 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:25:50.744964 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:26:35.744132 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:27:20.744298 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:27:44.075852 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:27:44.075925 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-06:27:44.075957 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:27:44.075974 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-06:28:05.743962 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:28:50.744625 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:29:35.744294 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:30:20.744453 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:31:05.744123 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:31:50.751771 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:32:35.744444 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:33:20.744105 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:34:05.744252 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:34:50.744402 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:35:35.744090 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:35:56.015384 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:35:56.015479 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-06:35:56.015513 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:35:56.015530 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-06:35:59.001104 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:35:59.001190 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-06:35:59.001227 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:35:59.001246 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-06:36:20.744718 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:37:05.744379 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:37:44.010195 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:37:44.010313 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-06:37:44.010352 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:37:44.010370 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-06:37:50.744029 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:38:35.744699 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:39:20.744363 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:40:05.744514 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:40:50.744169 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:41:35.744817 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:42:20.744483 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:42:44.068527 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:42:44.068610 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-06:42:44.068643 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:42:44.068661 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-06:43:05.744663 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:43:50.744357 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:44:35.744476 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:45:20.744133 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:46:05.744284 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:46:50.744442 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:47:35.744598 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:48:20.745272 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:49:05.744417 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:49:50.744569 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:50:35.744237 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:50:56.012823 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:50:56.012895 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-06:50:56.012927 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:50:56.012944 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-06:50:59.001157 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:50:59.001241 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-06:50:59.001275 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:50:59.001292 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-06:51:20.744383 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:52:05.744057 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:52:44.010125 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:52:44.010200 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-06:52:44.010253 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:52:44.010270 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-06:52:50.744201 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:53:35.744390 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:54:20.744507 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:55:05.744186 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:55:50.744339 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:56:35.744515 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:57:20.754645 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:57:44.089213 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-06:57:44.089290 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-06:57:44.089323 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-06:57:44.089341 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-06:58:05.744819 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:58:50.744457 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-06:59:35.744634 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:00:20.744286 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:01:05.745450 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:01:50.745109 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:02:35.744283 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:03:20.744400 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:04:05.745072 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:04:50.744250 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:05:35.744405 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:05:56.013113 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:05:56.013180 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-07:05:56.013219 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:05:56.013237 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-07:05:59.001169 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:05:59.001254 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-07:05:59.001290 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:05:59.001307 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-07:06:20.744547 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:07:05.744713 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:07:44.010278 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:07:44.010348 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-07:07:44.010382 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:07:44.010400 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-07:07:50.744864 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:08:35.750016 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:09:20.744686 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:10:05.744368 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:10:50.745094 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:11:35.744678 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:12:20.744340 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:12:44.068621 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:12:44.068714 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-07:12:44.068749 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:12:44.068766 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-07:13:05.744489 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:13:50.745138 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:14:35.744299 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:15:20.744444 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:16:05.744615 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:16:50.744779 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:17:35.744928 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:18:20.750595 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:19:05.745225 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:19:50.745331 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:20:35.745078 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:20:56.012072 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:20:56.012139 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-07:20:56.012171 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:20:56.012188 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-07:20:59.001155 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:20:59.001244 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-07:20:59.001280 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:20:59.001297 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-07:21:20.744236 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:22:05.744916 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:22:44.011326 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:22:44.011403 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-07:22:44.011439 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:22:44.011456 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-07:22:50.744534 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:23:35.745231 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:24:20.748383 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:25:05.744532 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:25:50.744736 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:26:35.744861 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:27:20.746995 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:27:44.102286 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:27:44.102363 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-07:27:44.102397 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:27:44.102425 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-07:28:05.744715 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:28:50.744336 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:29:35.744503 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:30:20.744664 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:31:05.744836 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:31:50.744901 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:32:35.744657 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:33:20.744815 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:34:05.744985 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:34:50.745164 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:35:35.744815 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:35:56.012200 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:35:56.012290 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-07:35:56.012323 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:35:56.012340 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-07:35:59.001139 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:35:59.001218 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-07:35:59.001253 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:35:59.001270 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-07:36:20.744477 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:37:05.745123 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:37:44.011266 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:37:44.011337 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-07:37:44.011373 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:37:44.011391 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-07:37:50.744790 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:38:35.744462 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:39:20.745105 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:40:05.744767 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:40:50.745921 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:41:35.744597 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:42:20.744747 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:42:44.076271 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:42:44.076354 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-07:42:44.076398 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:42:44.076416 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-07:43:05.745454 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:43:50.744611 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:44:35.744741 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:45:20.744414 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:46:05.745071 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:46:50.744731 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:47:35.744392 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:48:20.745028 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:49:05.745222 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:49:50.744873 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:50:35.745033 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:50:56.012129 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:50:56.012196 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-07:50:56.012235 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:50:56.012252 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-07:50:59.001079 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:50:59.001154 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-07:50:59.001185 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:50:59.001203 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-07:51:20.745210 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:52:05.744901 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:52:44.010996 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:52:44.011097 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.RadioInterfacesStatistics'
+260707-07:52:44.011133 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:52:44.011151 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 814
+260707-07:52:50.746012 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:53:35.745152 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:54:20.755822 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:55:05.745017 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:55:50.745141 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:56:35.744761 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:57:20.744892 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:57:44.071458 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-07:57:44.071543 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260707-07:57:44.071575 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-07:57:44.071593 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2176
+260707-07:58:05.745070 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:58:50.744746 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-07:59:35.744369 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:00:20.744517 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:01:05.744687 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:01:50.745356 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:02:35.745001 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:03:20.744609 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:04:05.745359 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:04:50.745482 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:05:35.745121 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:05:56.012162 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-08:05:56.012242 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.InterfaceDevicesWifi'
+260707-08:05:56.012276 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-08:05:56.012294 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 1272
+260707-08:05:59.001272 [mod=PARODUS, lvl=INFO] [tid=12625] PARODUS: Upstream message received from nanomsg client
+260707-08:05:59.001343 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260707-08:05:59.001376 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: Sending response to server
+260707-08:05:59.001394 [mod=PARODUS, lvl=INFO] [tid=12626] PARODUS: sendMessage length 2208
+260707-08:06:20.744769 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260707-08:07:05.745422 [mod=PARODUS, lvl=INFO] [tid=11627] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9

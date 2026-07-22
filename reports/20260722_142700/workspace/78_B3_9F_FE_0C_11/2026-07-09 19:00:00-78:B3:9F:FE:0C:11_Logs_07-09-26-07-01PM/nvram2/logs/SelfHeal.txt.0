@@ -1,0 +1,95 @@
+95
+260709-18:30:00.198936 RDKB_SELFHEAL : Uptime is lessthan 15 mins, so exiting the run at 515
+260709-18:37:49.421432 RDKB_SELFHEAL : CPU usage is 6 at timestamp 2026:07:09:18:37:19
+260709-18:37:49.492361 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-18:37:49.494359 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-18:37:49.573234 [RDKB_SELFHEAL] : Current time in seconds : 45469
+260709-18:37:50.437231 DHCPv6_Client_type is dibbler-client
+260709-18:37:50.554101 os-wanmanager enabled
+260709-18:37:50.569879 wanmanager process found 6858 
+260709-18:37:50.849197 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-18:37:50.907605 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-18:37:50.955686 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-18:37:51.069252 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-18:37:51.265744 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-18:37:51.268032 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-18:37:51.328591 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-18:37:51.345987 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-18:37:51.409167 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-18:37:51.411521 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-18:37:51.511542 BR_MODE:0 ZEBRA_PID:14314 WAN_STATUS:started
+260709-18:37:51.584386 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-18:37:51.604710 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-18:37:52.023580 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-18:37:52.140943 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-18:37:53.261016 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-18:37:53.263957 Mesh: Config and State are matching for bhaul-ap-24
+260709-18:37:53.397668 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-18:37:54.337128 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-18:37:54.339783 Mesh: Config and State are matching for bhaul-ap-50
+260709-18:37:54.342369 Mesh: Both Bhauls are good
+260709-18:38:04.892070 RDKB_SELFHEAL : Slab: 147396 kB
+IPv6 default route fe80::1111:1111
+IPv6 global route 2604:3d08:3:33::b50d:1e81
+PING_LATENCY_GWIPv4:2.483,1.734,2.181
+PING_LATENCY_GWIPv6:2.874,2.630,1.851
+260709-18:48:19.466437 [RDKB_SELFHEAL] : GW IP Connectivity Test Successfull
+260709-18:48:19.468979 [RDKB_SELFHEAL] : IPv4 GW  Address is:24.65.240.1
+260709-18:48:19.471156 [RDKB_SELFHEAL] : IPv6 GW  Address is:fe80::1111:1111
+260709-18:48:19.473253 [RDKB_SELFHEAL] : IPv6 GW global Address is:2604:3d08:3:33::b50d:1e81
+260709-18:48:19.506655 RDKB_SELFHEAL : Ping server lists are empty , not taking any corrective actions
+260709-18:53:35.052420 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:18:53:04
+260709-18:53:35.121872 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-18:53:35.124268 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-18:53:35.202432 [RDKB_SELFHEAL] : Current time in seconds : 46415
+260709-18:53:36.056401 DHCPv6_Client_type is dibbler-client
+260709-18:53:36.164304 os-wanmanager enabled
+260709-18:53:36.178632 wanmanager process found 6858 
+260709-18:53:36.441805 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-18:53:36.496094 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-18:53:36.542072 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-18:53:36.650493 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-18:53:36.843406 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-18:53:36.845676 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-18:53:36.884623 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-18:53:36.902192 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-18:53:36.965660 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-18:53:36.967882 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-18:53:37.064213 BR_MODE:0 ZEBRA_PID:14314 WAN_STATUS:started
+260709-18:53:37.132889 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-18:53:37.153282 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-18:53:37.558411 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-18:53:37.665724 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-18:53:38.630598 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-18:53:38.632946 Mesh: Config and State are matching for bhaul-ap-24
+260709-18:53:38.744417 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-18:53:39.729701 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-18:53:39.732187 Mesh: Config and State are matching for bhaul-ap-50
+260709-18:53:39.734531 Mesh: Both Bhauls are good
+260709-18:53:50.279557 RDKB_SELFHEAL : Slab: 147464 kB

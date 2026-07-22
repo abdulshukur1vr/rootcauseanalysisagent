@@ -1,0 +1,555 @@
+# Local Production Execution
+
+Although the project currently runs locally, the execution model follows production-quality practices:
+
+- Isolated Python environment
+- Dependency validation
+- Failure handling
+- Deterministic execution
+- Test validation
+- Structured output generation
+
+---
+
+# Application Execution Flow
+
+The recommended execution path is:
+
+```
+User
+
+ |
+
+ v
+
+run.sh
+
+ |
+
+ +----------------+
+
+ | Validate Python|
+
+ +----------------+
+
+ |
+
+ v
+
+Activate Virtual Environment
+
+ |
+
+ v
+
+Install Dependencies
+
+ |
+
+ v
+
+Run RCA Pipeline
+
+ |
+
+ v
+
+Generate Reports
+```
+
+---
+
+# run.sh
+
+The `run.sh` script provides a single entry point for local execution.
+
+Responsibilities:
+
+- Verify Python installation
+- Create virtual environment if missing
+- Activate environment
+- Install dependencies
+- Validate installation
+- Execute analyzer
+
+Example:
+
+```bash
+./run.sh
+```
+
+---
+
+# Environment Setup
+
+Virtual environment:
+
+```
+rootcauseanalysisagent/
+```
+
+Directory:
+
+```
+rootcauseanalysisagent/
+
+├── bin/
+
+├── lib/
+
+└── python packages
+```
+
+Benefits:
+
+- Dependency isolation
+- Repeatable execution
+- No system package conflicts
+
+---
+
+# Dependency Management
+
+Dependencies are maintained in:
+
+```
+requirements.txt
+```
+
+Example:
+
+```
+openai
+PyYAML
+pandas
+rich
+tqdm
+pytest
+pytest-cov
+pytest-order
+```
+
+Install:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Configuration Management
+
+Future configuration location:
+
+```
+config/
+```
+
+Example:
+
+```
+config/
+
+├── detector.yaml
+
+├── parser.yaml
+
+└── application.yaml
+```
+
+---
+
+# Logging
+
+The application uses structured logging.
+
+Example:
+
+```
+2026-07-21 15:34:39 INFO Starting RCA pipeline
+
+2026-07-21 15:34:39 INFO Extracted TAR sample_bundle.tgz
+
+2026-07-21 15:34:39 INFO Discovered 108 log files
+
+2026-07-21 15:34:39 INFO Detected 3089 events
+
+2026-07-21 15:34:39 INFO Timeline created
+```
+
+---
+
+# Error Handling Strategy
+
+The pipeline validates every major stage.
+
+```
+Archive Extraction
+
+        |
+
+        v
+
+Log Discovery
+
+        |
+
+        v
+
+Parsing
+
+        |
+
+        v
+
+Detection
+
+        |
+
+        v
+
+Reporting
+```
+
+Failures should:
+
+- Stop invalid execution
+- Preserve logs
+- Provide meaningful error messages
+
+---
+
+# Common Runtime Failures
+
+## Invalid Archive
+
+Example:
+
+```
+ArchiveError:
+
+Not a valid archive
+```
+
+Possible causes:
+
+- Corrupt bundle
+- Unsupported format
+- Partial download
+
+Supported:
+
+```
+.tar
+
+.tgz
+
+.tar.gz
+
+.zip
+```
+
+---
+
+## Missing Logs
+
+Example:
+
+```
+No log files discovered
+```
+
+Check:
+
+```
+workspace/
+
+└── extracted_bundle/
+
+    └── nvram2/
+
+        └── log/
+```
+
+---
+
+## Import Errors
+
+Example:
+
+```
+ModuleNotFoundError
+```
+
+Solution:
+
+```bash
+export PYTHONPATH=src
+```
+
+or:
+
+```bash
+pip install -e .
+```
+
+---
+
+# Test Automation
+
+The project uses pytest.
+
+Run:
+
+```bash
+pytest
+```
+
+Expected:
+
+```
+==============================
+
+11 passed
+
+==============================
+```
+
+---
+
+# Test Execution Philosophy
+
+Tests follow pipeline order:
+
+```
+01
+
+Recursive Extraction
+
+
+02
+
+Log Discovery
+
+
+03
+
+Parsing
+
+
+04
+
+Pattern Detection
+
+
+05
+
+Timeline Builder
+
+
+06
+
+Root Cause Engine
+
+
+07
+
+Report Generator
+
+
+08
+
+Pipeline
+
+
+09
+
+Failure Distribution
+```
+
+This ensures failures are detected close to their source.
+
+---
+
+# Continuous Integration Workflow
+
+Future CI pipeline:
+
+```
+Code Commit
+
+      |
+
+      v
+
+Install Dependencies
+
+      |
+
+      v
+
+Run Unit Tests
+
+      |
+
+      v
+
+Run Coverage
+
+      |
+
+      v
+
+Build Package
+
+      |
+
+      v
+
+Publish Artifact
+```
+
+---
+
+# Quality Gates
+
+Before merging:
+
+```
+[ ] pytest passes
+
+[ ] No lint errors
+
+[ ] Reports generated
+
+[ ] Documentation updated
+
+[ ] Backward compatibility maintained
+```
+
+---
+
+# Release Process
+
+## Version Update
+
+Update:
+
+```
+src/report/run_metadata.py
+```
+
+Example:
+
+```json
+{
+    "version":
+        "0.2.0"
+}
+```
+
+---
+
+## Validation
+
+Run:
+
+```bash
+pytest
+```
+
+Run sample analysis:
+
+```bash
+PYTHONPATH=src python3 -m app.main \
+    --input sample_bundle.tgz \
+    --output reports
+```
+
+Verify:
+
+```
+reports/
+
+└── timestamp/
+
+    ├── metadata.json
+
+    ├── report.json
+
+    └── summary.md
+```
+
+---
+
+# Production Readiness Checklist
+
+## Core Engine
+
+```
+[x] Recursive extraction
+
+[x] Multi-format archive support
+
+[x] Log discovery
+
+[x] Parser framework
+
+[x] Failure detection
+
+[x] Timeline generation
+
+[x] RCA engine
+```
+
+---
+
+## Reporting
+
+```
+[x] Markdown report
+
+[x] JSON report
+
+[x] Metadata tracking
+
+[x] Failure distribution
+
+[ ] HTML dashboard
+```
+
+---
+
+## Operations
+
+```
+[x] Virtual environment
+
+[x] Dependency management
+
+[x] Automated tests
+
+[x] Structured logs
+
+[ ] CI/CD pipeline
+
+[ ] Container image
+```
+
+---
+
+# Recommended Next Development Steps
+
+Priority order:
+
+1. Complete HTML dashboard
+
+2. Add interactive charts
+
+3. Add more failure detectors
+
+4. Add FastAPI service
+
+5. Add historical RCA comparison
+
+6. Add AI-assisted explanation layer

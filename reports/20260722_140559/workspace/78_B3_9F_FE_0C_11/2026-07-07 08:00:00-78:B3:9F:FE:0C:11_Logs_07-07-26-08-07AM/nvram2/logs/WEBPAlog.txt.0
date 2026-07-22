@@ -1,0 +1,36 @@
+36
+260707-04:00:29.238121 [mod=WEBPA, lvl=INFO] [tid=11306] WDMP-C: SET Request
+260707-04:00:29.238173 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: transactionId in request: 3f290bc7-b51d-4d74-9151-eabfe44a7af4_____00655fd6e7f0982
+260707-04:00:29.238304 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: CompName = eRT.com.cisco.spvtg.ccsp.lmlite, dbusPath : eRT.com.cisco.spvtg.ccsp.lmlite, paramCount = 3
+260707-04:00:29.244099 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: ccspRetStatus is 100
+260707-04:00:29.244390 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Sent message successfully to parodus
+260707-04:00:29.244413 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Elapsed time : 6 ms
+260707-04:00:29.245877 [mod=WEBPA, lvl=INFO] [tid=13130] WDMP-C: Request {"command":"GET","names":["Device.DeviceInfo.SerialNumber","Device.DeviceInfo.SoftwareVersion","Device.DeviceInfo.Manufacturer","Device.DeviceInfo.X_RDKCENTRAL-COM_BootTime","Device.DeviceInfo.X_CISCO_COM_FirmwareName","Device.DeviceInfo.X_RDKCENTRAL-COM_LastRebootReason","Device.DeviceInfo.Description","Device.DeviceInfo.ProductClass","Device.DeviceInfo.HardwareVersion","Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId"]}
+260707-04:00:29.245909 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: transactionId : a9e4de1c-c11c-4a4f-95cd-03385b5ac6b2_____00655FD6E7E3604, traceParent : traceparent: 00-0000000000000000740f55093553dd3d-d65990c40c995b82-01, traceState : tracestate: dd=s:1;o:rum;p:0f9cd3a1220987c3 in request
+260707-04:00:29.245981 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: Invoked setTraceContext function with value traceParent - traceparent: 00-0000000000000000740f55093553dd3d-d65990c40c995b82-01, traceState - tracestate: dd=s:1;o:rum;p:0f9cd3a1220987c3
+260707-04:00:29.247504 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: CompName = eRT.com.cisco.spvtg.ccsp.pam, dbusPath : eRT.com.cisco.spvtg.ccsp.pam, paramCount = 10
+260707-04:00:29.248521 [mod=WEBPA, lvl=INFO] [tid=11306] WDMP-C: Request {"command":"GET","names":["Device.DeviceInfo.Webpa.X_COMCAST-COM_CMC","Device.DeviceInfo.Webpa.X_COMCAST-COM_CID"]}
+260707-04:00:29.248548 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: transactionId in request: c309e046-c21d-47a3-8f5a-1aa272970311_____00655fd6e7f292d
+260707-04:00:29.248655 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: CompName = eRT.com.cisco.spvtg.ccsp.webpaagent, dbusPath : eRT.com.cisco.spvtg.ccsp.webpaagent, paramCount = 2
+260707-04:00:29.248822 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: traceContext value, traceParent - traceparent: 00-0000000000000000740f55093553dd3d-d65990c40c995b82-01, traceState - tracestate: dd=s:1;o:rum;p:0f9cd3a1220987c3
+260707-04:00:29.248831 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Sent message successfully to parodus
+260707-04:00:29.248871 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Elapsed time : 0 ms
+260707-04:00:29.248968 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: ClearTraceContext request success
+260707-04:00:29.248984 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: The response wrp_msg header fields
+260707-04:00:29.248997 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: res header count in res_wrp_msg - 2
+260707-04:00:29.249011 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: res header 0 in res_wrp_msg - traceparent: 00-0000000000000000740f55093553dd3d-d65990c40c995b82-01
+260707-04:00:29.249025 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: res header 1 in res_wrp_msg - tracestate: dd=s:1;o:rum;p:0f9cd3a1220987c3
+260707-04:00:29.249099 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: Sent message successfully to parodus
+260707-04:00:29.249115 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: Elapsed time : 3 ms
+260707-04:01:09.893805 [mod=WEBPA, lvl=INFO] [tid=11306] WDMP-C: Request {"command":"GET","names":["Device.DeviceInfo.SerialNumber","Device.DeviceInfo.SoftwareVersion","Device.DeviceInfo.Manufacturer","Device.DeviceInfo.X_RDKCENTRAL-COM_BootTime","Device.DeviceInfo.X_CISCO_COM_FirmwareName","Device.DeviceInfo.X_RDKCENTRAL-COM_LastRebootReason","Device.DeviceInfo.Description","Device.DeviceInfo.ProductClass","Device.DeviceInfo.HardwareVersion","Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId"]}
+260707-04:01:09.893848 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: transactionId : c52682d5-69fa-466f-aed1-d4b1dec9efcf_____00655FD70EB3A91, traceParent : traceparent: 00-000000000000000028f82a8c8ee53ce0-b58b5b3df03ae6d5-01, traceState : tracestate: dd=s:1;o:rum;p:0dff487d08712a00 in request
+260707-04:01:09.893937 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Invoked setTraceContext function with value traceParent - traceparent: 00-000000000000000028f82a8c8ee53ce0-b58b5b3df03ae6d5-01, traceState - tracestate: dd=s:1;o:rum;p:0dff487d08712a00
+260707-04:01:09.895519 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: CompName = eRT.com.cisco.spvtg.ccsp.pam, dbusPath : eRT.com.cisco.spvtg.ccsp.pam, paramCount = 10
+260707-04:01:09.896679 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: traceContext value, traceParent - traceparent: 00-000000000000000028f82a8c8ee53ce0-b58b5b3df03ae6d5-01, traceState - tracestate: dd=s:1;o:rum;p:0dff487d08712a00
+260707-04:01:09.896813 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: ClearTraceContext request success
+260707-04:01:09.896829 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: The response wrp_msg header fields
+260707-04:01:09.896843 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: res header count in res_wrp_msg - 2
+260707-04:01:09.896857 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: res header 0 in res_wrp_msg - traceparent: 00-000000000000000028f82a8c8ee53ce0-b58b5b3df03ae6d5-01
+260707-04:01:09.896870 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: res header 1 in res_wrp_msg - tracestate: dd=s:1;o:rum;p:0dff487d08712a00
+260707-04:01:09.897064 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Sent message successfully to parodus
+260707-04:01:09.897081 [mod=WEBPA, lvl=INFO] [tid=11306] WEBPA: Elapsed time : 3 ms

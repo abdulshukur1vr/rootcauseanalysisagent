@@ -1,0 +1,927 @@
+Jul  8 16:54:06 XHC33AF5A7 syslog.info syslogd started: BusyBox v1.36.1
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: klogd started: BusyBox v1.36.1 (2025-06-18 17:57:42 CST)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Booting Linux on physical CPU 0x0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Initializing cgroup subsys cpu
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000] Linux version 3.10.73+ (ubuntu@ip-96-113-103-35) (gcc version 7.4.1 20181213 (Linaro GCC 7.4-2019.02) ) #1 PREEMPT Wed Jan 7 07:20:22 UTC 2026
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.000000] CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7d
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Machine: Ambarella S2L (Flattened Device Tree), model: Ambarella S2LM Kiwi Board
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.000000] Memory policy: ECC disabled, Data cache writeback
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      AHB = 0xe0000000[0xe0000000],0x01000000 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      APB = 0xe8000000[0xe8000000],0x01000000 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      PPM = 0x00000000[0xdfe00000],0x00200000 9
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      AXI = 0xf0000000[0xf0000000],0x00030000 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:    DRAMC = 0xdffe0000[0xef000000],0x00020000 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:   DBGBUS = 0xec000000[0xec000000],0x00200000 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:  DBGFMEM = 0xee000000[0xee000000],0x01000000 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:   IAVMEM = 0x09c00000[          ],0x06400000
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:    FBMEM = 0x09c00000[          ],0x00000000
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000] On node 0 totalpages: 39424
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000] free_area_init_node: node 0, pgdat 80545f00, node_mem_map 80575000
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000]   Normal zone: 308 pages used for memmap
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000]   Normal zone: 0 pages reserved
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000]   Normal zone: 39424 pages, LIFO batch:7
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] CPU: All CPU(s) started in SVC mode.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    0.000000] pcpu-alloc: [0] 0 
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 39116
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000] Kernel command line: console=ttyS0 root=/dev/mtdblock5 ro rootfstype=squashfs init=/linuxrc bootimageid=2
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Memory: 154MB = 154MB total
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000] Memory: 150592k/150592k available, 7104k reserved, 0K highmem
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000] Virtual kernel memory layout:
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]     vmalloc : 0x8a000000 - 0xff000000   (1872 MB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]     lowmem  : 0x80000000 - 0x89a00000   ( 154 MB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]       .text : 0x80008000 - 0x804db038   (4941 kB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]       .init : 0x804dc000 - 0x80504ddc   ( 164 kB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]       .data : 0x80506000 - 0x8054e590   ( 290 kB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.000000]        .bss : 0x8054e590 - 0x80570320   ( 136 kB)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] NR_IRQS:240
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] sched_clock: 32 bits at 54MHz, resolution 18ns, wraps every 79536ms
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] Console: colour dummy device 80x30
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.000000] console [ttyS0] enabled
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.235052] Calibrating delay loop... 597.60 BogoMIPS (lpj=2988032)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.292599] pid_max: default: 32768 minimum: 301
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.297275] Security Framework initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.301424] AppArmor: AppArmor initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.305528] Mount-cache hash table entries: 512
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.312275] CPU: Testing write buffer coherency: ok
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.317438] Setting up static identity map for 0x803acb68 - 0x803acbd0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.326217] devtmpfs: initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.330800] pinctrl core: initialized pinctrl subsystem
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.336289] NET: Registered protocol family 16
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.341522] DMA: preallocated 256 KiB pool for atomic coherent allocations
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.348879] L310 cache controller enabled
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.352915] l2x0: 8 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x32020000, Cache size: 131072 B
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.362309] ambarella-pinctrl e8009000.pinctrl: Ambarella pinctrl driver registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.370325] ambarella-gpio gpio.0: Ambarella GPIO driver registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.380743] bio: create slab <bio-0> at 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.385804] ambarella-dma e0005000.dma: Ambarella DMA Engine 
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.392952] ambarella-i2c e8003000.i2c: Ambarella I2C adapter[0] probed!
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.399855] ambarella-i2c e8007000.i2c: Ambarella I2C adapter[2] probed!
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.407360] Switching to clocksource ambarella-cs-timer
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.412808] AppArmor: AppArmor Filesystem Enabled
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.423779] NET: Registered protocol family 2
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.428989] TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.436175] TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.442534] TCP: Hash tables configured (established 2048 bind 2048)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.448949] TCP: reno registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.452167] UDP hash table entries: 256 (order: 0, 4096 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.458010] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.464443] NET: Registered protocol family 1
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.469051] RPC: Registered named UNIX socket transport module.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.475005] RPC: Registered udp transport module.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.479688] RPC: Registered tcp transport module.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.484384] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.491588] audit: initializing netlink socket (disabled)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.497046] type=2000 audit(0.439:1): initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.502362] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.508818] msgmni has been set to 294
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.513942] NET: Registered protocol family 38
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.518454] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.525956] io scheduler noop registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.529861] io scheduler deadline registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.534165] io scheduler cfq registered (default)
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.539306] pwm-backlight 0.pwm_bl: invalid default brightness level: 100, using 99
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.547577] e8005000.uart: ttyS0 at MMIO 0xe8005000 (irq = 9) is a ambuart
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.555348] brd: module loaded
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.560955] loop: module loaded
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.566638] ambarella-nand e0001000.nand: in soft ecc-[6]bit mode
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.572834] NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit), 128MiB, page size: 2048, OOB size: 64
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    0.586677] Scanning device for bad blocks
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.885222] bootimageid=2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.887828] using the second image
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.891212] partition table start offset is 0x000C0000^M
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.896752] par_entry id=0, offset=0x00000000, length=0x03000000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.902760] par_entry id=1, offset=0x03000000, length=0x03000000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.908741] par_entry id=2, offset=0x06000000, length=0x01200000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.914735] par_entry id=3, offset=0x07200000, length=0x00400000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.920715] par_entry id=4, offset=0x07600000, length=0x00900000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.926705] par_entry id=5, offset=0x07F00000, length=0x00100000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.932983] kernel offset=0x3020000, kernel size=0x2C0000
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.938360] filesystem offset=0x32E0000, filesystem size=0x0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.944038] s_product_size offset=0x5BC0000, s_product_size size=0x0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    0.950649] MAC: 3C:62:F0:3A:F5:A7
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.954057] Creating 13 MTD partitions on "amba_nand":
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.959178] 0x000000000000-0x000007f00000 : "FW"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.964703] 0x000007600000-0x0000079e0000 : "CONF0"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.970163] 0x0000079e0000-0x000007dc0000 : "CONF1"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.975719] 0x000007f00000-0x000008000000 : "MAC"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.981058] 0x000003000000-0x000006000000 : "IMAGE_CURRENT"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.987348] 0x0000032e0000-0x000006000000 : "FS"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.992723] 0x000005bc0000-0x000006000000 : "PINFO"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    0.998279] 0x0000000e0000-0x000003000000 : "IMAGE_UPGRADE"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.004587] 0x000007000000-0x000007200000 : "DEBUG"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.010109] 0x000007dc0000-0x000007f00000 : "UPGLOG"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.015774] 0x000006000000-0x000007000000 : "RESERVEDPART"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.021985] 0x000007200000-0x000007600000 : "CALIBRATION"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.028091] 0x000000000000-0x000008000000 : "FLASHDUMP"
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.034387] ambarella-spi e0020000.spi: Only supports msb first tx-rx
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.041412] ambarella-spi e0020000.spi: Ambarella spi controller 0 created.^M
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.048835] mousedev: PS/2 mouse device common for all mice
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.054745] ambarella-rtc e8015000.rtc: rtc core: registered rtc-ambarella as rtc0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.062436] i2c /dev entries driver
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.066532] ambarella-wdt e800c000.wdt: Ambarella Watchdog Timer Probed.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.073401] nf_conntrack version 0.5.0 (2353 buckets, 9412 max)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.079799] ip_tables: (C) 2000-2006 Netfilter Core Team
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.085179] TCP: cubic registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.088475] Initializing XFRM netlink socket
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.092815] NET: Registered protocol family 10
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.097844] sit: IPv6 over IPv4 tunneling driver
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.103051] NET: Registered protocol family 17
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.107568] Bridge firewalling registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.111630] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.119301] ThumbEE CPU extension supported.
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.125012] Key type trusted registered
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    1.130078] Key type encrypted registered
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.134282] AppArmor: AppArmor sha1 policy hashing enabled
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.140134] ambarella-rtc e8015000.rtc: setting system clock to 2106-02-07 06:28:15 UTC (4294967295)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.153503] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.161803] devtmpfs: mounted
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    1.165008] Freeing unused kernel memory: 160K (804dc000 - 80504000)
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    2.269682] dbg: rt5670_i2c_probe line 3922
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    2.315263] dbg: rt5670_probe line 3686
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    2.319087] Codec driver version 0.0.7 alsa 1.0.25
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    2.323956] GPIO pin requested ok, AMP_SWITCH = L
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    2.329577] v_id = 7
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    3.394022] AMBARELLA SoC Audio DUMMY Codec
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [    3.400881] rt5670 0-001c: ASoC: mux Mono ADC R Mux has no paths
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [    3.406934] rt5670 0-001c: ASoC: mux Mono ADC L Mux has no paths
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [    3.413697] rt5670 0-001c: ASoC: mux INR Mux has no paths
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [    3.419083] rt5670 0-001c: ASoC: mux INL Mux has no paths
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    3.427510] snd_soc_card_amba sound.3:  rt5670-aif1 <-> e001a000.i2s mapping ok
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    3.436382] snd_soc_card_amba sound.3:  AMBARELLA_DUMMY_CODEC <-> e001a000.i2s mapping ok
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    3.978897] register "001c 4b4b
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    3.978897] " count=10
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    3.984699] addr=0x1c val=0x4b4b
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.374775] UBI: attaching mtd10 to ubi0
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.455571] UBI: scanning is finished
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.476966] UBI: attached mtd10 (name "RESERVEDPART", size 16 MiB) to ubi0
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.483921] UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.490684] UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.497382] UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.504243] UBI: good PEBs: 128, bad PEBs: 0, corrupted PEBs: 0
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.510137] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.517257] UBI: max/mean erase counter: 144/125, WL threshold: 4096, image sequence number: 1446616144
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.526628] UBI: available PEBs: 0, total reserved PEBs: 128, PEBs reserved for bad PEB handling: 20
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.535748] UBI: background thread "ubi_bgt0d" started, PID 251
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.557152] UBIFS: background thread "ubifs_bgt0_0" started, PID 255
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    4.623623] UBIFS: recovery needed
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    5.552193] UBIFS: recovery completed
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    5.556211] UBIFS: mounted UBI device 0, volume 0, name "angelo_rootfs"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    5.562878] UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    5.571987] UBIFS: FS size: 11808768 bytes (11 MiB, 93 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    5.581540] UBIFS: reserved for root: 0 bytes (0 KiB)
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    5.586588] UBIFS: media format: w4/r0 (latest is w4/r0), UUID 58118F19-FD07-40B5-9E34-791AD68E993A, small LPT model
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.571150] dsp_drv_probe_status(696): DSP probe op mode [3], enc mode [7].
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    9.612605] Vout notice: vout0:0 probed!
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    9.621490] Vout notice: vout1:1 probed!
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    9.626001] imgproc: module license 'unspecified' taints kernel.
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [    9.631992] Disabling lock debugging due to kernel taint
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.638979] img: IMG KERN VIRT: WR [0x8a343000, 184 KB], RD [0x88840000, 36 KB].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.680361] iav_drv_probe_status(299): IAV probe status [255], dsp enc mode [3].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.708948] hw_pts_init(122): HW timer for pts is enabled.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.708979] hw_pts_init(129): Audio clock freq: 12288000, HW timer clock freq: 90000!
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    9.709264] VIN: vin0: probed!
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [    9.712314] VIN: vin1: probed!
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    9.747123] Vout notice: CVBS:0@1 probed!
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [    9.783083] Vout notice: DBus-All:1@0 probed!
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.814893] dsplog dev init done, dev_id = 248:249.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [    9.816033] dsplog_printk: DSP log by Timer New
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.062689] SYSCLK:SO[74175824]
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.103835] VIN: JX-F22 init(2-lane mipi)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.107829] VIN: Version ID:0x04, Product ID:0x0f22
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.158036] usbcore: registered new interface driver usbfs
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.169422] usbcore: registered new interface driver hub
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.179873] usbcore: registered new device driver usb
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.207736] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.227337] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.259414] ehci-ambarella: AMBARELLA-EHCI Host Controller driver
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.270309] ambarella-ehci e0018000.ehci: EHCI Host Controller
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.276246] ambarella-ehci e0018000.ehci: new USB bus registered, assigned bus number 1
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.284469] ambarella-ehci e0018000.ehci: irq 39, io mem 0xe0018000
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.302668] ambarella-ehci e0018000.ehci: USB 2.0 started, EHCI 1.00
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.309087] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.315880] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.323092] usb usb1: Product: EHCI Host Controller
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.327948] usb usb1: Manufacturer: Linux 3.10.73+ ehci_hcd
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.333507] usb usb1: SerialNumber: AmbUSB
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.343062] hub 1-0:1.0: USB hub found
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.346829] hub 1-0:1.0: 2 ports detected
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.379485] ambarella-udc e0006000.udc: ambarella_udc: version 12 August 2015
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   10.429186] g_ether gadget: using random self ethernet address
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   10.439630] g_ether gadget: using random host ethernet address
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.451561] usb0: MAC d6:5d:0a:da:06:c3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.460000] usb0: HOST MAC ae:92:a2:7d:9a:79
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.464413] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.471008] g_ether gadget: g_ether ready
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.498664] usbcore: registered new interface driver asix
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.519373] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.630207] cfg80211: Calling CRDA to update world regulatory domain
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.832693] usb 1-2: new high-speed USB device number 2 using ambarella-ehci
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.983638] usb 1-2: New USB device found, idVendor=0bda, idProduct=c82c
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.990345] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   10.997625] usb 1-2: Product: 802.11ac NIC
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   11.001860] usb 1-2: Manufacturer: Realtek
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   11.006104] usb 1-2: SerialNumber: 123456
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   11.368412] nl_process_session_cmd(165): NETLINK DBG: Correct connect cmd from app 392.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   11.368439] nl_send_msg(125): NETLINK DBG: Send session status 0 to session cmd 0 of app 392.
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.225634] RTW: module init start
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.229030] RTW: rtl88x2cu v5.12.1.6-0-ga6cacc154.20210615_COEX20210504-2323
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.240818] RTW: build time: Jun 18 2025 17:47:52
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.245589] RTW: rtl88x2cu BT-Coex version = COEX20210504-2323
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.251743] RTW: [HALMAC]55772M
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.251743] HALMAC_MAJOR_VER = 1
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.251743] HALMAC_PROTOTYPE_VER = 6
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.251743] HALMAC_MINOR_VER = 6
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.251743] HALMAC_PATCH_VER = 22
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.526829] RTW: HW EFUSE
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.529434] RTW: 0x000: 29 81 00 8F  FF 20 09 00  9A 04 E4 35  10 03 F1 EB  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.536481] RTW: 0x010: 5D 5D 5D 5D  5D 5D 51 51  51 51 51 FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.543510] RTW: 0x020: FF FF 5C 5C  5E 5E 59 58  57 56 55 54  50 50 50 50  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.550533] RTW: 0x030: FF FF FF FF  FF FF FF FF  FF FF 66 66  66 66 66 66  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.557559] RTW: 0x040: 57 57 57 57  57 FF FF FF  FF FF FF FF  5E 5E 61 62  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.564584] RTW: 0x050: 5C 5A 59 57  56 55 52 52  52 52 FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.571604] RTW: 0x060: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.578629] RTW: 0x070: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.585656] RTW: 0x080: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.592687] RTW: 0x090: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.599703] RTW: 0x0A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.606728] RTW: 0x0B0: FF FF FF FF  FF FF FF FF  7F 1D FF 00  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.613753] RTW: 0x0C0: FF 21 00 11  00 00 FF FF  20 33 03 FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.620773] RTW: 0x0D0: 1B 1B FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.627797] RTW: 0x0E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.634822] RTW: 0x0F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.641841] RTW: 0x100: F0 94 65 D3  58 C5 FF FF  CD F0 FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.648869] RTW: 0x110: 9D 9D FC A0  D8 D8 FD FF  35 8C FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.655894] RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.662918] RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.669938] RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.676962] RTW: 0x150: DA 0B 2C C8  FF 7E 02 00  E0 4C C8 22  01 09 03 52  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.683985] RTW: 0x160: 65 61 6C 74  65 6B 0E 03  38 30 32 2E  31 31 61 63  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.691005] RTW: 0x170: 20 4E 49 43  08 03 31 32  33 34 35 36  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.698030] RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.705054] RTW: 0x190: FD FE FF FF  00 00 21 0F  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.712074] RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.719098] RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.726123] RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.733147] RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.740167] RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.747192] RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.754216] RTW: 0x200: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.761236] RTW: 0x210: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.768261] RTW: 0x220: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.775285] RTW: 0x230: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.782305] RTW: 0x240: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.789329] RTW: 0x250: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.796353] RTW: 0x260: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.803377] RTW: 0x270: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.810397] RTW: 0x280: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.817421] RTW: 0x290: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.824445] RTW: 0x2A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.831465] RTW: 0x2B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.838490] RTW: 0x2C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.845514] RTW: 0x2D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.852534] RTW: 0x2E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.859559] RTW: 0x2F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   12.866600] RTW: hal_com_config_channel_plan chplan:0x7F
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.047783] RTW: [RF_PATH] ver_id.RF_TYPE:RF_2T2R
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.052479] RTW: [RF_PATH] HALSPEC's rf_reg_trx_path_bmp:0x33, rf_reg_path_avail_num:2, max_tx_cnt:2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.061608] RTW: [RF_PATH] PG's trx_path_bmp:0x33, max_tx_cnt:0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.067517] RTW: [RF_PATH] Registry's trx_path_bmp:0x00, tx_path_lmt:0, rx_path_lmt:0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.075333] RTW: [RF_PATH] HALDATA's trx_path_bmp:0x33, max_tx_cnt:2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.081669] RTW: [RF_PATH] HALDATA's rf_type:RF_2T2R, NumTotalRFPath:2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.088190] RTW: [TRX_Nss] HALSPEC - tx_nss:2, rx_nss:2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.093553] RTW: [TRX_Nss] Registry - tx_nss:0, rx_nss:0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.098843] RTW: [TRX_Nss] HALDATA - tx_nss:2, rx_nss:2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.104072] RTW: txpath=0x3, rxpath=0x3
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.107887] RTW: txpath_1ss:0x1, num:1
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.111613] RTW: txpath_2ss:0x3, num:2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.116792] RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.137860] RTW: default mapping domain:0x7f to regd_name:FCC
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.159185] RTW: rtw_ndev_init(wlan0) if1 mac_addr=3c:62:f0:3a:f5:a7
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.197631] usbcore: registered new interface driver rtl88x2cu
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   13.208124] RTW: module init ret=0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.875819] Bluetooth: Core ver 2.21
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.882998] NET: Registered protocol family 31
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.887432] Bluetooth: HCI device and connection manager initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.900146] Bluetooth: HCI socket layer initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.905125] Bluetooth: L2CAP socket layer initialized
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   13.910199] Bluetooth: SCO socket layer initialized
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   22.195530] type=1400 audit(1783468810.849:2): apparmor="STATUS" operation="profile_load" name="usr.bin.accessManager" pid=780 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.553051] rtk_btusb: Realtek Bluetooth USB driver ver 3.1.897f3bb.20201202-173003
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.560693] rtk_btcoex: rtk_btcoex_init: version: 1.2
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.620246] rtk_btcoex: create workqueue
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.662820] rtk_btcoex: alloc buffers 1408, 2240 for ev and l2
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.668733] rtk_btusb: btusb_probe intf->cur_altsetting->desc.bInterfaceNumber 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.728362] rtk_btusb: btusb_probe can_wakeup 1, may wakeup 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.768868] rtk_btusb: patch_add
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.772089] rtk_btusb: auto suspend is disabled
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   23.792214] type=1400 audit(1783468812.439:3): apparmor="STATUS" operation="profile_load" name="usr.bin.ledmgrmain" pid=811 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.807807] rtk_btusb: pid = 0xc82c
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.830774] rtk_btusb: patch_add: Reset gEVersion to 0xff
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.850760] rtk_btusb: set_bit(HCI_QUIRK_RESET_ON_CLOSE, &hdev->quirks);
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.913158] rtk_btusb: btusb_probe: done
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.929119] rtk_btusb: btusb_open start
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   23.933040] rtk_btusb: btusb_open hdev->promisc ==0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.937899] rtk_btusb: download_patch start
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.942060] rtk_btusb: chip type value: 0x73
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.946346] rtk_btusb: HCI reset.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.955493] usbcore: registered new interface driver rtk_btusb
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.965260] rtk_btusb: read_ver_rsp->lmp_subver = 0x8822
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.970579] rtk_btusb: read_ver_rsp->hci_rev = 0xc
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.975416] rtk_btusb: patch_entry->lmp_sub = 0x8822
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.980367] rtk_btusb: load_firmware start
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.984463] rtk_btusb: lmp_version = 0x8822
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   23.988633] rtk_btusb: config filename rtl8822cu_config
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.044378] rtk_btusb: size = 17
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.047621] rtk_btusb: Origin cfg len 6
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.051461] rtk_btusb: 55 ab 23 87 00 00
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.055454] rtk_btusb: bdaddr ofs 0030, 3C:62:F0:3A:F5:A8
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.060832] rtk_btusb: New cfg len 15
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.064501] rtk_btusb: 55 ab 23 87 09 00 30 00 06 a8 f5 3a f0 62 3c
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   24.070757] rtk_btusb: fw name is  rtl8822cu_fw
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   24.085920] rtk_btusb: This is not 8723a, use new patch style!
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.091747] rtk_btusb: rtk_get_eversion: gEVersion 255
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.099230] rtk_btusb: eversion->status = 0x0, eversion->version = 0x3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.105808] rtk_btusb: load_firmware: New gEVersion 3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.110852] rtk_btusb: rtk_get_fw_project_id: opcode 0, len 1, data 13
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.117381] rtk_btusb: lmp_version is 8822, project_id is 8822, match!
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.123901] rtk_btusb: fw_version = 0x99a25c3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.128234] rtk_btusb: number_of_total_patch = 3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.132846] rtk_btusb: chipID 4
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.135965] rtk_btusb: patch_length 0x788c
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.140038] rtk_btusb: start_offset 0x00005d00
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.144474] rtk_btusb: Svn version:    24075
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.148720] rtk_btusb: Coexistence: BTCOEX_20200529-1c1c
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.154020] rtk_btusb: buf_len = 0x789b
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.157963] rtk_btusb: fw: exists, config file: exists
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.163103] rtk_btusb: load_firmware done
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.167113] rtk_btusb: download_data start
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.553239] rtk_btusb: download_data done
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.557259] rtk_btusb: HCI reset.
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.574240] rtk_btusb: read_ver_rsp->lmp_subver = 0x25c3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.579558] rtk_btusb: read_ver_rsp->hci_rev = 0x99a
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.584677] rtk_btusb: patch_entry->lmp_sub = 0x8822
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.589628] rtk_btusb: Rtk patch end 0
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.593408] rtk_btusb: btusb_open set HCI_RUNNING
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.598281] rtk_btcoex: Open BTCOEX
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.601765] rtk_btusb: btusb_open end
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.611946] rtk_btcoex: BTCOEX hci_rev 0x099a
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.626463] rtk_btcoex: BTCOEX lmp_subver 0x25c3
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   24.640926] rtk_btusb: btusb_notify: hci0 evt 3
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   26.768180] type=1400 audit(1783468815.419:4): apparmor="STATUS" operation="profile_load" name="usr.bin.netsrvmgr" pid=951 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   27.608236] type=1400 audit(1783468816.259:5): apparmor="STATUS" operation="profile_load" name="usr.bin.nlmon" pid=1083 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   28.381777] type=1400 audit(1783468817.029:6): apparmor="STATUS" operation="profile_load" name="usr.bin.parodus" pid=1117 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   30.037730] type=1400 audit(1783468818.689:7): apparmor="STATUS" operation="profile_load" name="usr.bin.prvnmgr" pid=1177 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   30.837129] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   30.912227] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   31.045420] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   31.072796] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   31.092969] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   33.434259] type=1400 audit(1783468822.089:8): apparmor="STATUS" operation="profile_load" name="usr.bin.rdkcProvider" pid=1233 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   33.614449] type=1400 audit(1783468822.269:9): apparmor="STATUS" operation="profile_load" name="usr.bin.rtrouted" pid=1244 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   34.045134] type=1400 audit(1783468822.699:10): apparmor="STATUS" operation="profile_load" name="usr.bin.streamConfigurer" pid=1264 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   34.601245] type=1400 audit(1783468823.249:11): apparmor="STATUS" operation="profile_load" name="usr.bin.telemetry2_0" pid=1275 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   34.984124] type=1400 audit(1783468823.639:12): apparmor="STATUS" operation="profile_load" name="usr.bin.webconfig" pid=1286 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   35.802916] RTW: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.325438] RTW: start auth
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.328251] RTW: SAE: start external auth
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.694178] RTW: SAE: auth success, start assoc
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.711828] RTW: assoc success
+Jul  8 16:54:06 XHC33AF5A7 user.info kernel: [   36.719105] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.725825] RTW: recv eapol packet 1/4
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.737376] RTW: ============ STA [fa:d0:0e:fb:8f:0a]  ===================
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.756153] RTW: send eapol packet 2/4
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.760865] RTW: mac_id : 0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.764241] RTW: wireless_mode : 0x44
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.767890] RTW: mimo_type : 2
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.770924] RTW: static smps : N
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.792690] RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.797643] RTW: rate_id : 9
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.800519] RTW: rssi : 71 (%), rssi_level : 0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.812668] RTW: is_support_sgi : Y, is_vht_enable : Y
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.817788] RTW: disable_ra : N, disable_pt : N
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.822293] RTW: is_noisy : N
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.837645] RTW: txrx_state : 0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.840790] RTW: curr_tx_rate : CCK_1M (L)
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.852668] RTW: curr_tx_bw : 20MHz
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.856166] RTW: curr_retry_ratio : 0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.859807] RTW: ra_mask : 0x00000000fffffff0
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.859807] 
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.894523] RTW: recv eapol packet 3/4
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.899748] RTW: send eapol packet 4/4
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.957048] RTW: set pairwise key camid:0, addr:fa:d0:0e:fb:8f:0a, kid:0, type:AES
+Jul  8 16:54:06 XHC33AF5A7 user.warn kernel: [   36.981284] RTW: set group key camid:1, addr:fa:d0:0e:fb:8f:0a, kid:1, type:AES
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   41.932832] nl_process_session_cmd(165): NETLINK DBG: Correct connect cmd from app 1599.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   41.932859] nl_send_msg(125): NETLINK DBG: Send session status 0 to session cmd 0 of app 1599.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.410984] iav_goto_idle(881): Goto Idle from STATE_INIT.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.411004] dsp_set_op_mode(424): [debug]: dsp_set_op_mode: dsp->op_mode(3), op_mode(0)
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.411017] __reset_vin(217): dsp reset vin 
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.416382] dsp_set_op_mode(447): Entering DSP mode [0]...
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.451489] dsp_set_op_mode(454): [Done] Entered mode [0].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.558186] iav_check_vout(607): VOUT are all disabled.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.558216] check_dsp_mem_bandwidth(918): S2L chip ID [1], DSP memory bandwidth [259 MB/s], limit [1148 MB/s].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.558231] check_dsp_mem_size(1096): DSP DRAM size used [64 MB], limit [74 MB].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   46.558268] nl_send_msg(104): NETLINK DBG: Send request cmd 2 to app 1599.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.331659] nl_process_request_status(219): NETLINK DBG: Request 2 succeeded from app 1599.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.331787] dsp_set_enc_sub_mode(406): Entering DSP ENC sub mode [2]
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.578784] handle_enc_msg(210): DSP DRAM Used: 72 MB, Limited: 74 MB
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.578827] dsp_set_enc_sub_mode(412): [Done] Entered sub mode.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.578880] nl_send_msg(104): NETLINK DBG: Send request cmd 0 to app 1599.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.712822] nl_process_request_status(219): NETLINK DBG: Request 0 succeeded from app 1599.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   47.713690] iav_enable_preview(776): preview enabled.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112357] iav_ioc_start_encode(1444): Wait 4 frames before encode for encode start delay.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112381] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112403] check_dsp_mem_bandwidth(918): S2L chip ID [1], DSP memory bandwidth [360 MB/s], limit [1148 MB/s].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112415] check_dsp_mem_size(1096): DSP DRAM size used [64 MB], limit [74 MB].
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112428] iav_ioc_start_encode(1454): Init encoder when start encoding from preview state.
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112476] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112500] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 10000
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112519] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+Jul  8 16:54:06 XHC33AF5A7 user.debug kernel: [   48.112531] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   49.287531] ambarella-i2c e8007000.i2c: No ACK from address 0x20, 0:0!
+Jul  8 16:54:06 XHC33AF5A7 user.err kernel: [   49.360723] ambarella-i2c e8007000.i2c: No ACK from address 0x88, 0:0!
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   49.743557] type=1400 audit(1783529637.952:13): apparmor="STATUS" operation="profile_load" name="usr.bin.webpa" pid=1297 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   51.314251] type=1400 audit(1783529639.462:14): apparmor="STATUS" operation="profile_load" name="usr.bin.wpa_supplicant" pid=2434 comm="apparmor_parser"
+Jul  8 16:54:06 XHC33AF5A7 user.notice kernel: [   56.033209] type=1400 audit(1783529644.242:15): apparmor="STATUS" operation="profile_load" name="usr.local.bin.cvr_daemon" pid=2577 comm="apparmor_parser"
+Jul  8 16:54:08 XHC33AF5A7 user.notice kernel: [   60.438790] type=1400 audit(1783529648.642:16): apparmor="STATUS" operation="profile_load" name="usr.local.bin.eventnotification" pid=2876 comm="apparmor_parser"
+Jul  8 16:54:11 XHC33AF5A7 user.notice kernel: [   63.656539] type=1400 audit(1783529651.862:17): apparmor="STATUS" operation="profile_load" name="usr.local.bin.multi_client" pid=3299 comm="apparmor_parser"
+Jul  8 16:54:15 XHC33AF5A7 user.notice kernel: [   67.312517] type=1400 audit(1783529655.512:18): apparmor="ALLOWED" operation="open" parent=1 profile="usr.local.bin.eventnotification" name="/usr/lib/libtrower-base64.so.1.0.0" pid=3866 comm="eventnotificati" requested_mask=
+Jul  8 16:54:15 XHC33AF5A7 user.notice kernel: [   67.603256] type=1400 audit(1783529655.812:19): apparmor="ALLOWED" operation="file_mmap" parent=1 profile="usr.local.bin.eventnotification" name="/usr/lib/libtrower-base64.so.1.0.0" pid=3866 comm="eventnotificati" requested_
+Jul  8 16:54:16 XHC33AF5A7 daemon.info nit: starting pid 3911, tty '': '/sbin/getty 115200 tts/1 vt102'
+Jul  8 16:54:17 XHC33AF5A7 user.notice kernel: [   68.938582] type=1400 audit(1783529657.132:20): apparmor="STATUS" operation="profile_load" name="usr.local.bin.provpolld" pid=3586 comm="apparmor_parser"
+Jul  8 16:54:18 XHC33AF5A7 user.notice kernel: [   70.735932] type=1400 audit(1783529658.942:21): apparmor="STATUS" operation="profile_load" name="usr.local.bin.sensor_daemon" pid=3937 comm="apparmor_parser"
+Jul  8 16:54:20 XHC33AF5A7 user.notice kernel: [   71.810336] type=1400 audit(1783529660.012:22): apparmor="STATUS" operation="profile_load" name="usr.local.bin.thumbnail_upload" pid=4050 comm="apparmor_parser"
+Jul  8 16:54:20 XHC33AF5A7 user.notice kernel: [   72.620799] type=1400 audit(1783529660.822:23): apparmor="STATUS" operation="profile_load" name="usr.local.bin.xstreamer" pid=4075 comm="apparmor_parser"
+Jul  8 16:54:21 XHC33AF5A7 user.notice kernel: [   73.443633] type=1400 audit(1783529661.652:24): apparmor="STATUS" operation="profile_load" name="usr.local.bin.xvisiond" pid=4092 comm="apparmor_parser"
+Jul  8 16:54:34 XHC33AF5A7 user.warn kernel: [   86.069067] 
+Jul  8 16:54:34 XHC33AF5A7 user.warn kernel: [   86.069067] =========[rt5670] rt5670_set_dai_sysclk(3193),CLK id is 0 freq = 12288000 
+Jul  8 16:54:36 XHC33AF5A7 user.info kernel: [   87.910480] rt5670 0-001c: rt5670_dsp_rate sys:12288000 srate:16000
+Jul  8 16:54:36 XHC33AF5A7 user.info kernel: [   88.031030] rt5670 0-001c: AEC
+Jul  8 16:56:01 XHC33AF5A7 user.warn kernel: [  173.186436] 
+Jul  8 16:56:01 XHC33AF5A7 user.warn kernel: [  173.186436] =========[rt5670] rt5670_set_dai_sysclk(3193),CLK id is 0 freq = 12288000 
+Jul  8 16:56:01 XHC33AF5A7 user.warn kernel: [  173.294762] rt5670_hp_power_event SND_SOC_DAPM_POST_PMU
+Jul  8 16:56:01 XHC33AF5A7 user.warn kernel: [  173.533124] POST PMU, AMP_SWITCH = H
+Jul  8 16:56:25 XHC33AF5A7 user.warn kernel: [  197.164660] enter rt5670_shutdown
+Jul  8 16:56:25 XHC33AF5A7 user.warn kernel: [  197.663141] POST PMU, AMP_SWITCH = L
+Jul  8 16:56:26 XHC33AF5A7 user.warn kernel: [  197.851723] rt5670_hp_power_event SND_SOC_DAPM_PRE_PMD
+Jul  8 16:56:31 XHC33AF5A7 user.notice kernel: [  203.726720] type=1400 audit(1783529791.962:25): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjTsmWg" pid=5469 comm="telemetry2_0" requested_mask="c" de
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  203.813133] type=1400 audit(1783529792.052:26): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjTsmWg" pid=5469 comm="telemetry2_0" requested_mask="rwc" d
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  203.913277] type=1400 audit(1783529792.152:27): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjTsmWg" pid=5469 comm="telemetry2_0" requested_mask="d" d
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  203.994886] type=1400 audit(1783529792.232:28): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjNfGDz" pid=5469 comm="telemetry2_0" requested_mask="c" de
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  204.112871] type=1400 audit(1783529792.352:29): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjNfGDz" pid=5469 comm="telemetry2_0" requested_mask="rwc" d
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  204.177728] type=1400 audit(1783529792.412:30): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjNfGDz" pid=5469 comm="telemetry2_0" requested_mask="d" d
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  204.435188] type=1400 audit(1783529792.672:31): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainT1NNcl" pid=5469 comm="telemetry2_0" requested_mask="c" de
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  204.518971] type=1400 audit(1783529792.752:32): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainT1NNcl" pid=5469 comm="telemetry2_0" requested_mask="rwc" d
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  204.575870] type=1400 audit(1783529792.812:33): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainT1NNcl" pid=5469 comm="telemetry2_0" requested_mask="d" d
+Jul  8 16:56:32 XHC33AF5A7 user.notice kernel: [  204.658938] type=1400 audit(1783529792.892:34): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjveA1n" pid=5469 comm="telemetry2_0" requested_mask="c" de
+Jul  8 16:57:16 XHC33AF5A7 user.debug kernel: [  248.173226] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:09:24 XHC33AF5A7 user.warn kernel: [  976.034569] audit_printk_skb: 222 callbacks suppressed
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.039856] type=1400 audit(1783530564.184:109): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainB44TFQ" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.071938] type=1400 audit(1783530564.214:110): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainB44TFQ" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.101755] type=1400 audit(1783530564.244:111): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainB44TFQ" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.156064] type=1400 audit(1783530564.304:112): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain1HVYmd" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.232390] type=1400 audit(1783530564.374:113): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain1HVYmd" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.273965] type=1400 audit(1783530564.424:114): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain1HVYmd" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.297922] type=1400 audit(1783530564.444:115): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainn7dD5H" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.328011] type=1400 audit(1783530564.474:116): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainn7dD5H" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.373365] type=1400 audit(1783530564.524:117): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainn7dD5H" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:09:24 XHC33AF5A7 user.notice kernel: [  976.642015] type=1400 audit(1783530564.784:118): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainRIM5KD" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:24:24 XHC33AF5A7 user.warn kernel: [ 1875.777644] audit_printk_skb: 141 callbacks suppressed
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1875.786095] type=1400 audit(1783531464.021:166): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainENJYML" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1875.819690] type=1400 audit(1783531464.061:167): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainENJYML" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1875.912895] type=1400 audit(1783531464.161:168): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainENJYML" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1875.968995] type=1400 audit(1783531464.211:169): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain48BUl0" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1876.022835] type=1400 audit(1783531464.271:170): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain48BUl0" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1876.092943] type=1400 audit(1783531464.341:171): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain48BUl0" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1876.289381] type=1400 audit(1783531464.531:172): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSMVs0C" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1876.323818] type=1400 audit(1783531464.571:173): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSMVs0C" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1876.408502] type=1400 audit(1783531464.651:174): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSMVs0C" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:24:24 XHC33AF5A7 user.notice kernel: [ 1876.453103] type=1400 audit(1783531464.701:175): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainWs2Rmr" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:24:46 XHC33AF5A7 user.debug kernel: [ 1898.451772] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:24:48 XHC33AF5A7 user.debug kernel: [ 1900.452047] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:24:50 XHC33AF5A7 user.debug kernel: [ 1901.852325] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:24:52 XHC33AF5A7 user.debug kernel: [ 1904.725938] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:24:53 XHC33AF5A7 user.debug kernel: [ 1905.120540] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:25:40 XHC33AF5A7 user.debug kernel: [ 1952.393057] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:25:40 XHC33AF5A7 user.debug kernel: [ 1952.726409] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:25:56 XHC33AF5A7 user.debug kernel: [ 1968.595418] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:25:57 XHC33AF5A7 user.debug kernel: [ 1969.595586] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:14 XHC33AF5A7 user.debug kernel: [ 1986.531394] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:15 XHC33AF5A7 user.debug kernel: [ 1987.731595] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:17 XHC33AF5A7 user.debug kernel: [ 1989.398504] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:18 XHC33AF5A7 user.debug kernel: [ 1990.065271] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:41 XHC33AF5A7 user.debug kernel: [ 2013.468744] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:42 XHC33AF5A7 user.debug kernel: [ 2014.135525] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:55 XHC33AF5A7 user.debug kernel: [ 2027.137420] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:26:56 XHC33AF5A7 user.debug kernel: [ 2027.804194] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:00 XHC33AF5A7 user.debug kernel: [ 2032.004814] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:01 XHC33AF5A7 user.debug kernel: [ 2033.471746] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:10 XHC33AF5A7 user.debug kernel: [ 2042.272953] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:10 XHC33AF5A7 user.debug kernel: [ 2042.673072] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:12 XHC33AF5A7 user.debug kernel: [ 2043.939822] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:12 XHC33AF5A7 user.debug kernel: [ 2044.539937] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:13 XHC33AF5A7 user.debug kernel: [ 2044.940084] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:13 XHC33AF5A7 user.debug kernel: [ 2045.673471] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:14 XHC33AF5A7 user.debug kernel: [ 2046.473532] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:16 XHC33AF5A7 user.debug kernel: [ 2047.740430] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:16 XHC33AF5A7 user.debug kernel: [ 2048.274416] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:17 XHC33AF5A7 user.debug kernel: [ 2049.675085] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:25 XHC33AF5A7 user.debug kernel: [ 2057.408515] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:26 XHC33AF5A7 user.debug kernel: [ 2057.741864] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:35 XHC33AF5A7 user.debug kernel: [ 2066.943230] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:36 XHC33AF5A7 user.debug kernel: [ 2067.943406] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:36 XHC33AF5A7 user.debug kernel: [ 2068.343537] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:36 XHC33AF5A7 user.debug kernel: [ 2068.410084] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:37 XHC33AF5A7 user.debug kernel: [ 2068.743562] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:37 XHC33AF5A7 user.debug kernel: [ 2068.811993] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:37 XHC33AF5A7 user.debug kernel: [ 2069.210265] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:38 XHC33AF5A7 user.debug kernel: [ 2070.143667] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:42 XHC33AF5A7 user.debug kernel: [ 2073.944244] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:43 XHC33AF5A7 user.debug kernel: [ 2075.544556] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:44 XHC33AF5A7 user.debug kernel: [ 2076.077878] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:45 XHC33AF5A7 user.debug kernel: [ 2076.944684] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:45 XHC33AF5A7 user.debug kernel: [ 2077.279164] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:27:47 XHC33AF5A7 user.debug kernel: [ 2078.811700] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:07 XHC33AF5A7 user.debug kernel: [ 2099.615791] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:08 XHC33AF5A7 user.debug kernel: [ 2100.281667] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:19 XHC33AF5A7 user.debug kernel: [ 2110.749677] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:19 XHC33AF5A7 user.debug kernel: [ 2111.149705] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:22 XHC33AF5A7 user.debug kernel: [ 2114.085043] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:24 XHC33AF5A7 user.debug kernel: [ 2116.087988] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:26 XHC33AF5A7 user.debug kernel: [ 2117.950699] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:26 XHC33AF5A7 user.debug kernel: [ 2118.685696] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:43 XHC33AF5A7 user.debug kernel: [ 2134.753335] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:43 XHC33AF5A7 user.debug kernel: [ 2135.420332] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:49 XHC33AF5A7 user.debug kernel: [ 2140.754156] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:49 XHC33AF5A7 user.debug kernel: [ 2141.354215] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:54 XHC33AF5A7 user.debug kernel: [ 2146.421549] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:55 XHC33AF5A7 user.debug kernel: [ 2146.754937] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:55 XHC33AF5A7 user.debug kernel: [ 2147.555091] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:57 XHC33AF5A7 user.debug kernel: [ 2149.355355] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:58 XHC33AF5A7 user.debug kernel: [ 2149.955455] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:28:58 XHC33AF5A7 user.debug kernel: [ 2150.422136] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:06 XHC33AF5A7 user.debug kernel: [ 2158.156602] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:07 XHC33AF5A7 user.debug kernel: [ 2158.959942] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:21 XHC33AF5A7 user.debug kernel: [ 2173.292187] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:22 XHC33AF5A7 user.debug kernel: [ 2173.892350] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:29 XHC33AF5A7 user.debug kernel: [ 2181.493545] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:31 XHC33AF5A7 user.debug kernel: [ 2183.293641] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:32 XHC33AF5A7 user.debug kernel: [ 2184.093816] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:32 XHC33AF5A7 user.debug kernel: [ 2184.627263] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:29:59 XHC33AF5A7 user.debug kernel: [ 2211.697845] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:30:00 XHC33AF5A7 user.debug kernel: [ 2212.097898] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:30:03 XHC33AF5A7 user.debug kernel: [ 2215.298374] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:30:04 XHC33AF5A7 user.debug kernel: [ 2215.834837] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:30:23 XHC33AF5A7 user.debug kernel: [ 2235.301286] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:30:24 XHC33AF5A7 user.debug kernel: [ 2236.501532] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:31:12 XHC33AF5A7 user.debug kernel: [ 2284.710174] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:31:13 XHC33AF5A7 user.debug kernel: [ 2285.175381] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:31:14 XHC33AF5A7 user.debug kernel: [ 2286.508910] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:31:15 XHC33AF5A7 user.debug kernel: [ 2286.842291] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:31:47 XHC33AF5A7 user.debug kernel: [ 2319.046934] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:31:49 XHC33AF5A7 user.debug kernel: [ 2320.780536] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:09 XHC33AF5A7 user.debug kernel: [ 2340.983591] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:09 XHC33AF5A7 user.debug kernel: [ 2341.316872] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:38 XHC33AF5A7 user.debug kernel: [ 2369.988884] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:38 XHC33AF5A7 user.debug kernel: [ 2370.321151] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:42 XHC33AF5A7 user.debug kernel: [ 2373.721721] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:43 XHC33AF5A7 user.debug kernel: [ 2375.455285] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:48 XHC33AF5A7 user.debug kernel: [ 2380.389464] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:32:49 XHC33AF5A7 user.debug kernel: [ 2380.922767] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:10 XHC33AF5A7 user.debug kernel: [ 2401.859169] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:11 XHC33AF5A7 user.debug kernel: [ 2403.659373] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:17 XHC33AF5A7 user.debug kernel: [ 2408.793501] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:18 XHC33AF5A7 user.debug kernel: [ 2409.727016] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:18 XHC33AF5A7 user.debug kernel: [ 2410.528978] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:19 XHC33AF5A7 user.debug kernel: [ 2410.993795] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:30 XHC33AF5A7 user.debug kernel: [ 2422.595927] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:31 XHC33AF5A7 user.debug kernel: [ 2422.928873] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:52 XHC33AF5A7 user.debug kernel: [ 2444.665430] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:33:53 XHC33AF5A7 user.debug kernel: [ 2445.068517] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:34:03 XHC33AF5A7 user.debug kernel: [ 2455.667021] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:34:04 XHC33AF5A7 user.debug kernel: [ 2456.400553] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:34:53 XHC33AF5A7 user.debug kernel: [ 2505.341033] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:34:53 XHC33AF5A7 user.debug kernel: [ 2505.674414] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:06 XHC33AF5A7 user.debug kernel: [ 2518.476259] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:07 XHC33AF5A7 user.debug kernel: [ 2518.876393] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:11 XHC33AF5A7 user.debug kernel: [ 2523.545022] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:12 XHC33AF5A7 user.debug kernel: [ 2524.678281] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:37 XHC33AF5A7 user.debug kernel: [ 2549.080830] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:37 XHC33AF5A7 user.debug kernel: [ 2549.614486] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:38 XHC33AF5A7 user.debug kernel: [ 2550.614343] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:39 XHC33AF5A7 user.debug kernel: [ 2550.947697] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:41 XHC33AF5A7 user.debug kernel: [ 2553.281373] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:41 XHC33AF5A7 user.debug kernel: [ 2553.681519] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:48 XHC33AF5A7 user.debug kernel: [ 2560.615822] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:49 XHC33AF5A7 user.debug kernel: [ 2561.015849] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:50 XHC33AF5A7 user.debug kernel: [ 2562.216439] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:51 XHC33AF5A7 user.debug kernel: [ 2562.816180] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:51 XHC33AF5A7 user.debug kernel: [ 2563.483495] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:52 XHC33AF5A7 user.debug kernel: [ 2563.882973] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:55 XHC33AF5A7 user.debug kernel: [ 2566.816762] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:35:55 XHC33AF5A7 user.debug kernel: [ 2567.484747] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:05 XHC33AF5A7 user.debug kernel: [ 2576.751492] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:05 XHC33AF5A7 user.debug kernel: [ 2577.151592] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:10 XHC33AF5A7 user.debug kernel: [ 2582.085644] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:10 XHC33AF5A7 user.debug kernel: [ 2582.619041] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:30 XHC33AF5A7 user.debug kernel: [ 2602.621961] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:31 XHC33AF5A7 user.debug kernel: [ 2603.222072] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:32 XHC33AF5A7 user.debug kernel: [ 2604.355698] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:32 XHC33AF5A7 user.debug kernel: [ 2604.688985] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:39 XHC33AF5A7 user.debug kernel: [ 2610.756584] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:39 XHC33AF5A7 user.debug kernel: [ 2611.623381] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:47 XHC33AF5A7 user.debug kernel: [ 2619.424510] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:36:48 XHC33AF5A7 user.debug kernel: [ 2619.959151] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:11 XHC33AF5A7 user.debug kernel: [ 2643.228034] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:12 XHC33AF5A7 user.debug kernel: [ 2643.894780] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:12 XHC33AF5A7 user.debug kernel: [ 2644.561546] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:14 XHC33AF5A7 user.debug kernel: [ 2646.695133] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:20 XHC33AF5A7 user.debug kernel: [ 2652.296019] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:21 XHC33AF5A7 user.debug kernel: [ 2653.230511] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:22 XHC33AF5A7 user.debug kernel: [ 2653.762951] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:37:22 XHC33AF5A7 user.debug kernel: [ 2654.362942] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:38:33 XHC33AF5A7 user.debug kernel: [ 2725.506753] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:38:34 XHC33AF5A7 user.debug kernel: [ 2726.040142] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:38:34 XHC33AF5A7 user.debug kernel: [ 2726.373626] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:38:36 XHC33AF5A7 user.debug kernel: [ 2728.240502] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:39:07 XHC33AF5A7 user.debug kernel: [ 2759.711742] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:39:08 XHC33AF5A7 user.debug kernel: [ 2760.045194] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:39:10 XHC33AF5A7 user.debug kernel: [ 2762.712318] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:39:13 XHC33AF5A7 user.debug kernel: [ 2764.779134] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:39:23 XHC33AF5A7 user.warn kernel: [ 2775.561200] audit_printk_skb: 105 callbacks suppressed
+Jul  8 17:39:23 XHC33AF5A7 user.notice kernel: [ 2775.566897] type=1400 audit(1783532363.805:211): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainRKtm66" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:39:23 XHC33AF5A7 user.notice kernel: [ 2775.611944] type=1400 audit(1783532363.855:212): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainRKtm66" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:39:23 XHC33AF5A7 user.notice kernel: [ 2775.637935] type=1400 audit(1783532363.885:213): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainRKtm66" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:39:23 XHC33AF5A7 user.notice kernel: [ 2775.686745] type=1400 audit(1783532363.935:214): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainsO4sSa" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:39:24 XHC33AF5A7 user.notice kernel: [ 2775.777514] type=1400 audit(1783532364.025:215): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainsO4sSa" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:39:24 XHC33AF5A7 user.notice kernel: [ 2775.826364] type=1400 audit(1783532364.075:216): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainsO4sSa" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:39:24 XHC33AF5A7 user.notice kernel: [ 2776.015571] type=1400 audit(1783532364.265:217): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain0NQLhv" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:39:24 XHC33AF5A7 user.notice kernel: [ 2776.051130] type=1400 audit(1783532364.295:218): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain0NQLhv" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:39:24 XHC33AF5A7 user.notice kernel: [ 2776.115296] type=1400 audit(1783532364.365:219): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain0NQLhv" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:39:24 XHC33AF5A7 user.notice kernel: [ 2776.152413] type=1400 audit(1783532364.395:220): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainKdtIeY" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:40:32 XHC33AF5A7 user.debug kernel: [ 2844.524300] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:34 XHC33AF5A7 user.debug kernel: [ 2846.057781] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:34 XHC33AF5A7 user.debug kernel: [ 2846.591172] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:36 XHC33AF5A7 user.debug kernel: [ 2847.858071] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:36 XHC33AF5A7 user.debug kernel: [ 2848.324824] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:37 XHC33AF5A7 user.debug kernel: [ 2848.858218] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:38 XHC33AF5A7 user.debug kernel: [ 2850.725128] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:40 XHC33AF5A7 user.debug kernel: [ 2852.525464] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:41 XHC33AF5A7 user.debug kernel: [ 2852.992186] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:43 XHC33AF5A7 user.debug kernel: [ 2854.792515] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:45 XHC33AF5A7 user.debug kernel: [ 2857.462301] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:48 XHC33AF5A7 user.debug kernel: [ 2860.259849] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:48 XHC33AF5A7 user.debug kernel: [ 2860.659931] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:49 XHC33AF5A7 user.debug kernel: [ 2861.660090] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:50 XHC33AF5A7 user.debug kernel: [ 2862.593913] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:40:53 XHC33AF5A7 user.debug kernel: [ 2865.727344] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:14 XHC33AF5A7 user.debug kernel: [ 2886.730407] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:16 XHC33AF5A7 user.debug kernel: [ 2888.197321] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:20 XHC33AF5A7 user.debug kernel: [ 2892.597943] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:23 XHC33AF5A7 user.debug kernel: [ 2894.865026] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:40 XHC33AF5A7 user.debug kernel: [ 2911.867515] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:40 XHC33AF5A7 user.debug kernel: [ 2912.667599] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:47 XHC33AF5A7 user.debug kernel: [ 2919.668691] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:48 XHC33AF5A7 user.debug kernel: [ 2920.002010] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:52 XHC33AF5A7 user.debug kernel: [ 2923.869293] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:41:55 XHC33AF5A7 user.debug kernel: [ 2927.603115] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:22 XHC33AF5A7 user.debug kernel: [ 2954.473780] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:23 XHC33AF5A7 user.debug kernel: [ 2955.407160] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:25 XHC33AF5A7 user.debug kernel: [ 2956.740727] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:26 XHC33AF5A7 user.debug kernel: [ 2958.474326] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:29 XHC33AF5A7 user.debug kernel: [ 2961.209828] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:33 XHC33AF5A7 user.debug kernel: [ 2964.942121] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:33 XHC33AF5A7 user.debug kernel: [ 2965.542029] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:35 XHC33AF5A7 user.debug kernel: [ 2967.142317] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:49 XHC33AF5A7 user.debug kernel: [ 2981.611085] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:42:51 XHC33AF5A7 user.debug kernel: [ 2982.744591] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:40 XHC33AF5A7 user.debug kernel: [ 3031.951814] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:40 XHC33AF5A7 user.debug kernel: [ 3032.285158] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:46 XHC33AF5A7 user.debug kernel: [ 3038.152725] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:47 XHC33AF5A7 user.debug kernel: [ 3038.886109] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:48 XHC33AF5A7 user.debug kernel: [ 3040.019607] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:49 XHC33AF5A7 user.debug kernel: [ 3040.888109] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:50 XHC33AF5A7 user.debug kernel: [ 3042.486728] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:51 XHC33AF5A7 user.debug kernel: [ 3042.886698] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:51 XHC33AF5A7 user.debug kernel: [ 3043.286826] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:43:51 XHC33AF5A7 user.debug kernel: [ 3043.620209] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:01 XHC33AF5A7 user.debug kernel: [ 3053.288241] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:02 XHC33AF5A7 user.debug kernel: [ 3053.888380] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:04 XHC33AF5A7 user.debug kernel: [ 3055.756346] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:04 XHC33AF5A7 user.debug kernel: [ 3056.089778] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:25 XHC33AF5A7 user.debug kernel: [ 3077.158404] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:25 XHC33AF5A7 user.debug kernel: [ 3077.491828] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:26 XHC33AF5A7 user.debug kernel: [ 3077.891843] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:26 XHC33AF5A7 user.debug kernel: [ 3078.426356] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:32 XHC33AF5A7 user.debug kernel: [ 3084.361343] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:33 XHC33AF5A7 user.debug kernel: [ 3084.893047] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:35 XHC33AF5A7 user.debug kernel: [ 3087.693315] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:36 XHC33AF5A7 user.debug kernel: [ 3088.026663] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:42 XHC33AF5A7 user.debug kernel: [ 3094.427669] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:44:43 XHC33AF5A7 user.debug kernel: [ 3094.761027] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:26 XHC33AF5A7 user.debug kernel: [ 3138.567788] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:30 XHC33AF5A7 user.debug kernel: [ 3142.301345] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:35 XHC33AF5A7 user.debug kernel: [ 3147.435685] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:37 XHC33AF5A7 user.debug kernel: [ 3148.969086] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:41 XHC33AF5A7 user.debug kernel: [ 3153.636723] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:42 XHC33AF5A7 user.debug kernel: [ 3154.036373] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:54 XHC33AF5A7 user.debug kernel: [ 3165.771427] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:54 XHC33AF5A7 user.debug kernel: [ 3166.104815] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:54 XHC33AF5A7 user.debug kernel: [ 3166.571543] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:56 XHC33AF5A7 user.debug kernel: [ 3168.306266] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:45:57 XHC33AF5A7 user.debug kernel: [ 3169.238639] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:01 XHC33AF5A7 user.debug kernel: [ 3172.839157] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:01 XHC33AF5A7 user.debug kernel: [ 3173.439248] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:02 XHC33AF5A7 user.debug kernel: [ 3174.106056] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:21 XHC33AF5A7 user.debug kernel: [ 3192.775407] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:23 XHC33AF5A7 user.debug kernel: [ 3194.975733] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:28 XHC33AF5A7 user.debug kernel: [ 3200.713728] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:29 XHC33AF5A7 user.debug kernel: [ 3201.310505] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:32 XHC33AF5A7 user.debug kernel: [ 3204.443782] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:37 XHC33AF5A7 user.debug kernel: [ 3208.777754] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:37 XHC33AF5A7 user.debug kernel: [ 3209.377866] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:38 XHC33AF5A7 user.debug kernel: [ 3209.779014] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:38 XHC33AF5A7 user.debug kernel: [ 3210.311331] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:38 XHC33AF5A7 user.debug kernel: [ 3210.711532] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:39 XHC33AF5A7 user.debug kernel: [ 3211.711643] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:41 XHC33AF5A7 user.debug kernel: [ 3212.845032] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:42 XHC33AF5A7 user.debug kernel: [ 3213.978641] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:42 XHC33AF5A7 user.debug kernel: [ 3214.579825] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:47 XHC33AF5A7 user.debug kernel: [ 3219.179303] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:46:49 XHC33AF5A7 user.debug kernel: [ 3221.588352] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:00 XHC33AF5A7 user.debug kernel: [ 3231.981181] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:01 XHC33AF5A7 user.debug kernel: [ 3232.914664] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:22 XHC33AF5A7 user.debug kernel: [ 3254.251173] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:24 XHC33AF5A7 user.debug kernel: [ 3256.184821] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:56 XHC33AF5A7 user.debug kernel: [ 3288.522898] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:57 XHC33AF5A7 user.debug kernel: [ 3289.523032] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:59 XHC33AF5A7 user.debug kernel: [ 3291.256673] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:47:59 XHC33AF5A7 user.debug kernel: [ 3291.723379] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:03 XHC33AF5A7 user.debug kernel: [ 3295.590546] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:04 XHC33AF5A7 user.debug kernel: [ 3295.923962] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:07 XHC33AF5A7 user.debug kernel: [ 3299.324401] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:10 XHC33AF5A7 user.debug kernel: [ 3302.392003] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:12 XHC33AF5A7 user.debug kernel: [ 3304.525211] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:13 XHC33AF5A7 user.debug kernel: [ 3305.191932] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:14 XHC33AF5A7 user.debug kernel: [ 3305.992495] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:15 XHC33AF5A7 user.debug kernel: [ 3307.392260] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:23 XHC33AF5A7 user.debug kernel: [ 3315.393527] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:24 XHC33AF5A7 user.debug kernel: [ 3315.793492] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:30 XHC33AF5A7 user.debug kernel: [ 3322.463241] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:31 XHC33AF5A7 user.debug kernel: [ 3322.795632] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:43 XHC33AF5A7 user.debug kernel: [ 3335.263097] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:45 XHC33AF5A7 user.debug kernel: [ 3336.796607] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:50 XHC33AF5A7 user.debug kernel: [ 3342.397500] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:48:51 XHC33AF5A7 user.debug kernel: [ 3343.197606] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:00 XHC33AF5A7 user.debug kernel: [ 3352.598955] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:01 XHC33AF5A7 user.debug kernel: [ 3353.265687] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:07 XHC33AF5A7 user.debug kernel: [ 3359.466671] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:08 XHC33AF5A7 user.debug kernel: [ 3360.267180] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:09 XHC33AF5A7 user.debug kernel: [ 3361.600360] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:11 XHC33AF5A7 user.debug kernel: [ 3362.867110] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:12 XHC33AF5A7 user.debug kernel: [ 3363.867376] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:49:15 XHC33AF5A7 user.debug kernel: [ 3367.467795] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:50:29 XHC33AF5A7 user.debug kernel: [ 3441.545372] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:50:30 XHC33AF5A7 user.debug kernel: [ 3441.879171] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:50:36 XHC33AF5A7 user.debug kernel: [ 3447.746228] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:50:36 XHC33AF5A7 user.debug kernel: [ 3448.679718] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:50:37 XHC33AF5A7 user.debug kernel: [ 3449.146484] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:50:38 XHC33AF5A7 user.debug kernel: [ 3450.213354] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:00 XHC33AF5A7 user.debug kernel: [ 3471.749760] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:02 XHC33AF5A7 user.debug kernel: [ 3474.216808] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:06 XHC33AF5A7 user.debug kernel: [ 3477.884007] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:07 XHC33AF5A7 user.debug kernel: [ 3479.550905] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:11 XHC33AF5A7 user.debug kernel: [ 3483.018127] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:11 XHC33AF5A7 user.debug kernel: [ 3483.353311] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:14 XHC33AF5A7 user.debug kernel: [ 3485.886735] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:14 XHC33AF5A7 user.debug kernel: [ 3486.285233] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:21 XHC33AF5A7 user.debug kernel: [ 3492.886194] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:21 XHC33AF5A7 user.debug kernel: [ 3493.219582] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:31 XHC33AF5A7 user.debug kernel: [ 3503.422623] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:32 XHC33AF5A7 user.debug kernel: [ 3504.354578] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:57 XHC33AF5A7 user.debug kernel: [ 3529.424912] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:51:59 XHC33AF5A7 user.debug kernel: [ 3531.225257] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:23 XHC33AF5A7 user.debug kernel: [ 3554.828648] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:23 XHC33AF5A7 user.debug kernel: [ 3555.362051] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:33 XHC33AF5A7 user.debug kernel: [ 3564.963539] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:36 XHC33AF5A7 user.debug kernel: [ 3568.030632] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:37 XHC33AF5A7 user.debug kernel: [ 3569.230771] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:37 XHC33AF5A7 user.debug kernel: [ 3569.632596] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:38 XHC33AF5A7 user.debug kernel: [ 3570.164268] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:39 XHC33AF5A7 user.debug kernel: [ 3570.964355] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:52:54 XHC33AF5A7 user.debug kernel: [ 3585.899894] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:53:04 XHC33AF5A7 user.debug kernel: [ 3596.568128] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:53:40 XHC33AF5A7 user.debug kernel: [ 3631.974584] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:53:53 XHC33AF5A7 user.debug kernel: [ 3645.642077] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:53:54 XHC33AF5A7 user.debug kernel: [ 3646.442168] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:53:58 XHC33AF5A7 user.debug kernel: [ 3649.709969] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:53:58 XHC33AF5A7 user.debug kernel: [ 3650.309528] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:14 XHC33AF5A7 user.debug kernel: [ 3665.711645] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:16 XHC33AF5A7 user.debug kernel: [ 3668.113140] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:17 XHC33AF5A7 user.debug kernel: [ 3669.178831] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:24 XHC33AF5A7 user.warn kernel: [ 3675.751406] audit_printk_skb: 114 callbacks suppressed
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3675.757109] type=1400 audit(1783533264.029:259): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainuLIo6A" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3675.782759] type=1400 audit(1783533264.069:260): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainuLIo6A" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3675.822867] type=1400 audit(1783533264.109:261): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainuLIo6A" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3675.900977] type=1400 audit(1783533264.179:262): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainS9SBZM" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3675.984236] type=1400 audit(1783533264.269:263): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainS9SBZM" pid=5469 comm="telemetry2_0" requested_mask="rwc" 
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3676.011190] type=1400 audit(1783533264.289:264): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainS9SBZM" pid=5469 comm="telemetry2_0" requested_mask="d" 
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3676.035332] type=1400 audit(1783533264.319:265): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedQC8Wb8" pid=5469 comm="telemetry2_0" requested_mask="c
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3676.077746] type=1400 audit(1783533264.359:266): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedQC8Wb8" pid=5469 comm="telemetry2_0" requested_mask="rw
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3676.153187] type=1400 audit(1783533264.439:267): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedQC8Wb8" pid=5469 comm="telemetry2_0" requested_mask="
+Jul  8 17:54:24 XHC33AF5A7 user.notice kernel: [ 3676.487051] type=1400 audit(1783533264.769:268): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainIEl5e1" pid=5469 comm="telemetry2_0" requested_mask="c" d
+Jul  8 17:54:27 XHC33AF5A7 user.debug kernel: [ 3679.513691] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:28 XHC33AF5A7 user.debug kernel: [ 3680.047103] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:54 XHC33AF5A7 user.debug kernel: [ 3706.118670] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:58 XHC33AF5A7 user.debug kernel: [ 3710.585361] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:54:59 XHC33AF5A7 user.debug kernel: [ 3711.051605] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:55:01 XHC33AF5A7 user.debug kernel: [ 3713.118636] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:55:15 XHC33AF5A7 user.debug kernel: [ 3726.787304] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:55:15 XHC33AF5A7 user.debug kernel: [ 3727.588530] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:55:41 XHC33AF5A7 user.debug kernel: [ 3753.191224] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:55:44 XHC33AF5A7 user.debug kernel: [ 3755.858271] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:01 XHC33AF5A7 user.debug kernel: [ 3772.994078] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:03 XHC33AF5A7 user.debug kernel: [ 3775.461121] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:14 XHC33AF5A7 user.debug kernel: [ 3786.129357] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:16 XHC33AF5A7 user.debug kernel: [ 3787.730659] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:16 XHC33AF5A7 user.debug kernel: [ 3788.396372] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:19 XHC33AF5A7 user.debug kernel: [ 3790.863466] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:24 XHC33AF5A7 user.debug kernel: [ 3795.930755] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:25 XHC33AF5A7 user.debug kernel: [ 3797.264366] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:33 XHC33AF5A7 user.debug kernel: [ 3805.132108] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:34 XHC33AF5A7 user.debug kernel: [ 3806.198957] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:44 XHC33AF5A7 user.debug kernel: [ 3816.000368] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:47 XHC33AF5A7 user.debug kernel: [ 3818.735216] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:52 XHC33AF5A7 user.debug kernel: [ 3823.868292] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:52 XHC33AF5A7 user.debug kernel: [ 3824.335362] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:53 XHC33AF5A7 user.debug kernel: [ 3825.401751] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:54 XHC33AF5A7 user.debug kernel: [ 3825.735168] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:54 XHC33AF5A7 user.debug kernel: [ 3826.201923] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:54 XHC33AF5A7 user.debug kernel: [ 3826.668871] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:58 XHC33AF5A7 user.debug kernel: [ 3830.002428] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:58 XHC33AF5A7 user.debug kernel: [ 3830.402586] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:56:59 XHC33AF5A7 user.debug kernel: [ 3831.135949] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:57:00 XHC33AF5A7 user.debug kernel: [ 3831.869423] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:57:05 XHC33AF5A7 user.debug kernel: [ 3836.870193] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:57:06 XHC33AF5A7 user.debug kernel: [ 3837.870343] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:57:55 XHC33AF5A7 user.debug kernel: [ 3887.277538] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:57:57 XHC33AF5A7 user.debug kernel: [ 3888.811142] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:57:59 XHC33AF5A7 user.debug kernel: [ 3891.278193] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:00 XHC33AF5A7 user.debug kernel: [ 3892.211614] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:10 XHC33AF5A7 user.debug kernel: [ 3902.213106] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:11 XHC33AF5A7 user.debug kernel: [ 3903.479941] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:15 XHC33AF5A7 user.debug kernel: [ 3907.280561] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:17 XHC33AF5A7 user.debug kernel: [ 3908.814038] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:50 XHC33AF5A7 user.debug kernel: [ 3942.218937] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:50 XHC33AF5A7 user.debug kernel: [ 3942.552313] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:51 XHC33AF5A7 user.debug kernel: [ 3943.285836] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:53 XHC33AF5A7 user.debug kernel: [ 3945.486182] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:54 XHC33AF5A7 user.debug kernel: [ 3946.088126] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:54 XHC33AF5A7 user.debug kernel: [ 3946.352928] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:56 XHC33AF5A7 user.debug kernel: [ 3948.086480] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:58 XHC33AF5A7 user.debug kernel: [ 3949.753517] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:58 XHC33AF5A7 user.debug kernel: [ 3950.621426] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:58:59 XHC33AF5A7 user.debug kernel: [ 3950.953647] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:59:10 XHC33AF5A7 user.debug kernel: [ 3962.489705] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:59:11 XHC33AF5A7 user.debug kernel: [ 3962.821963] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:59:29 XHC33AF5A7 user.debug kernel: [ 3981.493432] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 17:59:30 XHC33AF5A7 user.debug kernel: [ 3982.024814] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:15 XHC33AF5A7 user.debug kernel: [ 4026.964889] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:16 XHC33AF5A7 user.debug kernel: [ 4027.873702] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:36 XHC33AF5A7 user.debug kernel: [ 4048.302018] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:37 XHC33AF5A7 user.debug kernel: [ 4048.901317] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:40 XHC33AF5A7 user.debug kernel: [ 4052.368552] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:41 XHC33AF5A7 user.debug kernel: [ 4053.308974] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:47 XHC33AF5A7 user.debug kernel: [ 4058.702835] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:47 XHC33AF5A7 user.debug kernel: [ 4059.502962] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:49 XHC33AF5A7 user.debug kernel: [ 4060.969817] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:53 XHC33AF5A7 user.debug kernel: [ 4065.103685] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:56 XHC33AF5A7 user.debug kernel: [ 4068.104158] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:00:57 XHC33AF5A7 user.debug kernel: [ 4069.170947] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:02 XHC33AF5A7 user.debug kernel: [ 4074.638484] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:03 XHC33AF5A7 user.debug kernel: [ 4075.038504] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:06 XHC33AF5A7 user.debug kernel: [ 4078.305676] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:13 XHC33AF5A7 user.debug kernel: [ 4085.573847] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:14 XHC33AF5A7 user.debug kernel: [ 4086.440154] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:16 XHC33AF5A7 user.debug kernel: [ 4088.107084] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:20 XHC33AF5A7 user.debug kernel: [ 4092.709215] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:21 XHC33AF5A7 user.debug kernel: [ 4093.507844] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:27 XHC33AF5A7 user.debug kernel: [ 4099.242081] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:29 XHC33AF5A7 user.debug kernel: [ 4101.242410] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:46 XHC33AF5A7 user.debug kernel: [ 4118.178143] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:46 XHC33AF5A7 user.debug kernel: [ 4118.578192] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:48 XHC33AF5A7 user.debug kernel: [ 4120.445176] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:49 XHC33AF5A7 user.debug kernel: [ 4121.512015] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:50 XHC33AF5A7 user.debug kernel: [ 4122.245427] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:52 XHC33AF5A7 user.debug kernel: [ 4123.845728] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:53 XHC33AF5A7 user.debug kernel: [ 4125.045815] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:01:55 XHC33AF5A7 user.debug kernel: [ 4127.379569] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:02:02 XHC33AF5A7 user.debug kernel: [ 4134.513946] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 18:02:03 XHC33AF5A7 user.debug kernel: [ 4134.980703] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.

@@ -1,0 +1,249 @@
+# Root Cause Analysis Report
+## Root Cause Candidates
+
+### WIFI_DISCONNECT
+
+Confidence: 100%
+
+Multiple wireless clients experienced unexpected disassociation events across one or more WiFi interfaces. The pattern suggests wireless connectivity instability and may be related to WiFi driver issues, RF interference, client roaming behavior, or firmware defects.
+
+
+Evidence:
+
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+## Timeline
+
+1. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+2. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+
+
+3. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+
+
+4. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+
+
+5. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+6. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 04:24:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044302.826 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+7. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 07 05:59:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050034.994 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+
+8. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:07:11.135390<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+9. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:32:58.152049<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+
+
+10. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:36:39.063028<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:86:b4:88:63:2f:77
+
+
+11. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:50:04.573152<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+
+
+12. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:51:51.259259<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:f6:86:1d:6b:95:3b
+
+
+13. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:52:48.964013<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+14. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:54:27.086666<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:05:41:4e:bf:df
+
+
+15. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-03:58:46.390108<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+16. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:01:07.488342<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+17. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:13:52.426849<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+18. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:19:07.743145<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+19. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-04:24:20.054714<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+20. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:12:11.216996<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+21. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:12:42.363283<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+22. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:15:29.764678<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+23. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-05:59:49.967532<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+24. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260707-06:12:02.941543<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:28:6b:b4:2a:74:1a
+
+
+25. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 09 20:06:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004001.935 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 17
+
+
+26. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 09 21:42:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009751.845 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 17
+
+
+27. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 09 23:12:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015150.130 wl1: STA 4a:0d:d7:1e:65:27 has disassociated tx_type 17
+
+
+28. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 09 23:23:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015791.715 wl1: STA 4a:0d:d7:1e:65:27 has disassociated tx_type 17
+
+
+29. WIFI_DISCONNECT (ERROR)
+
+2026 Jul 09 23:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016372.891 wl1: STA 96:ae:3d:3a:20:31 has disassociated tx_type 17
+
+
+30. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-19:22:07.715927<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+31. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-19:36:35.903954<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+32. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-20:06:43.996488<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+33. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-20:08:46.484514<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+34. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-21:37:27.698184<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:20:f1:b2:8d:c0:a8
+
+
+35. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-21:42:26.348587<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+
+
+36. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-21:42:31.664601<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+37. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-21:55:02.850110<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+38. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-23:12:27.842786<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:4a:0d:d7:1e:65:27
+
+
+39. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-23:23:09.175221<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:4a:0d:d7:1e:65:27
+
+
+40. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-23:32:50.127318<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:96:ae:3d:3a:20:31
+
+
+41. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-18:10:14.414464<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+42. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-18:27:29.558113<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:3c:62:f0:3a:20:00
+
+
+43. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-18:30:20.190492<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:3c:62:f0:43:70:ed
+
+
+44. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-18:33:17.930325<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:1c:53:f9:8c:e2:f1
+
+
+45. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-17:45:11.344953<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+
+
+46. WIFI_DISCONNECT (ERROR)
+
+[OneWifi] 260709-17:50:00.934689<I>  device_disassociated:2844:Device diaassociated on interface:13 mac:9c:24:72:20:cd:68
+

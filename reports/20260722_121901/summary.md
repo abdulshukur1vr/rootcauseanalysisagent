@@ -1,0 +1,47 @@
+# Root Cause Analysis Report
+## Root Cause Candidates
+
+### WIFI_DISCONNECT
+
+Confidence: 100%
+
+Multiple wireless clients experienced unexpected disassociation events across one or more WiFi interfaces. The pattern suggests wireless connectivity instability and may be related to WiFi driver issues, RF interference, client roaming behavior, or firmware defects.
+
+
+Evidence:
+
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+## Timeline
+
+### WIFI_DISCONNECT
+
+Occurrences: 46
+
+Sources:
+
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-07 08:00:00-78:B3:9F:FE:0C:11_Logs_07-07-26-08-07AM/nvram2/logs/messages.txt
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-07 08:00:00-78:B3:9F:FE:0C:11_Logs_07-07-26-08-07AM/nvram2/logs/wifiMon.txt
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-09 18:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM/nvram2/logs/wifiMon.txt
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-09 18:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM/nvram2/logs/wifiMon.txt
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-09 19:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-07-01PM/nvram2/logs/wifiMon.txt
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-09 23:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-11-51PM/nvram2/logs/messages.txt
+- reports/20260722_121901/workspace/78_B3_9F_FE_0C_11/2026-07-09 23:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-11-51PM/nvram2/logs/wifiMon.txt
+
+Events:
+
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 04:24:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044302.826 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 05:59:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050034.994 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- [OneWifi] 260707-03:07:11.135390<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- [OneWifi] 260707-03:32:58.152049<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+- [OneWifi] 260707-03:36:39.063028<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:86:b4:88:63:2f:77
+

@@ -1,0 +1,369 @@
+# RootCauseAnalysisAgent
+
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![Tests](https://img.shields.io/badge/tests-11%20passing-brightgreen)
+![Status](https://img.shields.io/badge/status-active%20development-orange)
+
+A production-quality automated Root Cause Analysis (RCA) engine for analyzing device support bundles, extracting logs, detecting failures, building timelines, and generating evidence-backed RCA reports.
+
+---
+
+# Table of Contents
+
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Goals](#goals)
+- [Architecture](#architecture)
+- [Pipeline Flow](#pipeline-flow)
+- [Core Design Principles](#core-design-principles)
+- [Current Capabilities](#current-capabilities)
+- [Project Status](#project-status)
+- [Future Roadmap](#future-roadmap)
+
+---
+
+# Overview
+
+RootCauseAnalysisAgent analyzes compressed support bundles generated from networking devices and automatically identifies potential failure causes.
+
+The system recursively extracts archives, discovers logs, parses events, detects known failure patterns, correlates events into timelines, and generates RCA reports containing:
+
+- Root cause candidates
+- Confidence scores
+- Supporting evidence
+- Failure distribution
+- Event timelines
+- Execution metadata
+
+The design follows a modular pipeline architecture where each stage is independently testable and extensible.
+
+---
+
+# Problem Statement
+
+Large networking device support bundles often contain:
+
+- Hundreds of log files
+- Multiple nested archives
+- Different logging formats
+- Thousands of events
+- Interdependent failures
+
+Manual investigation requires engineers to:
+
+1. Extract bundles
+2. Search through logs
+3. Identify failures
+4. Correlate timestamps
+5. Determine the first failure
+6. Separate symptoms from root causes
+
+This process is time-consuming and error-prone.
+
+RootCauseAnalysisAgent automates these steps and provides an evidence-based RCA workflow.
+
+---
+
+# Goals
+
+## Primary Goals
+
+- Automatically analyze support bundles
+- Reduce manual troubleshooting time
+- Identify probable root causes
+- Provide supporting evidence
+- Generate repeatable reports
+- Enable future AI-assisted explanations
+
+---
+
+## Non-Goals
+
+The system does not currently:
+
+- Modify device configurations
+- Execute commands on devices
+- Replace engineering judgment
+- Automatically remediate failures
+
+The focus is analysis and diagnosis.
+
+---
+
+# Architecture
+
+The system follows a pipeline-based architecture.
+
+```
+                  Support Bundle
+                       |
+                       v
+              Recursive Extractor
+                       |
+                       v
+                 Log Discovery
+                       |
+                       v
+                Parser Factory
+                       |
+        +--------------+--------------+
+        |                             |
+        v                             v
+ Generic Parser                Syslog Parser
+        |                             |
+        +--------------+--------------+
+                       |
+                       v
+              Pattern Detection
+                       |
+                       v
+              Timeline Builder
+                       |
+                       v
+              Root Cause Engine
+                       |
+              +--------+--------+
+              |                 |
+              v                 v
+        report.json       summary.md
+              |
+              v
+          Dashboard/API
+```
+
+---
+
+# Pipeline Flow
+
+The analysis workflow:
+
+```
+1. Receive support bundle
+
+2. Detect archive type
+
+3. Extract recursively
+
+4. Locate log directories
+
+5. Discover log files
+
+6. Select appropriate parser
+
+7. Convert logs into events
+
+8. Detect known failure patterns
+
+9. Build chronological timeline
+
+10. Analyze failure relationships
+
+11. Generate RCA report
+
+12. Store execution artifacts
+```
+
+---
+
+# Core Design Principles
+
+## Modular Components
+
+Each stage has a single responsibility.
+
+Example:
+
+```
+Extractor
+    |
+    +-- handles archives
+
+Parser
+    |
+    +-- converts logs into events
+
+Detector
+    |
+    +-- identifies failures
+
+Analyzer
+    |
+    +-- determines probable causes
+```
+
+---
+
+## Evidence-Based RCA
+
+Every detected root cause should contain:
+
+- Failure category
+- Confidence score
+- Supporting events
+- Source log references
+
+Example:
+
+```
+Root Cause:
+
+Ethernet Failure
+
+Confidence:
+
+92%
+
+Evidence:
+
+kernel.log
+
+NETDEV WATCHDOG timeout
+
+Line:
+
+245
+```
+
+---
+
+## Extensible Design
+
+New capabilities should be added by introducing new modules.
+
+Examples:
+
+```
+New Parser:
+
+wifi_parser.py
+
+
+New Detector:
+
+dhcp_failure_detector.py
+
+
+New Report:
+
+html_report_generator.py
+```
+
+Existing pipeline components should not require major changes.
+
+---
+
+# Current Capabilities
+
+## Archive Handling
+
+Supported:
+
+- tar
+- tgz
+- tar.gz
+- zip
+
+Supports:
+
+- Nested archives
+- Recursive extraction
+- Workspace isolation
+
+---
+
+## Log Processing
+
+Current capabilities:
+
+- Recursive log discovery
+- Parser factory
+- Generic log parsing
+- Syslog parsing
+
+---
+
+## Failure Detection
+
+Currently supported:
+
+### Ethernet
+
+Examples:
+
+- Link down
+- Interface failures
+- NETDEV WATCHDOG timeout
+- Driver-related failures
+
+
+### WiFi Client
+
+Examples:
+
+- Authentication failures
+- WPA handshake failures
+- Association failures
+- Connection timeouts
+
+---
+
+# Project Status
+
+| Component | Status |
+|---|---|
+| Recursive Extraction | Complete |
+| Nested Archive Support | Complete |
+| Log Discovery | Complete |
+| Parser Framework | Complete |
+| Pattern Detection | Complete |
+| Timeline Builder | Complete |
+| Root Cause Engine | Complete |
+| Markdown Reports | Complete |
+| JSON Reports | Complete |
+| Metadata Generation | Complete |
+| Failure Distribution | Complete |
+| Unit Tests | Complete |
+| REST API | Planned |
+| Dashboard | Planned |
+| AI Assistant | Planned |
+
+---
+
+# Future Roadmap
+
+## Phase 1
+
+Completed:
+
+- Core RCA engine
+- Archive processing
+- Log analysis
+- Reports
+
+
+## Phase 2
+
+In progress:
+
+- Additional failure detectors
+- Better evidence correlation
+- Enhanced report schema
+
+
+## Phase 3
+
+Planned:
+
+- FastAPI backend
+- Web dashboard
+- Interactive charts
+- Log explorer
+
+
+## Phase 4
+
+Planned:
+
+- AI-assisted RCA explanation
+- Recommended remediation steps
+- Historical failure comparison

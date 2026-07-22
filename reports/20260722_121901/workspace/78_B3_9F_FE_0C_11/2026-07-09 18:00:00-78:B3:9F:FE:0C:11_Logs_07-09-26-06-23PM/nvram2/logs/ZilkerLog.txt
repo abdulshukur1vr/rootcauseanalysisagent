@@ -1,0 +1,199 @@
+199
+2026-07-09 18:08:57.990416 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:08:57.990623 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":12}
+2026-07-09 18:08:58.028403 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":12,"pid":13210,"initialized":true}
+2026-07-09 18:08:58.029044 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:08:58.029093 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:08:58.029298 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:08:58.260043 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:08:58.260157 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:08:58.260865 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:08:58.261409 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:08:58.261507 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:08:58.261683 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:09:28.261816 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:09:28.261896 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:09:28.262734 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:09:28.263366 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:09:28.263427 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:09:28.263668 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:09:50.644012 [rdkIntSvc 13241] INFO getMotionRestoreTimerEnabled()
+2026-07-09 18:09:50.644575 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:09:52.777426 [rdkIntSvc 13241] INFO Called tr181PropertyGetStringHandler for [Device.DeviceInfo.X_RDKCENTRAL-COM_XHFW.device.subsystem.disable]
+2026-07-09 18:09:52.778000 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:09:53.144057 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:09:53.218062 [rdkIntSvc 13241] INFO getAwsIotEnabled()
+2026-07-09 18:09:53.218653 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:09:53.293018 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:09:53.369395 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:09:54.677017 [backupRestoreService 13521] DEBUG job: elapsed time is 300; 6900 seconds to go...
+2026-07-09 18:09:58.029420 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:09:58.029645 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":13}
+2026-07-09 18:09:58.047139 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":13,"pid":13210,"initialized":true}
+2026-07-09 18:09:58.047827 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:09:58.047874 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:09:58.048070 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:09:58.263787 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:09:58.263860 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:09:58.264594 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:09:58.265193 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:09:58.265237 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:09:58.265408 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:10:28.111605 [commService 13516] DEBUG processing request GET_SUNRISE_SUNSET_TIME
+2026-07-09 18:10:28.111697 [commService 13516] INFO Using weathercaster for sunrise/sunset times
+2026-07-09 18:10:28.111713 [commService 13516] DEBUG channelGetPostalCode
+2026-07-09 18:10:28.111738 [commService 13516] WARN failed to get premise postal code
+2026-07-09 18:10:28.111753 [commService 13516] WARN getWeathercasterSunriseSunsetTimes: unable to get the premise postal code from any channel
+2026-07-09 18:10:28.111769 [commService 13516] WARN unable to process GET_SUNRISE_SUNSET_TIME
+2026-07-09 18:10:28.112018 [IPC 13514] WARN service response from servicePort=1400 returned failure; 5 - IPC_GENERAL_ERROR; msg=20
+2026-07-09 18:10:28.112147 [automationService 13514] WARN updateSunriseSunsetTime: Failed to get Sunrise, using previous hour and minute
+2026-07-09 18:10:28.112188 [automationService 13514] WARN updateSunriseSunsetTime: Failed to get Sunset, using previous hour and minute
+2026-07-09 18:10:28.265527 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:10:28.265626 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:10:28.266385 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:10:28.267036 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:10:28.267117 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:10:28.267277 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:10:54.677211 [backupRestoreService 13521] DEBUG job: elapsed time is 360; 6840 seconds to go...
+2026-07-09 18:10:58.048224 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:10:58.048445 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":14}
+2026-07-09 18:10:58.064711 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":14,"pid":13210,"initialized":true}
+2026-07-09 18:10:58.065299 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:10:58.065349 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:10:58.065508 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:10:58.267396 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:10:58.267497 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:10:58.268284 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:10:58.268950 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:10:58.269044 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:10:58.269238 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:11:28.269348 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:11:28.269453 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:11:28.270172 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:11:28.270760 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:11:28.270806 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:11:28.271017 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:11:54.677397 [backupRestoreService 13521] DEBUG job: elapsed time is 420; 6780 seconds to go...
+2026-07-09 18:11:58.065643 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:11:58.065870 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":15}
+2026-07-09 18:11:58.084997 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":15,"pid":13210,"initialized":true}
+2026-07-09 18:11:58.085562 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:11:58.085615 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:11:58.085803 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:11:58.271126 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:11:58.271230 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:11:58.271956 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:11:58.272552 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:11:58.272598 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:11:58.272757 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:12:28.272861 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:12:28.272973 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:12:28.273738 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:12:28.274323 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:12:28.274369 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:12:28.274569 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:12:54.677593 [backupRestoreService 13521] DEBUG job: elapsed time is 480; 6720 seconds to go...
+2026-07-09 18:12:58.085922 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:12:58.086156 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":16}
+2026-07-09 18:12:58.106230 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":16,"pid":13210,"initialized":true}
+2026-07-09 18:12:58.106803 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:12:58.106852 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:12:58.107013 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:12:58.274678 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:12:58.274775 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:12:58.275515 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:12:58.276122 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:12:58.276164 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:12:58.276320 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:13:28.276435 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:13:28.276516 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:13:28.277292 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:13:28.277865 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:13:28.277908 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:13:28.278116 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:13:54.677783 [backupRestoreService 13521] DEBUG job: elapsed time is 540; 6660 seconds to go...
+2026-07-09 18:13:58.107135 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:13:58.107367 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":17}
+2026-07-09 18:13:58.127819 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":17,"pid":13210,"initialized":true}
+2026-07-09 18:13:58.128414 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:13:58.128475 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:13:58.128638 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:13:58.278220 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:13:58.278317 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:13:58.279046 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:13:58.279645 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:13:58.279688 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:13:58.279843 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:14:28.112813 [commService 13516] DEBUG processing request GET_SUNRISE_SUNSET_TIME
+2026-07-09 18:14:28.112899 [commService 13516] INFO Using weathercaster for sunrise/sunset times
+2026-07-09 18:14:28.112920 [commService 13516] DEBUG channelGetPostalCode
+2026-07-09 18:14:28.112943 [commService 13516] WARN failed to get premise postal code
+2026-07-09 18:14:28.112961 [commService 13516] WARN getWeathercasterSunriseSunsetTimes: unable to get the premise postal code from any channel
+2026-07-09 18:14:28.112977 [commService 13516] WARN unable to process GET_SUNRISE_SUNSET_TIME
+2026-07-09 18:14:28.113220 [IPC 13514] WARN service response from servicePort=1400 returned failure; 5 - IPC_GENERAL_ERROR; msg=20
+2026-07-09 18:14:28.113344 [automationService 13514] WARN updateSunriseSunsetTime: Failed to get Sunrise, using previous hour and minute
+2026-07-09 18:14:28.113383 [automationService 13514] WARN updateSunriseSunsetTime: Failed to get Sunset, using previous hour and minute
+2026-07-09 18:14:28.279974 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:14:28.280045 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:14:28.281036 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:14:28.281908 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:14:28.281981 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:14:28.282603 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:14:51.017105 [propsService 13205] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:14:54.677972 [backupRestoreService 13521] DEBUG job: elapsed time is 600; 6600 seconds to go...
+2026-07-09 18:14:58.128759 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:14:58.128962 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":18}
+2026-07-09 18:14:58.148197 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":18,"pid":13210,"initialized":true}
+2026-07-09 18:14:58.148753 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:14:58.148804 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:14:58.148980 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:14:58.282745 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:14:58.282824 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:14:58.283570 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:14:58.284116 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:14:58.284158 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:14:58.284349 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:15:28.284453 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:15:28.284562 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:15:28.285326 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:15:28.285920 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:15:28.285965 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:15:28.286172 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:15:54.034465 [zhalImpl 13240] DEBUG got event: {"timestamp":"1783620954032","eui64":"880f62fffe102cc2","eventType":"clusterCommandReceived","sourceEndpoint":1,"profileId":260,"direction":1,"clusterId":32,"commandId":0,"mfgSpecific":true,"mfgCode":4381,"seqNum":64,"apsSeqNum":142,"rssi":-64,"lqi":255,"encodedBuf":"1QvXBfgH1ugAAAAALAAAAA=="}
+2026-07-09 18:15:54.034546 [zigbeeEventHandler 13240] DEBUG clusterCommandReceived callback: 880f62fffe102cc2 ep 1, profileId 0104, cluster 0020
+2026-07-09 18:15:54.034585 [zigbeeDriverCommon 13240] DEBUG clusterCommandReceived
+2026-07-09 18:15:54.034600 [zigbeeDriverCommon 13240] DEBUG updateNeRssiAndLqi
+2026-07-09 18:15:54.034617 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=neRssi, newValue=-64
+2026-07-09 18:15:54.034648 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=neLqi, newValue=255
+2026-07-09 18:15:54.034772 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=linkQuality, newValue=good
+2026-07-09 18:15:54.034838 [pollControlCluster 13240] DEBUG handleClusterCommand
+2026-07-09 18:15:54.034860 [zigbeeDriverCommon 13240] DEBUG handlePollControlCheckin
+2026-07-09 18:15:54.034880 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=battVolts, newValue=3029
+2026-07-09 18:15:54.034900 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=feRssi, newValue=-42
+2026-07-09 18:15:54.034921 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=feLqi, newValue=232
+2026-07-09 18:15:54.034944 [deviceService 13240] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=temp, newValue=2040
+2026-07-09 18:15:54.034973 [deviceService 13240] DEBUG setMetadata: deviceUuid=880f62fffe102cc2, endpointId=(null), name=rejoins, value=44
+2026-07-09 18:15:54.034993 [deviceService 13240] DEBUG setMetadata: deviceUuid=880f62fffe102cc2, endpointId=(null), name=retries, value=0
+2026-07-09 18:15:54.035015 [zhalImpl 13240] DEBUG zhalSendCommand
+2026-07-09 18:15:54.035127 [zhalImpl 13240] DEBUG Creating device queue for 880f62fffe102cc2
+2026-07-09 18:15:54.035234 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe102cc2","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":0,"encodedMessage":"AAAA","requestDefaultResponse":false,"useApsEncryption":false,"requestId":19}
+2026-07-09 18:15:54.035585 [zhalImpl 13240] DEBUG got event: {"timestamp":"1783620954032","eui64":"880f62fffe102cc2","eventType":"deviceCommunicationSucceededEvent","rssi":-64,"lqi":255}
+2026-07-09 18:15:54.035617 [zigbeeEventHandler 13240] DEBUG deviceCommunicationSucceeded callback: 880f62fffe102cc2
+2026-07-09 18:15:54.598668 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":19,"defaultResponseCode":0}
+2026-07-09 18:15:54.598783 [ZigBeeSensorDD 13240] DEBUG handlePollControlCheckin
+2026-07-09 18:15:54.598899 [deviceService 13240] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102cc2, endpointId=1, resourceId=faulted
+2026-07-09 18:15:54.598948 [deviceService 13240] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=model
+2026-07-09 18:15:54.598974 [zigbeeEventTracker 13240] WARN zigbeeEventTrackerAddMagneticStrengthReport: unable to add magnetic strength report event for device 880f62fffe102cc2
+2026-07-09 18:15:54.678154 [backupRestoreService 13521] DEBUG job: elapsed time is 660; 6540 seconds to go...
+2026-07-09 18:15:58.149158 [zhalImpl 13240] DEBUG zhalHeartbeat
+2026-07-09 18:15:58.149360 [zhalImpl 13240] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":20}
+2026-07-09 18:15:58.170468 [zhalImpl 13240] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":20,"pid":13210,"initialized":true}
+2026-07-09 18:15:58.171339 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:15:58.171413 [SWWDog 13166] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:15:58.171599 [SWWDogClient 13240] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:15:58.286311 [commService 13516] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:15:58.286385 [telemetry 13516] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:15:58.287219 [commService 13516] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:15:58.287998 [watchdogService 13166] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:15:58.288074 [SWWDog 13166] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:15:58.288349 [SWWDogClient 13516] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel

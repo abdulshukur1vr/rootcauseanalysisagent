@@ -7,7 +7,11 @@ Handles unknown formats.
 
 from pathlib import Path
 
-from parser.base_parser import BaseParser
+from parser.base_parser import(
+    BaseParser,
+    extract_timestamp
+)
+
 from parser.models import (
     LogEntry,
     Severity
@@ -47,7 +51,7 @@ class GenericParser(BaseParser):
 
                     LogEntry(
 
-                        timestamp=None,
+                        timestamp=extract_timestamp(line),
 
                         severity=Severity.UNKNOWN,
 

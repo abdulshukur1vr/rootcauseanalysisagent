@@ -1,0 +1,465 @@
+465
+260709-19:04:54.012138 [DEBUG] --OUT function backupnvram2logs
+260709-19:04:54.014277 Regular log upload is disabled
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+killall: scer11bel_firmwareDwnld.sh: no process killed
+260709-19:05:22.524144 XCONF SCRIPT: Firmware scheduler cron schedule time is 11 10 * * *
+260709-19:05:22.534362 XCONF SCRIPT: Cron scheduling done, now call download script during bootup
+260709-19:05:22.611530 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  partner_id retrieved from syscfg.db : shaw
+260709-19:05:22.614680 XCONF: calling getMtlsCreds
+260709-19:05:22.991477 XCONF SCRIPT : Done Cleanup
+260709-19:05:22.999007 XCONF SCRIPT : Assigning default image type as: DEV
+260709-19:05:23.011615 XCONF SCRIPT : image_type returned from version.txt is PROD
+260709-19:05:23.015652 XCONF SCRIPT : IMAGE TYPE SET AS PROD
+260709-19:05:23.023253 XCONF SCRIPT : Build type is PROD. Ignoring /nvram/swupdate.conf override. URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-19:05:23.025581 XCONF SCRIPT : Device retrieves firmware update from url=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-19:05:23.027966 XCONF SCRIPT : Values written to /tmp/Xconf are URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-19:05:23.051401 XCONF SCRIPT : erouter0 has an ipv4 address of 24.65.240.148 or an ipv6 address of 2604:3d08:3:33::b50d:1e81
+260709-19:05:23.071628 FWExclusion status is : false
+260709-19:05:23.085521 XCONF SCRIPT : env is PROD
+260709-19:05:23.089135 XCONF SCRIPT : xconf url  is https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-19:05:23.125307 XCONF SCRIPT : Using Direct connection as the Primary
+260709-19:05:23.146011 XCONF SCRIPT : Device model taken from /etc/device.properties 
+260709-19:05:23.173732 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  partner_id retrieved from syscfg.db : shaw
+260709-19:05:23.193876 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  Checking accountId is alphanumeric and not greater than 32 characters...
+260709-19:05:23.200297 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  accountId is valid and value retrieved from tr181/webpa param...
+260709-19:05:23.299078 XCONF SCRIPT : CURRENT VERSION : SCER11BEL_8.2p11s1_PROD_sey
+260709-19:05:23.301062 XCONF SCRIPT : CURRENT MAC  : 78:B3:9F:FE:0C:11
+260709-19:05:23.303011 XCONF SCRIPT : CURRENT DATE : Thu Jul  9 19:05:23 UTC 2026
+260709-19:05:23.306092 XCONF SCRIPT : DEVICE MODEL : SCER11BEL
+260709-19:05:23.311497 Trying Direct Communication
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   672  100   308  100   364    396    468 --:--:-- --:--:-- --:--:--   864
+260709-19:05:24.234557 Direct Communication - ret:0, http_code:200
+260709-19:05:24.237031 XCONF SCRIPT : HTTP RESPONSE CODE is 200
+260709-19:05:24.240562 XCONF SCRIPT : Print the response -> output of /tmp/response.txt after curl execution is as below
+{"firmwareDownloadProtocol":"http","firmwareFilename":"SCER11BEL_8.2p11s1_PROD_sey-signed.bin","firmwareLocation":"https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl","firmwareVersion":"SCER11BEL_8.2p11s1_PROD_sey","mandatoryUpdate":false,"rebootImmediately":false}
+
+
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-19:05:24.273335 XCONF SCRIPT : Download image from HTTP server
+260709-19:05:24.302531 XCONF SCRIPT : Protocol :http
+260709-19:05:24.304177 XCONF SCRIPT : Filename :SCER11BEL_8.2p11s1_PROD_sey-signed.bin
+260709-19:05:24.306480 XCONF SCRIPT : Location :https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl
+260709-19:05:24.308143 XCONF SCRIPT : Firmware URL :
+260709-19:05:24.309752 XCONF SCRIPT : Version  :SCER11BEL_8.2p11s1_PROD_sey
+260709-19:05:24.311378 XCONF SCRIPT : Reboot   :false
+260709-19:05:24.312984 XCONF SCRIPT : Delay Time :
+260709-19:05:24.314540 XCONF SCRIPT : factoryResetImmediately :
+260709-19:05:24.316126 XCONF SCRIPT : dlCertBundle :
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-19:05:24.368516 XCONF SCRIPT : CurrentVersion : scer11bel_8.2p11s1_prod_sey
+260709-19:05:24.370443 XCONF SCRIPT : UpgradeVersion : scer11bel_8.2p11s1_prod_sey
+260709-19:05:24.376669 XCONF SCRIPT : Current image (scer11bel_8.2p11s1_prod_sey) and Requested image (scer11bel_8.2p11s1_prod_sey) are same. No upgrade/downgrade required
+Enable RFC feature
+260709-19:05:40.299216 getAccountId() called from: /lib/rdk/RFCbase.sh -  partner_id retrieved from syscfg.db : shaw
+Initial URL: https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+sh: /lib/rdk/getDeviceDetails.sh: No such file or directory
+260709-19:05:41.664180 getAccountId() called from: /lib/rdk/RFCbase.sh -  partner_id retrieved from syscfg.db : shaw
+RFC: Sending request to URL=https://secure.xconfds.coast.xcal.tv/featureControl/getSettings?
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  8916    0  8916    0     0  10427      0 --:--:-- --:--:-- --:--:-- 10440
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-19:05:46.742299 [ScheduleAutoReboot.sh]: **************** else > 1
+260709-19:05:46.779485 [ScheduleAutoReboot.sh]: Exiting, NTP synced or RFC triggered
+260709-19:05:46.815269 [ScheduleAutoReboot.sh]start_time: 7200, end_time: 14400
+260709-19:05:46.817375 [ScheduleAutoReboot.sh]time_offset: -21600
+260709-19:05:46.819611 [ScheduleAutoReboot.sh]main_start_time: 28800 , main_end_time= 36000
+260709-19:05:46.821797 [ScheduleAutoReboot.sh]rand_time_in_sec: 31148 ,rand_hr: 8 ,rand_min: 39 ,rand_sec: 8
+260709-19:05:46.830714 Auto Reboot is scheduled at date: 08
+260709-19:05:46.837314 [ScheduleAutoReboot.sh] AutoReboot scheduled cron 39 8 08 08 *
+260709-19:05:46.841749 [ScheduleAutoReboot.sh] Auto Reboot updating the cron job
+260709-19:05:46.850014 [ScheduleAutoReboot.sh] Auto Reboot cron job scheduled
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0mvsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+killall: mldproxy: no process killed
+ mldproxy not found 
+260709-19:11:54.324429 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-19:11:54.326959 sync logs to nvram2
+cosa_start_rem script not triggered even after 10 minutes from boot-up so start from selfheal
+260709-19:15:00.747116 [GUI] Deleted /tmp/rbus_subs__rbus_session_mgr due to session inactivity
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-19:21:56.925570 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-19:21:56.927529 sync logs to nvram2
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+260709-19:31:59.315524 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-19:31:59.318384 sync logs to nvram2
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-20:01:38.368020 Device_Finger_Printing_enabled:true
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+flock -x  /nvram/log/firewall/99999999 rm -r /nvram/log/firewall/99999999
+260709-20:02:02.697709 sync logs to nvram2
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+260709-20:32:06.113694 sync logs to nvram2
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-20:48:00.080253 Gateway started to send DHCP discover message on the MoCA interface
+/usr/ccsp/tad/dhcp_rouge_server_detection.sh: line 34: /usr/bin/dhcpsrv_detect: No such file or directory
+260709-20:48:00.085391 Gateway sends out DHCP discover message on the MoCA interface
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-21:00:00.452499 HCM: Starting HCM recording upload script
+awk: /usr/ccsp/meshwifioptimizer/MWO_Defaults: No such file or directory
+awk: /usr/ccsp/meshwifioptimizer/MWO_Defaults: No such file or directory
+260709-21:00:00.481850 HCM: Directory was not found : 
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+flock -x  /nvram/log/firewall/99999999 rm -r /nvram/log/firewall/99999999
+260709-21:02:09.690616 sync logs to nvram2
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+260709-21:32:13.162486 sync logs to nvram2
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-21:48:00.281291 Gateway started to send DHCP discover message on the MoCA interface
+/usr/ccsp/tad/dhcp_rouge_server_detection.sh: line 34: /usr/bin/dhcpsrv_detect: No such file or directory
+260709-21:48:00.285275 Gateway sends out DHCP discover message on the MoCA interface
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+flock -x  /nvram/log/firewall/99999999 rm -r /nvram/log/firewall/99999999
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-22:02:16.707654 sync logs to nvram2
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+260709-22:32:20.367616 sync logs to nvram2
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-22:48:00.506347 Gateway started to send DHCP discover message on the MoCA interface
+/usr/ccsp/tad/dhcp_rouge_server_detection.sh: line 34: /usr/bin/dhcpsrv_detect: No such file or directory
+260709-22:48:00.513127 Gateway sends out DHCP discover message on the MoCA interface
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+flock -x  /nvram/log/firewall/99999999 rm -r /nvram/log/firewall/99999999
+260709-23:02:23.913858 sync logs to nvram2
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Monitoring current boot: 7DB43947-1547-4667-AC59-5A5F5FEE8F60
+vsystem: ip -6 rule add iif brlan0 table erouter;gw=$(ip -6 route show default dev erouter0 | awk '/via/ {print $3}');if [ "$gw" != "" ]; then  ip -6 route add default via $gw dev erouter0 table erouter;fi
+RTNETLINK answers: File exists
+[SERVICE-ROUTED]: fail to exec `route-set'
+260709-23:32:27.710476 sync logs to nvram2
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+260709-23:48:00.695354 Gateway started to send DHCP discover message on the MoCA interface
+/usr/ccsp/tad/dhcp_rouge_server_detection.sh: line 34: /usr/bin/dhcpsrv_detect: No such file or directory
+260709-23:48:00.698196 Gateway sends out DHCP discover message on the MoCA interface
+260709-23:48:14.344519 getPartnerId() called from: /rdklogger/backupLogs.sh -  partner_id retrieved from syscfg.db : shaw
+urn:settings:LogUploadSettings:UploadRepository' is not found in DCMSettings.conf
+260709-23:48:14.391965 Starting the ImageHealthChecker from store-health mode
+rdk_dyn_log_initg_dl_socket = 5 __progname = ImageHealthChecker 
+260709-23:48:14.466562 sync logs to nvram2
+ovs-vsctl: error while loading shared libraries: libbcmmcast.so: cannot open shared object file: Permission denied
+ovs-appctl: error while loading shared libraries: libbcmmcast.so: cannot open shared object file: Permission denied
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.

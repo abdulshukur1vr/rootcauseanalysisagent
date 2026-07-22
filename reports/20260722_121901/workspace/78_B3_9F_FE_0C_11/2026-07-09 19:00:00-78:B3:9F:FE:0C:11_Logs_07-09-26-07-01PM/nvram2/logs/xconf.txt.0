@@ -1,0 +1,31 @@
+31
+260709-18:27:17.408537 XCONF SCRIPT : Done Cleanup
+260709-18:27:17.426013 XCONF SCRIPT : image_type returned from version.txt is PROD
+260709-18:27:17.429594 XCONF SCRIPT : rebootNow is false
+260709-18:27:17.432179 XCONF SCRIPT : Build type is PROD. Ignoring /nvram/swupdate.conf override. URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:27:17.439944 XCONF SCRIPT : Values written to /tmp/Xconf are URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:27:17.453665 [ Thu Jul  9 18:27:17 UTC 2026 ] XCONF SCRIPT - Check if the WAN interface has an ip address
+260709-18:27:17.473842 XCONF SCRIPT : Checking image availability at boot up
+260709-18:27:17.492580 XCONF SCRIPT : Searching for connection type:353
+260709-18:27:17.516524 XCONF SCRIPT : Using Direct connection as the Primary
+260709-18:27:17.518319 **RETRY is 1 and RETRY_FLAG is 1**
+260709-18:27:17.525965 XCONF SCRIPT : Device model taken from /etc/device.properties 
+260709-18:27:17.594462 Fetching bundle metadata from /nvram/etc/certs
+260709-18:27:17.604765 Fetching bundle metadata from /etc/certs
+260709-18:27:17.611533 Metadata found in both /nvram/etc/certs & /etc/certs
+260709-18:27:17.613785 Preparing final matadata list
+260709-18:27:17.621770 SCER11BEL-xpki-certs-update-bundle_package.json not present in nvram. Adding it to list
+260709-18:27:17.629884 webui-cert-bundle_package.json already present in nvram
+260709-18:27:17.632291 List of bundle metadata found in CPE: /nvram/etc/certs/webui-cert-bundle_package.json /etc/certs/SCER11BEL-xpki-certs-update-bundle_package.json
+260709-18:27:17.660273 Installed bundle list: webui-cert-bundle:1.04,xpki-certs-update-bundle:0.2
+260709-18:27:17.669651 Attempting TLS1.2 connection to https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/ 
+260709-18:27:17.673389 Trying Direct Communication
+260709-18:27:18.505903 Direct Communication - ret:0, http_code:200
+260709-18:27:18.510110 XCONF SCRIPT : HTTP RESPONSE CODE is 200
+{"firmwareDownloadProtocol":"http","firmwareFilename":"SCER11BEL_8.2p11s1_PROD_sey-signed.bin","firmwareLocation":"https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl","firmwareVersion":"SCER11BEL_8.2p11s1_PROD_sey","mandatoryUpdate":false,"rebootImmediately":false}
+
+
+260709-18:27:18.638302 XCONF SCRIPT : Resetting the download delay to 0 minutes
+260709-18:27:18.655528 XCONF SCRIPT : CurrentVersion : scer11bel_8.2p11s1_prod_sey
+260709-18:27:18.657341 XCONF SCRIPT : UpgradeVersion : scer11bel_8.2p11s1_prod_sey
+260709-18:27:18.660997 XCONF SCRIPT : Current image (scer11bel_8.2p11s1_prod_sey) and Requested image (scer11bel_8.2p11s1_prod_sey) are same. No upgrade/downgrade required

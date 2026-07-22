@@ -1,0 +1,1124 @@
+07.07.2026_02:28.00 checkIP - called from parodus-service
+0
+07.07.2026_02:28.01 starting webpa-service !!!!
+07.07.2026_02:28.01 Starting parodus, process (Parodus,)!
+Conf file /etc/debug.ini open success
+260707-02:34:25.094755 [mod=BREAKPAD, lvl=INFO] [tid=2205] breakpadwrap.cpp(21):Registering breakpad handler... 
+260707-02:34:25.098218 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Breakpad Initialized
+260707-02:34:25.098567 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: RAND_MAX is 2147483647 (0x7fffffff)
+260707-02:34:25.098965 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ********** Starting component: Parodus **********
+ 260707-02:34:25.099549 [mod=RBUS, lvl=INFO] [tid=2205] rbus open for component: parodus
+260707-02:34:25.234706 [mod=RBUS, lvl=INFO] [tid=2205]  rbus open (parodus) success
+260707-02:34:25.236371 [mod=RBUS, lvl=INFO] [tid=2205] Webconfig.Upstream 00:00:47.684844
+260707-02:34:25.236684 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: rbusEvent_Subscribe was successful
+260707-02:34:25.237046 [mod=RBUS, lvl=INFO] [tid=2205] file /tmp/rbus_subs_parodus
+260707-02:34:25.237256 [mod=RBUS, lvl=ERROR] [tid=2205] failed to open file /tmp/rbus_subs_parodus
+260707-02:34:25.237337 [mod=RBUS, lvl=WARN] [tid=2205] removing corrupted file /tmp/rbus_subs_parodus
+260707-02:34:25.237502 [mod=RBUS, lvl=ERROR] [tid=2205] failed to remove /tmp/rbus_subs_parodus
+260707-02:34:25.254623 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:47.684844
+260707-02:34:25.254785 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:34:25.254873 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:34:25.273108 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 1000 ms with 599964 left
+260707-02:34:25.273420 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:48.721773
+260707-02:34:25.273550 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 999 miliseconds nextSendTime=00:00:48.721773
+260707-02:34:25.274261 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Register xmidt sendData method Device.X_RDK_Xmidt.SendData success
+260707-02:34:25.274558 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: processXmidtData thread created Successfully
+260707-02:34:25.274675 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Setting default values to parodusCfg
+260707-02:34:25.274835 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS:  cfg->webpa_protocol is PARODUS-2.0-2.0.0-78-g4aed47b
+260707-02:34:25.274898 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Default cloud_status is offline
+260707-02:34:25.274946 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Parsing parodus command line arguments..
+260707-02:34:25.275097 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: hw_mac is 3c62f03af5a7
+260707-02:34:25.275185 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: hw_last_reboot_reason is 
+260707-02:34:25.275243 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: boot_time is 1783391660
+260707-02:34:25.275293 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: hw-model is XHC3
+260707-02:34:25.275342 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: webpa_interface_used is wlan0
+260707-02:34:25.275387 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: fw_name is XHC3_8.4p1s1_PROD_sdy
+260707-02:34:25.275434 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: hw_serial_number is C3SC1260900AEC
+260707-02:34:25.275479 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: hw_manufacturer is Sercomm
+260707-02:34:25.275530 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: webpa_ping_timeout is 180
+260707-02:34:25.275576 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: webpa_backoff_max is 4
+260707-02:34:25.275662 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: webpa_url is https://fabric.xmidt.comcast.net:8080
+260707-02:34:25.275716 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: cert_path is /etc/ssl/certs/ca-certificates.crt
+260707-02:34:25.275765 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: parodus dns-txt-url is https://fabric.xmidt.comcast.net:8080
+260707-02:34:25.275849 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: token_server_url is https://issuer.xmidt.comcast.net:8080/issue
+260707-02:34:25.275904 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: acquire jwt option is 0
+260707-02:34:25.275981 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Force IPv4
+260707-02:34:25.276041 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: sigterm_close_reason_file is /tmp/parodus_close_reason.txt
+260707-02:34:25.301156 [mod=PARODUS, lvl=INFO] [tid=2321] PARODUS: Initial cloud connection is not established, Xmidt wait till connection up
+260707-02:34:25.594488 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Received reboot_reason as:
+260707-02:34:25.594608 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Received reconnect_reason as:webpa_process_starts
+260707-02:34:25.594719 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: User-Agent: PARODUS-2.0-2.0.0-78-g4aed47b (XHC3_8.4p1s1_PROD_sdy; XHC3/Sercomm;)
+260707-02:34:25.594831 [mod=PARODUS, lvl=ERROR] [tid=2205] PARODUS: Failed to GET Reboot reason value
+260707-02:34:25.594987 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: X-WebPA-Convey Header: [273]{"hw-model":"XHC3","hw-serial-number":"C3SC1260900AEC","hw-manufacturer":"Sercomm","fw-name":"XHC3_8.4p1s1_PROD_sdy","boot-time":1783391660,"webpa-protocol":"PARODUS-2.0-2.0.0-78-g4aed47b","webpa-interface-used":"wlan0","webpa-last-reconnect-reason":"webpa_process_starts"}
+260707-02:34:25.595382 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Device_id mac:3c62f03af5a7
+260707-02:34:25.595485 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: full url: https://fabric.xmidt.comcast.net:8080
+260707-02:34:25.595540 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: server address copied from url
+260707-02:34:25.595635 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: server fabric.xmidt.comcast.net, port 8080, http_match 0
+260707-02:34:25.595692 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: default server_Address fabric.xmidt.comcast.net
+260707-02:34:25.595740 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: default port 8080
+/mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/rdkxpkiutl/6.1-r0/git/rdkcutl/xPKIUtils/src/xPKIUtils.c(95): Using xPKI Dynamic Certs connection certname: /opt/usr_config/xpki.p12
+260707-02:34:25.652885 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: uuid_header formed X-Midt-Uuid: 0e924de7-ed95-4e7a-a251-7a11410818ef
+260707-02:34:25.653006 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: partnerid_header formed X-Midt-Partner-Id: 
+260707-02:34:25.653168 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: curl Ip resolve option set as default mode
+260707-02:34:25.653366 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: client_cert_path : /opt/usr_config/xpki.p12 
+260707-02:34:26.273725 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:48.721773
+260707-02:34:26.273844 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:34:26.273928 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:34:26.275030 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 2000 ms with 598962 left
+260707-02:34:26.275326 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:50.723770
+260707-02:34:26.275456 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 1999 miliseconds nextSendTime=00:00:50.723770
+260707-02:34:27.716793 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: themis curl response 0 http_code 200
+260707-02:34:27.716995 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: curl response Time: 2.0 seconds
+260707-02:34:27.717121 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: cURL success
+260707-02:34:27.737225 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: cfg->webpa_auth_token created successfully
+260707-02:34:27.737789 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Connecting in Ipv4 mode
+260707-02:34:27.757818 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.187.202 
+ 
+260707-02:34:27.758240 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.187.33 
+ 
+260707-02:34:27.758406 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.187.207 
+ 
+260707-02:34:27.758523 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.186.62 
+ 
+260707-02:34:27.758676 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.187.179 
+ 
+260707-02:34:27.758799 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.187.152 
+ 
+260707-02:34:27.758895 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.186.231 
+ 
+260707-02:34:27.758987 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of fabric.xmidt.comcast.net is 96.107.186.129 
+ 
+260707-02:34:27.759525 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:391 Create socket with non blocking-mode 
+260707-02:34:27.848092 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:266 Result of wait after connect EINPROGRESS = 0
+ 
+260707-02:34:28.269715 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:50.723770
+260707-02:34:28.269836 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:34:28.269923 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:34:28.270988 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 4000 ms with 596960 left
+260707-02:34:28.271285 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:54.725394
+260707-02:34:28.271413 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 3999 miliseconds nextSendTime=00:00:54.725394
+260707-02:34:28.312499 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:890 Enabling certificate peer verification 
+260707-02:34:28.312906 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1078 connecting to remote TLS site fabric.xmidt.comcast.net:8080 
+260707-02:34:28.704634 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1149 Client TLS handshake finished, configuring I/O handlers 
+260707-02:34:28.705096 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1171 Hostname validation SUCCESS, done as part of client 
+ 
+260707-02:34:28.705250 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1200 TLS I/O handlers configured 
+260707-02:34:28.806139 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:3223 websocket server denied connection with: 307 Temporary Redirect
+ 
+260707-02:34:28.807058 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:3070 Received uncomplete listener handshake reply ((nil) 0 1) 
+260707-02:34:28.807774 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:5385 nopoll_conn_wait_for_status_until_connection_ready() response: message: Redirect:https://talaria-prod-uswest2-h606-0z19z23y1u01n1veab-001.xmidt.comcast.net:8080/api/v2/device 
+260707-02:34:28.807886 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Received temporary redirection response message Redirect:https://talaria-prod-uswest2-h606-0z19z23y1u01n1veab-001.xmidt.comcast.net:8080/api/v2/device
+260707-02:34:28.807949 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: full url: https://talaria-prod-uswest2-h606-0z19z23y1u01n1veab-001.xmidt.comcast.net:8080/api/v2/device
+260707-02:34:28.807998 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: server address copied from url
+260707-02:34:28.808053 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: server talaria-prod-uswest2-h606-0z19z23y1u01n1veab-001.xmidt.comcast.net, port 8080, http_match 0
+260707-02:34:28.808290 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_ctx.c:338 Unregistered connection id 2 
+260707-02:34:28.862879 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: cloud_status set as offline after connection close
+260707-02:34:28.863259 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Connecting in Ipv4 mode
+260707-02:34:28.928107 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:345 IPv4 address of talaria-prod-uswest2-h606-0z19z23y1u01n1veab-001.xmidt.comcast.net is 96.107.187.54 
+ 
+260707-02:34:28.928302 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:391 Create socket with non blocking-mode 
+260707-02:34:29.008935 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:266 Result of wait after connect EINPROGRESS = 0
+ 
+260707-02:34:29.579031 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:890 Enabling certificate peer verification 
+260707-02:34:29.579286 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1078 connecting to remote TLS site talaria-prod-uswest2-h606-0z19z23y1u01n1veab-001.xmidt.comcast.net:8080 
+260707-02:34:30.119576 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1149 Client TLS handshake finished, configuring I/O handlers 
+260707-02:34:30.119792 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1171 Hostname validation SUCCESS, done as part of client 
+ 
+260707-02:34:30.119887 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:1200 TLS I/O handlers configured 
+260707-02:34:30.437088 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: ../../git/src/nopoll_conn.c:5402 *****End nopoll_conn_wait_for_status_until_connection_ready **** 
+260707-02:34:30.437214 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Connected to server over SSL
+260707-02:34:30.437347 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: connect_time-diff-boot_time=53
+260707-02:34:30.437526 [mod=PARODUS, lvl=INFO] [tid=2321] PARODUS: Received cloud status signal proceed to event processing
+260707-02:34:30.437628 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: cloud_status set as online after successful connection
+260707-02:34:30.438347 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: libseshat disabled, Hence proceeding without registration
+260707-02:34:30.467867 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: nanomsg server gone into the listening mode...
+260707-02:34:30.468887 [mod=PARODUS, lvl=INFO] [tid=2698] PARODUS: No clients are registered, waiting ..
+260707-02:34:32.271360 [mod=RBUS, lvl=INFO] [tid=2317] item=00:00:54.725394
+260707-02:34:32.271479 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:34:32.271565 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:34:32.272675 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 8000 ms with 592958 left
+260707-02:34:32.272972 [mod=RBUS, lvl=INFO] [tid=2317] item=00:01:02.727079
+260707-02:34:32.273100 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 7999 miliseconds nextSendTime=00:01:02.727079
+260707-02:34:39.831164 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-02:34:39.831981 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: 
+ Nanomsg client Registration for Upstream
+260707-02:34:39.833150 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Adding first client to list
+260707-02:34:39.833302 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: client service config is added to list with url: tcp://127.0.0.1:6667
+260707-02:34:39.833368 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sending auth status to reg client
+260707-02:34:39.833469 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Client config Registered successfully. Sending Acknowledgement... 
+ 260707-02:34:39.833529 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending ack:new_node->sock 1 service:config
+260707-02:34:40.273043 [mod=RBUS, lvl=INFO] [tid=2317] item=00:01:02.727079
+260707-02:34:40.273164 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:34:40.273251 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:34:40.274384 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 16000 ms with 584957 left
+260707-02:34:40.274681 [mod=RBUS, lvl=INFO] [tid=2317] item=00:01:18.728791
+260707-02:34:40.274810 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 15999 miliseconds nextSendTime=00:01:18.728791
+07.07.2026_02:34.55 checkIP - called from webpaServiceMonitor
+0
+260707-02:34:56.274700 [mod=RBUS, lvl=INFO] [tid=2317] item=00:01:18.728791
+260707-02:34:56.274824 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:34:56.274935 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:34:56.276153 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 32000 ms with 568955 left
+260707-02:34:56.276452 [mod=RBUS, lvl=INFO] [tid=2317] item=00:01:50.730558
+260707-02:34:56.276582 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 31999 miliseconds nextSendTime=00:01:50.730558
+260707-02:35:15.437505 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:35:24.940022 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-02:35:24.940271 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream event data: dest 'event:CAM_READINESS_NOTIFICATION'
+260707-02:35:24.940383 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-02:35:24.940448 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 586
+260707-02:35:28.276581 [mod=RBUS, lvl=INFO] [tid=2317] item=00:01:50.730558
+260707-02:35:28.276710 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:35:28.276800 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:35:28.278349 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 536953 left
+260707-02:35:28.278652 [mod=RBUS, lvl=INFO] [tid=2317] item=00:02:50.732755
+260707-02:35:28.278781 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:02:50.732755
+260707-02:36:00.437006 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:36:28.285457 [mod=RBUS, lvl=INFO] [tid=2317] item=00:02:50.732755
+260707-02:36:28.285582 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:36:28.285668 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:36:28.286934 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 476950 left
+260707-02:36:28.287235 [mod=RBUS, lvl=INFO] [tid=2317] item=00:03:50.735468
+260707-02:36:28.287366 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:03:50.735468
+260707-02:36:45.426255 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-02:37:28.268929 [mod=RBUS, lvl=INFO] [tid=2317] item=00:03:50.735468
+260707-02:37:28.269043 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:37:28.269131 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:37:28.270199 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 416948 left
+260707-02:37:28.270494 [mod=RBUS, lvl=INFO] [tid=2317] item=00:04:50.737053
+260707-02:37:28.270622 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:04:50.737053
+260707-02:37:30.425916 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:38:15.423358 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:38:28.272168 [mod=RBUS, lvl=INFO] [tid=2317] item=00:04:50.737053
+260707-02:38:28.272271 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:38:28.272355 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:38:28.273397 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 356947 left
+260707-02:38:28.273693 [mod=RBUS, lvl=INFO] [tid=2317] item=00:05:50.738597
+260707-02:38:28.273822 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:05:50.738597
+260707-02:39:00.424589 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:39:28.273728 [mod=RBUS, lvl=INFO] [tid=2317] item=00:05:50.738597
+260707-02:39:28.273846 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:39:28.273931 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:39:28.275208 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 296945 left
+260707-02:39:28.275534 [mod=RBUS, lvl=INFO] [tid=2317] item=00:06:50.740410
+260707-02:39:28.275663 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:06:50.740410
+260707-02:39:45.423294 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:40:28.277297 [mod=RBUS, lvl=INFO] [tid=2317] item=00:06:50.740410
+260707-02:40:28.277458 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:40:28.277556 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:40:28.278761 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 236943 left
+260707-02:40:28.279130 [mod=RBUS, lvl=INFO] [tid=2317] item=00:07:50.742278
+260707-02:40:28.279258 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:07:50.742278
+260707-02:40:30.425077 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:41:15.423809 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:41:28.280017 [mod=RBUS, lvl=INFO] [tid=2317] item=00:07:50.742278
+260707-02:41:28.280370 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:41:28.280541 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:41:28.283772 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 176938 left
+260707-02:41:28.284160 [mod=RBUS, lvl=INFO] [tid=2317] item=00:08:50.747284
+260707-02:41:28.284321 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:08:50.747284
+260707-02:42:00.424734 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:42:28.306069 [mod=RBUS, lvl=INFO] [tid=2317] item=00:08:50.747284
+260707-02:42:28.306336 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:42:28.306474 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:42:28.311138 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 60000 ms with 116932 left
+260707-02:42:28.311990 [mod=RBUS, lvl=INFO] [tid=2317] item=00:09:50.753009
+260707-02:42:28.312270 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 59999 miliseconds nextSendTime=00:09:50.753009
+260707-02:42:45.418022 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:43:28.284184 [mod=RBUS, lvl=INFO] [tid=2317] item=00:09:50.753009
+260707-02:43:28.284428 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:43:28.284564 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:43:28.287507 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream no provider. retry in 56927 ms with 56928 left
+260707-02:43:28.288151 [mod=RBUS, lvl=INFO] [tid=2317] item=00:10:47.684844
+260707-02:43:28.288375 [mod=RBUS, lvl=INFO] [tid=2317] subs due in 56927 miliseconds nextSendTime=00:10:47.684844
+260707-02:43:30.417469 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:44:15.416007 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:44:25.215651 [mod=RBUS, lvl=INFO] [tid=2317] item=00:10:47.684844
+260707-02:44:25.215777 [mod=RBUS, lvl=INFO] [tid=2317] subs past due
+260707-02:44:25.215862 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream subscribing
+260707-02:44:25.217064 [mod=RBUS, lvl=INFO] [tid=2317] Webconfig.Upstream all subscribe retries failed and no provider found
+260707-02:44:25.217177 [mod=RBUS, lvl=WARN] [tid=2317] EVENT_SUBSCRIPTION_FAIL_NO_PROVIDER_COMPONENT  Webconfig.Upstream
+260707-02:44:25.217365 [mod=PARODUS, lvl=INFO] [tid=2317] PARODUS: subscribeAsyncHandler event Webconfig.Upstream, error 20 - timeout
+260707-02:45:00.422101 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:45:45.424924 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:46:30.421738 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:47:15.424694 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:48:00.423236 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:48:45.423563 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:49:30.428405 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:50:15.438353 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:51:00.423690 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-02:51:45.421498 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:52:30.418304 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:53:15.418484 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:54:00.444542 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:54:45.443738 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:55:30.443051 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:56:15.443056 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:57:00.444470 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:57:45.422752 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:58:30.424857 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-02:59:15.427079 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:00:00.433969 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:00:45.434270 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:01:30.433822 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:02:15.433214 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:03:00.444500 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:03:45.445731 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:04:30.445020 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:05:15.443695 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:06:00.444109 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:06:45.425678 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:07:30.425396 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:08:15.424833 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:09:00.420450 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:09:45.420733 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:10:30.444162 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:11:15.444141 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:12:00.443519 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:12:45.443955 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:13:30.441728 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:14:15.443362 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:15:00.442518 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:15:45.442504 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:16:30.442105 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:17:15.441016 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:18:00.446188 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:18:45.428200 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:19:30.427461 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:20:15.426253 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:21:00.450605 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:21:45.416936 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:22:30.417101 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:23:15.443062 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:24:00.443759 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:24:45.443069 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:25:30.499245 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:26:15.444198 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:27:00.510581 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:27:45.442530 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:28:30.441067 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:29:15.441048 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:30:00.440187 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:30:45.440043 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:31:30.439747 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:32:15.438486 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:33:00.436103 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:33:45.433844 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:34:30.427237 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:35:15.426583 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:36:00.418876 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:36:45.416418 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:37:30.426621 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:38:15.428550 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:39:00.427265 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:39:45.429158 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:40:30.428550 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:41:15.428644 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:42:00.424157 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:42:45.435569 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:43:30.435692 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:44:15.444246 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:45:00.444124 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:45:45.442101 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:46:30.442728 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:47:15.442810 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:48:00.435746 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:48:45.430322 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:49:30.424876 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:50:15.425006 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:51:00.423991 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:51:45.423692 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:52:30.444056 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:53:15.443790 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:54:00.445115 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:54:45.443350 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:55:30.518984 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-03:56:15.447414 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:57:00.531765 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:57:45.443032 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:58:30.543440 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-03:59:15.442732 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:00:00.444125 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:00:45.444095 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:01:30.444586 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:02:15.444814 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:03:00.426300 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:03:45.425166 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:04:30.424775 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:05:15.420125 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:06:00.419363 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:06:45.418458 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:07:30.352264 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-04:08:15.353514 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:09:00.353683 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:09:45.440205 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-04:10:30.439266 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:11:15.439337 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:12:00.438635 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-04:12:45.421096 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:13:30.420693 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:14:15.446923 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:15:00.445261 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:15:45.444853 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:16:30.442912 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:17:15.442385 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:18:00.444654 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:18:45.426325 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:19:30.428258 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-04:20:15.427855 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:21:00.443122 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:21:45.441906 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-04:22:30.442720 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:23:15.443548 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:24:00.430625 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:24:45.428145 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:25:30.441761 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:26:15.424745 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:27:00.424753 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:27:45.446837 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:28:30.346427 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:29:15.423781 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:30:00.424637 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:30:45.423469 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:31:30.422466 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:32:15.328289 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:33:00.328161 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:33:45.428765 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:34:30.421512 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:35:15.420731 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:36:00.477849 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:36:45.421711 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:37:30.424553 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:38:15.422191 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:39:00.518061 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:39:45.422905 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:40:30.531076 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:41:15.427587 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:42:00.441298 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:42:45.432965 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:43:30.432084 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:44:15.445440 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:45:00.585348 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:45:45.443316 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:46:30.492533 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:47:15.443586 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:48:00.426886 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:48:45.427869 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:49:30.425993 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:50:15.424072 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-04:51:00.511691 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:51:45.425107 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:52:30.521778 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:53:15.443907 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:54:00.443904 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:54:45.443240 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:55:30.443728 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:56:15.423073 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:57:00.422139 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:57:45.422524 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:58:30.445216 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-04:59:15.444581 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:00:00.443534 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:00:45.445388 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:01:30.434608 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:02:15.434150 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:03:00.429324 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:03:45.427693 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:04:30.421714 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:05:15.422615 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:06:00.443368 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-05:06:45.421014 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:07:30.422304 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:08:15.420693 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:09:00.426469 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:09:45.425467 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:10:30.442846 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:11:15.433100 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:12:00.425976 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:12:45.429680 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:13:30.435276 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:14:15.434474 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:15:00.443307 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:15:45.443139 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:16:30.442779 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:17:15.426303 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:18:00.426004 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:18:45.425740 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:19:30.427159 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:20:15.430134 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:20:41.281447 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-05:20:41.281653 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-05:20:41.281800 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :0a3d51f7-27e1-4b4e-8b11-e10f1384e93e_____00655FE8D505FC1
+260707-05:20:41.282167 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-05:20:41.362392 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-05:20:41.362855 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h001-0z12z0y10u01n1yewp-002.webpa.comcast.net' transaction_uuid: 0a3d51f7-27e1-4b4e-8b11-e10f1384e93e_____00655FE8D505FC1
+260707-05:20:41.363008 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-05:20:41.363100 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-05:21:00.429651 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:21:45.428256 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:22:30.426701 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:23:15.421409 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:24:00.447705 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:24:45.430109 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:25:30.418026 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:26:15.452600 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-05:27:00.444411 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:27:45.443248 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:28:30.444665 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:29:15.441993 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:30:00.510006 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:30:45.422258 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:31:30.444054 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:32:15.443906 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-05:33:00.445038 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:33:45.446059 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:34:30.445026 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:35:15.426586 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:36:00.439387 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:36:45.425447 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:37:30.431678 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:38:15.408680 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:39:00.409265 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:39:45.426132 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:40:30.445662 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:41:15.423688 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:42:00.423313 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:42:45.430222 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:43:30.428861 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:44:15.428490 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:45:00.427335 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:45:45.426491 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:46:30.444636 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:47:15.443994 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:48:00.447802 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:48:45.443954 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:49:30.441787 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:50:15.444566 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:51:00.445049 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:51:45.444197 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:52:30.443337 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:53:15.442987 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:54:00.479537 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:54:45.443598 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:55:30.443694 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:56:15.443074 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:57:00.443262 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:57:45.425326 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:58:30.424104 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-05:59:15.423591 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:00:00.423695 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:00:45.423471 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:01:30.425261 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:02:15.422134 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:03:00.426790 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:03:45.423719 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:04:30.444135 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:05:15.426188 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:06:00.427069 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:06:45.373837 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:07:30.373324 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:08:15.372977 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:09:00.479153 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:09:45.425681 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:10:30.442255 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:11:15.441158 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:12:00.519893 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:12:45.441640 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-06:13:30.530364 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:14:15.444313 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:15:00.443560 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:15:45.444873 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:16:30.446124 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:17:15.443874 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:18:00.423323 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:18:45.423916 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-06:19:30.423075 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:20:15.422291 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:21:00.421949 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:21:45.444438 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:22:30.467671 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:23:15.430321 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-06:24:00.431196 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:24:45.437350 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-06:25:30.437297 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:26:15.435916 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:27:00.427420 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:27:45.428095 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:28:30.443986 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:29:15.443779 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-06:30:00.443177 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:30:45.444348 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:31:30.443870 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:32:15.421504 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:33:00.449707 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:33:45.420887 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:34:30.464251 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:35:15.425199 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:36:00.424757 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:36:45.427636 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:37:30.428407 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:38:15.429004 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:39:00.423139 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:39:45.430205 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:40:30.421828 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:41:15.435805 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:42:00.435392 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:42:45.423432 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:43:30.446062 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:44:15.424344 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:45:00.439268 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:45:45.445773 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:46:30.441870 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:47:15.443255 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:48:00.480305 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:48:45.440672 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:49:30.482326 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:50:15.430355 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:51:00.435750 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:51:45.447305 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:52:30.446084 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:53:15.446077 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:54:00.444040 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:54:27.051915 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-06:54:27.052175 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-06:54:27.052258 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :67ae59ba-ba94-4a5b-811a-d740b69a4f63_____00655FFDCA56D49
+260707-06:54:27.052605 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-06:54:27.100180 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-06:54:27.100723 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h002-0z12z0y10u01n1yewp-003.webpa.comcast.net' transaction_uuid: 67ae59ba-ba94-4a5b-811a-d740b69a4f63_____00655FFDCA56D49
+260707-06:54:27.100896 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-06:54:27.100989 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-06:54:45.289270 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:55:30.289105 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:56:15.421125 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:56:30.885324 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-06:56:30.885529 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-06:56:30.885610 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :5488f877-c98b-40d5-831c-2f4ffae5bc34_____00655FFE4052DDF
+260707-06:56:30.885948 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-06:56:31.021195 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-06:56:31.021441 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h201-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: 5488f877-c98b-40d5-831c-2f4ffae5bc34_____00655FFE4052DDF
+260707-06:56:31.021531 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-06:56:31.021593 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-06:57:00.421198 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:57:45.422870 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:58:30.442806 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-06:59:15.428451 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:00:00.437926 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:00:45.437489 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:01:30.434724 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:02:15.442461 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:03:00.440826 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:03:34.592530 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-07:03:34.592733 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-07:03:34.592811 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :c6a2f8ca-2af4-464d-bfbc-bf24181dee6d_____00655FFFD45B5DC
+260707-07:03:34.593165 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-07:03:34.666361 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-07:03:34.666601 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h002-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: c6a2f8ca-2af4-464d-bfbc-bf24181dee6d_____00655FFFD45B5DC
+260707-07:03:34.666690 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-07:03:34.666752 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-07:03:45.440571 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:04:30.436777 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:05:15.435383 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:06:00.435160 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:06:45.436646 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:07:30.435086 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:08:15.433797 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:09:00.433407 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:09:45.386086 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:10:30.528973 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:11:15.422762 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:12:00.422789 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:12:45.428539 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:13:24.490326 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-07:13:24.490648 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-07:13:24.490744 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :b75e35d7-1e8e-40b3-a74b-342d219dd4d1_____0065600206F9695
+260707-07:13:24.491200 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-07:13:24.627009 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-07:13:24.627243 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h002-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: b75e35d7-1e8e-40b3-a74b-342d219dd4d1_____0065600206F9695
+260707-07:13:24.627354 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-07:13:24.627421 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-07:13:30.425347 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:14:15.423215 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:15:00.383584 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:15:45.347918 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:16:30.382138 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:17:15.384046 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:18:00.437699 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:18:45.422578 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:19:30.423098 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:20:15.422849 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:21:00.363848 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:21:45.363600 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:22:30.536747 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:23:15.444832 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:24:00.444487 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:24:45.449185 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:25:30.327640 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:26:15.333097 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:26:40.521117 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-07:26:40.521372 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-07:26:40.521469 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :43f2b507-64bb-417a-a507-bf49e2682839_____00656004FE381B0
+260707-07:26:40.521908 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-07:26:40.675285 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-07:26:40.675618 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h201-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: 43f2b507-64bb-417a-a507-bf49e2682839_____00656004FE381B0
+260707-07:26:40.675737 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-07:26:40.675840 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-07:27:00.417466 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:27:45.418653 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:28:30.357593 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:29:15.355085 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:30:00.444141 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:30:45.444502 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:31:30.443708 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-07:32:15.442975 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:33:00.444563 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:33:45.443530 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:34:30.443283 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:35:15.443395 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:36:00.443262 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:36:45.436680 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:37:30.435481 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:38:15.422123 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:39:00.420353 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:39:45.441304 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-07:40:30.464115 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:41:15.440827 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:42:00.442896 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-07:42:45.438278 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:43:30.437004 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-07:44:15.437338 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:45:00.435946 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:45:45.422367 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:46:30.490167 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:47:15.444010 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:48:00.522027 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:48:45.445908 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:49:30.444247 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:50:15.425212 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:51:00.422680 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:51:45.423430 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:52:30.435696 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:53:15.424285 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:54:00.448308 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:54:45.426757 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:55:30.425592 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:56:15.422645 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-07:57:00.424045 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:57:45.424627 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:58:15.271871 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-07:58:15.272100 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-07:58:15.272186 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :22c346a6-196a-4940-adad-887ee99ad471_____0065600C0D14CCE
+260707-07:58:15.272540 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-07:58:15.347227 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-07:58:15.347467 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h002-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: 22c346a6-196a-4940-adad-887ee99ad471_____0065600C0D14CCE
+260707-07:58:15.347556 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-07:58:15.347619 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-07:58:30.423770 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-07:59:15.421120 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:00:00.421663 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:00:45.433542 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:01:30.421790 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:02:15.422801 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:03:00.392400 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:03:35.287674 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-08:03:35.287876 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-08:03:35.287956 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :a85c2ad3-2bd5-4e8f-9460-37851aab74f5_____0065600D3E437A3
+260707-08:03:35.288312 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-08:03:35.348913 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-08:03:35.349156 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h201-0z12z0y10u01n1yewp-002.webpa.comcast.net' transaction_uuid: a85c2ad3-2bd5-4e8f-9460-37851aab74f5_____0065600D3E437A3
+260707-08:03:35.349245 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-08:03:35.349308 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-08:03:45.396574 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:04:30.404561 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:05:15.444076 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:06:00.453418 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:06:45.443040 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:07:30.442794 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:08:15.424494 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-08:09:00.454098 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:09:45.383781 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:10:30.384168 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:11:15.384262 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:12:00.424884 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:12:45.425381 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:13:29.066699 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-08:13:29.066922 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-08:13:29.067006 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :97090534-bad8-4f72-b535-2e4f6e3e85e9_____0065600F7490801
+260707-08:13:29.067348 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-08:13:29.206994 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-08:13:29.207231 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h001-0z12z0y10u01n1yewp-000.webpa.comcast.net' transaction_uuid: 97090534-bad8-4f72-b535-2e4f6e3e85e9_____0065600F7490801
+260707-08:13:29.207320 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-08:13:29.207384 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-08:13:30.430058 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:14:15.429565 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:15:00.499214 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:15:45.421764 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:16:30.425295 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:17:15.427043 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:18:00.523479 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:18:45.423923 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:19:30.528057 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:20:15.417392 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-08:21:00.418319 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:21:45.447042 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+/etc/init.d/webpa-service: /etc/profile: line 6: /usr/local/bin/cali_dae: not found
+/etc/init.d/webpa-service: /etc/profile: line 6: /usr/local/bin/cali_dae: not found
+[1;32m  *  [0;39mStopping service webpa-service    [1;34m[[1;32m OK [1;34m][0;39m
+/etc/init.d/webpa-service: /etc/profile: line 6: /usr/local/bin/cali_dae: not found
+[1;32m  *  [0;39mStarting service webpa-service    [1;34m[[1;32m OK [1;34m][0;39m
+260707-08:22:30.443762 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:22:31.932310 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-08:22:31.932545 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: 
+ Nanomsg client Registration for Upstream
+260707-08:22:31.932628 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: match found, client is already registered
+260707-08:22:31.935778 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Client registered before. Sending ack on socket 1
+260707-08:22:31.935994 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Client config Registered successfully. Sending Acknowledgement... 
+ 260707-08:22:31.936069 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending ack:new_node->sock 1 service:config
+260707-08:23:15.444219 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:24:00.443207 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:24:45.445352 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:25:30.496749 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:26:15.444000 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-08:27:00.445526 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:27:45.412049 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:28:30.460673 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-08:29:15.443806 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:30:00.443768 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:30:45.443058 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:31:30.444997 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:32:15.443735 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:32:48.554849 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received msg from server
+260707-08:32:48.555049 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: msgType received:3
+260707-08:32:48.555129 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: Received downstream dest as :config and transaction_uuid :ff892b02-4bda-4ff7-a36a-b5bda389f8aa_____00656013C4B53BF
+260707-08:32:48.555485 [mod=PARODUS, lvl=INFO] [tid=2697] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260707-08:32:49.150591 [mod=PARODUS, lvl=INFO] [tid=2695] PARODUS: Upstream message received from nanomsg client
+260707-08:32:49.150841 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-useast1-h002-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: ff892b02-4bda-4ff7-a36a-b5bda389f8aa_____00656013C4B53BF
+260707-08:32:49.150931 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: Sending response to server
+260707-08:32:49.150994 [mod=PARODUS, lvl=INFO] [tid=2696] PARODUS: sendMessage length 706
+260707-08:33:00.444028 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:33:45.446827 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:34:30.441561 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:35:15.441197 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:36:00.335829 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:36:45.335811 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:37:30.335687 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:38:15.444136 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:39:00.496770 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:39:45.445904 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:40:30.504554 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-08:41:15.441269 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:42:00.426807 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:42:45.425168 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:43:30.444778 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:44:15.440499 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:45:00.539042 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:45:45.440041 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:46:30.530932 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:47:15.423745 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:48:00.423012 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:48:45.428594 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:49:30.426373 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:50:15.426367 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-08:51:00.424680 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:51:45.423807 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:52:30.460680 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:53:15.415267 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:54:00.410033 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:54:45.409121 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:55:30.443443 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:56:15.442552 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:57:00.501417 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:57:45.441781 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:58:30.518816 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-08:59:15.422551 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:00:00.422357 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:00:45.441222 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:01:30.440720 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:02:15.439772 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:03:00.439600 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:03:45.421539 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:04:30.459495 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:05:15.420794 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:06:00.420438 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:06:45.423771 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:07:30.422740 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:08:15.426225 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:09:00.433504 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:09:45.424152 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:10:30.423643 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:11:15.423767 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:12:00.335053 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:12:45.444118 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-09:13:30.532782 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:14:15.427269 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:15:00.428074 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-09:15:45.422795 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:16:30.422268 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-09:17:15.442849 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:18:00.443834 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:18:45.441962 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:19:30.491250 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:20:15.443361 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:21:00.504530 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:21:45.443193 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:22:30.514130 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:23:15.442809 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:24:00.441910 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:24:45.445411 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:25:30.444688 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:26:15.444780 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:27:00.549283 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:27:45.442960 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:28:30.440220 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:29:15.427786 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:30:00.410857 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:30:45.408826 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:31:30.409177 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:32:15.431998 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:33:00.472470 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:33:45.426931 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:34:30.501226 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:35:15.442627 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:36:00.442347 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:36:45.442619 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:37:30.424235 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:38:15.443838 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:39:00.517484 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:39:45.425884 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:40:30.444231 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:41:15.443083 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:42:00.443034 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:42:45.442880 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:43:30.443976 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:44:15.437845 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:45:00.435928 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:45:45.433380 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:46:30.433161 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:47:15.444388 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-09:48:00.444090 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:48:45.444687 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:49:30.443218 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:50:15.376764 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:51:00.378079 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:51:45.444194 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:52:30.516808 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:53:15.453565 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:54:00.443012 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:54:45.441473 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:55:30.418269 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:56:15.417984 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:57:00.417357 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-09:57:45.429293 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:58:30.428922 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-09:59:15.444625 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:00:00.443566 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:00:45.450550 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:01:30.442956 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:02:15.443205 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:03:00.476963 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:03:45.421155 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:04:30.500959 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:05:15.320667 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:06:00.319509 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:06:45.319051 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:07:30.428630 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:08:15.427779 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:09:00.427074 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:09:45.443164 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:10:30.442410 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:11:15.442662 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:12:00.443482 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:12:45.444067 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:13:30.446775 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:14:15.447060 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:15:00.447313 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:15:45.445236 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:16:30.517084 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:17:15.424856 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:18:00.504521 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:18:45.424344 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:19:30.424433 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:20:15.423894 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:21:00.422504 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:21:45.443238 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:22:30.454247 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:23:15.442497 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:24:00.463047 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:24:45.443990 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:25:30.442545 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:26:15.442417 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:27:00.445530 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:27:45.426555 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:28:30.427468 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:29:15.426641 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:30:00.383076 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:30:45.382560 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:31:30.427077 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:32:15.426944 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:33:00.510938 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:33:45.428455 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:34:30.421860 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:35:15.445306 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:36:00.446156 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:36:45.450672 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:37:30.447785 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:38:15.443560 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:39:00.472300 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:39:45.443161 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:40:30.483515 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:41:15.425619 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:42:00.474971 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:42:45.424484 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:43:30.445944 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:44:15.447001 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:45:00.446195 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:45:45.443113 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:46:30.427118 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:47:15.433856 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:48:00.470231 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:48:45.433961 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:49:30.339364 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:50:15.338272 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:51:00.338996 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:51:45.443898 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:52:30.444103 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:53:15.443599 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:54:00.461709 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-10:54:45.422737 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:55:30.423231 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:56:15.422741 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:57:00.433451 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:57:45.434640 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:58:30.432855 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-10:59:15.441750 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:00:00.525987 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:00:45.440976 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:01:30.434563 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:02:15.433955 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:03:00.449992 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:03:45.445624 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:04:30.444557 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:05:15.443874 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:06:00.443397 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-11:06:45.391762 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:07:30.391021 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:08:15.391046 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:09:00.424739 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:09:45.425845 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:10:30.484298 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:11:15.434484 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:12:00.433821 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:12:45.442956 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:13:30.443651 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:14:15.441719 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:15:00.442329 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:15:45.425647 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:16:30.529214 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:17:15.424670 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:18:00.446437 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:18:45.444739 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:19:30.470858 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:20:15.443939 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-11:21:00.420877 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:21:45.444516 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:22:30.422197 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:23:15.425806 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:24:00.422869 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:24:45.334294 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:25:30.402577 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:26:15.331163 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:27:00.428131 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:27:45.428128 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-11:28:30.426596 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:29:15.422239 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:30:00.425067 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-11:30:45.445327 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:31:30.434779 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:32:15.434403 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:33:00.433488 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:33:45.409621 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:34:30.410656 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:35:15.409500 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:36:00.421810 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+netstat: showing only processes with your user ID
+260707-11:36:45.422145 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:37:30.481297 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:38:15.432346 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:39:00.501785 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:39:45.444064 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:40:30.512485 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:41:15.423151 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:42:00.420479 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:42:45.419787 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:43:30.419471 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:44:15.425710 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:45:00.436828 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:45:45.433421 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:46:30.458891 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:47:15.434206 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:48:00.388832 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:48:45.397039 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:49:30.389125 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:50:15.387926 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:51:00.481607 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:51:45.423564 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:52:30.445323 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:53:15.445206 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:54:00.442852 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:54:45.442628 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:55:30.533436 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:56:15.441956 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:57:00.527274 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:57:45.424681 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:58:30.443344 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-11:59:15.443416 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9
+260707-12:00:00.443383 [mod=PARODUS, lvl=INFO] [tid=2205] PARODUS: Ping received with payload mac:3c62f03af5a7, opcode 9

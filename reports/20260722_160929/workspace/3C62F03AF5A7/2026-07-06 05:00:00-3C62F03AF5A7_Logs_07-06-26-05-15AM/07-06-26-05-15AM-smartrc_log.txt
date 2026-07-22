@@ -1,0 +1,3721 @@
+04.07.2026_14:26.18 Encoder is ready
+starting smartRC--process !!!!
+04.07.2026_14:34.02 starting smartRC camUptime : 289  r1: 1
+04.07.2026_14:34.11 Using smartrc base param config file : /etc/smartrc_config_s2l35m_16_9.ini for aspect ratio: 16_9
+04.07.2026_14:34.12 INFO :  SmartRC is enabled by default
+Conf file /etc/debug.ini open success
+260704-14:34:13.234075 [mod=BREAKPAD, lvl=INFO] [tid=13783] breakpadwrap.cpp(21):Registering breakpad handler... 
+260704-14:34:13.239814 [mod=SMARTRC, lvl=INFO] [tid=13783] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/smartrc/smartrc.cpp(461) : Base configuration file: /etc/smartrc_config_s2l35m_16_9.ini
+B_qp_limit_max_bigmotion = 51
+B_qp_limit_max_bigmotionwithFS = 51
+B_qp_limit_max_lowlight = 51
+B_qp_limit_max_midmotion = 51
+B_qp_limit_max_securityIPCAMwithCBR = 51
+B_qp_limit_max_smallmotion = 51
+B_qp_limit_max_static = 51
+B_qp_limit_min_bigmotion = 35
+B_qp_limit_min_bigmotionwithFS = 30
+B_qp_limit_min_lowlight = 30
+B_qp_limit_min_midmotion = 30
+B_qp_limit_min_securityIPCAMwithCBR = 30
+B_qp_limit_min_smallmotion = 30
+B_qp_limit_min_static = 30
+I_qp_limit_max_bigmotion = 30
+I_qp_limit_max_bigmotionwithFS = 51
+I_qp_limit_max_lowlight = 51
+I_qp_limit_max_midmotion = 30
+I_qp_limit_max_securityIPCAMwithCBR = 51
+I_qp_limit_max_smallmotion = 30
+I_qp_limit_max_static = 30
+I_qp_limit_min_bigmotion = 30
+I_qp_limit_min_bigmotionwithFS = 28
+I_qp_limit_min_lowlight = 28
+I_qp_limit_min_midmotion = 20
+I_qp_limit_min_securityIPCAMwithCBR = 28
+I_qp_limit_min_smallmotion = 20
+I_qp_limit_min_static = 20
+I_qp_reduce_bigmotion = 1
+I_qp_reduce_bigmotionwithFS = 1
+I_qp_reduce_lowlight = 1
+I_qp_reduce_midmotion = 1
+I_qp_reduce_securityIPCAMwithCBR = 1
+I_qp_reduce_smallmotion = 1
+I_qp_reduce_static = 2
+P_qp_limit_max_bigmotion = 40
+P_qp_limit_max_bigmotionwithFS = 51
+P_qp_limit_max_lowlight = 51
+P_qp_limit_max_midmotion = 40
+P_qp_limit_max_securityIPCAMwithCBR = 51
+P_qp_limit_max_smallmotion = 40
+P_qp_limit_max_static = 40
+P_qp_limit_min_bigmotion = 30
+P_qp_limit_min_bigmotionwithFS = 30
+P_qp_limit_min_lowlight = 30
+P_qp_limit_min_midmotion = 30
+P_qp_limit_min_securityIPCAMwithCBR = 30
+P_qp_limit_min_smallmotion = 30
+P_qp_limit_min_static = 30
+P_qp_reduce_bigmotion = 1
+P_qp_reduce_bigmotionwithFS = 1
+P_qp_reduce_lowlight = 1
+P_qp_reduce_midmotion = 1
+P_qp_reduce_securityIPCAMwithCBR = 1
+P_qp_reduce_smallmotion = 1
+P_qp_reduce_static = 2
+Q_qp_limit_max_bigmotion = 33
+Q_qp_limit_max_bigmotionwithFS = 51
+Q_qp_limit_max_lowlight = 51
+Q_qp_limit_max_midmotion = 33
+Q_qp_limit_max_securityIPCAMwithCBR = 51
+Q_qp_limit_max_smallmotion = 33
+Q_qp_limit_max_static = 33
+Q_qp_limit_min_bigmotion = 23
+Q_qp_limit_min_bigmotionwithFS = 30
+Q_qp_limit_min_lowlight = 30
+Q_qp_limit_min_midmotion = 23
+Q_qp_limit_min_securityIPCAMwithCBR = 30
+Q_qp_limit_min_smallmotion = 23
+Q_qp_limit_min_static = 23
+Q_qp_reduce_bigmotion = 6
+Q_qp_reduce_bigmotionwithFS = 6
+Q_qp_reduce_lowlight = 6
+Q_qp_reduce_midmotion = 6
+Q_qp_reduce_securityIPCAMwithCBR = 6
+Q_qp_reduce_smallmotion = 4
+Q_qp_reduce_static = 5
+adapt_qp_bigmotion = 2
+adapt_qp_bigmotionwithFS = 2
+adapt_qp_lowlight = 2
+adapt_qp_midmotion = 2
+adapt_qp_securityIPCAMwithCBR = 2
+adapt_qp_smallmotion = 2
+adapt_qp_static = 2
+bitrate_high_bigmotion = 105
+bitrate_high_bigmotionwithFS = 105
+bitrate_high_lowlight = 85
+bitrate_high_midmotion = 85
+bitrate_high_securityIPCAMwithCBR = 105
+bitrate_high_smallmotion = 65
+bitrate_high_static = 45
+bitrate_low_bigmotion = 400
+bitrate_low_bigmotionwithFS = 240
+bitrate_low_lowlight = 240
+bitrate_low_midmotion = 400
+bitrate_low_securityIPCAMwithCBR = 240
+bitrate_low_smallmotion = 160
+bitrate_low_static = 80
+bitrate_medium_bigmotion = 95
+bitrate_medium_bigmotionwithFS = 95
+bitrate_medium_lowlight = 75
+bitrate_medium_midmotion = 75
+bitrate_medium_securityIPCAMwithCBR = 95
+bitrate_medium_smallmotion = 55
+bitrate_medium_static = 35
+bitrate_ultimate_bigmotion = 115
+bitrate_ultimate_bigmotionwithFS = 115
+bitrate_ultimate_lowlight = 95
+bitrate_ultimate_midmotion = 95
+bitrate_ultimate_securityIPCAMwithCBR = 115
+bitrate_ultimate_smallmotion = 75
+bitrate_ultimate_static = 55
+dynamic_qp_adjust_bigmotion = -3
+dynamic_qp_adjust_bigmotionwithFS = -8
+dynamic_qp_adjust_lowlight = -8
+dynamic_qp_adjust_midmotion = -4
+dynamic_qp_adjust_securityIPCAMwithCBR = -8
+dynamic_qp_adjust_smallmotion = -5
+dynamic_qp_adjust_static = -6
+gop_bigmotion = 40
+gop_bigmotionwithFS = 40
+gop_lowlight = 40
+gop_midmotion = 40
+gop_securityIPCAMwithCBR = 40
+gop_smallmotion = 40
+gop_static = 40
+skip_frame_mode_bigmotion = 0
+skip_frame_mode_bigmotionwithFS = 6
+skip_frame_mode_lowlight = 0
+skip_frame_mode_midmotion = 0
+skip_frame_mode_securityIPCAMwithCBR = 0
+skip_frame_mode_smallmotion = 0
+skip_frame_mode_static = 0
+static_qp_adjust_bigmotion = 2
+static_qp_adjust_bigmotionwithFS = 2
+static_qp_adjust_lowlight = 2
+static_qp_adjust_midmotion = 2
+static_qp_adjust_securityIPCAMwithCBR = 2
+static_qp_adjust_smallmotion = 2
+static_qp_adjust_static = 2
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+!!! [/cygdrive/y/jcbao/s2l_develop/ambarella/packages/smartrc/smartrc/arch_s2l/lib_smartrc.c:434]Not support P skip set!
+
+260704-14:34:13.295797 [mod=SMARTRC, lvl=INFO] [tid=13783] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/smartrc/smartrc.cpp(1953) : 
+Smart Rate Control Library Version: Ambarella S2L Smartrc Library-1.5.5 (Last updated: 20170630)
+
+::: stream_matrix_num=3, single_matrix_size=0x18000!
+260704-14:34:13.296208 [mod=SMARTRC, lvl=INFO] [tid=13783] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/smartrc/smartrc.cpp(1912) : Start smartrc auto control, do not manually set noise/motion level!
+260704-14:34:13.296304 [mod=SMARTRC, lvl=INFO] [tid=13783] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/smartrc/smartrc.cpp(1626) : stream: B p 80 w 80 h 45
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> STATIC>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 144000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:2
+	 qp limit: p_qp_reduce:2
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:3000
+	 enc param: intrabias_b:3000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-6
+	 roi param: zmv_threshold [static]:24 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> SMALL MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 288000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:2000
+	 enc param: intrabias_b:2000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-5
+	 roi param: zmv_threshold [static]:10 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> LOW LIGHT>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 432000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:28~51
+	 qp limit: qp_limit_p:30~51
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:0
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-8
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:30~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:35~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1
+	 enc param: intrabias_b:1
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-3
+	 roi param: zmv_threshold [static]:0 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> MID MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters for stream[B]===
+	 average bitrate: 720000
+	 GOP: N:40
+	 GOP: idr_interval:1
+	 mv_threshold: Enable
+	 qp limit: i_qp_reduce:1
+	 qp limit: p_qp_reduce:1
+	 qp limit: qp_limit_i:20~30
+	 qp limit: qp_limit_p:30~40
+	 qp limit: qp_limit_b:30~51
+	 qp limit: skip_flag:0
+	 qp limit: adapt_qp:2
+	 enc param: intrabias_p:1000
+	 enc param: intrabias_b:1000
+	 enc param: user1_intrabias:9
+	 enc param: user1_directbias:0
+	 enc param: user2_intrabias:0
+	 enc param: user2_directbias:0
+	 enc param: user3_intrabias:0
+	 enc param: user3_directbias:0
+	 roi param: qp_quality [static]:1 [dynamic]:2
+	 roi param: qp_offset [static]:2 [dynamic]:-4
+	 roi param: zmv_threshold [static]:4 [dynamic]:0
+>>> stream 1: smartrc current profile is: >>> BIG MOTION>>> 
+Current Quality Type:	QUALITY LOW
+===IAV_H264 frame sync parameters

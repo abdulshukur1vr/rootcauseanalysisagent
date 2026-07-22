@@ -1,0 +1,622 @@
+No prvnmgr_log file found in Previous logs
+09.07.2026_00:00.13 [start_prvnmanager.sh] INFO Checking SecurePartition mount status
+09.07.2026_00:00.13 [start_prvnmanager.sh] WARN SecurePartition is not mounted (Attempt retry 0 of 10)
+09.07.2026_00:00.14 [start_prvnmanager.sh] WARN SecurePartition is not mounted (Attempt retry 1 of 10)
+09.07.2026_00:00.15 [start_prvnmanager.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+09.07.2026_00:00.15 [start_prvnmanager.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+09.07.2026_00:00.15 Defined Config Files Path as SecurePartition usr_config path in start_prvnmanager.sh
+Starting provision manager services
+Wed Jan  7 00:00:16 GMT 2026
+ 07.01.2026_00:00.16 waiting for prvnmgr to start
+Conf file /etc/debug.ini open success
+260107-00:00:26.264139 [mod=PRVNMGR, lvl=INFO] [tid=1158] Secure WPA_CONFIG_FILE : /opt/SecurePartition/wifi/wpa_supplicant.conf
+260107-00:00:26.296965 [mod=PRVNMGR, lvl=INFO] [tid=1158] Camera is not provisioned
+260107-00:00:26.297077 [mod=PRVNMGR, lvl=INFO] [tid=1158] Starting provisioning service...
+260107-00:00:26.297240 [mod=PRVNMGR, lvl=INFO] [tid=1158] Setting prvn_mgr status : 0x0000
+260107-00:00:26.297910 [mod=RBUS, lvl=INFO] [tid=1158] rbus open for component: t2_lib_prvnmgr
+260107-00:00:26.317098 [mod=RBUS, lvl=INFO] [tid=1158]  rbus open (t2_lib_prvnmgr) success
+260107-00:00:26.319388 [mod=RBUS, lvl=ERROR] [tid=1158] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:26.329150 [mod=PRVNMGR, lvl=INFO] [tid=1158] PRVMGR_ADVERTISE state
+260107-00:00:26.329422 [mod=PRVNMGR, lvl=INFO] [tid=1158] srvc_start_bt_adv
+260107-00:00:26.329632 [mod=PRVNMGR, lvl=INFO] [tid=1158] init_rdkc_service invoked. resetting variables
+260107-00:00:26.329798 [mod=PRVNMGR, lvl=INFO] [tid=1158] rdk_setup_service_reset_read_params invoked
+260107-00:00:26.329926 [mod=PRVNMGR, lvl=INFO] [tid=1158] qrcode XHC3.C3SC1260900AEC.3C62F03AF5A7
+260107-00:00:26.329985 [mod=PRVNMGR, lvl=INFO] [tid=1158] QR code (XHC3.C3SC1260900AEC.3C62F03AF5A7)
+260107-00:00:26.330038 [mod=PRVNMGR, lvl=INFO] [tid=1158] cam_dev_info.mac (3C:62:F0:3A:F5:A7), cam_dev_info.serial (C3SC1260900AEC), cam_dev_info.model (XHC3), cam_dev_info.fw_rev (V1.0.01.01), cam_dev_info.sw_rev (XHC3_8.4p1s1_PROD_sdy), cam_dev_info.manuf_name (Sercomm)
+260107-00:00:26.330086 [mod=PRVNMGR, lvl=INFO] [tid=1158] Public Key : (MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4+YAMi0IS+gyGFGBu0fWr+lTCPZo8RQ8xkEW7OCGVHEoESW6lfWjV5aGUbJo4pQ/E8WltpoAZQD1xdhP+a30HQ==)
+260107-00:00:26.330244 [mod=PRVNMGR, lvl=INFO] [tid=1158] ~~~~~~~~BLE Advetising~~~~~~~
+
+< HCI Command: ogf 0x08, ocf 0x0008, plen 19
+  1F 02 01 05 03 03 12 18 03 19 C1 03 0E 09 78 63 61 6D 33 
+> HCI Event: 0x0e plen 4
+  02 08 20 00 
+< HCI Command: ogf 0x08, ocf 0x0006, plen 15
+  A0 00 A0 00 00 00 00 00 00 00 00 00 00 07 00 
+> HCI Event: 0x0e plen 4
+  02 06 20 00 
+260107-00:00:28.610568 [mod=PRVNMGR, lvl=INFO] [tid=1158] Started ble beaconing...
+260107-00:00:28.611789 [mod=RBUS, lvl=ERROR] [tid=1158] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:28.612292 [mod=PRVNMGR, lvl=INFO] [tid=1158] pstats->beacon_start 39.227923
+260107-00:00:28.626053 [mod=PRVNMGR, lvl=INFO] [tid=1316] Inside start_gatt_server
+260107-00:00:28.626438 [mod=PRVNMGR, lvl=INFO] [tid=1316] waiting for connection
+260107-00:00:28.730671 [mod=PRVNMGR, lvl=INFO] [tid=1158] PRVMGR_BT_PAIRING state
+09.07.2026_00:00.14 [start_prvnmanager.sh] INFO Checking SecurePartition mount status
+09.07.2026_00:00.14 [start_prvnmanager.sh] WARN SecurePartition is not mounted (Attempt retry 0 of 10)
+09.07.2026_00:00.15 [start_prvnmanager.sh] WARN SecurePartition is not mounted (Attempt retry 1 of 10)
+09.07.2026_00:00.16 [start_prvnmanager.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+09.07.2026_00:00.16 [start_prvnmanager.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+09.07.2026_00:00.16 Defined Config Files Path as SecurePartition usr_config path in start_prvnmanager.sh
+Starting provision manager services
+Wed Jan  7 00:00:16 GMT 2026
+ 07.01.2026_00:00.16 waiting for prvnmgr to start
+Conf file /etc/debug.ini open success
+260107-00:00:26.290264 [mod=PRVNMGR, lvl=INFO] [tid=1259] Secure WPA_CONFIG_FILE : /opt/SecurePartition/wifi/wpa_supplicant.conf
+260107-00:00:26.308013 [mod=PRVNMGR, lvl=INFO] [tid=1259] Camera is not provisioned
+260107-00:00:26.308153 [mod=PRVNMGR, lvl=INFO] [tid=1259] Starting provisioning service...
+260107-00:00:26.308663 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0000
+260107-00:00:26.309694 [mod=RBUS, lvl=INFO] [tid=1259] rbus open for component: t2_lib_prvnmgr
+260107-00:00:26.329780 [mod=RBUS, lvl=INFO] [tid=1259]  rbus open (t2_lib_prvnmgr) success
+260107-00:00:26.332082 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:26.348928 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_ADVERTISE state
+260107-00:00:26.349144 [mod=PRVNMGR, lvl=INFO] [tid=1259] srvc_start_bt_adv
+260107-00:00:26.349311 [mod=PRVNMGR, lvl=INFO] [tid=1259] init_rdkc_service invoked. resetting variables
+260107-00:00:26.349475 [mod=PRVNMGR, lvl=INFO] [tid=1259] rdk_setup_service_reset_read_params invoked
+260107-00:00:26.349602 [mod=PRVNMGR, lvl=INFO] [tid=1259] qrcode XHC3.C3SC1260900AEC.3C62F03AF5A7
+260107-00:00:26.349659 [mod=PRVNMGR, lvl=INFO] [tid=1259] QR code (XHC3.C3SC1260900AEC.3C62F03AF5A7)
+260107-00:00:26.349711 [mod=PRVNMGR, lvl=INFO] [tid=1259] cam_dev_info.mac (3C:62:F0:3A:F5:A7), cam_dev_info.serial (C3SC1260900AEC), cam_dev_info.model (XHC3), cam_dev_info.fw_rev (V1.0.01.01), cam_dev_info.sw_rev (XHC3_8.4p1s1_PROD_sdy), cam_dev_info.manuf_name (Sercomm)
+260107-00:00:26.349760 [mod=PRVNMGR, lvl=INFO] [tid=1259] Public Key : (MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKQyTInLrGx6YM415Nh3LN5iqUfGhiiLM5WM7TQ9iYYLpX+SnaxSjfFEeHuiRC87rGGndCMRRTiok8CTKBwXhlQ==)
+260107-00:00:26.349920 [mod=PRVNMGR, lvl=INFO] [tid=1259] ~~~~~~~~BLE Advetising~~~~~~~
+
+< HCI Command: ogf 0x08, ocf 0x0008, plen 19
+  1F 02 01 05 03 03 12 18 03 19 C1 03 0E 09 78 63 61 6D 33 
+> HCI Event: 0x0e plen 4
+  02 08 20 00 
+< HCI Command: ogf 0x08, ocf 0x0006, plen 15
+  A0 00 A0 00 00 00 00 00 00 00 00 00 00 07 00 
+> HCI Event: 0x0e plen 4
+  02 06 20 00 
+260107-00:00:28.657531 [mod=PRVNMGR, lvl=INFO] [tid=1259] Started ble beaconing...
+260107-00:00:28.658755 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:28.659258 [mod=PRVNMGR, lvl=INFO] [tid=1259] pstats->beacon_start 39.854597
+260107-00:00:28.676306 [mod=PRVNMGR, lvl=INFO] [tid=1410] Inside start_gatt_server
+260107-00:00:28.676688 [mod=PRVNMGR, lvl=INFO] [tid=1410] waiting for connection
+260107-00:00:28.745726 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:31.315967 [mod=PRVNMGR, lvl=INFO] [tid=1410] accepted new connection from:72:F0:1D:BC:26:22
+260107-00:00:31.851447 [mod=PRVNMGR, lvl=INFO] [tid=1410] Running GATT server
+260107-00:00:32.613022 [mod=PRVNMGR, lvl=INFO] [tid=1410] Service Changed CCC Write called
+260107-00:00:32.613149 [mod=PRVNMGR, lvl=INFO] [tid=1410] Service Changed Enabled: true
+260107-00:00:33.746131 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:33.746263 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device successfully paired with mobile app
+260107-00:00:33.747386 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:33.747707 [mod=PRVNMGR, lvl=INFO] [tid=1259]  pstats->ble_paired 5.088475
+260107-00:00:33.849631 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0101
+260107-00:00:33.850811 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:33.851369 [mod=PRVNMGR, lvl=INFO] [tid=1410] sending status changed notification
+260107-00:00:33.915288 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:33.915476 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:34.232884 [mod=PRVNMGR, lvl=INFO] [tid=1410] rdkc_read_cb_provisionstatus(offset:0)
+260107-00:00:34.233071 [mod=PRVNMGR, lvl=INFO] [tid=1410] status:101
+260107-00:00:34.367844 [mod=PRVNMGR, lvl=INFO] [tid=1410] Public key Read called
+
+260107-00:00:34.367967 [mod=PRVNMGR, lvl=INFO] [tid=1410] 
+
+Offset Value in public Key 0 Len 124
+
+
+260107-00:00:34.502849 [mod=PRVNMGR, lvl=INFO] [tid=1410] Public key Read called
+
+260107-00:00:34.502974 [mod=PRVNMGR, lvl=INFO] [tid=1410] 
+
+Offset Value in public Key 22 Len 124
+
+
+260107-00:00:34.637847 [mod=PRVNMGR, lvl=INFO] [tid=1410] Public key Read called
+
+260107-00:00:34.637971 [mod=PRVNMGR, lvl=INFO] [tid=1410] 
+
+Offset Value in public Key 44 Len 124
+
+
+260107-00:00:34.065478 [mod=PRVNMGR, lvl=INFO] [tid=1410] Public key Read called
+
+260107-00:00:34.065601 [mod=PRVNMGR, lvl=INFO] [tid=1410] 
+
+Offset Value in public Key 66 Len 124
+
+
+260107-00:00:34.200471 [mod=PRVNMGR, lvl=INFO] [tid=1410] Public key Read called
+
+260107-00:00:34.200596 [mod=PRVNMGR, lvl=INFO] [tid=1410] 
+
+Offset Value in public Key 88 Len 124
+
+
+260107-00:00:34.208707 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:34.208834 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:34.208894 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:34.335475 [mod=PRVNMGR, lvl=INFO] [tid=1410] Public key Read called
+
+260107-00:00:34.335602 [mod=PRVNMGR, lvl=INFO] [tid=1410] 
+
+Offset Value in public Key 110 Len 124
+
+
+260107-00:00:35.209108 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:35.209241 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:35.209305 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+ 07.01.2026_00:00.35 The hci name has model name
+260107-00:00:36.209663 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:36.209967 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:36.210059 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:36.225316 [mod=PRVNMGR, lvl=INFO] [tid=1410] GAP Device Name Read called: xcam3
+260107-00:00:37.210793 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:37.211100 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:37.211193 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:38.218428 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:38.218758 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:38.218847 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:39.219270 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:39.220202 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:39.220814 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:40.221151 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:40.221323 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:00:40.221392 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:00:40.554715 [mod=PRVNMGR, lvl=ERROR] [tid=1410] Device disconnected: Connection reset by peer
+260107-00:00:40.555063 [mod=PRVNMGR, lvl=INFO] [tid=1410] Shutting down...
+260107-00:00:40.555333 [mod=PRVNMGR, lvl=INFO] [tid=1410] server thread exiting
+260107-00:00:41.221687 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:41.221868 [mod=PRVNMGR, lvl=INFO] [tid=1259] Mobile app lost connectivity. Restart ble beaconing
+260107-00:00:41.221962 [mod=PRVNMGR, lvl=INFO] [tid=1259] Telemetry logs - Start
+260107-00:00:41.222032 [mod=PRVNMGR, lvl=INFO] [tid=1259] :Prvn_Result_Stats_Header:<Status>,<RetryCount>,<Reason>,<StartBLEBeacon>,<ConnectedToMobileApp>,<WiFiWritePayload>,<ConnectedToWiFi>,<AcquiredIP>,<DownloadedConfig>,<ConfiguredLiveVideo>,<ProvisioningStatusComplete>,<TotalTimeTaken>,<TraceId>
+260107-00:00:41.222174 [mod=PRVNMGR, lvl=INFO] [tid=1259] :Prvn_Result_Stats:Failure,1,Mobile app lost connectivity. Restart ble beaconing,39.855,5.088,0.000,0.000,0.000,0.000,0.000,0.000,0.000,
+260107-00:00:41.224428 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:41.224739 [mod=PRVNMGR, lvl=INFO] [tid=1259] Telemetry logs - End
+260107-00:00:41.224827 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0000
+260107-00:00:41.226248 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:00:41.240601 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_ADVERTISE state
+260107-00:00:41.240756 [mod=PRVNMGR, lvl=INFO] [tid=1259] srvc_start_bt_adv
+260107-00:00:41.240901 [mod=PRVNMGR, lvl=INFO] [tid=1259] init_rdkc_service invoked. resetting variables
+260107-00:00:41.240988 [mod=PRVNMGR, lvl=INFO] [tid=1259] rdk_setup_service_reset_read_params invoked
+260107-00:00:41.241055 [mod=PRVNMGR, lvl=INFO] [tid=1259] qrcode XHC3.C3SC1260900AEC.3C62F03AF5A7
+260107-00:00:41.241104 [mod=PRVNMGR, lvl=INFO] [tid=1259] QR code (XHC3.C3SC1260900AEC.3C62F03AF5A7)
+260107-00:00:41.241154 [mod=PRVNMGR, lvl=INFO] [tid=1259] cam_dev_info.mac (3C:62:F0:3A:F5:A7), cam_dev_info.serial (C3SC1260900AEC), cam_dev_info.model (XHC3), cam_dev_info.fw_rev (V1.0.01.01), cam_dev_info.sw_rev (XHC3_8.4p1s1_PROD_sdy), cam_dev_info.manuf_name (Sercomm)
+260107-00:00:41.241201 [mod=PRVNMGR, lvl=INFO] [tid=1259] Public Key : (MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKQyTInLrGx6YM415Nh3LN5iqUfGhiiLM5WM7TQ9iYYLpX+SnaxSjfFEeHuiRC87rGGndCMRRTiok8CTKBwXhlQ==)
+260107-00:00:41.241304 [mod=PRVNMGR, lvl=INFO] [tid=1259] ~~~~~~~~BLE Advetising~~~~~~~
+
+< HCI Command: ogf 0x08, ocf 0x0008, plen 19
+  1F 02 01 05 03 03 12 18 03 19 C1 03 0E 09 78 63 61 6D 33 
+> HCI Event: 0x0e plen 4
+  02 08 20 00 
+< HCI Command: ogf 0x08, ocf 0x0006, plen 15
+  A0 00 A0 00 00 00 00 00 00 00 00 00 00 07 00 
+> HCI Event: 0x0e plen 4
+  02 06 20 00 
+260107-00:00:43.658557 [mod=PRVNMGR, lvl=INFO] [tid=1259] Cancelling existing bt_tid thread
+260107-00:00:43.658870 [mod=PRVNMGR, lvl=INFO] [tid=1259] Re-started ble beaconing
+260107-00:00:43.658996 [mod=PRVNMGR, lvl=INFO] [tid=1259] pstats->beacon_start 10.618680
+260107-00:00:43.677835 [mod=PRVNMGR, lvl=INFO] [tid=2887] Inside start_gatt_server
+260107-00:00:43.678304 [mod=PRVNMGR, lvl=INFO] [tid=2887] waiting for connection
+260107-00:00:43.764219 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:48.764548 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:53.764845 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:00:58.765135 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:03.765476 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:08.765840 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:13.766168 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:18.766449 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:23.766777 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:28.767059 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:33.767302 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:38.767594 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:43.767897 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:48.768132 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:53.768581 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:01:58.768871 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:03.769140 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:08.769539 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:13.769975 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:18.770473 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:23.771329 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:28.771669 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:33.772031 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:38.772417 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:43.772806 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:48.773483 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:53.774765 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:02:58.775122 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:03.775698 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:08.776512 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:13.777719 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:18.778391 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:23.778917 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:28.779421 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:33.779902 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:38.780631 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:43.781286 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:48.781873 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:53.782509 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:03:58.783103 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:03.783883 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:08.784792 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:13.785461 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:18.786118 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:23.786781 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:28.787386 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:33.788011 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:38.788585 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:43.789168 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:48.789735 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:53.790303 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:04:58.791211 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:03.791989 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:08.792889 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:13.793658 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:18.794235 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:23.794883 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:28.795486 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:33.796166 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:38.796793 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:43.797681 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:48.798416 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:53.799461 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:05:58.800191 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:03.800760 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:08.801525 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:13.802191 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:18.802983 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:23.803712 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:28.804341 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:33.805043 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:38.805637 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:43.806873 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:48.807733 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:53.808395 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:06:58.808969 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:03.809603 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:08.810164 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:13.810855 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:18.811457 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:23.812070 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:28.812624 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:33.813315 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:38.813889 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:43.814629 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:48.815203 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:53.816166 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:07:58.822323 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:03.822650 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:08.823037 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:13.823339 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:18.823636 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:23.823944 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:28.824294 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:33.824651 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:38.825028 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:43.302447 [mod=PRVNMGR, lvl=INFO] [tid=2887] accepted new connection from:78:C6:E7:40:D8:6D
+260107-00:08:43.303118 [mod=PRVNMGR, lvl=INFO] [tid=2887] Running GATT server
+260107-00:08:43.825517 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:43.825776 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device successfully paired with mobile app
+260107-00:08:43.827432 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:08:43.827809 [mod=PRVNMGR, lvl=INFO] [tid=1259]  pstats->ble_paired 480.168794
+260107-00:08:43.862669 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0101
+260107-00:08:43.863934 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:08:43.864414 [mod=PRVNMGR, lvl=INFO] [tid=2887] sending status changed notification
+260107-00:08:43.908399 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:43.908527 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:43.917447 [mod=PRVNMGR, lvl=INFO] [tid=2887] Service Changed CCC Write called
+260107-00:08:43.917581 [mod=PRVNMGR, lvl=INFO] [tid=2887] Service Changed Enabled: true
+260107-00:08:44.908733 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:44.908882 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:44.908947 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:45.538637 [mod=PRVNMGR, lvl=INFO] [tid=2887] rdkc_read_cb_provisionstatus(offset:0)
+260107-00:08:45.538811 [mod=PRVNMGR, lvl=INFO] [tid=2887] status:101
+260107-00:08:45.672284 [mod=PRVNMGR, lvl=INFO] [tid=2887] Public key Read called
+
+260107-00:08:45.672427 [mod=PRVNMGR, lvl=INFO] [tid=2887] 
+
+Offset Value in public Key 0 Len 124
+
+
+260107-00:08:45.807035 [mod=PRVNMGR, lvl=INFO] [tid=2887] Public key Read called
+
+260107-00:08:45.807351 [mod=PRVNMGR, lvl=INFO] [tid=2887] 
+
+Offset Value in public Key 22 Len 124
+
+
+260107-00:08:45.909167 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:45.909295 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:45.909357 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:45.942057 [mod=PRVNMGR, lvl=INFO] [tid=2887] Public key Read called
+
+260107-00:08:45.942314 [mod=PRVNMGR, lvl=INFO] [tid=2887] 
+
+Offset Value in public Key 44 Len 124
+
+
+260107-00:08:46.077663 [mod=PRVNMGR, lvl=INFO] [tid=2887] Public key Read called
+
+260107-00:08:46.077944 [mod=PRVNMGR, lvl=INFO] [tid=2887] 
+
+Offset Value in public Key 66 Len 124
+
+
+260107-00:08:46.212562 [mod=PRVNMGR, lvl=INFO] [tid=2887] Public key Read called
+
+260107-00:08:46.212802 [mod=PRVNMGR, lvl=INFO] [tid=2887] 
+
+Offset Value in public Key 88 Len 124
+
+
+260107-00:08:46.348542 [mod=PRVNMGR, lvl=INFO] [tid=2887] Public key Read called
+
+260107-00:08:46.348840 [mod=PRVNMGR, lvl=INFO] [tid=2887] 
+
+Offset Value in public Key 110 Len 124
+
+
+260107-00:08:46.909536 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:46.909671 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:46.909734 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:47.561813 [mod=PRVNMGR, lvl=INFO] [tid=2887] GAP Device Name Read called: xcam3
+260107-00:08:47.909919 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:47.910053 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:47.910114 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:48.910297 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:48.910440 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:48.910500 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:49.910930 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:49.911092 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:49.911154 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:50.911354 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:50.911494 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:50.911553 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:51.912073 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:51.912237 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:51.912301 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:52.912487 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:52.912627 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:52.912690 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:53.912889 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:53.913025 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:53.913087 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:54.913280 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:54.913420 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:54.913482 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:55.913709 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:55.913847 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:55.913910 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:56.914130 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:56.914299 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:56.914365 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:57.914625 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:57.914784 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:57.914848 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:08:58.362233 [mod=PRVNMGR, lvl=INFO] [tid=2887]  --- Wifi Credentials --- 
+260107-00:08:58.362366 [mod=PRVNMGR, lvl=INFO] [tid=2887] Length : 681 Offset : 0 
+260107-00:08:58.362471 [mod=PRVNMGR, lvl=INFO] [tid=2887] Length : 677
+260107-00:08:58.362526 [mod=PRVNMGR, lvl=INFO] [tid=2887] payloadLen : 677
+260107-00:08:58.362929 [mod=PRVNMGR, lvl=INFO] [tid=2887] Wifi Packet length : 677 Wifi Credentials Received 677
+260107-00:08:58.362974 [mod=PRVNMGR, lvl=INFO] [tid=2887] Wifi Credentials Available 1
+260107-00:08:58.363031 [mod=PRVNMGR, lvl=INFO] [tid=2887] Length : 681, buff len 677
+260107-00:08:58.915033 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:08:58.915166 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:08:58.915228 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device successfully provisioned in back end system
+260107-00:08:58.916401 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:08:58.926882 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_GET_WIFI_CREDS state
+260107-00:08:58.927477 [mod=PRVNMGR, lvl=INFO] [tid=1259] wifiCredentials is not empty
+260107-00:08:58.927596 [mod=PRVNMGR, lvl=INFO] [tid=1259] Got wifi payload successfully
+260107-00:08:58.927704 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0102
+260107-00:08:58.929056 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:08:58.929696 [mod=PRVNMGR, lvl=INFO] [tid=2887] sending status changed notification
+260107-00:08:58.930864 [mod=PRVNMGR, lvl=INFO] [tid=1259] xbo device id 3516915072339954716
+260107-00:08:58.931172 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device conf file not found
+260107-00:08:58.931256 [mod=PRVNMGR, lvl=INFO] [tid=1259] XBO device id obtained for first time
+260107-00:08:58.937581 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:08:58.938568 [mod=PRVNMGR, lvl=INFO] [tid=1259] Saving data to location /opt/SecurePartition/usr_config/device.conf
+260107-00:08:58.948703 [mod=PRVNMGR, lvl=INFO] [tid=1259] Saving data to location /opt/usr_config/device.conf
+[1;32m  *  [0;39mStopping service provisioning-config-service[1;34m[[1;32m OK [1;34m][0;39m
+[1;32m  *  [0;39mStarting service provisioning-config-service[1;34m[[1;32m OK [1;34m][0;39m
+260107-00:09:01.444234 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_CONNECT_WIFI state
+260107-00:09:01.444409 [mod=PRVNMGR, lvl=INFO] [tid=1259] noofEntries in ssid json 0 and current index 1
+260107-00:09:01.444766 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[0]->ssid (wheat101)
+260107-00:09:01.444857 [mod=PRVNMGR, lvl=WARN] [tid=1259] json doesn't have frequency... using default
+260107-00:09:01.444911 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[0]->frequency (2.4GHz)
+260107-00:09:01.444959 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[0].securitymode (2)
+260107-00:09:01.445007 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[1]->ssid (wheat101)
+260107-00:09:01.445062 [mod=PRVNMGR, lvl=WARN] [tid=1259] json doesn't have frequency... using default
+260107-00:09:01.445105 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[1]->frequency (5GHz)
+260107-00:09:01.445150 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[1].securitymode (2)
+260107-00:09:01.445204 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0103
+260107-00:09:01.447954 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:09:01.448382 [mod=PRVNMGR, lvl=INFO] [tid=2887] sending status changed notification
+260107-00:09:01.448673 [mod=PRVNMGR, lvl=INFO] [tid=1259] 
+ About to send rtmessage 
+
+260107-00:09:01.954737 [mod=PRVNMGR, lvl=INFO] [tid=1259] 
+ Sent rtmessage to netsrvmgr and waiting for response!
+
+260107-00:09:01.955390 [mod=RTMESSAGE, lvl=INFO] [tid=1259] 	res:{"reply":"Success","retval":1}
+
+260107-00:09:01.955681 [mod=PRVNMGR, lvl=INFO] [tid=1259] Received response from netsrvmgr as : 0
+260107-00:09:01.955849 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0104
+260107-00:09:01.958411 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:09:01.958961 [mod=PRVNMGR, lvl=INFO] [tid=2887] sending status changed notification
+260107-00:09:02.967374 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0105
+260107-00:09:02.968628 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:09:02.969010 [mod=PRVNMGR, lvl=INFO] [tid=2887] sending status changed notification
+260107-00:09:04.072289 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 0
+260107-00:09:06.106091 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 1
+260107-00:09:08.145833 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 2
+260107-00:09:10.171358 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 3
+260107-00:09:12.183550 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 4
+260107-00:09:14.195768 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 5
+260107-00:09:16.208092 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 6
+260107-00:09:18.236827 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 7
+260107-00:09:20.248965 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 8
+260107-00:09:22.261217 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 9
+260107-00:09:24.311936 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 10
+260107-00:09:26.324012 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 11
+260107-00:09:28.336132 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 12
+260107-00:09:30.351215 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 13
+260107-00:09:32.369665 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 14
+260107-00:09:34.605840 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 15
+260107-00:09:36.671625 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 16
+260107-00:09:38.705874 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 17
+260107-00:09:40.742767 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 18
+260107-00:09:42.792321 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 19
+260107-00:09:44.852230 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 20
+260107-00:09:46.878396 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 21
+260107-00:09:48.996026 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 22
+260107-00:09:51.008269 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 23
+260107-00:09:52.310090 [mod=PRVNMGR, lvl=ERROR] [tid=2887] Device disconnected: Connection reset by peer
+260107-00:09:52.310285 [mod=PRVNMGR, lvl=INFO] [tid=2887] Shutting down...
+260107-00:09:52.310469 [mod=PRVNMGR, lvl=INFO] [tid=2887] server thread exiting
+260107-00:09:53.056313 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 24
+260107-00:09:55.087677 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 25
+260107-00:09:57.110189 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 26
+260107-00:09:59.137322 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 27
+260107-00:10:01.194725 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 28
+260107-00:10:03.223360 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 29
+260107-00:10:05.261439 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 30
+260107-00:10:07.273524 [mod=PRVNMGR, lvl=INFO] [tid=1259] Unable to bring up network on camera, post successful wifi association. Timedout
+260107-00:10:07.273671 [mod=PRVNMGR, lvl=INFO] [tid=1259] Trying with next entry of wifi creds 2
+260107-00:10:07.273740 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_CONNECT_WIFI state
+260107-00:10:07.273793 [mod=PRVNMGR, lvl=INFO] [tid=1259] noofEntries in ssid json 2 and current index 2
+260107-00:10:07.273999 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[0]->ssid (wheat101)
+260107-00:10:07.274080 [mod=PRVNMGR, lvl=WARN] [tid=1259] json doesn't have frequency... using default
+260107-00:10:07.274132 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[0]->frequency (2.4GHz)
+260107-00:10:07.274180 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[0].securitymode (2)
+260107-00:10:07.274224 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[1]->ssid (wheat101)
+260107-00:10:07.274278 [mod=PRVNMGR, lvl=WARN] [tid=1259] json doesn't have frequency... using default
+260107-00:10:07.274320 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[1]->frequency (5GHz)
+260107-00:10:07.274366 [mod=PRVNMGR, lvl=INFO] [tid=1259] creds[1].securitymode (2)
+260107-00:10:07.274421 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0103
+260107-00:10:07.275623 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:10:07.275978 [mod=PRVNMGR, lvl=INFO] [tid=1259] 
+ About to send rtmessage 
+
+260107-00:10:07.278963 [mod=PRVNMGR, lvl=INFO] [tid=1259] 
+ Sent rtmessage to netsrvmgr and waiting for response!
+
+260107-00:10:07.279139 [mod=RTMESSAGE, lvl=INFO] [tid=1259] 	res:{"reply":"Success","retval":1}
+
+260107-00:10:07.279229 [mod=PRVNMGR, lvl=INFO] [tid=1259] Received response from netsrvmgr as : 0
+260107-00:10:07.279291 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0104
+260107-00:10:07.280307 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:10:08.280817 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0105
+260107-00:10:08.282098 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:10:09.401469 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 0
+260107-00:10:11.413587 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 1
+260107-00:10:13.433559 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 2
+260107-00:10:15.483259 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 3
+260107-00:10:17.520838 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 4
+260107-00:10:19.545001 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 5
+260107-00:10:21.561722 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 6
+260107-00:10:23.578812 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 7
+260107-00:10:25.651959 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 8
+260107-00:10:27.780637 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 9
+260107-00:10:29.832158 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 10
+260107-00:10:31.853509 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 11
+260107-00:10:33.907578 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 12
+260107-00:10:35.943837 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 13
+260107-00:10:37.977392 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 14
+260107-00:10:40.002403 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 15
+260107-00:10:42.014553 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 16
+260107-00:10:44.056691 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 17
+260107-00:10:46.083741 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 18
+260107-00:10:48.128769 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 19
+260107-00:10:50.175413 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 20
+260107-00:10:52.188378 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 21
+260107-00:10:54.347298 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 22
+260107-00:10:56.381251 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 23
+260107-00:10:58.404203 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 24
+260107-00:11:00.416835 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 25
+260107-00:11:02.439701 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 26
+260107-00:11:04.455946 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 27
+260107-00:11:06.468170 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 28
+260107-00:11:08.531087 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 29
+260107-00:11:10.569552 [mod=PRVNMGR, lvl=INFO] [tid=1259] Waiting for network connectivity... 30
+260107-00:11:12.586064 [mod=PRVNMGR, lvl=INFO] [tid=1259] Unable to bring up network on camera, post successful wifi association. Timedout
+260107-00:11:12.586209 [mod=PRVNMGR, lvl=INFO] [tid=1259] Failed to connect with provided wifi credentials 2
+260107-00:11:12.586268 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0a06
+260107-00:11:12.587605 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:11:12.587958 [mod=PRVNMGR, lvl=INFO] [tid=1259] Telemetry logs - Start
+260107-00:11:12.588054 [mod=PRVNMGR, lvl=INFO] [tid=1259] :Prvn_Result_Stats_Header:<Status>,<RetryCount>,<Reason>,<StartBLEBeacon>,<ConnectedToMobileApp>,<WiFiWritePayload>,<ConnectedToWiFi>,<AcquiredIP>,<DownloadedConfig>,<ConfiguredLiveVideo>,<ProvisioningStatusComplete>,<TotalTimeTaken>,<TraceId>
+260107-00:11:12.588162 [mod=PRVNMGR, lvl=INFO] [tid=1259] :Prvn_Result_Stats:Failure,2,Trying with new wifi creds,10.619,480.169,15.100,65.323,0.000,0.000,0.000,0.000,0.000,
+260107-00:11:12.589170 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:11:12.589470 [mod=PRVNMGR, lvl=INFO] [tid=1259] Telemetry logs - End
+260107-00:11:12.589619 [mod=PRVNMGR, lvl=INFO] [tid=1259] rdk_setup_service_reset_read_params invoked
+260107-00:11:12.589698 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0101
+260107-00:11:12.590682 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:11:12.591002 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_INPROGRESS state
+260107-00:11:12.591086 [mod=PRVNMGR, lvl=INFO] [tid=1259] Device backend provisioning in progress. waiting...
+260107-00:11:13.591294 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:13.591453 [mod=PRVNMGR, lvl=INFO] [tid=1259] Mobile app lost connectivity. Restart ble beaconing
+260107-00:11:13.591524 [mod=PRVNMGR, lvl=INFO] [tid=1259] Telemetry logs - Start
+260107-00:11:13.591582 [mod=PRVNMGR, lvl=INFO] [tid=1259] :Prvn_Result_Stats_Header:<Status>,<RetryCount>,<Reason>,<StartBLEBeacon>,<ConnectedToMobileApp>,<WiFiWritePayload>,<ConnectedToWiFi>,<AcquiredIP>,<DownloadedConfig>,<ConfiguredLiveVideo>,<ProvisioningStatusComplete>,<TotalTimeTaken>,<TraceId>
+260107-00:11:13.591685 [mod=PRVNMGR, lvl=INFO] [tid=1259] :Prvn_Result_Stats:Failure,3,Mobile app lost connectivity. Restart ble beaconing,10.619,480.169,15.100,65.323,0.000,0.000,0.000,0.000,0.000,
+260107-00:11:13.592858 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:11:13.593180 [mod=PRVNMGR, lvl=INFO] [tid=1259] Telemetry logs - End
+260107-00:11:13.593269 [mod=PRVNMGR, lvl=INFO] [tid=1259] Setting prvn_mgr status : 0x0000
+260107-00:11:13.594264 [mod=RBUS, lvl=ERROR] [tid=1259] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260107-00:11:13.598530 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_ADVERTISE state
+260107-00:11:13.598643 [mod=PRVNMGR, lvl=INFO] [tid=1259] srvc_start_bt_adv
+260107-00:11:13.598707 [mod=PRVNMGR, lvl=INFO] [tid=1259] init_rdkc_service invoked. resetting variables
+260107-00:11:13.598769 [mod=PRVNMGR, lvl=INFO] [tid=1259] rdk_setup_service_reset_read_params invoked
+260107-00:11:13.598830 [mod=PRVNMGR, lvl=INFO] [tid=1259] qrcode XHC3.C3SC1260900AEC.3C62F03AF5A7
+260107-00:11:13.598876 [mod=PRVNMGR, lvl=INFO] [tid=1259] QR code (XHC3.C3SC1260900AEC.3C62F03AF5A7)
+260107-00:11:13.598924 [mod=PRVNMGR, lvl=INFO] [tid=1259] cam_dev_info.mac (3C:62:F0:3A:F5:A7), cam_dev_info.serial (C3SC1260900AEC), cam_dev_info.model (XHC3), cam_dev_info.fw_rev (V1.0.01.01), cam_dev_info.sw_rev (XHC3_8.4p1s1_PROD_sdy), cam_dev_info.manuf_name (Sercomm)
+260107-00:11:13.598971 [mod=PRVNMGR, lvl=INFO] [tid=1259] Public Key : (MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKQyTInLrGx6YM415Nh3LN5iqUfGhiiLM5WM7TQ9iYYLpX+SnaxSjfFEeHuiRC87rGGndCMRRTiok8CTKBwXhlQ==)
+260107-00:11:13.599064 [mod=PRVNMGR, lvl=INFO] [tid=1259] ~~~~~~~~BLE Advetising~~~~~~~
+
+< HCI Command: ogf 0x08, ocf 0x0008, plen 19
+  1F 02 01 05 03 03 12 18 03 19 C1 03 0E 09 78 63 61 6D 33 
+> HCI Event: 0x0e plen 4
+  02 08 20 00 
+< HCI Command: ogf 0x08, ocf 0x0006, plen 15
+  A0 00 A0 00 00 00 00 00 00 00 00 00 00 07 00 
+> HCI Event: 0x0e plen 4
+  02 06 20 00 
+260107-00:11:15.857992 [mod=PRVNMGR, lvl=INFO] [tid=1259] Cancelling existing bt_tid thread
+260107-00:11:15.858235 [mod=PRVNMGR, lvl=INFO] [tid=1259] Re-started ble beaconing
+260107-00:11:15.858352 [mod=PRVNMGR, lvl=INFO] [tid=1259] pstats->beacon_start 68.579028
+260107-00:11:15.866870 [mod=PRVNMGR, lvl=INFO] [tid=29253] Inside start_gatt_server
+260107-00:11:15.867071 [mod=PRVNMGR, lvl=INFO] [tid=29253] waiting for connection
+260107-00:11:15.885461 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:20.885754 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:25.886043 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:30.886350 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:35.886670 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:40.887000 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:45.887273 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:50.887558 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:11:55.887839 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:00.888098 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:05.888358 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:10.888639 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:15.888934 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:20.889196 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:25.889549 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:30.889958 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:35.890220 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:40.890522 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:45.890850 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:50.891140 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:12:55.891465 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:00.891737 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:05.892060 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:10.892341 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:15.892638 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:20.892976 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:25.893263 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:30.893530 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:35.893798 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:40.894064 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:45.894382 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:50.894686 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:13:55.894946 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:14:00.895254 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:14:05.895569 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:14:10.895870 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state
+260107-00:14:15.896185 [mod=PRVNMGR, lvl=INFO] [tid=1259] PRVMGR_BT_PAIRING state

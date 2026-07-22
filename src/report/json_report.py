@@ -54,25 +54,92 @@ class JSONReportGenerator:
 
             ],
 
+            
+            "failure_distribution":
+                report.failure_distribution,
+
+            
+            "failure_counts":
+                report.failure_counts,
+
 
             "timeline":
             [
 
                 {
-                    "sequence":
-                    event.sequence,
 
                     "category":
-                    event.event.category.value,
+                    group.category.value,
 
-                    "severity":
-                    event.event.severity.value,
 
-                    "message":
-                    event.event.message
+                    "count":
+                    group.count,
+
+
+                    "start_time":
+                    str(group.start_time)
+                    if group.start_time
+                    else None,
+
+
+                    "end_time":
+                    str(group.end_time)
+                    if group.end_time
+                    else None,
+
+                    
+                    "duration_seconds": (
+                        group.duration.total_seconds()
+                        if group.duration
+                        else None
+                    ),
+
+
+                    "largest_gap_seconds": (
+                        group.largest_gap.total_seconds()
+                        if group.largest_gap
+                        else None
+                    ),
+
+
+                    "event_rate_per_hour": (
+                        round(group.event_rate * 3600, 2)
+                        if group.event_rate is not None
+                        else None
+                    ),
+
+
+                    "sources":
+                    group.sources,
+
+
+                    "events":
+                    [
+
+                        {
+                            "timestamp":
+                            str(event.timestamp)
+                            if event.timestamp
+                            else None,
+
+                            "severity":
+                            event.severity.value,
+
+                            "message":
+                            event.message,
+
+                            "source":
+                            str(event.source)
+
+                        }
+
+                        for event in group.events
+
+                    ]
+
                 }
 
-                for event in report.timeline
+                for group in report.timeline
 
             ]
 

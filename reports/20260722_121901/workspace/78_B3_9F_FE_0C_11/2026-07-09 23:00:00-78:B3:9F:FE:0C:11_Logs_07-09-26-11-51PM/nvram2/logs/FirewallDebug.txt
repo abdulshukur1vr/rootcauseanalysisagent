@@ -1,0 +1,251 @@
+251
+260709-19:05:50 ENTERED FIREWALL, argc = 4 
+260709-19:05:50 Inside service_ev_t get_service_event
+260709-19:05:50  Process 3366 is waiting for lock
+260709-19:05:50  Process 3366 acquired the lock
+260709-19:05:50 Inside firewall service_init()
+260709-19:05:50 firewall service initializing
+260709-19:05:50 Inside get_options
+260709-19:05:50 Exiting get_options
+260709-19:05:50 firewall opening sysevent_fd 18, token 1178
+260709-19:05:50 Entering prepare_globals_from_configuration
+260709-19:05:50 isInRFCaptivePortal Syscfg read failed to get rf_captive_portal value
+260709-19:05:50 PSM_IDM_INTERFACE_NAME is br403
+260709-19:05:50 Exiting prepare_globals_from_configuration
+260709-19:05:50 Exiting firewall service_init()
+260709-19:05:50 Inside Firewall service_restart () 
+260709-19:05:50 Inside firewall service_start()
+260709-19:05:50 starting firewall service
+260709-19:05:50 Inside prepare_ipv4_firewall 
+260709-19:05:50 Entering prepare_enabled_ipv4_firewall 
+260709-19:05:50 Entering prepare_subtables 
+260709-19:05:50 Entering prepare_dscp_rule_for_host_mngt_traffic
+260709-19:05:50 Exiting prepare_dscp_rule_for_host_mngt_traffic
+260709-19:05:50 Entering prepare_xconf_rules
+260709-19:05:50 SyndicationFlowControlEnable true
+260709-19:05:50 initialforwardedmark cs0
+260709-19:05:50 initialoutputmark af22
+260709-19:05:50 WMMdownstreamMap is disabled
+260709-19:05:50 Exiting prepare_xconf_rules
+260709-19:05:50 Entering redirect_dns_to_extender,current_wan_ifname is erouter0 , default wan is erouter0
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 Exiting redirect_dns_to_extender
+260709-19:05:50 INFO: cujo-agent in userspace mode
+260709-19:05:50 INFO: [IP_V4] Update cujo-agent firewall rules using raptr
+260709-19:05:50 Entering do_webui_rate_limit
+260709-19:05:50 Exiting do_webui_rate_limit
+260709-19:05:50 Entering filterPortMap
+260709-19:05:50 Exiting filterPortMap
+260709-19:05:50 Entering isInCaptivePortal
+260709-19:05:50 Exiting isInCaptivePortal
+260709-19:05:50 CP DNS Redirection : Return 0
+260709-19:05:50 Entering do_ssh_IpAccessTable
+260709-19:05:50 Entering whiteListArmAtomIP
+260709-19:05:50 Exiting whiteListArmAtomIP
+260709-19:05:50 SSH Address:96.118.159.156
+260709-19:05:50 SSH Address:96.118.159.245
+260709-19:05:50 SSH Address:96.118.159.252
+260709-19:05:50 SSH Address:96.118.213.116
+260709-19:05:50 SSH Address:96.118.217.151
+260709-19:05:50 SSH Address:96.118.214.184
+260709-19:05:50 SSH Address:96.118.21.170
+260709-19:05:50 SSH Address:96.118.220.67
+260709-19:05:50 Before check whether RFC file for SSH present or not
+260709-19:05:50 .RFC_SSHWhiteList.list status[-1] /tmp/.rfcLock status[-1]
+260709-19:05:50 Exiting do_ssh_IpAccessTable
+260709-19:05:50 Entering do_snmp_IpAccessTable
+260709-19:05:50 Exiting do_snmp_IpAccessTable
+260709-19:05:50 Entering prepare_multinet_filter_input
+260709-19:05:50 Exiting prepare_multinet_filter_input
+260709-19:05:50 Entering prepare_hotspot_gre_ipv4_rule
+260709-19:05:50 Entering prepare_ipc_filter
+260709-19:05:50 Exiting prepare_ipc_filter
+260709-19:05:50 Entering prepare_multinet_filter_forward
+260709-19:05:50 Open the port 9869 to the LAN for use by SpeedTest 
+260709-19:05:50 Exiting prepare_multinet_filter_forward
+260709-19:05:50 IOT_LOG : Adding iptable rules for IOT
+260709-19:05:50 Entering do_wan2lan_IoT_Allow
+260709-19:05:50 Exiting do_wan2lan_IoT_Allow
+260709-19:05:50 PSM_NAME_RADIUS_GREY_LIST_ENABLED val: 0
+260709-19:05:50 Exiting  prepare_subtables 
+260709-19:05:50 Entering add_qos_marking_statements
+260709-19:05:50 Exiting add_qos_marking_statements
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_single_port_forwarding
+260709-19:05:50 PortMapping:Feature Enable 0
+260709-19:05:50 Exiting do_single_port_forwarding
+260709-19:05:50 Entering do_port_range_forwarding
+260709-19:05:50 PortMapping:Feature Enable 0
+260709-19:05:50 Exiting do_port_range_forwarding
+260709-19:05:50 Entering do_wellknown_ports_forwarding
+260709-19:05:50 Exiting do_wellknown_ports_forwarding
+260709-19:05:50 Entering do_ephemeral_port_forwarding
+260709-19:05:50 Exiting do_ephemeral_port_forwarding
+260709-19:05:50 Entering do_static_route_forwarding
+260709-19:05:50 Exiting do_static_route_forwarding
+260709-19:05:50 Inside do_ipv4_UIoverWAN_filter 
+260709-19:05:50 Exiting do_ipv4_UIoverWAN_filter 
+260709-19:05:50 Entering do_nonat
+260709-19:05:50 Exiting do_nonat
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_dmz
+260709-19:05:50 Entering do_nat_ephemeral
+260709-19:05:50 Exiting do_nat_ephemeral
+260709-19:05:50 Entering do_wan_nat_lan_clients
+260709-19:05:50 Exiting do_wan_nat_lan_clients
+260709-19:05:50 Entering do_lan2self_by_wanip
+260709-19:05:50 Exiting do_lan2self_by_wanip
+260709-19:05:50 Entering do_lan2self_attack
+260709-19:05:50 Exiting do_lan2self_attack
+260709-19:05:50 Entering lan_telnet_ssh
+260709-19:05:50 Exiting lan_telnet_ssh
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_remote_access_control
+260709-19:05:50 Entering remote_access_set_proto
+260709-19:05:50 Exiting remote_access_set_proto
+260709-19:05:50 Entering remote_access_set_proto
+260709-19:05:50 Exiting remote_access_set_proto
+260709-19:05:50 Exiting do_remote_access_control
+260709-19:05:50 Entering do_lan2wan
+260709-19:05:50 Entering do_lan2wan_misc
+260709-19:05:50 Exiting do_lan2wan_misc
+260709-19:05:50 Entering do_lan2wan_disable
+260709-19:05:50 Exiting do_lan2wan_disable
+260709-19:05:50 Entering do_parental_control
+260709-19:05:50 Entering do_parcon_device_cloud_mgmt
+260709-19:05:50 Exit getPcmdList
+260709-19:05:50 Exiting do_parcon_device_cloud_mgmt
+260709-19:05:50 Entering do_parcon_mgmt_site_keywd
+260709-19:05:50 Exiting do_parcon_mgmt_site_keywd
+260709-19:05:50 Entering do_parcon_mgmt_service
+260709-19:05:50 Exiting do_parcon_mgmt_service
+260709-19:05:50 Exiting do_parental_control
+260709-19:05:50 ### XDNS - Disabled. X_RDKCENTRAL-COM_XDNS not found. ### 
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_prepare_port_range_triggers
+260709-19:05:50 PortTriggers:Feature Enable 0
+260709-19:05:50 Exiting do_prepare_port_range_triggers
+260709-19:05:50 Exiting do_lan2wan
+260709-19:05:50 Entering do_wan2lan
+260709-19:05:50 Entering do_wan2lan_disabled
+260709-19:05:50 Exiting do_wan2lan_disabled
+260709-19:05:50 Entering do_wan2lan_misc
+260709-19:05:50 Entering add_usgv2_wan2lan_general_rules
+260709-19:05:50 Exiting add_usgv2_wan2lan_general_rules
+260709-19:05:50 Exiting do_wan2lan_misc
+260709-19:05:50 Entering do_wan2lan_accept
+260709-19:05:50 Exiting do_wan2lan_accept
+260709-19:05:50 Exiting do_wan2lan
+260709-19:05:50 Entering do_filter_table_general_rules
+260709-19:05:50 Exiting do_filter_table_general_rules
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_speedboost_port_rules - IPV4 
+260709-19:05:50 Exiting do_speedboost_port_rules no pvd option enabled
+260709-19:05:50 Entering prepare_ethernetbhaul_greclamp status:
+260709-19:05:50 prepare_ethernetbhaul_greclamp skip clamping mss since gre not present
+260709-19:05:50 Exiting prepare_ethernetbhaul_greclamp
+260709-19:05:50 Entering prepare_multinet_mangle
+260709-19:05:50 Exiting prepare_multinet_mangle
+260709-19:05:50 DEBUG: mapt_config_value not set. So no need to add v4 map-t rules. 
+260709-19:05:50 Exiting prepare_enabled_ipv4_firewall 
+260709-19:05:50 Exiting prepare_ipv4_firewall 
+260709-19:05:50 iptables-restore for ipv4 starts
+260709-19:05:50 iptables-restore for ipv4 ends
+260709-19:05:50 Inside prepare_ipv6_firewall 
+260709-19:05:50 Inside do_ipv6_sn_filter 
+260709-19:05:50 Entering prepare_dscp_rule_for_host_mngt_traffic
+260709-19:05:50 Exiting prepare_dscp_rule_for_host_mngt_traffic
+260709-19:05:50 Entering prepare_xconf_rules
+260709-19:05:50 SyndicationFlowControlEnable true
+260709-19:05:50 initialforwardedmark cs0
+260709-19:05:50 initialoutputmark af22
+260709-19:05:50 WMMdownstreamMap is disabled
+260709-19:05:50 Exiting prepare_xconf_rules
+260709-19:05:50 Exiting do_ipv6_sn_filter 
+260709-19:05:50 Entering redirect_dns_to_extender,current_wan_ifname is erouter0 , default wan is erouter0
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 Exiting redirect_dns_to_extender
+260709-19:05:50 Exiting do_ipv6_nat_table 
+260709-19:05:50 Entering ethwan_mso_gui_acess_rules
+260709-19:05:50 Exiting ethwan_mso_gui_acess_rules
+260709-19:05:50 Inside do_ipv6_UIoverWAN_filter 
+260709-19:05:50 Exiting do_ipv6_UIoverWAN_filter 
+260709-19:05:50 Inside do_ipv6_filter_table 
+260709-19:05:50 Open the port 9869 to the LAN for use by SpeedTest 
+260709-19:05:50 Entering do_webui_rate_limit
+260709-19:05:50 Exiting do_webui_rate_limit
+260709-19:05:50 Entering lan_telnet_ssh
+260709-19:05:50 Exiting lan_telnet_ssh
+260709-19:05:50 Inside getIpv6Interfaces 
+260709-19:05:50 Entering prepare_hotspot_gre_ipv6_rule
+260709-19:05:50 Entering do_lan2self_by_wanip6
+260709-19:05:50 Exiting do_lan2self_by_wanip6
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_remote_access_control
+260709-19:05:50 Entering remote_access_set_proto
+260709-19:05:50 Exiting remote_access_set_proto
+260709-19:05:50 Entering remote_access_set_proto
+260709-19:05:50 Exiting remote_access_set_proto
+260709-19:05:50 Entering ethwan_mso_gui_acess_rules
+260709-19:05:50 Exiting ethwan_mso_gui_acess_rules
+260709-19:05:50 Exiting do_remote_access_control
+260709-19:05:50 Entering do_ssh_IpAccessTable
+260709-19:05:50 SSH Address:2001:558:fc0a:6:f816:3eff:fe38:224b
+260709-19:05:50 SSH Address:2001:558:fc0a:6:f816:3eff:fe19:9cc8
+260709-19:05:50 SSH Address:2001:558:fc11:2:f816:3eff:fe05:915f
+260709-19:05:50 SSH Address:2001:558:fc11:2:f816:3eff:fe9a:2d0
+260709-19:05:50 SSH Address:2001:558:fc11:2:f816:3eff:fe33:fcf3
+260709-19:05:50 Before check whether RFC file for SSH present or not
+260709-19:05:50 .RFC_SSHWhiteList.list status[-1] /tmp/.rfcLock status[-1]
+260709-19:05:50 Exiting do_ssh_IpAccessTable
+260709-19:05:50 Entering do_snmp_IpAccessTable
+260709-19:05:50 Exiting do_snmp_IpAccessTable
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_single_port_forwarding
+260709-19:05:50 PortMapping:Feature Enable 0
+260709-19:05:50 Exiting do_single_port_forwarding
+260709-19:05:50 Entering do_port_range_forwarding
+260709-19:05:50 PortMapping:Feature Enable 0
+260709-19:05:50 Exiting do_port_range_forwarding
+260709-19:05:50 Exiting prepare_ipv6_firewall 
+260709-19:05:50 INFO: cujo-agent in userspace mode
+260709-19:05:50 INFO: [IP_V6] Update cujo-agent firewall rules using raptr
+260709-19:05:50 Entering do_parental_control
+260709-19:05:50 Entering do_parcon_device_cloud_mgmt
+260709-19:05:50 Exit getPcmdList
+260709-19:05:50 Exiting do_parcon_device_cloud_mgmt
+260709-19:05:50 Entering do_parcon_mgmt_site_keywd
+260709-19:05:50 Exiting do_parcon_mgmt_site_keywd
+260709-19:05:50 Entering do_parcon_mgmt_service
+260709-19:05:50 Exiting do_parcon_mgmt_service
+260709-19:05:50 Exiting do_parental_control
+260709-19:05:50 Inside isServiceNeeded
+260709-19:05:50 Inside Get_Device_Mode
+260709-19:05:50 returning true
+260709-19:05:50 Entering do_speedboost_port_rules - IPV6 
+260709-19:05:50 Exiting do_speedboost_port_rules no pvd option enabled
+260709-19:05:50 ### XDNS - Disabled. X_RDKCENTRAL-COM_XDNS not found. ### 
+260709-19:05:50 DEBUG: mapt_config_value not set. So no need to add v4 map-t rules. 
+260709-19:05:50 Exiting prepare_ipv6_firewall 
+260709-19:05:50 iptables-restore for ipv6 starts
+260709-19:05:50 iptables-restore for ipv6 ends
+260709-19:05:50 started firewall service
+260709-19:05:50 Exiting firewall service_start()
+260709-19:05:50 Inside firewall service_close()
+260709-19:05:50 firewall closing sysevent_fd 18, token 1178
+260709-19:05:50 firewall closing dbus connection
+260709-19:05:50 exiting firewall service_close()

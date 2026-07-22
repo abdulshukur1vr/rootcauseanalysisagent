@@ -1,0 +1,98 @@
+98
+[OneWifi] 260709-18:26:53.969572<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:26:58.861167<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:26:58.866082<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:27:01.623392<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:27:06.642402<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_assoc_req
+[OneWifi] 260709-18:27:07.672194<I>  process_assoc_device_event:1841 Device 3c:62:f0:43:70:ed associated with vapindex 0 associated clients count : 4
+[OneWifi] 260709-18:27:07.672231<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,4,3,2 
+[OneWifi] 260709-18:27:07.673082<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_connect
+[OneWifi] 260709-18:27:07.673248<I>  process_assoc_device_event:1897 LMLite notify:Device.WiFi.AccessPoint.1.AssociatedDevice.4 mac:3c:62:f0:43:70:ed
+[OneWifi] 260709-18:27:29.558112<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:27:29.559317<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,7,8,2 
+[OneWifi] 260709-18:27:29.560356<I>  process_disassoc_device_event:1776 Disassoc event for mac : 3c:62:f0:3a:20:00, Removed the entry from hashmap
+[OneWifi] 260709-18:27:29.562665<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:27:39.150616<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:27:39.166873<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_assoc_req
+[OneWifi] 260709-18:27:39.198336<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_connect
+[OneWifi] 260709-18:27:39.198737<I>  process_assoc_device_event:1841 Device 3c:62:f0:3a:20:00 associated with vapindex 1 associated clients count : 8
+[OneWifi] 260709-18:27:39.198780<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,8,7,2 
+[OneWifi] 260709-18:27:39.200073<I>  process_assoc_device_event:1897 LMLite notify:Device.WiFi.AccessPoint.2.AssociatedDevice.8 mac:3c:62:f0:3a:20:00
+[OneWifi] 260709-18:28:25.691095<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,3,4,2 
+[OneWifi] 260709-18:28:25.692046<I>  process_disassoc_device_event:1776 Disassoc event for mac : 96:ae:3d:3a:20:31, Removed the entry from hashmap
+[OneWifi] 260709-18:28:30.695573<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,3,4,2 
+[OneWifi] 260709-18:28:30.696484<I>  process_disassoc_device_event:1776 Disassoc event for mac : 4a:0d:d7:1e:65:27, Removed the entry from hashmap
+[OneWifi] 260709-18:28:45.733705<I>  process_disassoc_device_event:1776 Disassoc event for mac : 8c:c5:b4:e7:8a:cf, Removed the entry from hashmap
+[OneWifi] 260709-18:28:55.722904<I>  process_disassoc_device_event:1776 Disassoc event for mac : 8c:c5:b4:e7:8a:ce, Removed the entry from hashmap
+[OneWifi] 260709-18:30:20.190501<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:30:20.191716<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,3,4,2 
+[OneWifi] 260709-18:30:20.193120<I>  process_disassoc_device_event:1776 Disassoc event for mac : 3c:62:f0:43:70:ed, Removed the entry from hashmap
+[OneWifi] 260709-18:30:20.195034<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:30:21.781472<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:30:21.795218<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_assoc_req
+[OneWifi] 260709-18:30:22.720716<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:30:22.724568<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:33:17.930325<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:33:17.931610<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,7,8,2 
+[OneWifi] 260709-18:33:17.932519<I>  process_disassoc_device_event:1776 Disassoc event for mac : 1c:53:f9:8c:e2:f1, Removed the entry from hashmap
+[OneWifi] 260709-18:33:25.364944<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:33:25.379373<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_assoc_req
+[OneWifi] 260709-18:33:25.920074<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,2,3,2 
+[OneWifi] 260709-18:33:25.921020<I>  process_disassoc_device_event:1776 Disassoc event for mac : 3c:62:f0:43:70:ed, Removed the entry from hashmap
+[OneWifi] 260709-18:33:26.406361<I>  process_assoc_device_event:1841 Device 1c:53:f9:8c:e2:f1 associated with vapindex 1 associated clients count : 8
+[OneWifi] 260709-18:33:26.406401<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,8,7,2 
+[OneWifi] 260709-18:33:26.406861<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_connect
+[OneWifi] 260709-18:33:26.407321<I>  process_assoc_device_event:1897 LMLite notify:Device.WiFi.AccessPoint.2.AssociatedDevice.8 mac:1c:53:f9:8c:e2:f1
+[OneWifi] 260709-18:38:17.004252<E>  ap_get_handler 2228 vap index : 0
+[OneWifi] 260709-18:38:17.008970<E>  ap_get_handler 2228 vap index : 1
+[OneWifi] 260709-18:38:17.016451<E>  ap_get_handler 2228 vap index : 16
+[OneWifi] 260709-18:38:20.891986<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:20.892535<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:20.893049<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:20.893515<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:20.904401<I>  Public xfinity vap is disabled
+[OneWifi] 260709-18:38:20.905030<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:20.905546<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:20.906046<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:21.970603<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:21.971347<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:21.971951<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:21.972639<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:21.978320<I>  Public xfinity vap is disabled
+[OneWifi] 260709-18:38:21.979058<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:21.979816<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.097417<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.219655<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.220296<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.220820<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.221375<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.226530<I>  Public xfinity vap is disabled
+[OneWifi] 260709-18:38:22.227177<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:38:22.227742<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:17.004733<E>  ap_get_handler 2228 vap index : 0
+[OneWifi] 260709-18:53:17.009353<E>  ap_get_handler 2228 vap index : 1
+[OneWifi] 260709-18:53:17.014233<E>  ap_get_handler 2228 vap index : 16
+[OneWifi] 260709-18:53:20.940382<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:20.940970<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:20.941448<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:20.941927<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:20.954036<I>  Public xfinity vap is disabled
+[OneWifi] 260709-18:53:20.954636<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:20.955175<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:20.955688<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:21.991458<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:21.992007<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:21.992495<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:21.992964<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:21.997972<I>  Public xfinity vap is disabled
+[OneWifi] 260709-18:53:21.998597<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:21.999176<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.109009<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.234038<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.234568<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.235120<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.235582<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.240585<I>  Public xfinity vap is disabled
+[OneWifi] 260709-18:53:22.241203<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:22.241751<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_clear_sta_counters
+[OneWifi] 260709-18:53:55.309551<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req

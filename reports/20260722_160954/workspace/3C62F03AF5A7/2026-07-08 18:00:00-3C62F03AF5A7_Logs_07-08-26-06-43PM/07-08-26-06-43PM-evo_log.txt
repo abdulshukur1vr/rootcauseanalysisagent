@@ -1,0 +1,872 @@
+08.07.2026_16:53.59 - Launching RTC App 
+08.07.2026_16:53.59 [start_webrtc_service.sh] INFO Checking SecurePartition mount status
+08.07.2026_16:53.59 [start_webrtc_service.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+08.07.2026_16:54.00 [start_webrtc_service.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+08.07.2026_16:54.00 Defined Config Files as SecurePartition usr_config path in start_webrtc_service.sh
+Value of privacymode in webrtc 08.07.2026_16:54.00 File not found: /opt/usr_config/privacymode.txt
+08.07.2026_16:54.00 privacy mode is disabled
+08.07.2026_16:54.00 checkIP - called from start_webrtc_service
+0
+08.07.2026_16:54.00 starting livestreaming-service !!!!
+08.07.2026_16:54.01 INFO : Using Encoded Stream 0(Stream A) for Live Streaming
+08.07.2026_16:54.01 INFO : No need to turn off the camera amplifier on  XHC3   model
+08.07.2026_16:54.01 INFO : Open Web RTC Live Audio is not enabled, file /opt/SecurePartition/usr_config/cvr_audio_status.txt is not available
+Conf file /etc/debug.ini open success
+260708-16:54:04.466229 [mod=BREAKPAD, lvl=INFO] [tid=2673] breakpadwrap.cpp(21):Registering breakpad handler... 
+260708-16:54:05.367770 [mod=WRTC, lvl=INFO] [tid=2673] Secure Partition Mount status : 1
+260708-16:54:05.370357 [mod=WRTC, lvl=INFO] [tid=2673] Loading secure RTC live video config
+260708-16:54:05.370472 [mod=WRTC, lvl=INFO] [tid=2673] RTC live video config successfully loaded
+260708-16:54:05.370694 [mod=WRTC, lvl=INFO] [tid=2673] Signaling Server ip has been set to prod-ng.signalservice.comcast.net
+260708-16:54:05.370793 [mod=WRTC, lvl=INFO] [tid=2673] Signaling Server port has been set to 443
+260708-16:54:05.370874 [mod=WRTC, lvl=INFO] [tid=2673] The room id has been set to 2259722108150432433
+260708-16:54:05.370954 [mod=WRTC, lvl=INFO] [tid=2673] The device mac address  has been set to 3C62F03AF5A7
+260708-16:54:05.371002 [mod=WRTC, lvl=INFO] [tid=2673] The device model has been set to XHC3
+260708-16:54:05.371268 [mod=WRTC, lvl=INFO] [tid=2673] ERSSignalingClientSettings::The firmware image is XHC3_8.4p1s1_PROD_sdy
+
+260708-16:54:05.371358 [mod=WRTC, lvl=INFO] [tid=2673] ERSSignalingClientSettings::The device MAC is 3C62F03AF5A7
+
+260708-16:54:05.371517 [mod=WRTC, lvl=INFO] [tid=2673] ERSSignalingClientSettings::The device image version number is 8.4.0.1
+260708-16:54:05.371592 [mod=WRTC, lvl=INFO] [tid=2673] ERSSignalingClientSettings::The device model is XHC3
+260708-16:54:05.371640 [mod=WRTC, lvl=INFO] [tid=2673] ERSSignalingClientSettings::The device make is Sercomm
+260708-16:54:05.371684 [mod=WRTC, lvl=INFO] [tid=2673] ERSSignalingClientSettings::setAudioStatus 0
+260708-16:54:05.371726 [mod=WRTC, lvl=INFO] [tid=2673] The device IFrame Caching has been set to 1
+260708-16:54:05.436505 [mod=WRTC, lvl=INFO] [tid=2673] User Agent for RTC-App->RRS connection is Sercomm XHC3 XHC3_8.4p1s1_PROD_sdy 3C62F03AF5A7 8.4.0.1
+260708-16:54:05.437257 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/main.cc(225): WebRTC v102 is ready
+260708-16:54:06.045639 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(395): Could not send the SSL connect as we didn't find the expected string 
+260708-16:54:06.250262 [mod=WRTC, lvl=INFO] [tid=2673] Received IO Socket Connect for Session ID = 0
+260708-16:54:06.250974 [mod=RBUS, lvl=INFO] [tid=2673] rbus open for component: t2_lib_webrtc
+260708-16:54:06.269318 [mod=RBUS, lvl=INFO] [tid=2673]  rbus open (t2_lib_webrtc) success
+260708-16:54:06.329768 [mod=RBUS, lvl=ERROR] [tid=2673] rbus_get for Telemetry.ReportProfiles.webrtc.EventMarkerList failed with error: Entry not found error
+260708-16:54:06.346170 [mod=RBUS, lvl=INFO] [tid=2673] Telemetry.ReportProfiles.ProfilesUpdated subscribe retries succeeded
+260708-16:54:06.346828 [mod=WRTC, lvl=INFO] [tid=2673] Send Join Room...
+260708-16:54:06.347204 [mod=WRTC, lvl=INFO] [tid=2673] Sending Room Join to RRS
+260708-16:54:06.454810 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-16:54:06.455008 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-16:54:10.455014 [mod=WRTC, lvl=INFO] [tid=2938] ERSSignalingClientSettings::setAudioStatus 1
+260708-16:54:10.455220 [mod=WRTC, lvl=INFO] [tid=2938] ../../rtc-app/src/SessionManager.cc(216): Toggled the audio status from false to true
+260708-16:54:10.455394 [mod=WRTC, lvl=INFO] [tid=2938] (../../rtc-app/src/RdkcProducer.cc:287) Stream Producer has notified to reconfigure the stream
+260708-16:54:51.103324 [mod=RBUS, lvl=ERROR] [tid=3010] rbus_get for Telemetry.ReportProfiles.webrtc.EventMarkerList failed with error: Entry not found error
+260708-16:55:00.143514 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:55,2,ceb6d68b-355d-4d09-919a-7374adbcc4d2,35.173.158.104,2259722108150432433,0
+260708-16:55:36.310784 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-16:55:36.310962 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-16:55:36.311158 [mod=WRTC, lvl=INFO] [tid=2673] Client joined
+260708-16:55:36.313930 [mod=WRTC, lvl=INFO] [tid=2673] Room ID: 2259722108150432433
+260708-16:55:36.314060 [mod=WRTC, lvl=INFO] [tid=2673] Player Client ID: 835e542e-3176-44ca-b7f2-877b7a3294fc 
+260708-16:55:36.314129 [mod=WRTC, lvl=INFO] [tid=2673] RTC-App Client ID: ceb6d68b-355d-4d09-919a-7374adbcc4d2 
+260708-16:55:36.314187 [mod=WRTC, lvl=INFO] [tid=2673] Capabilities: hasHeartbeat 
+260708-16:55:36.314251 [mod=WRTC, lvl=INFO] [tid=2673] Peer has support for heartbeat mechanism
+260708-16:55:36.314447 [mod=WRTC, lvl=INFO] [tid=2673] Initialized event driven polling successfully
+260708-16:55:36.373732 [mod=XSTREAM, lvl=INFO] [tid=2673] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(473) : GetStreamConfig done 1280*720 fps 15
+260708-16:55:36.373856 [mod=WRTC, lvl=INFO] [tid=2673] Stream Configuration Values:0,1280,720,15,576000
+260708-16:55:36.376799 [mod=XSTREAM, lvl=INFO] [tid=2673] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(2569) : Format: 1 stream_id 0
+260708-16:55:36.387683 [mod=XSTREAM, lvl=INFO] [tid=2673] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(2671) : Stream initialization success and assigned id 14
+260708-16:55:36.387808 [mod=WRTC, lvl=INFO] [tid=2673] Stream Init success for stream id 0 with av_flag as 3
+260708-16:55:36.387889 [mod=WRTC, lvl=INFO] [tid=2673] Added the handler(14) successfully to epoll
+260708-16:55:36.387939 [mod=WRTC, lvl=INFO] [tid=2673] Stream initialized successfully 
+260708-16:55:37.067103 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-16:55:37.072293 [mod=WRTC, lvl=INFO] [tid=2673] Successfully created the data channel from the camera side 0x77ed9820
+260708-16:55:37.072439 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is connecting
+260708-16:55:37.118434 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(569): Deleting Stun credentials timer as client has joined
+260708-16:55:37.118597 [mod=WRTC, lvl=INFO] [tid=2673] User Agent for RTC-App->RRS connection is Sercomm XHC3 XHC3_8.4p1s1_PROD_sdy 3C62F03AF5A7 8.4.0.1
+260708-16:55:37.129571 [mod=WRTC, lvl=INFO] [tid=2673] Next Session ID Created for incoming connection: 1 
+260708-16:55:37.130299 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-16:55:37.138394 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:661): CreateMediaChannel. Options: VideoOptions {screencast min bitrate kbps: 100, }
+260708-16:55:37.146584 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: inactive -> have-local-offer
+260708-16:55:37.159099 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1581): ResetUnsignaledRecvStream.
+260708-16:55:37.177970 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-16:55:37.195739 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1234): SetRecvParameters: {codecs: [VideoCodec[96:H264], VideoCodec[97:rtx], VideoCodec[98:red], VideoCodec[99:rtx], VideoCodec[100:ulpfec]], extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}
+260708-16:55:37.205415 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1360): AddSendStream: {id:video_label;ssrcs:[2178329968,2360116746];ssrc_groups:{semantics:FID;ssrcs:[2178329968,2360116746]};cname:a+71lgm/ECH0zTaz;stream_ids:stream_id;}
+260708-16:55:37.217566 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 2178329968, options: VideoOptions {is_screencast : false, }, source = (source))
+260708-16:55:37.226287 [mod=WRTC, lvl=INFO] [tid=2673] Sending SDP...
+Send SDP offer: 5:::{"name":"message","args":[{"to":"835e542e-3176-44ca-b7f2-877b7a3294fc","sid":"1432678845742","roomType":"video","type":"offer","payload":{
+   "sdp" : "v=0\r\no=- 4662688923855213755 2 IN IP4 127.0.0.1\r\ns=XHC3_8.4p1s1_PROD_sdy RTC App\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:LKVx\r\na=ice-pwd:pq0O3NP2jmBVs/ZYuOwNB8WI\r\na=ice-options:trickle\r\na=fingerprint:sha-256 DA:00:4B:D0:92:66:D8:E5:B8:94:4E:92:5B:2B:F1:39:13:45:8B:18:1B:1F:D9:54:08:1A:34:C1:6B:4E:15:51\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2987798928 cname:a+71lgm/ECH0zTaz\r\na=ssrc:2987798928 msid:stream_id audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:LKVx\r\na=ice-pwd:pq0O3NP2jmBVs/ZYuOwNB8WI\r\na=ice-options:trickle\r\na=fingerprint:sha-256 DA:00:4B:D0:92:66:D8:E5:B8:94:4E:92:5B:2B:F1:39:13:45:8B:18:1B:1F:D9:54:08:1A:34:C1:6B:4E:15:51\r\na=setup:actpass\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f;sprop-parameter-sets=Z01AH42NQCgC3/gLcBAQFAAAD6AAAdTDoYAtwAANWfrvLjQwBbgAAas/XeXCgA==,aO98gA==\r\na=ssrc-group:FID 2178329968 2360116746\r\na=ssrc:2178329968 cname:a+71lgm/ECH0zTaz\r\na=ssrc:2178329968 msid:stream_id video_label\r\na=ssrc:2360116746 cname:a+71lgm/ECH0zTaz\r\na=ssrc:2360116746 msid:stream_id video_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:LKVx\r\na=ice-pwd:pq0O3NP2jmBVs/ZYuOwNB8WI\r\na=ice-options:trickle\r\na=fingerprint:sha-256 DA:00:4B:D0:92:66:D8:E5:B8:94:4E:92:5B:2B:F1:39:13:45:8B:18:1B:1F:D9:54:08:1A:34:C1:6B:4E:15:51\r\na=setup:actpass\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n",
+   "type" : "offer"
+}
+,"prefix":"webkit"}]} 
+260708-16:55:37.235870 [mod=WRTC, lvl=INFO] [tid=2673] Sent SDP, Length[3213]
+
+260708-16:55:37.236699 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: inactive -> gathering
+260708-16:55:37.388056 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(395): Could not send the SSL connect as we didn't find the expected string 
+260708-16:55:37.475526 [mod=WRTC, lvl=INFO] [tid=2673] Received IO Socket Connect for Session ID = 1
+260708-16:55:37.480499 [mod=WRTC, lvl=INFO] [tid=2673] Send Join Room...
+260708-16:55:37.481101 [mod=WRTC, lvl=INFO] [tid=2673] Sending Room Join to RRS
+260708-16:55:37.522026 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-16:55:37.522191 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-16:55:37.768685 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: gathering -> complete
+Got SDP Answer, 5:::{"name":"message","args":[{"from":"835e542e-3176-44ca-b7f2-877b7a3294fc","to":"ceb6d68b-355d-4d09-919a-7374adbcc4d2","roomType":"video","type":"answer","payload":{"type":"answer","sdp":"v=0\r\no=- 5613053404350091454 2 IN IP4 127.0.0.1\r\ns=Xfinity, IOS, 6.5.0.1781711976, 26.5.2\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 03D97101-B368-4835-963E-EB651562DDCF\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:nOk3\r\na=ice-pwd:ViPYaZ/DK+uqwwiw54KdrquY\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 3E:0B:1B:F3:71:92:86:B7:A0:E1:7E:52:B4:80:7F:20:1F:0A:18:67:50:57:A2:F5:0F:4F:20:2E:31:03:76:90\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:03D97101-B368-4835-963E-EB651562DDCF F5F1B942-915B-4E1D-95DC-CC481B7AD9DA\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:265741882 cname:5sspcHZ9lD/LfsNB\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:nOk3\r\na=ice-pwd:ViPYaZ/DK+uqwwiw54KdrquY\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 3E:0B:1B:F3:71:92:86:B7:A0:E1:7E:52:B4:80:7F:20:1F:0A:18:67:50:57:A2:F5:0F:4F:20:2E:31:03:76:90\r\na=setup:active\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:nOk3\r\na=ice-pwd:ViPYaZ/DK+uqwwiw54KdrquY\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 3E:0B:1B:F3:71:92:86:B7:A0:E1:7E:52:B4:80:7F:20:1F:0A:18:67:50:57:A2:F5:0F:4F:20:2E:31:03:76:90\r\na=setup:active\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}}]} 
+260708-16:55:37.904376 [mod=WRTC, lvl=INFO] [tid=2673] Client Session Info: Xfinity, IOS, 6.5.0.1781711976, 26.5.2.
+260708-16:55:37.914195 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:369): DtlsTransport[audio|1|__]: DTLS setup complete.
+260708-16:55:37.941726 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: have-local-offer -> stable
+260708-16:55:37.945505 [mod=WRTC, lvl=INFO] [tid=5401] (channel.cc:920): Setting remote voice description for {mid: audio, media_type: audio}
+260708-16:55:37.946386 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-16:55:37.964509 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:118): AudioReceiveStreamImpl: 265741882
+260708-16:55:37.967797 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:905): SetSendParameters: {codecs: [VideoCodec[96:H264]], conference_mode: no, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}], extmap-allow-mixed: true, max_bandwidth_bps: -1, mid: video}
+260708-16:55:37.968154 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:913): Negotiated codec: VideoCodec[96:H264]
+260708-16:55:37.968411 [mod=WRTC, lvl=WARN] [tid=5401] (webrtc_video_engine.cc:2254): RTX SSRCs configured but there's no configured RTX payload type. Ignoring.
+260708-16:55:37.968570 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2274): RecreateWebRtcStream (send) because of SetCodec.
+260708-16:55:38.060194 [mod=WRTC, lvl=INFO] [tid=5430] (resource_adaptation_processor.cc:118): Registered resource "EncoderUsageResource".
+260708-16:55:38.061043 [mod=WRTC, lvl=INFO] [tid=5430] (quality_scaling_experiment.cc:39): QP thresholds: low: 24, high: 37
+260708-16:55:38.061332 [mod=WRTC, lvl=INFO] [tid=5430] (resource_adaptation_processor.cc:118): Registered resource "QualityScalerResource".
+260708-16:55:38.061517 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1042): SetFeedbackParameters on all the receive streams because the send codec or RTCP mode has changed.
+260708-16:55:38.061916 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 0 => 1
+260708-16:55:38.062009 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: inactive -> checking
+260708-16:55:38.062686 [mod=WRTC, lvl=INFO] [tid=2673] (sdp_offer_answer.cc:1986): Processing the addition of a remote track for MID=audio.
+260708-16:55:38.062836 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=audio) current direction from <not set> to kSendRecv.
+260708-16:55:38.063216 [mod=WRTC, lvl=INFO] [tid=5401] (video_source_sink_controller.cc:89): Pushing SourceSink restrictions: max_fps=60 max_pixel_count=2147483647 target_pixel_count=null resolutions={1280x720}
+260708-16:55:38.063625 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=video) current direction from <not set> to kSendOnly.
+260708-16:55:38.309825 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 0 => 1
+260708-16:55:38.309957 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: inactive -> connecting
+260708-16:55:38.377010 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:825): DtlsTransport[audio|1|__]: configuring DTLS handshake timeout 150 based on ICE RTT 75
+260708-16:55:38.377583 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:729): DtlsTransport[audio|1|__]: DtlsTransport: Started DTLS handshake
+260708-16:55:38.377774 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:362): The params in SRTP transport are reset.
+260708-16:55:38.414107 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 1 => 2
+260708-16:55:38.725584 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:657): DtlsTransport[audio|1|__]: DTLS handshake complete.
+260708-16:55:38.726077 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connecting -> connected
+260708-16:55:38.728887 [mod=WRTC, lvl=INFO] [tid=2673] Peer connected 835e542e-3176-44ca-b7f2-877b7a3294fc in 2414 milliseconds
+260708-16:55:38.731313 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:1065): Number of active client connections: 1
+260708-16:55:38.814172 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:307): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+260708-16:55:38.814494 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: audio, media_type: audio}) for the first time
+260708-16:55:38.815945 [mod=WRTC, lvl=INFO] [tid=5407] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 100800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 100800 bps
+260708-16:55:38.818819 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: video, media_type: video}) for the first time
+260708-16:55:38.819317 [mod=WRTC, lvl=INFO] [tid=5401] (video_send_stream.cc:236): UpdateActiveSimulcastLayers: {1}
+260708-16:55:38.820025 [mod=WRTC, lvl=INFO] [tid=5407] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 130800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2600800 bps
+260708-16:55:38.825824 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(799): Sending First Frame as a Cached Keyframe as No Pause/Resume command received
+260708-16:55:38.829680 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-16:55:38.834082 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-16:55:38.834213 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:269): Too many log messages. Further frames reordering warnings will be throttled.
+260708-16:55:38.836672 [mod=WRTC, lvl=INFO] [tid=5431] (rtp_sender_audio.cc:314): First audio RTP packet sent to pacer
+260708-16:55:38.837808 [mod=WRTC, lvl=INFO] [tid=5407] (video_send_stream_impl.cc:456): SignalEncoderActive, Encoder is active.
+260708-16:55:38.868292 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 150603, {input_fps: 0.0, encode_fps: 0, encode_ms: 0, encode_usage_perc: 0, target_bps: 951688, media_bps: 0, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 2178329968, type: media, width: 1280, height: 720, key: 1, delta: 2, total_bps: 0, retransmit_bps: 0, avg_delay_ms: 13, max_delay_ms: 13, nack: 0, fir: 0, pli: 0}
+260708-16:55:38.868591 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 150603, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 30, rtt_ms: -1}
+260708-16:55:38.869175 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:53448 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:57257 local 
+260708-16:55:38.869396 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Camera Path: type: local, ip: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:53448 
+260708-16:55:38.869468 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Client Path: type: local, ip: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:57257 
+260708-16:55:38.869515 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Path: type: reflex
+260708-16:55:38.903398 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:2399): Changing to ICE connected state because all transports are writable.
+260708-16:55:38.903532 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 1 => 2
+260708-16:55:38.903598 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: checking -> connected
+260708-16:55:38.999260 [mod=WRTC, lvl=INFO] [tid=2673] (sctp_data_channel.cc:418): DataChannel received OPEN_ACK message, sid = 1
+260708-16:55:39.886834 [mod=WRTC, lvl=INFO] [tid=5407] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 124400 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2594400 bps
+260708-16:55:41.915782 [mod=WRTC, lvl=WARN] [tid=5407] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-16:55:47.780758 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"type":"command","payload":{"argument":"userStopAfterPlay","command":"stop","base64":0}}
+260708-16:55:47.780883 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-16:55:47.781385 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(974):Received Stop Command via data channel from peer 835e542e-3176-44ca-b7f2-877b7a3294fc, Current State: 1, Argument: userStopAfterPlay 
+260708-16:55:47.809733 [mod=WRTC, lvl=INFO] [tid=2673] Wrtc Client Removed (left) for Session ID = 0
+260708-16:55:47.815500 [mod=WRTC, lvl=INFO] [tid=2673] Client 835e542e-3176-44ca-b7f2-877b7a3294fc Disconnectd 
+260708-16:55:47.835015 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:53448 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:57257 local 
+260708-16:55:47.838087 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is closing
+260708-16:55:47.838493 [mod=WRTC, lvl=INFO] [tid=5407] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 30 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2500 kbps
+260708-16:55:47.839568 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 2178329968, options: nullptr, source = nullptr)
+260708-16:55:47.839836 [mod=WRTC, lvl=INFO] [tid=5430] (resource_adaptation_processor.cc:130): Removing resource "QualityScalerResource".
+260708-16:55:47.840107 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: connected -> closed
+260708-16:55:47.840190 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connected -> closed
+260708-16:55:47.842834 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: stable -> closed
+260708-16:55:47.846937 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1630): SetDefaultSink: nullptr
+260708-16:55:47.849227 [mod=WRTC, lvl=INFO] [tid=5407] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-16:55:47.849470 [mod=WRTC, lvl=INFO] [tid=5407] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+260708-16:55:47.850277 [mod=WRTC, lvl=INFO] [tid=5430] (resource_adaptation_processor.cc:130): Removing resource "EncoderUsageResource".
+260708-16:55:47.850643 [mod=WRTC, lvl=INFO] [tid=5407] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-16:55:47.852317 [mod=WRTC, lvl=INFO] [tid=5401] (send_statistics_proxy.cc:672): Frames encoded 138
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 0
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+260708-16:55:47.854162 [mod=WRTC, lvl=INFO] [tid=5407] (control_handler.cc:80): Bitrate estimate state changed, BWE: 1125 kbps.
+260708-16:55:47.864863 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:147): ~AudioReceiveStreamImpl: 265741882
+260708-16:55:47.913260 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:564): Session: 4662688923855213755 is destroyed.
+260708-16:55:47.914968 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:712): Number of active client connections: 0
+260708-16:55:47.927036 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(446): Received message(150) for the session. The state of the session(0) is (5)
+260708-16:55:47.927161 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(466): Cleaning up all the pending sessions, invoked from signalling client of session(0)
+260708-16:55:47.929300 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(226): Deleting Stun credentials timer as Signalling Client is destroyed
+260708-16:55:47.929505 [mod=WRTC, lvl=INFO] [tid=2673] WRTC Session Statistics:835e542e-3176-44ca-b7f2-877b7a3294fc,IPV6,local,IPV6,local,userStopAfterPlay,11615,0,0,0,4187,2414
+260708-16:55:47.934460 [mod=WRTC, lvl=INFO] [tid=2673] Video Session:835e542e-3176-44ca-b7f2-877b7a3294fc,138,735,651104,0,0
+260708-16:55:47.934574 [mod=WRTC, lvl=INFO] [tid=2673] Audio Session:835e542e-3176-44ca-b7f2-877b7a3294fc,445,82831,0,0
+260708-16:55:49.523852 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-16:55:49.524024 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-16:55:49.524213 [mod=WRTC, lvl=INFO] [tid=2673] Client joined
+260708-16:55:49.527315 [mod=WRTC, lvl=INFO] [tid=2673] Room ID: 2259722108150432433
+260708-16:55:49.527449 [mod=WRTC, lvl=INFO] [tid=2673] Player Client ID: 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc 
+260708-16:55:49.527513 [mod=WRTC, lvl=INFO] [tid=2673] RTC-App Client ID: bb16b3ef-19cc-485c-8081-f398350991bb 
+260708-16:55:49.527573 [mod=WRTC, lvl=INFO] [tid=2673] Capabilities: hasHeartbeat 
+260708-16:55:49.527619 [mod=WRTC, lvl=INFO] [tid=2673] Peer has support for heartbeat mechanism
+260708-16:55:49.530714 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-16:55:49.539529 [mod=WRTC, lvl=INFO] [tid=2673] Successfully created the data channel from the camera side 0x77ea7bc8
+260708-16:55:49.539652 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is connecting
+260708-16:55:49.581880 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(569): Deleting Stun credentials timer as client has joined
+260708-16:55:49.582045 [mod=WRTC, lvl=INFO] [tid=2673] User Agent for RTC-App->RRS connection is Sercomm XHC3 XHC3_8.4p1s1_PROD_sdy 3C62F03AF5A7 8.4.0.1
+260708-16:55:49.582509 [mod=WRTC, lvl=INFO] [tid=2673] Next Session ID Created for incoming connection: 2 
+260708-16:55:49.583021 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-16:55:49.594972 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:661): CreateMediaChannel. Options: VideoOptions {screencast min bitrate kbps: 100, }
+260708-16:55:49.596302 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: inactive -> have-local-offer
+260708-16:55:49.599601 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1581): ResetUnsignaledRecvStream.
+260708-16:55:49.601249 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-16:55:49.602300 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1234): SetRecvParameters: {codecs: [VideoCodec[96:H264], VideoCodec[97:rtx], VideoCodec[98:red], VideoCodec[99:rtx], VideoCodec[100:ulpfec]], extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}
+260708-16:55:49.602749 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1360): AddSendStream: {id:video_label;ssrcs:[310552191,56802017];ssrc_groups:{semantics:FID;ssrcs:[310552191,56802017]};cname:XJ+fPjAAG3gQMIDG;stream_ids:stream_id;}
+260708-16:55:49.616569 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 310552191, options: VideoOptions {is_screencast : false, }, source = (source))
+260708-16:55:49.631358 [mod=WRTC, lvl=INFO] [tid=2673] Sending SDP...
+Send SDP offer: 5:::{"name":"message","args":[{"to":"8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc","sid":"1432678845742","roomType":"video","type":"offer","payload":{
+   "sdp" : "v=0\r\no=- 4759087687060628034 2 IN IP4 127.0.0.1\r\ns=XHC3_8.4p1s1_PROD_sdy RTC App\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:21wf\r\na=ice-pwd:A8zOzV+dMLMQqpvnYNxsmAra\r\na=ice-options:trickle\r\na=fingerprint:sha-256 61:4F:4A:96:C7:E9:89:15:4A:37:0B:0F:B9:96:57:36:3F:D2:E5:6E:4D:78:3B:13:99:B0:0B:C2:6C:91:55:9D\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:1365351389 cname:XJ+fPjAAG3gQMIDG\r\na=ssrc:1365351389 msid:stream_id audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:21wf\r\na=ice-pwd:A8zOzV+dMLMQqpvnYNxsmAra\r\na=ice-options:trickle\r\na=fingerprint:sha-256 61:4F:4A:96:C7:E9:89:15:4A:37:0B:0F:B9:96:57:36:3F:D2:E5:6E:4D:78:3B:13:99:B0:0B:C2:6C:91:55:9D\r\na=setup:actpass\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f;sprop-parameter-sets=Z01AH42NQCgC3/gLcBAQFAAAD6AAAdTDoYAtwAANWfrvLjQwBbgAAas/XeXCgA==,aO98gA==\r\na=ssrc-group:FID 310552191 56802017\r\na=ssrc:310552191 cname:XJ+fPjAAG3gQMIDG\r\na=ssrc:310552191 msid:stream_id video_label\r\na=ssrc:56802017 cname:XJ+fPjAAG3gQMIDG\r\na=ssrc:56802017 msid:stream_id video_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:21wf\r\na=ice-pwd:A8zOzV+dMLMQqpvnYNxsmAra\r\na=ice-options:trickle\r\na=fingerprint:sha-256 61:4F:4A:96:C7:E9:89:15:4A:37:0B:0F:B9:96:57:36:3F:D2:E5:6E:4D:78:3B:13:99:B0:0B:C2:6C:91:55:9D\r\na=setup:actpass\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n",
+   "type" : "offer"
+}
+,"prefix":"webkit"}]} 
+260708-16:55:49.642823 [mod=WRTC, lvl=INFO] [tid=2673] Sent SDP, Length[3204]
+
+260708-16:55:49.647700 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: inactive -> gathering
+260708-16:55:49.775834 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(395): Could not send the SSL connect as we didn't find the expected string 
+260708-16:55:49.850404 [mod=WRTC, lvl=INFO] [tid=2673] Send Join Room...
+260708-16:55:49.851160 [mod=WRTC, lvl=INFO] [tid=2673] Sending Room Join to RRS
+260708-16:55:49.851801 [mod=WRTC, lvl=INFO] [tid=2673] Received IO Socket Connect for Session ID = 2
+260708-16:55:49.900074 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-16:55:49.900240 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+Got SDP Answer, 5:::{"name":"message","args":[{"from":"8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc","to":"bb16b3ef-19cc-485c-8081-f398350991bb","roomType":"video","type":"answer","payload":{"type":"answer","sdp":"v=0\r\no=- 8258087021355884861 2 IN IP4 127.0.0.1\r\ns=Xfinity, IOS, 6.5.0.1781711976, 26.5.2\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS F2CBB87F-4C4C-4086-BB41-BB365370F467\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:HYUT\r\na=ice-pwd:c5UNz3pttHEXQr03WcON9uC6\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 02:DF:FA:2A:1C:4F:0D:97:0F:7F:91:B5:72:5C:FC:2D:35:09:31:5E:CE:CC:C1:CA:09:A4:DA:F7:A5:FD:B7:CE\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:F2CBB87F-4C4C-4086-BB41-BB365370F467 46583149-AC1D-4E04-9332-B94014D89B4C\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2377656694 cname:3mN6Fh+6WqYbPrjj\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:HYUT\r\na=ice-pwd:c5UNz3pttHEXQr03WcON9uC6\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 02:DF:FA:2A:1C:4F:0D:97:0F:7F:91:B5:72:5C:FC:2D:35:09:31:5E:CE:CC:C1:CA:09:A4:DA:F7:A5:FD:B7:CE\r\na=setup:active\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:HYUT\r\na=ice-pwd:c5UNz3pttHEXQr03WcON9uC6\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 02:DF:FA:2A:1C:4F:0D:97:0F:7F:91:B5:72:5C:FC:2D:35:09:31:5E:CE:CC:C1:CA:09:A4:DA:F7:A5:FD:B7:CE\r\na=setup:active\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}}]} 
+260708-16:55:50.092564 [mod=WRTC, lvl=INFO] [tid=2673] Client Session Info: Xfinity, IOS, 6.5.0.1781711976, 26.5.2.
+260708-16:55:50.115326 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:369): DtlsTransport[audio|1|__]: DTLS setup complete.
+260708-16:55:50.123346 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: have-local-offer -> stable
+260708-16:55:50.127154 [mod=WRTC, lvl=INFO] [tid=5401] (channel.cc:920): Setting remote voice description for {mid: audio, media_type: audio}
+260708-16:55:50.127606 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-16:55:50.129269 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:118): AudioReceiveStreamImpl: 2377656694
+260708-16:55:50.130588 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:905): SetSendParameters: {codecs: [VideoCodec[96:H264]], conference_mode: no, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}], extmap-allow-mixed: true, max_bandwidth_bps: -1, mid: video}
+260708-16:55:50.130953 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:913): Negotiated codec: VideoCodec[96:H264]
+260708-16:55:50.131178 [mod=WRTC, lvl=WARN] [tid=5401] (webrtc_video_engine.cc:2254): RTX SSRCs configured but there's no configured RTX payload type. Ignoring.
+260708-16:55:50.140378 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2274): RecreateWebRtcStream (send) because of SetCodec.
+260708-16:55:50.146865 [mod=WRTC, lvl=INFO] [tid=5491] (resource_adaptation_processor.cc:118): Registered resource "EncoderUsageResource".
+260708-16:55:50.152831 [mod=WRTC, lvl=INFO] [tid=5491] (quality_scaling_experiment.cc:39): QP thresholds: low: 24, high: 37
+260708-16:55:50.153454 [mod=WRTC, lvl=INFO] [tid=5491] (resource_adaptation_processor.cc:118): Registered resource "QualityScalerResource".
+260708-16:55:50.153848 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1042): SetFeedbackParameters on all the receive streams because the send codec or RTCP mode has changed.
+260708-16:55:50.154718 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 0 => 1
+260708-16:55:50.154906 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: inactive -> checking
+260708-16:55:50.163586 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(799): Sending First Frame as a Cached Keyframe as No Pause/Resume command received
+260708-16:55:50.164846 [mod=WRTC, lvl=INFO] [tid=2673] (sdp_offer_answer.cc:1986): Processing the addition of a remote track for MID=audio.
+260708-16:55:50.164975 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=audio) current direction from <not set> to kSendRecv.
+260708-16:55:50.165551 [mod=WRTC, lvl=INFO] [tid=5401] (video_source_sink_controller.cc:89): Pushing SourceSink restrictions: max_fps=60 max_pixel_count=2147483647 target_pixel_count=null resolutions={1280x720}
+260708-16:55:50.165987 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=video) current direction from <not set> to kSendOnly.
+260708-16:55:50.373061 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: gathering -> complete
+260708-16:55:50.373244 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 0 => 1
+260708-16:55:50.373331 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: inactive -> connecting
+260708-16:55:50.708355 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:572): DtlsTransport[audio|1|__]: Packet received before DTLS started.
+260708-16:55:50.708487 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:581): DtlsTransport[audio|1|__]: Caching DTLS ClientHello packet until DTLS is started.
+260708-16:55:50.770604 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:825): DtlsTransport[audio|1|__]: configuring DTLS handshake timeout 70 based on ICE RTT 35
+260708-16:55:50.771117 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:729): DtlsTransport[audio|1|__]: DtlsTransport: Started DTLS handshake
+260708-16:55:50.771296 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:362): The params in SRTP transport are reset.
+260708-16:55:50.771381 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:735): DtlsTransport[audio|1|__]: Handling cached DTLS ClientHello packet.
+260708-16:55:50.811186 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 1 => 2
+260708-16:55:50.849893 [mod=WRTC, lvl=INFO] [tid=5400] (openssl_stream_adapter.cc:842): DTLS retransmission
+260708-16:55:50.926544 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:657): DtlsTransport[audio|1|__]: DTLS handshake complete.
+260708-16:55:50.930492 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connecting -> connected
+260708-16:55:50.933142 [mod=WRTC, lvl=INFO] [tid=2673] Peer connected 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc in 1406 milliseconds
+260708-16:55:50.946567 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:1065): Number of active client connections: 1
+260708-16:55:51.064107 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:307): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+260708-16:55:51.064268 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: audio, media_type: audio}) for the first time
+260708-16:55:51.077539 [mod=WRTC, lvl=INFO] [tid=5466] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 100800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 100800 bps
+260708-16:55:51.078278 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: video, media_type: video}) for the first time
+260708-16:55:51.078503 [mod=WRTC, lvl=INFO] [tid=5401] (video_send_stream.cc:236): UpdateActiveSimulcastLayers: {1}
+260708-16:55:51.078836 [mod=WRTC, lvl=INFO] [tid=5466] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 130800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2600800 bps
+260708-16:55:51.098182 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-16:55:51.104552 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 162839, {input_fps: 0.0, encode_fps: 17, encode_ms: 0, encode_usage_perc: 0, target_bps: 951688, media_bps: 1103914, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 310552191, type: media, width: 1280, height: 720, key: 0, delta: 1, total_bps: 1274667, retransmit_bps: 0, avg_delay_ms: 5, max_delay_ms: 7, nack: 0, fir: 0, pli: 0}
+260708-16:55:51.104855 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 162839, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 6, rtt_ms: -1}
+260708-16:55:51.105466 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:53070 stun remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:59322 local 
+260708-16:55:51.105726 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Camera Path: type: stun, ip: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:53070 
+260708-16:55:51.105801 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Client Path: type: local, ip: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:59322 
+260708-16:55:51.105850 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Path: type: reflex
+260708-16:55:51.113452 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:2399): Changing to ICE connected state because all transports are writable.
+260708-16:55:51.113596 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 1 => 2
+260708-16:55:51.113662 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: checking -> connected
+260708-16:55:51.161644 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-16:55:51.161820 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:269): Too many log messages. Further frames reordering warnings will be throttled.
+260708-16:55:51.173509 [mod=WRTC, lvl=INFO] [tid=5431] (rtp_sender_audio.cc:314): First audio RTP packet sent to pacer
+260708-16:55:51.261886 [mod=WRTC, lvl=INFO] [tid=2673] (sctp_data_channel.cc:418): DataChannel received OPEN_ACK message, sid = 1
+260708-16:55:51.262572 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"type":"command","payload":{"command":"pause","base64":0,"argument":""}}	=
+260708-16:55:51.262664 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-16:55:51.263079 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(854):Received Pause Command via data channel from peer 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc at 1736, Current State: 1
+260708-16:55:51.945919 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"type":"command","payload":{"command":"resume","argument":"","base64":0}}
+260708-16:55:51.946033 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-16:55:51.946443 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(877):Received Resume Command via data channel from peer 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc at 2419, Current State: 0
+260708-16:55:51.961366 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(796): Sending Cached Keyframe Post Resume Command
+260708-16:55:52.231570 [mod=WRTC, lvl=INFO] [tid=5466] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 124400 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2594400 bps
+260708-16:55:52.507209 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(848): Sent Keyframe Post Resume Command for client 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc
+260708-16:55:54.164998 [mod=WRTC, lvl=WARN] [tid=5466] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+
+ --- CustomAudioDecoderFactory::MakeAudioDecoder ----
+260708-16:56:01.323605 [mod=XAUDIO, lvl=INFO] [tid=5401] No codec set in config,means PCM is requested
+260708-16:56:01.334908 [mod=XAUDIO, lvl=INFO] [tid=5643] PlayBackThread::Waiting for playback notification
+260708-16:56:01.788354 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_open(&pcm, "default", SND_PCM_STREAM_PLAYBACK, 0): ok
+260708-16:56:01.809474 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_malloc(&params): ok
+260708-16:56:01.810694 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_any(pcm, params): ok
+260708-16:56:01.810994 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_set_format(pcm, params, SND_PCM_FORMAT_MU_LAW): ok
+260708-16:56:01.811200 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_set_access(pcm, params, SND_PCM_ACCESS_RW_INTERLEAVED): ok
+260708-16:56:01.811656 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_set_period_size_near(pcm, params, &period_size, 0): ok
+260708-16:56:01.811769 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_set_rate_near(pcm, params, &sample_rate, 0): ok
+260708-16:56:01.811982 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params_set_channels(pcm, params, channel_count): ok
+260708-16:56:01.835270 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_hw_params(pcm, params): ok
+260708-16:56:01.835465 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_sw_params_current(pcm, swparams): ok
+260708-16:56:01.835557 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_sw_params_set_avail_min(pcm, swparams, period_size): ok
+260708-16:56:01.835660 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_sw_params_set_start_threshold(pcm, swparams, start_threshold): ok
+260708-16:56:01.835740 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_sw_params_set_stop_threshold(pcm, swparams, buffer_size): ok
+260708-16:56:01.835857 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_prepare(pcm): ok
+260708-16:56:01.835979 [mod=XAUDIO, lvl=INFO] [tid=5401] alsa configured with format=MU_LAW period_size=1024 buffer_size=3072 bits_per_sample=8 bits_per_frame=8 sample_rate=8192. pcm_handler=0x74be7ed0
+260708-16:56:01.836120 [mod=XAUDIO, lvl=INFO] [tid=5401] Sending signal to playback
+260708-16:56:01.836285 [mod=XAUDIO, lvl=INFO] [tid=5643] Got the playback notification
+260708-16:56:01.836365 [mod=XAUDIO, lvl=INFO] [tid=5643] PlayBackThread::Got the playback notification
+260708-16:56:04.261575 [mod=WRTC, lvl=WARN] [tid=5466] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-16:56:08.281022 [mod=WRTC, lvl=WARN] [tid=5401] (packet_buffer.cc:175): Packet buffer flushed, 200 packets discarded.
+260708-16:56:13.756729 [mod=WRTC, lvl=WARN] [tid=5401] (packet_buffer.cc:175): Packet buffer flushed, 200 packets discarded.
+260708-16:56:14.364846 [mod=WRTC, lvl=WARN] [tid=5466] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-16:56:18.145820 [mod=WRTC, lvl=WARN] [tid=5401] (packet_buffer.cc:175): Packet buffer flushed, 200 packets discarded.
+260708-16:56:22.864478 [mod=WRTC, lvl=WARN] [tid=5401] (packet_buffer.cc:175): Packet buffer flushed, 200 packets discarded.
+260708-16:56:24.579525 [mod=WRTC, lvl=WARN] [tid=5466] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-16:56:25.126908 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"payload":{"argument":"userStopAfterPlay","command":"stop","base64":0},"type":"command"}
+260708-16:56:25.127263 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-16:56:25.128091 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(974):Received Stop Command via data channel from peer 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc, Current State: 1, Argument: userStopAfterPlay 
+260708-16:56:25.158775 [mod=WRTC, lvl=INFO] [tid=2673] Wrtc Client Removed (left) for Session ID = 1
+260708-16:56:25.161990 [mod=WRTC, lvl=INFO] [tid=2673] Client 8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc Disconnectd 
+260708-16:56:25.205497 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 196912, {input_fps: 0.0, encode_fps: 16, encode_ms: 0, encode_usage_perc: 0, target_bps: 970696, media_bps: 664384, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 310552191, type: media, width: 0, height: 0, key: 18, delta: 485, total_bps: 646440, retransmit_bps: 0, avg_delay_ms: 120, max_delay_ms: 334, cum_loss: 0, max_ext_seq: 17561, nack: 0, fir: 0, pli: 5}
+260708-16:56:25.205963 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 196912, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 9, rtt_ms: 55}
+260708-16:56:25.206671 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:53070 stun remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:59322 local 
+260708-16:56:25.234164 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is closing
+260708-16:56:25.234529 [mod=WRTC, lvl=INFO] [tid=5466] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 30 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2500 kbps
+260708-16:56:25.235934 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 310552191, options: nullptr, source = nullptr)
+260708-16:56:25.236213 [mod=WRTC, lvl=INFO] [tid=5491] (resource_adaptation_processor.cc:130): Removing resource "QualityScalerResource".
+260708-16:56:25.243356 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: connected -> closed
+260708-16:56:25.243485 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connected -> closed
+260708-16:56:25.246621 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: stable -> closed
+260708-16:56:25.265587 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1630): SetDefaultSink: nullptr
+260708-16:56:25.271370 [mod=WRTC, lvl=INFO] [tid=5466] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-16:56:25.271622 [mod=WRTC, lvl=INFO] [tid=5466] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+260708-16:56:25.272435 [mod=WRTC, lvl=INFO] [tid=5491] (resource_adaptation_processor.cc:130): Removing resource "EncoderUsageResource".
+260708-16:56:25.272768 [mod=WRTC, lvl=INFO] [tid=5466] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-16:56:25.274980 [mod=WRTC, lvl=INFO] [tid=5401] (send_statistics_proxy.cc:672): WebRTC.Video.SentWidthInPixels 1280
+WebRTC.Video.SentHeightInPixels 720
+WebRTC.Video.SentFramesPerSecond periodic_samples:17, {min:12, avg:15, max:16}
+WebRTC.Video.KeyFramesSentInPermille 39
+WebRTC.Video.QualityLimitedResolutionInPercent 0
+WebRTC.Video.SentPacketsLostInPercent 0
+WebRTC.Video.NumberOfPauseEvents 0
+WebRTC.Video.PausedTimeInPercent 0
+WebRTC.Video.BitrateSentInBps periodic_samples:17, {min:497072, avg:591032, max:782984}
+WebRTC.Video.MediaBitrateSentInBps periodic_samples:17, {min:480704, avg:572616, max:759896}
+WebRTC.Video.PaddingBitrateSentInBps periodic_samples:17, {min:0, avg:0, max:0}
+WebRTC.Video.RetransmittedBitrateSentInBps periodic_samples:17, {min:0, avg:0, max:0}
+Frames encoded 519
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 0
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+260708-16:56:25.280869 [mod=WRTC, lvl=INFO] [tid=5466] (control_handler.cc:80): Bitrate estimate state changed, BWE: 1125 kbps.
+260708-16:56:25.281378 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:147): ~AudioReceiveStreamImpl: 2377656694
+260708-16:56:25.281669 [mod=XAUDIO, lvl=INFO] [tid=5401] Sending signal to stop playback thread!
+260708-16:56:25.408896 [mod=XAUDIO, lvl=INFO] [tid=5401] snd_pcm_close(pcm): ok
+260708-16:56:25.409023 [mod=XAUDIO, lvl=INFO] [tid=5401] alsa closed for pcm_handler=0x74be7ed0
+260708-16:56:25.409488 [mod=XAUDIO, lvl=INFO] [tid=5643] PlayBackThread::Done with the playback
+260708-16:56:25.432393 [mod=WRTC, lvl=INFO] [tid=5401] (call.cc:654): WebRTC.Call.PacerBitrateInKbps, periodic_samples:17, {min:1125, avg:1125, max:1125}
+260708-16:56:25.436726 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:564): Session: 4759087687060628034 is destroyed.
+260708-16:56:25.441027 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:712): Number of active client connections: 0
+260708-16:56:25.469735 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(446): Received message(150) for the session. The state of the session(1) is (5)
+260708-16:56:25.469888 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(466): Cleaning up all the pending sessions, invoked from signalling client of session(1)
+260708-16:56:25.470416 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(226): Deleting Stun credentials timer as Signalling Client is destroyed
+260708-16:56:25.470625 [mod=WRTC, lvl=INFO] [tid=2673] WRTC Session Statistics:8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc,IPV6,stun,IPV6,local,userStopAfterPlay,35943,2980,2419,1736,2980,1406
+260708-16:56:25.492321 [mod=WRTC, lvl=INFO] [tid=2673] Video Session:8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc,518,2798,2517987,0,0
+260708-16:56:25.492440 [mod=WRTC, lvl=INFO] [tid=2673] Audio Session:8a8bf58a-3643-4878-ae2e-6ba6c68bc3dc,1406,248899,0,0
+08.07.2026_16:57.04 Live_Audio_enabled=true!
+260708-16:57:05.110612 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,dd3fe32d-a0d5-4a64-a350-ca8ed05d5e6f,35.168.74.157,2259722108150432433,2
+260708-16:58:20.409768 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,dd3fe32d-a0d5-4a64-a350-ca8ed05d5e6f,35.168.74.157,2259722108150432433,2
+260708-16:59:35.827320 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,dd3fe32d-a0d5-4a64-a350-ca8ed05d5e6f,35.168.74.157,2259722108150432433,2
+260708-17:00:26.979033 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-17:00:26.979564 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-17:00:26.979865 [mod=WRTC, lvl=INFO] [tid=2673] Client joined
+260708-17:00:26.991465 [mod=WRTC, lvl=INFO] [tid=2673] Room ID: 2259722108150432433
+260708-17:00:26.991597 [mod=WRTC, lvl=INFO] [tid=2673] Player Client ID: 92009ceb-7dc5-417b-9b09-d6a16312aec4 
+260708-17:00:26.991662 [mod=WRTC, lvl=INFO] [tid=2673] RTC-App Client ID: dd3fe32d-a0d5-4a64-a350-ca8ed05d5e6f 
+260708-17:00:26.991722 [mod=WRTC, lvl=INFO] [tid=2673] Capabilities: hasHeartbeat 
+260708-17:00:26.991768 [mod=WRTC, lvl=INFO] [tid=2673] Peer has support for heartbeat mechanism
+260708-17:00:27.014143 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-17:00:27.020017 [mod=WRTC, lvl=INFO] [tid=2673] Successfully created the data channel from the camera side 0x77eb4bc0
+260708-17:00:27.020140 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is connecting
+260708-17:00:27.036093 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(569): Deleting Stun credentials timer as client has joined
+260708-17:00:27.036259 [mod=WRTC, lvl=INFO] [tid=2673] User Agent for RTC-App->RRS connection is Sercomm XHC3 XHC3_8.4p1s1_PROD_sdy 3C62F03AF5A7 8.4.0.1
+260708-17:00:27.036683 [mod=WRTC, lvl=INFO] [tid=2673] Next Session ID Created for incoming connection: 3 
+260708-17:00:27.037748 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-17:00:27.056346 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:661): CreateMediaChannel. Options: VideoOptions {screencast min bitrate kbps: 100, }
+260708-17:00:27.057533 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: inactive -> have-local-offer
+260708-17:00:27.060569 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1581): ResetUnsignaledRecvStream.
+260708-17:00:27.063783 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-17:00:27.064734 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1234): SetRecvParameters: {codecs: [VideoCodec[96:H264], VideoCodec[97:rtx], VideoCodec[98:red], VideoCodec[99:rtx], VideoCodec[100:ulpfec]], extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}
+260708-17:00:27.065190 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1360): AddSendStream: {id:video_label;ssrcs:[1383986770,3883476352];ssrc_groups:{semantics:FID;ssrcs:[1383986770,3883476352]};cname:to2tUKwjEBns+7Hj;stream_ids:stream_id;}
+260708-17:00:27.066497 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 1383986770, options: VideoOptions {is_screencast : false, }, source = (source))
+260708-17:00:27.068764 [mod=WRTC, lvl=INFO] [tid=2673] Sending SDP...
+Send SDP offer: 5:::{"name":"message","args":[{"to":"92009ceb-7dc5-417b-9b09-d6a16312aec4","sid":"1432678845742","roomType":"video","type":"offer","payload":{
+   "sdp" : "v=0\r\no=- 727638523377201409 2 IN IP4 127.0.0.1\r\ns=XHC3_8.4p1s1_PROD_sdy RTC App\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:jkcC\r\na=ice-pwd:8svKPH50G9QoHwXCTG/Bw5dS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 8A:7B:84:B8:7C:24:DD:3E:8C:48:CD:FA:34:BE:AA:E1:05:18:EE:C2:C2:6F:1D:80:A3:32:89:50:6B:D8:85:09\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:4197458380 cname:to2tUKwjEBns+7Hj\r\na=ssrc:4197458380 msid:stream_id audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:jkcC\r\na=ice-pwd:8svKPH50G9QoHwXCTG/Bw5dS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 8A:7B:84:B8:7C:24:DD:3E:8C:48:CD:FA:34:BE:AA:E1:05:18:EE:C2:C2:6F:1D:80:A3:32:89:50:6B:D8:85:09\r\na=setup:actpass\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f;sprop-parameter-sets=Z01AH42NQCgC3/gLcBAQFAAAD6AAAdTDoYAtwAANWfrvLjQwBbgAAas/XeXCgA==,aO98gA==\r\na=ssrc-group:FID 1383986770 3883476352\r\na=ssrc:1383986770 cname:to2tUKwjEBns+7Hj\r\na=ssrc:1383986770 msid:stream_id video_label\r\na=ssrc:3883476352 cname:to2tUKwjEBns+7Hj\r\na=ssrc:3883476352 msid:stream_id video_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:jkcC\r\na=ice-pwd:8svKPH50G9QoHwXCTG/Bw5dS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 8A:7B:84:B8:7C:24:DD:3E:8C:48:CD:FA:34:BE:AA:E1:05:18:EE:C2:C2:6F:1D:80:A3:32:89:50:6B:D8:85:09\r\na=setup:actpass\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n",
+   "type" : "offer"
+}
+,"prefix":"webkit"}]} 
+260708-17:00:27.070051 [mod=WRTC, lvl=INFO] [tid=2673] Sent SDP, Length[3212]
+
+260708-17:00:27.078306 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: inactive -> gathering
+260708-17:00:27.200638 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(395): Could not send the SSL connect as we didn't find the expected string 
+260708-17:00:27.293927 [mod=WRTC, lvl=INFO] [tid=2673] Send Join Room...
+260708-17:00:27.294869 [mod=WRTC, lvl=INFO] [tid=2673] Sending Room Join to RRS
+260708-17:00:27.295527 [mod=WRTC, lvl=INFO] [tid=2673] Received IO Socket Connect for Session ID = 3
+260708-17:00:27.333733 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-17:00:27.333901 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-17:00:27.466649 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: gathering -> complete
+Got SDP Answer, 5:::{"name":"message","args":[{"from":"92009ceb-7dc5-417b-9b09-d6a16312aec4","to":"dd3fe32d-a0d5-4a64-a350-ca8ed05d5e6f","roomType":"video","type":"answer","payload":{"type":"answer","sdp":"v=0\r\no=- 9210622698029795365 2 IN IP4 127.0.0.1\r\ns=Xfinity, IOS, 6.5.0.1781711976, 26.5.2\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 1413873D-7435-4510-BF0B-8002209AAE2B\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:BNTn\r\na=ice-pwd:hdEvhTtJJQSc4sFccM0IdXKM\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 C5:B9:D3:51:4F:86:09:1E:1B:28:18:C2:2A:41:1D:EA:FA:E3:E1:8B:C1:32:C9:F9:90:CD:B6:A0:52:E6:27:37\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:1413873D-7435-4510-BF0B-8002209AAE2B 47C5A7AE-27BF-413D-B694-0D475AA37E93\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2044621457 cname:tMi7Ylip2+3CTL4D\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:BNTn\r\na=ice-pwd:hdEvhTtJJQSc4sFccM0IdXKM\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 C5:B9:D3:51:4F:86:09:1E:1B:28:18:C2:2A:41:1D:EA:FA:E3:E1:8B:C1:32:C9:F9:90:CD:B6:A0:52:E6:27:37\r\na=setup:active\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:BNTn\r\na=ice-pwd:hdEvhTtJJQSc4sFccM0IdXKM\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 C5:B9:D3:51:4F:86:09:1E:1B:28:18:C2:2A:41:1D:EA:FA:E3:E1:8B:C1:32:C9:F9:90:CD:B6:A0:52:E6:27:37\r\na=setup:active\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}}]} 
+260708-17:00:27.677351 [mod=WRTC, lvl=INFO] [tid=2673] Client Session Info: Xfinity, IOS, 6.5.0.1781711976, 26.5.2.
+260708-17:00:27.690024 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:369): DtlsTransport[audio|1|__]: DTLS setup complete.
+260708-17:00:27.710886 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: have-local-offer -> stable
+260708-17:00:27.729633 [mod=WRTC, lvl=INFO] [tid=5401] (channel.cc:920): Setting remote voice description for {mid: audio, media_type: audio}
+260708-17:00:27.730089 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-17:00:27.733454 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:118): AudioReceiveStreamImpl: 2044621457
+260708-17:00:27.746038 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:905): SetSendParameters: {codecs: [VideoCodec[96:H264]], conference_mode: no, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}], extmap-allow-mixed: true, max_bandwidth_bps: -1, mid: video}
+260708-17:00:27.746410 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:913): Negotiated codec: VideoCodec[96:H264]
+260708-17:00:27.746644 [mod=WRTC, lvl=WARN] [tid=5401] (webrtc_video_engine.cc:2254): RTX SSRCs configured but there's no configured RTX payload type. Ignoring.
+260708-17:00:27.746743 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2274): RecreateWebRtcStream (send) because of SetCodec.
+260708-17:00:27.754119 [mod=WRTC, lvl=INFO] [tid=14129] (resource_adaptation_processor.cc:118): Registered resource "EncoderUsageResource".
+260708-17:00:27.755106 [mod=WRTC, lvl=INFO] [tid=14129] (quality_scaling_experiment.cc:39): QP thresholds: low: 24, high: 37
+260708-17:00:27.755391 [mod=WRTC, lvl=INFO] [tid=14129] (resource_adaptation_processor.cc:118): Registered resource "QualityScalerResource".
+260708-17:00:27.755575 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1042): SetFeedbackParameters on all the receive streams because the send codec or RTCP mode has changed.
+260708-17:00:27.762299 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 0 => 1
+260708-17:00:27.762411 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: inactive -> checking
+260708-17:00:27.762960 [mod=WRTC, lvl=INFO] [tid=2673] (sdp_offer_answer.cc:1986): Processing the addition of a remote track for MID=audio.
+260708-17:00:27.763072 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=audio) current direction from <not set> to kSendRecv.
+260708-17:00:27.763387 [mod=WRTC, lvl=INFO] [tid=5401] (video_source_sink_controller.cc:89): Pushing SourceSink restrictions: max_fps=60 max_pixel_count=2147483647 target_pixel_count=null resolutions={1280x720}
+260708-17:00:27.763766 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=video) current direction from <not set> to kSendOnly.
+260708-17:00:27.789919 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(799): Sending First Frame as a Cached Keyframe as No Pause/Resume command received
+260708-17:00:28.087373 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 0 => 1
+260708-17:00:28.087517 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: inactive -> connecting
+260708-17:00:28.111960 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:825): DtlsTransport[audio|1|__]: configuring DTLS handshake timeout 70 based on ICE RTT 35
+260708-17:00:28.113232 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:729): DtlsTransport[audio|1|__]: DtlsTransport: Started DTLS handshake
+260708-17:00:28.113656 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:362): The params in SRTP transport are reset.
+260708-17:00:28.261697 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 1 => 2
+260708-17:00:28.864944 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:657): DtlsTransport[audio|1|__]: DTLS handshake complete.
+260708-17:00:28.865276 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connecting -> connected
+260708-17:00:28.868395 [mod=WRTC, lvl=INFO] [tid=2673] Peer connected 92009ceb-7dc5-417b-9b09-d6a16312aec4 in 1877 milliseconds
+260708-17:00:28.872235 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:1065): Number of active client connections: 1
+260708-17:00:29.063125 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:307): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+260708-17:00:29.063291 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: audio, media_type: audio}) for the first time
+260708-17:00:29.063987 [mod=WRTC, lvl=INFO] [tid=14103] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 100800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 100800 bps
+260708-17:00:29.064669 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: video, media_type: video}) for the first time
+260708-17:00:29.064879 [mod=WRTC, lvl=INFO] [tid=5401] (video_send_stream.cc:236): UpdateActiveSimulcastLayers: {1}
+260708-17:00:29.065209 [mod=WRTC, lvl=INFO] [tid=14103] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 130800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2600800 bps
+260708-17:00:29.083477 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 440768, {input_fps: 0.0, encode_fps: 15, encode_ms: 0, encode_usage_perc: 0, target_bps: 951688, media_bps: 679552, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 1383986770, type: media, width: 1280, height: 720, key: 0, delta: 0, total_bps: 0, retransmit_bps: 0, avg_delay_ms: 0, max_delay_ms: 0, nack: 0, fir: 0, pli: 0}
+260708-17:00:29.083793 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 440768, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 0, rtt_ms: -1}
+260708-17:00:29.084336 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:35161 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:52162 local 
+260708-17:00:29.084640 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Camera Path: type: local, ip: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:35161 
+260708-17:00:29.084714 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Client Path: type: local, ip: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:52162 
+260708-17:00:29.084764 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Path: type: reflex
+260708-17:00:29.091098 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:2399): Changing to ICE connected state because all transports are writable.
+260708-17:00:29.091237 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 1 => 2
+260708-17:00:29.091301 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: checking -> connected
+260708-17:00:29.096560 [mod=WRTC, lvl=INFO] [tid=5431] (rtp_sender_audio.cc:314): First audio RTP packet sent to pacer
+260708-17:00:29.126693 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-17:00:29.187950 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-17:00:29.188168 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:269): Too many log messages. Further frames reordering warnings will be throttled.
+260708-17:00:29.337371 [mod=WRTC, lvl=INFO] [tid=2673] (sctp_data_channel.cc:418): DataChannel received OPEN_ACK message, sid = 1
+260708-17:00:29.659659 [mod=WRTC, lvl=INFO] [tid=14103] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 124400 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2594400 bps
+260708-17:00:32.155336 [mod=WRTC, lvl=WARN] [tid=14103] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-17:00:42.190861 [mod=WRTC, lvl=WARN] [tid=14103] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-17:00:51.127453 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,dd3fe32d-a0d5-4a64-a350-ca8ed05d5e6f,35.168.74.157,2259722108150432433,2
+260708-17:00:52.226224 [mod=WRTC, lvl=WARN] [tid=14103] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-17:01:02.328695 [mod=WRTC, lvl=WARN] [tid=14103] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-17:01:08.133366 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"type":"command","payload":{"argument":"userStopAfterPlay","command":"stop","base64":0}}.tw5
+260708-17:01:08.133490 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-17:01:08.133922 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(974):Received Stop Command via data channel from peer 92009ceb-7dc5-417b-9b09-d6a16312aec4, Current State: 1, Argument: userStopAfterPlay 
+260708-17:01:08.155928 [mod=WRTC, lvl=INFO] [tid=2673] Wrtc Client Removed (left) for Session ID = 2
+260708-17:01:08.158837 [mod=WRTC, lvl=INFO] [tid=2673] Client 92009ceb-7dc5-417b-9b09-d6a16312aec4 Disconnectd 
+260708-17:01:08.160883 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 479846, {input_fps: 0.0, encode_fps: 15, encode_ms: 0, encode_usage_perc: 0, target_bps: 970408, media_bps: 435400, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 1383986770, type: media, width: 0, height: 0, key: 19, delta: 567, total_bps: 449064, retransmit_bps: 0, avg_delay_ms: 23, max_delay_ms: 133, cum_loss: 0, max_ext_seq: 4032, nack: 2, fir: 0, pli: 8}
+260708-17:01:08.161206 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 479846, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 33, rtt_ms: 110}
+260708-17:01:08.161732 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:35161 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:52162 local 
+260708-17:01:08.162195 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is closing
+260708-17:01:08.163151 [mod=WRTC, lvl=INFO] [tid=14103] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 30 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2500 kbps
+260708-17:01:08.166658 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 1383986770, options: nullptr, source = nullptr)
+260708-17:01:08.166934 [mod=WRTC, lvl=INFO] [tid=14129] (resource_adaptation_processor.cc:130): Removing resource "QualityScalerResource".
+260708-17:01:08.167187 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: connected -> closed
+260708-17:01:08.167272 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connected -> closed
+260708-17:01:08.173462 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: stable -> closed
+260708-17:01:08.198234 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1630): SetDefaultSink: nullptr
+260708-17:01:08.199443 [mod=WRTC, lvl=INFO] [tid=14103] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-17:01:08.199706 [mod=WRTC, lvl=INFO] [tid=14103] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+260708-17:01:08.200489 [mod=WRTC, lvl=INFO] [tid=14129] (resource_adaptation_processor.cc:130): Removing resource "EncoderUsageResource".
+260708-17:01:08.200820 [mod=WRTC, lvl=INFO] [tid=14103] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-17:01:08.202325 [mod=WRTC, lvl=INFO] [tid=5401] (send_statistics_proxy.cc:672): WebRTC.Video.SentWidthInPixels 1280
+WebRTC.Video.SentHeightInPixels 720
+WebRTC.Video.SentFramesPerSecond periodic_samples:20, {min:15, avg:15, max:16}
+WebRTC.Video.KeyFramesSentInPermille 35
+WebRTC.Video.QualityLimitedResolutionInPercent 0
+WebRTC.Video.SentPacketsLostInPercent 0
+WebRTC.Video.NumberOfPauseEvents 0
+WebRTC.Video.PausedTimeInPercent 0
+WebRTC.Video.BitrateSentInBps periodic_samples:19, {min:518072, avg:592720, max:713912}
+WebRTC.Video.MediaBitrateSentInBps periodic_samples:19, {min:501368, avg:573992, max:691832}
+WebRTC.Video.PaddingBitrateSentInBps periodic_samples:19, {min:0, avg:0, max:0}
+WebRTC.Video.RetransmittedBitrateSentInBps periodic_samples:19, {min:0, avg:0, max:0}
+Frames encoded 608
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 0
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+260708-17:01:08.204207 [mod=WRTC, lvl=INFO] [tid=14103] (control_handler.cc:80): Bitrate estimate state changed, BWE: 1125 kbps.
+260708-17:01:08.204858 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:147): ~AudioReceiveStreamImpl: 2044621457
+260708-17:01:08.241736 [mod=WRTC, lvl=INFO] [tid=5401] (call.cc:654): WebRTC.Call.PacerBitrateInKbps, periodic_samples:19, {min:1125, avg:1125, max:1125}
+260708-17:01:08.245832 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:564): Session: 727638523377201409 is destroyed.
+260708-17:01:08.258839 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:712): Number of active client connections: 0
+260708-17:01:08.267695 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(446): Received message(150) for the session. The state of the session(2) is (5)
+260708-17:01:08.267817 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(466): Cleaning up all the pending sessions, invoked from signalling client of session(2)
+260708-17:01:08.268339 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(226): Deleting Stun credentials timer as Signalling Client is destroyed
+260708-17:01:08.268539 [mod=WRTC, lvl=INFO] [tid=2673] WRTC Session Statistics:92009ceb-7dc5-417b-9b09-d6a16312aec4,IPV6,local,IPV6,local,userStopAfterPlay,41277,0,0,0,3607,1877
+260708-17:01:08.271577 [mod=WRTC, lvl=INFO] [tid=2673] Video Session:92009ceb-7dc5-417b-9b09-d6a16312aec4,607,3244,2875232,2,0
+260708-17:01:08.271703 [mod=WRTC, lvl=INFO] [tid=2673] Audio Session:92009ceb-7dc5-417b-9b09-d6a16312aec4,1989,371869,0,0
+260708-17:01:42.578600 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,4442324c-c28f-4cf2-9b15-8dbdf55abfce,35.168.74.157,2259722108150432433,3
+260708-17:02:57.857171 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,4442324c-c28f-4cf2-9b15-8dbdf55abfce,35.168.74.157,2259722108150432433,3
+260708-17:04:13.151947 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,4442324c-c28f-4cf2-9b15-8dbdf55abfce,35.168.74.157,2259722108150432433,3
+08.07.2026_17:04.40 Live_Audio_enabled=true!
+260708-17:05:28.462700 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,4442324c-c28f-4cf2-9b15-8dbdf55abfce,35.168.74.157,2259722108150432433,3
+260708-17:06:43.780058 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,4442324c-c28f-4cf2-9b15-8dbdf55abfce,35.168.74.157,2259722108150432433,3
+260708-17:07:31.498177 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-17:07:31.498450 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-17:07:31.498679 [mod=WRTC, lvl=INFO] [tid=2673] Client joined
+260708-17:07:31.507290 [mod=WRTC, lvl=INFO] [tid=2673] Room ID: 2259722108150432433
+260708-17:07:31.507691 [mod=WRTC, lvl=INFO] [tid=2673] Player Client ID: 93768d38-3ae9-4056-95e7-17547fa32890 
+260708-17:07:31.507865 [mod=WRTC, lvl=INFO] [tid=2673] RTC-App Client ID: 4442324c-c28f-4cf2-9b15-8dbdf55abfce 
+260708-17:07:31.507991 [mod=WRTC, lvl=INFO] [tid=2673] Capabilities: hasHeartbeat 
+260708-17:07:31.508077 [mod=WRTC, lvl=INFO] [tid=2673] Peer has support for heartbeat mechanism
+260708-17:07:31.524565 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-17:07:31.525083 [mod=WRTC, lvl=INFO] [tid=2673] Successfully created the data channel from the camera side 0x77ed9ab0
+260708-17:07:31.525205 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is connecting
+260708-17:07:31.569201 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(569): Deleting Stun credentials timer as client has joined
+260708-17:07:31.569385 [mod=WRTC, lvl=INFO] [tid=2673] User Agent for RTC-App->RRS connection is Sercomm XHC3 XHC3_8.4p1s1_PROD_sdy 3C62F03AF5A7 8.4.0.1
+260708-17:07:31.570017 [mod=WRTC, lvl=INFO] [tid=2673] Next Session ID Created for incoming connection: 4 
+260708-17:07:31.571032 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-17:07:31.592543 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:661): CreateMediaChannel. Options: VideoOptions {screencast min bitrate kbps: 100, }
+260708-17:07:31.609088 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: inactive -> have-local-offer
+260708-17:07:31.612096 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1581): ResetUnsignaledRecvStream.
+260708-17:07:31.613929 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-17:07:31.614835 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1234): SetRecvParameters: {codecs: [VideoCodec[96:H264], VideoCodec[97:rtx], VideoCodec[98:red], VideoCodec[99:rtx], VideoCodec[100:ulpfec]], extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}
+260708-17:07:31.615307 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1360): AddSendStream: {id:video_label;ssrcs:[405794768,2821294077];ssrc_groups:{semantics:FID;ssrcs:[405794768,2821294077]};cname:TclBwZrxQf29vTdx;stream_ids:stream_id;}
+260708-17:07:31.619700 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 405794768, options: VideoOptions {is_screencast : false, }, source = (source))
+260708-17:07:31.633614 [mod=WRTC, lvl=INFO] [tid=2673] Sending SDP...
+Send SDP offer: 5:::{"name":"message","args":[{"to":"93768d38-3ae9-4056-95e7-17547fa32890","sid":"1432678845742","roomType":"video","type":"offer","payload":{
+   "sdp" : "v=0\r\no=- 5960161767302218617 2 IN IP4 127.0.0.1\r\ns=XHC3_8.4p1s1_PROD_sdy RTC App\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:i0mr\r\na=ice-pwd:rzSrGFDn0s9N0yT5EE2Qc2/9\r\na=ice-options:trickle\r\na=fingerprint:sha-256 94:ED:3B:20:69:16:41:67:D1:AD:88:89:53:A6:D0:4F:36:0E:21:AD:76:78:F6:1A:AA:12:E7:0B:B4:E7:23:39\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:4239624243 cname:TclBwZrxQf29vTdx\r\na=ssrc:4239624243 msid:stream_id audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:i0mr\r\na=ice-pwd:rzSrGFDn0s9N0yT5EE2Qc2/9\r\na=ice-options:trickle\r\na=fingerprint:sha-256 94:ED:3B:20:69:16:41:67:D1:AD:88:89:53:A6:D0:4F:36:0E:21:AD:76:78:F6:1A:AA:12:E7:0B:B4:E7:23:39\r\na=setup:actpass\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f;sprop-parameter-sets=Z01AH42NQCgC3/gLcBAQFAAAD6AAAdTDoYAtwAANWfrvLjQwBbgAAas/XeXCgA==,aO98gA==\r\na=ssrc-group:FID 405794768 2821294077\r\na=ssrc:405794768 cname:TclBwZrxQf29vTdx\r\na=ssrc:405794768 msid:stream_id video_label\r\na=ssrc:2821294077 cname:TclBwZrxQf29vTdx\r\na=ssrc:2821294077 msid:stream_id video_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:i0mr\r\na=ice-pwd:rzSrGFDn0s9N0yT5EE2Qc2/9\r\na=ice-options:trickle\r\na=fingerprint:sha-256 94:ED:3B:20:69:16:41:67:D1:AD:88:89:53:A6:D0:4F:36:0E:21:AD:76:78:F6:1A:AA:12:E7:0B:B4:E7:23:39\r\na=setup:actpass\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n",
+   "type" : "offer"
+}
+,"prefix":"webkit"}]} 
+260708-17:07:31.642199 [mod=WRTC, lvl=INFO] [tid=2673] Sent SDP, Length[3210]
+
+260708-17:07:31.643912 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: inactive -> gathering
+260708-17:07:31.756563 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(395): Could not send the SSL connect as we didn't find the expected string 
+260708-17:07:31.842000 [mod=WRTC, lvl=INFO] [tid=2673] Received IO Socket Connect for Session ID = 4
+260708-17:07:31.873820 [mod=WRTC, lvl=INFO] [tid=2673] Send Join Room...
+260708-17:07:31.874090 [mod=WRTC, lvl=INFO] [tid=2673] Sending Room Join to RRS
+260708-17:07:31.915612 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-17:07:31.919054 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+Got SDP Answer, 5:::{"name":"message","args":[{"from":"93768d38-3ae9-4056-95e7-17547fa32890","to":"4442324c-c28f-4cf2-9b15-8dbdf55abfce","roomType":"video","type":"answer","payload":{"type":"answer","sdp":"v=0\r\no=- 2606626689684295117 2 IN IP4 127.0.0.1\r\ns=Xfinity, IOS, 6.5.0.1781711976, 26.5.2\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 6EE291CB-B26E-407A-865D-6D1B9C6875D0\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:5qp0\r\na=ice-pwd:UAT3+7s2YtSm4XEkRO56E21X\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 CB:88:A7:2A:2F:D9:DB:CB:9C:EF:26:FF:82:B4:8F:3E:6F:15:5F:84:A1:5D:27:EA:92:25:F5:48:75:A4:C3:E2\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:6EE291CB-B26E-407A-865D-6D1B9C6875D0 8AFE6CC9-732F-405D-A725-2B03B5A5869C\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:904125854 cname:lCCVGjFlb3NvpJ1X\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:5qp0\r\na=ice-pwd:UAT3+7s2YtSm4XEkRO56E21X\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 CB:88:A7:2A:2F:D9:DB:CB:9C:EF:26:FF:82:B4:8F:3E:6F:15:5F:84:A1:5D:27:EA:92:25:F5:48:75:A4:C3:E2\r\na=setup:active\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:5qp0\r\na=ice-pwd:UAT3+7s2YtSm4XEkRO56E21X\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 CB:88:A7:2A:2F:D9:DB:CB:9C:EF:26:FF:82:B4:8F:3E:6F:15:5F:84:A1:5D:27:EA:92:25:F5:48:75:A4:C3:E2\r\na=setup:active\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}}]} 
+260708-17:07:32.234783 [mod=WRTC, lvl=INFO] [tid=2673] Client Session Info: Xfinity, IOS, 6.5.0.1781711976, 26.5.2.
+260708-17:07:32.264716 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:369): DtlsTransport[audio|1|__]: DTLS setup complete.
+260708-17:07:32.280623 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: have-local-offer -> stable
+260708-17:07:32.284159 [mod=WRTC, lvl=INFO] [tid=5401] (channel.cc:920): Setting remote voice description for {mid: audio, media_type: audio}
+260708-17:07:32.284613 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-17:07:32.286318 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:118): AudioReceiveStreamImpl: 904125854
+260708-17:07:32.287573 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:905): SetSendParameters: {codecs: [VideoCodec[96:H264]], conference_mode: no, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}], extmap-allow-mixed: true, max_bandwidth_bps: -1, mid: video}
+260708-17:07:32.287961 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:913): Negotiated codec: VideoCodec[96:H264]
+260708-17:07:32.288237 [mod=WRTC, lvl=WARN] [tid=5401] (webrtc_video_engine.cc:2254): RTX SSRCs configured but there's no configured RTX payload type. Ignoring.
+260708-17:07:32.288490 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2274): RecreateWebRtcStream (send) because of SetCodec.
+260708-17:07:32.323089 [mod=WRTC, lvl=INFO] [tid=21973] (resource_adaptation_processor.cc:118): Registered resource "EncoderUsageResource".
+260708-17:07:32.323828 [mod=WRTC, lvl=INFO] [tid=21973] (quality_scaling_experiment.cc:39): QP thresholds: low: 24, high: 37
+260708-17:07:32.324109 [mod=WRTC, lvl=INFO] [tid=21973] (resource_adaptation_processor.cc:118): Registered resource "QualityScalerResource".
+260708-17:07:32.324283 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1042): SetFeedbackParameters on all the receive streams because the send codec or RTCP mode has changed.
+260708-17:07:32.328822 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 0 => 1
+260708-17:07:32.328942 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: inactive -> checking
+260708-17:07:32.329802 [mod=WRTC, lvl=INFO] [tid=2673] (sdp_offer_answer.cc:1986): Processing the addition of a remote track for MID=audio.
+260708-17:07:32.329955 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=audio) current direction from <not set> to kSendRecv.
+260708-17:07:32.330445 [mod=WRTC, lvl=INFO] [tid=5401] (video_source_sink_controller.cc:89): Pushing SourceSink restrictions: max_fps=60 max_pixel_count=2147483647 target_pixel_count=null resolutions={1280x720}
+260708-17:07:32.330840 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=video) current direction from <not set> to kSendOnly.
+260708-17:07:32.331673 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: gathering -> complete
+260708-17:07:32.387653 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(799): Sending First Frame as a Cached Keyframe as No Pause/Resume command received
+260708-17:07:32.750403 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:825): DtlsTransport[audio|1|__]: configuring DTLS handshake timeout 108 based on ICE RTT 54
+260708-17:07:32.750917 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:729): DtlsTransport[audio|1|__]: DtlsTransport: Started DTLS handshake
+260708-17:07:32.751103 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:362): The params in SRTP transport are reset.
+260708-17:07:32.789406 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 0 => 1
+260708-17:07:32.789585 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: inactive -> connecting
+260708-17:07:32.796960 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 1 => 2
+260708-17:07:33.532213 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:657): DtlsTransport[audio|1|__]: DTLS handshake complete.
+260708-17:07:33.532556 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connecting -> connected
+260708-17:07:33.535396 [mod=WRTC, lvl=INFO] [tid=2673] Peer connected 93768d38-3ae9-4056-95e7-17547fa32890 in 2027 milliseconds
+260708-17:07:33.537930 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:1065): Number of active client connections: 1
+260708-17:07:33.671401 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:307): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+260708-17:07:33.671567 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: audio, media_type: audio}) for the first time
+260708-17:07:33.674841 [mod=WRTC, lvl=INFO] [tid=21934] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 100800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 100800 bps
+260708-17:07:33.675551 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: video, media_type: video}) for the first time
+260708-17:07:33.675769 [mod=WRTC, lvl=INFO] [tid=5401] (video_send_stream.cc:236): UpdateActiveSimulcastLayers: {1}
+260708-17:07:33.676095 [mod=WRTC, lvl=INFO] [tid=21934] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 130800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2600800 bps
+260708-17:07:33.685852 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 865367, {input_fps: 0.0, encode_fps: 15, encode_ms: 0, encode_usage_perc: 0, target_bps: 951688, media_bps: 391632, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 405794768, type: media, width: 1280, height: 720, key: 0, delta: 0, total_bps: 0, retransmit_bps: 0, avg_delay_ms: 0, max_delay_ms: 0, nack: 0, fir: 0, pli: 0}
+260708-17:07:33.686160 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 865367, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 0, rtt_ms: -1}
+260708-17:07:33.686710 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:42777 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:49716 local 
+260708-17:07:33.686933 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Camera Path: type: local, ip: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:42777 
+260708-17:07:33.687004 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Client Path: type: local, ip: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:49716 
+260708-17:07:33.687055 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Path: type: reflex
+260708-17:07:33.695209 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:2399): Changing to ICE connected state because all transports are writable.
+260708-17:07:33.695349 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 1 => 2
+260708-17:07:33.695415 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: checking -> connected
+260708-17:07:33.719657 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-17:07:33.726123 [mod=WRTC, lvl=INFO] [tid=5431] (rtp_sender_audio.cc:314): First audio RTP packet sent to pacer
+260708-17:07:33.788483 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-17:07:33.788665 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:269): Too many log messages. Further frames reordering warnings will be throttled.
+260708-17:07:33.841929 [mod=WRTC, lvl=INFO] [tid=2673] (sctp_data_channel.cc:418): DataChannel received OPEN_ACK message, sid = 1
+260708-17:07:34.267965 [mod=WRTC, lvl=INFO] [tid=21934] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 124400 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2594400 bps
+260708-17:07:36.743227 [mod=WRTC, lvl=WARN] [tid=21934] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-17:07:39.810267 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"type":"command","payload":{"argument":"userStopAfterPlay","base64":0,"command":"stop"}}
+260708-17:07:39.810424 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-17:07:39.810876 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(974):Received Stop Command via data channel from peer 93768d38-3ae9-4056-95e7-17547fa32890, Current State: 1, Argument: userStopAfterPlay 
+260708-17:07:39.814984 [mod=WRTC, lvl=INFO] [tid=2673] Wrtc Client Removed (left) for Session ID = 3
+260708-17:07:39.817864 [mod=WRTC, lvl=INFO] [tid=2673] Client 93768d38-3ae9-4056-95e7-17547fa32890 Disconnectd 
+260708-17:07:39.832060 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:42777 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:49716 local 
+260708-17:07:39.836687 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is closing
+260708-17:07:39.839901 [mod=WRTC, lvl=INFO] [tid=21934] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 30 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2500 kbps
+260708-17:07:39.843839 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 405794768, options: nullptr, source = nullptr)
+260708-17:07:39.844629 [mod=WRTC, lvl=INFO] [tid=21973] (resource_adaptation_processor.cc:130): Removing resource "QualityScalerResource".
+260708-17:07:39.845169 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: connected -> closed
+260708-17:07:39.845329 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connected -> closed
+260708-17:07:39.871593 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: stable -> closed
+260708-17:07:39.882503 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1630): SetDefaultSink: nullptr
+260708-17:07:39.923558 [mod=WRTC, lvl=INFO] [tid=21934] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-17:07:39.923800 [mod=WRTC, lvl=INFO] [tid=21934] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+260708-17:07:39.924498 [mod=WRTC, lvl=INFO] [tid=21973] (resource_adaptation_processor.cc:130): Removing resource "EncoderUsageResource".
+260708-17:07:39.924820 [mod=WRTC, lvl=INFO] [tid=21934] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-17:07:39.926447 [mod=WRTC, lvl=INFO] [tid=5401] (send_statistics_proxy.cc:672): Frames encoded 115
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 0
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+260708-17:07:39.928395 [mod=WRTC, lvl=INFO] [tid=21934] (control_handler.cc:80): Bitrate estimate state changed, BWE: 1125 kbps.
+260708-17:07:39.929940 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:147): ~AudioReceiveStreamImpl: 904125854
+260708-17:07:39.996058 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:564): Session: 5960161767302218617 is destroyed.
+260708-17:07:39.997113 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:712): Number of active client connections: 0
+260708-17:07:40.002089 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(446): Received message(150) for the session. The state of the session(3) is (5)
+260708-17:07:40.002212 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(466): Cleaning up all the pending sessions, invoked from signalling client of session(3)
+260708-17:07:40.002727 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(226): Deleting Stun credentials timer as Signalling Client is destroyed
+260708-17:07:40.002927 [mod=WRTC, lvl=INFO] [tid=2673] WRTC Session Statistics:93768d38-3ae9-4056-95e7-17547fa32890,IPV6,local,IPV6,local,userStopAfterPlay,8494,0,0,0,3150,2027
+260708-17:07:40.007746 [mod=WRTC, lvl=INFO] [tid=2673] Video Session:93768d38-3ae9-4056-95e7-17547fa32890,113,506,448707,0,0
+260708-17:07:40.007858 [mod=WRTC, lvl=INFO] [tid=2673] Audio Session:93768d38-3ae9-4056-95e7-17547fa32890,296,54719,0,0
+260708-17:08:47.120301 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:10:02.306799 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:11:17.708979 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+08.07.2026_17:12.14 Live_Audio_enabled=true!
+260708-17:12:33.120506 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:13:48.425716 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:15:03.698220 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:16:18.992579 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:17:34.302176 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:18:49.716648 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+08.07.2026_17:19.48 Live_Audio_enabled=true!
+260708-17:20:05.011042 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:21:20.303251 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:22:35.713224 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:23:51.006079 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:25:06.307691 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:26:21.605806 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+08.07.2026_17:27.21 Live_Audio_enabled=true!
+260708-17:27:36.910641 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:28:52.210162 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:30:07.580740 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:31:22.924069 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:32:38.222834 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:33:53.625246 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+08.07.2026_17:34.55 Live_Audio_enabled=true!
+260708-17:35:08.890060 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:36:24.189045 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:37:39.559582 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,c1c0d7a3-756c-4164-bfc2-3c3198b5829d,44.218.125.225,2259722108150432433,4
+260708-17:38:25.124969 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-17:38:25.125146 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-17:38:25.125335 [mod=WRTC, lvl=INFO] [tid=2673] Client joined
+260708-17:38:25.128062 [mod=WRTC, lvl=INFO] [tid=2673] Room ID: 2259722108150432433
+260708-17:38:25.128193 [mod=WRTC, lvl=INFO] [tid=2673] Player Client ID: 23c30891-9337-4e14-8b9f-895a0ad11689 
+260708-17:38:25.128285 [mod=WRTC, lvl=INFO] [tid=2673] RTC-App Client ID: c1c0d7a3-756c-4164-bfc2-3c3198b5829d 
+260708-17:38:25.128352 [mod=WRTC, lvl=INFO] [tid=2673] Capabilities: hasHeartbeat 
+260708-17:38:25.128400 [mod=WRTC, lvl=INFO] [tid=2673] Peer has support for heartbeat mechanism
+260708-17:38:25.133441 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-17:38:25.139667 [mod=WRTC, lvl=INFO] [tid=2673] Successfully created the data channel from the camera side 0x77eac740
+260708-17:38:25.139784 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is connecting
+260708-17:38:25.143090 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(569): Deleting Stun credentials timer as client has joined
+260708-17:38:25.143247 [mod=WRTC, lvl=INFO] [tid=2673] User Agent for RTC-App->RRS connection is Sercomm XHC3 XHC3_8.4p1s1_PROD_sdy 3C62F03AF5A7 8.4.0.1
+260708-17:38:25.143666 [mod=WRTC, lvl=INFO] [tid=2673] Next Session ID Created for incoming connection: 5 
+260708-17:38:25.144173 [mod=WRTC, lvl=WARN] [tid=2673] (media_session.cc:949): RED codec red is missing an associated payload type.
+260708-17:38:25.148356 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:661): CreateMediaChannel. Options: VideoOptions {screencast min bitrate kbps: 100, }
+260708-17:38:25.149713 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: inactive -> have-local-offer
+260708-17:38:25.152664 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1581): ResetUnsignaledRecvStream.
+260708-17:38:25.154369 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-17:38:25.155243 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1234): SetRecvParameters: {codecs: [VideoCodec[96:H264], VideoCodec[97:rtx], VideoCodec[98:red], VideoCodec[99:rtx], VideoCodec[100:ulpfec]], extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}
+260708-17:38:25.155652 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1360): AddSendStream: {id:video_label;ssrcs:[66236745,1865835993];ssrc_groups:{semantics:FID;ssrcs:[66236745,1865835993]};cname:QLGrrFCuxoHDoiFg;stream_ids:stream_id;}
+260708-17:38:25.157747 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 66236745, options: VideoOptions {is_screencast : false, }, source = (source))
+260708-17:38:25.160916 [mod=WRTC, lvl=INFO] [tid=2673] Sending SDP...
+Send SDP offer: 5:::{"name":"message","args":[{"to":"23c30891-9337-4e14-8b9f-895a0ad11689","sid":"1432678845742","roomType":"video","type":"offer","payload":{
+   "sdp" : "v=0\r\no=- 357972467648016572 2 IN IP4 127.0.0.1\r\ns=XHC3_8.4p1s1_PROD_sdy RTC App\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:aS+J\r\na=ice-pwd:tYAfFm8qikwcjXtzE3loKTt3\r\na=ice-options:trickle\r\na=fingerprint:sha-256 DC:21:BE:DE:5B:AD:87:36:90:FF:8C:69:C9:38:0D:B6:A7:EB:03:80:C4:1F:21:30:5F:3E:ED:CD:03:B9:0F:0F\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:941677240 cname:QLGrrFCuxoHDoiFg\r\na=ssrc:941677240 msid:stream_id audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:aS+J\r\na=ice-pwd:tYAfFm8qikwcjXtzE3loKTt3\r\na=ice-options:trickle\r\na=fingerprint:sha-256 DC:21:BE:DE:5B:AD:87:36:90:FF:8C:69:C9:38:0D:B6:A7:EB:03:80:C4:1F:21:30:5F:3E:ED:CD:03:B9:0F:0F\r\na=setup:actpass\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f;sprop-parameter-sets=Z01AH42NQCgC3/gLcBAQFAAAD6AAAdTDoYAtwAANWfrvLjQwBbgAAas/XeXCgA==,aO98gA==\r\na=ssrc-group:FID 66236745 1865835993\r\na=ssrc:66236745 cname:QLGrrFCuxoHDoiFg\r\na=ssrc:66236745 msid:stream_id video_label\r\na=ssrc:1865835993 cname:QLGrrFCuxoHDoiFg\r\na=ssrc:1865835993 msid:stream_id video_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:aS+J\r\na=ice-pwd:tYAfFm8qikwcjXtzE3loKTt3\r\na=ice-options:trickle\r\na=fingerprint:sha-256 DC:21:BE:DE:5B:AD:87:36:90:FF:8C:69:C9:38:0D:B6:A7:EB:03:80:C4:1F:21:30:5F:3E:ED:CD:03:B9:0F:0F\r\na=setup:actpass\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n",
+   "type" : "offer"
+}
+,"prefix":"webkit"}]} 
+260708-17:38:25.166422 [mod=WRTC, lvl=INFO] [tid=2673] Sent SDP, Length[3204]
+
+260708-17:38:25.169421 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: inactive -> gathering
+260708-17:38:25.304979 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(395): Could not send the SSL connect as we didn't find the expected string 
+260708-17:38:25.387502 [mod=WRTC, lvl=INFO] [tid=2673] Received IO Socket Connect for Session ID = 5
+260708-17:38:25.391077 [mod=WRTC, lvl=INFO] [tid=2673] Send Join Room...
+260708-17:38:25.402140 [mod=WRTC, lvl=INFO] [tid=2673] Sending Room Join to RRS
+260708-17:38:25.442395 [mod=WRTC, lvl=INFO] [tid=2673] Got stunserver IP Port string: ipv6.turn.twilio.com:3478 
+260708-17:38:25.442753 [mod=WRTC, lvl=INFO] [tid=2673] Got Turn Server IP Port string: ipv6.turn.twilio.com:443
+260708-17:38:25.626856 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Gathering State: gathering -> complete
+Got SDP Answer, 5:::{"name":"message","args":[{"from":"23c30891-9337-4e14-8b9f-895a0ad11689","to":"c1c0d7a3-756c-4164-bfc2-3c3198b5829d","roomType":"video","type":"answer","payload":{"type":"answer","sdp":"v=0\r\no=- 3034997513557780474 2 IN IP4 127.0.0.1\r\ns=Xfinity, IOS, 6.5.0.1781711976, 26.5.2\r\nt=0 0\r\na=group:BUNDLE audio video data\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS C0F6BAAA-BA29-4F70-A213-16FB94459ABE\r\nm=audio 9 UDP/TLS/RTP/SAVPF 0 8 13 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:GCFG\r\na=ice-pwd:mK7WobquPThpB9MrZIZ30kv8\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 74:A6:DA:98:F3:B2:91:2F:38:33:56:D7:08:D6:9C:86:54:74:41:AB:16:00:BD:26:F4:87:AA:E3:D1:BD:F5:38\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:C0F6BAAA-BA29-4F70-A213-16FB94459ABE 88924457-F31A-41E2-B552-50F668D18606\r\na=rtcp-mux\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2293495769 cname:ZYEpKT+RdxKe0vJc\r\nm=video 9 UDP/TLS/RTP/SAVPF 96\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:GCFG\r\na=ice-pwd:mK7WobquPThpB9MrZIZ30kv8\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 74:A6:DA:98:F3:B2:91:2F:38:33:56:D7:08:D6:9C:86:54:74:41:AB:16:00:BD:26:F4:87:AA:E3:D1:BD:F5:38\r\na=setup:active\r\na=mid:video\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:GCFG\r\na=ice-pwd:mK7WobquPThpB9MrZIZ30kv8\r\na=ice-options:trickle renomination\r\na=fingerprint:sha-256 74:A6:DA:98:F3:B2:91:2F:38:33:56:D7:08:D6:9C:86:54:74:41:AB:16:00:BD:26:F4:87:AA:E3:D1:BD:F5:38\r\na=setup:active\r\na=mid:data\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}}]} 
+260708-17:38:25.783933 [mod=WRTC, lvl=INFO] [tid=2673] Client Session Info: Xfinity, IOS, 6.5.0.1781711976, 26.5.2.
+260708-17:38:25.792010 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:369): DtlsTransport[audio|1|__]: DTLS setup complete.
+260708-17:38:25.802050 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: have-local-offer -> stable
+260708-17:38:25.805426 [mod=WRTC, lvl=INFO] [tid=5401] (channel.cc:920): Setting remote voice description for {mid: audio, media_type: audio}
+260708-17:38:25.805891 [mod=WRTC, lvl=WARN] [tid=5401] (audio_send_stream.cc:879): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+260708-17:38:25.807602 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:118): AudioReceiveStreamImpl: 2293495769
+260708-17:38:25.809006 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:905): SetSendParameters: {codecs: [VideoCodec[96:H264]], conference_mode: no, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 6}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 11}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 10}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}], extmap-allow-mixed: true, max_bandwidth_bps: -1, mid: video}
+260708-17:38:25.809373 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:913): Negotiated codec: VideoCodec[96:H264]
+260708-17:38:25.809600 [mod=WRTC, lvl=WARN] [tid=5401] (webrtc_video_engine.cc:2254): RTX SSRCs configured but there's no configured RTX payload type. Ignoring.
+260708-17:38:25.809733 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2274): RecreateWebRtcStream (send) because of SetCodec.
+260708-17:38:25.812216 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1042): SetFeedbackParameters on all the receive streams because the send codec or RTCP mode has changed.
+260708-17:38:25.813791 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 0 => 1
+260708-17:38:25.813896 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: inactive -> checking
+260708-17:38:25.814444 [mod=WRTC, lvl=INFO] [tid=2673] (sdp_offer_answer.cc:1986): Processing the addition of a remote track for MID=audio.
+260708-17:38:25.814557 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=audio) current direction from <not set> to kSendRecv.
+260708-17:38:25.815696 [mod=WRTC, lvl=INFO] [tid=19629] (resource_adaptation_processor.cc:118): Registered resource "EncoderUsageResource".
+260708-17:38:25.816055 [mod=WRTC, lvl=INFO] [tid=19629] (quality_scaling_experiment.cc:39): QP thresholds: low: 24, high: 37
+260708-17:38:25.816314 [mod=WRTC, lvl=INFO] [tid=19629] (resource_adaptation_processor.cc:118): Registered resource "QualityScalerResource".
+260708-17:38:25.816577 [mod=WRTC, lvl=INFO] [tid=2673] (rtp_transceiver.cc:451): Changing transceiver (MID=video) current direction from <not set> to kSendOnly.
+260708-17:38:25.825928 [mod=WRTC, lvl=INFO] [tid=5401] (video_source_sink_controller.cc:89): Pushing SourceSink restrictions: max_fps=60 max_pixel_count=2147483647 target_pixel_count=null resolutions={1280x720}
+260708-17:38:25.873670 [mod=WRTC, lvl=INFO] [tid=5431] ../../rtc-app/src/RdkCEncoder.cc(799): Sending First Frame as a Cached Keyframe as No Pause/Resume command received
+260708-17:38:26.132872 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 0 => 1
+260708-17:38:26.133012 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: inactive -> connecting
+260708-17:38:26.424493 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:825): DtlsTransport[audio|1|__]: configuring DTLS handshake timeout 656 based on ICE RTT 328
+260708-17:38:26.425009 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:729): DtlsTransport[audio|1|__]: DtlsTransport: Started DTLS handshake
+260708-17:38:26.425197 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:362): The params in SRTP transport are reset.
+260708-17:38:26.430213 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1929): Changing standardized IceConnectionState 1 => 2
+260708-17:38:26.597526 [mod=WRTC, lvl=INFO] [tid=5400] (dtls_transport.cc:657): DtlsTransport[audio|1|__]: DTLS handshake complete.
+260708-17:38:26.599311 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connecting -> connected
+260708-17:38:26.606192 [mod=WRTC, lvl=INFO] [tid=2673] Peer connected 23c30891-9337-4e14-8b9f-895a0ad11689 in 1478 milliseconds
+260708-17:38:26.609643 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:1065): Number of active client connections: 1
+260708-17:38:26.729333 [mod=WRTC, lvl=INFO] [tid=5400] (srtp_transport.cc:307): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+260708-17:38:26.729486 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: audio, media_type: audio}) for the first time
+260708-17:38:26.731165 [mod=WRTC, lvl=INFO] [tid=19608] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 100800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 100800 bps
+260708-17:38:26.731806 [mod=WRTC, lvl=INFO] [tid=5400] (channel.cc:548): Channel writable ({mid: video, media_type: video}) for the first time
+260708-17:38:26.732740 [mod=WRTC, lvl=INFO] [tid=5401] (video_send_stream.cc:236): UpdateActiveSimulcastLayers: {1}
+260708-17:38:26.733125 [mod=WRTC, lvl=INFO] [tid=19608] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 130800 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2600800 bps
+260708-17:38:26.746231 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 2718434, {input_fps: 0.0, encode_fps: 17, encode_ms: 0, encode_usage_perc: 0, target_bps: 951688, media_bps: 1010522, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 66236745, type: media, width: 1280, height: 720, key: 0, delta: 0, total_bps: 0, retransmit_bps: 0, avg_delay_ms: 0, max_delay_ms: 0, nack: 0, fir: 0, pli: 0}
+260708-17:38:26.746542 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 2718434, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 0, rtt_ms: -1}
+260708-17:38:26.747083 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:55745 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:56330 local 
+260708-17:38:26.747303 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Camera Path: type: local, ip: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:55745 
+260708-17:38:26.747376 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Client Path: type: local, ip: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:56330 
+260708-17:38:26.747424 [mod=WRTC, lvl=INFO] [tid=2673] Reporting Best Path: type: reflex
+260708-17:38:26.754115 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:2399): Changing to ICE connected state because all transports are writable.
+260708-17:38:26.754252 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:1910): Changing IceConnectionState 1 => 2
+260708-17:38:26.754320 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: checking -> connected
+260708-17:38:26.784683 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-17:38:26.854158 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:265): Frame with no encode started time recordings. Encoder may be reordering frames or not preserving RTP timestamps.
+260708-17:38:26.854341 [mod=WRTC, lvl=WARN] [tid=5431] (frame_encode_metadata_writer.cc:269): Too many log messages. Further frames reordering warnings will be throttled.
+260708-17:38:26.858346 [mod=WRTC, lvl=INFO] [tid=5431] (rtp_sender_audio.cc:314): First audio RTP packet sent to pacer
+260708-17:38:27.028737 [mod=WRTC, lvl=INFO] [tid=2673] (sctp_data_channel.cc:418): DataChannel received OPEN_ACK message, sid = 1
+260708-17:38:27.776196 [mod=WRTC, lvl=INFO] [tid=19608] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 124400 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2594400 bps
+260708-17:38:29.869478 [mod=WRTC, lvl=WARN] [tid=19608] (send_side_bandwidth_estimation.cc:622): Estimated available bandwidth 900 kbps is below configured min bitrate 1125 kbps.
+260708-17:38:38.858755 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(827): Message received from the Peer: {"type":"command","payload":{"base64":0,"command":"stop","argument":"userStopAfterPlay"}}
+260708-17:38:38.858881 [mod=WRTC, lvl=WARN] [tid=2673] ../../rtc-app/src/CameraClient.cc(833): Valid Data Buffer from webRTC
+260708-17:38:38.859723 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/src/CameraClient.cc(974):Received Stop Command via data channel from peer 23c30891-9337-4e14-8b9f-895a0ad11689, Current State: 1, Argument: userStopAfterPlay 
+260708-17:38:38.889822 [mod=WRTC, lvl=INFO] [tid=2673] Wrtc Client Removed (left) for Session ID = 4
+260708-17:38:38.892877 [mod=WRTC, lvl=INFO] [tid=2673] Client 23c30891-9337-4e14-8b9f-895a0ad11689 Disconnectd 
+260708-17:38:38.902452 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:2631): VideoSendStream stats: 2730590, {input_fps: 0.0, encode_fps: 15, encode_ms: 0, encode_usage_perc: 0, target_bps: 970696, media_bps: 407136, suspended: false, bw_adapted_res: false, cpu_adapted_res: false, bw_adapted_fps: false, cpu_adapted_fps: false, #cpu_adaptations: 0, #quality_adaptations: 0} {ssrc: 66236745, type: media, width: 0, height: 0, key: 6, delta: 176, total_bps: 428768, retransmit_bps: 0, avg_delay_ms: 10, max_delay_ms: 62, cum_loss: 0, max_ext_seq: 20483, nack: 0, fir: 0, pli: 2}
+260708-17:38:38.902805 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1664): Call stats: 2730590, {send_bw_bps: 1125000, recv_bw_bps: 0, max_pad_bps: 0, pacer_delay_ms: 46, rtt_ms: 49}
+260708-17:38:38.910831 [mod=WRTC, lvl=INFO] [tid=2673] Active Connection : 1  local: [2601:240:de00:b470:3e62:f0ff:fe3a:f5a7]:55745 local remote: [2600:382:1883:8e10:50a4:5f8a:197c:8cb0]:56330 local 
+260708-17:38:38.929420 [mod=WRTC, lvl=INFO] [tid=2673]  The state of the camera's data channel is closing
+260708-17:38:38.929822 [mod=WRTC, lvl=INFO] [tid=19608] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 30 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2500 kbps
+260708-17:38:38.931251 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1319): SetVideoSend (ssrc= 66236745, options: nullptr, source = nullptr)
+260708-17:38:38.931519 [mod=WRTC, lvl=INFO] [tid=19629] (resource_adaptation_processor.cc:130): Removing resource "QualityScalerResource".
+260708-17:38:38.931830 [mod=WRTC, lvl=INFO] [tid=2673] RTC Ice Connection State: connected -> closed
+260708-17:38:38.931918 [mod=WRTC, lvl=INFO] [tid=2673] RTC Peer Connection State: connected -> closed
+260708-17:38:38.935963 [mod=WRTC, lvl=INFO] [tid=2673] RTC Signaling State: stable -> closed
+260708-17:38:38.942651 [mod=WRTC, lvl=INFO] [tid=5401] (webrtc_video_engine.cc:1630): SetDefaultSink: nullptr
+260708-17:38:38.960583 [mod=WRTC, lvl=INFO] [tid=19608] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-17:38:38.960834 [mod=WRTC, lvl=INFO] [tid=19608] (bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+260708-17:38:38.962495 [mod=WRTC, lvl=INFO] [tid=19629] (resource_adaptation_processor.cc:130): Removing resource "EncoderUsageResource".
+260708-17:38:38.962905 [mod=WRTC, lvl=INFO] [tid=19608] (video_send_stream_impl.cc:369): VideoSendStreamImpl::Stop
+260708-17:38:38.970291 [mod=WRTC, lvl=INFO] [tid=5401] (send_statistics_proxy.cc:672): WebRTC.Video.SentFramesPerSecond periodic_samples:6, {min:15, avg:15, max:16}
+WebRTC.Video.SentPacketsLostInPercent 0
+WebRTC.Video.NumberOfPauseEvents 0
+WebRTC.Video.PausedTimeInPercent 0
+Frames encoded 198
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 0
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+260708-17:38:38.981542 [mod=WRTC, lvl=INFO] [tid=19608] (control_handler.cc:80): Bitrate estimate state changed, BWE: 1125 kbps.
+260708-17:38:38.987718 [mod=WRTC, lvl=INFO] [tid=5401] (audio_receive_stream.cc:147): ~AudioReceiveStreamImpl: 2293495769
+260708-17:38:39.013189 [mod=WRTC, lvl=INFO] [tid=5401] (call.cc:654): WebRTC.Call.PacerBitrateInKbps, periodic_samples:6, {min:1125, avg:1125, max:1125}
+260708-17:38:39.015515 [mod=WRTC, lvl=INFO] [tid=2673] (peer_connection.cc:564): Session: 357972467648016572 is destroyed.
+260708-17:38:39.016525 [mod=WRTC, lvl=INFO] [tid=2673]  (../../rtc-app/src/CameraClient.cc:712): Number of active client connections: 0
+260708-17:38:39.021173 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(446): Received message(150) for the session. The state of the session(4) is (5)
+260708-17:38:39.021297 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(466): Cleaning up all the pending sessions, invoked from signalling client of session(4)
+260708-17:38:39.023261 [mod=WRTC, lvl=INFO] [tid=2673] ../../rtc-app/signaling/ERSSignalingClient.cc(226): Deleting Stun credentials timer as Signalling Client is destroyed
+260708-17:38:39.023481 [mod=WRTC, lvl=INFO] [tid=2673] WRTC Session Statistics:23c30891-9337-4e14-8b9f-895a0ad11689,IPV6,local,IPV6,local,userStopAfterPlay,13895,0,0,0,1806,1478
+260708-17:38:39.032203 [mod=WRTC, lvl=INFO] [tid=2673] Video Session:23c30891-9337-4e14-8b9f-895a0ad11689,197,1015,905342,0,0
+260708-17:38:39.034101 [mod=WRTC, lvl=INFO] [tid=2673] Audio Session:23c30891-9337-4e14-8b9f-895a0ad11689,616,115559,0,0
+260708-17:39:40.626336 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:40:56.025493 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:42:11.348015 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_17:42.29 Live_Audio_enabled=true!
+260708-17:43:26.628857 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:44:41.980707 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:45:57.220273 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:47:12.550397 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:48:27.828397 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:49:43.125944 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_17:50.03 Live_Audio_enabled=true!
+260708-17:50:58.432075 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:52:13.829874 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:53:29.147654 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:54:44.550136 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:55:59.936805 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:57:15.250105 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_17:57.36 Live_Audio_enabled=true!
+260708-17:58:30.651047 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-17:59:46.048945 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:01:01.329631 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:02:16.732535 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:03:32.036674 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:04:47.331799 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_18:05.10 Live_Audio_enabled=true!
+260708-18:06:02.630362 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:07:17.926966 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:08:33.227896 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:09:48.533510 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:11:03.924501 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:12:19.174328 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_18:12.44 Live_Audio_enabled=true!
+260708-18:13:34.646415 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:14:49.957029 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:16:05.249215 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:17:20.648491 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:18:35.949377 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:19:51.248993 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_18:20.18 Live_Audio_enabled=true!
+260708-18:21:06.547176 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:22:21.832246 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:23:37.092182 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:24:52.391847 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:26:07.831449 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:27:23.126277 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_18:27.52 Live_Audio_enabled=true!
+260708-18:28:38.615899 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:29:53.935185 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:31:09.267420 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:32:24.525663 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:33:39.847536 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:34:55.146458 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_18:35.26 Live_Audio_enabled=true!
+260708-18:36:10.445388 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:37:25.669621 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:38:40.967815 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:39:56.347494 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:41:11.747571 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:75,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+260708-18:42:27.050358 [mod=WRTC, lvl=INFO] [tid=2673] Heartbeat Status:76,3,d70f28af-e049-41af-ac52-aee09e0a72a9,35.168.74.157,2259722108150432433,5
+08.07.2026_18:42.59 Live_Audio_enabled=true!

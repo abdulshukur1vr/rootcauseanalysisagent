@@ -1,0 +1,189 @@
+Jul  8 14:34:53 XHC33AF5A7 user.warn kernel: [129674.885923] audit_printk_skb: 123 callbacks suppressed
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129674.891275] type=1400 audit(1783521293.431:7006): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainvY9Uhj" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129674.952710] type=1400 audit(1783521293.501:7007): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainvY9Uhj" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129675.017783] type=1400 audit(1783521293.561:7008): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainvY9Uhj" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129675.078797] type=1400 audit(1783521293.621:7009): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain70Lw33" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129675.102174] type=1400 audit(1783521293.641:7010): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain70Lw33" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129675.155004] type=1400 audit(1783521293.701:7011): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain70Lw33" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129675.359915] type=1400 audit(1783521293.901:7012): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain39B0m6" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:34:53 XHC33AF5A7 user.notice kernel: [129675.424354] type=1400 audit(1783521293.971:7013): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain39B0m6" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 14:34:54 XHC33AF5A7 user.notice kernel: [129675.452826] type=1400 audit(1783521293.991:7014): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain39B0m6" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 14:34:54 XHC33AF5A7 user.notice kernel: [129675.494356] type=1400 audit(1783521294.041:7015): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainGxC9V9" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:35:03 XHC33AF5A7 user.info kernel: [129684.438106] cfg80211: Calling CRDA to update world regulatory domain
+Jul  8 14:35:14 XHC33AF5A7 user.warn kernel: [129695.653959] RTW: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+Jul  8 14:35:14 XHC33AF5A7 user.warn kernel: [129696.100232] RTW: start auth
+Jul  8 14:35:14 XHC33AF5A7 user.warn kernel: [129696.103183] RTW: SAE: start external auth
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.694408] RTW: SAE: auth success, start assoc
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.717051] RTW: assoc success
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.720783] RTW: recv eapol packet 1/4
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.750655] RTW: ============ STA [fa:d0:0e:fb:8f:0a]  ===================
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.819541] RTW: mac_id : 0
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.822414] RTW: wireless_mode : 0x44
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.828627] RTW: send eapol packet 2/4
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.872407] RTW: mimo_type : 2
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.887080] RTW: static smps : N
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.903751] RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.931725] RTW: rate_id : 9
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.951334] RTW: rssi : 47 (%), rssi_level : 0
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.967021] RTW: is_support_sgi : Y, is_vht_enable : Y
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.983509] RTW: disable_ra : N, disable_pt : N
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129696.998716] RTW: is_noisy : N
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129697.008300] RTW: txrx_state : 0
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129697.011537] RTW: curr_tx_rate : CCK_1M (L)
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129697.034040] RTW: curr_tx_bw : 20MHz
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129697.041857] RTW: curr_retry_ratio : 0
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129697.052663] RTW: ra_mask : 0x00000000fffffff0
+Jul  8 14:35:15 XHC33AF5A7 user.warn kernel: [129697.052663] 
+Jul  8 14:35:25 XHC33AF5A7 user.info kernel: [129706.780465] cfg80211: Calling CRDA for country: US
+Jul  8 14:35:34 XHC33AF5A7 user.warn kernel: [129716.288022] RTW: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+Jul  8 14:35:35 XHC33AF5A7 user.warn kernel: [129716.909152] RTW: start auth
+Jul  8 14:35:35 XHC33AF5A7 user.warn kernel: [129716.912088] RTW: SAE: start external auth
+Jul  8 14:35:49 XHC33AF5A7 user.warn kernel: [129731.384882] RTW: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+Jul  8 14:35:50 XHC33AF5A7 user.warn kernel: [129732.144906] RTW: start auth
+Jul  8 14:35:50 XHC33AF5A7 user.warn kernel: [129732.147798] RTW: SAE: start external auth
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.648820] RTW: SAE: auth success, start assoc
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.674597] RTW: assoc success
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.680079] RTW: recv eapol packet 1/4
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.708131] RTW: ============ STA [fa:d0:0e:fb:8f:0a]  ===================
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.745469] RTW: mac_id : 0
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.752909] RTW: wireless_mode : 0x44
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.778246] RTW: send eapol packet 2/4
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.783222] RTW: mimo_type : 2
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.786354] RTW: static smps : N
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.836512] RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.841587] RTW: rate_id : 9
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.862804] RTW: rssi : 47 (%), rssi_level : 0
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.892705] RTW: is_support_sgi : Y, is_vht_enable : Y
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.921673] RTW: disable_ra : N, disable_pt : N
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.954524] RTW: is_noisy : N
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.962077] RTW: txrx_state : 0
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.968881] RTW: curr_tx_rate : CCK_1M (L)
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.982722] RTW: curr_tx_bw : 20MHz
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.986414] RTW: curr_retry_ratio : 0
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.998401] RTW: ra_mask : 0x00000000fffffff0
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129732.998401] 
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129733.066390] RTW: recv eapol packet 3/4
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129733.076857] RTW: send eapol packet 4/4
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129733.101523] RTW: set pairwise key camid:0, addr:fa:d0:0e:fb:8f:0a, kid:0, type:AES
+Jul  8 14:35:51 XHC33AF5A7 user.warn kernel: [129733.184013] RTW: set group key camid:1, addr:fa:d0:0e:fb:8f:0a, kid:1, type:AES
+Jul  8 14:49:55 XHC33AF5A7 user.warn kernel: [130576.828282] audit_printk_skb: 105 callbacks suppressed
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130576.834068] type=1400 audit(1783522195.399:7051): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainZDi9Mt" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130576.868155] type=1400 audit(1783522195.439:7052): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainZDi9Mt" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130576.952560] type=1400 audit(1783522195.519:7053): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainZDi9Mt" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130576.994780] type=1400 audit(1783522195.569:7054): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainpVf3c9" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130577.029414] type=1400 audit(1783522195.599:7055): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainpVf3c9" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130577.059208] type=1400 audit(1783522195.629:7056): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainpVf3c9" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130577.240666] type=1400 audit(1783522195.809:7057): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNVAbM7" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130577.315466] type=1400 audit(1783522195.889:7058): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNVAbM7" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130577.344502] type=1400 audit(1783522195.919:7059): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNVAbM7" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 14:49:55 XHC33AF5A7 user.notice kernel: [130577.369341] type=1400 audit(1783522195.939:7060): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainhVFsXb" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:04:53 XHC33AF5A7 user.warn kernel: [131474.591301] audit_printk_skb: 141 callbacks suppressed
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.605820] type=1400 audit(1783523093.142:7108): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainCZQZNA" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.629714] type=1400 audit(1783523093.182:7109): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainCZQZNA" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.683172] type=1400 audit(1783523093.242:7110): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainCZQZNA" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.764699] type=1400 audit(1783523093.322:7111): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain2twzd0" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.817480] type=1400 audit(1783523093.372:7112): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain2twzd0" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.864527] type=1400 audit(1783523093.422:7113): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain2twzd0" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131474.978652] type=1400 audit(1783523093.532:7114): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedocEbBC" pid=5561 comm="telemetry2_0" requested_mask=
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131475.041818] type=1400 audit(1783523093.592:7115): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedocEbBC" pid=5561 comm="telemetry2_0" requested_mask="
+Jul  8 15:04:53 XHC33AF5A7 user.notice kernel: [131475.099985] type=1400 audit(1783523093.652:7116): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedocEbBC" pid=5561 comm="telemetry2_0" requested_mask
+Jul  8 15:04:54 XHC33AF5A7 user.notice kernel: [131475.428038] type=1400 audit(1783523093.982:7117): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainuS0HiM" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:19:55 XHC33AF5A7 user.warn kernel: [132376.603220] audit_printk_skb: 132 callbacks suppressed
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132376.608562] type=1400 audit(1783523995.191:7162): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain202iPU" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132376.665536] type=1400 audit(1783523995.251:7163): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain202iPU" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132376.722122] type=1400 audit(1783523995.301:7164): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain202iPU" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132376.761858] type=1400 audit(1783523995.341:7165): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain6o59ti" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132376.801544] type=1400 audit(1783523995.381:7166): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain6o59ti" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132376.881781] type=1400 audit(1783523995.461:7167): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain6o59ti" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132377.078115] type=1400 audit(1783523995.661:7168): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain0Dz064" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132377.104029] type=1400 audit(1783523995.691:7169): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain0Dz064" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132377.135601] type=1400 audit(1783523995.721:7170): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain0Dz064" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:19:55 XHC33AF5A7 user.notice kernel: [132377.224495] type=1400 audit(1783523995.811:7171): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain8boyQZ" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:34:53 XHC33AF5A7 user.warn kernel: [133275.090750] audit_printk_skb: 114 callbacks suppressed
+Jul  8 15:34:53 XHC33AF5A7 user.notice kernel: [133275.096532] type=1400 audit(1783524893.676:7210): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain2Xsl9p" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:34:53 XHC33AF5A7 user.notice kernel: [133275.150324] type=1400 audit(1783524893.736:7211): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain2Xsl9p" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:34:53 XHC33AF5A7 user.notice kernel: [133275.218241] type=1400 audit(1783524893.806:7212): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain2Xsl9p" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:34:53 XHC33AF5A7 user.notice kernel: [133275.276263] type=1400 audit(1783524893.866:7213): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyVrl4p" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:34:53 XHC33AF5A7 user.notice kernel: [133275.313951] type=1400 audit(1783524893.906:7214): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyVrl4p" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:34:53 XHC33AF5A7 user.notice kernel: [133275.369705] type=1400 audit(1783524893.956:7215): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyVrl4p" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:34:54 XHC33AF5A7 user.notice kernel: [133275.565534] type=1400 audit(1783524894.156:7216): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainnLBBMD" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:34:54 XHC33AF5A7 user.notice kernel: [133275.603416] type=1400 audit(1783524894.196:7217): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainnLBBMD" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:34:54 XHC33AF5A7 user.notice kernel: [133275.627429] type=1400 audit(1783524894.216:7218): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainnLBBMD" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:34:54 XHC33AF5A7 user.notice kernel: [133275.688772] type=1400 audit(1783524894.276:7219): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainuyRrAW" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:49:53 XHC33AF5A7 user.warn kernel: [134174.631480] audit_printk_skb: 105 callbacks suppressed
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134174.637234] type=1400 audit(1783525793.223:7255): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain9a3lrc" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134174.673863] type=1400 audit(1783525793.273:7256): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain9a3lrc" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134174.704031] type=1400 audit(1783525793.303:7257): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain9a3lrc" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134174.753817] type=1400 audit(1783525793.353:7258): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxOoScA" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134174.831606] type=1400 audit(1783525793.423:7259): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxOoScA" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134174.870422] type=1400 audit(1783525793.463:7260): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxOoScA" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134175.064707] type=1400 audit(1783525793.663:7261): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainVd3BCm" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134175.102749] type=1400 audit(1783525793.703:7262): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainVd3BCm" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134175.168002] type=1400 audit(1783525793.763:7263): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainVd3BCm" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 15:49:53 XHC33AF5A7 user.notice kernel: [134175.207603] type=1400 audit(1783525793.803:7264): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainXX9lVg" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:04:55 XHC33AF5A7 user.warn kernel: [135077.228119] audit_printk_skb: 105 callbacks suppressed
+Jul  8 16:04:55 XHC33AF5A7 user.notice kernel: [135077.233863] type=1400 audit(1783526695.812:7300): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainhr0Pzo" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:04:55 XHC33AF5A7 user.notice kernel: [135077.265165] type=1400 audit(1783526695.852:7301): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainhr0Pzo" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:04:55 XHC33AF5A7 user.notice kernel: [135077.355882] type=1400 audit(1783526695.942:7302): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainhr0Pzo" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.409382] type=1400 audit(1783526695.992:7303): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainMRfiOq" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.432782] type=1400 audit(1783526696.022:7304): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainMRfiOq" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.465103] type=1400 audit(1783526696.052:7305): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainMRfiOq" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.681441] type=1400 audit(1783526696.262:7306): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain1JF21K" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.750465] type=1400 audit(1783526696.332:7307): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain1JF21K" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.799339] type=1400 audit(1783526696.382:7308): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain1JF21K" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:04:56 XHC33AF5A7 user.notice kernel: [135077.825798] type=1400 audit(1783526696.412:7309): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyB4Eed" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:19:53 XHC33AF5A7 user.warn kernel: [135974.879024] audit_printk_skb: 105 callbacks suppressed
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135974.892688] type=1400 audit(1783527593.463:7345): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainveirkO" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135974.946601] type=1400 audit(1783527593.533:7346): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainveirkO" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135974.970258] type=1400 audit(1783527593.563:7347): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainveirkO" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135975.025592] type=1400 audit(1783527593.613:7348): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmaindYrbPy" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135975.091322] type=1400 audit(1783527593.673:7349): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmaindYrbPy" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135975.128765] type=1400 audit(1783527593.713:7350): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmaindYrbPy" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135975.159593] type=1400 audit(1783527593.743:7351): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedlradCs" pid=5561 comm="telemetry2_0" requested_mask=
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135975.219876] type=1400 audit(1783527593.803:7352): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedlradCs" pid=5561 comm="telemetry2_0" requested_mask="
+Jul  8 16:19:53 XHC33AF5A7 user.notice kernel: [135975.292327] type=1400 audit(1783527593.873:7353): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedlradCs" pid=5561 comm="telemetry2_0" requested_mask
+Jul  8 16:19:54 XHC33AF5A7 user.notice kernel: [135975.451683] type=1400 audit(1783527594.033:7354): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainmlQVvw" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:34:53 XHC33AF5A7 user.warn kernel: [136874.995875] audit_printk_skb: 105 callbacks suppressed
+Jul  8 16:34:53 XHC33AF5A7 user.notice kernel: [136875.013759] type=1400 audit(1783528493.616:7390): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainrFLjZF" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:34:53 XHC33AF5A7 user.notice kernel: [136875.084923] type=1400 audit(1783528493.706:7391): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainrFLjZF" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:34:53 XHC33AF5A7 user.notice kernel: [136875.116894] type=1400 audit(1783528493.736:7392): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainrFLjZF" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:34:53 XHC33AF5A7 user.notice kernel: [136875.165945] type=1400 audit(1783528493.786:7393): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainn0RusC" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:34:53 XHC33AF5A7 user.notice kernel: [136875.229726] type=1400 audit(1783528493.846:7394): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainn0RusC" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:34:53 XHC33AF5A7 user.notice kernel: [136875.263283] type=1400 audit(1783528493.886:7395): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainn0RusC" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:34:54 XHC33AF5A7 user.notice kernel: [136875.502288] type=1400 audit(1783528494.116:7396): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain4DhjWJ" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:34:54 XHC33AF5A7 user.notice kernel: [136875.545128] type=1400 audit(1783528494.166:7397): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain4DhjWJ" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:34:54 XHC33AF5A7 user.notice kernel: [136875.585118] type=1400 audit(1783528494.206:7398): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain4DhjWJ" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:34:54 XHC33AF5A7 user.notice kernel: [136875.630996] type=1400 audit(1783528494.246:7399): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain76HJo0" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:38:05 XHC33AF5A7 user.debug kernel: [137066.999232] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:11 XHC33AF5A7 user.debug kernel: [137073.133506] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:11 XHC33AF5A7 user.debug kernel: [137073.200198] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:12 XHC33AF5A7 user.debug kernel: [137074.133932] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:13 XHC33AF5A7 user.debug kernel: [137074.467084] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:13 XHC33AF5A7 user.debug kernel: [137075.200499] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:16 XHC33AF5A7 user.debug kernel: [137077.667580] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:17 XHC33AF5A7 user.debug kernel: [137078.867659] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:19 XHC33AF5A7 user.debug kernel: [137080.534629] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:19 XHC33AF5A7 user.debug kernel: [137080.868079] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:19 XHC33AF5A7 user.debug kernel: [137081.201350] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:38:20 XHC33AF5A7 user.debug kernel: [137081.534731] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:39:08 XHC33AF5A7 user.debug kernel: [137130.077928] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:39:09 XHC33AF5A7 user.debug kernel: [137130.675252] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:49:53 XHC33AF5A7 user.warn kernel: [137775.213156] audit_printk_skb: 132 callbacks suppressed
+Jul  8 16:49:53 XHC33AF5A7 user.notice kernel: [137775.218487] type=1400 audit(1783529393.822:7444): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainVus8BS" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:49:53 XHC33AF5A7 user.notice kernel: [137775.258552] type=1400 audit(1783529393.862:7445): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainVus8BS" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.399622] type=1400 audit(1783529394.002:7446): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainVus8BS" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.467517] type=1400 audit(1783529394.072:7447): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainstKE3X" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.494607] type=1400 audit(1783529394.102:7448): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainstKE3X" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.547375] type=1400 audit(1783529394.152:7449): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainstKE3X" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.734415] type=1400 audit(1783529394.342:7450): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxF2rFm" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.784107] type=1400 audit(1783529394.392:7451): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxF2rFm" pid=5561 comm="telemetry2_0" requested_mask="rwc
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.835587] type=1400 audit(1783529394.442:7452): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxF2rFm" pid=5561 comm="telemetry2_0" requested_mask="d
+Jul  8 16:49:54 XHC33AF5A7 user.notice kernel: [137775.876693] type=1400 audit(1783529394.482:7453): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSfv0MX" pid=5561 comm="telemetry2_0" requested_mask="c"
+Jul  8 16:50:17 XHC33AF5A7 user.debug kernel: [137798.373474] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:17 XHC33AF5A7 user.debug kernel: [137798.706861] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:18 XHC33AF5A7 user.debug kernel: [137799.507560] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:19 XHC33AF5A7 user.debug kernel: [137800.707129] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:21 XHC33AF5A7 user.debug kernel: [137803.240929] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:22 XHC33AF5A7 user.debug kernel: [137803.574285] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:22 XHC33AF5A7 user.debug kernel: [137804.307641] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jul  8 16:50:24 XHC33AF5A7 user.debug kernel: [137805.707846] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.

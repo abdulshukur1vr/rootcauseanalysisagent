@@ -1,0 +1,578 @@
+# End-to-End Example Walkthrough
+
+This section demonstrates a complete RCA execution flow from input bundle to final report.
+
+---
+
+# Example Scenario
+
+A device support bundle contains:
+
+- Ethernet failures
+- WiFi client failures
+- Kernel logs
+- Network subsystem logs
+- Multiple compressed archives
+
+Example input:
+
+```
+sample_bundle.tgz
+```
+
+Contents:
+
+```
+sample_bundle.tgz
+
+    |
+
+    +-- device_logs.tar
+
+            |
+
+            +-- nvram2/
+
+                    |
+
+                    +-- log/
+
+                            |
+
+                            +-- kernel.log
+
+                            +-- wifi.log
+
+                            +-- messages.log
+```
+
+---
+
+# Step 1: Run Analysis
+
+Execute:
+
+```bash
+PYTHONPATH=src python3 -m app.main \
+    --input sample_bundle.tgz \
+    --output reports
+```
+
+---
+
+# Step 2: Pipeline Execution
+
+Console output:
+
+```
+2026-07-21 15:34:39 INFO Starting RCA pipeline
+
+
+2026-07-21 15:34:39 INFO Extracted TAR sample_bundle.tgz
+
+
+2026-07-21 15:34:39 INFO Scanning log directory:
+
+reports/workspace/sample_bundle/nvram2/log
+
+
+2026-07-21 15:34:39 INFO Discovered 108 log files
+
+
+2026-07-21 15:34:39 INFO Detected 3089 events
+
+
+2026-07-21 15:34:39 INFO Timeline created with 3089 events
+
+
+2026-07-21 15:34:39 INFO Generating RCA report
+```
+
+---
+
+# Step 3: Generated Output
+
+The analyzer creates a timestamped execution directory.
+
+Example:
+
+```
+reports/
+
+└── 20260721_153439/
+
+    |
+
+    +-- metadata.json
+
+    |
+
+    +-- report.json
+
+    |
+
+    +-- summary.md
+
+    |
+
+    +-- workspace/
+
+            |
+
+            +-- sample_bundle/
+
+                    |
+
+                    +-- nvram2/
+
+                            |
+
+                            +-- log/
+```
+
+Each execution has an isolated workspace.
+
+---
+
+# Step 4: Execution Metadata
+
+File:
+
+```
+metadata.json
+```
+
+Example:
+
+```json
+{
+    "run_time":
+        "2026-07-21T15:34:39",
+
+    "input_bundle":
+        "sample_bundle.tgz",
+
+    "agent":
+        "RootCauseAnalysisAgent",
+
+    "version":
+        "0.1.0"
+}
+```
+
+---
+
+# Step 5: RCA Report
+
+File:
+
+```
+report.json
+```
+
+Example:
+
+```json
+{
+    "title":
+        "Root Cause Analysis Report",
+
+    "root_causes":
+    [
+        {
+            "category":
+                "ETHERNET_FAILURE",
+
+            "confidence":
+                92,
+
+            "explanation":
+                "Ethernet interface failure detected before downstream network failures",
+
+            "evidence":
+            [
+                "kernel.log: NETDEV WATCHDOG timeout"
+            ]
+        }
+    ]
+}
+```
+
+---
+
+# Step 6: Engineer Summary Report
+
+File:
+
+```
+summary.md
+```
+
+Example:
+
+```markdown
+# Root Cause Analysis Report
+
+
+## Root Cause Candidates
+
+
+### ETHERNET_FAILURE
+
+
+Confidence:
+
+92%
+
+
+Explanation:
+
+Ethernet interface failure detected before
+dependent network failures.
+
+
+Evidence:
+
+- kernel.log: NETDEV WATCHDOG timeout
+
+
+
+## Timeline
+
+
+1.
+
+Ethernet link down
+
+
+2.
+
+DHCP timeout
+
+
+3.
+
+WAN unavailable
+```
+
+---
+
+# RCA Interpretation Example
+
+Detected events:
+
+```
+10:00:01
+
+eth0 link down
+
+
+10:00:03
+
+DHCP timeout
+
+
+10:00:05
+
+Internet unavailable
+```
+
+---
+
+The Root Cause Engine determines:
+
+```
+Primary Failure:
+
+ETHERNET_FAILURE
+
+
+Secondary Symptoms:
+
+DHCP_FAILURE
+
+WAN_FAILURE
+```
+
+Reason:
+
+```
+Ethernet failure happened first.
+
+Later failures are dependent symptoms.
+```
+
+---
+
+# Failure Distribution Example
+
+The analyzer calculates:
+
+```json
+{
+    "ETHERNET_FAILURE":
+        45,
+
+    "WIFI_CLIENT_FAILURE":
+        35,
+
+    "DHCP_FAILURE":
+        15,
+
+    "OTHER":
+        5
+}
+```
+
+Visualization:
+
+```
+Failure Distribution
+
+
+Ethernet Failure
+
+████████████████ 45%
+
+
+WiFi Client Failure
+
+████████████ 35%
+
+
+DHCP Failure
+
+█████ 15%
+
+
+Other
+
+██ 5%
+```
+
+---
+
+# Troubleshooting Workflow
+
+A typical engineer workflow:
+
+```
+1. Receive support bundle
+
+
+        |
+
+
+2. Run RCA Agent
+
+
+        |
+
+
+3. Open summary.md
+
+
+        |
+
+
+4. Review root cause candidates
+
+
+        |
+
+
+5. Verify evidence
+
+
+        |
+
+
+6. Inspect original logs
+```
+
+---
+
+# Example Engineer Decision
+
+RCA Output:
+
+```
+Root Cause:
+
+ETHERNET_FAILURE
+
+
+Confidence:
+
+92%
+
+
+Evidence:
+
+NETDEV WATCHDOG timeout
+```
+
+Engineer action:
+
+```
+Check:
+
+- Ethernet driver
+
+- Hardware interface
+
+- Link negotiation
+
+- Physical connectivity
+```
+
+---
+
+# Multiple Failure Handling
+
+The system can identify multiple simultaneous issues.
+
+Example:
+
+```
+Root Causes:
+
+
+1.
+
+ETHERNET_FAILURE
+
+Confidence: 92%
+
+
+2.
+
+WIFI_CLIENT_FAILURE
+
+Confidence: 78%
+```
+
+The engine does not assume only one failure exists.
+
+---
+
+# Large Bundle Handling
+
+The pipeline supports:
+
+```
+Thousands of logs
+
+Multiple archives
+
+Large support bundles
+```
+
+Processing remains modular:
+
+```
+Extract
+
+   |
+
+Discover
+
+   |
+
+Parse
+
+   |
+
+Analyze
+
+   |
+
+Report
+```
+
+---
+
+# Extending the Example
+
+To add a new failure type:
+
+Example:
+
+```
+DNS_FAILURE
+```
+
+Steps:
+
+```
+1. Add category
+
+
+2. Add detection rules
+
+
+3. Add parser support if required
+
+
+4. Add tests
+
+
+5. Validate RCA output
+```
+
+---
+
+# Final Output Contract
+
+Every successful RCA execution produces:
+
+```
+timestamp/
+
+├── metadata.json
+
+├── report.json
+
+├── summary.md
+
+└── workspace/
+```
+
+These artifacts provide:
+
+- Human-readable analysis
+- Machine-readable data
+- Audit trail
+- Future dashboard compatibility
+
+---
+
+# Project Summary
+
+RootCauseAnalysisAgent provides a foundation for automated troubleshooting by combining:
+
+```
+Archive Processing
+
+        +
+
+Log Intelligence
+
+        +
+
+Failure Detection
+
+        +
+
+Timeline Correlation
+
+        +
+
+Root Cause Reasoning
+
+        +
+
+Evidence-Based Reporting
+```
+
+The architecture is designed to evolve from a local troubleshooting tool into a full diagnostic platform.

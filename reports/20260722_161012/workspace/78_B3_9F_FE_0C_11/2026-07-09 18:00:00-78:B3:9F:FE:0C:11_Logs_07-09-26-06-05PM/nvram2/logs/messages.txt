@@ -1,0 +1,131 @@
+131
+2026 Jul 09 17:41:41 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2605:8d80:58e5:b08e:8440:6a0b:8f39:6c8b DST=2604:3d09:917a:8700:3e62:f0ff:fe39:62a0 LEN=84 TC=80 HOPLIMIT=51 FLOWLBL=984064 PROTO=TCP SPT=50381 DPT=49399 WINDOW=65535 RES=0x00 SYN URGP=0 MARK=0x8000001 
+2026 Jul 09 17:41:41 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:b6:59:60:77:25:c4:86:dd SRC=fe80:0000:0000:0000:0888:5ba7:e853:0eb1 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=386 TC=0 HOPLIMIT=255 FLOWLBL=263936 PROTO=UDP SPT=5353 DPT=5353 LEN=346 
+2026 Jul 09 17:42:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265049.957 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:42:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265052.884 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:42:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265071.541 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:42:31 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:78:80:38:d9:b6:5a:86:dd SRC=fe80:0000:0000:0000:7a80:38ff:fed9:b65a DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=260 TC=0 HOPLIMIT=255 FLOWLBL=379767 PROTO=UDP SPT=5353 DPT=5353 LEN=220 
+2026 Jul 09 17:42:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265092.700 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:42:48 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2600:1f18:5b54:f900:e698:c6c3:268e:166e DST=2604:3d09:917a:8700:18b9:f15c:7b7e:171a LEN=56 TC=0 HOPLIMIT=244 FLOWLBL=1038733 PROTO=ICMPv6 TYPE=128 CODE=0 ID=1 SEQ=1 MARK=0x8000000 
+2026 Jul 09 17:43:25 xer10 kernel: SBF: dhd1: INIT [b6:59:60:77:25:c4] ID 65535 BFW 65535 THRSH 2048
+2026 Jul 09 17:43:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265123.357 wl1: turn sta MFP setting on with sha256
+2026 Jul 09 17:43:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265124.405 wl1: STA b6:59:60:77:25:c4 has associated tx_type 33
+2026 Jul 09 17:43:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265124.491 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+2026 Jul 09 17:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265139.945 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:43:31 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:86:05:41:4e:bf:df:86:dd SRC=fe80:0000:0000:0000:18e7:5683:e134:cbef DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=106 TC=0 HOPLIMIT=255 FLOWLBL=722176 PROTO=UDP SPT=5353 DPT=5353 LEN=66 
+2026 Jul 09 17:43:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265143.016 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:44:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265171.145 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:44:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265174.170 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:44:20 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2a03:2880:f36c:008d:face:b00c:0000:0002 DST=2604:3d09:917a:8700:b422:65e3:4050:8815 LEN=96 TC=0 HOPLIMIT=53 FLOWLBL=0 PROTO=UDP SPT=443 DPT=64124 LEN=56 MARK=0x8000001 
+2026 Jul 09 17:44:32 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2a03:2880:f36c:008d:face:b00c:0000:0002 DST=2604:3d09:917a:8700:b422:65e3:4050:8815 LEN=81 TC=0 HOPLIMIT=53 FLOWLBL=0 PROTO=UDP SPT=443 DPT=64124 LEN=41 MARK=0x8000001 
+2026 Jul 09 17:44:34 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:96:ae:3d:3a:20:31:86:dd SRC=fe80:0000:0000:0000:0c33:5af2:dd25:7e03 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=106 TC=0 HOPLIMIT=255 FLOWLBL=986624 PROTO=UDP SPT=5353 DPT=5353 LEN=66 
+2026 Jul 09 17:45:11 xer10 kernel: SBF: dhd2: INIT [b6:59:60:77:25:c4] ID 65535 BFW 65535 THRSH 2048
+2026 Jul 09 17:45:11 xer10 kernel: wl1.1: dhd_flow_rings_delete_for_peer: ifindex 1
+2026 Jul 09 17:45:11 xer10 kernel: wl1.1: dhd_flow_rings_delete_for_peer: ifindex 1
+2026 Jul 09 17:45:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265229.716 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+2026 Jul 09 17:45:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265229.716 SBF: wl1.1: free sbfidx 124
+2026 Jul 09 17:45:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265240.815 wl2: turn sta MFP setting on with sha256
+2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.860 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.959 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.975 wl2: wlc_is_publicaction: b6:59:60:77:25:c4: rx frame has category 9, pub action field 0; should have cat 4
+2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.975 wl2: wlc_recvfilter: bad frame control 0x40d0 from b6:59:60:77:25:c4
+2026 Jul 09 17:45:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265253.997 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:45:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265256.940 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:45:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265258.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:45:31 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:78:80:38:d9:b6:5a:86:dd SRC=fe80:0000:0000:0000:7a80:38ff:fed9:b65a DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=260 TC=0 HOPLIMIT=255 FLOWLBL=379767 PROTO=UDP SPT=5353 DPT=5353 LEN=220 
+2026 Jul 09 17:45:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265261.045 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:45:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265263.105 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:45:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265266.056 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:45:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265284.325 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:45:59 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2a03:2880:f36c:008d:face:b00c:0000:0002 DST=2604:3d09:917a:8700:b422:65e3:4050:8815 LEN=81 TC=0 HOPLIMIT=53 FLOWLBL=0 PROTO=UDP SPT=443 DPT=64124 LEN=41 MARK=0x8000001 
+2026 Jul 09 17:46:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265296.682 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:46:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265310.741 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:46:32 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:78:80:38:d9:b6:5a:86:dd SRC=fe80:0000:0000:0000:7a80:38ff:fed9:b65a DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=669 TC=0 HOPLIMIT=255 FLOWLBL=379767 PROTO=UDP SPT=5353 DPT=5353 LEN=629 
+2026 Jul 09 17:46:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265322.776 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+2026 Jul 09 17:47:03 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2a03:2880:f101:0083:face:b00c:0000:25de DST=2604:3d09:917a:8700:096e:275d:13c4:f489 LEN=96 TC=0 HOPLIMIT=52 FLOWLBL=0 PROTO=UDP SPT=443 DPT=53344 LEN=56 MARK=0x8000001 
+2026 Jul 09 17:47:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265360.822 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:47:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265380.659 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:47:48 xer10 kernel: UTOPIA: FW.IPv6 FORWARD dropIN=erouter0 OUT=brlan0 PHYSIN=eth4 MAC=78:b3:9f:fe:0c:11:00:00:5e:00:01:01:86:dd SRC=2a03:2880:f101:0083:face:b00c:0000:25de DST=2604:3d09:917a:8700:096e:275d:13c4:f489 LEN=81 TC=0 HOPLIMIT=52 FLOWLBL=0 PROTO=UDP SPT=443 DPT=53344 LEN=41 MARK=0x8000001 
+2026 Jul 09 17:47:48 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:78:80:38:d9:b6:5a:86:dd SRC=fe80:0000:0000:0000:7a80:38ff:fed9:b65a DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=669 TC=0 HOPLIMIT=255 FLOWLBL=379767 PROTO=UDP SPT=5353 DPT=5353 LEN=629 
+2026 Jul 09 17:48:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265435.691 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:48:31 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:b6:59:60:77:25:c4:86:dd SRC=fe80:0000:0000:0000:0888:5ba7:e853:0eb1 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=128 TC=0 HOPLIMIT=255 FLOWLBL=263936 PROTO=UDP SPT=5353 DPT=5353 LEN=88 
+2026 Jul 09 17:48:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265453.153 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:48:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265455.147 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:48:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265461.091 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:49:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265475.145 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:49:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265475.840 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:49:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265476.032 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:49:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265476.043 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265479.787 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+2026 Jul 09 17:49:32 xer10 kernel: UTOPIA: FW.IPv6 INPUT dropIN=brlan0 OUT= MAC=33:33:00:00:00:fb:78:80:38:d9:b6:5a:86:dd SRC=fe80:0000:0000:0000:7a80:38ff:fed9:b65a DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=669 TC=0 HOPLIMIT=255 FLOWLBL=379767 PROTO=UDP SPT=5353 DPT=5353 LEN=629 
+2026 Jul 09 17:49:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265499.377 wl1.7: 9c:24:72:20:cd:68: wlc_send_bar_complete: no tx attempted, txstatus: 0x0
+2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+2026 Jul 09 17:50:00 xer10 kernel: wl1.7: dhd_flow_rings_delete_for_peer: ifindex 7
+2026 Jul 09 17:50:00 xer10 kernel: wl1.7: dhd_prot_ioctl: status ret value is -30 cmd=122
+2026 Jul 09 17:50:00 xer10 kernel: CFG80211-ERROR) wl_cfg80211_change_station : 
+2026 Jul 09 17:50:00 xer10 kernel: WLC_SCB_DEAUTHORIZE error (-30)
+2026 Jul 09 17:50:00 xer10 kernel: wl1.7: dhd_prot_ioctl: status ret value is -30 cmd=201
+2026 Jul 09 17:50:00 xer10 kernel: CFG80211-ERROR) wl_cfg80211_del_station : 
+2026 Jul 09 17:50:00 xer10 kernel: WLC_SCB_DEAUTHENTICATE_FOR_REASON err -30
+2026 Jul 09 17:50:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265520.421 SBF: wl1.7: free sbfidx 122
+2026 Jul 09 17:50:02 xer10 kernel: device pgd1-85.101 left promiscuous mode
+2026 Jul 09 17:50:02 xer10 kernel: kauditd_printk_skb: 23 callbacks suppressed
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1700 audit(1783619402.119:447): dev=pgd1-85.101 prom=0 old_prom=256 auid=4294967295 uid=0 gid=0 ses=4294967295
+2026 Jul 09 17:50:02 xer10 kernel: device pgd1-85.106 left promiscuous mode
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1300 audit(1783619402.119:447): arch=c00000b7 syscall=211 success=yes exit=32 a0=15 a1=7fc2277508 a2=0 a3=0 items=0 ppid=1 pid=4524 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="ovs-vswitchd" exe="/usr/sbin/ovs-vswitchd" subj=OvsAgent_ovsdb-server_check.sh (complain) key=(null)
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1327 audit(1783619402.119:447): proctitle=6F76732D7673776974636864002D2D70696466696C653D2F7661722F72756E2F6F70656E767377697463682F6F76732D76737769746368642E706964002D2D6C6F672D66696C653D2F6465762F6E756C6C002D2D646574616368
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1700 audit(1783619402.121:448): dev=pgd1-85.106 prom=0 old_prom=256 auid=4294967295 uid=0 gid=0 ses=4294967295
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1300 audit(1783619402.121:448): arch=c00000b7 syscall=211 success=yes exit=32 a0=15 a1=7fc2277508 a2=0 a3=0 items=0 ppid=1 pid=4524 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="ovs-vswitchd" exe="/usr/sbin/ovs-vswitchd" subj=OvsAgent_ovsdb-server_check.sh (complain) key=(null)
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1327 audit(1783619402.121:448): proctitle=6F76732D7673776974636864002D2D70696466696C653D2F7661722F72756E2F6F70656E767377697463682F6F76732D76737769746368642E706964002D2D6C6F672D66696C653D2F6465762F6E756C6C002D2D646574616368
+2026 Jul 09 17:50:02 xer10 kernel: device pgd1-85.100 left promiscuous mode
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1700 audit(1783619402.122:449): dev=pgd1-85.100 prom=0 old_prom=256 auid=4294967295 uid=0 gid=0 ses=4294967295
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1300 audit(1783619402.122:449): arch=c00000b7 syscall=211 success=yes exit=32 a0=15 a1=7fc2277508 a2=0 a3=0 items=0 ppid=1 pid=4524 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="ovs-vswitchd" exe="/usr/sbin/ovs-vswitchd" subj=OvsAgent_ovsdb-server_check.sh (complain) key=(null)
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1327 audit(1783619402.122:449): proctitle=6F76732D7673776974636864002D2D70696466696C653D2F7661722F72756E2F6F70656E767377697463682F6F76732D76737769746368642E706964002D2D6C6F672D66696C653D2F6465762F6E756C6C002D2D646574616368
+2026 Jul 09 17:50:02 xer10 kernel: Freeing devid[2140] for pgd1-85.106
+2026 Jul 09 17:50:02 xer10 kernel: Freeing devid[2139] for pgd1-85.100
+2026 Jul 09 17:50:02 xer10 kernel: Freeing devid[2141] for pgd1-85.101
+2026 Jul 09 17:50:02 xer10 kernel: device pgd1-85 left promiscuous mode
+2026 Jul 09 17:50:02 xer10 kernel: audit: type=1700 audit(1783619402.650:450): dev=pgd1-85 prom=0 old_prom=256 auid=4294967295 uid=0 gid=0 ses=4294967295
+2026 Jul 09 17:50:02 xer10 kernel: Freeing devid[2134] for pgd1-85
+2026 Jul 09 17:50:02 xer10 kernel: Freeing devid[2135] for pgd1-85.200
+2026 Jul 09 17:50:02 xer10 kernel: device pgd1-85.200 left promiscuous mode
+2026 Jul 09 17:50:20 xer10 kernel: SBF: dhd0: INIT [20:f1:b2:8d:c0:a8] ID 65535 BFW 65535 THRSH 2048
+2026 Jul 09 17:50:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265544.370 wl0: turn sta MFP setting on with sha256
+2026 Jul 09 17:50:21 xer10 kernel: wl0.1: dhd_flow_rings_delete_for_peer: ifindex 1
+2026 Jul 09 17:50:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265545.901 SBF: wl0.1: free sbfidx 126
+2026 Jul 09 17:50:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265547.647 SBF: wl0.1: free sbfidx 126
+2026 Jul 09 17:50:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265553.175 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+2026 Jul 09 17:50:23 xer10 kernel: SBF: dhd0: INIT [20:f1:b2:8d:c0:a8] ID 65535 BFW 65535 THRSH 2048
+2026 Jul 09 17:50:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265548.254 wl0: turn sta MFP setting on with sha256
+2026 Jul 09 17:50:24 xer10 kernel: wl0.1: dhd_flow_rings_delete_for_peer: ifindex 1
+2026 Jul 09 17:50:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265548.904 SBF: wl0.1: free sbfidx 126
+2026 Jul 09 17:50:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265554.329 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647

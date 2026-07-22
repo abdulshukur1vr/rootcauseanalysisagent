@@ -1,0 +1,61 @@
+starting Sensor Daemon !!!!
+Config file matching with default conf:/etc/image_config_60Hz.ini
+start SensorDaemon service!
+Conf file /etc/debug.ini open success
+260704-00:00:33.230282 [mod=BREAKPAD, lvl=INFO] [tid=1619] breakpadwrap.cpp(21):Registering breakpad handler... 
+260704-00:00:33.245080 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp rdk logger enabled 
+260704-00:00:33.247202 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(133): Using secure config files. Lux Config: hQÕ ,Sensor Config: ˜QÕ
+260704-00:00:33.247677 [mod=RBUS, lvl=INFO] [tid=1619] rbus open for component: xsensor_provider
+260704-00:00:33.281611 [mod=RBUS, lvl=INFO] [tid=1619]  rbus open (xsensor_provider) success
+260704-00:00:33.282001 [mod=RBUS, lvl=INFO] [tid=1619] file /tmp/rbus_subs_xsensor_provider
+260704-00:00:33.282168 [mod=RBUS, lvl=ERROR] [tid=1619] failed to open file /tmp/rbus_subs_xsensor_provider
+260704-00:00:33.282239 [mod=RBUS, lvl=WARN] [tid=1619] removing corrupted file /tmp/rbus_subs_xsensor_provider
+260704-00:00:33.293568 [mod=RBUS, lvl=ERROR] [tid=1619] failed to remove /tmp/rbus_subs_xsensor_provider
+260704-00:00:33.354284 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(562) : Invoked XSensor::Init(/etc/image_config_60Hz.ini)
+day2night = 220
+image.brightness = 0
+image.contrast = 64
+image.env = 4
+image.flicker_effect = 1
+image.saturation = 64
+image.sharpness = 6
+image.slow_shutter_enable = 0
+night2day = 320
+260704-00:00:33.360614 [mod=XSENSOR, lvl=WARN] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(576) : Error loading User Settings
+260704-00:00:33.408452 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(643) : Lux User Settings 
+day2night = 220
+enabled = 0
+night2day = 320
+260704-00:00:33.408839 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(164) : Sensor initialization success2129684828 
+Connection established with kernel.
+---load mliso_adj_param---
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_image_priv_spot_mode.c: 669]/etc/idsp/adj_params/jx_f22_mliso_adj_param.bin /etc/idsp/adj_params/jx_f22_aeb_param.bin
+
+>>> pipline:1, hdr_mode:0, expo_num:1, raw_pitch:0
+>>> main:size 1920x1088, raw:1920x1088, resolution:10
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_01_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_02_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_03_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 115]load file /etc/idsp/sensors/jx_f22_04_3D.bin
+
+!!! [/home2/jarvis/code/s2l/xhc3/02_10772_RDKC_15813_InludeAllChanges/rdkc_sdk2.6/src/sysapps/vendor/packages/img_mw/mw/arch_s2l/src/mw_get_aaa_params.c: 153]load file /etc/idsp/reg.bin
+
+no translater for filter 10
+init 3A done
+loop start now
+>>> ======= [DONE] mw_start_aaa ======= 
+260704-14:26:02.008916 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_start_img_process Channel is Normal mode 
+260704-14:26:02.026051 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_enable_ae imghal_enable_ae :: enabled 
+260704-14:26:02.141671 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260704-14:26:02.142078 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_white_balance_settings Environment is Outdoor 
+260704-14:26:02.142238 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(696) : Started sensor with hdrDisabled,Outdoor
+260704-14:26:03.480444 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(187) : Night Vision setting is disabled
+ 260704-14:26:03.481614 [mod=RBUS, lvl=INFO] [tid=1619] rbus open for component: t2_lib_xsensor
+260704-14:26:03.483925 [mod=RBUS, lvl=INFO] [tid=1619]  rbus open (t2_lib_xsensor) success
+260704-14:26:03.513224 [mod=RBUS, lvl=ERROR] [tid=1619] rbus_get for Telemetry.OperationalStatus failed with error: Entry not found error
+260704-14:26:04.868665 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xSensorDaemon/src/xSensor.cpp(354) : anti_flicker_mode enabled 
+260704-14:26:04.868812 [mod=XSENSOR, lvl=INFO] [tid=1619] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/sensor/soc/image_process_hal_api.c:imghal_set_exposure_control_settings Current slow shutter mode is disabled.
+260704-14:26:04.868936 [mod=XSENSOR, lvl=INFO] [tid=1619] Day  mode is enabled 

@@ -1,0 +1,27 @@
+27
+[OneWifi] 260709-18:09:35.682496<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:09:35.697466<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_assoc_req
+[OneWifi] 260709-18:09:39.856293<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:10:14.322689<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:10:14.381717<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_auth_req
+[OneWifi] 260709-18:10:14.414469<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:10:14.416027<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,4,5,2 
+[OneWifi] 260709-18:10:14.416920<I>  process_disassoc_device_event:1776 Disassoc event for mac : b6:59:60:77:25:c4, Removed the entry from hashmap
+[OneWifi] 260709-18:10:14.419875<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_disconnect
+[OneWifi] 260709-18:10:15.421322<I>  process_assoc_device_event:1841 Device b6:59:60:77:25:c4 associated with vapindex 16 associated clients count : 1
+[OneWifi] 260709-18:10:15.421361<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.17.AssociatedDeviceNumberOfEntries,0,1,0,2 
+[OneWifi] 260709-18:10:15.422227<I>  events_bus_publish(): bus_event_publish_fn Event wifi_event_monitor_connect
+[OneWifi] 260709-18:10:15.422688<I>  process_assoc_device_event:1897 LMLite notify:Device.WiFi.AccessPoint.17.AssociatedDevice.1 mac:b6:59:60:77:25:c4
+[OneWifi] 260709-18:10:15.459265<I>  get_client_assoc_request_multi:2700 assoc req frame not found for vap_index:16: sta_mac:b6:59:60:77:25:c4 time:0
+[OneWifi] 260709-18:10:51.537452<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,4,5,2 
+[OneWifi] 260709-18:10:51.538363<I>  process_disassoc_device_event:1776 Disassoc event for mac : da:5c:01:69:dd:5b, Removed the entry from hashmap
+[OneWifi] 260709-18:11:01.555743<I>  process_disassoc_device_event:1776 Disassoc event for mac : 8c:c5:b4:e7:8a:ce, Removed the entry from hashmap
+[OneWifi] 260709-18:11:01.579861<I>  process_disassoc_device_event:1776 Disassoc event for mac : 8c:c5:b4:e7:8a:cf, Removed the entry from hashmap
+[OneWifi] 260709-18:11:36.573870<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries,0,4,5,2 
+[OneWifi] 260709-18:11:36.574782<I>  process_disassoc_device_event:1776 Disassoc event for mac : 4a:0d:d7:1e:65:27, Removed the entry from hashmap
+[OneWifi] 260709-18:12:01.609962<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,3,4,2 
+[OneWifi] 260709-18:12:01.610785<I>  process_disassoc_device_event:1776 Disassoc event for mac : 3c:62:f0:43:70:ed, Removed the entry from hashmap
+[OneWifi] 260709-18:12:41.638465<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,3,4,2 
+[OneWifi] 260709-18:12:41.639377<I>  process_disassoc_device_event:1776 Disassoc event for mac : 78:80:38:d9:b6:5a, Removed the entry from hashmap
+[OneWifi] 260709-18:13:16.666678<I>  notify_associated_entries:245: Sending Notification for str:Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries,0,3,4,2 
+[OneWifi] 260709-18:13:16.667590<I>  process_disassoc_device_event:1776 Disassoc event for mac : b6:59:60:77:25:c4, Removed the entry from hashmap

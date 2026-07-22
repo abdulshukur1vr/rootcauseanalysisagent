@@ -1,0 +1,2463 @@
+# Root Cause Analysis Report
+## Root Cause Candidates
+
+### WIFI_DRIVER_FAILURE
+
+Confidence: 100%
+
+System failure detected.
+
+
+Evidence:
+
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+
+### WIFI_DISCONNECT
+
+Confidence: 100%
+
+Multiple wireless clients experienced unexpected disassociation events across one or more WiFi interfaces. The pattern suggests wireless connectivity instability and may be related to WiFi driver issues, RF interference, client roaming behavior, or firmware defects.
+
+
+Evidence:
+
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+
+### STORAGE_FAILURE
+
+Confidence: 69%
+
+Storage subsystem failure detected. This may indicate disk errors, filesystem corruption, or I/O problems.
+
+
+Evidence:
+
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+
+## Timeline
+
+### WIFI_DRIVER_FAILURE
+
+Occurrences: 2294
+
+Start Time: 
+None
+
+End Time: 
+None
+
+Sources:
+
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-07 08:00:00-78:B3:9F:FE:0C:11_Logs_07-07-26-08-07AM/nvram2/logs/messages.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 18:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM/nvram2/logs/messages.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 18:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM/nvram2/logs/messages.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 19:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-07-01PM/nvram2/logs/messages.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 23:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-11-51PM/nvram2/logs/messages.txt
+
+Events:
+
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 038585.518 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 02:51:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038760.322 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:52:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038772.628 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:53:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038864.113 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:53:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038874.520 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:54:16 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038896.894 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:54:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038920.435 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:55:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038945.616 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:55:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038966.757 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:55:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038974.729 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:55:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038993.648 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:55:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 038999.333 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:57:56 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039116.642 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:58:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039134.862 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:58:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039147.057 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:58:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039165.034 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:59:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039182.812 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:59:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039201.407 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 02:59:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039215.881 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 02:59:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039215.758 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 02:59:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039234.125 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:00:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039242.280 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:00:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039242.691 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:00:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039254.686 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:01:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039327.301 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:01:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039350.683 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:02:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039365.344 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:03:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039434.708 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039440.967 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:03:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039445.886 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:03:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039448.477 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.846 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.846 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.846 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.846 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.846 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.863 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.863 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.863 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.863 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039465.863 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:04:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039493.112 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:04:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039531.897 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:04:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039535.208 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:04:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039539.026 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:05:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039553.039 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:07:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039670.486 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 SBF: wl2.1: free sbfidx 126
+- 2026 Jul 07 03:07:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039675.671 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:07:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039688.271 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:07:38 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039699.459 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 03:07:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039700.513 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 03:07:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039700.626 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.963 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.963 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.963 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.963 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.963 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.967 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.968 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.968 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.968 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:08:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039765.968 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:10:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039863.083 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:11:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039896.061 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:11:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039896.069 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:11:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039896.069 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:11:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039896.069 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:11:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039896.069 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:11:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 039896.069 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.060 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.062 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.062 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.062 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.062 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.062 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.070 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.070 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.070 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.070 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.070 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.110 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.111 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.111 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.111 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.111 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040026.111 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.086 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.088 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.088 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.088 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.088 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.088 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.089 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.089 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.089 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.089 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040046.089 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040136.121 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:18:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040356.189 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:26:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040806.414 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:26:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040806.414 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:26:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040806.414 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:26:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040806.414 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:26:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040806.414 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.416 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.416 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.416 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.416 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.416 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.441 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.441 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.441 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.441 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:27:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040876.441 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.439 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.439 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.439 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.439 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.439 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.459 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.459 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.459 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.459 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:28:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 040956.459 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.492 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.493 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.493 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.493 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.493 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.510 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.510 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.510 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.510 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:30:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041036.510 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:31:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041126.538 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:31:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041126.538 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:31:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041126.538 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:31:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041126.538 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:31:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041126.538 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041186.779 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041186.779 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041186.779 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041186.779 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041186.779 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041206.537 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041206.537 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041206.537 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041206.537 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041206.537 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:32:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041219.710 wl2: wlc_txbf_delete_link failed for 86:b4:88:63:2f:77
+- 2026 Jul 07 03:32:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041219.710 SBF: wl2.1: free sbfidx 125
+- 2026 Jul 07 03:32:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 041209.185 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 07 03:32:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 041210.215 wl1: STA 86:b4:88:63:2f:77 has associated tx_type 33
+- 2026 Jul 07 03:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041386.649 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041386.666 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041386.666 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041386.666 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041386.666 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041386.666 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:36:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 041430.204 wl1: wlc_txbf_delete_link failed for 86:b4:88:63:2f:77
+- 2026 Jul 07 03:36:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 041430.204 SBF: wl1.1: free sbfidx 119
+- 2026 Jul 07 03:36:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041440.692 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 03:36:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041445.088 SBF: wl2.1: free sbfidx 125
+- 2026 Jul 07 03:36:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041445.098 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 03:36:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041445.539 SBF: wl2.1: free sbfidx 125
+- 2026 Jul 07 03:36:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041445.551 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 03:36:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041446.586 wl2: STA 86:b4:88:63:2f:77 has associated tx_type 33
+- 2026 Jul 07 03:36:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041446.631 wl2: wlc_is_publicaction: 86:b4:88:63:2f:77: rx frame has category 9, pub action field 0; should have cat 4
+- 2026 Jul 07 03:36:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041446.631 wl2: wlc_recvfilter: bad frame control 0x40d0 from 86:b4:88:63:2f:77
+- 2026 Jul 07 03:37:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041456.617 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:37:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041456.617 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:37:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041456.617 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:37:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041456.617 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:37:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041456.617 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:37:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041506.639 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:37:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041506.639 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:37:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041506.639 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:37:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041506.640 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:37:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041506.640 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041802.685 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:42:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041811.911 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:43:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041850.711 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 041846.797 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:43:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041866.831 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:44:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041883.121 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:44:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041889.710 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:44:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041893.253 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041902.729 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:44:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041912.113 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:44:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041928.024 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:44:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041930.985 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:45:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041942.124 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:45:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041950.768 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:45:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041951.657 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:45:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041957.482 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:45:17 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041958.903 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:45:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041963.802 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:45:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041966.752 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:45:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041969.705 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:45:32 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041974.105 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:45:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041989.687 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:45:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 041997.203 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042036.909 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.918 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.918 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.918 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.918 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.918 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.919 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.919 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.919 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.919 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042056.919 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:47:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042115.347 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042142.113 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:48:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042146.768 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:48:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042148.894 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:48:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042156.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:48:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042165.170 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042186.936 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042186.936 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042186.936 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042186.936 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042186.936 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:50:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042246.537 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:50:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042246.696 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:50:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042248.700 SBF: wl2.1: free sbfidx 125
+- 2026 Jul 07 03:51:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042341.578 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:51:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042347.910 wl0: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 SBF: wl0.1: free sbfidx 126
+- 2026 Jul 07 03:51:57 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042359.687 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:52:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042409.532 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:52:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042410.989 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 03:52:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042410.989 SBF: wl2.1: free sbfidx 126
+- 2026 Jul 07 03:53:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042451.185 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:53:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042451.554 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.032 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.032 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.032 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.032 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.032 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.038 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.038 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.038 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.038 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042447.038 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:53:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042462.344 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:53:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042466.254 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:53:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042473.306 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:53:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042480.905 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 03:54:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042483.848 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 03:54:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042507.579 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.153 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.091 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.091 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.091 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.091 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.091 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.092 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.092 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.092 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.092 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042607.092 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 03:56:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042637.075 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:56:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042637.075 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:56:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042637.075 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:56:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042637.075 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:56:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042637.075 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:57:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042680.804 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 07 03:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042681.837 wl1: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 03:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042682.135 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 07 03:57:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042692.280 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+- 2026 Jul 07 03:58:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042751.467 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 07 03:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042757.205 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042757.205 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042757.205 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042757.205 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042757.205 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 03:58:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042756.156 wl1: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042757.955 wl1.1: wlc_actionframetx_complete: pkt header not fully formed.
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042757.955 wlc_tx_action_frame_now, packet transmission failed err=-1
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042757.955 wl1: wlc_iovar_ext: actframe: BCME -1
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:58:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042759.049 SBF: wl1.1: free sbfidx 119
+- 2026 Jul 07 04:00:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042878.026 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 07 04:00:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042878.088 wl1: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 04:00:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042878.185 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 07 04:00:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042878.310 wl1: wlc_is_publicaction: b6:59:60:77:25:c4: rx frame has category 9, pub action field 0; should have cat 4
+- 2026 Jul 07 04:00:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042878.310 wl1: wlc_recvfilter: bad frame control 0x40d0 from b6:59:60:77:25:c4
+- 2026 Jul 07 04:01:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042897.685 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+- 2026 Jul 07 04:01:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042909.692 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 04:01:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042899.200 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 04:01:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042899.201 SBF: wl1.1: free sbfidx 119
+- 2026 Jul 07 04:01:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042910.731 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 04:01:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042910.782 wl2: wlc_is_publicaction: b6:59:60:77:25:c4: rx frame has category 9, pub action field 0; should have cat 4
+- 2026 Jul 07 04:01:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042910.782 wl2: wlc_recvfilter: bad frame control 0x40d0 from b6:59:60:77:25:c4
+- 2026 Jul 07 04:01:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042910.843 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 04:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042917.191 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042917.191 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042917.191 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042917.191 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042917.191 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:02:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042975.837 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 04:03:38 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043060.357 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 07 04:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043107.323 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043107.323 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043107.323 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043107.323 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043107.323 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:11:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043527.434 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:11:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043527.434 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:11:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043527.434 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:11:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043527.434 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:11:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043527.434 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043673.046 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 04:13:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043674.955 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 04:13:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043674.955 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 04:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043687.524 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043687.524 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043687.524 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043687.524 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043687.524 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043727.549 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043727.549 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043727.549 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043727.549 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043727.549 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043807.541 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043807.541 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043807.541 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043807.541 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043807.541 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.820 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.820 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.820 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.820 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.820 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.828 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.828 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.828 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.828 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 043887.828 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:17:57 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043919.943 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 04:17:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043920.987 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 04:17:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043921.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 04:18:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 043957.390 wl1.1: wlc_he_htc_process_omi: OMI: Nothing to update omi_htc: 0x1281 -> 0x1281
+- 2026 Jul 07 04:18:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 043957.390 wl1.1: wlc_he_htc_process_omi: OMI: Nothing to update omi_htc: 0x1281 -> 0x1281
+- 2026 Jul 07 04:18:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 043957.390 wl1.1: wlc_he_htc_process_omi: OMI: Nothing to update omi_htc: 0x1281 -> 0x1281
+- 2026 Jul 07 04:19:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043989.261 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 04:19:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043990.390 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 04:19:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 043990.390 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 04:21:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044127.689 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:21:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044127.689 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:21:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044127.689 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:21:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044127.689 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:21:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044127.689 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044247.716 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044247.716 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044247.716 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044247.716 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044247.716 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:23:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044278.079 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 04:23:56 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044279.118 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 04:23:56 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044279.230 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 04:24:18 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044301.274 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 04:24:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044302.826 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 04:24:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044302.827 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 04:33:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044838.014 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:33:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044838.014 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:33:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044838.014 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:33:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044838.014 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:33:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044838.014 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:35:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044968.432 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 04:35:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044969.468 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 04:35:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044969.568 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 04:35:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044968.015 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:35:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044968.015 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:35:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044968.015 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:35:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044968.015 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:35:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 044968.015 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.263 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.264 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.264 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.264 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.264 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.264 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.265 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.265 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.265 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.265 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.265 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045088.314 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:38:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045128.086 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:38:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045128.086 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:38:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045128.086 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:38:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045128.086 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:38:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045128.086 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045238.168 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045238.168 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045238.168 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045238.168 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045238.168 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.126 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.127 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.127 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.127 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.127 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.127 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.128 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.128 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.128 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.128 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.128 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045288.176 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045348.146 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045348.146 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045348.146 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045348.146 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045348.146 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045498.228 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045498.231 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045498.231 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045498.231 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045498.231 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045498.231 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.233 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.233 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.233 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.233 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.233 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.245 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.245 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.245 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.245 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:44:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045518.245 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045598.291 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045598.292 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045598.292 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045598.292 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045598.292 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045598.292 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:50:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045868.383 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:50:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045868.383 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:50:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045868.383 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:50:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045868.383 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:50:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045868.383 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.409 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.409 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.409 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.409 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.409 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.434 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.434 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.434 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.434 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:51:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 045918.434 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:55:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046149.427 PHY ilna_protect: Enter Mitigation state. cnt=0x10
+- 2026 Jul 07 04:55:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046151.432 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 04:56:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046198.528 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:56:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046198.535 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:56:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046198.535 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:56:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046198.535 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:56:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046198.535 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 04:56:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046198.535 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:01:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046549.119 PHY ilna_protect: Enter Mitigation state. cnt=0x11
+- 2026 Jul 07 05:01:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046551.121 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 05:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046928.814 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046928.814 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046928.814 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046928.814 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046928.814 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046958.842 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046958.842 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046958.842 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046958.842 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 046958.842 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047028.836 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047028.836 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047028.836 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047028.836 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047028.836 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:10:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047088.851 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:10:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047088.851 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:10:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047088.851 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:10:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047088.851 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:10:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047088.851 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047148.857 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047148.861 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047148.861 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047148.861 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047148.861 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047148.861 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:12:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047175.114 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 05:12:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047175.114 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 05:12:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 047164.549 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 07 05:12:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 047165.587 wl1: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 05:12:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 047165.678 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+- 2026 Jul 07 05:12:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047206.256 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 05:12:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 047195.752 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 05:12:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 047195.752 SBF: wl1.1: free sbfidx 119
+- 2026 Jul 07 05:12:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047207.294 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 05:12:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047207.395 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 05:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047268.929 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047268.929 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047268.929 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047268.929 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047268.929 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:15:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047372.481 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 05:15:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047373.745 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 07 05:15:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 047373.745 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.946 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.946 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.946 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.946 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.946 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.947 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.947 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.947 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.947 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.947 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047378.973 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047379.002 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047379.002 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047379.002 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047379.002 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:15:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047379.003 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047489.189 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047489.189 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047489.189 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047489.189 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047489.189 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047498.989 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047498.989 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047498.989 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047498.989 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047498.989 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:17:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047509.774 PHY ilna_protect: Enter Mitigation state. cnt=0x12
+- 2026 Jul 07 05:17:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 047511.781 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 05:27:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048069.225 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:27:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048069.225 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:27:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048069.225 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:27:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048069.225 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:27:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048069.225 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048189.290 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048189.290 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048189.290 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048189.290 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048189.290 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:30:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048289.354 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:30:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048289.354 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:30:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048289.354 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:30:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048289.354 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:30:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048289.354 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:33:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 048447.231 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 07 05:33:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 048448.269 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 07 05:33:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 048448.372 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 07 05:33:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 048448.398 wl2: wlc_is_publicaction: b6:59:60:77:25:c4: rx frame has category 9, pub action field 0; should have cat 4
+- 2026 Jul 07 05:33:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 048448.398 wl2: wlc_recvfilter: bad frame control 0x40d0 from b6:59:60:77:25:c4
+- 2026 Jul 07 05:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048589.485 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048589.485 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048589.485 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048589.485 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 048589.485 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049199.651 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049199.651 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049199.651 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049199.651 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049199.651 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.940 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.944 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.944 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049289.945 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049309.730 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049309.732 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049309.732 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049309.732 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049309.732 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:47:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049309.732 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049549.851 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049549.851 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049549.851 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049549.851 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049549.851 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049609.823 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049609.823 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049609.823 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049609.823 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049609.823 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.946 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.946 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.946 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.946 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.946 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.947 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.947 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.947 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.947 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049749.947 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049789.945 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049789.945 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049789.945 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049789.945 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:55:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049789.945 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 05:57:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049859.921 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049859.921 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049859.921 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049859.921 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049859.921 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049879.966 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049879.966 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049879.966 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049879.966 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:57:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 049879.966 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 05:59:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050033.532 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 05:59:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050034.994 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 05:59:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050035.997 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.055 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.056 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.056 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.057 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.057 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.057 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.109 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.109 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.109 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.109 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.109 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.110 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.110 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.110 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.110 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:02:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050200.110 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050270.122 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050270.122 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050270.122 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050270.122 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:03:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050270.122 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050480.158 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050480.159 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050480.159 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050480.159 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050480.159 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:09:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050590.231 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050590.233 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050590.233 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050590.233 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050590.233 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050590.233 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.227 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.228 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.228 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.228 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.228 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.228 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.229 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.229 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.229 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.229 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.229 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.283 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.284 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.284 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.284 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.284 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.284 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.285 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.285 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.285 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.285 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050630.285 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:10:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050650.280 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:10:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050650.280 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:10:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050650.280 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:10:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050650.280 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:10:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050650.280 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050750.276 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050750.277 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050750.277 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050750.277 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:11:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050750.277 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:12:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050762.845 wl0: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 07 06:12:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050762.905 wlc_apps_ps_send: 28:6b:b4:2a:74:1a (mark 0x1) priobmap 0xff, release count 1 not release by taf
+- 2026 Jul 07 06:12:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050766.802 wl0: 28:6b:b4:2a:74:1a: scb is unusable, mark is 0x19
+- 2026 Jul 07 06:12:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 050767.431 SBF: wl0.1: free sbfidx 123
+- 2026 Jul 07 06:16:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051030.375 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:16:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051030.375 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:16:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051030.376 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:16:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051030.376 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:16:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051030.376 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:20:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051280.485 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:20:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051280.485 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:20:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051280.485 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:20:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051280.485 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:20:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051280.485 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:20:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051290.499 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:20:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051290.499 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:20:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051290.499 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:20:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051290.499 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:20:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051290.499 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:25:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051551.609 PHY ilna_protect: Enter Mitigation state. cnt=0x13
+- 2026 Jul 07 06:25:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 051552.611 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 06:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052140.876 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052140.876 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052140.876 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052140.876 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052140.876 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052490.982 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052490.985 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052490.985 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052490.985 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052490.985 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052490.985 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052550.994 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052550.994 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052550.994 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052550.994 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:41:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052550.994 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052631.063 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052631.063 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052631.063 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052631.063 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052631.063 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052731.041 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052731.041 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052731.041 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052731.041 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052731.041 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:45:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052791.527 PHY ilna_protect: Enter Mitigation state. cnt=0x14
+- 2026 Jul 07 06:45:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052793.529 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.976 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.976 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.976 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.976 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.976 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 052885.977 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd0a1/0xe29b)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.157 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.157 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:48:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 052941.158 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.194 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.194 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.194 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.194 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.194 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.216 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.216 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.216 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.216 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053001.216 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053021.187 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053021.187 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053021.187 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053021.187 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:49:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053021.187 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.220 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.220 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.220 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.220 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.220 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.221 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.222 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.222 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.222 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.222 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.262 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.262 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.262 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.262 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053181.262 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 06:58:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053571.371 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:58:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053571.371 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:58:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053571.371 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:58:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053571.371 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 06:58:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053571.371 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053721.454 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053721.454 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053721.454 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053721.454 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:01:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 053721.454 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:07:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054071.646 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:07:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054071.646 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:07:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054071.646 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:07:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054071.646 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:07:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054071.646 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:13:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054448.218 SBF: wl0.1: free sbfidx 123
+- 2026 Jul 07 07:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054451.754 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054451.754 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054451.754 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054451.754 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054451.754 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054511.767 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054511.767 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054511.767 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054511.767 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054511.767 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 054511.812 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055052.027 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055052.027 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055052.027 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055052.027 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055052.027 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.009 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.009 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.009 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.009 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.009 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.055 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.055 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.055 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.055 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055182.055 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.279 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.281 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.281 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.281 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.281 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.281 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.282 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.282 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.282 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.282 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:27:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055292.282 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:31:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055522.146 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:31:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055522.146 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:31:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055522.146 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:31:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055522.146 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:31:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055522.146 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:32:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055602.230 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:32:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055602.230 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:32:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055602.230 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:32:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055602.230 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:32:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055602.230 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055822.311 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055822.311 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055822.311 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055822.311 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 055822.311 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:42:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056212.478 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:45:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056373.197 PHY ilna_protect: Enter Mitigation state. cnt=0x15
+- 2026 Jul 07 07:45:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056375.199 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 07:47:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056482.533 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:47:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056482.533 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:47:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056482.533 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:47:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056482.533 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:47:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056482.533 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056592.570 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056592.570 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056592.570 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056592.570 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056592.570 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:50:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056652.605 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:50:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056652.606 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:50:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056652.606 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:50:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056652.606 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:50:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056652.606 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056712.679 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056712.679 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056712.679 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056712.679 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056712.679 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056792.870 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056792.870 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056792.870 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056792.870 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056792.870 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.654 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.654 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.654 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.654 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.654 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.655 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.655 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.655 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.655 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056842.655 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:54:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056882.677 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:54:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056882.677 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:54:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056882.677 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:54:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056882.677 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:54:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 056882.677 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 07:59:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057222.820 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.889 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.889 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.889 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.889 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.889 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.890 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.890 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.890 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.890 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057362.890 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 07 08:02:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057373.723 PHY ilna_protect: Enter Mitigation state. cnt=0x16
+- 2026 Jul 07 08:02:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057375.728 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 07 08:03:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057432.915 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 08:03:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057432.915 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 08:03:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057432.915 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 08:03:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057432.916 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 08:03:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057432.916 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 07 08:05:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057593.074 PHY ilna_protect: Enter Mitigation state. cnt=0x17
+- 2026 Jul 07 08:05:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 057595.078 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 19:07:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000455.208 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 19:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000482.249 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000482.249 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000482.249 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000482.249 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000482.249 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:09:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000582.256 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:11:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000682.310 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:11:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000682.310 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:11:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000682.310 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:11:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000682.310 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:11:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000682.310 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:13:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000782.336 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:13:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000782.336 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:13:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000782.336 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:13:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000782.336 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:13:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000782.336 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000846.931 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 19:14:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000850.987 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.364 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.364 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.364 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.364 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.364 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.370 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.370 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.370 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.370 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:14:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000862.370 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:15:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000912.436 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000912.436 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000912.436 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000912.436 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000912.436 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.395 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.395 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.395 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.395 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.395 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.396 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.396 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.396 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.396 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:15:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000932.396 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:16:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.460 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.462 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.462 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.462 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.462 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.462 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.463 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.463 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.463 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.463 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001002.463 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.443 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.443 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.443 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.443 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.443 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.466 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.466 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.466 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.466 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:17:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001052.466 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:21:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001302.940 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 09 19:21:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001302.952 wl2.1 b6:59:60:77:25:c4 denied association due to status(53)
+- 2026 Jul 09 19:21:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001303.005 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 09 19:21:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001303.161 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 09 19:21:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001293.479 wl1: STA b6:59:60:77:25:c4 has associated tx_type 17
+- 2026 Jul 09 19:21:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001293.536 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 19:22:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001335.294 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 09 19:22:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001324.610 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 19:22:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001324.610 SBF: wl1.1: free sbfidx 121
+- 2026 Jul 09 19:22:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001336.340 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 09 19:22:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001336.458 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 19:23:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001422.592 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:23:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001433.535 phy_cache_acquire_reuse_buffer: alloc backup buffer 16384
+- 2026 Jul 09 19:23:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001433.537 phy_cache_release_reuse_buffer: free backup buffer 16384
+- 2026 Jul 09 19:23:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001433.537 phy_cache_acquire_reuse_buffer: alloc backup buffer 16384
+- 2026 Jul 09 19:23:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001433.540 phy_cache_release_reuse_buffer: free backup buffer 16384
+- 2026 Jul 09 19:23:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001433.540 phy_cache_acquire_reuse_buffer: alloc backup buffer 16384
+- 2026 Jul 09 19:23:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001433.542 phy_cache_release_reuse_buffer: free backup buffer 16384
+- 2026 Jul 09 19:28:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001695.172 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 19:28:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001697.534 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 19:35:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002120.583 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 19:35:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002120.639 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 19:35:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002159.673 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 19:35:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002159.688 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 19:36:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002201.882 wl2: wlc_key_prep_tx_mpdu: choosing SW encryption for MGMT frames
+- 2026 Jul 09 19:36:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002203.844 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 19:36:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 002203.844 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 09 19:36:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002212.292 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:36:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002212.292 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:36:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002212.292 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:36:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002212.292 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:36:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002212.292 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002552.415 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002552.415 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002552.415 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002552.415 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002552.415 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002592.484 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002592.484 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002592.484 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002592.484 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002592.484 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:46:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002782.841 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 002847.554 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd024/0xe29b)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.533 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.533 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.533 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.533 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.533 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.549 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.549 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.549 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.549 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 002862.549 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:52:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003143.465 PHY ilna_protect: Enter Mitigation state. cnt=0x1
+- 2026 Jul 09 19:52:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003145.467 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 19:53:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003222.694 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:53:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003222.694 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:53:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003222.694 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:53:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003222.694 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:53:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003222.694 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.719 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.719 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.719 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.719 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.719 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.719 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.720 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.720 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.720 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 19:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003272.720 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:01:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003688.211 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 20:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003802.904 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003802.904 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003802.904 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003802.904 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003802.904 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003872.930 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003872.930 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003872.930 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003872.930 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:04:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 003872.930 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:05:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 003945.141 wl1: STA b6:59:60:77:25:c4 has associated tx_type 17
+- 2026 Jul 09 20:05:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 003945.226 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 20:06:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004001.935 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 17
+- 2026 Jul 09 20:06:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004002.936 SBF: wl1.1: free sbfidx 120
+- 2026 Jul 09 20:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004083.069 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004083.069 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004083.069 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004083.069 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:08:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004083.069 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:08:16 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004094.102 wl1: STA b6:59:60:77:25:c4 has associated tx_type 17
+- 2026 Jul 09 20:08:16 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004094.183 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 20:08:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004101.218 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+- 2026 Jul 09 20:08:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004111.076 wl1: wlc_ampdu_update_statistics: retry miscount SU (tx_cnt 44, txsucc_cnt 64, mutype 0)
+- 2026 Jul 09 20:08:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004114.037 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 20:08:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004135.164 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 09 20:08:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004124.471 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 20:08:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004124.471 SBF: wl1.1: free sbfidx 120
+- 2026 Jul 09 20:08:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004136.214 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 09 20:08:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004136.317 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:09:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004173.341 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:09:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004192.572 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.083 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.083 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.083 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.083 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.083 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.106 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.106 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.106 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.106 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004193.106 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:09:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004199.645 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:10:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004234.825 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:10:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004240.382 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:10:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004241.566 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:10:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004253.799 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:11:38 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004307.537 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:11:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004312.429 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.166 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.166 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.166 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.166 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.166 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.167 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.167 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.167 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.167 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004363.167 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:13:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004424.281 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:13:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004434.725 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004483.169 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004483.169 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004483.169 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004483.169 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004483.169 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:14:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004494.908 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004493.189 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004493.189 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004493.189 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004493.189 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:14:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 004493.189 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:14:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004500.591 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:14:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004492.092 wl1: STA 78:80:38:d9:b6:5a has associated tx_type 1
+- 2026 Jul 09 20:15:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004556.435 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:15:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004561.999 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:16:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004575.115 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:16:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004580.013 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:16:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004591.006 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:16:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004607.723 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:16:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004617.354 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:17:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004636.372 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:18:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004717.418 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:19:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004755.322 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:19:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004755.738 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:19:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004771.716 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:19:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004807.114 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:20:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004812.825 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:20:32 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004841.051 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:20:37 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004845.951 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:21:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004882.134 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:21:19 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004888.611 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:21:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004889.079 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:21:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004891.440 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:21:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004891.454 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:21:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004914.658 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:21:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004916.531 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:21:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004920.343 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:21:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004920.377 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:22:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 004939.672 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:23:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005014.952 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:23:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005024.069 PHY ilna_protect: Enter Mitigation state. cnt=0x2
+- 2026 Jul 09 20:23:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005026.072 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 20:24:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005080.026 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:24:38 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005087.712 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:24:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005093.839 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:24:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005099.258 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:25:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005110.236 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:25:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005114.153 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:25:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005119.041 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:25:18 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005127.572 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:25:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005132.465 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:25:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005134.539 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:25:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005139.427 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005143.438 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005143.438 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005143.438 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005143.438 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:25:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005143.438 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:25:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005162.981 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:25:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005167.898 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:26:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005170.914 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:26:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005174.607 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:26:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005174.637 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:26:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005212.007 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:26:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005227.183 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:30:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005412.823 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:30:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005413.260 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:30:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005433.652 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:30:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005437.029 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:30:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005449.117 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:30:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005451.184 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:30:57 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005466.680 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:31:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005475.332 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:31:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005480.249 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:31:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005481.403 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:31:19 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005488.566 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:31:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005493.394 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:31:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005502.285 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:31:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005516.395 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:34:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005678.501 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:34:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005685.339 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:34:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005690.259 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:34:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005694.176 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:34:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005699.072 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:34:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005703.573 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005709.737 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:35:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005714.932 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:35:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005742.639 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:35:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005744.685 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:35:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005752.139 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 20:35:57 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 005766.654 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.696 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.696 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.696 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.696 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.696 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.697 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.697 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.697 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.697 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005783.697 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:37:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005833.717 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:37:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005833.717 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:37:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005833.717 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:37:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005833.717 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:37:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 005833.717 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:40:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006033.797 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:40:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006033.797 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:40:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006033.797 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:40:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006033.797 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:40:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006033.797 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:42:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006143.838 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:42:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006143.838 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:42:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006143.838 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:42:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006143.838 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:42:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006143.838 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.027 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 006149.028 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd095/0xe29b)
+- 2026 Jul 09 20:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006293.896 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006293.896 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006293.896 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006293.896 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:44:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006293.896 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:45:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006333.896 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:45:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006333.896 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:45:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006333.896 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:45:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006333.896 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:45:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006333.896 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:46:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006389.450 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.980 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.982 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.982 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.982 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.982 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.982 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.983 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.983 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.983 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.983 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.983 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.989 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.989 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.989 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.989 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006563.989 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 20:49:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006574.040 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:49:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006574.040 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:49:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006574.040 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:49:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006574.040 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:49:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 006574.040 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:57:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007034.244 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:57:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007034.244 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:57:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007034.244 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:57:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007034.244 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 20:57:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007034.244 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.258 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.258 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.258 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.258 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.258 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.268 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.268 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.268 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.268 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:00:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007224.268 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:01:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007294.296 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:01:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007294.296 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:01:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007294.296 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:01:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007294.296 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:01:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007294.296 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:02:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007375.859 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:02:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007376.209 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:02:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007382.384 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:02:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007388.729 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007393.622 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:03:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007398.614 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007404.768 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:03:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007405.262 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007410.160 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:03:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007419.056 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007423.939 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:03:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007424.302 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007432.782 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:03:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007433.142 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007438.028 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:03:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007438.505 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:03:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007443.382 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:04:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007483.919 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:04:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007490.012 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:04:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007505.029 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:05:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007504.986 PHY ilna_protect: Enter Mitigation state. cnt=0x3
+- 2026 Jul 09 21:05:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007506.990 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 21:05:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007551.602 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:05:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007552.507 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:05:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007557.395 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007614.414 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007614.414 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007614.414 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007614.414 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007614.414 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:06:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 007628.275 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007694.456 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007694.456 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007694.456 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007694.456 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:08:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007694.456 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:12:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 007964.581 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008054.567 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008054.568 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008054.568 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008054.568 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:14:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008054.568 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:14:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008074.828 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:14:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008075.221 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:14:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008080.107 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:14:38 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008088.776 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:14:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008094.902 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:14:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008096.298 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008104.607 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008104.607 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008104.607 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008104.607 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:15:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008104.607 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:15:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008125.024 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:15:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008125.734 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:15:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008130.620 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:15:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008131.203 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:15:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008138.417 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:15:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008146.936 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:15:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008152.815 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:16:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008174.288 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.624 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.624 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.624 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.624 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.624 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.672 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.680 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.680 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.680 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.680 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008174.680 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:16:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008193.730 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:16:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008194.290 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:16:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008199.173 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:16:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008204.543 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008211.184 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:16:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008215.426 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:16:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008220.314 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:16:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008221.120 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:16:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008226.016 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:17:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008231.754 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:17:37 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008267.124 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008264.711 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008264.711 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008264.711 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008264.711 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008264.711 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:17:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008271.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:17:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008282.617 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:18:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008293.795 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:18:08 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008298.676 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:18:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008303.479 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:18:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008319.067 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:18:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008340.579 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:18:56 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008346.739 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:19:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008360.599 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:19:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008365.485 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:19:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008370.354 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:19:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008376.493 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:19:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008386.690 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:19:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008391.566 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:19:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008396.401 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:19:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008403.951 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:19:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008410.299 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:20:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008415.189 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:20:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008432.361 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:20:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008469.644 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:21:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008474.913 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008481.055 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:21:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008484.037 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:21:18 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008488.924 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:21:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008492.073 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:21:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008496.967 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:21:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008511.052 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:21:56 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008526.386 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:22:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008535.745 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:22:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008579.717 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.797 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.812 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.812 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.812 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.812 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.812 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.813 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.813 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.813 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.813 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 008614.813 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:23:58 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008648.525 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008961.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:29:19 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008970.302 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:29:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008976.441 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:29:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008987.196 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:29:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008992.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:29:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 008997.070 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:29:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009004.245 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:30:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009005.960 PHY ilna_protect: Enter Mitigation state. cnt=0x4
+- 2026 Jul 09 21:30:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009006.964 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 21:30:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009013.999 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:30:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009020.124 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:30:16 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009026.860 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009024.954 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009031.741 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:30:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009036.507 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:30:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009043.645 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:30:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009044.481 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.985 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.985 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.985 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.985 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.985 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.986 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.986 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.986 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.986 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009044.986 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:30:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009060.432 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:30:57 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009068.307 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:31:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009074.598 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:31:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009081.899 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:31:16 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009086.784 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:31:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009091.487 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:31:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009097.641 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:31:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009119.278 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:31:53 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009124.225 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:32:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009124.997 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:32:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009124.997 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:32:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009124.997 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:32:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009124.997 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:32:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009124.997 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:32:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009141.126 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:32:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009156.474 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:32:32 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009162.718 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:32:37 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009167.605 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:32:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009172.462 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:32:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009178.621 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.008 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.008 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.008 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.008 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.008 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.009 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.009 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.009 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.009 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009175.009 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:32:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009184.874 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:32:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009189.753 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:33:17 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009207.992 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:33:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009214.154 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:33:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009215.610 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:33:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009220.493 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:33:32 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009222.612 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:33:37 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009227.501 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:33:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009240.277 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:33:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009245.171 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:33:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009250.131 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:34:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009245.046 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:34:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009245.046 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:34:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009245.046 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:34:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009245.046 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:34:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009245.046 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:34:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009256.268 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:34:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009257.008 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:34:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009261.899 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009305.060 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009305.060 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009305.060 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009305.060 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:35:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009305.060 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:35:19 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009329.960 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:35:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009334.763 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:35:29 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009340.466 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:35:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009345.357 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:35:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009354.873 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:35:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009359.783 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:36:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009372.570 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.146 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.146 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.146 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.146 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.146 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.147 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.147 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.147 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.147 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009385.147 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.129 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.129 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.129 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.129 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.129 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.156 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.156 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.156 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.156 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:36:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009405.156 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:37:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009453.805 SBF: wl0.1: free sbfidx 124
+- 2026 Jul 09 21:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009455.118 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009455.118 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009455.118 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009455.118 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:37:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009455.118 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:38:13 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009504.294 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:38:18 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009509.499 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:38:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009515.939 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:39:18 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009569.078 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:39:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009573.970 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:39:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009575.193 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:39:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009575.193 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:39:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009575.193 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:39:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009575.193 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:39:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009575.193 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:40:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009655.986 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:40:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009666.344 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:40:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009666.754 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:41:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009671.639 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:41:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009673.422 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:41:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009686.582 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:41:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009696.301 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:41:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009715.420 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 21:41:55 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009726.175 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 21:42:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009757.251 wl2: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 21:42:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009757.251 SBF: wl2.1: free sbfidx 127
+- 2026 Jul 09 21:42:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009747.526 wl1: STA b6:59:60:77:25:c4 has associated tx_type 17
+- 2026 Jul 09 21:42:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009747.621 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 21:42:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009751.845 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 17
+- 2026 Jul 09 21:42:32 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009752.848 SBF: wl1.1: free sbfidx 119
+- 2026 Jul 09 21:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009765.368 PHY ilna_protect: Enter Mitigation state. cnt=0x5
+- 2026 Jul 09 21:42:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009768.372 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 21:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009795.283 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009795.283 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009795.283 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009795.283 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009795.283 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009815.284 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009815.284 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009815.284 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009815.284 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 009815.284 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:46:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 009996.034 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 21:46:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009985.629 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 21:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010115.409 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010115.446 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010115.446 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010115.446 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010115.446 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010115.446 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010375.500 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010375.500 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010375.500 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010375.500 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:52:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010375.500 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841 wl0: wlc_recv: dropping a frame with invalid src mac address d7:87:86:d5:22:bc type data ISMULTI  sub type=-1 pad=0 hwrxoff=192(52) mrxs=0x0006 hdr=0x001c29dax
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841 PKT ptr = 001c290cx, fifo=2(2)
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841 PKT:
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0000: 76 2b f6 67 ba 00 00 00 ba b0 b5 b9 a4 01 02 02
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0010: 06 00 7e 01 01 0c 00 00 00 08 0f 01 ff ff 50 00
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0020: 00 80 00 04 06 10 02 b9 00 00 86 2a f6 67 14 4b
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0030: 28 00 04 44 02 00 ba b0 b5 ba 7f fa 78 00 00 00
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0040: 00 7f 00 00 00 00 80 80 80 80 80 80 80 80 42 01
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0050: 11 00 00 18 05 00 ee 9e 1f 00 00 00 bf e7 f7 e9
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0060: ff ff df fb b7 fd ff ff ff f7 fe ff f5 ff ff ef
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0070: fe ff e7 fb ff 7f ff cf df ff ff fd fe ff bf ff
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0080: f6 ff ff 7f fe fb f3 ff ff 7f ff eb ff f2 ff df
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   0090: ff ef ff eb ff fe ff bb b3 ff ff ff d9 8f 33 df
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   00a0: ff ff fd ff fb f7 ed ff bf ff ff ff ff ff ff bf
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   00b0: f7 bf fb 7f fe ef fd ef ff ff ef ff 00 00 00 00
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   00c0: 6b 17 02 04 0f 6b a0 70 42 15 00 00 00 00 09 e7
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   00d0: 70 00 f5 e1 40 b5 0c ee d7 87 86 d5 22 bc 5f 1f
+- 2026 Jul 09 21:53:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010400.841   00e0: 2e 59 8f f0 0e 00 e8 70 3d c1 fb 35
+- 2026 Jul 09 21:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010475.580 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010475.580 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010475.580 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010475.580 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:54:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010475.580 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 21:54:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 010488.412 wl1: STA b6:59:60:77:25:c4 has associated tx_type 17
+- 2026 Jul 09 21:54:48 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 010488.498 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 21:55:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 010503.321 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 21:55:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 010503.321 SBF: wl1.1: free sbfidx 119
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.631 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.682 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.683 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.683 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.683 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.683 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010705.683 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010725.687 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010725.687 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010725.687 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010725.687 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 21:58:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010725.687 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.676 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.676 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.676 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.676 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.676 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.701 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.701 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.701 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.701 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:00:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 010855.701 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:01:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 010885.642 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 22:04:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011055.765 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:04:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011055.765 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:04:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011055.765 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:04:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011055.765 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:04:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011055.765 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.816 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.816 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.816 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.816 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.816 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.817 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.817 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.817 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.817 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011175.817 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.831 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.831 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.831 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.831 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.831 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.843 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.843 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.843 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.843 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011185.843 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042 wl0: wlc_recv: dropping a frame with invalid src mac address df:87:47:c4:21:44 type data ISMULTI  sub type=-1 pad=0 hwrxoff=192(52) mrxs=0x0006 hdr=0x00139f7ax
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042 PKT ptr = 00139eacx, fifo=2(2)
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042 PKT:
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0000: 48 43 88 98 ba 00 00 00 ba af b7 ba a4 01 02 02
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0010: 06 00 7e 01 01 0c 10 00 10 00 2f 01 ff ff 00 00
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0020: 00 80 00 04 06 10 02 bb 00 00 95 42 88 98 24 0a
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0030: 28 00 04 44 02 00 ba af b7 bb 4d fa 78 00 04 00
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0040: 00 4d 00 00 00 00 80 80 80 80 80 80 80 80 42 01
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0050: 03 00 00 18 01 00 b5 9e 1f 00 00 00 bf e7 f7 e9
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0060: ff ff df fb b7 fd ff ff ff f7 fe ff f5 ff ff ef
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0070: fe ff e7 fb ff 7f ff cf df ff ff fd fe ff bf ff
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0080: f6 ff ff 7f fe fb f3 ff ff 7f ff eb ff f2 ff df
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   0090: ff ef ff eb ff fe ff bb b3 ff ff ff d9 8f 33 df
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   00a0: ff ff fd ff fb f7 ed ff bf ff ff ff ff ff ff bf
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   00b0: f7 bf fb 7f fe ef fd ef ff ff ef ff 00 00 00 00
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   00c0: cb 11 02 04 1f 6b 20 70 42 19 00 00 00 00 08 e3
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   00d0: 70 00 f7 e1 d0 70 0c 51 df 87 47 c4 21 44 7d 1f
+- 2026 Jul 09 22:06:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011216.042   00e0: 3e 19 87 20 05 00 38 7d 2c 81 d4 f7
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.871 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.871 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.871 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.871 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.871 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.872 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.872 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.872 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.872 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:07:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011245.872 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:08:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011286.773 PHY ilna_protect: Enter Mitigation state. cnt=0x6
+- 2026 Jul 09 22:08:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011288.777 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 22:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011325.917 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011325.917 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011325.917 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011325.917 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011325.917 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:16:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011791.500 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 22:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011806.052 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011806.052 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011806.052 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011806.052 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:16:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 011806.052 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:21:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012076.153 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:27:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012466.366 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:27:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012466.366 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:27:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012466.366 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:27:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012466.366 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:27:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012466.366 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012986.524 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012986.524 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012986.524 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012986.524 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:36:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 012986.524 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.614 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.614 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.614 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.614 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.614 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.615 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.615 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.615 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.615 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013206.615 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.657 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.659 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.659 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.659 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.659 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.659 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.675 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.675 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.675 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.675 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013216.675 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013256.672 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013256.695 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013256.695 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013256.695 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013256.695 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:40:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013256.695 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:45:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013516.748 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:45:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013516.748 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:45:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013516.748 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:45:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013516.748 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:45:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013516.748 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:45:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013546.732 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:45:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013546.732 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:45:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013546.732 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:45:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013546.732 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:45:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013546.732 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:45:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013542.025 wl1.1: wlc_he_htc_process_omi: OMI: Nothing to update omi_htc: 0x1281 -> 0x1281
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.743 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.743 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.743 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.743 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.743 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.744 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.744 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.744 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.744 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013586.744 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013606.758 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013606.758 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013606.758 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013606.758 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013606.758 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.823 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.823 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.823 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.823 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.823 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.844 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.844 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.844 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.844 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:47:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013666.844 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013876.865 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013876.865 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013876.865 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013876.865 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:51:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 013876.865 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.082 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.083 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.083 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.083 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 013952.083 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 22:53:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014006.945 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 22:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014257.051 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014257.051 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014257.051 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014257.051 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 22:57:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014257.051 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:01:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 014487.252 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 23:02:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014547.141 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:02:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014547.141 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:02:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014547.141 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:02:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014547.141 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:02:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014547.141 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:09:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014947.299 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:09:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014947.299 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:09:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014947.299 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:09:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014947.299 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:09:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 014947.299 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:10:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015047.347 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:10:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015047.347 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:10:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015047.347 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:10:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015047.347 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:10:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015047.347 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:12:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015150.130 wl1: STA 4a:0d:d7:1e:65:27 has disassociated tx_type 17
+- 2026 Jul 09 23:12:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015150.131 SBF: wl1.1: free sbfidx 127
+- 2026 Jul 09 23:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015197.398 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015197.399 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015197.399 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015197.399 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015197.399 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015197.399 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015217.768 wl1.1: wlc_he_htc_process_omi: OMI: Nothing to update omi_htc: 0x1281 -> 0x1281
+- 2026 Jul 09 23:13:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015217.774 wl1: STA 4a:0d:d7:1e:65:27 has associated tx_type 17
+- 2026 Jul 09 23:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015237.395 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015237.395 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015237.395 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015237.395 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015237.395 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:13:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015237.427 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015287.439 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015287.439 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015287.439 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015287.439 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:14:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 015287.439 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:23:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015790.149 wl1.1: 4a:0d:d7:1e:65:27: wlc_send_bar_complete: no tx attempted, txstatus: 0x0
+- 2026 Jul 09 23:23:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015791.715 wl1: STA 4a:0d:d7:1e:65:27 has disassociated tx_type 17
+- 2026 Jul 09 23:23:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015792.719 SBF: wl1.1: free sbfidx 127
+- 2026 Jul 09 23:29:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016167.754 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:29:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016167.754 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:29:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016167.754 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:29:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016167.754 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:29:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016167.754 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016217.829 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:30:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016217.831 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:30:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016217.831 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:30:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016217.831 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:30:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016217.831 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:30:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016217.831 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.807 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.807 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.807 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.807 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.807 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.808 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.808 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.808 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.808 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:30:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016247.808 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.011 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.012 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.012 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.012 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.012 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.013 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.013 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.013 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.013 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.061 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.062 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.062 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.062 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016353.062 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd030/0xe29b)
+- 2026 Jul 09 23:32:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016367.881 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:32:47 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016369.694 wl1.1: 96:ae:3d:3a:20:31: wlc_send_bar_complete: no tx attempted, txstatus: 0x0
+- 2026 Jul 09 23:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016372.891 wl1: STA 96:ae:3d:3a:20:31 has disassociated tx_type 17
+- 2026 Jul 09 23:32:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016373.895 SBF: wl1.1: free sbfidx 123
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.867 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.915 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:33:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016387.917 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.072 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.073 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.073 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.073 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.073 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.073 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.074 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.074 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.074 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.074 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:41:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 016898.074 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:44:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017058.129 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 23:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017168.182 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017168.183 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017168.183 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017168.183 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:46:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 017168.183 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 23:46:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 017188.436 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 18:08:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000268.005 SBF: wl1.1: free sbfidx 122
+- 2026 Jul 09 18:08:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000268.061 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:08:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000273.081 wl0: wlc_txbf_delete_link failed for 4a:0d:d7:1e:65:27
+- 2026 Jul 09 18:08:34 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000273.081 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 18:08:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000275.170 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:08:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000271.111 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:08:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000271.157 wl1: STA da:5c:01:69:dd:5b has associated tx_type 17
+- 2026 Jul 09 18:08:38 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000272.881 wlc_apps_ps_send: 4a:0d:d7:1e:65:27 (mark 0x9) priobmap 0xff, release count 1 not release by taf
+- 2026 Jul 09 18:08:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000273.246 SBF: wl1.1: free sbfidx 122
+- 2026 Jul 09 18:08:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000273.256 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:08:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000273.586 SBF: wl1.1: free sbfidx 122
+- 2026 Jul 09 18:08:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000273.597 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:08:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000273.934 SBF: wl1.1: free sbfidx 122
+- 2026 Jul 09 18:08:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000273.950 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000274.978 wl1.1: wlc_he_htc_process_omi: OMI: Nothing to update omi_htc: 0x1281 -> 0x1281
+- 2026 Jul 09 18:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000274.984 wl1: non-802.1X frame from unauthorized station 4a:0d:d7:1e:65:27 with ether type: 0800
+- 2026 Jul 09 18:08:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000274.986 wl1: STA 4a:0d:d7:1e:65:27 has associated tx_type 17
+- 2026 Jul 09 18:08:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000280.274 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:08:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000280.274 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:08:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000280.274 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:08:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000280.274 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:08:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000280.274 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:08:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000280.464 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:08:57 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000291.914 SBF: wl1.1: free sbfidx 123
+- 2026 Jul 09 18:09:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000335.189 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:09:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000334.233 wlc_apps_ps_send: 78:80:38:d9:b6:5a (mark 0x1) priobmap 0xff, release count 1 not release by taf
+- 2026 Jul 09 18:09:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000339.005 SBF: wl1.1: free sbfidx 123
+- 2026 Jul 09 18:10:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000363.762 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+- 2026 Jul 09 18:10:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000366.501 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x251 (0), full HTC: 0x21c9447
+- 2026 Jul 09 18:10:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000368.813 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 18:10:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000368.813 SBF: wl1.1: free sbfidx 127
+- 2026 Jul 09 18:10:14 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000378.864 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:10:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000379.903 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 09 18:10:15 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000380.010 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 18:10:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000395.201 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:10:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000400.336 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:11:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000460.249 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:12:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000508.174 wl0: wlc_is_publicaction: 1c:53:f9:8c:e2:f1: rx frame has category 9, pub action field 5; should have cat 4
+- 2026 Jul 09 18:12:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000508.174 wl0: wlc_recvfilter: bad frame control 0x40d0 from 1c:53:f9:8c:e2:f1
+- 2026 Jul 09 18:12:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000515.273 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:12:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000520.687 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405 wl0: wlc_recv: dropping a frame with invalid src mac address 7b:b3:9d:64:74:ae type data ISMULTI  sub type=-1 pad=2 hwrxoff=192(52) mrxs=0x000e hdr=0x00136434x
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405 PKT ptr = 00136364x, fifo=2(2)
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405 PKT:
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0000: c0 f3 98 1d b7 00 00 00 b2 b1 b7 b1 a6 01 02 02
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0010: 0e 00 7c 01 01 0c 00 00 00 08 0f 01 ff ff 50 00
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0020: 00 80 00 04 06 10 02 b7 00 00 c5 df 98 1d d1 db
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0030: 28 00 04 44 02 00 b2 b1 b7 b2 c7 05 78 00 00 00
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0040: 00 c7 00 00 00 00 80 80 80 80 80 80 80 80 42 01
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0050: 01 00 00 18 01 00 df 54 00 00 00 00 bf e7 f7 e9
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0060: ff ff ff fb b7 fd ff ff ff f7 fe ff f5 ff ff af
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0070: fe ff f7 fb ff ff ff cf df ff ff fd ff ff bf ff
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0080: f6 ff ff 7f fe fb f1 ff ff 7f ff fb bf f2 ff df
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   0090: 7f ef ff eb ff ff ff bb b3 ff ff ff f9 8f 33 df
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   00a0: ff ff fd ff eb f7 ed ff bf ff ff ff ff ff df ff
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   00b0: f7 bf fa f7 fe ff fd ef ff ff ef ff 00 00 00 00
+- 2026 Jul 09 18:13:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   00c0: 8b e0 8b e0 01 04 0f 7e 20 30 42 25 00 00 00 00
+- 2026 Jul 09 18:13:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   00d0: ea c3 30 00 df 68 17 19 9d ed 7b b3 9d 64 74 ae
+- 2026 Jul 09 18:13:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000563.405   00e0: ae cd 76 93 cd a9 0e 00 cb 51 36 66 59 8e
+- 2026 Jul 09 18:13:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000574.915 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 18:13:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000580.617 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.938 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.938 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.938 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.938 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.938 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.997 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.997 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.997 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.997 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000599.997 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:14:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000635.344 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:14:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000640.539 wl0.1: 20:f1:b2:8d:c0:a8: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 0 policy 0 tid 0
+- 2026 Jul 09 18:26:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000268.700 SBF: wl1.1: free sbfidx 121
+- 2026 Jul 09 18:26:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000268.770 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:26:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000297.133 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:26:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000297.133 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:26:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000297.133 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:26:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000297.133 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:26:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000297.133 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:26:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000303.675 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 18:26:59 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000305.507 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 18:27:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000308.279 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 18:27:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000318.153 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 18:27:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000334.833 SBF: wl1.1: free sbfidx 121
+- 2026 Jul 09 18:27:39 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000340.825 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 18:29:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000442.029 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 18:29:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000457.728 wl0: wlc_ampdu_update_statistics: retry miscount SU (tx_cnt 5, txsucc_cnt 6, mutype 0)
+- 2026 Jul 09 18:29:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000476.241 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 18:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000506.920 wl0: wlc_txbf_delete_link failed for 3c:62:f0:43:70:ed
+- 2026 Jul 09 18:30:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000506.920 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 18:30:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000509.454 wl0: wlc_txbf_delete_link failed for 3c:62:f0:43:70:ed
+- 2026 Jul 09 18:30:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000509.454 SBF: wl0.1: free sbfidx 127
+- 2026 Jul 09 18:33:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 000684.501 SBF: wl1.1: free sbfidx 125
+- 2026 Jul 09 18:33:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000697.826 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 18:33:35 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000707.270 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:33:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000717.307 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:34:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000767.404 PHY ilna_protect: Enter Mitigation state. cnt=0xd
+- 2026 Jul 09 18:34:42 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000769.407 PHY ilna_protect: Exit Mitigation state
+- 2026 Jul 09 18:35:17 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000809.990 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 18:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000837.330 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000837.330 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000837.330 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000837.330 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:35:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000837.330 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:36:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000857.341 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:36:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000857.341 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:36:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000857.341 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:36:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000857.341 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:36:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000857.341 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:36:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000876.166 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 18:36:37 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 000890.091 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 18:38:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.383 ESCAN request while ESCAN in progress, abort current scan
+- 2026 Jul 09 18:38:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.442 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:38:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.442 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:38:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.442 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:38:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.442 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:38:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 000987.442 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:41:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001167.477 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:41:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001167.479 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:41:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001167.479 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:41:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001167.479 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:41:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001167.479 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:41:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001167.479 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:42:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001247.496 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:45:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001387.599 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:45:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001387.599 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:45:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001387.599 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:45:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001387.599 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:45:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001387.599 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.616 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.617 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.617 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.617 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.617 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.666 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.666 wl1.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.667 wl1.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.667 wl1.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 001532.667 wl1.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0xd02c/0xe29b)
+- 2026 Jul 09 18:48:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001577.661 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:48:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001577.661 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:48:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001577.661 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:48:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001577.661 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:48:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001577.661 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:49:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001687.182 wl2: wlc_is_publicaction: b6:59:60:77:25:c4: rx frame has category 9, pub action field 68; should have cat 4
+- 2026 Jul 09 18:49:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 001687.182 wl2: wlc_recvfilter: bad frame control 0x40d0 from b6:59:60:77:25:c4
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.706 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:51:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001797.708 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.925 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.958 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.969 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.969 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.969 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.969 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 18:52:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 001837.969 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:42:00 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265049.957 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:42:03 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265052.884 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:42:22 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265071.541 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:42:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265074.651 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:42:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265092.700 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:43:25 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265123.357 wl1: turn sta MFP setting on with sha256
+- 2026 Jul 09 17:43:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265124.405 wl1: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 09 17:43:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265124.491 wl1: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa71 (0), full HTC: 0x21e9c47
+- 2026 Jul 09 17:43:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265139.945 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:43:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265143.016 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:44:01 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265171.145 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:44:04 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265174.170 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:45:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265229.716 wl1: wlc_txbf_delete_link failed for b6:59:60:77:25:c4
+- 2026 Jul 09 17:45:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265229.716 SBF: wl1.1: free sbfidx 124
+- 2026 Jul 09 17:45:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265240.815 wl2: turn sta MFP setting on with sha256
+- 2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.860 wl2: STA b6:59:60:77:25:c4 has associated tx_type 33
+- 2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.959 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.975 wl2: wlc_is_publicaction: b6:59:60:77:25:c4: rx frame has category 9, pub action field 0; should have cat 4
+- 2026 Jul 09 17:45:12 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265241.975 wl2: wlc_recvfilter: bad frame control 0x40d0 from b6:59:60:77:25:c4
+- 2026 Jul 09 17:45:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265253.997 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:45:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265256.940 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:45:28 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265258.087 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:45:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265261.045 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:45:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265263.105 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:45:36 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265266.056 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:45:54 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265284.325 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:46:07 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265296.682 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:46:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265310.741 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:46:33 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265322.776 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 17:46:40 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265324.574 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x100b/0x1006)
+- 2026 Jul 09 17:47:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265360.822 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.770 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265374.771 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:47:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265380.659 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:48:26 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265435.691 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:48:30 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265434.645 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:48:43 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265453.153 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:48:45 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265455.147 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:48:51 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265461.091 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:49:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265475.145 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:49:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265475.840 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:49:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265476.032 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:49:06 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265476.043 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:49:10 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265479.787 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+- 2026 Jul 09 17:49:41 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265499.377 wl1.7: 9c:24:72:20:cd:68: wlc_send_bar_complete: no tx attempted, txstatus: 0x0
+- 2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.1: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.2: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.4: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.6: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:49:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265514.670 wl0.7: wlc_probresp_filter_and_reply: AP not ON channel, chanspec (wlc/home)=(0x1001/0x1006)
+- 2026 Jul 09 17:50:02 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 265520.421 SBF: wl1.7: free sbfidx 122
+- 2026 Jul 09 17:50:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265544.370 wl0: turn sta MFP setting on with sha256
+- 2026 Jul 09 17:50:21 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265545.901 SBF: wl0.1: free sbfidx 126
+- 2026 Jul 09 17:50:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265547.647 SBF: wl0.1: free sbfidx 126
+- 2026 Jul 09 17:50:23 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265553.175 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0xa79 (0), full HTC: 0x21e9e47
+- 2026 Jul 09 17:50:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265548.254 wl0: turn sta MFP setting on with sha256
+- 2026 Jul 09 17:50:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 265548.904 SBF: wl0.1: free sbfidx 126
+- 2026 Jul 09 17:50:24 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 265554.329 wl2: wlc_he_parse_htcode: Invalid HTC eht_omi = 0x8 (1), he_omi = 0x259 (0), full HTC: 0x21c9647
+
+
+### WIFI_DISCONNECT
+
+Occurrences: 46
+
+Start Time: 
+2026-07-07 03:07:11.135390
+
+End Time: 
+2026-07-09 23:32:50.127318
+
+Sources:
+
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-07 08:00:00-78:B3:9F:FE:0C:11_Logs_07-07-26-08-07AM/nvram2/logs/messages.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-07 08:00:00-78:B3:9F:FE:0C:11_Logs_07-07-26-08-07AM/nvram2/logs/wifiMon.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 18:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-06-05PM/nvram2/logs/wifiMon.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 18:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-06-23PM/nvram2/logs/wifiMon.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 19:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-07-01PM/nvram2/logs/wifiMon.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 23:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-11-51PM/nvram2/logs/messages.txt
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 23:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-11-51PM/nvram2/logs/wifiMon.txt
+
+Events:
+
+- 2026 Jul 07 03:07:11 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 039672.091 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 03:50:05 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042247.699 wl2: STA 86:b4:88:63:2f:77 has disassociated tx_type 33
+- 2026 Jul 07 03:51:52 xer10 kernel: BRCM-WIFI: CONSOLE[wl0]: 042348.911 wl0: STA f6:86:1d:6b:95:3b has disassociated tx_type 17
+- 2026 Jul 07 03:54:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 042509.152 wl2: STA 86:05:41:4e:bf:df has disassociated tx_type 33
+- 2026 Jul 07 03:58:46 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 042758.047 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 04:24:20 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 044302.826 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026 Jul 07 05:59:49 xer10 kernel: BRCM-WIFI: CONSOLE[wl2]: 050034.994 wl2: STA b6:59:60:77:25:c4 has disassociated tx_type 33
+- 2026-07-07 03:07:11.135390 [OneWifi] 260707-03:07:11.135390<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 03:32:58.152049 [OneWifi] 260707-03:32:58.152049<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+- 2026-07-07 03:36:39.063028 [OneWifi] 260707-03:36:39.063028<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:86:b4:88:63:2f:77
+- 2026-07-07 03:50:04.573152 [OneWifi] 260707-03:50:04.573152<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:b4:88:63:2f:77
+- 2026-07-07 03:51:51.259259 [OneWifi] 260707-03:51:51.259259<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:f6:86:1d:6b:95:3b
+- 2026-07-07 03:52:48.964013 [OneWifi] 260707-03:52:48.964013<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 03:54:27.086666 [OneWifi] 260707-03:54:27.086666<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:86:05:41:4e:bf:df
+- 2026-07-07 03:58:46.390108 [OneWifi] 260707-03:58:46.390108<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-07 04:01:07.488342 [OneWifi] 260707-04:01:07.488342<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-07 04:13:52.426849 [OneWifi] 260707-04:13:52.426849<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 04:19:07.743145 [OneWifi] 260707-04:19:07.743145<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 04:24:20.054714 [OneWifi] 260707-04:24:20.054714<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 05:12:11.216996 [OneWifi] 260707-05:12:11.216996<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 05:12:42.363283 [OneWifi] 260707-05:12:42.363283<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-07 05:15:29.764678 [OneWifi] 260707-05:15:29.764678<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 05:59:49.967532 [OneWifi] 260707-05:59:49.967532<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-07 06:12:02.941543 [OneWifi] 260707-06:12:02.941543<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:28:6b:b4:2a:74:1a
+- 2026 Jul 09 20:06:44 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 004001.935 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 17
+- 2026 Jul 09 21:42:31 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 009751.845 wl1: STA b6:59:60:77:25:c4 has disassociated tx_type 17
+- 2026 Jul 09 23:12:27 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015150.130 wl1: STA 4a:0d:d7:1e:65:27 has disassociated tx_type 17
+- 2026 Jul 09 23:23:09 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 015791.715 wl1: STA 4a:0d:d7:1e:65:27 has disassociated tx_type 17
+- 2026 Jul 09 23:32:50 xer10 kernel: BRCM-WIFI: CONSOLE[wl1]: 016372.891 wl1: STA 96:ae:3d:3a:20:31 has disassociated tx_type 17
+- 2026-07-09 19:22:07.715927 [OneWifi] 260709-19:22:07.715927<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 19:36:35.903954 [OneWifi] 260709-19:36:35.903954<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-09 20:06:43.996488 [OneWifi] 260709-20:06:43.996488<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 20:08:46.484514 [OneWifi] 260709-20:08:46.484514<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 21:37:27.698184 [OneWifi] 260709-21:37:27.698184<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:20:f1:b2:8d:c0:a8
+- 2026-07-09 21:42:26.348587 [OneWifi] 260709-21:42:26.348587<I>  device_disassociated:2844:Device diaassociated on interface:16 mac:b6:59:60:77:25:c4
+- 2026-07-09 21:42:31.664601 [OneWifi] 260709-21:42:31.664601<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 21:55:02.850110 [OneWifi] 260709-21:55:02.850110<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 23:12:27.842786 [OneWifi] 260709-23:12:27.842786<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:4a:0d:d7:1e:65:27
+- 2026-07-09 23:23:09.175221 [OneWifi] 260709-23:23:09.175221<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:4a:0d:d7:1e:65:27
+- 2026-07-09 23:32:50.127318 [OneWifi] 260709-23:32:50.127318<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:96:ae:3d:3a:20:31
+- 2026-07-09 18:10:14.414464 [OneWifi] 260709-18:10:14.414464<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 18:27:29.558113 [OneWifi] 260709-18:27:29.558113<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:3c:62:f0:3a:20:00
+- 2026-07-09 18:30:20.190492 [OneWifi] 260709-18:30:20.190492<I>  device_disassociated:2844:Device diaassociated on interface:0 mac:3c:62:f0:43:70:ed
+- 2026-07-09 18:33:17.930325 [OneWifi] 260709-18:33:17.930325<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:1c:53:f9:8c:e2:f1
+- 2026-07-09 17:45:11.344953 [OneWifi] 260709-17:45:11.344953<I>  device_disassociated:2844:Device diaassociated on interface:1 mac:b6:59:60:77:25:c4
+- 2026-07-09 17:50:00.934689 [OneWifi] 260709-17:50:00.934689<I>  device_disassociated:2844:Device diaassociated on interface:13 mac:9c:24:72:20:cd:68
+
+
+### STORAGE_FAILURE
+
+Occurrences: 9
+
+Start Time: 
+None
+
+End Time: 
+None
+
+Sources:
+
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-07 08:00:00-78:B3:9F:FE:0C:11_Logs_07-07-26-08-07AM/nvram2/logs/SelfHeal.txt.0
+- reports/20260722_161012/workspace/78_B3_9F_FE_0C_11/2026-07-09 23:00:00-78:B3:9F:FE:0C:11_Logs_07-09-26-11-51PM/nvram2/logs/SelfHeal.txt.0
+
+Events:
+
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3747  2292   356  1416  1276   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+- 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+

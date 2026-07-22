@@ -1,0 +1,39 @@
+39
+260709-17:41:28.651384 [DEBUG] --OUT function backupnvram2logs
+260709-17:41:33.126160 [mod=T2, lvl=INFO] [tid=23779] Grep complete for 1176 markers 
+260709-17:41:33.126720 [mod=T2, lvl=INFO] [tid=23779] cJSON Report = {"searchResult":[{"T2":"1.0"},{"Profile":"RDKB"},{"Time":"2026-07-09 17:41:18"},{"mac":"78:b3:9f:fe:0c:11"},{"erouterIpv4":"24.65.240.148"},{"erouterIpv6":"2604:3d08:3:33::b50d:1e81"},{"PartnerId":"shaw"},{"Version":"SCER11BEL_8.2p11s1_PROD_sey"},{"AccountId":"3277006077133108326"},{"LT_split":"2026-07-09T11:41:18Z"},{"SecHSEnable_split":"false"},{"PortMap_split":"0"},{"CMMAC_split":"78:B3:9F:FE:0C:0F"},{"Wifi_2G_utilization_split":"34"},{"Wifi_5G_utilization_split":"49"},{"Wifi_6G_utilization_split":"2"},{"SYS_INFO_LogUpload_Disabled":"1"},{"WIFI_INFO_MeshDeauth":"1"},{"WIFI_INFO_OpenSyncBTM":"6"},{"WifiTemp_6G_split":"74 "},{"thermal_ChipTemp_split":" 62"},{"WifiTemp_2G_split":"67 "},{"WifiTemp_5G_split":"70 "},{"SlabMem_split":" 149348 kB"},{"AvailMem_split":"     891620 kB"},{"TotalMem_split":"        2031572 kB"},{"HS_Halleffect_split":"LDHD2AZW,20.468|LDHD2AZW,1.460|LDHD2AZW,9.938"},{"HS_AWSActive_split":"state=COMPLETE cell=DOWN"},{"cpu_PsmSsp":"0.0"},{"mem_PsmSsp":"13m"},{"cpu_cujo-agent":"0.4"},{"mem_cujo-agent":"23m"},{"cpu_ovsdb-server":"0.0"},{"mem_ovsdb-server":"14m"},{"cpu_telemetry2_0":"0.0"},{"mem_telemetry2_0":"13m"},{"cpu_aker":"0.0"},{"mem_aker":"7m"},{"cpu_rdkthermalmanager":"0.0"},{"mem_rdkthermalmanager":"5m"},{"WIFI_INFO_clientdisconnect":"1"},{"WIFI_INFO_mesh_enabled":"1"},{"2GRSSI_split":"-57,-35,"},{"MAXRX_1_split":"72,72,"},{"MAXRX_2_split":"866,1201,1201,1201,542,866,"},{"MAXTX_1_split":"72,72,"},{"MAXTX_2_split":"866,1201,1201,1201,542,866,"},{"Total_2G_clients_split":"2"},{"Total_5G_PodClients_split":"2"},{"WIFI_CW_1_split":"20,20,"},{"WIFI_CW_2_split":"80,80,80,80,80,80,"},{"WIFI_ERRORSSENT_1_split":"0,0,"},{"WIFI_ERRORSSENT_2_split":"0,0,0,0,0,0,"},{"WIFI_PACKETSSENTCLIENTS_1_split":"271,277,"},{"WIFI_PACKETSSENTCLIENTS_2_split":"265852,78,65798,1161,1159,14986,"},{"WIFI_REC_1_split":"28:6b:b4:2a:74:1a,0;a4:57:a0:1f:d9:d5,0;"},{"WIFI_REC_2_split":"78:80:38:d9:b6:5a,0;4a:0d:d7:1e:65:27,0;96:ae:3d:3a:20:31,0;da:5c:01:69:dd:5b,0;1c:53:f9:8c:e2:f1,0;3c:62:f0:39:62:a0,0;"},{"WIFI_RX_1_split":"72,6,"},{"WIFI_RX_2_split":"520,864,864,162,433,468,"},{"WIFI_SNR_1_split":"33,55,"},{"WIFI_SNR_2_split":"26,36,37,35,38,28,"},{"WIFI_TX_1_split":"65,65,"},{"WIFI_TX_2_split":"866,1134,1134,1200,433,702,"},{"WIFI_VAPPERC_split":"1,100;2,100;3,100;4,0;5,0;6,0;7,100;8,100;9,0;10,0;11,100;12,100;13,100;14,100;15,0;16,0;17,100;18,0;19,0;20,100;21,0;23,0;24,0;"},{"2GclientMac_split":"28:6b:b4:2a:74:1a,a4:57:a0:1f:d9:d5,"}]}
+260709-17:41:33.126780 [mod=T2, lvl=INFO] [tid=23779] Report Size = 2477
+260709-17:41:33.126842 [mod=T2, lvl=INFO] [tid=23779] sendReportOverHTTP: state_red_enable: 0
+260709-17:41:33.127643 [mod=T2, lvl=INFO] [tid=23779] mTLS defaulted for telemetry
+260709-17:41:33.826137 [mod=T2, lvl=INFO] [tid=23779] The return status from the child with pid 2166 is CurlStatus : 1
+260709-17:41:33.826201 [mod=T2, lvl=INFO] [tid=23779] The return status from the child with pid 2166 SetopCode: No error; ResponseCode : No error; HTTP_CODE : 200; Line Number : 524 
+260709-17:41:33.826228 [mod=T2, lvl=INFO] [tid=23779] Report Sent Successfully over HTTP : 200
+260709-17:41:33.826251 [mod=T2, lvl=INFO] [tid=23779] Elapsed Time for : XER_Telemetry_New = 15.82716149 (Sec.NanoSec)
+260709-17:41:33.826281 [mod=T2, lvl=INFO] [tid=23779] CollectAndReportXconf while Loop -- END 
+260709-17:41:33.826294 [mod=T2, lvl=INFO] [tid=23779] CollectAndReportXconf --out
+260709-17:43:18.746347 /lib/rdk/dca_utility.sh : Clearing markers from /nvram/.telemetry
+260709-17:43:18.750953 /lib/rdk/dca_utility.sh : Exiting ...
+260709-17:45:09.032273 [mod=T2, lvl=INFO] [tid=12255] TIMEOUT for profile - Zilker_T2
+260709-17:45:09.032326 [mod=T2, lvl=INFO] [tid=12255] ReportProfiles_TimeoutCb ++in
+260709-17:45:09.032359 [mod=T2, lvl=INFO] [tid=12255] NotifyTimeout: profile Zilker_T2 is in Enabled state
+260709-17:45:09.032374 [mod=T2, lvl=INFO] [tid=12255] Signal Thread To restart
+260709-17:45:09.032409 [mod=T2, lvl=INFO] [tid=12255] ReportProfiles_TimeoutCb --out
+260709-17:45:09.032429 [mod=T2, lvl=INFO] [tid=12255] Waiting for 3631 sec for next TIMEOUT for profile as reporting interval is taken - Zilker_T2
+260709-17:45:09.032452 [mod=T2, lvl=INFO] [tid=12255] Waiting for timeref or reporting interval for the profile - Zilker_T2 is started
+260709-17:45:09.032488 [mod=T2, lvl=INFO] [tid=29164] CollectAndReport while Loop -- START 
+260709-17:45:09.032505 [mod=T2, lvl=INFO] [tid=29164] CollectAndReport ++in profileName : Zilker_T2
+260709-17:45:09.038524 [mod=T2, lvl=INFO] [tid=29164] cJSON Report = {"Report":[{"Profile.Name":"Zilker_T2"},{"Profile.Version":"0.1"},{"Profile":"RDKB"},{"Time":"2026-07-09 17:45:09"},{"mac":"78:b3:9f:fe:0c:11"},{"CMMAC_split":"78:B3:9F:FE:0C:0F"},{"erouterIpv4":"24.65.240.148"},{"erouterIpv6":"2604:3d08:3:33::b50d:1e81"},{"PartnerId":"shaw"},{"Version":"SCER11BEL_8.2p11s1_PROD_sey"},{"AccountId":"3277006077133108326"},{"WIFI_INFO_WFMEnable_split":"false"},{"SYS_INFO_TotalZigbeesensor_split":"LDHD2AZW,4;H74470BA00-00007,1;"},{"SYS_INFO_TotalZigbeeSensor_split":"5"}]}
+260709-17:45:09.038577 [mod=T2, lvl=INFO] [tid=29164] Report Size = 505
+260709-17:45:09.038674 [mod=T2, lvl=INFO] [tid=29164] sendReportOverHTTP: state_red_enable: 0
+260709-17:45:09.039070 [mod=T2, lvl=INFO] [tid=29164] mTLS defaulted for telemetry
+260709-17:45:09.737307 [mod=T2, lvl=INFO] [tid=29164] The return status from the child with pid 4802 is CurlStatus : 1
+260709-17:45:09.737367 [mod=T2, lvl=INFO] [tid=29164] The return status from the child with pid 4802 SetopCode: No error; ResponseCode : No error; HTTP_CODE : 200; Line Number : 524 
+260709-17:45:09.737382 [mod=T2, lvl=INFO] [tid=29164] Report Sent Successfully over HTTP : 200
+260709-17:45:09.737405 [mod=T2, lvl=INFO] [tid=29164] Elapsed Time for : Zilker_T2 = 0.704884678 (Sec.NanoSec)
+260709-17:45:09.737423 [mod=T2, lvl=INFO] [tid=29164] CollectAndReport while Loop -- END; wait for restart event
+260709-17:45:09.737435 [mod=T2, lvl=INFO] [tid=29164] CollectAndReport --out
+260709-17:45:11.358738 [mod=T2, lvl=INFO] [tid=13952] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-17:48:01.049501 [mod=T2, lvl=INFO] [tid=13952] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-17:48:01.074503 [mod=T2, lvl=INFO] [tid=13952] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-17:48:31.156995 [mod=T2, lvl=INFO] [tid=13952] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-17:48:32.198958 [mod=T2, lvl=INFO] [tid=13952] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New

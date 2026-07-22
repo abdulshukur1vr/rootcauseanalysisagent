@@ -1,0 +1,151 @@
+151
+260709-18:26:53.969048 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 alg:0 seq:1 sc:0 len:30 rssi:-59
+260709-18:26:53.969414 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed alg:0 seq:2 sc:0
+260709-18:26:53.970319 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:26:58.860504 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 alg:0 seq:1 sc:0 len:30 rssi:-58
+260709-18:26:58.860840 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed alg:0 seq:2 sc:0
+260709-18:26:58.861719 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:26:58.864662 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 disassoc sc:1 deauth sc:1 len:26 reason:0
+260709-18:26:58.864859 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:26:58.865111 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed reason:0
+260709-18:26:58.875296 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 disassoc sc:2 deauth sc:2 len:26 reason:0
+260709-18:26:59.867162 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 disassoc sc:2 deauth sc:2 len:26 reason:0
+260709-18:27:01.622867 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 alg:0 seq:1 sc:0 len:30 rssi:-59
+260709-18:27:01.623232 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed alg:0 seq:2 sc:0
+260709-18:27:01.624593 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:27:06.641432 <I>  process_frame_mgmt:1072: interface:wl0.1 received assoc frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 cap:0x1411 len:125 rssi:-58
+260709-18:27:06.642012 <I>  wifi_drv_sta_add:10565: Set STA 3c:62:f0:43:70:ed
+260709-18:27:06.642313 <I>  wifi_drv_send_mlme:9823: interface:wl0.1 send assoc resp frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed cap:0x1411 aid:12 sc:0
+260709-18:27:06.643958 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:27:06.644959 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x62 flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-18:27:06.645314 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed replay counter:1
+260709-18:27:07.645712 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed replay counter:2
+260709-18:27:07.660338 <I>  recv_data_frame:1897: interface:wl0.1 received eapol m2 from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 reply counter:2
+260709-18:27:07.661898 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m3 from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed replay counter:3
+260709-18:27:07.670972 <I>  recv_data_frame:1897: interface:wl0.1 received eapol m4 from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 reply counter:3
+260709-18:27:07.671714 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x63 flags_or=0x1 flags_and=0xffffffff authorized=1
+260709-18:27:29.556208 <I>  process_frame_mgmt:1265: interface:wl1.1 received deauth frame from:3c:62:f0:3a:20:00 to:92:b3:9f:fe:0c:15 disassoc sc:9 deauth sc:9 len:26 reason:0
+260709-18:27:29.556357 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=3c:62:f0:3a:20:00 total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:27:29.556733 <I>  wifi_sta_remove:8958: interface:wl1.1 send deauth from:92:b3:9f:fe:0c:15 to:3c:62:f0:3a:20:00 reason:0
+260709-18:27:29.561891 <I>  process_frame_mgmt:1206: interface:wl1.1 received disassoc frame from:3c:62:f0:3a:20:00 to:92:b3:9f:fe:0c:15 len:24 reason:0
+260709-18:27:39.150009 <I>  process_frame_mgmt:1042: interface:wl1.1 received auth frame from:3c:62:f0:3a:20:00 to:92:b3:9f:fe:0c:15 alg:0 seq:1 sc:0 len:41 rssi:-68
+260709-18:27:39.150404 <I>  wifi_drv_send_mlme:9815: interface:wl1.1 send auth frame from:92:b3:9f:fe:0c:15 to:3c:62:f0:3a:20:00 alg:0 seq:2 sc:0
+260709-18:27:39.152844 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=3c:62:f0:3a:20:00 total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:27:39.165725 <I>  process_frame_mgmt:1072: interface:wl1.1 received assoc frame from:3c:62:f0:3a:20:00 to:92:b3:9f:fe:0c:15 cap:0x11 len:165 rssi:-69
+260709-18:27:39.166418 <I>  wifi_drv_sta_add:10565: Set STA 3c:62:f0:3a:20:00
+260709-18:27:39.168174 <I>  wifi_drv_send_mlme:9823: interface:wl1.1 send assoc resp frame from:92:b3:9f:fe:0c:15 to:3c:62:f0:3a:20:00 cap:0x1011 aid:11 sc:0
+260709-18:27:39.170290 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=3c:62:f0:3a:20:00 total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:27:39.175070 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=3c:62:f0:3a:20:00 total_flags=0x62 flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-18:27:39.175721 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m1 from:92:b3:9f:fe:0c:15 to:3c:62:f0:3a:20:00 replay counter:1
+260709-18:27:39.184020 <I>  recv_data_frame:1897: interface:wl1.1 received eapol m2 from:3c:62:f0:3a:20:00 to:92:b3:9f:fe:0c:15 reply counter:1
+260709-18:27:39.185993 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m3 from:92:b3:9f:fe:0c:15 to:3c:62:f0:3a:20:00 replay counter:2
+260709-18:27:39.194295 <I>  recv_data_frame:1897: interface:wl1.1 received eapol m4 from:3c:62:f0:3a:20:00 to:92:b3:9f:fe:0c:15 reply counter:2
+260709-18:27:39.195854 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=3c:62:f0:3a:20:00 total_flags=0x63 flags_or=0x1 flags_and=0xffffffff authorized=1
+260709-18:30:20.189404 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 disassoc sc:3 deauth sc:3 len:26 reason:0
+260709-18:30:20.189523 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:30:20.189712 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed reason:0
+260709-18:30:20.194292 <I>  process_frame_mgmt:1206: interface:wl0.1 received disassoc frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 len:24 reason:0
+260709-18:30:21.780645 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 alg:0 seq:1 sc:0 len:30 rssi:-58
+260709-18:30:21.781018 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed alg:0 seq:2 sc:0
+260709-18:30:21.781854 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:30:21.794391 <I>  process_frame_mgmt:1072: interface:wl0.1 received assoc frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 cap:0x1411 len:125 rssi:-58
+260709-18:30:21.794932 <I>  wifi_drv_sta_add:10565: Set STA 3c:62:f0:43:70:ed
+260709-18:30:21.796054 <I>  wifi_drv_send_mlme:9823: interface:wl0.1 send assoc resp frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed cap:0x1411 aid:16 sc:0
+260709-18:30:21.798993 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:30:21.799697 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x62 flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-18:30:21.800263 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed replay counter:1
+260709-18:30:22.719380 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 disassoc sc:3 deauth sc:3 len:26 reason:0
+260709-18:30:22.719684 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:30:22.719906 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed reason:0
+260709-18:30:22.723708 <I>  process_frame_mgmt:1206: interface:wl0.1 received disassoc frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 len:24 reason:0
+260709-18:33:17.928848 <I>  process_frame_mgmt:1265: interface:wl1.1 received deauth frame from:1c:53:f9:8c:e2:f1 to:92:b3:9f:fe:0c:15 disassoc sc:1 deauth sc:1 len:26 reason:0
+260709-18:33:17.928964 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=1c:53:f9:8c:e2:f1 total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:33:17.929267 <I>  wifi_sta_remove:8958: interface:wl1.1 send deauth from:92:b3:9f:fe:0c:15 to:1c:53:f9:8c:e2:f1 reason:0
+260709-18:33:18.703389 <I>  process_frame_mgmt:1265: interface:wl1.1 received deauth frame from:1c:53:f9:8c:e2:f1 to:92:b3:9f:fe:0c:15 disassoc sc:1 deauth sc:1 len:26 reason:0
+260709-18:33:25.364348 <I>  process_frame_mgmt:1042: interface:wl1.1 received auth frame from:1c:53:f9:8c:e2:f1 to:92:b3:9f:fe:0c:15 alg:0 seq:1 sc:0 len:41 rssi:-45
+260709-18:33:25.364713 <I>  wifi_drv_send_mlme:9815: interface:wl1.1 send auth frame from:92:b3:9f:fe:0c:15 to:1c:53:f9:8c:e2:f1 alg:0 seq:2 sc:0
+260709-18:33:25.365865 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=1c:53:f9:8c:e2:f1 total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0
+260709-18:33:25.378824 <I>  process_frame_mgmt:1072: interface:wl1.1 received assoc frame from:1c:53:f9:8c:e2:f1 to:92:b3:9f:fe:0c:15 cap:0x1011 len:158 rssi:-45
+260709-18:33:25.379450 <I>  wifi_drv_sta_add:10565: Set STA 1c:53:f9:8c:e2:f1
+260709-18:33:25.380550 <I>  wifi_drv_send_mlme:9823: interface:wl1.1 send assoc resp frame from:92:b3:9f:fe:0c:15 to:1c:53:f9:8c:e2:f1 cap:0x1011 aid:14 sc:0
+260709-18:33:25.382178 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=1c:53:f9:8c:e2:f1 total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-18:33:25.382464 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=1c:53:f9:8c:e2:f1 total_flags=0x62 flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-18:33:25.383327 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m1 from:92:b3:9f:fe:0c:15 to:1c:53:f9:8c:e2:f1 replay counter:1
+260709-18:33:26.383848 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m1 from:92:b3:9f:fe:0c:15 to:1c:53:f9:8c:e2:f1 replay counter:2
+260709-18:33:26.394429 <I>  recv_data_frame:1897: interface:wl1.1 received eapol m2 from:1c:53:f9:8c:e2:f1 to:92:b3:9f:fe:0c:15 reply counter:2
+260709-18:33:26.395944 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m3 from:92:b3:9f:fe:0c:15 to:1c:53:f9:8c:e2:f1 replay counter:3
+260709-18:33:26.404984 <I>  recv_data_frame:1897: interface:wl1.1 received eapol m4 from:1c:53:f9:8c:e2:f1 to:92:b3:9f:fe:0c:15 reply counter:3
+260709-18:33:26.405844 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=1c:53:f9:8c:e2:f1 total_flags=0x63 flags_or=0x1 flags_and=0xffffffff authorized=1
+260709-18:38:20.558202 <E>  [Wrong NL SCAN output] BSSID: 0a:27:a8:71:ca:1a, IE LEN 639
+260709-18:38:20.558342 <E>  parse_supprates:7957: [SCAN] Unsupported bitrate value: 0x7B (61.5 Mbps)
+260709-18:38:20.630101 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:20.630203 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:20.630322 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:20.630347 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:21.030366 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:21.030447 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:21.030550 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:21.030574 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:21.432902 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:21.433006 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:21.433109 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:21.433133 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:21.834000 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:21.834086 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:21.834192 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:21.834214 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:22.236191 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:22.236243 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:22.236312 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:22.236336 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:22.636473 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:22.636557 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:22.636621 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:22.636643 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:23.036712 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:23.036781 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:23.036854 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:23.036876 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:23.437008 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:23.437093 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:23.437159 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:23.437181 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:23.837234 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:23.837302 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:23.837364 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:23.837386 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:24.237561 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:24.237658 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:38:24.237721 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:38:24.237744 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:20.566608 <E>  [Wrong NL SCAN output] BSSID: 0a:27:a8:71:ca:1a, IE LEN 639
+260709-18:53:20.566736 <E>  parse_supprates:7957: [SCAN] Unsupported bitrate value: 0x7B (61.5 Mbps)
+260709-18:53:20.664228 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:20.664291 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:20.664379 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:20.664402 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:21.064617 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:21.064696 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:21.064797 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:21.064822 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:21.464985 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:21.465071 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:21.465160 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:21.465183 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:21.866697 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:21.866783 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:22.265590 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:22.265633 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:22.665872 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:22.665909 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:23.066158 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:23.066230 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:23.466422 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:23.466458 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:23.866678 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:23.866718 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:24.266959 <E>  _wifi_hal_getNeighboringWiFiStatus:3035: [SCAN] Scan was aborted
+260709-18:53:24.266996 <E>  wifi_getNeighboringWiFiStatus:357: wifi_hal_getNeighboringWiFiStatus failed
+260709-18:53:55.307986 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:3c:62:f0:43:70:ed to:8a:b3:9f:fe:0c:14 alg:0 seq:1 sc:0 len:30 rssi:-63
+260709-18:53:55.308249 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:3c:62:f0:43:70:ed alg:0 seq:2 sc:0
+260709-18:53:55.310093 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=3c:62:f0:43:70:ed total_flags=0x20 flags_or=0x0 flags_and=0xfffffff0 authorized=0

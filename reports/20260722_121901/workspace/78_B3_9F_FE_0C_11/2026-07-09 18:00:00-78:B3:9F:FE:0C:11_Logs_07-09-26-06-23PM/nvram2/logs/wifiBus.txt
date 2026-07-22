@@ -1,0 +1,24 @@
+24
+[OneWifi] 260709-18:10:14.415949<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-18:10:14.416867<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-18:10:15.422639<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-18:10:15.423267<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-18:10:15.458117<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-18:10:15.458295<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55c34f53d0
+[OneWifi] 260709-18:10:15.459127<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[OneWifi] 260709-18:10:15.459294<E>  rbus_method_handler:816 user cb processing failed:2 for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-18:10:15.459526<E>   bus_method_invoke failed for  with err: 'invalid input'
+[bm] 260709-18:10:15.459626<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55c34f53d0
+[OneWifi] 260709-18:10:15.872828<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-18:10:15.872873<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-18:10:51.538316<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-18:10:53.036070<I>  rbus_set_handler:723 rbus data set end comp:wifi_config
+[OneWifi] 260709-18:10:53.036139<I>  rbus_set_handler:728 rbus cb triggered for Device.WiFi.WebConfig.Data.Subdoc.South
+[ovsm] 260709-18:10:53.036861<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.WiFi.WebConfig.Data.Subdoc.South, rc:0
+[OneWifi] 260709-18:11:06.035801<I>  rbus_set_handler:723 rbus data set end comp:wifi_config
+[OneWifi] 260709-18:11:06.035859<I>  rbus_set_handler:728 rbus cb triggered for Device.WiFi.WebConfig.Data.Subdoc.South
+[ovsm] 260709-18:11:06.036585<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.WiFi.WebConfig.Data.Subdoc.South, rc:0
+[OneWifi] 260709-18:11:36.574735<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-18:12:01.610747<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-18:12:41.639331<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-18:13:16.667543<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0

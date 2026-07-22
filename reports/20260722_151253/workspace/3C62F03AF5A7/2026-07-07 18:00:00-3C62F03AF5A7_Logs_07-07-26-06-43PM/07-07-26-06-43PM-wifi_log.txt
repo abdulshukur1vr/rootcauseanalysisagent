@@ -1,0 +1,612 @@
+07.07.2026_17:48.07 TELEMETRY_WIFI_CONNECTED
+07.07.2026_17:48.07 prevStatus = 1
+07.07.2026_17:48.26 v4 gateway = 10.0.0.1 
+07.07.2026_17:48.26 TELEMETRY_GATEWAY_RESPONSE_TIME:3.914,10.0.0.1
+07.07.2026_17:48.26 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_17:48.45 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_17:48.45 TELEMETRY_GATEWAY_RESPONSE_TIME:5.016,fe80::fad0:eff:fef3:8f07
+07.07.2026_17:48.45 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_17:48.46 TELEMETRY_WIFI_STATS:wheat101,867,-92,-54,134,65,5GHz,44,SAE
+07.07.2026_17:48.47 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_17:48.47 USED_CPU:43.689320
+07.07.2026_17:48.52 USED_MEM:67732
+07.07.2026_17:48.52 UPTIMEDAY:54914
+07.07.2026_17:48.52 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_17:48.52 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_17:48.53 ********** Complete ************
+07.07.2026_17:48.53 wpa_supplicant heartbeat success.
+07.07.2026_17:51.53 TELEMETRY_WIFI_CONNECTED
+07.07.2026_17:51.53 prevStatus = 1
+07.07.2026_17:52.13 v4 gateway = 10.0.0.1 
+07.07.2026_17:52.13 TELEMETRY_GATEWAY_RESPONSE_TIME:4.468,10.0.0.1
+07.07.2026_17:52.13 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_17:52.32 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_17:52.32 TELEMETRY_GATEWAY_RESPONSE_TIME:3.641,fe80::fad0:eff:fef3:8f07
+07.07.2026_17:52.32 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_17:52.33 TELEMETRY_WIFI_STATS:wheat101,867,-92,-53,136,66,5GHz,44,SAE
+07.07.2026_17:52.34 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_17:52.34 USED_CPU:43.298969
+07.07.2026_17:52.39 USED_MEM:67588
+07.07.2026_17:52.39 UPTIMEDAY:55141
+07.07.2026_17:52.39 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_17:52.39 UBIFS_MEMUSAGE:3.1,6.7,32
+07.07.2026_17:52.39 ********** Complete ************
+07.07.2026_17:52.40 wpa_supplicant heartbeat success.
+07.07.2026_17:52.40 ----------Device IP details----------
+07.07.2026_17:52.40 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_17:52.40 IPV4 address is 10.0.0.52
+07.07.2026_17:52.40 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_17:52.40 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_17:52.40 ----------Route table start----------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_17:52.40 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+07.07.2026_17:52.41 ----------Route table end----------
+07.07.2026_17:52.41 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_17:52.41 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_17:52.41 ----------Resolv conf end----------
+07.07.2026_17:52.41 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:23077221 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:23077221 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6419719957 (5.9 GiB)  TX bytes:6419719957 (5.9 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:319318 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:647108 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:45432750 (43.3 MiB)  TX bytes:806349993 (768.9 MiB)
+
+07.07.2026_17:52.41 ----------Ifconfig end----------
+07.07.2026_17:52.41 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_17:55.40 TELEMETRY_WIFI_CONNECTED
+07.07.2026_17:55.40 prevStatus = 1
+07.07.2026_17:56.00 v4 gateway = 10.0.0.1 
+07.07.2026_17:56.00 TELEMETRY_GATEWAY_RESPONSE_TIME:4.189,10.0.0.1
+07.07.2026_17:56.00 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_17:56.19 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_17:56.19 TELEMETRY_GATEWAY_RESPONSE_TIME:3.146,fe80::fad0:eff:fef3:8f07
+07.07.2026_17:56.19 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_17:56.20 TELEMETRY_WIFI_STATS:wheat101,867,-92,-56,139,68,5GHz,44,SAE
+07.07.2026_17:56.21 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_17:56.21 USED_CPU:42.105263
+07.07.2026_17:56.26 USED_MEM:67724
+07.07.2026_17:56.26 UPTIMEDAY:55368
+07.07.2026_17:56.26 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_17:56.26 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_17:56.26 ********** Complete ************
+07.07.2026_17:56.26 wpa_supplicant heartbeat success.
+07.07.2026_17:59.27 TELEMETRY_WIFI_CONNECTED
+07.07.2026_17:59.27 prevStatus = 1
+07.07.2026_17:59.46 v4 gateway = 10.0.0.1 
+07.07.2026_17:59.46 TELEMETRY_GATEWAY_RESPONSE_TIME:4.013,10.0.0.1
+07.07.2026_17:59.46 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:00.05 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:00.05 TELEMETRY_GATEWAY_RESPONSE_TIME:3.442,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:00.05 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:00.06 TELEMETRY_WIFI_STATS:wheat101,867,-92,-53,141,69,5GHz,44,SAE
+07.07.2026_18:00.07 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:00.07 USED_CPU:44.117647
+07.07.2026_18:00.12 USED_MEM:67588
+07.07.2026_18:00.12 UPTIMEDAY:55594
+07.07.2026_18:00.12 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:00.13 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_18:00.13 ********** Complete ************
+07.07.2026_18:00.13 wpa_supplicant heartbeat success.
+07.07.2026_18:00.13 ----------Device IP details----------
+07.07.2026_18:00.13 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_18:00.13 IPV4 address is 10.0.0.52
+07.07.2026_18:00.13 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_18:00.14 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_18:00.14 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+07.07.2026_18:00.14 ----------Route table start----------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_18:00.14 ----------Route table end----------
+07.07.2026_18:00.14 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_18:00.14 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_18:00.14 ----------Resolv conf end----------
+07.07.2026_18:00.14 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:23277280 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:23277280 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6480710449 (6.0 GiB)  TX bytes:6480710449 (6.0 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:321833 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:652287 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:45777575 (43.6 MiB)  TX bytes:813108590 (775.4 MiB)
+
+07.07.2026_18:00.14 ----------Ifconfig end----------
+07.07.2026_18:00.15 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_18:03.14 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:03.14 prevStatus = 1
+07.07.2026_18:03.33 v4 gateway = 10.0.0.1 
+07.07.2026_18:03.33 TELEMETRY_GATEWAY_RESPONSE_TIME:2.792,10.0.0.1
+07.07.2026_18:03.33 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:03.52 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:03.52 TELEMETRY_GATEWAY_RESPONSE_TIME:3.903,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:03.52 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:03.53 TELEMETRY_WIFI_STATS:wheat101,867,-92,-53,144,70,5GHz,44,SAE
+07.07.2026_18:03.54 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:03.54 USED_CPU:41.176471
+07.07.2026_18:03.59 USED_MEM:67676
+07.07.2026_18:03.59 UPTIMEDAY:55821
+07.07.2026_18:03.59 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:03.59 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_18:03.59 ********** Complete ************
+07.07.2026_18:04.00 wpa_supplicant heartbeat success.
+07.07.2026_18:07.00 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:07.00 prevStatus = 1
+07.07.2026_18:07.19 v4 gateway = 10.0.0.1 
+07.07.2026_18:07.19 TELEMETRY_GATEWAY_RESPONSE_TIME:3.459,10.0.0.1
+07.07.2026_18:07.20 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:07.39 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:07.39 TELEMETRY_GATEWAY_RESPONSE_TIME:3.573,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:07.39 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:07.40 TELEMETRY_WIFI_STATS:wheat101,867,-92,-56,147,71,5GHz,44,SAE
+07.07.2026_18:07.41 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:07.41 USED_CPU:40.206186
+07.07.2026_18:07.46 USED_MEM:69064
+07.07.2026_18:07.46 UPTIMEDAY:56048
+07.07.2026_18:07.46 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:07.46 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_18:07.46 ********** Complete ************
+07.07.2026_18:07.47 wpa_supplicant heartbeat success.
+07.07.2026_18:07.47 ----------Device IP details----------
+07.07.2026_18:07.47 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_18:07.47 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_18:07.47 IPV4 address is 10.0.0.52
+07.07.2026_18:07.48 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_18:07.48 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+07.07.2026_18:07.48 ----------Route table start----------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_18:07.48 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_18:07.48 ----------Route table end----------
+07.07.2026_18:07.48 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_18:07.48 ----------Resolv conf end----------
+07.07.2026_18:07.48 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:23478276 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:23478276 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6541878265 (6.0 GiB)  TX bytes:6541878265 (6.0 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:324442 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:657636 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:46142549 (44.0 MiB)  TX bytes:820054734 (782.0 MiB)
+
+07.07.2026_18:07.49 ----------Ifconfig end----------
+07.07.2026_18:07.49 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_18:10.47 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:10.47 prevStatus = 1
+07.07.2026_18:11.07 v4 gateway = 10.0.0.1 
+07.07.2026_18:11.07 TELEMETRY_GATEWAY_RESPONSE_TIME:3.291,10.0.0.1
+07.07.2026_18:11.07 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:11.26 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:11.26 TELEMETRY_GATEWAY_RESPONSE_TIME:3.627,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:11.26 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:11.28 TELEMETRY_WIFI_STATS:wheat101,867,-92,-53,149,73,5GHz,44,SAE
+07.07.2026_18:11.29 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:11.29 USED_CPU:40.594059
+07.07.2026_18:11.34 USED_MEM:69196
+07.07.2026_18:11.34 UPTIMEDAY:56276
+07.07.2026_18:11.34 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:11.34 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_18:11.34 ********** Complete ************
+07.07.2026_18:11.34 wpa_supplicant heartbeat success.
+07.07.2026_18:14.35 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:14.35 prevStatus = 1
+07.07.2026_18:14.54 v4 gateway = 10.0.0.1 
+07.07.2026_18:14.54 TELEMETRY_GATEWAY_RESPONSE_TIME:4.070,10.0.0.1
+07.07.2026_18:14.54 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:15.14 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:15.14 TELEMETRY_GATEWAY_RESPONSE_TIME:4.351,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:15.14 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:15.15 TELEMETRY_WIFI_STATS:wheat101,867,-92,-52,152,74,5GHz,44,SAE
+07.07.2026_18:15.15 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:15.15 USED_CPU:48.000000
+07.07.2026_18:15.20 USED_MEM:70496
+07.07.2026_18:15.20 UPTIMEDAY:56502
+07.07.2026_18:15.21 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:15.21 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_18:15.21 ********** Complete ************
+07.07.2026_18:15.21 wpa_supplicant heartbeat success.
+07.07.2026_18:15.21 ----------Device IP details----------
+07.07.2026_18:15.21 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_18:15.22 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_18:15.22 IPV4 address is 10.0.0.52
+07.07.2026_18:15.22 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_18:15.22 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+07.07.2026_18:15.22 ----------Route table start----------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_18:15.22 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_18:15.22 ----------Route table end----------
+07.07.2026_18:15.22 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_18:15.23 ----------Resolv conf end----------
+07.07.2026_18:15.23 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:23678855 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:23678855 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6602942233 (6.1 GiB)  TX bytes:6602942233 (6.1 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:327113 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:662887 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:46504247 (44.3 MiB)  TX bytes:826891099 (788.5 MiB)
+
+07.07.2026_18:15.23 ----------Ifconfig end----------
+07.07.2026_18:15.23 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_18:18.22 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:18.22 prevStatus = 1
+07.07.2026_18:18.41 v4 gateway = 10.0.0.1 
+07.07.2026_18:18.41 TELEMETRY_GATEWAY_RESPONSE_TIME:3.453,10.0.0.1
+07.07.2026_18:18.41 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:19.01 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:19.01 TELEMETRY_GATEWAY_RESPONSE_TIME:3.203,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:19.01 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:19.02 TELEMETRY_WIFI_STATS:wheat101,867,-92,-53,155,75,5GHz,44,SAE
+07.07.2026_18:19.03 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:19.03 USED_CPU:50.000000
+07.07.2026_18:19.08 USED_MEM:69092
+07.07.2026_18:19.08 UPTIMEDAY:56730
+07.07.2026_18:19.08 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:19.08 UBIFS_MEMUSAGE:3.1,6.6,32
+07.07.2026_18:19.08 ********** Complete ************
+07.07.2026_18:19.08 wpa_supplicant heartbeat success.
+07.07.2026_18:22.09 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:22.09 prevStatus = 1
+07.07.2026_18:22.28 v4 gateway = 10.0.0.1 
+07.07.2026_18:22.28 TELEMETRY_GATEWAY_RESPONSE_TIME:3.146,10.0.0.1
+07.07.2026_18:22.28 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:22.47 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:22.47 TELEMETRY_GATEWAY_RESPONSE_TIME:3.380,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:22.47 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:22.48 TELEMETRY_WIFI_STATS:wheat101,867,-92,-53,158,77,5GHz,44,SAE
+07.07.2026_18:22.49 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:22.49 USED_CPU:45.098039
+07.07.2026_18:22.54 USED_MEM:69016
+07.07.2026_18:22.54 UPTIMEDAY:56956
+07.07.2026_18:22.54 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:22.55 UBIFS_MEMUSAGE:3.2,6.6,32
+07.07.2026_18:22.55 ********** Complete ************
+07.07.2026_18:22.55 wpa_supplicant heartbeat success.
+07.07.2026_18:22.55 ----------Device IP details----------
+07.07.2026_18:22.55 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_18:22.56 IPV4 address is 10.0.0.52
+07.07.2026_18:22.56 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_18:22.56 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_18:22.56 ----------Route table start----------
+07.07.2026_18:22.56 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_18:22.56 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_18:22.56 ----------Route table end----------
+07.07.2026_18:22.56 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_18:22.56 ----------Resolv conf end----------
+07.07.2026_18:22.56 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:23878300 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:23878300 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6664506044 (6.2 GiB)  TX bytes:6664506044 (6.2 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:329857 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:668500 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:46852129 (44.6 MiB)  TX bytes:834284494 (795.6 MiB)
+
+07.07.2026_18:22.57 ----------Ifconfig end----------
+07.07.2026_18:22.57 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_18:25.56 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:25.56 prevStatus = 1
+07.07.2026_18:26.15 v4 gateway = 10.0.0.1 
+07.07.2026_18:26.15 TELEMETRY_GATEWAY_RESPONSE_TIME:3.844,10.0.0.1
+07.07.2026_18:26.15 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:26.34 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:26.34 TELEMETRY_GATEWAY_RESPONSE_TIME:3.194,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:26.34 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:26.36 TELEMETRY_WIFI_STATS:wheat101,867,-92,-57,160,78,5GHz,44,SAE
+07.07.2026_18:26.36 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:26.36 USED_CPU:42.708333
+07.07.2026_18:26.41 USED_MEM:69604
+07.07.2026_18:26.41 UPTIMEDAY:57183
+07.07.2026_18:26.41 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:26.42 UBIFS_MEMUSAGE:3.2,6.6,33
+07.07.2026_18:26.42 ********** Complete ************
+07.07.2026_18:26.42 wpa_supplicant heartbeat success.
+07.07.2026_18:29.42 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:29.42 prevStatus = 1
+07.07.2026_18:30.02 v4 gateway = 10.0.0.1 
+07.07.2026_18:30.02 TELEMETRY_GATEWAY_RESPONSE_TIME:4.156,10.0.0.1
+07.07.2026_18:30.02 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:30.21 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:30.21 TELEMETRY_GATEWAY_RESPONSE_TIME:3.657,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:30.21 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:30.22 TELEMETRY_WIFI_STATS:wheat101,867,-92,-58,163,80,5GHz,44,SAE
+07.07.2026_18:30.23 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:30.23 USED_CPU:43.434343
+07.07.2026_18:30.28 USED_MEM:69272
+07.07.2026_18:30.28 UPTIMEDAY:57410
+07.07.2026_18:30.28 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:30.28 UBIFS_MEMUSAGE:3.2,6.6,33
+07.07.2026_18:30.28 ********** Complete ************
+07.07.2026_18:30.29 wpa_supplicant heartbeat success.
+07.07.2026_18:30.29 ----------Device IP details----------
+07.07.2026_18:30.29 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_18:30.29 IPV4 address is 10.0.0.52
+07.07.2026_18:30.29 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_18:30.29 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_18:30.29 ----------Route table start----------
+07.07.2026_18:30.29 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_18:30.29 ----------Route table end----------
+07.07.2026_18:30.29 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_18:30.29 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_18:30.29 ----------Resolv conf end----------
+07.07.2026_18:30.30 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:24078074 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24078074 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6725607821 (6.2 GiB)  TX bytes:6725607821 (6.2 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:332530 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:673820 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:47214186 (45.0 MiB)  TX bytes:841241521 (802.2 MiB)
+
+07.07.2026_18:30.30 ----------Ifconfig end----------
+07.07.2026_18:30.30 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_18:33.29 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:33.29 prevStatus = 1
+07.07.2026_18:33.49 v4 gateway = 10.0.0.1 
+07.07.2026_18:33.49 TELEMETRY_GATEWAY_RESPONSE_TIME:3.835,10.0.0.1
+07.07.2026_18:33.49 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:34.08 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:34.08 TELEMETRY_GATEWAY_RESPONSE_TIME:3.315,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:34.08 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:34.09 TELEMETRY_WIFI_STATS:wheat101,867,-92,-57,166,81,5GHz,44,SAE
+07.07.2026_18:34.10 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:34.10 USED_CPU:43.298969
+07.07.2026_18:34.15 USED_MEM:68960
+07.07.2026_18:34.15 UPTIMEDAY:57637
+07.07.2026_18:34.15 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:34.15 UBIFS_MEMUSAGE:3.3,6.4,34
+07.07.2026_18:34.15 ********** Complete ************
+07.07.2026_18:34.15 wpa_supplicant heartbeat success.
+07.07.2026_18:37.16 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:37.16 prevStatus = 1
+07.07.2026_18:37.35 v4 gateway = 10.0.0.1 
+07.07.2026_18:37.35 TELEMETRY_GATEWAY_RESPONSE_TIME:3.729,10.0.0.1
+07.07.2026_18:37.35 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:37.54 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:37.54 TELEMETRY_GATEWAY_RESPONSE_TIME:4.828,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:37.54 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:37.55 TELEMETRY_WIFI_STATS:wheat101,867,-92,-56,169,82,5GHz,44,SAE
+07.07.2026_18:37.56 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:37.56 USED_CPU:37.000000
+07.07.2026_18:38.01 USED_MEM:69820
+07.07.2026_18:38.01 UPTIMEDAY:57863
+07.07.2026_18:38.01 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:38.01 UBIFS_MEMUSAGE:3.3,6.4,34
+07.07.2026_18:38.02 ********** Complete ************
+07.07.2026_18:38.02 wpa_supplicant heartbeat success.
+07.07.2026_18:38.02 ----------Device IP details----------
+07.07.2026_18:38.02 [generictelemetry.sh] INFO Checking SecurePartition mount status
+07.07.2026_18:38.02 IPV4 address is 10.0.0.52
+07.07.2026_18:38.02 [generictelemetry.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+07.07.2026_18:38.02 IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64
+07.07.2026_18:38.03 ----------Route table start----------
+07.07.2026_18:38.03 [generictelemetry.sh] INFO ReadSecureMountStatus : /opt/SecurePartition is mounted and returning 1
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.0.0.1        0.0.0.0         UG    0      0        0 wlan0
+10.0.0.0        0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0        0 usb0
+07.07.2026_18:38.03 ----------Route table end----------
+07.07.2026_18:38.03 Defined Config Files as SecurePartition usr_config path in generictelemetry.sh
+07.07.2026_18:38.03 ----------Resolv conf start----------
+nameserver 75.75.75.75
+nameserver 75.75.76.76
+options timeout:1
+options attempts:2
+07.07.2026_18:38.03 ----------Resolv conf end----------
+07.07.2026_18:38.03 ----------Ifconfig start----------
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:24278456 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24278456 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:6787124990 (6.3 GiB)  TX bytes:6787124990 (6.3 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 7E:35:4B:C2:78:38  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:335365 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:679383 errors:0 dropped:2 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:47603093 (45.3 MiB)  TX bytes:848497616 (809.1 MiB)
+
+07.07.2026_18:38.03 ----------Ifconfig end----------
+07.07.2026_18:38.03 ipv6 route address is fe80::fad0:eff:fef3:8f07
+07.07.2026_18:41.02 TELEMETRY_WIFI_CONNECTED
+07.07.2026_18:41.03 prevStatus = 1
+07.07.2026_18:41.22 v4 gateway = 10.0.0.1 
+07.07.2026_18:41.22 TELEMETRY_GATEWAY_RESPONSE_TIME:4.386,10.0.0.1
+07.07.2026_18:41.22 TELEMETRY_GATEWAY_PACKET_LOSS:0,10.0.0.1
+07.07.2026_18:41.41 v6 gateway = fe80::fad0:eff:fef3:8f07 
+07.07.2026_18:41.41 TELEMETRY_GATEWAY_RESPONSE_TIME:5.127,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:41.41 TELEMETRY_GATEWAY_PACKET_LOSS:0,fe80::fad0:eff:fef3:8f07
+07.07.2026_18:41.42 TELEMETRY_WIFI_STATS:wheat101,867,-92,-55,171,84,5GHz,44,SAE
+07.07.2026_18:41.43 TELEMETRY_WIFI_CONNECTION_STATUS:CONNECTED,wheat101,DUAL BAND
+07.07.2026_18:41.43 USED_CPU:45.833333
+07.07.2026_18:41.48 USED_MEM:67644
+07.07.2026_18:41.48 UPTIMEDAY:58090
+07.07.2026_18:41.48 bssid is [fa:d0:0e:fb:8f:0a]!
+07.07.2026_18:41.48 UBIFS_MEMUSAGE:3.2,6.5,33
+07.07.2026_18:41.48 ********** Complete ************
+07.07.2026_18:41.49 wpa_supplicant heartbeat success.

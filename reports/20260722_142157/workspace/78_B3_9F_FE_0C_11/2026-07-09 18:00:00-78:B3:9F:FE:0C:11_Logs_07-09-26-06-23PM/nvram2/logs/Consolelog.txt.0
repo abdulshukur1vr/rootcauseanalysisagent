@@ -1,0 +1,123 @@
+123
+260709-18:08:57.563750 [DEBUG] --OUT function backupnvram2logs
+260709-18:08:57.566420 Regular log upload is disabled
+pidof: invalid option -- 's'
+BusyBox v1.35.0 () multi-call binary.
+
+Usage: pidof [NAME]...
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+Conf file /etc/debug.ini open success
+rdk_logger_init /etc/debug.ini Already Stack Level Logging processed... not processing again.
+killall: scer11bel_firmwareDwnld.sh: no process killed
+260709-18:09:24.591994 XCONF SCRIPT: Firmware scheduler cron schedule time is 11 10 * * *
+260709-18:09:24.600815 XCONF SCRIPT: Cron scheduling done, now call download script during bootup
+260709-18:09:24.669384 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  partner_id retrieved from syscfg.db : shaw
+260709-18:09:24.672130 XCONF: calling getMtlsCreds
+260709-18:09:25.027645 XCONF SCRIPT : Done Cleanup
+260709-18:09:25.033792 XCONF SCRIPT : Assigning default image type as: DEV
+260709-18:09:25.045183 XCONF SCRIPT : image_type returned from version.txt is PROD
+260709-18:09:25.048888 XCONF SCRIPT : IMAGE TYPE SET AS PROD
+260709-18:09:25.055049 XCONF SCRIPT : Build type is PROD. Ignoring /nvram/swupdate.conf override. URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:09:25.056874 XCONF SCRIPT : Device retrieves firmware update from url=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:09:25.058989 XCONF SCRIPT : Values written to /tmp/Xconf are URL=https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:09:25.077638 XCONF SCRIPT : erouter0 has an ipv4 address of 24.65.240.148 or an ipv6 address of 2604:3d08:3:33::b50d:1e81
+260709-18:09:25.094268 FWExclusion status is : false
+260709-18:09:25.115497 XCONF SCRIPT : env is PROD
+260709-18:09:25.117738 XCONF SCRIPT : xconf url  is https://secure.xconfds.coast.xcal.tv/xconf/swu/stb/
+260709-18:09:25.149262 XCONF SCRIPT : Using Direct connection as the Primary
+260709-18:09:25.163069 XCONF SCRIPT : Device model taken from /etc/device.properties 
+260709-18:09:25.189473 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  partner_id retrieved from syscfg.db : shaw
+260709-18:09:25.207634 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  Checking accountId is alphanumeric and not greater than 32 characters...
+260709-18:09:25.214530 getAccountId() called from: /etc/scer11bel_firmwareDwnld.sh -  accountId is valid and value retrieved from tr181/webpa param...
+260709-18:09:25.313722 XCONF SCRIPT : CURRENT VERSION : SCER11BEL_8.2p11s1_PROD_sey
+260709-18:09:25.315438 XCONF SCRIPT : CURRENT MAC  : 78:B3:9F:FE:0C:11
+260709-18:09:25.317049 XCONF SCRIPT : CURRENT DATE : Thu Jul  9 18:09:25 UTC 2026
+260709-18:09:25.318673 XCONF SCRIPT : DEVICE MODEL : SCER11BEL
+260709-18:09:25.322425 Trying Direct Communication
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   672  100   308  100   364    478    565 --:--:-- --:--:-- --:--:--  1043
+260709-18:09:26.103074 Direct Communication - ret:0, http_code:200
+260709-18:09:26.105563 XCONF SCRIPT : HTTP RESPONSE CODE is 200
+260709-18:09:26.108865 XCONF SCRIPT : Print the response -> output of /tmp/response.txt after curl execution is as below
+{"firmwareDownloadProtocol":"http","firmwareFilename":"SCER11BEL_8.2p11s1_PROD_sey-signed.bin","firmwareLocation":"https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl","firmwareVersion":"SCER11BEL_8.2p11s1_PROD_sey","mandatoryUpdate":false,"rebootImmediately":false}
+
+
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:09:26.142783 XCONF SCRIPT : Download image from HTTP server
+260709-18:09:26.177518 XCONF SCRIPT : Protocol :http
+260709-18:09:26.179225 XCONF SCRIPT : Filename :SCER11BEL_8.2p11s1_PROD_sey-signed.bin
+260709-18:09:26.181446 XCONF SCRIPT : Location :https://secure.ssr.coast.xcal.tv/xds/78B39FFE0C11/cgi-bin/x1-sign-redirect.pl?K=10&F=stb_cdl
+260709-18:09:26.183209 XCONF SCRIPT : Firmware URL :
+260709-18:09:26.184837 XCONF SCRIPT : Version  :SCER11BEL_8.2p11s1_PROD_sey
+260709-18:09:26.186383 XCONF SCRIPT : Reboot   :false
+260709-18:09:26.187964 XCONF SCRIPT : Delay Time :
+260709-18:09:26.189507 XCONF SCRIPT : factoryResetImmediately :
+260709-18:09:26.191063 XCONF SCRIPT : dlCertBundle :
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:09:26.244221 XCONF SCRIPT : CurrentVersion : scer11bel_8.2p11s1_prod_sey
+260709-18:09:26.246025 XCONF SCRIPT : UpgradeVersion : scer11bel_8.2p11s1_prod_sey
+260709-18:09:26.251815 XCONF SCRIPT : Current image (scer11bel_8.2p11s1_prod_sey) and Requested image (scer11bel_8.2p11s1_prod_sey) are same. No upgrade/downgrade required
+Enable RFC feature
+260709-18:09:42.501458 getAccountId() called from: /lib/rdk/RFCbase.sh -  partner_id retrieved from syscfg.db : shaw
+Initial URL: https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+sh: /lib/rdk/getDeviceDetails.sh: No such file or directory
+260709-18:09:43.858635 getAccountId() called from: /lib/rdk/RFCbase.sh -  partner_id retrieved from syscfg.db : shaw
+RFC: Sending request to URL=https://secure.xconfds.coast.xcal.tv/featureControl/getSettings?
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  8916    0  8916    0     0   9612      0 --:--:-- --:--:-- --:--:--  9607100  8916    0  8916    0     0   9610      0 --:--:-- --:--:-- --:--:--  9607
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m260709-18:09:48.702833 [ScheduleAutoReboot.sh]: **************** else > 1
+260709-18:09:48.746867 [ScheduleAutoReboot.sh]: Exiting, NTP synced or RFC triggered
+260709-18:09:48.784027 [ScheduleAutoReboot.sh]start_time: 7200, end_time: 14400
+260709-18:09:48.786491 [ScheduleAutoReboot.sh]time_offset: -21600
+260709-18:09:48.789449 [ScheduleAutoReboot.sh]main_start_time: 28800 , main_end_time= 36000
+260709-18:09:48.791774 [ScheduleAutoReboot.sh]rand_time_in_sec: 30586 ,rand_hr: 8 ,rand_min: 29 ,rand_sec: 46
+260709-18:09:48.805078 Auto Reboot is scheduled at date: 08
+260709-18:09:48.819028 [ScheduleAutoReboot.sh] AutoReboot scheduled cron 29 8 08 08 *
+260709-18:09:48.825835 [ScheduleAutoReboot.sh] Auto Reboot updating the cron job
+260709-18:09:48.836327 [ScheduleAutoReboot.sh] Auto Reboot cron job scheduled
+[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m[0;32mCR component name is: eRT.com.cisco.spvtg.ccsp.CR
+[0;32msubsystem_prefix eRT.
+[0;32mExecution succeed.
+
+[0m[0m2026-07-09:18:10:00:823972 [RDKB_STAT_LOG] 2.4G, 5G and 6G SSIDs are same
+killall: mldproxy: no process killed
+ mldproxy not found 
+260709-18:15:57.878012 RDK_LOGGER: Syncing every 10 minutes for initial 30 minutes
+260709-18:15:57.879963 sync logs to nvram2

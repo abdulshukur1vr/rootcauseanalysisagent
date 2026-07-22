@@ -1,0 +1,1585 @@
+1585
+260709-19:15:55.189997 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:19:15:25
+260709-19:15:55.260386 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-19:15:55.262538 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-19:15:55.343635 [RDKB_SELFHEAL] : Current time in seconds : 47755
+260709-19:15:56.295613 DHCPv6_Client_type is dibbler-client
+260709-19:15:56.412230 os-wanmanager enabled
+260709-19:15:56.426583 wanmanager process found 6803 
+260709-19:15:56.723492 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-19:15:56.780357 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-19:15:56.826369 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-19:15:56.933300 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-19:15:57.131950 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-19:15:57.134205 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-19:15:57.198349 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-19:15:57.216133 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-19:15:57.282487 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-19:15:57.284828 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-19:15:57.383310 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-19:15:57.452808 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-19:15:57.474347 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-19:15:57.893597 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-19:15:58.000657 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-19:15:59.023137 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-19:15:59.026136 Mesh: Config and State are matching for bhaul-ap-24
+260709-19:15:59.146058 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-19:16:00.133024 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-19:16:00.135582 Mesh: Config and State are matching for bhaul-ap-50
+260709-19:16:00.138155 Mesh: Both Bhauls are good
+260709-19:16:10.694879 RDKB_SELFHEAL : Slab: 146532 kB
+260709-19:31:40.868209 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:19:31:10
+260709-19:31:40.950954 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-19:31:40.954462 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-19:31:41.049094 [RDKB_SELFHEAL] : Current time in seconds : 48701
+260709-19:31:41.969202 DHCPv6_Client_type is dibbler-client
+260709-19:31:42.078863 os-wanmanager enabled
+260709-19:31:42.093205 wanmanager process found 6803 
+260709-19:31:42.368268 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-19:31:42.423200 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-19:31:42.466795 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-19:31:42.586926 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-19:31:42.803172 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-19:31:42.805584 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-19:31:42.846895 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-19:31:42.865219 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-19:31:42.931644 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-19:31:42.934012 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-19:31:43.034793 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-19:31:43.108209 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-19:31:43.129006 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-19:31:43.549615 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-19:31:43.658565 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-19:31:44.612701 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-19:31:44.614973 Mesh: Config and State are matching for bhaul-ap-24
+260709-19:31:44.723566 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-19:31:45.690154 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-19:31:45.692642 Mesh: Config and State are matching for bhaul-ap-50
+260709-19:31:45.695056 Mesh: Both Bhauls are good
+260709-19:31:56.263830 RDKB_SELFHEAL : Slab: 146872 kB
+IPv6 default route fe80::1111:1111
+IPv6 global route 2604:3d08:3:33::b50d:1e81
+PING_LATENCY_GWIPv4:1.958,4.150,2.038
+PING_LATENCY_GWIPv6:3.166,1.922,4.201
+260709-19:42:26.278227 [RDKB_SELFHEAL] : GW IP Connectivity Test Successfull
+260709-19:42:26.280356 [RDKB_SELFHEAL] : IPv4 GW  Address is:24.65.240.1
+260709-19:42:26.282354 [RDKB_SELFHEAL] : IPv6 GW  Address is:fe80::1111:1111
+260709-19:42:26.284312 [RDKB_SELFHEAL] : IPv6 GW global Address is:2604:3d08:3:33::b50d:1e81
+260709-19:42:26.316071 RDKB_SELFHEAL : Ping server lists are empty , not taking any corrective actions
+260709-19:47:26.428056 RDKB_SELFHEAL : CPU usage is 5 at timestamp 2026:07:09:19:46:56
+260709-19:47:26.500374 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-19:47:26.502475 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-19:47:26.581373 [RDKB_SELFHEAL] : Current time in seconds : 49646
+260709-19:47:27.463051 DHCPv6_Client_type is dibbler-client
+260709-19:47:27.581921 os-wanmanager enabled
+260709-19:47:27.597299 wanmanager process found 6803 
+260709-19:47:27.891043 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-19:47:27.953996 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-19:47:28.006406 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-19:47:28.122921 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-19:47:28.332511 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-19:47:28.335377 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-19:47:28.377722 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-19:47:28.395296 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-19:47:28.459080 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-19:47:28.461366 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-19:47:28.561227 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-19:47:28.629580 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-19:47:28.649366 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-19:47:29.051334 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-19:47:29.158402 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-19:47:30.177456 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-19:47:30.180246 Mesh: Config and State are matching for bhaul-ap-24
+260709-19:47:30.296855 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-19:47:31.293221 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-19:47:31.295616 Mesh: Config and State are matching for bhaul-ap-50
+260709-19:47:31.298107 Mesh: Both Bhauls are good
+260709-19:47:41.849372 RDKB_SELFHEAL : Slab: 147040 kB
+RDKB_UPTIME: Unit is up for less than 1 hour
+UPTIMEDAY:0
+UPTIMEHR:0
+UPTIMEMIN:48
+260709-19:48:01.270689 RDKB_SYS_MEM_INFO_SYS : Total memory in system is 2031572 at timestamp 2026:07:09:19:48:01
+260709-19:48:01.273417 RDKB_SYS_MEM_INFO_SYS : Used memory in system is 1007572 at timestamp 2026:07:09:19:48:01
+260709-19:48:01.276067 RDKB_SYS_MEM_INFO_SYS : Free memory in system is 599852 at timestamp 2026:07:09:19:48:01
+260709-19:48:01.279070 USED_MEM:1007572
+260709-19:48:01.292511 FREE_MEM:599852
+260709-19:48:01.302359 RDKB_LOAD_AVERAGE : Load Average is 0.50:0.44:0.41 at timestamp 2026:07:09:19:48:01
+260709-19:48:01.307998 LOAD_AVERAGE:0.41
+260709-19:48:31.402712 RDKB_CPU_USAGE : CPU usage is 7 at timestamp 2026:07:09:19:48:31
+260709-19:48:31.405523 USED_CPU:7
+260709-19:48:32.442866 MPSTAT_USR:4.81
+260709-19:48:32.445489 MPSTAT_SYS:2.03
+260709-19:48:32.448188 MPSTAT_NICE:0.25
+260709-19:48:32.450929 MPSTAT_IRQ:0.00
+260709-19:48:32.453280 MPSTAT_SOFT:0.25
+260709-19:48:32.455868 MPSTAT_IDLE:92.66
+260709-19:48:32.480169 Count is 8
+VM STATS SINCE BOOT ARM
+vmInfoHeader: swpd,free,buff,cache,si,so
+vmInfoValues: 0,599852,919932,178028,,
+260709-20:03:12.013737 RDKB_SELFHEAL : CPU usage is 8 at timestamp 2026:07:09:20:02:41
+260709-20:03:12.089340 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-20:03:12.092187 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-20:03:12.180361 [RDKB_SELFHEAL] : Current time in seconds : 50592
+260709-20:03:13.046724 DHCPv6_Client_type is dibbler-client
+260709-20:03:13.156684 os-wanmanager enabled
+260709-20:03:13.172229 wanmanager process found 6803 
+260709-20:03:13.442819 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-20:03:13.499714 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-20:03:13.548345 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-20:03:13.658247 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-20:03:13.851095 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-20:03:13.853464 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-20:03:13.895169 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-20:03:13.915373 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-20:03:13.984426 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-20:03:13.987356 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-20:03:14.090179 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-20:03:14.162666 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-20:03:14.184557 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-20:03:14.591707 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-20:03:14.701612 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-20:03:15.724941 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:03:15.727756 Mesh: Config and State are matching for bhaul-ap-24
+260709-20:03:15.852540 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-20:03:16.870842 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:03:16.873580 Mesh: Config and State are matching for bhaul-ap-50
+260709-20:03:16.876473 Mesh: Both Bhauls are good
+260709-20:03:27.453191 *************************
+260709-20:03:27.457475 Thu Jul  9 20:03:27 UTC 2026
+260709-20:03:27.688730 Mem total:2031572 anon:294848 map:81740 free:599388
+ slab:147104 buf:178028 cache:226512 dirty:0 write:0
+  PID^^^VSZ^VSZRW   RSS (SHR) DIRTY (SHR) STACK COMMAND
+ 9354  902m  172m 63780 13852 48152  1860  3516 /usr/bin/OneWifi -subsys eRT.
+16641  262m 45928 29088 10560 18796   468   288 /usr/opensync/bin/ovsm
+13929 2098m 88716 25964 14084 11760     0   132 /opt/icontrol/sbin/xhDeviceService
+14037 2091m 84328 22220 12676  9472     0   132 /opt/icontrol/sbin/xhCommService
+ 6819 1287m  175m 22216  8880 11756    48   128 /usr/bin/CcspPandMSsp -subsys eRT.
+18928  120m 43824 20780  6348  8708     0   136 /usr/lib/cujo-agent
+14036 1550m 53856 17204 12204  4112     0   132 /opt/icontrol/sbin/xhAutomationService
+16648  193m 39704 17104 11284  6124   524   160 /usr/opensync/bin/bm
+ 5927  564m 78860 16840 10792  4056    12   128 /usr/bin/interdevicemanager /tmp/idm_xpki_cert /tmp/idm_xpki_key /tmp/idm_UPnP_CA /etc/cert/ /nvram/certs/devicecert_2.pk12 /tmp/.cfgDynamicSExpki /etc/xupnp-ca/UPnP_CA -subsys eRT.
+14033 1416m 51732 16440 11288  5124     0   132 /opt/icontrol/sbin/xhSecurityService
+13931  893m 36984 16084 12280  3788     8   128 /opt/icontrol/sbin/xhRdkIntegrationService
+16643 39812 12348 15924 12848  3500   468   132 /usr/opensync/bin/qm
+14252  687m 96412 14364  7980  6280    48   132 /usr/bin/CcspAdvSecuritySsp -subsys eRT.
+16642 39284 12840 13664 10272  3788   524   132 /usr/opensync/bin/sm
+14032 1018m 35920 13652 10640  2912     0   132 /opt/icontrol/sbin/xhPkiService
+ 3954  246m 39536 13648  7728  5712     8   128 /usr/bin/PsmSsp -subsys eRT.
+ 4417  376m 46648 13524  6404  6240     0   192 ovs-vswitchd --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --log-file=/dev/null --detach
+11391  759m  100m 13384  9772  3416     0   132 /usr/bin/webconfig
+11612  816m 94808 13284  9628  3328     0   132 /usr/bin/parodus --hw-model=SCER11BEL --hw-serial-number=ER12SCS2604005CE --hw-manufacturer=SERCOMM --hw-last-reboot-reason=power-on-reset --fw-name=SCER11BEL_8.2p11s1_PROD_sey --boot-time=1783616750 --hw-mac=78:B3:9F:FE:0C:0F --webpa-ping-time=180 --webpa-interface-used=erouter0 --webpa-url=https://fabric.xmidt.comcast.net:8080 --webpa-backoff-max=8 --parodus-local-url=tcp://127.0.0.1:6666 --p
+13481 18416  4972 13200  6300  4540     0   132 /usr/sbin/snmpd -C -c /tmp/snmpd.conf -Dtsm,dtls,openssl,cert,tls -f -a -Lo -I -inetNetToMediaTable ipNetToPhysicalTable ifTable system_mib sysUpTime sysORTable snmpTargetAddrEntry snmpNotifyTable snmpTargetParamsEntry hrStorageEntry hrDeviceEntry hrProcessorEntry hrSWRunEntry hrSWRunPerfEntry ipIfStatsTable ifXTable proc vmstat hardware
+12288 1320m  150m 13172  7988  4888     0   132 /usr/bin/telemetry2_0
+13868 1146m 40592 13088  9560  3528     0   132 /opt/icontrol/sbin/xhPropsService -c /nvram/icontrol -h /opt/icontrol
+14035  954m 35808 13060 10196  2864     0   128 /opt/icontrol/sbin/xhDiagService
+16644 38800 12044 13052 10308  3032   468   188 /usr/opensync/bin/cm
+16645 38384 11924 12936 10244  3016   468   172 /usr/opensync/bin/nm
+14039 1084m 38048 12788 10032  2756     0   132 /opt/icontrol/sbin/xhBackupRestoreService
+13847 1212m 42004 12536  9808  2700     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+  967 90660 17832 12376  3740  8132    16   132 /lib/systemd/systemd-journald
+14034  884m 31464 12236  9768  2468     0   128 /opt/icontrol/sbin/xhUserService
+16647 37848 11508 12024  9912  2556   468   132 /usr/opensync/bin/rdkm
+16646 37840 11508 11980  9920  2512   468   132 /usr/opensync/bin/lm
+ 7591  832m  109m 11668  8228  3200    48   128 /usr/bin/CcspLMLite -subsys eRT.
+16581 38104 11772 11180  8912  2720   468   132 /usr/opensync/bin/pl2rld
+13873 1211m 42076 11100  8896  2204     0   132 /opt/icontrol/sbin/xhCronService
+16585 37892 11512 11052 10652  2488  2088   132 {dm.master} /usr/opensync/bin/dm
+ 4285 14952  3892 11036  7252  4140   548   132 /usr/sbin/ovsdb-server --remote=punix:/var/run/openvswitch/db.sock --remote=db:Open_vSwitch,Open_vSwitch,manager_options --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --ca-cert=db:Open_vSwitch,SSL,ca_cert --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach --monitor --log-file=/dev/null --unixctl=/var/run/openvswitch/ovsdb-server.ctl /tmp/etc/o
+ 7545  551m 87856 11024  7428  3508    48   128 /usr/bin/CcspEthAgent -subsys eRT.
+10539  343m 64156 10208  6924  2980     8   128 /usr/bin/harvester
+ 2180  375m 42696 10056  7196  1740     0   132 /usr/sbin/syslog-ng -F --cfgfile /etc/syslog-ng/syslog-ng.conf --control /tmp/lib/syslog-ng/syslog-ng.ctl --persist-file /tmp/lib/syslog-ng/syslog-ng.persist --pidfile /tmp/lib/syslog-ng/syslog-ng.pid
+ 7541  855m  134m 10012  5804  3736    48   128 /usr/bin/CcspTandDSsp -subsys eRT.
+    1 94156 19656  9176  4060  3360     0   132 {systemd} /sbin/init
+ 6803  974m  125m  8836  5428  3068    48   128 /usr/rdk/wanmanager/wanmanager -subsys eRT.
+ 2705  171m 27408  8328  6632  1720    48   128 /usr/bin/gw_prov_utopia
+ 4553  169m 27136  8260  6216  2004     0   132 /usr/bin/OvsAgent
+ 9221  419m 85024  7972  6000  1712    12   132 IGD brlan0
+ 5978 13552  3656  7892  6056  2984  1852   128 wlssk -n
+ 2260 12580  7316  7824  1404  6364     0   132 /usr/bin/rtrouted -s unix:///tmp/rtrouted
+ 2378 23256  2392  7768  5892  1720     0   132 /usr/bin/rdkssaecckdf -d
+ 7582  459m 61088  7748  5484  2016    16   132 /usr/bin/CcspXdnsSsp -subsys eRT.
+18108  313m 43600  7704  5944  1720     0   132 /usr/bin/aker -p tcp://127.0.0.1:6666 -c tcp://127.0.0.1:8888 -w /usr/bin/parcon -d /nvram/pcs.bin -f /nvram/pcs.bin.md5 -i mac:78b39ffe0c0f
+10511  644m  115m  7544  4852  2432    48   132 /usr/bin/meshAgent -subsys eRT.
+11387  547m 86172  7532  4424  2976    12   132 /usr/bin/webpa -subsys eRT.
+ 2329  306m 35352  7192  5512  1616     0   132 /usr/bin/CcspCrSsp -subsys eRT.
+ 9927 98.0m 18512  6780  5496  1196     8   132 CcspHomeSecurity 8081
+ 8744 12148  3536  6764  5668  2724  1760   128 ecbd
+17795  8804   720  6676  4952   948     0   132 /usr/sbin/radiusauthd /dev/stdin -e /tmp/radiusauthdentropy -f /rdklogs/logs/radiusauthd.log
+ 2741  107m 27448  6432  4680  1732    12   132 /usr/bin/rdkledmanager -subsys eRT.
+ 6807  172m 27624  6424  4680  1760    48   132 /usr/bin/fwupgrademanager -subsys eRT.
+17259 75228  1548  6160  4364  1056     0   132 /usr/sbin/ntpd -u ntp:ntp -p /run/ntpd.pid -l /rdklogs/logs/ntpLog.log -c /tmp/ntp.conf -g
+ 6886 16684  1520  5908  4940   956     0   132 netmonitor
+17034  230m 29348  5848  3320  2780   508   128 acsd2
+ 4434  106m 27128  5812  4252  1532     0   128 /usr/bin/rdkthermalmanager -subsys eRT.
+ 8981 14428  3676  5780  4608  1648   548   128 wps_pbcd
+ 1478  9248  1276  5680  3832  1392     0   132 /lib/systemd/systemd-udevd
+ 7669  882m 99.9m  5600  3448  2060    48   132 /usr/bin/gateway_manager -subsys eRT.
+ 7553  240m 35368  5460  3852  1580     0   132 /usr/bin/notify_comp -subsys eRT.
+ 8356  9952   632  5396  3820   540     0   132 /usr/lib/bluez5/bluetooth/bluetoothd -d
+16590 37892 11512  5272  4760  2132  1620   132 {dm.slave} /usr/opensync/bin/dm
+11407  333m 60544  4944  3048  1872    12   128 /usr/bin/rfc_agent
+ 7877  4648  1752  3768  2168  1600     0   132 {selfheal_aggres} /bin/sh /usr/ccsp/tad/selfheal_aggressive.sh
+13572  6844   652  3676  2520   416     0   132 dibbler-server start
+11218  6616   588  3644  2560   428     0   132 dibbler-client start -w /etc/dibbler/erouter0
+ 5296 14376  8832  3516  2272   356     0   132 /usr/bin/zigbeed
+10978 20700  2488  3516  1092  1900     0   132 lighttpd -f /etc/lighttpd.conf
+ 4022  4212  1316  3356  2236  1120     0   132 {rdkbLogMonitor.} /bin/sh /rdklogger/rdkbLogMonitor.sh
+ 5966  9172  1876  3332  2784   456    20   132 wifi_rdk_initd
+ 5289 88588 16944  3292  2948   324     0   132 /usr/bin/cpcd_monitor
+13995  7752  1348  3280  1416  1188     0   132 zebra -d -f /var/zebra.conf -P 0
+ 7869  4120  1224  3248  2160  1088     0   132 {self_heal_conne} /bin/sh /usr/ccsp/tad/self_heal_connectivity_test.sh
+ 2038  7528   692  3244  2288   544     0   132 /usr/bin/socat -v pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
+ 7874  3972  1076  3076  2916   932   772   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 2023  4888   544  3048  2396   400     0   132 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 2920  745m 93212  3008  1608  1328     8   132 syseventd
+ 4284 11004   712  2984  2724   808   548   132 {monitor} ovsdb-server: monitoring pid 4285 (healthy)
+ 4028  3840   944  2932  2176   756     0   132 {fileUploadRando} /bin/sh /rdklogger/fileUploadRandom.sh
+15892 13840  3644  2920  1824  1036     0   128 ceventd
+10825 11812  3548  2868  1800  1004     0   132 eapd
+ 3769 17484  1556  2592  1548  1028     0   132 trigger
+ 6909  3444   548  2528  2148   380     0   132 sh /lib/rdk/wan_ssh.sh enable
+ 6611 11748  3508  2524  1560   920     0   132 debug_monitor /data
+ 4013  3312   416  2520  2252   268     0   132 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+17615  3312   416  2476  2200   276     0   132 {cert_conf.sh} /bin/sh /etc/lnf/cert_conf.sh
+ 2262  3312   416  2464  2208   256     0   132 /bin/sh /usr/bin/rbus_log_capture.sh
+ 7560  3312   416  2452  2184   268     0   132 {update_journal_} /bin/sh /rdklogger/update_journal_log.sh start
+ 2069  3312   416  2432  2208   224     0   132 {xhStartup.sh} /bin/sh /opt/icontrol/bin/xhStartup.sh
+13872  3312   416  2392  2168   224     0   132 {xhStartZigbeeCo} /bin/sh /opt/icontrol/bin/xhStartZigbeeCore.sh
+13879  207m 13052  2284  1384   900     0   132 /opt/icontrol/sbin/ZigbeeCore -v4900 -p /dev/ttyZigbeeNCP
+ 2957 16404  1500  2276  1340   924     0   132 /usr/bin/syseventd_fork_helper 12
+ 2263  148m 18040  2196  1784   404     0   132 /usr/bin/rbus_session_mgr
+ 5270 93212 25132  1992  1444   292     0   132 /usr/bin/cpcd -c /etc/cpcd.conf
+22822  3972  1076  1956  1796   932   772   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 3892  3512   364  1956  1776   172     0   132 crond -l 9
+15306  2580   356  1900  1416   192     0   132 dnsmasq -q --clear-on-reload --bind-dynamic --add-mac --add-cpe-id=abcdefgh -P 4096 -C /var/dnsmasq.conf --dhcp-authoritative --stop-dns-rebind --log-facility=/rdklogs/logs/dnsmasq.log
+10148  3412   360  1884  1664   124     0   132 udhcpc -O 125 -O 122 -O ntpsrv -O timezone -V eRouter1.0 -x 0x2B:020745524f55544552030c45524f555445523a45445641 -x 0x7D:0000118b0701027B7C7c0107 -i erouter0 -p /tmp/udhcpc.erouter0.pid -s /usr/bin/service_udhcpc -b
+ 2225  4044   388  1856  1584   212     0   132 /usr/bin/accessManager any
+ 5967  3816   428  1852  1632   204     0   132 bcm_msgd -c wifi -v 1
+11872  3056   400  1824  1628   180     0   132 nfq_handler 4
+22538  2740   364  1784  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -p [24.65.240.148]:49971 -p [2604:3d08:3:33::b50d:1e81]:49971 -r /tmp/.dropbear/dropcfg1_wanssh -r /tmp/.dropbear/dropcfg2_wanssh
+ 2828  3412   360  1764  1640   116     0   132 syslogd -l 6
+ 2041 76252  8828  1764  1336   364     0   132 /bin/tee-supplicant -t optee_armtz/ProductionTA
+16471  2740   364  1752  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -r /tmp/.dropbear/dropcfg116374 -r /tmp/.dropbear/dropcfg216374 -p [24.65.240.148]:22 -p [2604:3d08:3:33::b50d:1e81]:22 -P /var/run/dropbear.pid
+10491  2668   372  1732  1440   140     0   132 /usr/bin/mcpd
+22823  3416   364  1716  1576   140     0   136 busybox top -mbn1
+22824  3416   364  1568  1448   120     0   136 sort -k4 -r
+21976  3280   228  1476  1376   100     0   132 sleep 60
+18262  3284   232  1464  1356   108     0   136 sleep 5m
+ 6459  3284   232  1464  1356   108     0   136 sleep 3600
+22712  3280   228  1452  1348   104     0   132 sleep 60
+17733  3280   228  1424  1316   100     0   132 sleep 3600
+ 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+22683  3280   228  1420  1320   100     0   132 sleep 60
+21962  3280   228  1412  1308   104     0   132 sleep 60
+22646  3280   228  1408  1308   100     0   132 sleep 10
+ 1074  2264   356  1320  1204   104     0   132 {wdtctl} wdtd
+ 2025  2048   212  1284  1196    80     0   132 usr/bin/sc-btnd
+  972  2180   344  1032   944    80     0   132 /usr/bin/logbackup
+ 7262  2352   356   716   552   100     0   132 hciattach /dev/ttyH0 any 115200 flow
+Swap total:0 free:0
+260709-20:03:27.694031 MemTotal:        2031572 kB
+MemFree:          599388 kB
+MemAvailable:     919756 kB
+Buffers:          178028 kB
+Cached:           226512 kB
+SwapCached:            0 kB
+Active:           543152 kB
+Inactive:         155988 kB
+Active(anon):     328592 kB
+Inactive(anon):    15608 kB
+Active(file):     214560 kB
+Inactive(file):   140380 kB
+Unevictable:          60 kB
+Mlocked:              60 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        294728 kB
+Mapped:            81740 kB
+Shmem:             49608 kB
+Slab:             147104 kB
+SReclaimable:      20864 kB
+SUnreclaim:       126240 kB
+KernelStack:        9632 kB
+PageTables:        10104 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1015784 kB
+Committed_AS:    3423076 kB
+VmallocTotal:   263061440 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              784 kB
+CmaTotal:         442368 kB
+CmaFree:           50064 kB
+260709-20:03:27.698897 CachedMemory: 226512 kB
+260709-20:03:27.702785 RDKB_SELFHEAL : Slab: 147104 kB
+260709-20:18:57.866159 RDKB_SELFHEAL : CPU usage is 6 at timestamp 2026:07:09:20:18:27
+260709-20:18:57.936513 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-20:18:57.938633 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-20:18:58.021499 [RDKB_SELFHEAL] : Current time in seconds : 51538
+260709-20:18:58.882947 DHCPv6_Client_type is dibbler-client
+260709-20:18:58.990826 os-wanmanager enabled
+260709-20:18:59.005824 wanmanager process found 6803 
+260709-20:18:59.297949 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-20:18:59.364536 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-20:18:59.419900 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-20:18:59.543593 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-20:18:59.761625 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-20:18:59.764576 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-20:18:59.810538 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-20:18:59.832547 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-20:18:59.901146 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-20:18:59.904008 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-20:19:00.014695 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-20:19:00.102826 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-20:19:00.125866 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-20:19:00.543403 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-20:19:00.648902 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-20:19:01.739845 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:19:01.742123 Mesh: Config and State are matching for bhaul-ap-24
+260709-20:19:01.848220 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-20:19:02.819978 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:19:02.822426 Mesh: Config and State are matching for bhaul-ap-50
+260709-20:19:02.824825 Mesh: Both Bhauls are good
+260709-20:19:13.371930 RDKB_SELFHEAL : Slab: 147116 kB
+260709-20:34:43.533519 RDKB_SELFHEAL : CPU usage is 6 at timestamp 2026:07:09:20:34:13
+260709-20:34:43.605851 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-20:34:43.608449 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-20:34:43.687675 [RDKB_SELFHEAL] : Current time in seconds : 52483
+260709-20:34:44.568057 DHCPv6_Client_type is dibbler-client
+260709-20:34:44.675543 os-wanmanager enabled
+260709-20:34:44.689811 wanmanager process found 6803 
+260709-20:34:44.961755 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-20:34:45.023244 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-20:34:45.078503 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-20:34:45.200131 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-20:34:45.421673 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-20:34:45.424453 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-20:34:45.467051 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-20:34:45.485035 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-20:34:45.549225 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-20:34:45.551562 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-20:34:45.651709 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-20:34:45.721778 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-20:34:45.742040 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-20:34:46.183694 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-20:34:46.307182 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-20:34:47.400079 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:34:47.402980 Mesh: Config and State are matching for bhaul-ap-24
+260709-20:34:47.518573 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-20:34:48.528731 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:34:48.531138 Mesh: Config and State are matching for bhaul-ap-50
+260709-20:34:48.534167 Mesh: Both Bhauls are good
+260709-20:34:59.095156 RDKB_SELFHEAL : Slab: 147304 kB
+IPv6 default route fe80::1111:1111
+IPv6 global route 2604:3d08:3:33::b50d:1e81
+PING_LATENCY_GWIPv4:2.106,1.827,3.649
+PING_LATENCY_GWIPv6:3.392,4.146,4.413
+260709-20:42:30.550598 [RDKB_SELFHEAL] : GW IP Connectivity Test Successfull
+260709-20:42:30.553221 [RDKB_SELFHEAL] : IPv4 GW  Address is:24.65.240.1
+260709-20:42:30.555675 [RDKB_SELFHEAL] : IPv6 GW  Address is:fe80::1111:1111
+260709-20:42:30.558461 [RDKB_SELFHEAL] : IPv6 GW global Address is:2604:3d08:3:33::b50d:1e81
+260709-20:42:30.593988 RDKB_SELFHEAL : Ping server lists are empty , not taking any corrective actions
+260709-20:48:00.513028 RDKB_SYS_MEM_INFO_SYS : Total memory in system is 2031572 at timestamp 2026:07:09:20:48:00
+260709-20:48:00.516364 RDKB_SYS_MEM_INFO_SYS : Used memory in system is 1009124 at timestamp 2026:07:09:20:48:00
+UPTIMEDAY:0
+UPTIMEHR:1
+UPTIMEMIN:48
+260709-20:48:00.519015 RDKB_SYS_MEM_INFO_SYS : Free memory in system is 595132 at timestamp 2026:07:09:20:48:00
+260709-20:48:00.521582 USED_MEM:1009124
+260709-20:48:00.530885 FREE_MEM:595132
+260709-20:48:00.545094 RDKB_LOAD_AVERAGE : Load Average is 0.25:0.29:0.31 at timestamp 2026:07:09:20:48:00
+260709-20:48:00.552433 LOAD_AVERAGE:0.31
+260709-20:48:30.650802 RDKB_CPU_USAGE : CPU usage is 6 at timestamp 2026:07:09:20:48:30
+260709-20:48:30.653473 USED_CPU:6
+260709-20:48:31.679466 MPSTAT_USR:7.81
+260709-20:48:31.681739 MPSTAT_SYS:3.02
+260709-20:48:31.683966 MPSTAT_NICE:0.25
+260709-20:48:31.686201 MPSTAT_IRQ:0.00
+260709-20:48:31.688393 MPSTAT_SOFT:0.76
+260709-20:48:31.690879 MPSTAT_IDLE:88.16
+260709-20:48:31.715830 Count is 9
+VM STATS SINCE BOOT ARM
+vmInfoHeader: swpd,free,buff,cache,si,so
+vmInfoValues: 0,595132,917400,178032,,
+260709-20:50:29.259101 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:20:49:59
+260709-20:50:29.330788 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-20:50:29.332955 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-20:50:29.419564 [RDKB_SELFHEAL] : Current time in seconds : 53429
+260709-20:50:30.404326 DHCPv6_Client_type is dibbler-client
+260709-20:50:30.512661 os-wanmanager enabled
+260709-20:50:30.527087 wanmanager process found 6803 
+260709-20:50:30.792830 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-20:50:30.852698 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-20:50:30.899355 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-20:50:31.021205 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-20:50:31.224235 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-20:50:31.227233 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-20:50:31.270113 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-20:50:31.287940 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-20:50:31.351803 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-20:50:31.354204 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-20:50:31.455786 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-20:50:31.535230 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-20:50:31.555319 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-20:50:31.981984 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-20:50:32.098862 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-20:50:33.063968 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:50:33.066223 Mesh: Config and State are matching for bhaul-ap-24
+260709-20:50:33.174419 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-20:50:34.144967 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-20:50:34.147957 Mesh: Config and State are matching for bhaul-ap-50
+260709-20:50:34.150780 Mesh: Both Bhauls are good
+260709-20:50:44.717339 RDKB_SELFHEAL : Slab: 147236 kB
+260709-21:06:14.906769 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:21:05:44
+260709-21:06:14.978968 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-21:06:14.981109 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-21:06:15.073769 [RDKB_SELFHEAL] : Current time in seconds : 54375
+260709-21:06:15.993468 DHCPv6_Client_type is dibbler-client
+260709-21:06:16.123031 os-wanmanager enabled
+260709-21:06:16.138322 wanmanager process found 6803 
+260709-21:06:16.425547 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-21:06:16.489214 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-21:06:16.540163 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-21:06:16.663653 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-21:06:16.868328 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-21:06:16.870652 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-21:06:16.911066 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-21:06:16.928970 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-21:06:16.994042 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-21:06:16.996368 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-21:06:17.097416 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-21:06:17.168487 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-21:06:17.188251 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-21:06:17.590795 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-21:06:17.695787 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-21:06:18.636614 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:06:18.638892 Mesh: Config and State are matching for bhaul-ap-24
+260709-21:06:18.744266 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-21:06:19.710625 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:06:19.713075 Mesh: Config and State are matching for bhaul-ap-50
+260709-21:06:19.715631 Mesh: Both Bhauls are good
+260709-21:06:30.290626 *************************
+260709-21:06:30.294965 Thu Jul  9 21:06:30 UTC 2026
+260709-21:06:30.533508 Mem total:2031572 anon:295420 map:78896 free:596192
+ slab:147360 buf:178040 cache:229064 dirty:0 write:0
+  PID^^^VSZ^VSZRW   RSS (SHR) DIRTY (SHR) STACK COMMAND
+ 9354  902m  172m 63812 13852 48184  1860  3516 /usr/bin/OneWifi -subsys eRT.
+16641  262m 45928 29088 10560 18796   468   288 /usr/opensync/bin/ovsm
+13929 2098m 88720 25980 14084 11776     0   132 /opt/icontrol/sbin/xhDeviceService
+14037 2091m 84396 22240 12676  9492     0   132 /opt/icontrol/sbin/xhCommService
+ 6819 1287m  175m 22216  8880 11756    48   128 /usr/bin/CcspPandMSsp -subsys eRT.
+18928  121m 43956 20980  6348  8908     0   136 /usr/lib/cujo-agent
+14036 1550m 53856 17204 12204  4112     0   132 /opt/icontrol/sbin/xhAutomationService
+16648  193m 39704 17112 11284  6132   524   160 /usr/opensync/bin/bm
+ 5927  564m 78860 16872 10792  4088    12   128 /usr/bin/interdevicemanager /tmp/idm_xpki_cert /tmp/idm_xpki_key /tmp/idm_UPnP_CA /etc/cert/ /nvram/certs/devicecert_2.pk12 /tmp/.cfgDynamicSExpki /etc/xupnp-ca/UPnP_CA -subsys eRT.
+14033 1416m 51732 16440 11288  5124     0   132 /opt/icontrol/sbin/xhSecurityService
+13931  893m 36916 16080 12280  3784     8   128 /opt/icontrol/sbin/xhRdkIntegrationService
+16643 39812 12348 15924 12848  3500   468   132 /usr/opensync/bin/qm
+14252  687m 96344 14360  7980  6276    48   132 /usr/bin/CcspAdvSecuritySsp -subsys eRT.
+16642 39360 12916 13720 10272  3844   524   132 /usr/opensync/bin/sm
+14032 1018m 35920 13656 10640  2916     0   132 /opt/icontrol/sbin/xhPkiService
+ 3954  246m 39604 13652  7728  5716     8   128 /usr/bin/PsmSsp -subsys eRT.
+ 4417  376m 46616 13568  6404  6284     0   192 ovs-vswitchd --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --log-file=/dev/null --detach
+11391  759m  100m 13384  9772  3416     0   132 /usr/bin/webconfig
+11612  816m 94808 13284  9628  3328     0   132 /usr/bin/parodus --hw-model=SCER11BEL --hw-serial-number=ER12SCS2604005CE --hw-manufacturer=SERCOMM --hw-last-reboot-reason=power-on-reset --fw-name=SCER11BEL_8.2p11s1_PROD_sey --boot-time=1783616750 --hw-mac=78:B3:9F:FE:0C:0F --webpa-ping-time=180 --webpa-interface-used=erouter0 --webpa-url=https://fabric.xmidt.comcast.net:8080 --webpa-backoff-max=8 --parodus-local-url=tcp://127.0.0.1:6666 --p
+12288 1320m  150m 13212  7988  4928     0   132 /usr/bin/telemetry2_0
+13481 18416  4972 13204  6300  4544     0   132 /usr/sbin/snmpd -C -c /tmp/snmpd.conf -Dtsm,dtls,openssl,cert,tls -f -a -Lo -I -inetNetToMediaTable ipNetToPhysicalTable ifTable system_mib sysUpTime sysORTable snmpTargetAddrEntry snmpNotifyTable snmpTargetParamsEntry hrStorageEntry hrDeviceEntry hrProcessorEntry hrSWRunEntry hrSWRunPerfEntry ipIfStatsTable ifXTable proc vmstat hardware
+13868 1146m 40592 13092  9560  3532     0   132 /opt/icontrol/sbin/xhPropsService -c /nvram/icontrol -h /opt/icontrol
+14035  954m 35808 13072 10196  2876     0   128 /opt/icontrol/sbin/xhDiagService
+16644 38800 12044 13052 10308  3032   468   188 /usr/opensync/bin/cm
+16645 38384 11924 12936 10244  3016   468   172 /usr/opensync/bin/nm
+14039 1084m 38048 12788 10032  2756     0   132 /opt/icontrol/sbin/xhBackupRestoreService
+13847 1212m 42004 12536  9808  2700     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+14034  884m 31464 12236  9768  2468     0   128 /opt/icontrol/sbin/xhUserService
+16647 37848 11508 12024  9912  2556   468   132 /usr/opensync/bin/rdkm
+16646 37840 11508 11980  9920  2512   468   132 /usr/opensync/bin/lm
+ 7591  832m  109m 11680  8228  3212    48   128 /usr/bin/CcspLMLite -subsys eRT.
+16581 38104 11772 11180  8912  2720   468   132 /usr/opensync/bin/pl2rld
+13873 1211m 42076 11104  8896  2208     0   132 /opt/icontrol/sbin/xhCronService
+16585 37892 11512 11052 10652  2488  2088   132 {dm.master} /usr/opensync/bin/dm
+ 4285 14952  3892 11036  7252  4140   548   132 /usr/sbin/ovsdb-server --remote=punix:/var/run/openvswitch/db.sock --remote=db:Open_vSwitch,Open_vSwitch,manager_options --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --ca-cert=db:Open_vSwitch,SSL,ca_cert --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach --monitor --log-file=/dev/null --unixctl=/var/run/openvswitch/ovsdb-server.ctl /tmp/etc/o
+ 7545  551m 87856 11024  7428  3508    48   128 /usr/bin/CcspEthAgent -subsys eRT.
+10539  343m 64164 10216  6924  2988     8   128 /usr/bin/harvester
+ 2180  375m 42696 10056  7196  1740     0   132 /usr/sbin/syslog-ng -F --cfgfile /etc/syslog-ng/syslog-ng.conf --control /tmp/lib/syslog-ng/syslog-ng.ctl --persist-file /tmp/lib/syslog-ng/syslog-ng.persist --pidfile /tmp/lib/syslog-ng/syslog-ng.pid
+ 7541  855m  134m 10016  5804  3740    48   128 /usr/bin/CcspTandDSsp -subsys eRT.
+  967 90660 17832  9480  3740  5236    16   132 /lib/systemd/systemd-journald
+    1 94156 19656  9176  4060  3360     0   132 {systemd} /sbin/init
+ 6803  974m  125m  8840  5428  3072    48   128 /usr/rdk/wanmanager/wanmanager -subsys eRT.
+ 2705  171m 27408  8328  6632  1720    48   128 /usr/bin/gw_prov_utopia
+ 4553  169m 27136  8260  6216  2004     0   132 /usr/bin/OvsAgent
+ 9221  547m 85288  8012  6000  1752    12   132 IGD brlan0
+ 5978 13552  3656  7892  6056  2984  1852   128 wlssk -n
+ 2260 12580  7316  7824  1404  6364     0   132 /usr/bin/rtrouted -s unix:///tmp/rtrouted
+ 2378 23256  2392  7768  5892  1720     0   132 /usr/bin/rdkssaecckdf -d
+ 7582  459m 61088  7748  5484  2016    16   132 /usr/bin/CcspXdnsSsp -subsys eRT.
+18108  313m 43600  7704  5944  1720     0   132 /usr/bin/aker -p tcp://127.0.0.1:6666 -c tcp://127.0.0.1:8888 -w /usr/bin/parcon -d /nvram/pcs.bin -f /nvram/pcs.bin.md5 -i mac:78b39ffe0c0f
+10511  644m  115m  7544  4852  2432    48   132 /usr/bin/meshAgent -subsys eRT.
+11387  547m 86172  7532  4424  2976    12   132 /usr/bin/webpa -subsys eRT.
+ 2329  306m 35352  7192  5512  1616     0   132 /usr/bin/CcspCrSsp -subsys eRT.
+ 9927 98.0m 18512  6780  5496  1196     8   132 CcspHomeSecurity 8081
+ 8744 12148  3536  6764  5668  2724  1760   128 ecbd
+17795  8804   720  6676  4952   948     0   132 /usr/sbin/radiusauthd /dev/stdin -e /tmp/radiusauthdentropy -f /rdklogs/logs/radiusauthd.log
+ 2741  107m 27448  6432  4680  1732    12   132 /usr/bin/rdkledmanager -subsys eRT.
+ 6807  172m 27624  6424  4680  1760    48   132 /usr/bin/fwupgrademanager -subsys eRT.
+17259 75228  1548  6160  4364  1056     0   132 /usr/sbin/ntpd -u ntp:ntp -p /run/ntpd.pid -l /rdklogs/logs/ntpLog.log -c /tmp/ntp.conf -g
+ 6886 16684  1520  5908  4940   956     0   132 netmonitor
+17034  230m 29348  5848  3320  2780   508   128 acsd2
+ 4434  106m 27128  5812  4252  1532     0   128 /usr/bin/rdkthermalmanager -subsys eRT.
+ 8981 14428  3676  5780  4608  1648   548   128 wps_pbcd
+ 1478  9248  1276  5680  3832  1392     0   132 /lib/systemd/systemd-udevd
+ 7669  882m 99.9m  5600  3448  2060    48   132 /usr/bin/gateway_manager -subsys eRT.
+ 7553  240m 35368  5460  3852  1580     0   132 /usr/bin/notify_comp -subsys eRT.
+ 8356  9952   632  5396  3820   540     0   132 /usr/lib/bluez5/bluetooth/bluetoothd -d
+16590 37892 11512  5272  4760  2132  1620   132 {dm.slave} /usr/opensync/bin/dm
+11407  333m 60544  4944  3048  1872    12   128 /usr/bin/rfc_agent
+ 7877  4648  1752  3772  2168  1604     0   132 {selfheal_aggres} /bin/sh /usr/ccsp/tad/selfheal_aggressive.sh
+13572  6844   652  3676  2520   416     0   132 dibbler-server start
+11218  6616   588  3644  2560   428     0   132 dibbler-client start -w /etc/dibbler/erouter0
+ 5296 14376  8832  3516  2272   356     0   132 /usr/bin/zigbeed
+10978 20700  2488  3516  1092  1900     0   132 lighttpd -f /etc/lighttpd.conf
+ 4022  4212  1316  3372  2236  1136     0   132 {rdkbLogMonitor.} /bin/sh /rdklogger/rdkbLogMonitor.sh
+ 5966  9172  1876  3332  2784   456    20   132 wifi_rdk_initd
+ 5289 88588 16944  3292  2948   324     0   132 /usr/bin/cpcd_monitor
+13995  7752  1348  3280  1416  1188     0   132 zebra -d -f /var/zebra.conf -P 0
+ 7869  4120  1224  3248  2160  1088     0   132 {self_heal_conne} /bin/sh /usr/ccsp/tad/self_heal_connectivity_test.sh
+ 2038  7528   692  3244  2288   544     0   132 /usr/bin/socat -v pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
+ 7874  4044  1148  3196  3048  1052   904   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 2023  4888   544  3048  2396   400     0   132 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 2920  745m 93212  3008  1608  1328     8   132 syseventd
+ 4284 11004   712  2984  2724   808   548   132 {monitor} ovsdb-server: monitoring pid 4285 (healthy)
+ 4028  3840   944  2932  2176   756     0   132 {fileUploadRando} /bin/sh /rdklogger/fileUploadRandom.sh
+15892 13840  3644  2920  1824  1036     0   128 ceventd
+10825 11812  3548  2868  1800  1004     0   132 eapd
+ 3769 17484  1556  2592  1548  1028     0   132 trigger
+ 6909  3444   548  2528  2148   380     0   132 sh /lib/rdk/wan_ssh.sh enable
+ 6611 11748  3508  2524  1560   920     0   132 debug_monitor /data
+ 4013  3312   416  2520  2252   268     0   132 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 2262  3312   416  2488  2208   280     0   132 /bin/sh /usr/bin/rbus_log_capture.sh
+17615  3312   416  2476  2200   276     0   132 {cert_conf.sh} /bin/sh /etc/lnf/cert_conf.sh
+ 7560  3312   416  2460  2184   276     0   132 {update_journal_} /bin/sh /rdklogger/update_journal_log.sh start
+ 2069  3312   416  2432  2208   224     0   132 {xhStartup.sh} /bin/sh /opt/icontrol/bin/xhStartup.sh
+13872  3312   416  2392  2168   224     0   132 {xhStartZigbeeCo} /bin/sh /opt/icontrol/bin/xhStartZigbeeCore.sh
+13879  207m 13052  2296  1384   912     0   132 /opt/icontrol/sbin/ZigbeeCore -v4900 -p /dev/ttyZigbeeNCP
+ 2957 16404  1500  2276  1340   924     0   132 /usr/bin/syseventd_fork_helper 12
+ 2263  148m 18040  2196  1784   404     0   132 /usr/bin/rbus_session_mgr
+ 2470  4044  1148  2076  1928  1052   904   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 5270 93212 25132  1992  1444   292     0   132 /usr/bin/cpcd -c /etc/cpcd.conf
+ 3892  3512   364  1956  1776   172     0   132 crond -l 9
+15306  2580   356  1900  1416   192     0   132 dnsmasq -q --clear-on-reload --bind-dynamic --add-mac --add-cpe-id=abcdefgh -P 4096 -C /var/dnsmasq.conf --dhcp-authoritative --stop-dns-rebind --log-facility=/rdklogs/logs/dnsmasq.log
+10148  3412   360  1884  1700   124     0   132 udhcpc -O 125 -O 122 -O ntpsrv -O timezone -V eRouter1.0 -x 0x2B:020745524f55544552030c45524f555445523a45445641 -x 0x7D:0000118b0701027B7C7c0107 -i erouter0 -p /tmp/udhcpc.erouter0.pid -s /usr/bin/service_udhcpc -b
+ 2225  4044   388  1856  1584   212     0   132 /usr/bin/accessManager any
+ 5967  3816   428  1852  1632   204     0   132 bcm_msgd -c wifi -v 1
+11872  3056   400  1824  1628   180     0   132 nfq_handler 4
+22538  2740   364  1784  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -p [24.65.240.148]:49971 -p [2604:3d08:3:33::b50d:1e81]:49971 -r /tmp/.dropbear/dropcfg1_wanssh -r /tmp/.dropbear/dropcfg2_wanssh
+ 2828  3412   360  1764  1608   116     0   132 syslogd -l 6
+ 2041 76252  8828  1764  1336   364     0   132 /bin/tee-supplicant -t optee_armtz/ProductionTA
+16471  2740   364  1752  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -r /tmp/.dropbear/dropcfg116374 -r /tmp/.dropbear/dropcfg216374 -p [24.65.240.148]:22 -p [2604:3d08:3:33::b50d:1e81]:22 -P /var/run/dropbear.pid
+10491  2668   372  1732  1440   140     0   132 /usr/bin/mcpd
+ 2471  3416   364  1648  1512   136     0   136 busybox top -mbn1
+ 2472  3416   364  1592  1472   120     0   136 sort -k4 -r
+ 1671  3280   228  1464  1364   100     0   132 sleep 60
+ 1173  3284   232  1464  1352   112     0   136 sleep 5m
+ 2417  3280   228  1452  1352   100     0   132 sleep 10
+ 1045  3280   228  1448  1344   104     0   132 sleep 60
+ 2449  3280   228  1444  1344   100     0   132 sleep 60
+ 1552  3280   228  1424  1324   100     0   132 sleep 60
+27878  3280   228  1424  1324   100     0   132 sleep 3600
+16991  3284   232  1424  1316   108     0   136 sleep 3600
+ 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+ 1074  2264   356  1320  1204   104     0   132 {wdtctl} wdtd
+ 2025  2048   212  1284  1196    80     0   132 usr/bin/sc-btnd
+  972  2180   344  1032   944    80     0   132 /usr/bin/logbackup
+ 7262  2352   356   716   552   100     0   132 hciattach /dev/ttyH0 any 115200 flow
+Swap total:0 free:0
+260709-21:06:30.538991 MemTotal:        2031572 kB
+MemFree:          596192 kB
+MemAvailable:     917640 kB
+Buffers:          178040 kB
+Cached:           229064 kB
+SwapCached:            0 kB
+Active:           537552 kB
+Inactive:         164660 kB
+Active(anon):     322960 kB
+Inactive(anon):    23308 kB
+Active(file):     214592 kB
+Inactive(file):   141352 kB
+Unevictable:          60 kB
+Mlocked:              60 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        295300 kB
+Mapped:            78896 kB
+Shmem:             51168 kB
+Slab:             147360 kB
+SReclaimable:      21016 kB
+SUnreclaim:       126344 kB
+KernelStack:        9600 kB
+PageTables:        10000 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1015784 kB
+Committed_AS:    3420468 kB
+VmallocTotal:   263061440 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              784 kB
+CmaTotal:         442368 kB
+CmaFree:           50064 kB
+260709-21:06:30.544051 CachedMemory: 229064 kB
+260709-21:06:30.547788 RDKB_SELFHEAL : Slab: 147360 kB
+260709-21:22:00.702947 RDKB_SELFHEAL : CPU usage is 8 at timestamp 2026:07:09:21:21:30
+260709-21:22:00.772161 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-21:22:00.774296 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-21:22:00.855641 [RDKB_SELFHEAL] : Current time in seconds : 55320
+260709-21:22:01.724577 DHCPv6_Client_type is dibbler-client
+260709-21:22:01.836703 os-wanmanager enabled
+260709-21:22:01.852473 wanmanager process found 6803 
+260709-21:22:02.118943 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-21:22:02.177597 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-21:22:02.226581 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-21:22:02.337458 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-21:22:02.540408 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-21:22:02.542779 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-21:22:02.586076 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-21:22:02.604050 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-21:22:02.669704 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-21:22:02.672208 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-21:22:02.772171 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-21:22:02.841053 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-21:22:02.861357 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-21:22:03.280748 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-21:22:03.398040 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-21:22:04.448585 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:22:04.450940 Mesh: Config and State are matching for bhaul-ap-24
+260709-21:22:04.556591 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-21:22:05.611524 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:22:05.613966 Mesh: Config and State are matching for bhaul-ap-50
+260709-21:22:05.616468 Mesh: Both Bhauls are good
+260709-21:22:16.177423 RDKB_SELFHEAL : Slab: 147404 kB
+260709-21:37:46.328846 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:21:37:16
+260709-21:37:46.399608 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-21:37:46.401748 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-21:37:46.484803 [RDKB_SELFHEAL] : Current time in seconds : 56266
+260709-21:37:47.355244 DHCPv6_Client_type is dibbler-client
+260709-21:37:47.467282 os-wanmanager enabled
+260709-21:37:47.482647 wanmanager process found 6803 
+260709-21:37:47.749797 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-21:37:47.806213 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-21:37:47.853855 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-21:37:47.967540 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-21:37:48.149933 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-21:37:48.152227 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-21:37:48.191033 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-21:37:48.208404 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-21:37:48.270419 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-21:37:48.272678 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-21:37:48.371332 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-21:37:48.445842 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-21:37:48.466835 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-21:37:48.879996 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-21:37:48.998848 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-21:37:50.085186 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:37:50.088027 Mesh: Config and State are matching for bhaul-ap-24
+260709-21:37:50.212736 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-21:37:51.204533 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:37:51.207334 Mesh: Config and State are matching for bhaul-ap-50
+260709-21:37:51.210258 Mesh: Both Bhauls are good
+260709-21:38:01.792262 RDKB_SELFHEAL : Slab: 147388 kB
+IPv6 default route fe80::1111:1111
+IPv6 global route 2604:3d08:3:33::b50d:1e81
+PING_LATENCY_GWIPv4:3.159,3.425,2.692
+PING_LATENCY_GWIPv6:3.901,2.643,1.936
+260709-21:42:34.833126 [RDKB_SELFHEAL] : GW IP Connectivity Test Successfull
+260709-21:42:34.835863 [RDKB_SELFHEAL] : IPv4 GW  Address is:24.65.240.1
+260709-21:42:34.838324 [RDKB_SELFHEAL] : IPv6 GW  Address is:fe80::1111:1111
+260709-21:42:34.840429 [RDKB_SELFHEAL] : IPv6 GW global Address is:2604:3d08:3:33::b50d:1e81
+260709-21:42:34.872308 RDKB_SELFHEAL : Ping server lists are empty , not taking any corrective actions
+UPTIMEDAY:0
+UPTIMEHR:2
+UPTIMEMIN:48
+260709-21:48:00.763430 RDKB_SYS_MEM_INFO_SYS : Total memory in system is 2031572 at timestamp 2026:07:09:21:48:00
+260709-21:48:00.766016 RDKB_SYS_MEM_INFO_SYS : Used memory in system is 1009756 at timestamp 2026:07:09:21:48:00
+260709-21:48:00.768573 RDKB_SYS_MEM_INFO_SYS : Free memory in system is 592468 at timestamp 2026:07:09:21:48:00
+260709-21:48:00.771160 USED_MEM:1009756
+260709-21:48:00.785552 FREE_MEM:592468
+260709-21:48:00.798567 RDKB_LOAD_AVERAGE : Load Average is 0.29:0.29:0.27 at timestamp 2026:07:09:21:48:00
+260709-21:48:00.804098 LOAD_AVERAGE:0.27
+260709-21:48:30.886394 RDKB_CPU_USAGE : CPU usage is 6 at timestamp 2026:07:09:21:48:30
+260709-21:48:30.888837 USED_CPU:6
+260709-21:48:31.913500 MPSTAT_USR:4.56
+260709-21:48:31.915758 MPSTAT_SYS:2.28
+260709-21:48:31.918032 MPSTAT_NICE:0.00
+260709-21:48:31.920268 MPSTAT_IRQ:0.00
+260709-21:48:31.922428 MPSTAT_SOFT:0.25
+260709-21:48:31.924904 MPSTAT_IDLE:92.91
+260709-21:48:31.949480 Count is 10
+VM STATS SINCE BOOT ARM
+vmInfoHeader: swpd,free,buff,cache,si,so
+vmInfoValues: 0,592468,914692,178044,,
+260709-21:53:31.967582 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:21:53:01
+260709-21:53:32.037769 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-21:53:32.039976 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-21:53:32.120398 [RDKB_SELFHEAL] : Current time in seconds : 57212
+260709-21:53:33.043061 DHCPv6_Client_type is dibbler-client
+260709-21:53:33.158534 os-wanmanager enabled
+260709-21:53:33.173898 wanmanager process found 6803 
+260709-21:53:33.445918 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-21:53:33.504576 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-21:53:33.552979 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-21:53:33.668385 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-21:53:33.864330 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-21:53:33.866688 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-21:53:33.908804 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-21:53:33.926386 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-21:53:33.987846 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-21:53:33.990163 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-21:53:34.085800 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-21:53:34.154720 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-21:53:34.175921 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-21:53:34.580485 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-21:53:34.689127 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-21:53:35.778641 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:53:35.781082 Mesh: Config and State are matching for bhaul-ap-24
+260709-21:53:35.888496 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-21:53:36.865545 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-21:53:36.867983 Mesh: Config and State are matching for bhaul-ap-50
+260709-21:53:36.870679 Mesh: Both Bhauls are good
+260709-21:53:47.420136 RDKB_SELFHEAL : Slab: 147940 kB
+260709-22:09:17.593480 RDKB_SELFHEAL : CPU usage is 6 at timestamp 2026:07:09:22:08:47
+260709-22:09:17.666275 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-22:09:17.668539 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-22:09:17.748892 [RDKB_SELFHEAL] : Current time in seconds : 58157
+260709-22:09:18.621883 DHCPv6_Client_type is dibbler-client
+260709-22:09:18.731958 os-wanmanager enabled
+260709-22:09:18.750091 wanmanager process found 6803 
+260709-22:09:19.025006 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-22:09:19.082489 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-22:09:19.130555 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-22:09:19.240130 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-22:09:19.425692 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-22:09:19.428561 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-22:09:19.476010 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-22:09:19.493950 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-22:09:19.558034 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-22:09:19.560326 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-22:09:19.656410 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-22:09:19.731591 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-22:09:19.753355 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-22:09:20.230498 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-22:09:20.352969 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-22:09:21.371250 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:09:21.373548 Mesh: Config and State are matching for bhaul-ap-24
+260709-22:09:21.479877 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-22:09:22.452252 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:09:22.454698 Mesh: Config and State are matching for bhaul-ap-50
+260709-22:09:22.457227 Mesh: Both Bhauls are good
+260709-22:09:33.002192 *************************
+260709-22:09:33.006735 Thu Jul  9 22:09:33 UTC 2026
+260709-22:09:33.239104 Mem total:2031572 anon:296016 map:78680 free:591832
+ slab:147512 buf:178076 cache:231740 dirty:0 write:0
+  PID^^^VSZ^VSZRW   RSS (SHR) DIRTY (SHR) STACK COMMAND
+ 9354  902m  172m 63816 13852 48188  1860  3516 /usr/bin/OneWifi -subsys eRT.
+16641  262m 45928 29088 10560 18796   468   288 /usr/opensync/bin/ovsm
+13929 2100m 90792 26172 14084 11968     0   132 /opt/icontrol/sbin/xhDeviceService
+14037 2091m 84328 22244 12676  9496     0   132 /opt/icontrol/sbin/xhCommService
+ 6819 1287m  175m 22220  8880 11760    48   128 /usr/bin/CcspPandMSsp -subsys eRT.
+18928  121m 43956 21084  6348  9012     0   136 /usr/lib/cujo-agent
+14036 1550m 53856 17204 12204  4112     0   132 /opt/icontrol/sbin/xhAutomationService
+16648  193m 39704 17112 11284  6132   524   160 /usr/opensync/bin/bm
+ 5927  564m 78860 16900 10792  4116    12   128 /usr/bin/interdevicemanager /tmp/idm_xpki_cert /tmp/idm_xpki_key /tmp/idm_UPnP_CA /etc/cert/ /nvram/certs/devicecert_2.pk12 /tmp/.cfgDynamicSExpki /etc/xupnp-ca/UPnP_CA -subsys eRT.
+14033 1416m 51740 16468 11288  5152     0   132 /opt/icontrol/sbin/xhSecurityService
+13931  893m 36916 16080 12280  3784     8   128 /opt/icontrol/sbin/xhRdkIntegrationService
+16643 39812 12348 15924 12848  3500   468   132 /usr/opensync/bin/qm
+14252  687m 96412 14364  7980  6280    48   132 /usr/bin/CcspAdvSecuritySsp -subsys eRT.
+16642 39360 12916 13728 10272  3852   524   132 /usr/opensync/bin/sm
+14032 1018m 35920 13656 10640  2916     0   132 /opt/icontrol/sbin/xhPkiService
+ 3954  246m 39536 13648  7728  5712     8   128 /usr/bin/PsmSsp -subsys eRT.
+ 4417  376m 46616 13584  6404  6300     0   192 ovs-vswitchd --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --log-file=/dev/null --detach
+11391  759m  100m 13384  9772  3416     0   132 /usr/bin/webconfig
+11612  816m 94808 13284  9628  3328     0   132 /usr/bin/parodus --hw-model=SCER11BEL --hw-serial-number=ER12SCS2604005CE --hw-manufacturer=SERCOMM --hw-last-reboot-reason=power-on-reset --fw-name=SCER11BEL_8.2p11s1_PROD_sey --boot-time=1783616750 --hw-mac=78:B3:9F:FE:0C:0F --webpa-ping-time=180 --webpa-interface-used=erouter0 --webpa-url=https://fabric.xmidt.comcast.net:8080 --webpa-backoff-max=8 --parodus-local-url=tcp://127.0.0.1:6666 --p
+12288 1320m  150m 13228  7988  4944     0   132 /usr/bin/telemetry2_0
+13481 18416  4972 13204  6300  4544     0   132 /usr/sbin/snmpd -C -c /tmp/snmpd.conf -Dtsm,dtls,openssl,cert,tls -f -a -Lo -I -inetNetToMediaTable ipNetToPhysicalTable ifTable system_mib sysUpTime sysORTable snmpTargetAddrEntry snmpNotifyTable snmpTargetParamsEntry hrStorageEntry hrDeviceEntry hrProcessorEntry hrSWRunEntry hrSWRunPerfEntry ipIfStatsTable ifXTable proc vmstat hardware
+13868 1146m 40592 13092  9560  3532     0   132 /opt/icontrol/sbin/xhPropsService -c /nvram/icontrol -h /opt/icontrol
+14035  954m 35808 13072 10196  2876     0   128 /opt/icontrol/sbin/xhDiagService
+16644 38800 12044 13052 10308  3032   468   188 /usr/opensync/bin/cm
+16645 38384 11924 12936 10244  3016   468   172 /usr/opensync/bin/nm
+14039 1084m 38048 12788 10032  2756     0   132 /opt/icontrol/sbin/xhBackupRestoreService
+13847 1212m 42004 12536  9808  2700     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+14034  884m 31464 12236  9768  2468     0   128 /opt/icontrol/sbin/xhUserService
+16647 37848 11508 12024  9912  2556   468   132 /usr/opensync/bin/rdkm
+16646 37840 11508 11980  9920  2512   468   132 /usr/opensync/bin/lm
+ 7591  832m  109m 11684  8228  3216    48   128 /usr/bin/CcspLMLite -subsys eRT.
+16581 38104 11772 11180  8912  2720   468   132 /usr/opensync/bin/pl2rld
+13873 1211m 42076 11104  8896  2208     0   132 /opt/icontrol/sbin/xhCronService
+16585 37892 11512 11052 10652  2488  2088   132 {dm.master} /usr/opensync/bin/dm
+ 4285 14952  3892 11036  7252  4140   548   132 /usr/sbin/ovsdb-server --remote=punix:/var/run/openvswitch/db.sock --remote=db:Open_vSwitch,Open_vSwitch,manager_options --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --ca-cert=db:Open_vSwitch,SSL,ca_cert --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach --monitor --log-file=/dev/null --unixctl=/var/run/openvswitch/ovsdb-server.ctl /tmp/etc/o
+ 7545  551m 87856 11024  7428  3508    48   128 /usr/bin/CcspEthAgent -subsys eRT.
+10539  343m 64164 10216  6924  2988     8   128 /usr/bin/harvester
+ 2180  375m 42696 10056  7196  1740     0   132 /usr/sbin/syslog-ng -F --cfgfile /etc/syslog-ng/syslog-ng.conf --control /tmp/lib/syslog-ng/syslog-ng.ctl --persist-file /tmp/lib/syslog-ng/syslog-ng.persist --pidfile /tmp/lib/syslog-ng/syslog-ng.pid
+ 7541  855m  134m 10016  5804  3740    48   128 /usr/bin/CcspTandDSsp -subsys eRT.
+  967 90660 17832  9344  3740  5100    16   132 /lib/systemd/systemd-journald
+    1 94156 19656  9176  4060  3360     0   132 {systemd} /sbin/init
+ 6803  974m  125m  8840  5428  3072    48   128 /usr/rdk/wanmanager/wanmanager -subsys eRT.
+ 2705  171m 27408  8328  6632  1720    48   128 /usr/bin/gw_prov_utopia
+ 4553  169m 27136  8260  6216  2004     0   132 /usr/bin/OvsAgent
+ 9221  547m 85288  8012  6000  1752    12   132 IGD brlan0
+ 5978 13552  3656  7892  6056  2984  1852   128 wlssk -n
+ 2260 12580  7316  7824  1404  6364     0   132 /usr/bin/rtrouted -s unix:///tmp/rtrouted
+ 2378 23256  2392  7768  5892  1720     0   132 /usr/bin/rdkssaecckdf -d
+ 7582  459m 61088  7748  5484  2016    16   132 /usr/bin/CcspXdnsSsp -subsys eRT.
+18108  313m 43600  7704  5944  1720     0   132 /usr/bin/aker -p tcp://127.0.0.1:6666 -c tcp://127.0.0.1:8888 -w /usr/bin/parcon -d /nvram/pcs.bin -f /nvram/pcs.bin.md5 -i mac:78b39ffe0c0f
+10511  644m  115m  7544  4852  2432    48   132 /usr/bin/meshAgent -subsys eRT.
+11387  547m 86172  7532  4424  2976    12   132 /usr/bin/webpa -subsys eRT.
+ 2329  306m 35352  7192  5512  1616     0   132 /usr/bin/CcspCrSsp -subsys eRT.
+ 9927 98.0m 18512  6780  5496  1196     8   132 CcspHomeSecurity 8081
+ 8744 12148  3536  6764  5668  2724  1760   128 ecbd
+17795  8804   720  6676  4952   948     0   132 /usr/sbin/radiusauthd /dev/stdin -e /tmp/radiusauthdentropy -f /rdklogs/logs/radiusauthd.log
+ 2741  107m 27448  6432  4680  1732    12   132 /usr/bin/rdkledmanager -subsys eRT.
+ 6807  172m 27624  6424  4680  1760    48   132 /usr/bin/fwupgrademanager -subsys eRT.
+17259 75228  1548  6160  4364  1056     0   132 /usr/sbin/ntpd -u ntp:ntp -p /run/ntpd.pid -l /rdklogs/logs/ntpLog.log -c /tmp/ntp.conf -g
+ 6886 16684  1520  5908  4940   956     0   132 netmonitor
+17034  230m 29348  5848  3320  2780   508   128 acsd2
+ 4434  106m 27128  5812  4252  1532     0   128 /usr/bin/rdkthermalmanager -subsys eRT.
+ 8981 14428  3676  5780  4608  1648   548   128 wps_pbcd
+ 1478  9248  1276  5680  3832  1392     0   132 /lib/systemd/systemd-udevd
+ 7669  882m 99.9m  5600  3448  2060    48   132 /usr/bin/gateway_manager -subsys eRT.
+ 7553  240m 35368  5460  3852  1580     0   132 /usr/bin/notify_comp -subsys eRT.
+ 8356  9952   632  5396  3820   540     0   132 /usr/lib/bluez5/bluetooth/bluetoothd -d
+16590 37892 11512  5272  4760  2132  1620   132 {dm.slave} /usr/opensync/bin/dm
+11407  333m 60544  4944  3048  1872    12   128 /usr/bin/rfc_agent
+ 7877  4648  1752  3772  2168  1604     0   132 {selfheal_aggres} /bin/sh /usr/ccsp/tad/selfheal_aggressive.sh
+13572  6844   652  3676  2520   416     0   132 dibbler-server start
+11218  6616   588  3644  2560   428     0   132 dibbler-client start -w /etc/dibbler/erouter0
+ 5296 14376  8832  3516  2272   356     0   132 /usr/bin/zigbeed
+10978 20700  2488  3516  1092  1900     0   132 lighttpd -f /etc/lighttpd.conf
+ 4022  4212  1316  3392  2236  1156     0   132 {rdkbLogMonitor.} /bin/sh /rdklogger/rdkbLogMonitor.sh
+ 5966  9172  1876  3332  2784   456    20   132 wifi_rdk_initd
+ 5289 88588 16944  3292  2948   324     0   132 /usr/bin/cpcd_monitor
+13995  7752  1348  3280  1416  1188     0   132 zebra -d -f /var/zebra.conf -P 0
+ 7869  4120  1224  3252  2160  1092     0   132 {self_heal_conne} /bin/sh /usr/ccsp/tad/self_heal_connectivity_test.sh
+ 2038  7528   692  3244  2288   544     0   132 /usr/bin/socat -v pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
+ 7874  4044  1148  3204  3052  1060   908   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 2023  4888   544  3048  2396   400     0   132 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 2920  745m 93212  3008  1608  1328     8   132 syseventd
+ 4284 11004   712  2984  2724   808   548   132 {monitor} ovsdb-server: monitoring pid 4285 (healthy)
+ 4028  3840   944  2932  2176   756     0   132 {fileUploadRando} /bin/sh /rdklogger/fileUploadRandom.sh
+15892 13840  3644  2920  1824  1036     0   128 ceventd
+10825 11812  3548  2868  1800  1004     0   132 eapd
+ 3769 17484  1556  2592  1548  1028     0   132 trigger
+ 6909  3444   548  2528  2148   380     0   132 sh /lib/rdk/wan_ssh.sh enable
+ 6611 11748  3508  2524  1560   920     0   132 debug_monitor /data
+ 4013  3312   416  2520  2252   268     0   132 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 2262  3312   416  2512  2208   304     0   132 /bin/sh /usr/bin/rbus_log_capture.sh
+17615  3312   416  2476  2200   276     0   132 {cert_conf.sh} /bin/sh /etc/lnf/cert_conf.sh
+ 7560  3312   416  2464  2184   280     0   132 {update_journal_} /bin/sh /rdklogger/update_journal_log.sh start
+ 2069  3312   416  2432  2208   224     0   132 {xhStartup.sh} /bin/sh /opt/icontrol/bin/xhStartup.sh
+13872  3312   416  2392  2168   224     0   132 {xhStartZigbeeCo} /bin/sh /opt/icontrol/bin/xhStartZigbeeCore.sh
+13879  207m 13052  2300  1384   916     0   132 /opt/icontrol/sbin/ZigbeeCore -v4900 -p /dev/ttyZigbeeNCP
+ 2957 16404  1500  2276  1340   924     0   132 /usr/bin/syseventd_fork_helper 12
+ 2263  148m 18040  2196  1784   404     0   132 /usr/bin/rbus_session_mgr
+14822  4044  1148  2084  1932  1060   908   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 5270 93212 25132  1992  1444   292     0   132 /usr/bin/cpcd -c /etc/cpcd.conf
+ 3892  3512   364  1956  1776   172     0   132 crond -l 9
+15306  2580   356  1900  1416   192     0   132 dnsmasq -q --clear-on-reload --bind-dynamic --add-mac --add-cpe-id=abcdefgh -P 4096 -C /var/dnsmasq.conf --dhcp-authoritative --stop-dns-rebind --log-facility=/rdklogs/logs/dnsmasq.log
+10148  3412   360  1888  1676   128     0   132 udhcpc -O 125 -O 122 -O ntpsrv -O timezone -V eRouter1.0 -x 0x2B:020745524f55544552030c45524f555445523a45445641 -x 0x7D:0000118b0701027B7C7c0107 -i erouter0 -p /tmp/udhcpc.erouter0.pid -s /usr/bin/service_udhcpc -b
+ 2225  4044   388  1856  1584   212     0   132 /usr/bin/accessManager any
+ 5967  3816   428  1852  1632   204     0   132 bcm_msgd -c wifi -v 1
+11872  3056   400  1824  1628   180     0   132 nfq_handler 4
+22538  2740   364  1784  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -p [24.65.240.148]:49971 -p [2604:3d08:3:33::b50d:1e81]:49971 -r /tmp/.dropbear/dropcfg1_wanssh -r /tmp/.dropbear/dropcfg2_wanssh
+ 2828  3412   360  1764  1628   116     0   132 syslogd -l 6
+ 2041 76252  8828  1764  1336   364     0   132 /bin/tee-supplicant -t optee_armtz/ProductionTA
+16471  2740   364  1752  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -r /tmp/.dropbear/dropcfg116374 -r /tmp/.dropbear/dropcfg216374 -p [24.65.240.148]:22 -p [2604:3d08:3:33::b50d:1e81]:22 -P /var/run/dropbear.pid
+14823  3416   364  1736  1592   144     0   136 busybox top -mbn1
+10491  2668   372  1732  1440   140     0   132 /usr/bin/mcpd
+14824  3416   364  1544  1420   120     0   136 sort -k4 -r
+12089  3284   232  1472  1360   112     0   136 sleep 5m
+13627  3280   228  1460  1356   104     0   132 sleep 60
+14760  3280   228  1456  1356   100     0   132 sleep 60
+14751  3280   228  1456  1356   100     0   132 sleep 10
+14413  3280   228  1424  1320   104     0   132 sleep 60
+ 6095  3280   228  1424  1320   104     0   132 sleep 3600
+ 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+13874  3280   228  1416  1316   100     0   132 sleep 60
+26387  3284   232  1408  1300   108     0   136 sleep 3600
+ 1074  2264   356  1320  1204   104     0   132 {wdtctl} wdtd
+ 2025  2048   212  1284  1196    80     0   132 usr/bin/sc-btnd
+  972  2180   344  1032   944    80     0   132 /usr/bin/logbackup
+ 7262  2352   356   716   552   100     0   132 hciattach /dev/ttyH0 any 115200 flow
+Swap total:0 free:0
+260709-22:09:33.244468 MemTotal:        2031572 kB
+MemFree:          592332 kB
+MemAvailable:     915068 kB
+Buffers:          178076 kB
+Cached:           231740 kB
+SwapCached:            0 kB
+Active:           538912 kB
+Inactive:         166700 kB
+Active(anon):     323752 kB
+Inactive(anon):    24684 kB
+Active(file):     215160 kB
+Inactive(file):   142016 kB
+Unevictable:          60 kB
+Mlocked:              60 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        295772 kB
+Mapped:            78680 kB
+Shmem:             52648 kB
+Slab:             147512 kB
+SReclaimable:      21124 kB
+SUnreclaim:       126388 kB
+KernelStack:        9600 kB
+PageTables:        10176 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1015784 kB
+Committed_AS:    3426440 kB
+VmallocTotal:   263061440 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              784 kB
+CmaTotal:         442368 kB
+CmaFree:           50064 kB
+260709-22:09:33.249211 CachedMemory: 231740 kB
+260709-22:09:33.252954 RDKB_SELFHEAL : Slab: 147512 kB
+260709-22:25:03.414156 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:22:24:33
+260709-22:25:03.485538 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-22:25:03.487668 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-22:25:03.566679 [RDKB_SELFHEAL] : Current time in seconds : 59103
+260709-22:25:04.510018 DHCPv6_Client_type is dibbler-client
+260709-22:25:04.633972 os-wanmanager enabled
+260709-22:25:04.649414 wanmanager process found 6803 
+260709-22:25:04.946172 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-22:25:05.012402 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-22:25:05.076896 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-22:25:05.219682 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-22:25:05.425393 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-22:25:05.427640 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-22:25:05.468085 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-22:25:05.485473 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-22:25:05.554024 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-22:25:05.556445 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-22:25:05.652783 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-22:25:05.725090 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-22:25:05.744839 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-22:25:06.167274 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-22:25:06.277717 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-22:25:07.251622 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:25:07.253894 Mesh: Config and State are matching for bhaul-ap-24
+260709-22:25:07.358874 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-22:25:08.323015 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:25:08.325351 Mesh: Config and State are matching for bhaul-ap-50
+260709-22:25:08.327723 Mesh: Both Bhauls are good
+260709-22:25:18.879462 RDKB_SELFHEAL : Slab: 147544 kB
+260709-22:40:49.035175 RDKB_SELFHEAL : CPU usage is 6 at timestamp 2026:07:09:22:40:18
+260709-22:40:49.109768 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-22:40:49.112224 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-22:40:49.192076 [RDKB_SELFHEAL] : Current time in seconds : 60049
+260709-22:40:50.159012 DHCPv6_Client_type is dibbler-client
+260709-22:40:50.283389 os-wanmanager enabled
+260709-22:40:50.299393 wanmanager process found 6803 
+260709-22:40:50.600614 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-22:40:50.663642 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-22:40:50.710935 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-22:40:50.820904 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-22:40:51.009481 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-22:40:51.011734 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-22:40:51.050774 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-22:40:51.068013 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-22:40:51.140635 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-22:40:51.142936 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-22:40:51.249288 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-22:40:51.325221 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-22:40:51.345601 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-22:40:51.767365 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-22:40:51.878105 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-22:40:52.831722 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:40:52.834051 Mesh: Config and State are matching for bhaul-ap-24
+260709-22:40:52.940659 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-22:40:53.935246 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:40:53.938063 Mesh: Config and State are matching for bhaul-ap-50
+260709-22:40:53.940967 Mesh: Both Bhauls are good
+260709-22:41:04.492127 RDKB_SELFHEAL : Slab: 147572 kB
+IPv6 default route fe80::1111:1111
+IPv6 global route 2604:3d08:3:33::b50d:1e81
+PING_LATENCY_GWIPv4:2.627,2.235,2.105
+PING_LATENCY_GWIPv6:3.837,2.071,3.310
+260709-22:42:39.122025 [RDKB_SELFHEAL] : GW IP Connectivity Test Successfull
+260709-22:42:39.124156 [RDKB_SELFHEAL] : IPv4 GW  Address is:24.65.240.1
+260709-22:42:39.126293 [RDKB_SELFHEAL] : IPv6 GW  Address is:fe80::1111:1111
+260709-22:42:39.128734 [RDKB_SELFHEAL] : IPv6 GW global Address is:2604:3d08:3:33::b50d:1e81
+260709-22:42:39.161060 RDKB_SELFHEAL : Ping server lists are empty , not taking any corrective actions
+260709-22:48:01.002794 RDKB_SYS_MEM_INFO_SYS : Total memory in system is 2031572 at timestamp 2026:07:09:22:48:00
+260709-22:48:01.005728 RDKB_SYS_MEM_INFO_SYS : Used memory in system is 1009956 at timestamp 2026:07:09:22:48:00
+260709-22:48:01.008324 RDKB_SYS_MEM_INFO_SYS : Free memory in system is 590176 at timestamp 2026:07:09:22:48:00
+260709-22:48:01.010955 USED_MEM:1009956
+UPTIMEDAY:0
+UPTIMEHR:3
+UPTIMEMIN:48
+260709-22:48:01.022242 FREE_MEM:590176
+260709-22:48:01.035384 RDKB_LOAD_AVERAGE : Load Average is 0.36:0.34:0.29 at timestamp 2026:07:09:22:48:00
+260709-22:48:01.041639 LOAD_AVERAGE:0.29
+260709-22:48:31.129498 RDKB_CPU_USAGE : CPU usage is 6 at timestamp 2026:07:09:22:48:31
+260709-22:48:31.131826 USED_CPU:6
+260709-22:48:32.156937 MPSTAT_USR:3.80
+260709-22:48:32.159137 MPSTAT_SYS:1.77
+260709-22:48:32.161337 MPSTAT_NICE:0.51
+260709-22:48:32.163502 MPSTAT_IRQ:0.00
+260709-22:48:32.165724 MPSTAT_SOFT:0.25
+260709-22:48:32.168220 MPSTAT_IDLE:93.67
+260709-22:48:32.193563 Count is 11
+VM STATS SINCE BOOT ARM
+vmInfoHeader: swpd,free,buff,cache,si,so
+vmInfoValues: 0,590176,914136,178112,,
+260709-22:56:34.688118 RDKB_SELFHEAL : CPU usage is 6 at timestamp 2026:07:09:22:56:04
+260709-22:56:34.771420 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-22:56:34.774178 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-22:56:34.867059 [RDKB_SELFHEAL] : Current time in seconds : 60994
+260709-22:56:35.785310 DHCPv6_Client_type is dibbler-client
+260709-22:56:35.899540 os-wanmanager enabled
+260709-22:56:35.914413 wanmanager process found 6803 
+260709-22:56:36.194243 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-22:56:36.252294 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-22:56:36.297597 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-22:56:36.407829 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-22:56:36.591743 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-22:56:36.594044 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-22:56:36.633178 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-22:56:36.650369 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-22:56:36.711901 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-22:56:36.714188 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-22:56:36.810936 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-22:56:36.883004 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-22:56:36.902704 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-22:56:37.313119 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-22:56:37.420707 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-22:56:38.418967 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:56:38.421388 Mesh: Config and State are matching for bhaul-ap-24
+260709-22:56:38.526036 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-22:56:39.504035 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-22:56:39.506514 Mesh: Config and State are matching for bhaul-ap-50
+260709-22:56:39.509067 Mesh: Both Bhauls are good
+260709-22:56:50.076997 RDKB_SELFHEAL : Slab: 147664 kB
+260709-23:12:20.235806 RDKB_SELFHEAL : CPU usage is 5 at timestamp 2026:07:09:23:11:50
+260709-23:12:20.324800 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-23:12:20.327044 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-23:12:20.405826 [RDKB_SELFHEAL] : Current time in seconds : 61940
+260709-23:12:21.274296 DHCPv6_Client_type is dibbler-client
+260709-23:12:21.384325 os-wanmanager enabled
+260709-23:12:21.403417 wanmanager process found 6803 
+260709-23:12:21.681631 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-23:12:21.739037 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-23:12:21.787330 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-23:12:21.897353 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-23:12:22.080046 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-23:12:22.082333 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-23:12:22.121185 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-23:12:22.138426 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-23:12:22.200361 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-23:12:22.202659 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-23:12:22.299559 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-23:12:22.369408 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-23:12:22.389092 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-23:12:22.797534 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-23:12:22.906439 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-23:12:23.870500 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-23:12:23.872924 Mesh: Config and State are matching for bhaul-ap-24
+260709-23:12:23.988994 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-23:12:24.947256 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-23:12:24.949739 Mesh: Config and State are matching for bhaul-ap-50
+260709-23:12:24.952369 Mesh: Both Bhauls are good
+260709-23:12:35.508055 *************************
+260709-23:12:35.512504 Thu Jul  9 23:12:35 UTC 2026
+260709-23:12:35.750248 Mem total:2031572 anon:296560 map:79664 free:590484
+ slab:147704 buf:178140 cache:232992 dirty:0 write:0
+  PID^^^VSZ^VSZRW   RSS (SHR) DIRTY (SHR) STACK COMMAND
+ 9354  902m  172m 63808 13852 48180  1860  3516 /usr/bin/OneWifi -subsys eRT.
+16641  262m 45928 29088 10560 18796   468   288 /usr/opensync/bin/ovsm
+13929 2102m 92884 26424 14084 12220     0   132 /opt/icontrol/sbin/xhDeviceService
+14037 2091m 84400 22260 12676  9512     0   132 /opt/icontrol/sbin/xhCommService
+ 6819 1287m  175m 22224  8880 11764    48   128 /usr/bin/CcspPandMSsp -subsys eRT.
+18928  121m 43956 21192  6348  9120     0   136 /usr/lib/cujo-agent
+14036 1550m 53856 17208 12204  4116     0   132 /opt/icontrol/sbin/xhAutomationService
+16648  193m 39704 17112 11284  6132   524   160 /usr/opensync/bin/bm
+ 5927  564m 78860 16920 10792  4136    12   128 /usr/bin/interdevicemanager /tmp/idm_xpki_cert /tmp/idm_xpki_key /tmp/idm_UPnP_CA /etc/cert/ /nvram/certs/devicecert_2.pk12 /tmp/.cfgDynamicSExpki /etc/xupnp-ca/UPnP_CA -subsys eRT.
+14033 1416m 51744 16480 11288  5164     0   132 /opt/icontrol/sbin/xhSecurityService
+13931  893m 36916 16080 12280  3784     8   128 /opt/icontrol/sbin/xhRdkIntegrationService
+16643 39812 12348 15924 12848  3500   468   132 /usr/opensync/bin/qm
+14252  687m 96344 14360  7980  6276    48   132 /usr/bin/CcspAdvSecuritySsp -subsys eRT.
+16642 39360 12916 13736 10272  3860   524   132 /usr/opensync/bin/sm
+14032 1018m 35920 13656 10640  2916     0   132 /opt/icontrol/sbin/xhPkiService
+ 3954  246m 39536 13648  7728  5712     8   128 /usr/bin/PsmSsp -subsys eRT.
+ 4417  376m 46616 13584  6404  6300     0   192 ovs-vswitchd --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --log-file=/dev/null --detach
+11391  759m  100m 13384  9772  3416     0   132 /usr/bin/webconfig
+11612  816m 94808 13284  9628  3328     0   132 /usr/bin/parodus --hw-model=SCER11BEL --hw-serial-number=ER12SCS2604005CE --hw-manufacturer=SERCOMM --hw-last-reboot-reason=power-on-reset --fw-name=SCER11BEL_8.2p11s1_PROD_sey --boot-time=1783616750 --hw-mac=78:B3:9F:FE:0C:0F --webpa-ping-time=180 --webpa-interface-used=erouter0 --webpa-url=https://fabric.xmidt.comcast.net:8080 --webpa-backoff-max=8 --parodus-local-url=tcp://127.0.0.1:6666 --p
+12288 1320m  150m 13248  7988  4964     0   132 /usr/bin/telemetry2_0
+13481 18416  4972 13204  6300  4544     0   132 /usr/sbin/snmpd -C -c /tmp/snmpd.conf -Dtsm,dtls,openssl,cert,tls -f -a -Lo -I -inetNetToMediaTable ipNetToPhysicalTable ifTable system_mib sysUpTime sysORTable snmpTargetAddrEntry snmpNotifyTable snmpTargetParamsEntry hrStorageEntry hrDeviceEntry hrProcessorEntry hrSWRunEntry hrSWRunPerfEntry ipIfStatsTable ifXTable proc vmstat hardware
+13868 1146m 40592 13092  9560  3532     0   132 /opt/icontrol/sbin/xhPropsService -c /nvram/icontrol -h /opt/icontrol
+14035  954m 35808 13072 10196  2876     0   128 /opt/icontrol/sbin/xhDiagService
+16644 38800 12044 13052 10308  3032   468   188 /usr/opensync/bin/cm
+16645 38384 11924 12936 10244  3016   468   172 /usr/opensync/bin/nm
+14039 1084m 38048 12788 10032  2756     0   132 /opt/icontrol/sbin/xhBackupRestoreService
+13847 1212m 42004 12536  9808  2700     0   132 /opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol
+14034  884m 31464 12236  9768  2468     0   128 /opt/icontrol/sbin/xhUserService
+16647 37848 11508 12024  9912  2556   468   132 /usr/opensync/bin/rdkm
+16646 37840 11508 11980  9920  2512   468   132 /usr/opensync/bin/lm
+ 7591  832m  109m 11680  8228  3212    48   128 /usr/bin/CcspLMLite -subsys eRT.
+16581 38104 11772 11180  8912  2720   468   132 /usr/opensync/bin/pl2rld
+13873 1211m 42076 11104  8896  2208     0   132 /opt/icontrol/sbin/xhCronService
+16585 37892 11512 11052 10652  2488  2088   132 {dm.master} /usr/opensync/bin/dm
+ 4285 14952  3892 11036  7252  4140   548   132 /usr/sbin/ovsdb-server --remote=punix:/var/run/openvswitch/db.sock --remote=db:Open_vSwitch,Open_vSwitch,manager_options --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --ca-cert=db:Open_vSwitch,SSL,ca_cert --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach --monitor --log-file=/dev/null --unixctl=/var/run/openvswitch/ovsdb-server.ctl /tmp/etc/o
+ 7545  551m 87856 11024  7428  3508    48   128 /usr/bin/CcspEthAgent -subsys eRT.
+  967 90660 17832 10292  3740  6048    16   132 /lib/systemd/systemd-journald
+10539  343m 64164 10216  6924  2988     8   128 /usr/bin/harvester
+ 2180  375m 42696 10056  7196  1740     0   132 /usr/sbin/syslog-ng -F --cfgfile /etc/syslog-ng/syslog-ng.conf --control /tmp/lib/syslog-ng/syslog-ng.ctl --persist-file /tmp/lib/syslog-ng/syslog-ng.persist --pidfile /tmp/lib/syslog-ng/syslog-ng.pid
+ 7541  855m  134m 10016  5804  3740    48   128 /usr/bin/CcspTandDSsp -subsys eRT.
+    1 94156 19656  9176  4060  3360     0   132 {systemd} /sbin/init
+ 6803  974m  125m  8840  5428  3072    48   128 /usr/rdk/wanmanager/wanmanager -subsys eRT.
+ 2705  171m 27408  8328  6632  1720    48   128 /usr/bin/gw_prov_utopia
+ 4553  169m 27136  8260  6216  2004     0   132 /usr/bin/OvsAgent
+ 9221  547m 85288  8012  6000  1752    12   132 IGD brlan0
+ 5978 13552  3656  7892  6056  2984  1852   128 wlssk -n
+ 2260 12580  7316  7824  1404  6364     0   132 /usr/bin/rtrouted -s unix:///tmp/rtrouted
+ 2378 23256  2392  7768  5892  1720     0   132 /usr/bin/rdkssaecckdf -d
+ 7582  459m 61088  7748  5484  2016    16   132 /usr/bin/CcspXdnsSsp -subsys eRT.
+18108  313m 43600  7704  5944  1720     0   132 /usr/bin/aker -p tcp://127.0.0.1:6666 -c tcp://127.0.0.1:8888 -w /usr/bin/parcon -d /nvram/pcs.bin -f /nvram/pcs.bin.md5 -i mac:78b39ffe0c0f
+10511  644m  115m  7544  4852  2432    48   132 /usr/bin/meshAgent -subsys eRT.
+11387  547m 86172  7532  4424  2976    12   132 /usr/bin/webpa -subsys eRT.
+ 2329  306m 35352  7192  5512  1616     0   132 /usr/bin/CcspCrSsp -subsys eRT.
+ 9927 98.0m 18512  6780  5496  1196     8   132 CcspHomeSecurity 8081
+ 8744 12148  3536  6764  5668  2724  1760   128 ecbd
+17795  8804   720  6676  4952   948     0   132 /usr/sbin/radiusauthd /dev/stdin -e /tmp/radiusauthdentropy -f /rdklogs/logs/radiusauthd.log
+ 2741  107m 27448  6432  4680  1732    12   132 /usr/bin/rdkledmanager -subsys eRT.
+ 6807  172m 27624  6424  4680  1760    48   132 /usr/bin/fwupgrademanager -subsys eRT.
+17259 75228  1548  6160  4364  1056     0   132 /usr/sbin/ntpd -u ntp:ntp -p /run/ntpd.pid -l /rdklogs/logs/ntpLog.log -c /tmp/ntp.conf -g
+ 6886 16684  1520  5908  4940   956     0   132 netmonitor
+17034  230m 29348  5848  3320  2780   508   128 acsd2
+ 4434  106m 27128  5812  4252  1532     0   128 /usr/bin/rdkthermalmanager -subsys eRT.
+ 8981 14428  3676  5780  4608  1648   548   128 wps_pbcd
+ 1478  9248  1276  5680  3832  1392     0   132 /lib/systemd/systemd-udevd
+ 7669  882m 99.9m  5600  3448  2060    48   132 /usr/bin/gateway_manager -subsys eRT.
+ 7553  240m 35368  5460  3852  1580     0   132 /usr/bin/notify_comp -subsys eRT.
+ 8356  9952   632  5396  3820   540     0   132 /usr/lib/bluez5/bluetooth/bluetoothd -d
+16590 37892 11512  5272  4760  2132  1620   132 {dm.slave} /usr/opensync/bin/dm
+11407  333m 60544  4944  3048  1872    12   128 /usr/bin/rfc_agent
+ 7877  4648  1752  3772  2168  1604     0   132 {selfheal_aggres} /bin/sh /usr/ccsp/tad/selfheal_aggressive.sh
+13572  6844   652  3676  2520   416     0   132 dibbler-server start
+11218  6616   588  3644  2560   428     0   132 dibbler-client start -w /etc/dibbler/erouter0
+ 5296 14376  8832  3516  2272   356     0   132 /usr/bin/zigbeed
+10978 20700  2488  3516  1092  1900     0   132 lighttpd -f /etc/lighttpd.conf
+ 4022  4212  1316  3412  2236  1176     0   132 {rdkbLogMonitor.} /bin/sh /rdklogger/rdkbLogMonitor.sh
+ 5966  9172  1876  3332  2784   456    20   132 wifi_rdk_initd
+ 5289 88588 16944  3292  2948   324     0   132 /usr/bin/cpcd_monitor
+13995  7752  1348  3280  1416  1188     0   132 zebra -d -f /var/zebra.conf -P 0
+ 7869  4120  1224  3252  2160  1092     0   132 {self_heal_conne} /bin/sh /usr/ccsp/tad/self_heal_connectivity_test.sh
+ 2038  7528   692  3244  2288   544     0   132 /usr/bin/socat -v pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
+ 7874  4052  1156  3208  3044  1064   900   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 2023  4888   544  3048  2396   400     0   132 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 2920  745m 93212  3008  1608  1328     8   132 syseventd
+ 4284 11004   712  2984  2724   808   548   132 {monitor} ovsdb-server: monitoring pid 4285 (healthy)
+ 4028  3840   944  2936  2176   760     0   132 {fileUploadRando} /bin/sh /rdklogger/fileUploadRandom.sh
+15892 13840  3644  2920  1824  1036     0   128 ceventd
+10825 11812  3548  2868  1800  1004     0   132 eapd
+ 3769 17484  1556  2592  1548  1028     0   132 trigger
+ 2262  3444   548  2532  2208   324     0   132 /bin/sh /usr/bin/rbus_log_capture.sh
+ 6909  3444   548  2528  2148   380     0   132 sh /lib/rdk/wan_ssh.sh enable
+ 4013  3312   416  2524  2252   272     0   132 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 6611 11748  3508  2524  1560   920     0   132 debug_monitor /data
+17615  3312   416  2476  2200   276     0   132 {cert_conf.sh} /bin/sh /etc/lnf/cert_conf.sh
+ 7560  3312   416  2472  2184   288     0   132 {update_journal_} /bin/sh /rdklogger/update_journal_log.sh start
+ 2069  3312   416  2432  2208   224     0   132 {xhStartup.sh} /bin/sh /opt/icontrol/bin/xhStartup.sh
+13872  3312   416  2392  2168   224     0   132 {xhStartZigbeeCo} /bin/sh /opt/icontrol/bin/xhStartZigbeeCore.sh
+13879  207m 13052  2308  1384   924     0   132 /opt/icontrol/sbin/ZigbeeCore -v4900 -p /dev/ttyZigbeeNCP
+ 2957 16404  1500  2276  1340   924     0   132 /usr/bin/syseventd_fork_helper 12
+ 2263  148m 18040  2196  1784   404     0   132 /usr/bin/rbus_session_mgr
+25408  4052  1156  2088  1924  1064   900   132 {resource_monito} /bin/sh /usr/ccsp/tad/resource_monitor.sh
+ 5270 93212 25132  1992  1444   292     0   132 /usr/bin/cpcd -c /etc/cpcd.conf
+ 3892  3512   364  1956  1776   172     0   132 crond -l 9
+15306  2580   356  1900  1416   192     0   132 dnsmasq -q --clear-on-reload --bind-dynamic --add-mac --add-cpe-id=abcdefgh -P 4096 -C /var/dnsmasq.conf --dhcp-authoritative --stop-dns-rebind --log-facility=/rdklogs/logs/dnsmasq.log
+10148  3412   360  1888  1664   128     0   132 udhcpc -O 125 -O 122 -O ntpsrv -O timezone -V eRouter1.0 -x 0x2B:020745524f55544552030c45524f555445523a45445641 -x 0x7D:0000118b0701027B7C7c0107 -i erouter0 -p /tmp/udhcpc.erouter0.pid -s /usr/bin/service_udhcpc -b
+ 2225  4044   388  1856  1584   212     0   132 /usr/bin/accessManager any
+ 5967  3816   428  1852  1632   204     0   132 bcm_msgd -c wifi -v 1
+11872  3056   400  1824  1628   180     0   132 nfq_handler 4
+22538  2740   364  1784  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -p [24.65.240.148]:49971 -p [2604:3d08:3:33::b50d:1e81]:49971 -r /tmp/.dropbear/dropcfg1_wanssh -r /tmp/.dropbear/dropcfg2_wanssh
+ 2828  3412   360  1764  1640   116     0   132 syslogd -l 6
+ 2041 76252  8828  1764  1336   364     0   132 /bin/tee-supplicant -t optee_armtz/ProductionTA
+16471  2740   364  1752  1620   132     0   132 dropbear -E -s -b /etc/sshbanner.txt -a -r /tmp/.dropbear/dropcfg116374 -r /tmp/.dropbear/dropcfg216374 -p [24.65.240.148]:22 -p [2604:3d08:3:33::b50d:1e81]:22 -P /var/run/dropbear.pid
+25409  3416   364  1736  1592   144     0   136 busybox top -mbn1
+10491  2668   372  1732  1440   140     0   132 /usr/bin/mcpd
+25410  3416   364  1616  1496   120     0   136 sort -k4 -r
+25384  3280   228  1472  1372   100     0   132 sleep 10
+ 4569  3284   232  1468  1356   112     0   136 sleep 3600
+25379  3280   228  1464  1364   100     0   132 sleep 60
+25342  3280   228  1464  1360   104     0   132 sleep 60
+23769  3284   232  1456  1344   112     0   136 sleep 5m
+15393  3280   228  1444  1344   100     0   132 sleep 3600
+24322  3280   228  1428  1324   104     0   132 sleep 60
+ 3786  2292   356  1424  1284   120     0   132 /usr/bin/boops --in_file /dev/mmcblk0 --byte_offset 3198156800 --prefix --monitor --erase
+24682  3280   228  1408  1308   100     0   132 sleep 60
+ 1074  2264   356  1320  1204   104     0   132 {wdtctl} wdtd
+ 2025  2048   212  1284  1196    80     0   132 usr/bin/sc-btnd
+  972  2180   344  1032   944    80     0   132 /usr/bin/logbackup
+ 7262  2352   356   716   552   100     0   132 hciattach /dev/ttyH0 any 115200 flow
+Swap total:0 free:0
+260709-23:12:35.755702 MemTotal:        2031572 kB
+MemFree:          590732 kB
+MemAvailable:     914448 kB
+Buffers:          178140 kB
+Cached:           232992 kB
+SwapCached:            0 kB
+Active:           538740 kB
+Inactive:         168528 kB
+Active(anon):     324028 kB
+Inactive(anon):    25112 kB
+Active(file):     214712 kB
+Inactive(file):   143416 kB
+Unevictable:          60 kB
+Mlocked:              60 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        296192 kB
+Mapped:            79664 kB
+Shmem:             53012 kB
+Slab:             147704 kB
+SReclaimable:      21184 kB
+SUnreclaim:       126520 kB
+KernelStack:        9600 kB
+PageTables:        10116 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1015784 kB
+Committed_AS:    3428688 kB
+VmallocTotal:   263061440 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              784 kB
+CmaTotal:         442368 kB
+CmaFree:           50064 kB
+260709-23:12:35.760409 CachedMemory: 232992 kB
+260709-23:12:35.764158 RDKB_SELFHEAL : Slab: 147704 kB
+260709-23:28:05.941471 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:23:27:35
+260709-23:28:06.026765 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-23:28:06.029410 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-23:28:06.119039 [RDKB_SELFHEAL] : Current time in seconds : 62886
+260709-23:28:06.983782 DHCPv6_Client_type is dibbler-client
+260709-23:28:07.093307 os-wanmanager enabled
+260709-23:28:07.107727 wanmanager process found 6803 
+260709-23:28:07.373925 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-23:28:07.430888 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-23:28:07.477941 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-23:28:07.592250 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-23:28:07.789038 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-23:28:07.791442 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-23:28:07.832102 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-23:28:07.849592 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-23:28:07.911365 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-23:28:07.913640 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-23:28:08.010017 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-23:28:08.080473 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-23:28:08.101739 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-23:28:08.512990 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-23:28:08.628205 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-23:28:09.579146 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-23:28:09.581589 Mesh: Config and State are matching for bhaul-ap-24
+260709-23:28:09.688033 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-23:28:10.781168 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-23:28:10.783624 Mesh: Config and State are matching for bhaul-ap-50
+260709-23:28:10.786122 Mesh: Both Bhauls are good
+260709-23:28:21.352643 RDKB_SELFHEAL : Slab: 147624 kB
+IPv6 default route fe80::1111:1111
+IPv6 global route 2604:3d08:3:33::b50d:1e81
+PING_LATENCY_GWIPv4:10.957,103.739,47.134
+PING_LATENCY_GWIPv6:46.298,4.995,8.276
+260709-23:42:43.455862 [RDKB_SELFHEAL] : GW IP Connectivity Test Successfull
+260709-23:42:43.458020 [RDKB_SELFHEAL] : IPv4 GW  Address is:24.65.240.1
+260709-23:42:43.460139 [RDKB_SELFHEAL] : IPv6 GW  Address is:fe80::1111:1111
+260709-23:42:43.462245 [RDKB_SELFHEAL] : IPv6 GW global Address is:2604:3d08:3:33::b50d:1e81
+260709-23:42:43.497024 RDKB_SELFHEAL : Ping server lists are empty , not taking any corrective actions
+260709-23:43:51.524711 RDKB_SELFHEAL : CPU usage is 7 at timestamp 2026:07:09:23:43:21
+260709-23:43:51.607283 [RDKB_SELFHEAL] : Firmware upgrade start time : 7200
+260709-23:43:51.611110 [RDKB_SELFHEAL] : Firmware upgrade end time : 14400
+260709-23:43:51.703565 [RDKB_SELFHEAL] : Current time in seconds : 63831
+260709-23:43:52.603281 DHCPv6_Client_type is dibbler-client
+260709-23:43:52.722069 os-wanmanager enabled
+260709-23:43:52.737896 wanmanager process found 6803 
+260709-23:43:53.025994 [RDKB_SELFHEAL] : Value of lanSelfheal : 
+260709-23:43:53.084595 [RDKB_SELFHEAL] : Value of l3net_selfheal : 
+260709-23:43:53.131901 [RDKB_SELFHEAL] : Mesh is enabled, test if tunnels are attached to bridges
+260709-23:43:53.242323 [RDKB_SELFHEAL] : WiFi Initialization done
+260709-23:43:53.425196 [RDKB_SELFHEAL] : BRIDGE_MODE is 0
+260709-23:43:53.427570 [RDKB_SELFHEAL] : FIREWALL_ENABLED is 1
+-A PREROUTING -i brlan0 -j prerouting_fromlan
+-A PREROUTING -i brlan0 -j prerouting_devices
+-A PREROUTING -i erouter0 -j prerouting_fromwan
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+-A PREROUTING -i erouter0 -j prerouting_fromwan_todmz
+260709-23:43:53.468259 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : lan_ipaddr = 10.0.0.1 lan_netmask = 255.255.255.0
+260709-23:43:53.485454 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] :  lost_and_found_enable = true
+260709-23:43:53.549289 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : DHCP server configuring for IOT iot_ifname = br106 
+260709-23:43:53.551896 [RDKB_SELFHEAL] [DHCPCORRUPT_TRACE] : iot_dhcp_start = 192.168.106.100 iot_dhcp_end=192.168.106.150 iot_netmask=255.255.255.0
+260709-23:43:53.656311 BR_MODE:0 ZEBRA_PID:13995 WAN_STATUS:started
+260709-23:43:53.727471 [RDKB_SELFHEAL] : Global IPv6 is present
+260709-23:43:53.747802 Telemetry 2.0 feature is true
+D process list:
+[RDKB_SELFHEAL] : There is no D process running in this device
+260709-23:43:54.165671 Mesh: wl0.7 & wl1.7 is not present, try with cloud ifnmaes
+260709-23:43:54.272554 Mesh: Checking Duplicate interface name present for bhaul-ap-24
+260709-23:43:55.300397 bhaul-ap-24| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 state_maclist 8c:c5:b4:e7:8a:ce
+9c:24:72:20:cd:66 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-23:43:55.306229 Mesh: Config and State are matching for bhaul-ap-24
+260709-23:43:55.446876 Mesh: Checking Duplicate interface name present for bhaul-ap-50
+260709-23:43:56.555747 bhaul-ap-50| config_enable true state_enable true  config_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 state_maclist 8c:c5:b4:e7:8a:cf
+8c:c5:b4:e7:8a:d0
+9c:24:72:20:cd:67 config_mactype whitelist state_mactype whitelist config_ssid we.connect.yellowstone  state_ssid we.connect.yellowstone
+260709-23:43:56.558456 Mesh: Config and State are matching for bhaul-ap-50
+260709-23:43:56.561596 Mesh: Both Bhauls are good
+260709-23:44:07.167848 RDKB_SELFHEAL : Slab: 148284 kB
+UPTIMEDAY:0
+UPTIMEHR:4
+UPTIMEMIN:48
+260709-23:48:01.155117 RDKB_SYS_MEM_INFO_SYS : Total memory in system is 2031572 at timestamp 2026:07:09:23:48:01
+260709-23:48:01.159243 RDKB_SYS_MEM_INFO_SYS : Used memory in system is 1012200 at timestamp 2026:07:09:23:48:01
+260709-23:48:01.163164 RDKB_SYS_MEM_INFO_SYS : Free memory in system is 585932 at timestamp 2026:07:09:23:48:01
+260709-23:48:01.166431 USED_MEM:1012200
+260709-23:48:01.186665 FREE_MEM:585932
+260709-23:48:01.196261 RDKB_LOAD_AVERAGE : Load Average is 0.14:0.20:0.23 at timestamp 2026:07:09:23:48:01
+260709-23:48:01.201594 LOAD_AVERAGE:0.23

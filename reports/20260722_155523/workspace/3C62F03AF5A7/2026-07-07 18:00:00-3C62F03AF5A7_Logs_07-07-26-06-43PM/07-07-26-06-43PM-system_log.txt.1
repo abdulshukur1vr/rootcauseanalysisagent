@@ -1,0 +1,1974 @@
+07.07.2026_16:48.22 ------------------------------[/usr/bin/uptime]--------------------------------------
+ 16:48:22 up 14:14,  0 users,  load average: 2.65, 2.06, 2.01
+07.07.2026_16:48.22 ------------------------------[/usr/bin/free]--------------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:         150752       67932       21960           0       60860           0
+-/+ buffers/cache:        67932       82820
+Swap:             0           0           0
+07.07.2026_16:48.22 ------------------------------[/bin/ps -ef]--------------------------------------
+PID   USER     TIME  COMMAND
+    1 root      0:00 {linuxrc} init
+    2 root      0:00 [kthreadd]
+    3 root      0:22 [ksoftirqd/0]
+    5 root      0:00 [kworker/0:0H]
+    7 root      0:00 [khelper]
+    8 root      0:00 [kdevtmpfs]
+    9 root      0:00 [writeback]
+   10 root      0:00 [bioset]
+   11 root      0:00 [crypto]
+   12 root      0:00 [kblockd]
+   19 root      0:00 [rpciod]
+   20 root      0:00 [kswapd0]
+   21 root      0:00 [fsnotify_mark]
+   22 root      0:00 [ecryptfs-kthrea]
+   23 root      0:00 [nfsiod]
+   24 root      0:00 [cifsiod]
+   38 root      0:00 [spi0]
+   59 root      0:00 [deferwq]
+   60 root      0:00 [kworker/0:1H]
+  251 root      0:00 [ubi_bgt0d]
+  255 root      0:04 [ubifs_bgt0_0]
+  343 root      0:00 [khubd]
+  379 root      0:00 [cfg80211]
+  392 root      0:00 /usr/local/bin/guard_vsync_loss
+  443 root      0:01 dbus-daemon --system
+  446 root      0:00 bluetoothd
+  477 root      0:00 sleep 143
+  478 root      0:01 crond -b -L /dev/null -c /var/spool/cron
+  743 root      0:00 sleep 15
+  841 root      0:00 /usr/bin/logbackup
+  906 root      0:00 sleep 120
+  910 root      0:00 [btfwwork]
+  931 root      0:00 [kworker/u3:0]
+  932 root      0:00 [hci0]
+  933 root      0:00 [hci0]
+  937 root      0:00 [kworker/u3:1]
+  952 root      0:00 sleep 60
+  954 root      0:00 sleep 5
+  956 root      0:00 sleep 10
+  962 root      0:00 sleep 10
+  975 root      0:35 /usr/bin/ledmgrmain
+  979 root      0:00 /usr/bin/accessManager plain
+  997 root      0:00 sleep 15
+  999 root      0:00 sleep 5
+ 1002 root      0:00 ping -c 3 10.0.0.1 -W 5
+ 1017 root     11:18 /usr/bin/rtrouted
+ 1044 root      0:00 sh /lib/rdk/system_log.sh
+ 1077 root      0:00 /bin/ps -ef
+ 1211 root      0:05 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1215 root      4:00 [RTW_CMD_THREAD]
+ 1297 root      0:00 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 1357 root      0:00 /usr/local/bin/gpio_listen
+ 1416 root      0:15 /usr/bin/prvnmgr
+ 1593 root     26:09 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1597 root      0:15 sh /lib/rdk/watchDogTimerMonitor.sh
+ 1615 root      0:29 /usr/bin/telemetry2_0
+ 1637 root      0:10 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+ 1661 root      0:12 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 1668 root      0:01 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1703 root      0:00 /usr/local/bin/read_push
+ 1723 root      0:00 sh /lib/rdk/startXStreamer.sh
+ 1873 root      0:09 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 1929 root      0:02 sh /lib/rdk/start_ntp.sh
+ 1987 root     52:01 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 2153 root      0:00 /usr/bin/rdkcProvider
+ 2205 root      0:25 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comcast.net:8080 --token-server-url=https://issuer.xmidt.comcast.net:8080/issue --acquire-jwt=0 --force-ipv4 --close-reason-file=/tmp/parodus_close_reason.txt
+ 2220 root      0:00 /usr/bin/rfcProvider
+ 2384 root      0:00 [kworker/0:0]
+ 2614 root      3h05 /usr/local/bin/xvisiond 1
+ 2669 root     41:54 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 2810 root      0:01 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 2935 root      0:14 sh /lib/rdk/dmesg_logs.sh
+ 2993 root      0:01 syslogd -O /opt/logs/messages.txt
+ 2997 root      0:01 klogd
+ 3048 root      0:05 sh /lib/rdk/webpaServiceMonitor.sh
+ 3205 root     49:04 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 3381 root      1:15 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426 root      1:09 sh /lib/rdk/processMonitor.sh
+ 3427 root      0:08 sh /lib/rdk/start_watchDogMonitor.sh
+ 3516 root      0:14 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3698 root      0:01 sh /lib/rdk/systemcheck.sh
+ 3735 root      1:04 sh /lib/rdk/priorityProcessMonitor.sh
+ 3743 root     56:55 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3905 root      0:00 /sbin/getty 115200 tts/1 vt102
+ 3912 root      0:09 /usr/bin/nlmon
+ 4111 root      0:00 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+10849 root     22:22 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+13340 root      0:00 [kworker/u2:0]
+16504 root      0:02 [kworker/u2:1]
+20679 root      0:00 sleep 7200
+25067 root      0:12 /usr/local/bin/thumbnail_upload
+25662 root      0:04 sh /lib/rdk/start_webpa_service.sh
+25706 root      0:09 webpa /etc/debug.ini
+26734 root      0:00 [kworker/0:2]
+29696 root      0:00 [kworker/u2:2]
+32751 root      0:00 sleep 300
+07.07.2026_16:48.23 ------------------------------[top -n 1 -b]--------------------------------------
+Mem: 128972K used, 21780K free, 12K shrd, 15088K buff, 42688K cached
+CPU: 33.3% usr 50.0% sys  0.0% nic  0.0% idle  0.0% io  0.0% irq 16.6% sirq
+Load average: 2.66 2.06 2.01 3/232 1096
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2614     1 root     R     205m139.0   0 24.9 /usr/local/bin/xvisiond 1
+ 3743     1 root     S     186m126.4   0  8.3 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3205     1 root     S     122m 83.1   0  8.3 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+10849     1 root     S    90440 59.8   0  8.3 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+ 1987  1723 root     S    57916 38.3   0  8.3 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 1089  1044 root     R     2752  1.8   0  8.3 top -n 1 -b
+ 2669     1 root     S     116m 78.8   0  0.0 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 1593     1 root     S     113m 77.2   0  0.0 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1615     1 root     S     108m 73.5   0  0.0 /usr/bin/telemetry2_0
+ 1661     1 root     S    97164 64.3   0  0.0 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 2205     1 root     S    94176 62.3   0  0.0 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comca
+ 1637     1 root     S    87092 57.6   0  0.0 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+25706 25662 root     SN   78896 52.2   0  0.0 webpa /etc/debug.ini
+ 1416     1 root     S    77644 51.4   0  0.0 /usr/bin/prvnmgr
+  975     1 root     S    69192 45.8   0  0.0 /usr/bin/ledmgrmain
+25067     1 root     S    61996 41.0   0  0.0 /usr/local/bin/thumbnail_upload
+ 1873     1 root     S    51528 34.1   0  0.0 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 2153     1 root     S    44900 29.7   0  0.0 /usr/bin/rdkcProvider
+ 2220     1 root     S    27016 17.8   0  0.0 /usr/bin/rfcProvider
+ 3912     1 root     S    14000  9.2   0  0.0 /usr/bin/nlmon
+ 1668  1597 root     S    12088  8.0   0  0.0 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1211     1 root     S     8672  5.7   0  0.0 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1703     1 root     S     6584  4.3   0  0.0 /usr/local/bin/read_push
+  979     1 root     S     5624  3.7   0  0.0 /usr/bin/accessManager plain
+ 1017     1 root     S     5572  3.6   0  0.0 /usr/bin/rtrouted
+ 1357     1 root     S     5220  3.4   0  0.0 /usr/local/bin/gpio_listen
+  392     1 root     S     4648  3.0   0  0.0 /usr/local/bin/guard_vsync_loss
+  841     1 root     S     3804  2.5   0  0.0 /usr/bin/logbackup
+  446     1 root     S     3692  2.4   0  0.0 bluetoothd
+ 1094  1093 root     R     3616  2.3   0  0.0 rbuscli get Device.DeviceInfo.X_RDKCENTRAL-COM_xOpsDeviceMgmt.Feature.SensorConfig.threshold
+ 3381     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/processMonitor.sh
+ 3735     1 root     SN    3016  2.0   0  0.0 sh /lib/rdk/priorityProcessMonitor.sh
+ 1093  3426 root     S     3016  2.0   0  0.0 sh /lib/rdk/processMonitor.sh
+ 1597     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/watchDogTimerMonitor.sh
+ 3516     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3427     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_watchDogMonitor.sh
+ 3048     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/webpaServiceMonitor.sh
+25662     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/start_webpa_service.sh
+ 1929     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_ntp.sh
+ 3698     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/systemcheck.sh
+ 2810     1 root     S     2884  1.9   0  0.0 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 1723     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/startXStreamer.sh
+  478     1 root     S     2880  1.9   0  0.0 crond -b -L /dev/null -c /var/spool/cron
+ 2935     1 root     S     2752  1.8   0  0.0 sh /lib/rdk/dmesg_logs.sh
+ 2997     1 root     S     2752  1.8   0  0.0 klogd
+ 2993     1 root     S     2752  1.8   0  0.0 syslogd -O /opt/logs/messages.txt
+    1     0 root     S     2752  1.8   0  0.0 {linuxrc} init
+ 4111     1 root     S     2752  1.8   0  0.0 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 1002   975 root     S     2752  1.8   0  0.0 ping -c 3 10.0.0.1 -W 5
+ 1044  3516 root     S     2752  1.8   0  0.0 sh /lib/rdk/system_log.sh
+ 1297     1 root     S     2752  1.8   0  0.0 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 1095  1093 root     S     2752  1.8   0  0.0 grep Value
+ 1096  1093 root     S     2752  1.8   0  0.0 tr -d  
+ 3905     1 root     S     2752  1.8   0  0.0 /sbin/getty 115200 tts/1 vt102
+  477  1929 root     S     2620  1.7   0  0.0 sleep 143
+  743  3381 root     S     2620  1.7   0  0.0 sleep 15
+  906  2810 root     S     2620  1.7   0  0.0 sleep 120
+  952  3048 root     SN    2620  1.7   0  0.0 sleep 60
+  954  2935 root     S     2620  1.7   0  0.0 sleep 5
+  956 25662 root     SN    2620  1.7   0  0.0 sleep 10
+  962  3427 root     S     2620  1.7   0  0.0 sleep 10
+  997  3735 root     SN    2620  1.7   0  0.0 sleep 15
+  999  1597 root     S     2620  1.7   0  0.0 sleep 5
+ 1079  3516 root     S     2620  1.7   0  0.0 sleep 180
+20679  4111 root     S     2620  1.7   0  0.0 sleep 7200
+32751  3698 root     S     2620  1.7   0  0.0 sleep 300
+  443     1 root     S     2312  1.5   0  0.0 dbus-daemon --system
+ 1215     2 root     SW       0  0.0   0  0.0 [RTW_CMD_THREAD]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+  255     2 root     SW       0  0.0   0  0.0 [ubifs_bgt0_0]
+16504     2 root     SW       0  0.0   0  0.0 [kworker/u2:1]
+26734     2 root     SW       0  0.0   0  0.0 [kworker/0:2]
+  931     2 root     SW<      0  0.0   0  0.0 [kworker/u3:0]
+  251     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+   20     2 root     SW       0  0.0   0  0.0 [kswapd0]
+  343     2 root     SW       0  0.0   0  0.0 [khubd]
+29696     2 root     SW       0  0.0   0  0.0 [kworker/u2:2]
+    2     0 root     SW       0  0.0   0  0.0 [kthreadd]
+   60     2 root     SW<      0  0.0   0  0.0 [kworker/0:1H]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+    7     2 root     SW<      0  0.0   0  0.0 [khelper]
+    8     2 root     SW       0  0.0   0  0.0 [kdevtmpfs]
+    9     2 root     SW<      0  0.0   0  0.0 [writeback]
+   10     2 root     SW<      0  0.0   0  0.0 [bioset]
+   11     2 root     SW<      0  0.0   0  0.0 [crypto]
+   12     2 root     SW<      0  0.0   0  0.0 [kblockd]
+   19     2 root     SW<      0  0.0   0  0.0 [rpciod]
+   21     2 root     SW       0  0.0   0  0.0 [fsnotify_mark]
+   22     2 root     SW       0  0.0   0  0.0 [ecryptfs-kthrea]
+   23     2 root     SW<      0  0.0   0  0.0 [nfsiod]
+   24     2 root     SW<      0  0.0   0  0.0 [cifsiod]
+   38     2 root     SW       0  0.0   0  0.0 [spi0]
+   59     2 root     SW<      0  0.0   0  0.0 [deferwq]
+  379     2 root     SW<      0  0.0   0  0.0 [cfg80211]
+  910     2 root     SW<      0  0.0   0  0.0 [btfwwork]
+  932     2 root     SW<      0  0.0   0  0.0 [hci0]
+  933     2 root     SW<      0  0.0   0  0.0 [hci0]
+  937     2 root     SW<      0  0.0   0  0.0 [kworker/u3:1]
+ 2384     2 root     SW       0  0.0   0  0.0 [kworker/0:0]
+13340     2 root     SW       0  0.0   0  0.0 [kworker/u2:0]
+
+07.07.2026_16:48.23 ------------------------------[/bin/netstat -an]--------------------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 127.0.0.1:6666          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:8010          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:6667          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:10001         0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:56132         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56170         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56129         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:58271         127.0.0.1:10001         TIME_WAIT   
+tcp        0      0 127.0.0.1:57139         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33820         ESTABLISHED 
+tcp        0      0 127.0.0.1:57143         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56121         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56169         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:46864         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56144         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56151         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56178         ESTABLISHED 
+tcp        0      0 127.0.0.1:58270         127.0.0.1:10001         TIME_WAIT   
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56145         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56137         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56125         ESTABLISHED 
+tcp        0      0 127.0.0.1:56128         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56165         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56168         127.0.0.1:10001         ESTABLISHED 
+tcp       25      0 10.0.0.52:33709         34.192.214.17:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56124         ESTABLISHED 
+tcp        0      0 127.0.0.1:56137         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56170         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56138         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33821         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56157         ESTABLISHED 
+tcp        0      0 10.0.0.52:33745         96.198.193.178:3000     ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57139         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56133         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56126         ESTABLISHED 
+tcp        0      0 127.0.0.1:56133         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56130         ESTABLISHED 
+tcp        0      0 10.0.0.52:34184         96.107.187.54:8080      ESTABLISHED 
+tcp        0      0 127.0.0.1:56145         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56168         ESTABLISHED 
+tcp        0      0 127.0.0.1:6666          127.0.0.1:37388         ESTABLISHED 
+tcp        0      0 127.0.0.1:33362         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56164         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56136         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56159         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56132         ESTABLISHED 
+tcp        0      0 127.0.0.1:56156         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56134         ESTABLISHED 
+tcp        0      0 127.0.0.1:43726         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33361         ESTABLISHED 
+tcp        0      0 127.0.0.1:56159         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56163         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56124         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56178         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56121         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57144         ESTABLISHED 
+tcp        0      0 127.0.0.1:56125         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:37388         127.0.0.1:6666          ESTABLISHED 
+tcp        0      0 127.0.0.1:56138         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56164         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57143         ESTABLISHED 
+tcp        0      0 127.0.0.1:56151         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56165         ESTABLISHED 
+tcp        0      0 127.0.0.1:56158         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56131         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56158         ESTABLISHED 
+tcp        0      0 127.0.0.1:33820         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56130         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56123         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33362         ESTABLISHED 
+tcp        0      0 127.0.0.1:33821         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56131         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:43726         ESTABLISHED 
+tcp        0      0 127.0.0.1:56157         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56123         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56128         ESTABLISHED 
+tcp        0      0 127.0.0.1:56144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56136         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57141         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56163         ESTABLISHED 
+tcp        0      0 127.0.0.1:56122         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56129         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56169         ESTABLISHED 
+tcp        0      0 127.0.0.1:57144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56156         ESTABLISHED 
+tcp        0      0 10.0.0.52:34474         35.168.74.157:443       ESTABLISHED 
+tcp        0      0 127.0.0.1:33361         127.0.0.1:8010          ESTABLISHED 
+tcp       32      0 10.0.0.52:51811         18.204.40.251:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56154         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:46864         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56122         ESTABLISHED 
+tcp        0      0 127.0.0.1:56134         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56126         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56154         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57141         ESTABLISHED 
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+raw        0      0 0.0.0.0:1               0.0.0.0:*               1           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING       1570 /tmp/am
+unix  3      [ ]         DGRAM                      3695 /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING        904 /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                      1747 /var/run/wpa_supplicant/wlan0
+unix  3      [ ]         STREAM     CONNECTED       1744 
+unix  3      [ ]         STREAM     CONNECTED       6264 
+unix  3      [ ]         STREAM     CONNECTED        909 
+unix  3      [ ]         STREAM     CONNECTED       5995 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2279 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       6036 
+unix  3      [ ]         STREAM     CONNECTED     284756 
+unix  3      [ ]         STREAM     CONNECTED     1208490 
+unix  3      [ ]         STREAM     CONNECTED       5994 
+unix  3      [ ]         STREAM     CONNECTED        908 
+unix  3      [ ]         STREAM     CONNECTED       1722 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284760 
+unix  3      [ ]         STREAM     CONNECTED       1745 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2411 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284774 
+unix  3      [ ]         STREAM     CONNECTED       6041 
+unix  3      [ ]         STREAM     CONNECTED       2410 
+unix  3      [ ]         STREAM     CONNECTED     1208489 
+unix  3      [ ]         STREAM     CONNECTED     590699 
+unix  3      [ ]         STREAM     CONNECTED       1063 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284761 
+unix  3      [ ]         STREAM     CONNECTED       2955 
+unix  3      [ ]         STREAM     CONNECTED       6042 
+unix  3      [ ]         STREAM     CONNECTED     284775 
+unix  3      [ ]         STREAM     CONNECTED       1721 
+unix  3      [ ]         STREAM     CONNECTED       2956 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED     590698 
+unix  3      [ ]         STREAM     CONNECTED       1062 
+unix  3      [ ]         STREAM     CONNECTED       6265 
+unix  3      [ ]         STREAM     CONNECTED       6037 
+unix  3      [ ]         STREAM     CONNECTED       2278 
+unix  3      [ ]         STREAM     CONNECTED     284755 
+unix  2      [ ]         DGRAM                      3699 
+07.07.2026_16:48.23 ------------------------------[/bin/netstat -r]--------------------------------------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         10.0.0.1        0.0.0.0         UG        0 0          0 wlan0
+10.0.0.0        *               255.255.255.0   U         0 0          0 wlan0
+127.0.0.0       *               255.0.0.0       U         0 0          0 lo
+169.254.0.0     *               255.255.0.0     U         0 0          0 usb0
+07.07.2026_16:48.23 ------------------------------[/usr/local/bin/iwconfig wlan0]--------------------------------------
+wlan0     IEEE 802.11AC  ESSID:"wheat101"  Nickname:"<WIFI@REALTEK>"
+          Mode:Managed  Frequency:5.22 GHz  Access Point: FA:D0:0E:FB:8F:0A   
+          Bit Rate:867 Mb/s   Sensitivity:0/0  
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:****-****-****-****-****-****-****-****   Security mode:open
+          Power Management:off
+          Link Quality=60/100  Signal level=-53 dBm  Noise level=0 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+07.07.2026_17:07.16 ------------------------------[/usr/bin/uptime]--------------------------------------
+ 17:07:16 up 14:33,  0 users,  load average: 1.16, 1.52, 1.74
+07.07.2026_17:07.16 ------------------------------[/usr/bin/free]--------------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:         150752       69196       20468           0       61088           0
+-/+ buffers/cache:        69196       81556
+Swap:             0           0           0
+07.07.2026_17:07.16 ------------------------------[/bin/ps -ef]--------------------------------------
+PID   USER     TIME  COMMAND
+    1 root      0:00 {linuxrc} init
+    2 root      0:00 [kthreadd]
+    3 root      0:23 [ksoftirqd/0]
+    5 root      0:00 [kworker/0:0H]
+    7 root      0:00 [khelper]
+    8 root      0:00 [kdevtmpfs]
+    9 root      0:00 [writeback]
+   10 root      0:00 [bioset]
+   11 root      0:00 [crypto]
+   12 root      0:00 [kblockd]
+   19 root      0:00 [rpciod]
+   20 root      0:00 [kswapd0]
+   21 root      0:00 [fsnotify_mark]
+   22 root      0:00 [ecryptfs-kthrea]
+   23 root      0:00 [nfsiod]
+   24 root      0:00 [cifsiod]
+   38 root      0:00 [spi0]
+   59 root      0:00 [deferwq]
+   60 root      0:00 [kworker/0:1H]
+  251 root      0:00 [ubi_bgt0d]
+  255 root      0:04 [ubifs_bgt0_0]
+  343 root      0:00 [khubd]
+  379 root      0:00 [cfg80211]
+  392 root      0:00 /usr/local/bin/guard_vsync_loss
+  443 root      0:01 dbus-daemon --system
+  446 root      0:00 bluetoothd
+  478 root      0:01 crond -b -L /dev/null -c /var/spool/cron
+  841 root      0:00 /usr/bin/logbackup
+  910 root      0:00 [btfwwork]
+  931 root      0:00 [kworker/u3:0]
+  932 root      0:00 [hci0]
+  933 root      0:00 [hci0]
+  937 root      0:00 [kworker/u3:1]
+  975 root      0:36 /usr/bin/ledmgrmain
+  979 root      0:00 /usr/bin/accessManager plain
+ 1017 root     11:33 /usr/bin/rtrouted
+ 1211 root      0:05 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1215 root      4:05 [RTW_CMD_THREAD]
+ 1297 root      0:00 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 1357 root      0:00 /usr/local/bin/gpio_listen
+ 1416 root      0:15 /usr/bin/prvnmgr
+ 1593 root     26:42 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1597 root      0:16 sh /lib/rdk/watchDogTimerMonitor.sh
+ 1615 root      0:30 /usr/bin/telemetry2_0
+ 1637 root      0:10 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+ 1661 root      0:12 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 1668 root      0:01 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1703 root      0:00 /usr/local/bin/read_push
+ 1723 root      0:00 sh /lib/rdk/startXStreamer.sh
+ 1873 root      0:09 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 1929 root      0:02 sh /lib/rdk/start_ntp.sh
+ 1987 root     53:14 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 2153 root      0:00 /usr/bin/rdkcProvider
+ 2205 root      0:26 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comcast.net:8080 --token-server-url=https://issuer.xmidt.comcast.net:8080/issue --acquire-jwt=0 --force-ipv4 --close-reason-file=/tmp/parodus_close_reason.txt
+ 2220 root      0:00 /usr/bin/rfcProvider
+ 2384 root      0:00 [kworker/0:0]
+ 2614 root      3h09 /usr/local/bin/xvisiond 1
+ 2669 root     43:01 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 2810 root      0:01 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 2935 root      0:14 sh /lib/rdk/dmesg_logs.sh
+ 2993 root      0:01 syslogd -O /opt/logs/messages.txt
+ 2997 root      0:01 klogd
+ 3048 root      0:05 sh /lib/rdk/webpaServiceMonitor.sh
+ 3205 root     50:10 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 3381 root      1:16 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426 root      1:10 sh /lib/rdk/processMonitor.sh
+ 3427 root      0:08 sh /lib/rdk/start_watchDogMonitor.sh
+ 3516 root      0:15 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3698 root      0:01 sh /lib/rdk/systemcheck.sh
+ 3735 root      1:05 sh /lib/rdk/priorityProcessMonitor.sh
+ 3743 root     58:09 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3905 root      0:00 /sbin/getty 115200 tts/1 vt102
+ 3912 root      0:09 /usr/bin/nlmon
+ 4111 root      0:00 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+10849 root     22:52 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+13196 root      0:00 [kworker/0:1]
+13340 root      0:00 [kworker/u2:0]
+14867 root      0:00 sleep 300
+18274 root      0:00 sleep 69
+18533 root      0:00 sleep 120
+18560 root      0:00 sleep 60
+19050 root      0:00 sleep 45
+19159 root      0:00 sleep 15
+19425 root      0:00 sleep 15
+19429 root      0:00 sleep 5
+19436 root      0:00 sleep 10
+19437 root      0:00 ping -c 3 10.0.0.1 -W 5
+19438 root      0:00 top -n 1 -b -n1 -b
+19465 root      0:00 sh /lib/rdk/generictelemetry.sh
+19466 root      0:00 sh /lib/rdk/rfctelemetry.sh
+19467 root      0:00 sh /lib/rdk/wifitelemetry.sh
+19468 root      0:00 sh /lib/rdk/system_log.sh
+19521 root      0:00 /bin/ps -ef
+19522 root      0:00 sleep 5
+20679 root      0:00 sleep 7200
+25067 root      0:12 /usr/local/bin/thumbnail_upload
+25662 root      0:04 sh /lib/rdk/start_webpa_service.sh
+25706 root      0:09 webpa /etc/debug.ini
+29696 root      0:00 [kworker/u2:2]
+07.07.2026_17:07.17 ------------------------------[top -n 1 -b]--------------------------------------
+Mem: 130884K used, 19868K free, 12K shrd, 15088K buff, 42924K cached
+CPU: 33.3% usr 55.5% sys  0.0% nic  0.0% idle  0.0% io  0.0% irq 11.1% sirq
+Load average: 1.16 1.53 1.74 6/241 19572
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2614     1 root     S     205m139.0   0 11.1 /usr/local/bin/xvisiond 1
+ 3205     1 root     S     122m 83.1   0  5.5 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 2669     1 root     S     116m 78.8   0  5.5 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 1987  1723 root     S    57916 38.3   0  5.5 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+19550 19468 root     R     2752  1.8   0  5.5 top -n 1 -b
+ 3743     1 root     S     186m126.4   0  0.0 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 1593     1 root     S     113m 77.2   0  0.0 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1615     1 root     S     108m 73.5   0  0.0 /usr/bin/telemetry2_0
+ 1661     1 root     S    97164 64.3   0  0.0 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 2205     1 root     S    94176 62.3   0  0.0 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comca
+10849     1 root     S    90440 59.8   0  0.0 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+ 1637     1 root     S    87092 57.6   0  0.0 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+25706 25662 root     SN   78896 52.2   0  0.0 webpa /etc/debug.ini
+ 1416     1 root     S    77644 51.4   0  0.0 /usr/bin/prvnmgr
+  975     1 root     S    69192 45.8   0  0.0 /usr/bin/ledmgrmain
+25067     1 root     S    61996 41.0   0  0.0 /usr/local/bin/thumbnail_upload
+ 1873     1 root     S    51528 34.1   0  0.0 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 2153     1 root     S    44900 29.7   0  0.0 /usr/bin/rdkcProvider
+ 2220     1 root     S    27016 17.8   0  0.0 /usr/bin/rfcProvider
+ 3912     1 root     S    14000  9.2   0  0.0 /usr/bin/nlmon
+ 1668  1597 root     S    12088  8.0   0  0.0 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1211     1 root     S     8672  5.7   0  0.0 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1703     1 root     S     6584  4.3   0  0.0 /usr/local/bin/read_push
+  979     1 root     S     5624  3.7   0  0.0 /usr/bin/accessManager plain
+ 1017     1 root     S     5572  3.6   0  0.0 /usr/bin/rtrouted
+ 1357     1 root     S     5220  3.4   0  0.0 /usr/local/bin/gpio_listen
+  392     1 root     S     4648  3.0   0  0.0 /usr/local/bin/guard_vsync_loss
+  841     1 root     S     3804  2.5   0  0.0 /usr/bin/logbackup
+  446     1 root     S     3692  2.4   0  0.0 bluetoothd
+ 3381     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/processMonitor.sh
+ 3735     1 root     SN    3016  2.0   0  0.0 sh /lib/rdk/priorityProcessMonitor.sh
+ 1597     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/watchDogTimerMonitor.sh
+ 3516     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3427     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_watchDogMonitor.sh
+ 3048     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/webpaServiceMonitor.sh
+25662     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/start_webpa_service.sh
+ 1929     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_ntp.sh
+ 3698     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/systemcheck.sh
+ 2810     1 root     S     2884  1.9   0  0.0 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 1723     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/startXStreamer.sh
+19467  3516 root     S     2884  1.9   0  0.0 sh /lib/rdk/wifitelemetry.sh
+19465  3516 root     S     2884  1.9   0  0.0 sh /lib/rdk/generictelemetry.sh
+19466  3516 root     S     2884  1.9   0  0.0 sh /lib/rdk/rfctelemetry.sh
+19563 19467 root     S     2884  1.9   0  0.0 [sh]
+19569 19466 root     S     2884  1.9   0  0.0 [sh]
+  478     1 root     S     2880  1.9   0  0.0 crond -b -L /dev/null -c /var/spool/cron
+ 2935     1 root     S     2752  1.8   0  0.0 sh /lib/rdk/dmesg_logs.sh
+ 2997     1 root     S     2752  1.8   0  0.0 klogd
+ 2993     1 root     S     2752  1.8   0  0.0 syslogd -O /opt/logs/messages.txt
+    1     0 root     S     2752  1.8   0  0.0 {linuxrc} init
+ 4111     1 root     S     2752  1.8   0  0.0 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+19557  1597 root     R     2752  1.8   0  0.0 [pidof]
+ 1297     1 root     S     2752  1.8   0  0.0 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+19437   975 root     S     2752  1.8   0  0.0 ping -c 3 10.0.0.1 -W 5
+19438 25662 root     RN    2752  1.8   0  0.0 top -n 1 -b -n1 -b
+19468  3516 root     S     2752  1.8   0  0.0 sh /lib/rdk/system_log.sh
+ 3905     1 root     S     2752  1.8   0  0.0 /sbin/getty 115200 tts/1 vt102
+19562 19465 root     S     2752  1.8   0  0.0 [timestamp]
+19565 19563 root     S     2752  1.8   0  0.0 [grep]
+19566 19563 root     S     2752  1.8   0  0.0 [grep]
+19567 19563 root     S     2752  1.8   0  0.0 [tr]
+19568 19563 root     S     2752  1.8   0  0.0 [cut]
+14867  3698 root     S     2620  1.7   0  0.0 sleep 300
+18274  1929 root     S     2620  1.7   0  0.0 sleep 69
+18533  2810 root     S     2620  1.7   0  0.0 sleep 120
+18560  3048 root     SN    2620  1.7   0  0.0 sleep 60
+19050  3426 root     S     2620  1.7   0  0.0 sleep 45
+19159  3381 root     S     2620  1.7   0  0.0 sleep 15
+19425  3735 root     SN    2620  1.7   0  0.0 sleep 15
+19436  3427 root     S     2620  1.7   0  0.0 sleep 10
+19522  2935 root     S     2620  1.7   0  0.0 sleep 5
+19543  3516 root     S     2620  1.7   0  0.0 sleep 180
+19564 19563 root     R     2620  1.7   0  0.0 [ifconfig]
+20679  4111 root     S     2620  1.7   0  0.0 sleep 7200
+  443     1 root     S     2312  1.5   0  0.0 dbus-daemon --system
+ 1215     2 root     SW       0  0.0   0  0.0 [RTW_CMD_THREAD]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+  255     2 root     SW       0  0.0   0  0.0 [ubifs_bgt0_0]
+13196     2 root     SW       0  0.0   0  0.0 [kworker/0:1]
+  931     2 root     SW<      0  0.0   0  0.0 [kworker/u3:0]
+29696     2 root     SW       0  0.0   0  0.0 [kworker/u2:2]
+  251     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+   20     2 root     SW       0  0.0   0  0.0 [kswapd0]
+  343     2 root     SW       0  0.0   0  0.0 [khubd]
+    2     0 root     SW       0  0.0   0  0.0 [kthreadd]
+   60     2 root     SW<      0  0.0   0  0.0 [kworker/0:1H]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+    7     2 root     SW<      0  0.0   0  0.0 [khelper]
+    8     2 root     SW       0  0.0   0  0.0 [kdevtmpfs]
+    9     2 root     SW<      0  0.0   0  0.0 [writeback]
+   10     2 root     SW<      0  0.0   0  0.0 [bioset]
+   11     2 root     SW<      0  0.0   0  0.0 [crypto]
+   12     2 root     SW<      0  0.0   0  0.0 [kblockd]
+   19     2 root     SW<      0  0.0   0  0.0 [rpciod]
+   21     2 root     SW       0  0.0   0  0.0 [fsnotify_mark]
+   22     2 root     SW       0  0.0   0  0.0 [ecryptfs-kthrea]
+   23     2 root     SW<      0  0.0   0  0.0 [nfsiod]
+   24     2 root     SW<      0  0.0   0  0.0 [cifsiod]
+   38     2 root     SW       0  0.0   0  0.0 [spi0]
+   59     2 root     SW<      0  0.0   0  0.0 [deferwq]
+  379     2 root     SW<      0  0.0   0  0.0 [cfg80211]
+  910     2 root     SW<      0  0.0   0  0.0 [btfwwork]
+  932     2 root     SW<      0  0.0   0  0.0 [hci0]
+  933     2 root     SW<      0  0.0   0  0.0 [hci0]
+  937     2 root     SW<      0  0.0   0  0.0 [kworker/u3:1]
+ 2384     2 root     SW       0  0.0   0  0.0 [kworker/0:0]
+13340     2 root     SW       0  0.0   0  0.0 [kworker/u2:0]
+
+07.07.2026_17:07.17 ------------------------------[/bin/netstat -an]--------------------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 127.0.0.1:6666          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:8010          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:6667          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:10001         0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:56132         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56170         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56129         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57139         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33820         ESTABLISHED 
+tcp        0      0 127.0.0.1:57143         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56121         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56169         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:46864         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56144         ESTABLISHED 
+tcp       32      0 10.0.0.52:51851         18.204.40.251:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56151         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56178         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56145         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56137         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56125         ESTABLISHED 
+tcp        0      0 127.0.0.1:56128         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56165         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56168         127.0.0.1:10001         ESTABLISHED 
+tcp       25      0 10.0.0.52:33709         34.192.214.17:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56124         ESTABLISHED 
+tcp        0      0 127.0.0.1:56137         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56170         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56138         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33821         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56157         ESTABLISHED 
+tcp        0      0 10.0.0.52:33745         96.198.193.178:3000     ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57139         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56133         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56126         ESTABLISHED 
+tcp        0      0 127.0.0.1:56133         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56130         ESTABLISHED 
+tcp        0      0 10.0.0.52:34184         96.107.187.54:8080      ESTABLISHED 
+tcp        0      0 127.0.0.1:56145         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56168         ESTABLISHED 
+tcp        0      0 127.0.0.1:6666          127.0.0.1:37388         ESTABLISHED 
+tcp        0      0 127.0.0.1:33362         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56164         ESTABLISHED 
+tcp        0      0 127.0.0.1:58309         127.0.0.1:10001         TIME_WAIT   
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56136         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56159         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56132         ESTABLISHED 
+tcp        0      0 127.0.0.1:56156         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56134         ESTABLISHED 
+tcp        0      0 127.0.0.1:43726         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33361         ESTABLISHED 
+tcp        0      0 127.0.0.1:56159         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56163         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56124         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56178         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56121         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57144         ESTABLISHED 
+tcp        0      0 127.0.0.1:56125         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:37388         127.0.0.1:6666          ESTABLISHED 
+tcp        0      0 127.0.0.1:56138         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56164         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57143         ESTABLISHED 
+tcp        0      0 127.0.0.1:56151         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56165         ESTABLISHED 
+tcp        0      0 127.0.0.1:56158         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56131         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56158         ESTABLISHED 
+tcp        0      0 127.0.0.1:33820         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56130         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56123         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33362         ESTABLISHED 
+tcp        0      0 127.0.0.1:33821         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56131         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:43726         ESTABLISHED 
+tcp        0      0 127.0.0.1:56157         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56123         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56128         ESTABLISHED 
+tcp        0      0 127.0.0.1:56144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56136         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57141         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56163         ESTABLISHED 
+tcp        0      0 127.0.0.1:56122         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56129         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56169         ESTABLISHED 
+tcp        0      0 127.0.0.1:57144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56156         ESTABLISHED 
+tcp        0      0 10.0.0.52:34474         35.168.74.157:443       ESTABLISHED 
+tcp        0      0 127.0.0.1:33361         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56154         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:46864         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56122         ESTABLISHED 
+tcp        0      0 127.0.0.1:56134         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56126         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56154         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57141         ESTABLISHED 
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+raw        0      0 0.0.0.0:1               0.0.0.0:*               1           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING       1570 /tmp/am
+unix  3      [ ]         DGRAM                      3695 /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING        904 /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                      1747 /var/run/wpa_supplicant/wlan0
+unix  3      [ ]         STREAM     CONNECTED       1744 
+unix  3      [ ]         STREAM     CONNECTED       6264 
+unix  3      [ ]         STREAM     CONNECTED        909 
+unix  3      [ ]         STREAM     CONNECTED       5995 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2279 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       6036 
+unix  3      [ ]         STREAM     CONNECTED     284756 
+unix  3      [ ]         STREAM     CONNECTED     1208490 
+unix  3      [ ]         STREAM     CONNECTED       5994 
+unix  3      [ ]         STREAM     CONNECTED        908 
+unix  3      [ ]         STREAM     CONNECTED       1722 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284760 
+unix  3      [ ]         STREAM     CONNECTED       1745 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2411 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284774 
+unix  3      [ ]         STREAM     CONNECTED       6041 
+unix  3      [ ]         STREAM     CONNECTED       2410 
+unix  3      [ ]         STREAM     CONNECTED     1208489 
+unix  3      [ ]         STREAM     CONNECTED     590699 
+unix  3      [ ]         STREAM     CONNECTED       1063 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284761 
+unix  3      [ ]         STREAM     CONNECTED       2955 
+unix  3      [ ]         STREAM     CONNECTED       6042 
+unix  3      [ ]         STREAM     CONNECTED     284775 
+unix  3      [ ]         STREAM     CONNECTED       1721 
+unix  3      [ ]         STREAM     CONNECTED       2956 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED     590698 
+unix  3      [ ]         STREAM     CONNECTED       1062 
+unix  3      [ ]         STREAM     CONNECTED       6265 
+unix  3      [ ]         STREAM     CONNECTED       6037 
+unix  3      [ ]         STREAM     CONNECTED       2278 
+unix  3      [ ]         STREAM     CONNECTED     284755 
+unix  2      [ ]         DGRAM                      3699 
+07.07.2026_17:07.17 ------------------------------[/bin/netstat -r]--------------------------------------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         10.0.0.1        0.0.0.0         UG        0 0          0 wlan0
+10.0.0.0        *               255.255.255.0   U         0 0          0 wlan0
+127.0.0.0       *               255.0.0.0       U         0 0          0 lo
+169.254.0.0     *               255.255.0.0     U         0 0          0 usb0
+07.07.2026_17:07.18 ------------------------------[/usr/local/bin/iwconfig wlan0]--------------------------------------
+wlan0     IEEE 802.11AC  ESSID:"wheat101"  Nickname:"<WIFI@REALTEK>"
+          Mode:Managed  Frequency:5.22 GHz  Access Point: FA:D0:0E:FB:8F:0A   
+          Bit Rate:867 Mb/s   Sensitivity:0/0  
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:****-****-****-****-****-****-****-****   Security mode:open
+          Power Management:off
+          Link Quality=61/100  Signal level=-53 dBm  Noise level=0 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+07.07.2026_17:26.11 ------------------------------[/usr/bin/uptime]--------------------------------------
+ 17:26:11 up 14:52,  0 users,  load average: 2.10, 1.79, 1.75
+07.07.2026_17:26.11 ------------------------------[/usr/bin/free]--------------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:         150752       67888       22028           0       60836           0
+-/+ buffers/cache:        67888       82864
+Swap:             0           0           0
+07.07.2026_17:26.11 ------------------------------[/bin/ps -ef]--------------------------------------
+PID   USER     TIME  COMMAND
+    1 root      0:00 {linuxrc} init
+    2 root      0:00 [kthreadd]
+    3 root      0:23 [ksoftirqd/0]
+    5 root      0:00 [kworker/0:0H]
+    7 root      0:00 [khelper]
+    8 root      0:00 [kdevtmpfs]
+    9 root      0:00 [writeback]
+   10 root      0:00 [bioset]
+   11 root      0:00 [crypto]
+   12 root      0:00 [kblockd]
+   19 root      0:00 [rpciod]
+   20 root      0:00 [kswapd0]
+   21 root      0:00 [fsnotify_mark]
+   22 root      0:00 [ecryptfs-kthrea]
+   23 root      0:00 [nfsiod]
+   24 root      0:00 [cifsiod]
+   38 root      0:00 [spi0]
+   59 root      0:00 [deferwq]
+   60 root      0:00 [kworker/0:1H]
+  251 root      0:00 [ubi_bgt0d]
+  255 root      0:04 [ubifs_bgt0_0]
+  343 root      0:00 [khubd]
+  379 root      0:00 [cfg80211]
+  392 root      0:00 /usr/local/bin/guard_vsync_loss
+  443 root      0:01 dbus-daemon --system
+  446 root      0:00 bluetoothd
+  478 root      0:01 crond -b -L /dev/null -c /var/spool/cron
+  841 root      0:00 /usr/bin/logbackup
+  910 root      0:00 [btfwwork]
+  931 root      0:00 [kworker/u3:0]
+  932 root      0:00 [hci0]
+  933 root      0:00 [hci0]
+  937 root      0:00 [kworker/u3:1]
+  975 root      0:36 /usr/bin/ledmgrmain
+  979 root      0:00 /usr/bin/accessManager plain
+ 1017 root     11:48 /usr/bin/rtrouted
+ 1211 root      0:05 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1215 root      4:10 [RTW_CMD_THREAD]
+ 1297 root      0:00 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 1357 root      0:00 /usr/local/bin/gpio_listen
+ 1416 root      0:16 /usr/bin/prvnmgr
+ 1593 root     27:16 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1597 root      0:16 sh /lib/rdk/watchDogTimerMonitor.sh
+ 1615 root      0:31 /usr/bin/telemetry2_0
+ 1637 root      0:10 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+ 1661 root      0:12 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 1668 root      0:01 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1703 root      0:00 /usr/local/bin/read_push
+ 1723 root      0:00 sh /lib/rdk/startXStreamer.sh
+ 1873 root      0:09 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 1929 root      0:02 sh /lib/rdk/start_ntp.sh
+ 1987 root     54:28 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 2153 root      0:00 /usr/bin/rdkcProvider
+ 2205 root      0:26 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comcast.net:8080 --token-server-url=https://issuer.xmidt.comcast.net:8080/issue --acquire-jwt=0 --force-ipv4 --close-reason-file=/tmp/parodus_close_reason.txt
+ 2220 root      0:00 /usr/bin/rfcProvider
+ 2306 root      0:00 sleep 300
+ 2384 root      0:00 [kworker/0:0]
+ 2614 root      3h13 /usr/local/bin/xvisiond 1
+ 2669 root     44:08 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 2810 root      0:01 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 2935 root      0:15 sh /lib/rdk/dmesg_logs.sh
+ 2993 root      0:01 syslogd -O /opt/logs/messages.txt
+ 2997 root      0:01 klogd
+ 3048 root      0:05 sh /lib/rdk/webpaServiceMonitor.sh
+ 3205 root     51:15 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 3381 root      1:18 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426 root      1:12 sh /lib/rdk/processMonitor.sh
+ 3427 root      0:08 sh /lib/rdk/start_watchDogMonitor.sh
+ 3516 root      0:15 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3698 root      0:01 sh /lib/rdk/systemcheck.sh
+ 3735 root      1:07 sh /lib/rdk/priorityProcessMonitor.sh
+ 3743 root     59:23 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3862 root      0:00 sleep 120
+ 3874 root      0:00 sleep 114
+ 3905 root      0:00 /sbin/getty 115200 tts/1 vt102
+ 3912 root      0:09 /usr/bin/nlmon
+ 4111 root      0:00 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 5125 root      0:00 sleep 45
+ 5134 root      0:00 sleep 60
+ 5273 root      0:00 sleep 15
+ 5486 root      0:00 sleep 15
+ 5600 root      0:00 sleep 10
+ 5603 root      0:00 sleep 5
+ 5605 root      0:00 sleep 5
+ 5606 root      0:00 ping -c 3 10.0.0.1 -W 5
+ 5612 root      0:00 sleep 10
+ 5639 root      0:00 sh /lib/rdk/system_log.sh
+ 5659 root      0:00 /bin/ps -ef
+10849 root     23:22 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+13340 root      0:00 [kworker/u2:0]
+20679 root      0:00 sleep 7200
+25067 root      0:13 /usr/local/bin/thumbnail_upload
+25662 root      0:04 sh /lib/rdk/start_webpa_service.sh
+25706 root      0:10 webpa /etc/debug.ini
+27825 root      0:01 [kworker/0:2]
+29696 root      0:00 [kworker/u2:2]
+07.07.2026_17:26.11 ------------------------------[top -n 1 -b]--------------------------------------
+Mem: 128612K used, 22140K free, 12K shrd, 15088K buff, 42668K cached
+CPU: 66.6% usr  8.3% sys  0.0% nic 25.0% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 2.11 1.80 1.76 1/228 5666
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2614     1 root     S     205m139.0   0 33.3 /usr/local/bin/xvisiond 1
+ 3743     1 root     S     186m126.4   0  8.3 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3205     1 root     S     122m 83.1   0  8.3 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 2669     1 root     S     116m 78.8   0  8.3 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 1017     1 root     S     5572  3.6   0  8.3 /usr/bin/rtrouted
+ 5666  5639 root     R     2752  1.8   0  8.3 top -n 1 -b
+ 1593     1 root     S     113m 77.2   0  0.0 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1615     1 root     S     108m 73.5   0  0.0 /usr/bin/telemetry2_0
+ 1661     1 root     S    97164 64.3   0  0.0 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 2205     1 root     S    94176 62.3   0  0.0 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comca
+10849     1 root     S    90440 59.8   0  0.0 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+ 1637     1 root     S    87092 57.6   0  0.0 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+25706 25662 root     SN   78896 52.2   0  0.0 webpa /etc/debug.ini
+ 1416     1 root     S    77644 51.4   0  0.0 /usr/bin/prvnmgr
+  975     1 root     S    69192 45.8   0  0.0 /usr/bin/ledmgrmain
+25067     1 root     S    61996 41.0   0  0.0 /usr/local/bin/thumbnail_upload
+ 1987  1723 root     S    57916 38.3   0  0.0 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 1873     1 root     S    51528 34.1   0  0.0 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 2153     1 root     S    44900 29.7   0  0.0 /usr/bin/rdkcProvider
+ 2220     1 root     S    27016 17.8   0  0.0 /usr/bin/rfcProvider
+ 3912     1 root     S    14000  9.2   0  0.0 /usr/bin/nlmon
+ 1668  1597 root     S    12088  8.0   0  0.0 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1211     1 root     S     8672  5.7   0  0.0 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1703     1 root     S     6584  4.3   0  0.0 /usr/local/bin/read_push
+  979     1 root     S     5624  3.7   0  0.0 /usr/bin/accessManager plain
+ 1357     1 root     S     5220  3.4   0  0.0 /usr/local/bin/gpio_listen
+  392     1 root     S     4648  3.0   0  0.0 /usr/local/bin/guard_vsync_loss
+  841     1 root     S     3804  2.5   0  0.0 /usr/bin/logbackup
+  446     1 root     S     3692  2.4   0  0.0 bluetoothd
+ 3381     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/processMonitor.sh
+ 3735     1 root     SN    3016  2.0   0  0.0 sh /lib/rdk/priorityProcessMonitor.sh
+ 1597     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/watchDogTimerMonitor.sh
+ 3516     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3427     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_watchDogMonitor.sh
+ 3048     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/webpaServiceMonitor.sh
+25662     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/start_webpa_service.sh
+ 1929     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_ntp.sh
+ 3698     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/systemcheck.sh
+ 2810     1 root     S     2884  1.9   0  0.0 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 1723     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/startXStreamer.sh
+  478     1 root     S     2880  1.9   0  0.0 crond -b -L /dev/null -c /var/spool/cron
+ 2935     1 root     S     2752  1.8   0  0.0 sh /lib/rdk/dmesg_logs.sh
+ 2997     1 root     S     2752  1.8   0  0.0 klogd
+ 2993     1 root     S     2752  1.8   0  0.0 syslogd -O /opt/logs/messages.txt
+    1     0 root     S     2752  1.8   0  0.0 {linuxrc} init
+ 4111     1 root     S     2752  1.8   0  0.0 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 1297     1 root     S     2752  1.8   0  0.0 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 5606   975 root     S     2752  1.8   0  0.0 ping -c 3 10.0.0.1 -W 5
+ 5639  3516 root     S     2752  1.8   0  0.0 sh /lib/rdk/system_log.sh
+ 3905     1 root     S     2752  1.8   0  0.0 /sbin/getty 115200 tts/1 vt102
+ 2306  3698 root     S     2620  1.7   0  0.0 sleep 300
+ 3862  2810 root     S     2620  1.7   0  0.0 sleep 120
+ 3874  1929 root     S     2620  1.7   0  0.0 sleep 114
+ 5125  3426 root     S     2620  1.7   0  0.0 sleep 45
+ 5134  3048 root     SN    2620  1.7   0  0.0 sleep 60
+ 5273  3381 root     S     2620  1.7   0  0.0 sleep 15
+ 5486  3735 root     SN    2620  1.7   0  0.0 sleep 15
+ 5600 25662 root     SN    2620  1.7   0  0.0 sleep 10
+ 5603  1597 root     S     2620  1.7   0  0.0 sleep 5
+ 5605  2935 root     S     2620  1.7   0  0.0 sleep 5
+ 5612  3427 root     S     2620  1.7   0  0.0 sleep 10
+ 5664  3516 root     S     2620  1.7   0  0.0 sleep 180
+20679  4111 root     S     2620  1.7   0  0.0 sleep 7200
+  443     1 root     S     2312  1.5   0  0.0 dbus-daemon --system
+ 1215     2 root     SW       0  0.0   0  0.0 [RTW_CMD_THREAD]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+  255     2 root     SW       0  0.0   0  0.0 [ubifs_bgt0_0]
+27825     2 root     SW       0  0.0   0  0.0 [kworker/0:2]
+29696     2 root     SW       0  0.0   0  0.0 [kworker/u2:2]
+  931     2 root     SW<      0  0.0   0  0.0 [kworker/u3:0]
+  251     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+   20     2 root     SW       0  0.0   0  0.0 [kswapd0]
+  343     2 root     SW       0  0.0   0  0.0 [khubd]
+    2     0 root     SW       0  0.0   0  0.0 [kthreadd]
+   60     2 root     SW<      0  0.0   0  0.0 [kworker/0:1H]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+    7     2 root     SW<      0  0.0   0  0.0 [khelper]
+    8     2 root     SW       0  0.0   0  0.0 [kdevtmpfs]
+    9     2 root     SW<      0  0.0   0  0.0 [writeback]
+   10     2 root     SW<      0  0.0   0  0.0 [bioset]
+   11     2 root     SW<      0  0.0   0  0.0 [crypto]
+   12     2 root     SW<      0  0.0   0  0.0 [kblockd]
+   19     2 root     SW<      0  0.0   0  0.0 [rpciod]
+   21     2 root     SW       0  0.0   0  0.0 [fsnotify_mark]
+   22     2 root     SW       0  0.0   0  0.0 [ecryptfs-kthrea]
+   23     2 root     SW<      0  0.0   0  0.0 [nfsiod]
+   24     2 root     SW<      0  0.0   0  0.0 [cifsiod]
+   38     2 root     SW       0  0.0   0  0.0 [spi0]
+   59     2 root     SW<      0  0.0   0  0.0 [deferwq]
+  379     2 root     SW<      0  0.0   0  0.0 [cfg80211]
+  910     2 root     SW<      0  0.0   0  0.0 [btfwwork]
+  932     2 root     SW<      0  0.0   0  0.0 [hci0]
+  933     2 root     SW<      0  0.0   0  0.0 [hci0]
+  937     2 root     SW<      0  0.0   0  0.0 [kworker/u3:1]
+ 2384     2 root     SW       0  0.0   0  0.0 [kworker/0:0]
+13340     2 root     SW       0  0.0   0  0.0 [kworker/u2:0]
+
+07.07.2026_17:26.11 ------------------------------[/bin/netstat -an]--------------------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 127.0.0.1:6666          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:8010          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:6667          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:10001         0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:56132         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56170         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56129         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57139         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33820         ESTABLISHED 
+tcp        0      0 127.0.0.1:57143         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56121         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56169         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:46864         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56144         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56151         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56178         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56145         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56137         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56125         ESTABLISHED 
+tcp        0      0 127.0.0.1:56128         127.0.0.1:10001         ESTABLISHED 
+tcp       32      0 10.0.0.52:51895         18.204.40.251:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:56165         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56168         127.0.0.1:10001         ESTABLISHED 
+tcp       25      0 10.0.0.52:33709         34.192.214.17:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56124         ESTABLISHED 
+tcp        0      0 127.0.0.1:56137         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56170         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56138         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33821         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56157         ESTABLISHED 
+tcp        0      0 10.0.0.52:33745         96.198.193.178:3000     ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57139         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56133         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56126         ESTABLISHED 
+tcp        0      0 127.0.0.1:56133         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56130         ESTABLISHED 
+tcp        0      0 10.0.0.52:34184         96.107.187.54:8080      ESTABLISHED 
+tcp        0      0 127.0.0.1:56145         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56168         ESTABLISHED 
+tcp        0      0 127.0.0.1:6666          127.0.0.1:37388         ESTABLISHED 
+tcp        0      0 127.0.0.1:33362         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56164         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56136         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56159         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56132         ESTABLISHED 
+tcp        0      0 127.0.0.1:56156         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56134         ESTABLISHED 
+tcp        0      0 127.0.0.1:43726         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33361         ESTABLISHED 
+tcp        0      0 127.0.0.1:56159         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56163         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56124         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56178         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56121         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57144         ESTABLISHED 
+tcp        0      0 127.0.0.1:56125         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:58352         127.0.0.1:10001         TIME_WAIT   
+tcp        0      0 127.0.0.1:37388         127.0.0.1:6666          ESTABLISHED 
+tcp        0      0 127.0.0.1:56138         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56164         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57143         ESTABLISHED 
+tcp        0      0 127.0.0.1:56151         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56165         ESTABLISHED 
+tcp        0      0 127.0.0.1:56158         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56131         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56158         ESTABLISHED 
+tcp        0      0 127.0.0.1:33820         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56130         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56123         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33362         ESTABLISHED 
+tcp        0      0 127.0.0.1:33821         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56131         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:43726         ESTABLISHED 
+tcp        0      0 127.0.0.1:56157         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56123         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56128         ESTABLISHED 
+tcp        0      0 127.0.0.1:56144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56136         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57141         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56163         ESTABLISHED 
+tcp        0      0 127.0.0.1:56122         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56129         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56169         ESTABLISHED 
+tcp        0      0 127.0.0.1:57144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56156         ESTABLISHED 
+tcp        0      0 10.0.0.52:34474         35.168.74.157:443       ESTABLISHED 
+tcp        0      0 127.0.0.1:33361         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56154         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:46864         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56122         ESTABLISHED 
+tcp        0      0 127.0.0.1:56134         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56126         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56154         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57141         ESTABLISHED 
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+raw        0      0 0.0.0.0:1               0.0.0.0:*               1           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING       1570 /tmp/am
+unix  3      [ ]         DGRAM                      3695 /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING        904 /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                      1747 /var/run/wpa_supplicant/wlan0
+unix  3      [ ]         STREAM     CONNECTED       1744 
+unix  3      [ ]         STREAM     CONNECTED       6264 
+unix  3      [ ]         STREAM     CONNECTED        909 
+unix  3      [ ]         STREAM     CONNECTED       5995 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2279 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       6036 
+unix  3      [ ]         STREAM     CONNECTED     284756 
+unix  3      [ ]         STREAM     CONNECTED     1208490 
+unix  3      [ ]         STREAM     CONNECTED       5994 
+unix  3      [ ]         STREAM     CONNECTED        908 
+unix  3      [ ]         STREAM     CONNECTED       1722 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284760 
+unix  3      [ ]         STREAM     CONNECTED       1745 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2411 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284774 
+unix  3      [ ]         STREAM     CONNECTED       6041 
+unix  3      [ ]         STREAM     CONNECTED       2410 
+unix  3      [ ]         STREAM     CONNECTED     1208489 
+unix  3      [ ]         STREAM     CONNECTED     590699 
+unix  3      [ ]         STREAM     CONNECTED       1063 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284761 
+unix  3      [ ]         STREAM     CONNECTED       2955 
+unix  3      [ ]         STREAM     CONNECTED       6042 
+unix  3      [ ]         STREAM     CONNECTED     284775 
+unix  3      [ ]         STREAM     CONNECTED       1721 
+unix  3      [ ]         STREAM     CONNECTED       2956 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED     590698 
+unix  3      [ ]         STREAM     CONNECTED       1062 
+unix  3      [ ]         STREAM     CONNECTED       6265 
+unix  3      [ ]         STREAM     CONNECTED       6037 
+unix  3      [ ]         STREAM     CONNECTED       2278 
+unix  3      [ ]         STREAM     CONNECTED     284755 
+unix  2      [ ]         DGRAM                      3699 
+07.07.2026_17:26.11 ------------------------------[/bin/netstat -r]--------------------------------------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         10.0.0.1        0.0.0.0         UG        0 0          0 wlan0
+10.0.0.0        *               255.255.255.0   U         0 0          0 wlan0
+127.0.0.0       *               255.0.0.0       U         0 0          0 lo
+169.254.0.0     *               255.255.0.0     U         0 0          0 usb0
+07.07.2026_17:26.11 ------------------------------[/usr/local/bin/iwconfig wlan0]--------------------------------------
+wlan0     IEEE 802.11AC  ESSID:"wheat101"  Nickname:"<WIFI@REALTEK>"
+          Mode:Managed  Frequency:5.22 GHz  Access Point: FA:D0:0E:FB:8F:0A   
+          Bit Rate:867 Mb/s   Sensitivity:0/0  
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:****-****-****-****-****-****-****-****   Security mode:open
+          Power Management:off
+          Link Quality=60/100  Signal level=-53 dBm  Noise level=0 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+07.07.2026_17:45.05 ------------------------------[/usr/bin/uptime]--------------------------------------
+ 17:45:05 up 15:11,  0 users,  load average: 2.17, 1.93, 1.81
+07.07.2026_17:45.06 ------------------------------[/usr/bin/free]--------------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:         150752       68740       20884           0       61128           0
+-/+ buffers/cache:        68740       82012
+Swap:             0           0           0
+07.07.2026_17:45.06 ------------------------------[/bin/ps -ef]--------------------------------------
+PID   USER     TIME  COMMAND
+    1 root      0:00 {linuxrc} init
+    2 root      0:00 [kthreadd]
+    3 root      0:24 [ksoftirqd/0]
+    5 root      0:00 [kworker/0:0H]
+    7 root      0:00 [khelper]
+    8 root      0:00 [kdevtmpfs]
+    9 root      0:00 [writeback]
+   10 root      0:00 [bioset]
+   11 root      0:00 [crypto]
+   12 root      0:00 [kblockd]
+   19 root      0:00 [rpciod]
+   20 root      0:00 [kswapd0]
+   21 root      0:00 [fsnotify_mark]
+   22 root      0:00 [ecryptfs-kthrea]
+   23 root      0:00 [nfsiod]
+   24 root      0:00 [cifsiod]
+   38 root      0:00 [spi0]
+   59 root      0:00 [deferwq]
+   60 root      0:00 [kworker/0:1H]
+  251 root      0:00 [ubi_bgt0d]
+  255 root      0:04 [ubifs_bgt0_0]
+  343 root      0:00 [khubd]
+  379 root      0:00 [cfg80211]
+  392 root      0:00 /usr/local/bin/guard_vsync_loss
+  443 root      0:01 dbus-daemon --system
+  446 root      0:00 bluetoothd
+  478 root      0:01 crond -b -L /dev/null -c /var/spool/cron
+  841 root      0:00 /usr/bin/logbackup
+  910 root      0:00 [btfwwork]
+  931 root      0:00 [kworker/u3:0]
+  932 root      0:00 [hci0]
+  933 root      0:00 [hci0]
+  937 root      0:00 [kworker/u3:1]
+  975 root      0:37 /usr/bin/ledmgrmain
+  979 root      0:00 /usr/bin/accessManager plain
+ 1017 root     12:02 /usr/bin/rtrouted
+ 1211 root      0:06 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1215 root      4:15 [RTW_CMD_THREAD]
+ 1297 root      0:00 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 1357 root      0:00 /usr/local/bin/gpio_listen
+ 1416 root      0:16 /usr/bin/prvnmgr
+ 1593 root     27:49 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1597 root      0:16 sh /lib/rdk/watchDogTimerMonitor.sh
+ 1615 root      0:31 /usr/bin/telemetry2_0
+ 1637 root      0:10 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+ 1661 root      0:13 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 1668 root      0:01 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1703 root      0:00 /usr/local/bin/read_push
+ 1723 root      0:00 sh /lib/rdk/startXStreamer.sh
+ 1873 root      0:10 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 1929 root      0:02 sh /lib/rdk/start_ntp.sh
+ 1987 root     55:42 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 2153 root      0:00 /usr/bin/rdkcProvider
+ 2205 root      0:27 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comcast.net:8080 --token-server-url=https://issuer.xmidt.comcast.net:8080/issue --acquire-jwt=0 --force-ipv4 --close-reason-file=/tmp/parodus_close_reason.txt
+ 2220 root      0:00 /usr/bin/rfcProvider
+ 2614 root      3h17 /usr/local/bin/xvisiond 1
+ 2669 root     45:15 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 2810 root      0:01 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 2935 root      0:15 sh /lib/rdk/dmesg_logs.sh
+ 2993 root      0:01 syslogd -O /opt/logs/messages.txt
+ 2997 root      0:01 klogd
+ 3048 root      0:05 sh /lib/rdk/webpaServiceMonitor.sh
+ 3205 root     52:20 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 3381 root      1:20 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426 root      1:13 sh /lib/rdk/processMonitor.sh
+ 3427 root      0:09 sh /lib/rdk/start_watchDogMonitor.sh
+ 3516 root      0:15 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3698 root      0:01 sh /lib/rdk/systemcheck.sh
+ 3735 root      1:08 sh /lib/rdk/priorityProcessMonitor.sh
+ 3743 root      1h00 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3905 root      0:00 /sbin/getty 115200 tts/1 vt102
+ 3912 root      0:09 /usr/bin/nlmon
+ 4111 root      0:00 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 7021 root      0:00 [kworker/0:1]
+10849 root     23:52 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+13340 root      0:00 [kworker/u2:0]
+17015 root      0:00 [kworker/0:0]
+20679 root      0:00 sleep 7200
+21654 root      0:00 sleep 300
+22608 root      0:00 /usr/local/bin/ntpclient -s -h ntp.ccp.xcal.tv -i 90
+23200 root      0:00 sleep 120
+23474 root      0:00 sleep 15
+23494 root      0:00 sleep 60
+23595 root      0:00 [sh]
+23596 root      0:00 [sh]
+23733 root      0:00 sleep 10
+23775 root      0:00 sleep 15
+23834 root      0:00 sleep 10
+23847 root      0:00 sleep 5
+23848 root      0:00 sleep 5
+23875 root      0:00 sh /lib/rdk/generictelemetry.sh
+23876 root      0:00 sh /lib/rdk/rfctelemetry.sh
+23877 root      0:00 sh /lib/rdk/wifitelemetry.sh
+23878 root      0:00 sh /lib/rdk/system_log.sh
+23929 root      0:00 /bin/ps -ef
+25067 root      0:13 /usr/local/bin/thumbnail_upload
+25662 root      0:04 sh /lib/rdk/start_webpa_service.sh
+25706 root      0:10 webpa /etc/debug.ini
+29696 root      0:00 [kworker/u2:2]
+07.07.2026_17:45.06 ------------------------------[top -n 1 -b]--------------------------------------
+Mem: 130676K used, 20076K free, 12K shrd, 15088K buff, 42960K cached
+CPU: 43.7% usr 56.2% sys  0.0% nic  0.0% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 2.17 1.93 1.82 9/243 23992
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2614     1 root     R     205m139.0   0 18.7 /usr/local/bin/xvisiond 1
+ 3743     1 root     S     186m126.4   0  6.2 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3205     1 root     S     122m 83.1   0  6.2 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 2669     1 root     S     116m 78.8   0  6.2 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 1593     1 root     S     113m 77.2   0  6.2 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1987  1723 root     S    57916 38.3   0  6.2 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 3426     1 root     S     3016  2.0   0  6.2 sh /lib/rdk/processMonitor.sh
+23876  3516 root     S     2884  1.9   0  6.2 sh /lib/rdk/rfctelemetry.sh
+23962 23878 root     R     2752  1.8   0  6.2 top -n 1 -b
+ 1615     1 root     S     108m 73.5   0  0.0 /usr/bin/telemetry2_0
+ 1661     1 root     S    97164 64.3   0  0.0 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 2205     1 root     S    94176 62.3   0  0.0 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comca
+10849     1 root     S    90440 59.8   0  0.0 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+ 1637     1 root     S    87092 57.6   0  0.0 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+25706 25662 root     SN   78896 52.2   0  0.0 webpa /etc/debug.ini
+ 1416     1 root     S    77644 51.4   0  0.0 /usr/bin/prvnmgr
+  975     1 root     S    69192 45.8   0  0.0 /usr/bin/ledmgrmain
+25067     1 root     S    61996 41.0   0  0.0 /usr/local/bin/thumbnail_upload
+ 1873     1 root     S    51528 34.1   0  0.0 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 2153     1 root     S    44900 29.7   0  0.0 /usr/bin/rdkcProvider
+ 2220     1 root     S    27016 17.8   0  0.0 /usr/bin/rfcProvider
+ 3912     1 root     S    14000  9.2   0  0.0 /usr/bin/nlmon
+ 1668  1597 root     S    12088  8.0   0  0.0 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1211     1 root     S     8672  5.7   0  0.0 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1703     1 root     S     6584  4.3   0  0.0 /usr/local/bin/read_push
+  979     1 root     S     5624  3.7   0  0.0 /usr/bin/accessManager plain
+ 1017     1 root     S     5572  3.6   0  0.0 /usr/bin/rtrouted
+ 1357     1 root     S     5220  3.4   0  0.0 /usr/local/bin/gpio_listen
+  392     1 root     S     4648  3.0   0  0.0 /usr/local/bin/guard_vsync_loss
+  841     1 root     S     3804  2.5   0  0.0 /usr/bin/logbackup
+  446     1 root     S     3692  2.4   0  0.0 bluetoothd
+ 3381     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3735     1 root     SN    3016  2.0   0  0.0 sh /lib/rdk/priorityProcessMonitor.sh
+ 1597     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/watchDogTimerMonitor.sh
+ 3516     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3427     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_watchDogMonitor.sh
+ 3048     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/webpaServiceMonitor.sh
+25662     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/start_webpa_service.sh
+ 1929     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_ntp.sh
+ 3698     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/systemcheck.sh
+ 2810     1 root     S     2884  1.9   0  0.0 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 1723     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/startXStreamer.sh
+23875  3516 root     S     2884  1.9   0  0.0 sh /lib/rdk/generictelemetry.sh
+23877  3516 root     S     2884  1.9   0  0.0 sh /lib/rdk/wifitelemetry.sh
+23982 23876 root     S     2884  1.9   0  0.0 sh /lib/rdk/rfctelemetry.sh
+  478     1 root     S     2880  1.9   0  0.0 crond -b -L /dev/null -c /var/spool/cron
+ 2935     1 root     S     2752  1.8   0  0.0 sh /lib/rdk/dmesg_logs.sh
+ 2997     1 root     S     2752  1.8   0  0.0 klogd
+ 2993     1 root     S     2752  1.8   0  0.0 syslogd -O /opt/logs/messages.txt
+    1     0 root     S     2752  1.8   0  0.0 {linuxrc} init
+ 4111     1 root     S     2752  1.8   0  0.0 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 1297     1 root     S     2752  1.8   0  0.0 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+23878  3516 root     S     2752  1.8   0  0.0 sh /lib/rdk/system_log.sh
+ 3905     1 root     S     2752  1.8   0  0.0 /sbin/getty 115200 tts/1 vt102
+23973 23877 root     S     2752  1.8   0  0.0 [timestamp]
+23975 23875 root     S     2752  1.8   0  0.0 [timestamp]
+23978  3426 root     S     2752  1.8   0  0.0 {timestamp} /bin/sh /bin/timestamp
+23979 23975 root     R     2752  1.8   0  0.0 [date]
+23980 23978 root     R     2752  1.8   0  0.0 {timestamp} date +%d.%m.%Y_%H:%M.%S
+23981 23973 root     R     2752  1.8   0  0.0 [date]
+20679  4111 root     S     2620  1.7   0  0.0 sleep 7200
+21654  3698 root     S     2620  1.7   0  0.0 sleep 300
+23200  2810 root     S     2620  1.7   0  0.0 sleep 120
+23474  3381 root     S     2620  1.7   0  0.0 sleep 15
+23494  3048 root     SN    2620  1.7   0  0.0 sleep 60
+23733 25662 root     SN    2620  1.7   0  0.0 sleep 10
+23775  3735 root     SN    2620  1.7   0  0.0 sleep 15
+23834  3427 root     S     2620  1.7   0  0.0 sleep 10
+23847  2935 root     S     2620  1.7   0  0.0 sleep 5
+23848  1597 root     S     2620  1.7   0  0.0 sleep 5
+23956  3516 root     S     2620  1.7   0  0.0 sleep 180
+  443     1 root     S     2312  1.5   0  0.0 dbus-daemon --system
+22608  1929 root     S     1816  1.2   0  0.0 /usr/local/bin/ntpclient -s -h ntp.ccp.xcal.tv -i 90
+23984 23982 root     R     1156  0.7   0  0.0 cut -d = -f2
+ 1215     2 root     SW       0  0.0   0  0.0 [RTW_CMD_THREAD]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+  255     2 root     SW       0  0.0   0  0.0 [ubifs_bgt0_0]
+17015     2 root     SW       0  0.0   0  0.0 [kworker/0:0]
+29696     2 root     SW       0  0.0   0  0.0 [kworker/u2:2]
+  931     2 root     SW<      0  0.0   0  0.0 [kworker/u3:0]
+23595   478 root     ZN       0  0.0   0  0.0 [sh]
+  251     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+23596   478 root     ZN       0  0.0   0  0.0 [sh]
+   20     2 root     SW       0  0.0   0  0.0 [kswapd0]
+  343     2 root     SW       0  0.0   0  0.0 [khubd]
+    2     0 root     SW       0  0.0   0  0.0 [kthreadd]
+   60     2 root     SW<      0  0.0   0  0.0 [kworker/0:1H]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+    7     2 root     SW<      0  0.0   0  0.0 [khelper]
+    8     2 root     SW       0  0.0   0  0.0 [kdevtmpfs]
+    9     2 root     SW<      0  0.0   0  0.0 [writeback]
+   10     2 root     SW<      0  0.0   0  0.0 [bioset]
+   11     2 root     SW<      0  0.0   0  0.0 [crypto]
+   12     2 root     SW<      0  0.0   0  0.0 [kblockd]
+   19     2 root     SW<      0  0.0   0  0.0 [rpciod]
+   21     2 root     SW       0  0.0   0  0.0 [fsnotify_mark]
+   22     2 root     SW       0  0.0   0  0.0 [ecryptfs-kthrea]
+   23     2 root     SW<      0  0.0   0  0.0 [nfsiod]
+   24     2 root     SW<      0  0.0   0  0.0 [cifsiod]
+   38     2 root     SW       0  0.0   0  0.0 [spi0]
+   59     2 root     SW<      0  0.0   0  0.0 [deferwq]
+  379     2 root     SW<      0  0.0   0  0.0 [cfg80211]
+  910     2 root     SW<      0  0.0   0  0.0 [btfwwork]
+  932     2 root     SW<      0  0.0   0  0.0 [hci0]
+  933     2 root     SW<      0  0.0   0  0.0 [hci0]
+  937     2 root     SW<      0  0.0   0  0.0 [kworker/u3:1]
+ 7021     2 root     SW       0  0.0   0  0.0 [kworker/0:1]
+13340     2 root     SW       0  0.0   0  0.0 [kworker/u2:0]
+
+07.07.2026_17:45.07 ------------------------------[/bin/netstat -an]--------------------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 127.0.0.1:6666          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:8010          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:6667          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:10001         0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:56132         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56170         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56129         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57139         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33820         ESTABLISHED 
+tcp        0      0 127.0.0.1:57143         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56121         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56169         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:46864         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56144         ESTABLISHED 
+tcp        0      0 127.0.0.1:58388         127.0.0.1:10001         TIME_WAIT   
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56151         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56178         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56145         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56137         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56125         ESTABLISHED 
+tcp        0      0 127.0.0.1:56128         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56165         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56168         127.0.0.1:10001         ESTABLISHED 
+tcp       25      0 10.0.0.52:33709         34.192.214.17:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56124         ESTABLISHED 
+tcp        0      0 127.0.0.1:56137         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56170         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56138         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33821         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56157         ESTABLISHED 
+tcp        0      0 10.0.0.52:33745         96.198.193.178:3000     ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57139         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56133         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56126         ESTABLISHED 
+tcp        0      0 127.0.0.1:56133         127.0.0.1:10001         ESTABLISHED 
+tcp       32      0 10.0.0.52:51818         3.210.38.66:443         CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56130         ESTABLISHED 
+tcp        0      0 10.0.0.52:34184         96.107.187.54:8080      ESTABLISHED 
+tcp        0      0 127.0.0.1:56145         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56168         ESTABLISHED 
+tcp        0      0 127.0.0.1:6666          127.0.0.1:37388         ESTABLISHED 
+tcp        0      0 127.0.0.1:33362         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56164         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56136         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56159         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56132         ESTABLISHED 
+tcp        0      0 127.0.0.1:56156         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56134         ESTABLISHED 
+tcp        0      0 127.0.0.1:43726         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33361         ESTABLISHED 
+tcp        0      0 127.0.0.1:56159         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56163         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56124         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56178         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56121         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57144         ESTABLISHED 
+tcp        0      0 127.0.0.1:56125         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:37388         127.0.0.1:6666          ESTABLISHED 
+tcp        0      0 127.0.0.1:56138         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56164         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57143         ESTABLISHED 
+tcp        0      0 127.0.0.1:56151         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56165         ESTABLISHED 
+tcp        0      0 127.0.0.1:56158         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56131         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56158         ESTABLISHED 
+tcp        0      0 127.0.0.1:33820         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56130         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56123         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33362         ESTABLISHED 
+tcp        0      0 127.0.0.1:33821         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56131         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:43726         ESTABLISHED 
+tcp        0      0 127.0.0.1:56157         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56123         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56128         ESTABLISHED 
+tcp        0      0 127.0.0.1:56144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56136         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57141         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56163         ESTABLISHED 
+tcp        0      0 127.0.0.1:56122         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56129         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56169         ESTABLISHED 
+tcp        0      0 127.0.0.1:57144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56156         ESTABLISHED 
+tcp        0      0 10.0.0.52:34474         35.168.74.157:443       ESTABLISHED 
+tcp        0      0 127.0.0.1:33361         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56154         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:46864         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56122         ESTABLISHED 
+tcp        0      0 127.0.0.1:56134         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56126         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56154         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57141         ESTABLISHED 
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 10.0.0.52:56553         69.252.204.140:123      ESTABLISHED 
+raw        0      0 0.0.0.0:1               0.0.0.0:*               1           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING       1570 /tmp/am
+unix  3      [ ]         DGRAM                      3695 /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING        904 /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                      1747 /var/run/wpa_supplicant/wlan0
+unix  3      [ ]         STREAM     CONNECTED       1744 
+unix  3      [ ]         STREAM     CONNECTED       6264 
+unix  3      [ ]         STREAM     CONNECTED        909 
+unix  3      [ ]         STREAM     CONNECTED       5995 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2279 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       6036 
+unix  3      [ ]         STREAM     CONNECTED     284756 
+unix  3      [ ]         STREAM     CONNECTED     1208490 
+unix  3      [ ]         STREAM     CONNECTED       5994 
+unix  3      [ ]         STREAM     CONNECTED        908 
+unix  3      [ ]         STREAM     CONNECTED       1722 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284760 
+unix  3      [ ]         STREAM     CONNECTED       1745 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2411 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284774 
+unix  3      [ ]         STREAM     CONNECTED       6041 
+unix  3      [ ]         STREAM     CONNECTED       2410 
+unix  3      [ ]         STREAM     CONNECTED     1208489 
+unix  3      [ ]         STREAM     CONNECTED     590699 
+unix  3      [ ]         STREAM     CONNECTED       1063 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284761 
+unix  3      [ ]         STREAM     CONNECTED       2955 
+unix  3      [ ]         STREAM     CONNECTED       6042 
+unix  3      [ ]         STREAM     CONNECTED     284775 
+unix  3      [ ]         STREAM     CONNECTED       1721 
+unix  3      [ ]         STREAM     CONNECTED       2956 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED     590698 
+unix  3      [ ]         STREAM     CONNECTED       1062 
+unix  3      [ ]         STREAM     CONNECTED       6265 
+unix  3      [ ]         STREAM     CONNECTED       6037 
+unix  3      [ ]         STREAM     CONNECTED       2278 
+unix  3      [ ]         STREAM     CONNECTED     284755 
+unix  2      [ ]         DGRAM                      3699 
+07.07.2026_17:45.07 ------------------------------[/bin/netstat -r]--------------------------------------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         10.0.0.1        0.0.0.0         UG        0 0          0 wlan0
+10.0.0.0        *               255.255.255.0   U         0 0          0 wlan0
+127.0.0.0       *               255.0.0.0       U         0 0          0 lo
+169.254.0.0     *               255.255.0.0     U         0 0          0 usb0
+07.07.2026_17:45.07 ------------------------------[/usr/local/bin/iwconfig wlan0]--------------------------------------
+wlan0     IEEE 802.11AC  ESSID:"wheat101"  Nickname:"<WIFI@REALTEK>"
+          Mode:Managed  Frequency:5.22 GHz  Access Point: FA:D0:0E:FB:8F:0A   
+          Bit Rate:867 Mb/s   Sensitivity:0/0  
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:****-****-****-****-****-****-****-****   Security mode:open
+          Power Management:off
+          Link Quality=60/100  Signal level=-54 dBm  Noise level=0 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+07.07.2026_18:03.59 ------------------------------[/usr/bin/uptime]--------------------------------------
+ 18:03:59 up 15:30,  0 users,  load average: 1.93, 1.65, 1.72
+07.07.2026_18:04.00 ------------------------------[/usr/bin/free]--------------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:         150752       67792       21652           0       61308           0
+-/+ buffers/cache:        67792       82960
+Swap:             0           0           0
+07.07.2026_18:04.00 ------------------------------[/bin/ps -ef]--------------------------------------
+PID   USER     TIME  COMMAND
+    1 root      0:00 {linuxrc} init
+    2 root      0:00 [kthreadd]
+    3 root      0:25 [ksoftirqd/0]
+    5 root      0:00 [kworker/0:0H]
+    7 root      0:00 [khelper]
+    8 root      0:00 [kdevtmpfs]
+    9 root      0:00 [writeback]
+   10 root      0:00 [bioset]
+   11 root      0:00 [crypto]
+   12 root      0:00 [kblockd]
+   19 root      0:00 [rpciod]
+   20 root      0:00 [kswapd0]
+   21 root      0:00 [fsnotify_mark]
+   22 root      0:00 [ecryptfs-kthrea]
+   23 root      0:00 [nfsiod]
+   24 root      0:00 [cifsiod]
+   38 root      0:00 [spi0]
+   59 root      0:00 [deferwq]
+   60 root      0:00 [kworker/0:1H]
+  251 root      0:00 [ubi_bgt0d]
+  255 root      0:05 [ubifs_bgt0_0]
+  343 root      0:00 [khubd]
+  379 root      0:00 [cfg80211]
+  392 root      0:00 /usr/local/bin/guard_vsync_loss
+  443 root      0:01 dbus-daemon --system
+  446 root      0:00 bluetoothd
+  478 root      0:01 crond -b -L /dev/null -c /var/spool/cron
+  841 root      0:00 /usr/bin/logbackup
+  910 root      0:00 [btfwwork]
+  931 root      0:00 [kworker/u3:0]
+  932 root      0:00 [hci0]
+  933 root      0:00 [hci0]
+  937 root      0:00 [kworker/u3:1]
+  975 root      0:38 /usr/bin/ledmgrmain
+  979 root      0:00 /usr/bin/accessManager plain
+ 1017 root     12:17 /usr/bin/rtrouted
+ 1211 root      0:06 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1215 root      4:20 [RTW_CMD_THREAD]
+ 1297 root      0:00 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+ 1357 root      0:00 /usr/local/bin/gpio_listen
+ 1416 root      0:16 /usr/bin/prvnmgr
+ 1593 root     28:22 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1597 root      0:17 sh /lib/rdk/watchDogTimerMonitor.sh
+ 1615 root      0:32 /usr/bin/telemetry2_0
+ 1637 root      0:10 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+ 1661 root      0:13 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 1668 root      0:01 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1703 root      0:00 /usr/local/bin/read_push
+ 1723 root      0:00 sh /lib/rdk/startXStreamer.sh
+ 1873 root      0:10 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 1929 root      0:02 sh /lib/rdk/start_ntp.sh
+ 1987 root     56:56 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 2153 root      0:00 /usr/bin/rdkcProvider
+ 2205 root      0:27 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comcast.net:8080 --token-server-url=https://issuer.xmidt.comcast.net:8080/issue --acquire-jwt=0 --force-ipv4 --close-reason-file=/tmp/parodus_close_reason.txt
+ 2220 root      0:00 /usr/bin/rfcProvider
+ 2614 root      3h21 /usr/local/bin/xvisiond 1
+ 2669 root     46:22 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 2810 root      0:01 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 2935 root      0:15 sh /lib/rdk/dmesg_logs.sh
+ 2993 root      0:01 syslogd -O /opt/logs/messages.txt
+ 2997 root      0:01 klogd
+ 3048 root      0:05 sh /lib/rdk/webpaServiceMonitor.sh
+ 3205 root     53:25 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 3381 root      1:21 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426 root      1:15 sh /lib/rdk/processMonitor.sh
+ 3427 root      0:09 sh /lib/rdk/start_watchDogMonitor.sh
+ 3516 root      0:16 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3698 root      0:01 sh /lib/rdk/systemcheck.sh
+ 3735 root      1:10 sh /lib/rdk/priorityProcessMonitor.sh
+ 3743 root      1h01 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3905 root      0:00 /sbin/getty 115200 tts/1 vt102
+ 3912 root      0:09 /usr/bin/nlmon
+ 4111 root      0:00 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 7021 root      0:00 [kworker/0:1]
+ 8505 root      0:00 sleep 120
+ 8703 root      0:00 [kworker/0:0]
+ 8755 root      0:00 sleep 300
+ 8757 root      0:00 sleep 134
+ 9296 root      0:00 sleep 60
+ 9706 root      0:00 sleep 15
+ 9849 root      0:00 sleep 45
+ 9974 root      0:00 sleep 5
+ 9976 root      0:00 sleep 5
+ 9986 root      0:00 sleep 10
+ 9992 root      0:00 sleep 10
+10026 root      0:00 sleep 15
+10053 root      0:00 sh /lib/rdk/system_log.sh
+10073 root      0:00 /bin/ps -ef
+10849 root     24:22 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+13340 root      0:00 [kworker/u2:0]
+20679 root      0:00 sleep 7200
+25067 root      0:13 /usr/local/bin/thumbnail_upload
+25662 root      0:05 sh /lib/rdk/start_webpa_service.sh
+25706 root      0:10 webpa /etc/debug.ini
+29696 root      0:00 [kworker/u2:2]
+32215 root      0:01 [kworker/0:2]
+07.07.2026_18:04.00 ------------------------------[top -n 1 -b]--------------------------------------
+Mem: 129588K used, 21164K free, 12K shrd, 15088K buff, 43132K cached
+CPU: 33.3% usr 58.3% sys  8.3% nic  0.0% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 1.94 1.65 1.72 5/234 10088
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2614     1 root     R     205m139.0   0 24.9 /usr/local/bin/xvisiond 1
+ 1987  1723 root     S    57916 38.3   0 16.6 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+10080   478 root     SN    2752  1.8   0 16.6 sh /lib/rdk/logRotateDaemon.sh
+ 3743     1 root     S     186m126.4   0  8.3 /usr/local/bin/eventnotification --stnondelaytype 0 --stnondelaytime 0 --detectionEnabled 1 --detectionModel --cvrEnabled 1 --delivery_motion_cue_filter_enabled 0 --source Embedded --sourcePath  --frameFormat YUV
+ 3205     1 root     S     122m 83.1   0  8.3 /usr/local/bin/cvr_daemon --debugconfig /etc/debug.ini --audio 0 --dump 0
+ 2669     1 root     S     116m 78.8   0  8.3 /usr/local/bin/multi_client --hw-mac 3C62F03AF5A7 --hw-model XHC3 --audio-enabled 0 --cache-iframe 1 --secure-mount 1
+ 1017     1 root     S     5572  3.6   0  8.3 /usr/bin/rtrouted
+10081 10053 root     R     2752  1.8   0  8.3 top -n 1 -b
+ 1593     1 root     S     113m 77.2   0  0.0 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+ 1615     1 root     S     108m 73.5   0  0.0 /usr/bin/telemetry2_0
+ 1661     1 root     S    97164 64.3   0  0.0 netsrvmgr -p 1 -c /opt/usr_config/wifiConf -m 1
+ 2205     1 root     S    94176 62.3   0  0.0 parodus --hw-mac=3C62F03AF5A7 --hw-last-reboot-reason= --boot-time=1783391660 --hw-model=XHC3 --webpa-interface-used=wlan0 --fw-name=XHC3_8.4p1s1_PROD_sdy --hw-serial-number=C3SC1260900AEC --hw-manufacturer=Sercomm --webpa-ping-time=180 --webpa-backoff-max=4 --webpa-url=https://fabric.xmidt.comcast.net:8080 --ssl-cert-path=/etc/ssl/certs/ca-certificates.crt --dns-txt-url=https://fabric.xmidt.comca
+10849     1 root     S    90440 59.8   0  0.0 /usr/bin/smartrc -B -g1 -l2 -p /etc/smartrc_config_s2l35m_16_9.ini
+ 1637     1 root     S    87092 57.6   0  0.0 /usr/local/bin/provpolld --hw-mac 3C62F03AF5A7
+25706 25662 root     SN   78896 52.2   0  0.0 webpa /etc/debug.ini
+ 1416     1 root     S    77644 51.4   0  0.0 /usr/bin/prvnmgr
+  975     1 root     S    69192 45.8   0  0.0 /usr/bin/ledmgrmain
+25067     1 root     S    61996 41.0   0  0.0 /usr/local/bin/thumbnail_upload
+ 1873     1 root     S    51528 34.1   0  0.0 /usr/bin/streamConfigurer -e 1 -p Comcast -r medium -a 16_9
+ 2153     1 root     S    44900 29.7   0  0.0 /usr/bin/rdkcProvider
+ 2220     1 root     S    27016 17.8   0  0.0 /usr/bin/rfcProvider
+ 3912     1 root     S    14000  9.2   0  0.0 /usr/bin/nlmon
+ 1668  1597 root     S    12088  8.0   0  0.0 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1211     1 root     S     8672  5.7   0  0.0 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1703     1 root     S     6584  4.3   0  0.0 /usr/local/bin/read_push
+  979     1 root     S     5624  3.7   0  0.0 /usr/bin/accessManager plain
+ 1357     1 root     S     5220  3.4   0  0.0 /usr/local/bin/gpio_listen
+  392     1 root     S     4648  3.0   0  0.0 /usr/local/bin/guard_vsync_loss
+  841     1 root     S     3804  2.5   0  0.0 /usr/bin/logbackup
+  446     1 root     S     3692  2.4   0  0.0 bluetoothd
+ 3381     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/live-cvr-motion-tn_Monitor.sh
+ 3426     1 root     S     3016  2.0   0  0.0 sh /lib/rdk/processMonitor.sh
+ 3735     1 root     SN    3016  2.0   0  0.0 sh /lib/rdk/priorityProcessMonitor.sh
+ 1597     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/watchDogTimerMonitor.sh
+ 3516     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/xCAMConnectionStatus.sh
+ 3427     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_watchDogMonitor.sh
+ 3048     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/webpaServiceMonitor.sh
+25662     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/start_webpa_service.sh
+ 1929     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_ntp.sh
+ 3698     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/systemcheck.sh
+ 2810     1 root     S     2884  1.9   0  0.0 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 1723     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/startXStreamer.sh
+  478     1 root     S     2880  1.9   0  0.0 crond -b -L /dev/null -c /var/spool/cron
+ 2935     1 root     S     2752  1.8   0  0.0 sh /lib/rdk/dmesg_logs.sh
+ 2997     1 root     S     2752  1.8   0  0.0 klogd
+ 2993     1 root     S     2752  1.8   0  0.0 syslogd -O /opt/logs/messages.txt
+    1     0 root     S     2752  1.8   0  0.0 {linuxrc} init
+ 4111     1 root     S     2752  1.8   0  0.0 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 1297     1 root     S     2752  1.8   0  0.0 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+10053  3516 root     S     2752  1.8   0  0.0 sh /lib/rdk/system_log.sh
+ 3905     1 root     S     2752  1.8   0  0.0 /sbin/getty 115200 tts/1 vt102
+10083 10080 root     SN    2752  1.8   0  0.0 sh /lib/rdk/logRotateDaemon.sh
+10084 10083 root     SN    2752  1.8   0  0.0 sh /lib/rdk/logRotateDaemon.sh
+10085 10084 root     SN    2752  1.8   0  0.0 sh /lib/rdk/logRotateDaemon.sh
+10087 10085 root     RN    2752  1.8   0  0.0 grep ^imagename:
+10088 10085 root     SN    2752  1.8   0  0.0 cut -d : -f 2
+ 8505  2810 root     S     2620  1.7   0  0.0 sleep 120
+ 8755  3698 root     S     2620  1.7   0  0.0 sleep 300
+ 8757  1929 root     S     2620  1.7   0  0.0 sleep 134
+ 9296  3048 root     SN    2620  1.7   0  0.0 sleep 60
+ 9706  3381 root     S     2620  1.7   0  0.0 sleep 15
+ 9849  3426 root     S     2620  1.7   0  0.0 sleep 45
+ 9974  1597 root     S     2620  1.7   0  0.0 sleep 5
+ 9976  2935 root     S     2620  1.7   0  0.0 sleep 5
+ 9986 25662 root     SN    2620  1.7   0  0.0 sleep 10
+ 9992  3427 root     S     2620  1.7   0  0.0 sleep 10
+10026  3735 root     SN    2620  1.7   0  0.0 sleep 15
+10079  3516 root     S     2620  1.7   0  0.0 sleep 180
+20679  4111 root     S     2620  1.7   0  0.0 sleep 7200
+  443     1 root     S     2312  1.5   0  0.0 dbus-daemon --system
+ 1215     2 root     SW       0  0.0   0  0.0 [RTW_CMD_THREAD]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+  255     2 root     SW       0  0.0   0  0.0 [ubifs_bgt0_0]
+32215     2 root     SW       0  0.0   0  0.0 [kworker/0:2]
+29696     2 root     SW       0  0.0   0  0.0 [kworker/u2:2]
+  931     2 root     SW<      0  0.0   0  0.0 [kworker/u3:0]
+ 8703     2 root     SW       0  0.0   0  0.0 [kworker/0:0]
+  251     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+   20     2 root     SW       0  0.0   0  0.0 [kswapd0]
+  343     2 root     SW       0  0.0   0  0.0 [khubd]
+    2     0 root     SW       0  0.0   0  0.0 [kthreadd]
+   60     2 root     SW<      0  0.0   0  0.0 [kworker/0:1H]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+    7     2 root     SW<      0  0.0   0  0.0 [khelper]
+    8     2 root     SW       0  0.0   0  0.0 [kdevtmpfs]
+    9     2 root     SW<      0  0.0   0  0.0 [writeback]
+   10     2 root     SW<      0  0.0   0  0.0 [bioset]
+   11     2 root     SW<      0  0.0   0  0.0 [crypto]
+   12     2 root     SW<      0  0.0   0  0.0 [kblockd]
+   19     2 root     SW<      0  0.0   0  0.0 [rpciod]
+   21     2 root     SW       0  0.0   0  0.0 [fsnotify_mark]
+   22     2 root     SW       0  0.0   0  0.0 [ecryptfs-kthrea]
+   23     2 root     SW<      0  0.0   0  0.0 [nfsiod]
+   24     2 root     SW<      0  0.0   0  0.0 [cifsiod]
+   38     2 root     SW       0  0.0   0  0.0 [spi0]
+   59     2 root     SW<      0  0.0   0  0.0 [deferwq]
+  379     2 root     SW<      0  0.0   0  0.0 [cfg80211]
+  910     2 root     SW<      0  0.0   0  0.0 [btfwwork]
+  932     2 root     SW<      0  0.0   0  0.0 [hci0]
+  933     2 root     SW<      0  0.0   0  0.0 [hci0]
+  937     2 root     SW<      0  0.0   0  0.0 [kworker/u3:1]
+ 7021     2 root     SW       0  0.0   0  0.0 [kworker/0:1]
+13340     2 root     SW       0  0.0   0  0.0 [kworker/u2:0]
+
+07.07.2026_18:04.00 ------------------------------[/bin/netstat -an]--------------------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 127.0.0.1:6666          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:8010          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:6667          0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:10001         0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:56132         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56170         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56129         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57139         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33820         ESTABLISHED 
+tcp        0      0 127.0.0.1:57143         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56121         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56169         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:46864         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56144         ESTABLISHED 
+tcp       32      0 10.0.0.52:49060         3.219.230.220:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56151         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56178         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56145         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56137         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56125         ESTABLISHED 
+tcp        0      0 127.0.0.1:56128         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56165         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56168         127.0.0.1:10001         ESTABLISHED 
+tcp       25      0 10.0.0.52:33709         34.192.214.17:443       CLOSE_WAIT  
+tcp        0      0 127.0.0.1:58432         127.0.0.1:10001         TIME_WAIT   
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56124         ESTABLISHED 
+tcp        0      0 127.0.0.1:56137         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56170         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56138         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33821         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56157         ESTABLISHED 
+tcp        0      0 10.0.0.52:33745         96.198.193.178:3000     ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57139         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56133         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56126         ESTABLISHED 
+tcp        0      0 127.0.0.1:56133         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56130         ESTABLISHED 
+tcp        0      0 10.0.0.52:34184         96.107.187.54:8080      ESTABLISHED 
+tcp        0      0 127.0.0.1:56145         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56168         ESTABLISHED 
+tcp        0      0 127.0.0.1:6666          127.0.0.1:37388         ESTABLISHED 
+tcp        0      0 127.0.0.1:33362         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56164         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56136         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56159         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56132         ESTABLISHED 
+tcp        0      0 127.0.0.1:56156         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56134         ESTABLISHED 
+tcp        0      0 127.0.0.1:43726         127.0.0.1:6667          ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33361         ESTABLISHED 
+tcp        0      0 127.0.0.1:56159         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56163         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56124         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56178         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56121         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57144         ESTABLISHED 
+tcp        0      0 127.0.0.1:56125         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:37388         127.0.0.1:6666          ESTABLISHED 
+tcp        0      0 127.0.0.1:56138         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56164         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57143         ESTABLISHED 
+tcp        0      0 127.0.0.1:56151         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56165         ESTABLISHED 
+tcp        0      0 127.0.0.1:56158         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56131         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56158         ESTABLISHED 
+tcp        0      0 127.0.0.1:33820         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56130         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56123         ESTABLISHED 
+tcp        0      0 127.0.0.1:8010          127.0.0.1:33362         ESTABLISHED 
+tcp        0      0 127.0.0.1:33821         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:56131         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:43726         ESTABLISHED 
+tcp        0    299 127.0.0.1:56157         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56123         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56128         ESTABLISHED 
+tcp        0      0 127.0.0.1:56144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56136         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:57141         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56163         ESTABLISHED 
+tcp        0      0 127.0.0.1:56122         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56129         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56169         ESTABLISHED 
+tcp        0      0 127.0.0.1:57144         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56156         ESTABLISHED 
+tcp        0      0 10.0.0.52:34474         35.168.74.157:443       ESTABLISHED 
+tcp        0      0 127.0.0.1:33361         127.0.0.1:8010          ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56154         ESTABLISHED 
+tcp        0      0 127.0.0.1:6667          127.0.0.1:46864         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:56122         ESTABLISHED 
+tcp        0      0 127.0.0.1:56134         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56126         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:56154         127.0.0.1:10001         ESTABLISHED 
+tcp        0      0 127.0.0.1:10001         127.0.0.1:57141         ESTABLISHED 
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+udp        0      0 127.255.255.255:12035   0.0.0.0:*                           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING       1570 /tmp/am
+unix  3      [ ]         DGRAM                      3695 /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING        904 /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                      1747 /var/run/wpa_supplicant/wlan0
+unix  3      [ ]         STREAM     CONNECTED       1744 
+unix  3      [ ]         STREAM     CONNECTED       6264 
+unix  3      [ ]         STREAM     CONNECTED        909 
+unix  3      [ ]         STREAM     CONNECTED       5995 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2279 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       6036 
+unix  3      [ ]         STREAM     CONNECTED     284756 
+unix  3      [ ]         STREAM     CONNECTED     1208490 
+unix  3      [ ]         STREAM     CONNECTED       5994 
+unix  3      [ ]         STREAM     CONNECTED        908 
+unix  3      [ ]         STREAM     CONNECTED       1722 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284760 
+unix  3      [ ]         STREAM     CONNECTED       1745 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED       2411 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284774 
+unix  3      [ ]         STREAM     CONNECTED       6041 
+unix  3      [ ]         STREAM     CONNECTED       2410 
+unix  3      [ ]         STREAM     CONNECTED     1208489 
+unix  3      [ ]         STREAM     CONNECTED     590699 
+unix  3      [ ]         STREAM     CONNECTED       1063 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     284761 
+unix  3      [ ]         STREAM     CONNECTED       2955 
+unix  3      [ ]         STREAM     CONNECTED       6042 
+unix  3      [ ]         STREAM     CONNECTED     284775 
+unix  3      [ ]         STREAM     CONNECTED       1721 
+unix  3      [ ]         STREAM     CONNECTED       2956 /tmp/am
+unix  3      [ ]         STREAM     CONNECTED     590698 
+unix  3      [ ]         STREAM     CONNECTED       1062 
+unix  3      [ ]         STREAM     CONNECTED       6265 
+unix  3      [ ]         STREAM     CONNECTED       6037 
+unix  3      [ ]         STREAM     CONNECTED       2278 
+unix  3      [ ]         STREAM     CONNECTED     284755 
+unix  2      [ ]         DGRAM                      3699 
+07.07.2026_18:04.00 ------------------------------[/bin/netstat -r]--------------------------------------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         10.0.0.1        0.0.0.0         UG        0 0          0 wlan0
+10.0.0.0        *               255.255.255.0   U         0 0          0 wlan0
+127.0.0.0       *               255.0.0.0       U         0 0          0 lo
+169.254.0.0     *               255.255.0.0     U         0 0          0 usb0
+07.07.2026_18:04.00 ------------------------------[/usr/local/bin/iwconfig wlan0]--------------------------------------
+wlan0     IEEE 802.11AC  ESSID:"wheat101"  Nickname:"<WIFI@REALTEK>"
+          Mode:Managed  Frequency:5.22 GHz  Access Point: FA:D0:0E:FB:8F:0A   
+          Bit Rate:867 Mb/s   Sensitivity:0/0  
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:****-****-****-****-****-****-****-****   Security mode:open
+          Power Management:off
+          Link Quality=61/100  Signal level=-54 dBm  Noise level=0 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+

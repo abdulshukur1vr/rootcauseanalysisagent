@@ -1,0 +1,60 @@
+60
+260709-18:09:16.353727 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:09:27.001073 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:09:27.001158 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260709-18:09:27.001190 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:09:27.001208 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 1732
+260709-18:09:57.001201 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:09:57.001284 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260709-18:09:57.001315 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:09:57.001333 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 1732
+260709-18:10:01.352718 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:10:10.097283 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Received msg from server
+260709-18:10:10.097362 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: msgType received:3
+260709-18:10:10.097382 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Command line input is *,shaw and msg partner_id is axb3retail
+260709-18:10:10.097398 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: partner_id match found
+260709-18:10:10.097416 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Received downstream dest as :config and transaction_uuid :4968de74-96f8-471a-b76c-d18302832e21_____006563188E047E8
+260709-18:10:10.097724 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260709-18:10:10.101320 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:10:10.101386 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h202-0z12z0y10u01n1yewp-001.webpa.comcast.net' transaction_uuid: 4968de74-96f8-471a-b76c-d18302832e21_____006563188E047E8 traceParent: traceparent: 00-6a4fe4010000000036dc49c05234b49f-f88e1e41b8fb5be6-01 traceState: tracestate: dd=s:1;o:rum;p:1a77be6b3e2e4a83;t.tid:6a4fe40100000000;t.rsid:7f75a03c-e8ab-4f9d-b624-8221aecbc3e5
+260709-18:10:10.101406 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:10:10.101423 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 2108
+260709-18:10:10.763318 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Received msg from server
+260709-18:10:10.763398 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: msgType received:3
+260709-18:10:10.763415 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Command line input is *,shaw and msg partner_id is axb3retail
+260709-18:10:10.763432 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: partner_id match found
+260709-18:10:10.763450 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Received downstream dest as :config and transaction_uuid :458e2f8a-6ea6-4962-8b15-d894de6bf578_____006563188EA477A
+260709-18:10:10.763778 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260709-18:10:10.767568 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:10:10.767638 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-xdpprod-uswest2-h201-0z12z0y10u01n1yewp-000.webpa.comcast.net' transaction_uuid: 458e2f8a-6ea6-4962-8b15-d894de6bf578_____006563188EA477A traceParent: traceparent: 00-6a4fe402000000007dc2c818e7b11469-9371a92ace92a499-01 traceState: tracestate: dd=s:1;o:rum;p:7853d3318acbb507;t.tid:6a4fe40200000000;t.rsid:7f75a03c-e8ab-4f9d-b624-8221aecbc3e5
+260709-18:10:10.767658 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:10:10.767675 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 2108
+260709-18:10:26.113027 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:10:26.113146 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesTraffic'
+260709-18:10:26.113181 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:10:26.113199 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 805
+260709-18:10:27.000949 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:10:27.001026 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260709-18:10:27.001056 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:10:27.001073 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 1733
+260709-18:10:46.352232 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:10:57.001135 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:10:57.001302 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream event data: dest 'event:raw.kestrel.reports.NetworkDevicesStatus'
+260709-18:10:57.001335 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:10:57.001353 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 1733
+260709-18:11:09.472747 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Received msg from server
+260709-18:11:09.472823 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: msgType received:3
+260709-18:11:09.472842 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Command line input is *,shaw and msg partner_id is comcast
+260709-18:11:09.472859 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: partner_id match found
+260709-18:11:09.472876 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: Received downstream dest as :config and transaction_uuid :MefjWH12dn_FxOaAABQdDg
+260709-18:11:09.473168 [mod=PARODUS, lvl=INFO] [tid=12383] PARODUS: sent downstream message to reg_client 'tcp://127.0.0.1:6667'
+260709-18:11:09.477738 [mod=PARODUS, lvl=INFO] [tid=12381] PARODUS: Upstream message received from nanomsg client
+260709-18:11:09.477803 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS:  Received upstream data with MsgType: 3 dest: 'dns:tr1d1um-prod-uswest2-h600-0z12z0y10u01n1yewp-000.webpa.comcast.net' transaction_uuid: MefjWH12dn_FxOaAABQdDg
+260709-18:11:09.477824 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: Sending response to server
+260709-18:11:09.477842 [mod=PARODUS, lvl=INFO] [tid=12382] PARODUS: sendMessage length 1620
+260709-18:11:31.362267 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:12:16.351242 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:13:01.350249 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:13:46.349728 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:14:31.350503 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9
+260709-18:15:16.355252 [mod=PARODUS, lvl=INFO] [tid=11540] PARODUS: Ping received with payload mac:78b39ffe0c0f, opcode 9

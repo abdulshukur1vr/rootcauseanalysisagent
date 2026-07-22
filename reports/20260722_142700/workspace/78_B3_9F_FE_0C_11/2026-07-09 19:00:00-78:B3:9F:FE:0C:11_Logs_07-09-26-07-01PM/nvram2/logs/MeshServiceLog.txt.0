@@ -1,0 +1,1263 @@
+1263
+260709-18:26:54.501233 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 36 (0,0|0,0|0,2)
+260709-18:26:54.501306 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '4a:0d:d7:1e:65:27'
+260709-18:26:59.000124 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_CLIENT_DISCONNECT 3c:62:f0:43:70:ed, src=Local, type=Deauth, reason=Unspecified
+260709-18:26:59.000553 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_CLIENT_DISCONNECT 3c:62:f0:43:70:ed, src=Local, type=Deauth, reason=Prev Auth Not Valid
+260709-18:26:59.872723 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_CLIENT_DISCONNECT 3c:62:f0:43:70:ed, src=Local, type=Deauth, reason=Prev Auth Not Valid
+260709-18:27:07.256744 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 2384 = 2384
+260709-18:27:07.257164 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1455 bytes
+260709-18:27:07.700954 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_CLIENT_CONNECT 3c:62:f0:43:70:ed
+260709-18:27:07.705661 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: wl0.1: Client 3c:62:f0:43:70:ed connected.
+260709-18:27:07.707249 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: [target_bus_get_raw_data] Bus success
+260709-18:27:07.707481 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: WLAN_EID_RSN
+260709-18:27:07.707519 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Client 3c:62:f0:43:70:ed no capab based on opclasses
+260709-18:27:07.707628 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [2.4G] wl0.1 recalc pre-assoc backoff - counter 1
+260709-18:27:07.707653 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' changed state BACKOFF -> CONNECTED
+260709-18:27:08.297026 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): webconfig_ovsdb_decode success!!
+260709-18:27:08.297093 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num radio state rows=0
+260709-18:27:08.297117 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vif state rows=0
+260709-18:27:08.297142 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num assoc clients rows=14
+260709-18:27:08.297166 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb num blaster rows=0
+260709-18:27:08.297190 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): subdoc type=11
+260709-18:27:08.297214 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vaps=0
+260709-18:27:08.297237 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: eh_assoc_clients(): updating assoc clients table
+260709-18:27:08.298195 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 e79c2436-2e51-4691-9b8f-d444b70f51b5
+260709-18:27:08.301750 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 567286db-1f63-4c4f-a021-e3221c816507
+260709-18:27:08.304514 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 2e48999c-bca2-4142-abb6-7810f63ff0bc
+260709-18:27:08.307045 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 f582155d-d19f-4611-9ce1-2aa7f49a0544
+260709-18:27:08.309747 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 067cbf4d-12d0-452f-8ccd-2ab35a8e1961
+260709-18:27:08.313639 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: NEW table: Wifi_Associated_Clients row: 7f790395-2023-486a-97cb-dde0cb246a59
+260709-18:27:08.315692 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:08.315956 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: Wifi_VIF_State row: 6340d50c-bdd2-44ba-91c0-f40df4e7940c
+260709-18:27:08.316944 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:08.317782 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 3814169b-1220-4010-b6bc-f1b46ed8f4c0
+260709-18:27:08.320986 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 d08b29c5-2047-480b-b74d-624170edda74
+260709-18:27:08.324423 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 74bf6417-e4ce-4feb-a5d3-c475a6cc7d54
+260709-18:27:08.327764 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 404cd688-7d2a-4bf5-9b8e-7e0d4a4aad27
+260709-18:27:08.330683 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5ee1b0a2-ab2f-4897-a032-aae2dc537dab
+260709-18:27:08.333367 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 a350f912-62ad-408a-9fd9-8140375808fa
+260709-18:27:08.335894 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5df616a8-5729-49a0-be95-c6fd2032967d
+260709-18:27:13.574460 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:27:13.574521 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:27:13.574545 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MAIN: dhcp_lease: Acquired DHCP lease: MAC:3c:62:f0:43:70:ed IP:10.0.0.137 Hostname:SC4370ED Time:1783794433
+260709-18:27:13.576734 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: NEW table: DHCP_leased_IP row: c9419b46-d7f6-4a85-9b1d-b4ce6d6ed58d
+260709-18:27:13.576780 [mod=MeshService, lvl=NOTICE] [tid=16633] NM[16721]: MAIN: Updated DHCP lease '3c:62:f0:43:70:ed' with '10.0.0.137' 'SC4370ED' '1783794433'
+260709-18:27:13.576818 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:27:13.576842 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:27:13.576866 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:27:13.576889 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:27:13.576911 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:27:13.576934 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:27:13.578076 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:29.558093 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [5G] wl1.1: BSAL_EVENT_CLIENT_DISCONNECT 3c:62:f0:3a:20:00, src=Local, type=Deauth, reason=Assoc w/o Auth
+260709-18:27:29.558148 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:3a:20:00' changed state CONNECTED -> DISCONNECTED
+260709-18:27:30.295449 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): webconfig_ovsdb_decode success!!
+260709-18:27:30.295538 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num radio state rows=0
+260709-18:27:30.295567 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vif state rows=0
+260709-18:27:30.295594 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num assoc clients rows=13
+260709-18:27:30.295638 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb num blaster rows=0
+260709-18:27:30.295664 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): subdoc type=11
+260709-18:27:30.295690 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vaps=0
+260709-18:27:30.295717 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: eh_assoc_clients(): updating assoc clients table
+260709-18:27:30.297071 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: assoc_clients: Deleted entry with UUID: 067cbf4d-12d0-452f-8ccd-2ab35a8e1961
+260709-18:27:30.298685 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: DEL table: Wifi_Associated_Clients row: 067cbf4d-12d0-452f-8ccd-2ab35a8e1961
+260709-18:27:30.300683 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 e79c2436-2e51-4691-9b8f-d444b70f51b5
+260709-18:27:30.301111 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:30.301429 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: Wifi_VIF_State row: ff77d0d3-386f-49b4-9019-4082539c51d6
+260709-18:27:30.303470 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:30.304779 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 567286db-1f63-4c4f-a021-e3221c816507
+260709-18:27:30.307841 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 2e48999c-bca2-4142-abb6-7810f63ff0bc
+260709-18:27:30.312233 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 f582155d-d19f-4611-9ce1-2aa7f49a0544
+260709-18:27:30.316624 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 7f790395-2023-486a-97cb-dde0cb246a59
+260709-18:27:30.319655 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 3814169b-1220-4010-b6bc-f1b46ed8f4c0
+260709-18:27:30.322337 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 d08b29c5-2047-480b-b74d-624170edda74
+260709-18:27:30.325045 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 74bf6417-e4ce-4feb-a5d3-c475a6cc7d54
+260709-18:27:30.327749 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 404cd688-7d2a-4bf5-9b8e-7e0d4a4aad27
+260709-18:27:30.330385 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5ee1b0a2-ab2f-4897-a032-aae2dc537dab
+260709-18:27:30.333047 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 a350f912-62ad-408a-9fd9-8140375808fa
+260709-18:27:30.335701 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5df616a8-5729-49a0-be95-c6fd2032967d
+260709-18:27:31.768242 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:3a:20:00' snr 38
+260709-18:27:31.768301 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Steer_to calculated: [5G]
+260709-18:27:31.768324 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:3a:20:00' changed state DISCONNECTED -> STEERING
+260709-18:27:34.504688 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 40 (0,0|0,0|0,1)
+260709-18:27:34.504756 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' handling kick_type 0
+260709-18:27:34.539120 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 4a:0d:d7:1e:65:27 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:27:34.606979 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.607176 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.607283 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.607384 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.607572 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.672252 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.733561 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.733862 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.733961 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.734054 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:27:34+0000'
+260709-18:27:34.734252 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:27:34+0000'
+260709-18:27:36.075870 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:3a:20:00' snr 35
+260709-18:27:36.075933 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Steer_to calculated: [5G]
+260709-18:27:36.120196 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:3a:20:00' snr 35
+260709-18:27:36.120259 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Steer_to calculated: [5G]
+260709-18:27:39.276328 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [5G] wl1.1: BSAL_EVENT_CLIENT_CONNECT 3c:62:f0:3a:20:00
+260709-18:27:39.290369 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: wl1.1: Client 3c:62:f0:3a:20:00 connected.
+260709-18:27:39.295477 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): webconfig_ovsdb_decode success!!
+260709-18:27:39.295542 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num radio state rows=0
+260709-18:27:39.295568 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vif state rows=0
+260709-18:27:39.295595 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num assoc clients rows=14
+260709-18:27:39.295620 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb num blaster rows=0
+260709-18:27:39.295646 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): subdoc type=11
+260709-18:27:39.295669 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vaps=0
+260709-18:27:39.295694 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: eh_assoc_clients(): updating assoc clients table
+260709-18:27:39.300977 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: [target_bus_get_raw_data] Bus success
+260709-18:27:39.303229 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 e79c2436-2e51-4691-9b8f-d444b70f51b5
+260709-18:27:39.305525 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: WLAN_EID_RSN
+260709-18:27:39.305578 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Client 3c:62:f0:3a:20:00 no capab based on opclasses
+260709-18:27:39.305603 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [5G] 3c:62:f0:3a:20:00 connected to bs_allowed (wl1.1) - back to orignal pre-assoc backoff timeout
+260709-18:27:39.305640 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:3a:20:00' successfully steered to wl1.1 5G (total: 1 times)
+260709-18:27:39.305664 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:3a:20:00' changed state STEERING -> CONNECTED
+260709-18:27:39.312600 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 567286db-1f63-4c4f-a021-e3221c816507
+260709-18:27:39.321421 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 2e48999c-bca2-4142-abb6-7810f63ff0bc
+260709-18:27:39.330301 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 f582155d-d19f-4611-9ce1-2aa7f49a0544
+260709-18:27:39.340512 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: NEW table: Wifi_Associated_Clients row: 1cc5554e-ea33-47e8-9388-f2088c7fc98f
+260709-18:27:39.345034 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:39.345351 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: Wifi_VIF_State row: ff77d0d3-386f-49b4-9019-4082539c51d6
+260709-18:27:39.346503 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 7f790395-2023-486a-97cb-dde0cb246a59
+260709-18:27:39.349426 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:27:39.353408 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 3814169b-1220-4010-b6bc-f1b46ed8f4c0
+260709-18:27:39.357675 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 d08b29c5-2047-480b-b74d-624170edda74
+260709-18:27:39.361577 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 74bf6417-e4ce-4feb-a5d3-c475a6cc7d54
+260709-18:27:39.365524 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 404cd688-7d2a-4bf5-9b8e-7e0d4a4aad27
+260709-18:27:39.369576 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5ee1b0a2-ab2f-4897-a032-aae2dc537dab
+260709-18:27:39.377129 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 a350f912-62ad-408a-9fd9-8140375808fa
+260709-18:27:39.380990 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5df616a8-5729-49a0-be95-c6fd2032967d
+260709-18:27:40.992970 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:27:40.993029 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:27:40.993053 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:27:40.993075 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:27:40.993097 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:27:40.993121 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:27:40.993144 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:27:40.993166 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:27:41.007989 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' pre-assoc backoff period has expired, re-enabling steering
+260709-18:27:41.008033 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: 3c:62:f0:43:70:ed disable pre-assoc backoff
+260709-18:27:41.008068 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 3c:62:f0:43:70:ed radio_type 1 (probe 0-1, auth 0-1, xing 10-35 xing2 0-0 xing3 0-0)
+260709-18:27:41.008092 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 3c:62:f0:43:70:ed updated on iface: wl0.1
+260709-18:27:41.008115 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 3c:62:f0:43:70:ed radio_type 2 (probe 0-0, auth 0-0, xing 10-0 xing2 0-0 xing3 0-0)
+260709-18:27:41.008137 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 3c:62:f0:43:70:ed updated on iface: wl1.1
+260709-18:27:41.008159 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 3c:62:f0:43:70:ed radio_type 5 (probe 0-0, auth 0-0, xing 0-0 xing2 0-0 xing3 0-0)
+260709-18:27:41.008181 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 3c:62:f0:43:70:ed updated on iface: wl2.1
+260709-18:27:44.515489 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl0.1]: xing_bs '3c:62:f0:43:70:ed' snr 32 (0,2|0,0|0,0)
+260709-18:27:44.515556 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl0.1]: xing_bs clearing pending steering request for client '3c:62:f0:43:70:ed'
+260709-18:27:44.932492 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: OSA: Off chan scan RFC callback target call
+260709-18:28:06.651922 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: Start........
+260709-18:28:06.651985 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16724 name : bm: mem usage: real mem: 16800, virt mem 197408
+260709-18:28:06.652008 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16720 name : cm: mem usage: real mem: 13620, virt mem 39400
+260709-18:28:06.652031 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16722 name : lm: mem usage: real mem: 10844, virt mem 37840
+260709-18:28:06.652053 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16721 name : nm: mem usage: real mem: 12840, virt mem 38380
+260709-18:28:06.652075 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16717 name : ovsm: mem usage: real mem: 28812, virt mem 268668
+260709-18:28:06.652097 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16719 name : qm: mem usage: real mem: 15928, virt mem 39812
+260709-18:28:06.652119 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16723 name : rdkm: mem usage: real mem: 11964, virt mem 37848
+260709-18:28:06.652141 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16718 name : sm: mem usage: real mem: 13528, virt mem 39184
+260709-18:28:06.652163 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: End........
+260709-18:28:07.256488 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 2265 = 2265
+260709-18:28:07.256845 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 2265 + 3905 = 6156
+260709-18:28:07.257534 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2642 bytes
+260709-18:28:10.747568 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: MON upd: NEW table: Wifi_VIF_Neighbors row: 9e536a2d-9cdf-4741-958a-0b5e79927b64 cached: n
+260709-18:28:10.747625 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: call_update_event(): row update for table: Wifi_VIF_Neighbors!
+260709-18:28:10.747649 [mod=MeshService, lvl=NOTICE] [tid=16633] OVSM[16717]: MISC: eh_base_wifi_config_updated():Wifi_VIF_Neighbors - first_update_time=406, now=406, sync_time=118, now-sync_time=288, update_time=406
+260709-18:28:10.747672 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: <<< DONE: MON upd: NEW table: Wifi_VIF_Neighbors row: 9e536a2d-9cdf-4741-958a-0b5e79927b64 ver: 74e4784f-7549-4a2a-96d8-0e7bf9d5f7f6
+260709-18:28:10.747695 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: MON upd: NEW table: Wifi_VIF_Neighbors row: 8fd38cc7-4316-4f9a-ad37-3e33e59b1be6 cached: n
+260709-18:28:10.747718 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: call_update_event(): row update for table: Wifi_VIF_Neighbors!
+260709-18:28:10.747754 [mod=MeshService, lvl=NOTICE] [tid=16633] OVSM[16717]: MISC: eh_base_wifi_config_updated():Wifi_VIF_Neighbors - first_update_time=406, now=406, sync_time=118, now-sync_time=288, update_time=406
+260709-18:28:10.747777 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: <<< DONE: MON upd: NEW table: Wifi_VIF_Neighbors row: 8fd38cc7-4316-4f9a-ad37-3e33e59b1be6 ver: 01e22837-605b-44dc-9517-923ec56c1f50
+260709-18:28:10.750534 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: NEIGHBORS: Initialized Neighbor VIF bssid:0e:c5:b4:e7:8a:cf if-name:home-ap-50 Priority: 1 Channel: 44 HT-Mode: 5 OpClass 128
+260709-18:28:10.752225 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 96:ae:3d:3a:20:31 from the stored list
+260709-18:28:10.752253 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 1c:53:f9:8c:e2:f1 from the stored list
+260709-18:28:10.752277 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 4a:0d:d7:1e:65:27 from the stored list
+260709-18:28:10.752300 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 3c:62:f0:39:62:a0 from the stored list
+260709-18:28:10.752322 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 78:80:38:d9:b6:5a from the stored list
+260709-18:28:10.752345 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting da:5c:01:69:dd:5b from the stored list
+260709-18:28:10.752368 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 3c:62:f0:3a:20:00 from the stored list
+260709-18:28:10.752391 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 20:f1:b2:8d:c0:a8 from the stored list
+260709-18:28:10.752413 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting a4:57:a0:1f:d9:d5 from the stored list
+260709-18:28:10.752436 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 28:6b:b4:2a:74:1a from the stored list
+260709-18:28:10.752458 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 3c:62:f0:43:70:ed from the stored list
+260709-18:28:10.752481 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 1c:53:f9:8c:e2:f1 from the stored list
+260709-18:28:10.752504 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 4a:0d:d7:1e:65:27 from the stored list
+260709-18:28:10.752527 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 3c:62:f0:39:62:a0 from the stored list
+260709-18:28:10.752549 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 78:80:38:d9:b6:5a from the stored list
+260709-18:28:10.752572 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting da:5c:01:69:dd:5b from the stored list
+260709-18:28:10.752594 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_client_clear_stored_list Deleting 3c:62:f0:3a:20:00 from the stored list
+260709-18:28:10.752617 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <TRACE>    STATS: Queue is empty, returning
+260709-18:28:10.752646 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <TRACE>    STATS: Report timestamp = 1783621687243
+260709-18:28:10.752668 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <TRACE>      DPP: Q len: 1 size: 217368
+260709-18:28:10.752691 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: SYNC: Writing sync operation: {"method": "transact", "params": ["Open_vSwitch", {"table": "Wifi_VIF_State", "op": "select", "where": [["if_name", "==", "home-ap-50"]]}], "id": 116}
+260709-18:28:10.752718 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: query result: [{"rows": [{"mac": "92:b3:9f:fe:0c:15", "vif_radio_idx": 2, "_uuid": ["uuid", "ff77d0d3-386f-49b4-9019-4082539c51d6"], "btm": 1, "ssid": "whatever", "parent": ["set", []], "state": ["set", []], "mac_list": ["set", []], "_version": ["uuid", "ee317ea1-9ecd-480f-ac8c-7d12a0a63195"], "ft_mobility_domain": ["set", []], "vif_config": ["uuid", "51744db4-7fa4-434d-bb80-8e0245757fa1"], "wps_pbc": ["set", []], "security": "[HIDDEN]", "min_hw_mode": ["set", []], "wps": ["set", []], "ap_bridge": false, "ssid_broadcast": "enabled", "dynamic_beacon": false, "radius_srv_port": ["set", []], "dpp_netaccesskey_hex": ["set", []], "mcast2ucast": false, "mode": "ap", "dpp_connector": ["set", []], "dpp_csign_hex": ["set", []], "radius_srv_secret": "[HIDDEN]", "wpa_psks": "[HIDDEN]", "vlan_id": 100, "if_name": "home-ap-50", "radius_srv_addr": ["set", []], "multi_ap": ["set", []], "channel": 157, "rrm": 1, "wpa_key_mgmt": "wpa2-psk", "bridge": "brlan0", "uapsd_enable": true, "wds": ["set", []], "grou
+260709-18:28:10.752756 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: ovsdb_sync_select_where return: [{"mac": "92:b3:9f:fe:0c:15", "vif_radio_idx": 2, "_uuid": ["uuid", "ff77d0d3-386f-49b4-9019-4082539c51d6"], "btm": 1, "ssid": "whatever", "parent": ["set", []], "state": ["set", []], "mac_list": ["set", []], "_version": ["uuid", "ee317ea1-9ecd-480f-ac8c-7d12a0a63195"], "ft_mobility_domain": ["set", []], "vif_config": ["uuid", "51744db4-7fa4-434d-bb80-8e0245757fa1"], "wps_pbc": ["set", []], "security": "[HIDDEN]", "min_hw_mode": ["set", []], "wps": ["set", []], "ap_bridge": false, "ssid_broadcast": "enabled", "dynamic_beacon": false, "radius_srv_port": ["set", []], "dpp_netaccesskey_hex": ["set", []], "mcast2ucast": false, "mode": "ap", "dpp_connector": ["set", []], "dpp_csign_hex": ["set", []], "radius_srv_secret": "[HIDDEN]", "wpa_psks": "[HIDDEN]", "vlan_id": 100, "if_name": "home-ap-50", "radius_srv_addr": ["set", []], "multi_ap": ["set", []], "channel": 157, "rrm": 1, "wpa_key_mgmt": "wpa2-psk", "bridge": "brlan0", "uapsd_enable": true, "wds": ["set", []
+260709-18:28:10.752800 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: SYNC: Writing sync operation: {"method": "transact", "params": ["Open_vSwitch", {"table": "Wifi_Radio_State", "op": "select", "where": [["vif_states", "includes", ["uuid", "ff77d0d3-386f-49b4-9019-4082539c51d6"]]]}], "id": 117}
+260709-18:28:10.752828 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: query result: [{"rows": [{"mac": ["set", []], "thermal_downgraded": ["set", []], "_uuid": ["uuid", "9290bcc2-9ca0-41e5-8a1f-33846808e37b"], "hw_mode": "11be", "temperature_control": ["map", []], "_version": ["uuid", "19092bd0-263e-4247-a88a-4084765b8a1f"], "vif_states": ["set", [["uuid", "480ac046-40b5-4fa2-934f-f2da82bb4766"], ["uuid", "8227af80-3a24-4a07-8eb8-b5f61f440d06"], ["uuid", "d8af1a31-db89-487a-949f-9c1353b380e1"], ["uuid", "f7221096-17c4-4db1-8098-56f01c675a7f"], ["uuid", "ff77d0d3-386f-49b4-9019-4082539c51d6"]]], "thermal_tx_chainmask": ["set", []], "channel_sync": ["set", []], "country": "CA", "thermal_shutdown": ["set", []], "hw_config": ["map", []], "allowed_channels": ["set", [36, 40, 44, 48, 149, 153, 157, 161, 165]], "hw_type": "", "fallback_parents": ["map", []], "tx_chainmask": ["set", []], "thermal_integration": ["set", []], "freq_band": "5G", "zero_wait_dfs": ["set", []], "channels": ["map", [["149", "{\"state\": \"allowed\"}"], ["153", "{\"state\": \"allowed\"}"], ["
+260709-18:28:10.752869 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: ovsdb_sync_select_where return: [{"mac": ["set", []], "thermal_downgraded": ["set", []], "_uuid": ["uuid", "9290bcc2-9ca0-41e5-8a1f-33846808e37b"], "hw_mode": "11be", "temperature_control": ["map", []], "_version": ["uuid", "19092bd0-263e-4247-a88a-4084765b8a1f"], "vif_states": ["set", [["uuid", "480ac046-40b5-4fa2-934f-f2da82bb4766"], ["uuid", "8227af80-3a24-4a07-8eb8-b5f61f440d06"], ["uuid", "d8af1a31-db89-487a-949f-9c1353b380e1"], ["uuid", "f7221096-17c4-4db1-8098-56f01c675a7f"], ["uuid", "ff77d0d3-386f-49b4-9019-4082539c51d6"]]], "thermal_tx_chainmask": ["set", []], "channel_sync": ["set", []], "country": "CA", "thermal_shutdown": ["set", []], "hw_config": ["map", []], "allowed_channels": ["set", [36, 40, 44, 48, 149, 153, 157, 161, 165]], "hw_type": "", "fallback_parents": ["map", []], "tx_chainmask": ["set", []], "thermal_integration": ["set", []], "freq_band": "5G", "zero_wait_dfs": ["set", []], "channels": ["map", [["149", "{\"state\": \"allowed\"}"], ["153", "{\"state\": \"allowed\
+260709-18:28:10.752903 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <NOTICE> NEIGHBORS: Initialized Neighbor VIF bssid:0e:c5:b4:e7:8a:cf if-name:home-ap-50 Priority: 1 Channel: 44 HT-Mode: 5 OpClass 128
+260709-18:28:10.752925 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:cf ifaname=wl0.1
+260709-18:28:10.752947 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:cf ifaname=wl1.1
+260709-18:28:10.752969 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:cf ifaname=wl2.1
+260709-18:28:10.752991 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=8a:b3:9f:fe:0c:14 ifaname=wl0.1
+260709-18:28:10.753014 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=92:b3:9f:fe:0c:15 ifaname=wl0.1
+260709-18:28:10.753036 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.753057 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.754121 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.754144 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=8a:b3:9f:fe:0c:14 ifaname=wl1.1
+260709-18:28:10.754167 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=92:b3:9f:fe:0c:15 ifaname=wl1.1
+260709-18:28:10.754188 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.754210 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.755699 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.755722 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=8a:b3:9f:fe:0c:14 ifaname=wl2.1
+260709-18:28:10.755744 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=92:b3:9f:fe:0c:15 ifaname=wl2.1
+260709-18:28:10.755769 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.755798 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.758184 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.758210 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.758233 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.758256 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 128, channel: 44, phy_type: 9 
+260709-18:28:10.758277 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.758299 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.758320 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.760594 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.760621 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.760644 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.760666 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 11, phy_type: 7 
+260709-18:28:10.760687 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.760710 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.760732 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.763084 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.763112 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.763134 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.763156 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 115, channel: 36, phy_type: 9 
+260709-18:28:10.763178 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.763200 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.763221 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.763243 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl0.1
+260709-18:28:10.764596 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.764620 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.764652 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.764674 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl0.1
+260709-18:28:10.764696 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.764718 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.767095 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.767120 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.767143 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.767165 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.767188 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.767210 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.767232 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.767253 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 128, channel: 44, phy_type: 9 
+260709-18:28:10.767275 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.767297 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.767318 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.769524 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.769553 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.769576 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.769598 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 11, phy_type: 7 
+260709-18:28:10.769620 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.769642 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.769664 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.771979 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.772010 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.772033 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.772056 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 115, channel: 36, phy_type: 9 
+260709-18:28:10.772086 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.772109 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.772130 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.772153 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl1.1
+260709-18:28:10.774548 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.774576 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.774598 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.774620 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl1.1
+260709-18:28:10.774643 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.774664 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.776980 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.777007 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.777031 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.777053 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 128, channel: 44, phy_type: 9 
+260709-18:28:10.777075 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.777097 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.777119 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.780460 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.780492 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.780515 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.780537 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 11, phy_type: 7 
+260709-18:28:10.780558 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.780580 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.780602 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.782995 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.783030 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.783054 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.783084 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 115, channel: 36, phy_type: 9 
+260709-18:28:10.783107 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.783129 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.783151 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.783174 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl2.1
+260709-18:28:10.784746 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.784787 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.784818 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.784841 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl2.1
+260709-18:28:10.784864 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.784886 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.788755 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: NEIGHBORS: Initialized Neighbor VIF bssid:0e:c5:b4:e7:8a:ce if-name:home-ap-24 Priority: 0 Channel: 1 HT-Mode: 1 OpClass 81
+260709-18:28:10.790450 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.790483 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: bm_client_update_rrm_neighbors: RRM Request trigger to update rrm neighbours
+260709-18:28:10.790506 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: 4a:0d:d7:1e:65:27 skip rrm_req while non-DFS and !rrm_active
+260709-18:28:10.790529 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: 4a:0d:d7:1e:65:27 skip rrm_req while non-DFS and !rrm_active
+260709-18:28:10.790552 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: bm_client_update_rrm_neighbors: RRM Request trigger to update rrm neighbours
+260709-18:28:10.790575 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: 96:ae:3d:3a:20:31 skip rrm_req while non-DFS and !rrm_active
+260709-18:28:10.790598 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: 96:ae:3d:3a:20:31 skip rrm_req while non-DFS and !rrm_active
+260709-18:28:10.790620 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: bm_client_update_rrm_neighbors: RRM Request trigger to update rrm neighbours
+260709-18:28:10.790643 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: bm_client_update_rrm_neighbors: RRM Request trigger to update rrm neighbours
+260709-18:28:10.790666 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: da:5c:01:69:dd:5b skip rrm_req while non-DFS and !rrm_active
+260709-18:28:10.790690 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>   CLIENT: da:5c:01:69:dd:5b skip rrm_req while non-DFS and !rrm_active
+260709-18:28:10.790714 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: SYNC: Writing sync operation: {"method": "transact", "params": ["Open_vSwitch", {"table": "Wifi_VIF_State", "op": "select", "where": [["if_name", "==", "home-ap-24"]]}], "id": 118}
+260709-18:28:10.790760 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: query result: [{"rows": [{"mac": "8a:b3:9f:fe:0c:14", "vif_radio_idx": 2, "_uuid": ["uuid", "6340d50c-bdd2-44ba-91c0-f40df4e7940c"], "btm": 1, "ssid": "whatever", "parent": ["set", []], "state": ["set", []], "mac_list": ["set", []], "_version": ["uuid", "6731cea3-78c7-4aea-9938-39c6e1bcfb0a"], "ft_mobility_domain": ["set", []], "vif_config": ["uuid", "c0a4ba3c-aade-44a8-98cf-4830d0c83c5b"], "wps_pbc": ["set", []], "security": "[HIDDEN]", "min_hw_mode": ["set", []], "wps": ["set", []], "ap_bridge": false, "ssid_broadcast": "enabled", "dynamic_beacon": false, "radius_srv_port": ["set", []], "dpp_netaccesskey_hex": ["set", []], "mcast2ucast": false, "mode": "ap", "dpp_connector": ["set", []], "dpp_csign_hex": ["set", []], "radius_srv_secret": "[HIDDEN]", "wpa_psks": "[HIDDEN]", "vlan_id": 100, "if_name": "home-ap-24", "radius_srv_addr": ["set", []], "multi_ap": ["set", []], "channel": 6, "rrm": 1, "wpa_key_mgmt": "wpa2-psk", "bridge": "brlan0", "uapsd_enable": true, "wds": ["set", []], "group_
+260709-18:28:10.790809 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: ovsdb_sync_select_where return: [{"mac": "8a:b3:9f:fe:0c:14", "vif_radio_idx": 2, "_uuid": ["uuid", "6340d50c-bdd2-44ba-91c0-f40df4e7940c"], "btm": 1, "ssid": "whatever", "parent": ["set", []], "state": ["set", []], "mac_list": ["set", []], "_version": ["uuid", "6731cea3-78c7-4aea-9938-39c6e1bcfb0a"], "ft_mobility_domain": ["set", []], "vif_config": ["uuid", "c0a4ba3c-aade-44a8-98cf-4830d0c83c5b"], "wps_pbc": ["set", []], "security": "[HIDDEN]", "min_hw_mode": ["set", []], "wps": ["set", []], "ap_bridge": false, "ssid_broadcast": "enabled", "dynamic_beacon": false, "radius_srv_port": ["set", []], "dpp_netaccesskey_hex": ["set", []], "mcast2ucast": false, "mode": "ap", "dpp_connector": ["set", []], "dpp_csign_hex": ["set", []], "radius_srv_secret": "[HIDDEN]", "wpa_psks": "[HIDDEN]", "vlan_id": 100, "if_name": "home-ap-24", "radius_srv_addr": ["set", []], "multi_ap": ["set", []], "channel": 6, "rrm": 1, "wpa_key_mgmt": "wpa2-psk", "bridge": "brlan0", "uapsd_enable": true, "wds": ["set", []],
+260709-18:28:10.790844 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: SYNC: Writing sync operation: {"method": "transact", "params": ["Open_vSwitch", {"table": "Wifi_Radio_State", "op": "select", "where": [["vif_states", "includes", ["uuid", "6340d50c-bdd2-44ba-91c0-f40df4e7940c"]]]}], "id": 119}
+260709-18:28:10.790870 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: query result: [{"rows": [{"mac": ["set", []], "thermal_downgraded": ["set", []], "_uuid": ["uuid", "a8f02481-d760-4d07-8bb6-31b5d61b0fcd"], "hw_mode": "11ax", "temperature_control": ["map", []], "_version": ["uuid", "2aee1971-ff90-4059-9e16-622c19667994"], "vif_states": ["set", [["uuid", "490342d4-1dc2-4edc-a058-e8ecf0f26026"], ["uuid", "6340d50c-bdd2-44ba-91c0-f40df4e7940c"], ["uuid", "73ccf8d4-867e-4693-949f-dfe30d3f2a3b"], ["uuid", "842a3ac8-ed1b-49bc-b2c0-36ec5098a4db"], ["uuid", "cb43f4d5-1860-4694-b459-a686d0585de0"]]], "thermal_tx_chainmask": ["set", []], "channel_sync": ["set", []], "country": "CA", "thermal_shutdown": ["set", []], "hw_config": ["map", []], "allowed_channels": ["set", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]], "hw_type": "", "fallback_parents": ["map", []], "tx_chainmask": ["set", []], "thermal_integration": ["set", []], "freq_band": "2.4G", "zero_wait_dfs": ["set", []], "channels": ["map", [["1", "{\"state\": \"allowed\"}"], ["10", "{\"state\": \"allowed\"}"], ["11", "{
+260709-18:28:10.790908 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>    OVSDB: ovsdb_sync_select_where return: [{"mac": ["set", []], "thermal_downgraded": ["set", []], "_uuid": ["uuid", "a8f02481-d760-4d07-8bb6-31b5d61b0fcd"], "hw_mode": "11ax", "temperature_control": ["map", []], "_version": ["uuid", "2aee1971-ff90-4059-9e16-622c19667994"], "vif_states": ["set", [["uuid", "490342d4-1dc2-4edc-a058-e8ecf0f26026"], ["uuid", "6340d50c-bdd2-44ba-91c0-f40df4e7940c"], ["uuid", "73ccf8d4-867e-4693-949f-dfe30d3f2a3b"], ["uuid", "842a3ac8-ed1b-49bc-b2c0-36ec5098a4db"], ["uuid", "cb43f4d5-1860-4694-b459-a686d0585de0"]]], "thermal_tx_chainmask": ["set", []], "channel_sync": ["set", []], "country": "CA", "thermal_shutdown": ["set", []], "hw_config": ["map", []], "allowed_channels": ["set", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]], "hw_type": "", "fallback_parents": ["map", []], "tx_chainmask": ["set", []], "thermal_integration": ["set", []], "freq_band": "2.4G", "zero_wait_dfs": ["set", []], "channels": ["map", [["1", "{\"state\": \"allowed\"}"], ["10", "{\"state\": \"allowed\"}"], [
+260709-18:28:10.790944 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <NOTICE> NEIGHBORS: Initialized Neighbor VIF bssid:0e:c5:b4:e7:8a:ce if-name:home-ap-24 Priority: 0 Channel: 1 HT-Mode: 1 OpClass 81
+260709-18:28:10.790967 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:ce ifaname=wl0.1
+260709-18:28:10.790989 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:ce ifaname=wl1.1
+260709-18:28:10.791011 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:ce ifaname=wl2.1
+260709-18:28:10.791033 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:cf ifaname=wl0.1
+260709-18:28:10.791055 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:cf ifaname=wl1.1
+260709-18:28:10.791077 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=0e:c5:b4:e7:8a:cf ifaname=wl2.1
+260709-18:28:10.791099 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=8a:b3:9f:fe:0c:14 ifaname=wl0.1
+260709-18:28:10.791121 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=92:b3:9f:fe:0c:15 ifaname=wl0.1
+260709-18:28:10.791142 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.791164 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.792313 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.792338 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=8a:b3:9f:fe:0c:14 ifaname=wl1.1
+260709-18:28:10.792361 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=92:b3:9f:fe:0c:15 ifaname=wl1.1
+260709-18:28:10.792383 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.792405 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.793813 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.793880 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=8a:b3:9f:fe:0c:14 ifaname=wl2.1
+260709-18:28:10.793903 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: target_bsal_rrm_remove_neighbor: unable to find neighbor bssid=92:b3:9f:fe:0c:15 ifaname=wl2.1
+260709-18:28:10.793926 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.793947 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.796335 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_remove_neighbor: succesfully removed neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.796361 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 1 channel allowed 1
+260709-18:28:10.796384 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 0e:c5:b4:e7:8a:ce
+260709-18:28:10.796406 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 1, phy_type: 7 
+260709-18:28:10.796428 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.796449 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 0e:c5:b4:e7:8a:ce
+260709-18:28:10.796472 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 0e:c5:b4:e7:8a:ce failed
+260709-18:28:10.798761 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 0e:c5:b4:e7:8a:ce failed
+260709-18:28:10.798799 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.798823 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.798846 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 128, channel: 44, phy_type: 9 
+260709-18:28:10.798868 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.798890 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.798912 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.801102 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.801132 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.801154 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.801176 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 11, phy_type: 7 
+260709-18:28:10.801197 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.801219 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.801241 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.803570 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.803610 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.803633 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.803655 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 115, channel: 36, phy_type: 9 
+260709-18:28:10.803677 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl0.1
+260709-18:28:10.803699 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl0.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.803721 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl0.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.803743 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl0.1
+260709-18:28:10.805076 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl0.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.805102 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.805124 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.805146 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl0.1
+260709-18:28:10.805168 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.805190 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.807502 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl0.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.807528 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 1 channel allowed 1
+260709-18:28:10.807551 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.807574 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.807596 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.807618 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.807640 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 1 channel allowed 1
+260709-18:28:10.807662 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 0e:c5:b4:e7:8a:ce
+260709-18:28:10.807683 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 1, phy_type: 7 
+260709-18:28:10.807705 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.807731 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 0e:c5:b4:e7:8a:ce
+260709-18:28:10.807753 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 0e:c5:b4:e7:8a:ce failed
+260709-18:28:10.812867 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 0e:c5:b4:e7:8a:ce failed
+260709-18:28:10.812913 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.812941 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.812965 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 128, channel: 44, phy_type: 9 
+260709-18:28:10.812989 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.813012 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.813034 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.815397 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.815426 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.815449 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.815472 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 11, phy_type: 7 
+260709-18:28:10.815494 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.815515 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.815537 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.817988 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.818018 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.818042 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.818065 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 115, channel: 36, phy_type: 9 
+260709-18:28:10.818087 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl1.1
+260709-18:28:10.818109 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl1.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.818131 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl1.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.818153 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl1.1
+260709-18:28:10.819513 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl1.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.819536 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.819558 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.819580 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl1.1
+260709-18:28:10.819602 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.819624 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.822129 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl1.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.822156 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 1 channel allowed 1
+260709-18:28:10.822179 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 0e:c5:b4:e7:8a:ce
+260709-18:28:10.822201 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 1, phy_type: 7 
+260709-18:28:10.822223 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.822245 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 0e:c5:b4:e7:8a:ce
+260709-18:28:10.822266 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 0e:c5:b4:e7:8a:ce failed
+260709-18:28:10.824632 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 0e:c5:b4:e7:8a:ce failed
+260709-18:28:10.824659 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 44 channel allowed 1
+260709-18:28:10.824682 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.824704 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 128, channel: 44, phy_type: 9 
+260709-18:28:10.824726 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.824748 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 0e:c5:b4:e7:8a:cf
+260709-18:28:10.824769 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.827111 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 0e:c5:b4:e7:8a:cf failed
+260709-18:28:10.827139 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 11 channel allowed 1
+260709-18:28:10.827161 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.827183 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 81, channel: 11, phy_type: 7 
+260709-18:28:10.827205 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.827226 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 8a:b3:9f:fe:0c:14
+260709-18:28:10.827248 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.833535 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 8A:B3:9F:FE:0C:14 failed
+260709-18:28:10.833579 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 36 channel allowed 1
+260709-18:28:10.833602 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.833625 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: neighbor sent op_class: 115, channel: 36, phy_type: 9 
+260709-18:28:10.833647 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list: unable to setNeighborReports for wl2.1
+260709-18:28:10.833669 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: failed adding neighbor wl2.1, 92:b3:9f:fe:0c:15
+260709-18:28:10.833702 [mod=MeshService, lvl=WARN] [tid=16633] BM[16724]: NEIGHBORS: wl2.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.833724 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl2.1
+260709-18:28:10.835449 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <WARNING> NEIGHBORS: wl2.1: set_neigh: 92:B3:9F:FE:0C:15 failed
+260709-18:28:10.835478 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG> NEIGHBORS: group 37 channel allowed 1
+260709-18:28:10.835500 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <DEBUG>     MISC: BSAL: target_bsal_rrm_set_neighbor: inserted neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:10.835523 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: TRACEBACK: <INFO>      MISC: Skip increasing the neighbor for 6G op_class: 131, channel: 37, phy_type: 14  ifname: wl2.1
+260709-18:28:10.835545 [mod=MeshService, lvl=ERROR] [tid=16633] BM[16724]: MISC: bsal_send_update_neighbor_list2516: iface_neighbors_number is 0
+260709-18:28:10.835567 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL: target_bsal_rrm_set_neighbor: succesfully added neighbor wl2.1, 78:b3:9f:fe:0c:16
+260709-18:28:34.502005 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 39 (0,0|0,0|0,2)
+260709-18:28:34.502065 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '4a:0d:d7:1e:65:27'
+260709-18:28:34.620717 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.620931 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.621066 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.621196 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.621295 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.621462 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.676989 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.677049 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:28:34+0000'
+260709-18:28:34.677073 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:28:34+0000'
+260709-18:28:46.260519 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: EVENT: Connection stable by 300 sec, disconnects: 0
+260709-18:28:46.890728 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:28:46.890801 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:28:46.890827 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:28:46.890850 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MAIN: dhcp_lease: Acquired DHCP lease: MAC:8c:c5:b4:e7:8a:d0 IP:169.254.1.22 Hostname:AS7EE00686_Pod_945102600-8 Time:0
+260709-18:28:46.892811 [mod=MeshService, lvl=NOTICE] [tid=16633] NM[16721]: MAIN: Updated DHCP lease '8c:c5:b4:e7:8a:d0' with '169.254.1.22' 'AS7EE00686_Pod_945102600-8' '-1'
+260709-18:28:46.892862 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:28:46.892886 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:28:46.892919 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:28:46.892942 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:28:46.892965 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:28:46.893071 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: DHCP_leased_IP row: 68f5afb3-ada7-484a-9f96-8a645a9eb914
+260709-18:28:46.894118 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:28:47.394080 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:28:47.394143 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:28:47.394167 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:28:47.394190 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:28:47.394213 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:28:47.394236 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:28:47.394258 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:28:47.394279 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:29:04.501302 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 40 (0,0|0,0|0,1)
+260709-18:29:04.501366 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' handling kick_type 0
+260709-18:29:04.524397 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 4a:0d:d7:1e:65:27 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:29:07.257368 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 1971 = 1971
+260709-18:29:07.257425 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 1971 + 2348 = 4305
+260709-18:29:07.257448 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1789 bytes
+260709-18:29:14.501576 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 39 (0,0|0,0|0,2)
+260709-18:29:14.501627 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '4a:0d:d7:1e:65:27'
+260709-18:29:32.157558 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl0.1]: xing_bs '3c:62:f0:43:70:ed' snr 36 (0,1|0,0|0,0)
+260709-18:29:32.157607 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl0.1]: xing_bs '3c:62:f0:43:70:ed' is ACTIVE, handling kick_type 0 upon idle
+260709-18:29:34.502363 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl0.1]: xing_bs '3c:62:f0:43:70:ed' snr 32 (0,2|0,0|0,0)
+260709-18:29:34.502427 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl0.1]: xing_bs clearing pending steering request for client '3c:62:f0:43:70:ed'
+260709-18:29:34.641911 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.641967 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.641991 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.760613 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.760690 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.760715 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.760898 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.760953 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.761008 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.761070 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:29:34+0000'
+260709-18:29:34.761154 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:29:34+0000'
+260709-18:30:07.256557 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 229 = 229
+260709-18:30:07.256762 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 229 + 3942 = 4157
+260709-18:30:07.257394 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2296 bytes
+260709-18:30:20.192006 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_CLIENT_DISCONNECT 3c:62:f0:43:70:ed, src=Local, type=Deauth, reason=Leaving
+260709-18:30:20.192052 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' changed state CONNECTED -> DISCONNECTED
+260709-18:30:20.294950 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): webconfig_ovsdb_decode success!!
+260709-18:30:20.295029 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num radio state rows=0
+260709-18:30:20.295056 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vif state rows=0
+260709-18:30:20.295082 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num assoc clients rows=13
+260709-18:30:20.295107 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb num blaster rows=0
+260709-18:30:20.295131 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): subdoc type=11
+260709-18:30:20.295154 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vaps=0
+260709-18:30:20.295179 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: eh_assoc_clients(): updating assoc clients table
+260709-18:30:20.299523 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: DEL table: Wifi_Associated_Clients row: 7f790395-2023-486a-97cb-dde0cb246a59
+260709-18:30:20.299582 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: assoc_clients: Deleted entry with UUID: 7f790395-2023-486a-97cb-dde0cb246a59
+260709-18:30:20.300427 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 e79c2436-2e51-4691-9b8f-d444b70f51b5
+260709-18:30:20.300813 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:30:20.301062 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: Wifi_VIF_State row: 6340d50c-bdd2-44ba-91c0-f40df4e7940c
+260709-18:30:20.304766 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:30:20.306178 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 567286db-1f63-4c4f-a021-e3221c816507
+260709-18:30:20.308785 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 2e48999c-bca2-4142-abb6-7810f63ff0bc
+260709-18:30:20.311193 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 f582155d-d19f-4611-9ce1-2aa7f49a0544
+260709-18:30:20.313463 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 1cc5554e-ea33-47e8-9388-f2088c7fc98f
+260709-18:30:20.316063 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 3814169b-1220-4010-b6bc-f1b46ed8f4c0
+260709-18:30:20.318501 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 d08b29c5-2047-480b-b74d-624170edda74
+260709-18:30:20.320886 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 74bf6417-e4ce-4feb-a5d3-c475a6cc7d54
+260709-18:30:20.323169 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 404cd688-7d2a-4bf5-9b8e-7e0d4a4aad27
+260709-18:30:20.325521 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5ee1b0a2-ab2f-4897-a032-aae2dc537dab
+260709-18:30:20.327939 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 a350f912-62ad-408a-9fd9-8140375808fa
+260709-18:30:20.330551 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5df616a8-5729-49a0-be95-c6fd2032967d
+260709-18:30:21.781376 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_AUTH_FAIL 3c:62:f0:43:70:ed, RSSI=31, reason= BLOCKED
+260709-18:30:21.781417 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: Client 3c:62:f0:43:70:ed is blocked on wl0.1, last disconnected on wl0.1,  client not connected to any band
+260709-18:30:22.721061 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [2.4G] wl0.1: BSAL_EVENT_CLIENT_DISCONNECT 3c:62:f0:43:70:ed, src=Local, type=Deauth, reason=Leaving
+260709-18:30:24.509269 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:30:24.509366 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:30:24.524308 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:30:32.909641 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:30:32.909703 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:30:32.909728 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:30:32.909750 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:30:32.909772 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:30:32.909802 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:30:32.909825 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:30:32.909847 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:30:33.410867 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:30:33.410925 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:30:33.410948 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:30:33.410971 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:30:33.411003 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:30:33.411026 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:30:33.411047 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:30:33.411069 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:30:34.515145 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 31 (0,0|0,0|0,2)
+260709-18:30:34.515778 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:30:34.560132 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.560193 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.560216 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.610309 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.660820 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.660887 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.660939 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.661086 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:30:34+0000'
+260709-18:30:34.661141 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:30:34+0000'
+260709-18:31:04.514892 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 47 (0,0|0,0|0,1)
+260709-18:31:04.514945 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:31:04.541394 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:31:07.256438 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:31:07.256567 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 2320 = 2536
+260709-18:31:07.257084 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1552 bytes
+260709-18:31:34.552594 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.552905 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.553073 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.631902 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.631965 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.632047 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.632070 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.680925 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.681003 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.681028 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:31:34+0000'
+260709-18:31:34.681126 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:31:34+0000'
+260709-18:32:07.256818 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 994 = 994
+260709-18:32:07.257077 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 994 + 4188 = 5168
+260709-18:32:07.257735 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2477 bytes
+260709-18:32:34.586611 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.586677 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.586701 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.643853 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.699242 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.699308 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.699402 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.699480 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:32:34+0000'
+260709-18:32:34.699619 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:32:34+0000'
+260709-18:33:06.651240 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: Start........
+260709-18:33:06.651301 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16724 name : bm: mem usage: real mem: 16800, virt mem 197408
+260709-18:33:06.651325 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16720 name : cm: mem usage: real mem: 13620, virt mem 39400
+260709-18:33:06.651376 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16722 name : lm: mem usage: real mem: 10844, virt mem 37840
+260709-18:33:06.651424 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16721 name : nm: mem usage: real mem: 12840, virt mem 38380
+260709-18:33:06.651479 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16717 name : ovsm: mem usage: real mem: 28812, virt mem 268668
+260709-18:33:06.651534 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16719 name : qm: mem usage: real mem: 15932, virt mem 39812
+260709-18:33:06.651588 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16723 name : rdkm: mem usage: real mem: 11964, virt mem 37848
+260709-18:33:06.651645 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16718 name : sm: mem usage: real mem: 13552, virt mem 39184
+260709-18:33:06.651667 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: End........
+260709-18:33:07.257308 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:33:07.257363 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 2255 = 2471
+260709-18:33:07.257387 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1459 bytes
+260709-18:33:17.813449 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: MON upd: MOD table: Band_Steering_Clients row: 715722af-3fa2-4ac5-a5d7-3270c5774dc5 cached: y key: 1c:53:f9:8c:e2:f1
+260709-18:33:17.813525 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: call_update_event(): row update for table: Band_Steering_Clients!
+260709-18:33:17.813548 [mod=MeshService, lvl=NOTICE] [tid=16633] OVSM[16717]: MISC: eh_base_wifi_config_updated():Band_Steering_Clients - first_update_time=713, now=713, sync_time=118, now-sync_time=595, update_time=713
+260709-18:33:17.813572 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: <<< DONE: MON upd: MOD table: Band_Steering_Clients row: 715722af-3fa2-4ac5-a5d7-3270c5774dc5 ver: ec5320b0-195b-4ec3-bde1-99da18a31ea3
+260709-18:33:17.813686 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 1c:53:f9:8c:e2:f1 radio_type 1 (probe 0-1, auth 0-1, xing 10-35 xing2 0-0 xing3 0-0)
+260709-18:33:17.813942 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 1c:53:f9:8c:e2:f1 updated on iface: wl0.1
+260709-18:33:17.813968 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 1c:53:f9:8c:e2:f1 radio_type 2 (probe 0-0, auth 0-0, xing 10-0 xing2 0-0 xing3 0-0)
+260709-18:33:17.814072 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 1c:53:f9:8c:e2:f1 updated on iface: wl1.1
+260709-18:33:17.814096 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 1c:53:f9:8c:e2:f1 radio_type 5 (probe 0-0, auth 0-0, xing 0-0 xing2 0-0 xing3 0-0)
+260709-18:33:17.814260 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 1c:53:f9:8c:e2:f1 updated on iface: wl2.1
+260709-18:33:17.814286 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: CLIENT: Updated client 1c:53:f9:8c:e2:f1 (hwm=35, lwm=10, hwm2=0, lwm2=0, hwm3=0, lwm3=0, max_rejects=7/120 sec)
+260709-18:33:17.892273 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: MON upd: MOD table: Band_Steering_Clients row: 715722af-3fa2-4ac5-a5d7-3270c5774dc5 cached: y key: 1c:53:f9:8c:e2:f1
+260709-18:33:17.892335 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: call_update_event(): row update for table: Band_Steering_Clients!
+260709-18:33:17.892364 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: CLIENT: Client '1c:53:f9:8c:e2:f1': Force kicking due to cloud request
+260709-18:33:17.892386 [mod=MeshService, lvl=NOTICE] [tid=16633] OVSM[16717]: MISC: eh_base_wifi_config_updated():Band_Steering_Clients - first_update_time=713, now=713, sync_time=118, now-sync_time=595, update_time=713
+260709-18:33:17.892410 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: <<< DONE: MON upd: MOD table: Band_Steering_Clients row: 715722af-3fa2-4ac5-a5d7-3270c5774dc5 ver: 99ee7097-a522-44e8-87e4-7f75fa247e85
+260709-18:33:17.913430 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Not in monitor mode. Kick immediately
+260709-18:33:17.913485 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: KICK: bm_kick: '1c:53:f9:8c:e2:f1' switch kick type 0 -> 2
+260709-18:33:17.914683 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: KICK: Client '1c:53:f9:8c:e2:f1' being forced kicked...
+260709-18:33:17.914991 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Disconnected client  1c:53:f9:8c:e2:f1 on iface: wl1.1
+260709-18:33:17.915019 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: KICK: Client '1c:53:f9:8c:e2:f1': LWM value toggled, kicking
+260709-18:33:17.931188 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [5G] wl1.1: BSAL_EVENT_CLIENT_DISCONNECT 1c:53:f9:8c:e2:f1, src=Local, type=Deauth, reason=Unspecified
+260709-18:33:17.931232 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '1c:53:f9:8c:e2:f1' changed state CONNECTED -> DISCONNECTED
+260709-18:33:17.972059 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: CLIENT: Client '1c:53:f9:8c:e2:f1': Kicking mechanism toggled back, ignoring all groups update
+260709-18:33:17.972104 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: MON upd: MOD table: Band_Steering_Clients row: 715722af-3fa2-4ac5-a5d7-3270c5774dc5 cached: y key: 1c:53:f9:8c:e2:f1
+260709-18:33:17.972129 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: call_update_event(): row update for table: Band_Steering_Clients!
+260709-18:33:17.972164 [mod=MeshService, lvl=NOTICE] [tid=16633] OVSM[16717]: MISC: eh_base_wifi_config_updated():Band_Steering_Clients - first_update_time=713, now=713, sync_time=118, now-sync_time=595, update_time=713
+260709-18:33:17.972187 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: <<< DONE: MON upd: MOD table: Band_Steering_Clients row: 715722af-3fa2-4ac5-a5d7-3270c5774dc5 ver: 876c5e51-036f-40a0-9781-433564ef25f7
+260709-18:33:18.704257 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [5G] wl1.1: BSAL_EVENT_CLIENT_DISCONNECT 1c:53:f9:8c:e2:f1, src=Local, type=Deauth, reason=Unspecified
+260709-18:33:19.294670 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): webconfig_ovsdb_decode success!!
+260709-18:33:19.294748 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num radio state rows=0
+260709-18:33:19.294785 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vif state rows=0
+260709-18:33:19.294844 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num assoc clients rows=12
+260709-18:33:19.294871 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb num blaster rows=0
+260709-18:33:19.294898 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): subdoc type=11
+260709-18:33:19.294928 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vaps=0
+260709-18:33:19.294953 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: eh_assoc_clients(): updating assoc clients table
+260709-18:33:19.296459 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: assoc_clients: Deleted entry with UUID: e79c2436-2e51-4691-9b8f-d444b70f51b5
+260709-18:33:19.298233 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: DEL table: Wifi_Associated_Clients row: e79c2436-2e51-4691-9b8f-d444b70f51b5
+260709-18:33:19.301489 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 567286db-1f63-4c4f-a021-e3221c816507
+260709-18:33:19.302175 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:33:19.302471 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: Wifi_VIF_State row: ff77d0d3-386f-49b4-9019-4082539c51d6
+260709-18:33:19.304556 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:33:19.305812 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 2e48999c-bca2-4142-abb6-7810f63ff0bc
+260709-18:33:19.308626 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 f582155d-d19f-4611-9ce1-2aa7f49a0544
+260709-18:33:19.311159 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 1cc5554e-ea33-47e8-9388-f2088c7fc98f
+260709-18:33:19.313716 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 3814169b-1220-4010-b6bc-f1b46ed8f4c0
+260709-18:33:19.316414 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 d08b29c5-2047-480b-b74d-624170edda74
+260709-18:33:19.318991 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 74bf6417-e4ce-4feb-a5d3-c475a6cc7d54
+260709-18:33:19.321608 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 404cd688-7d2a-4bf5-9b8e-7e0d4a4aad27
+260709-18:33:19.324164 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5ee1b0a2-ab2f-4897-a032-aae2dc537dab
+260709-18:33:19.326746 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 a350f912-62ad-408a-9fd9-8140375808fa
+260709-18:33:19.329539 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5df616a8-5729-49a0-be95-c6fd2032967d
+260709-18:33:26.435528 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [5G] wl1.1: BSAL_EVENT_CLIENT_CONNECT 1c:53:f9:8c:e2:f1
+260709-18:33:26.444176 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: wl1.1: Client 1c:53:f9:8c:e2:f1 connected.
+260709-18:33:26.445754 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: [target_bus_get_raw_data] Bus success
+260709-18:33:26.446032 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: WLAN_EID_RSN
+260709-18:33:26.446062 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Client 1c:53:f9:8c:e2:f1 no capab based on opclasses
+260709-18:33:26.446155 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [5G] 1c:53:f9:8c:e2:f1 connected to bs_allowed (wl1.1) - back to orignal pre-assoc backoff timeout
+260709-18:33:26.446179 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '1c:53:f9:8c:e2:f1' changed state DISCONNECTED -> CONNECTED
+260709-18:33:26.933480 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:33:26.933539 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:33:26.933562 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:33:26.933586 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:33:26.933608 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:33:26.933630 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:33:26.933652 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:33:26.933674 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:33:27.294021 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): webconfig_ovsdb_decode success!!
+260709-18:33:27.294082 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num radio state rows=0
+260709-18:33:27.294106 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vif state rows=0
+260709-18:33:27.294130 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num assoc clients rows=13
+260709-18:33:27.294154 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb num blaster rows=0
+260709-18:33:27.294178 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): subdoc type=11
+260709-18:33:27.294201 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: decode_webconfig_to_ovsdb(): num vaps=0
+260709-18:33:27.294226 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: MISC: eh_assoc_clients(): updating assoc clients table
+260709-18:33:27.300062 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: NEW table: Wifi_Associated_Clients row: e9f68479-179f-46bd-bdc0-81105effac38
+260709-18:33:27.302451 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 567286db-1f63-4c4f-a021-e3221c816507
+260709-18:33:27.302505 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:33:27.302533 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: MON upd: MOD table: Wifi_VIF_State row: ff77d0d3-386f-49b4-9019-4082539c51d6
+260709-18:33:27.303392 [mod=MeshService, lvl=INFO] [tid=16633] CM[16720]: OVSDB: cm2_ovsdb_is_gw_offline_status: GW offline status not set
+260709-18:33:27.305350 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 2e48999c-bca2-4142-abb6-7810f63ff0bc
+260709-18:33:27.307924 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 f582155d-d19f-4611-9ce1-2aa7f49a0544
+260709-18:33:27.310410 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 1cc5554e-ea33-47e8-9388-f2088c7fc98f
+260709-18:33:27.312964 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 3814169b-1220-4010-b6bc-f1b46ed8f4c0
+260709-18:33:27.315632 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 d08b29c5-2047-480b-b74d-624170edda74
+260709-18:33:27.318156 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 74bf6417-e4ce-4feb-a5d3-c475a6cc7d54
+260709-18:33:27.320867 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 404cd688-7d2a-4bf5-9b8e-7e0d4a4aad27
+260709-18:33:27.323519 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5ee1b0a2-ab2f-4897-a032-aae2dc537dab
+260709-18:33:27.326223 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 a350f912-62ad-408a-9fd9-8140375808fa
+260709-18:33:27.328634 [mod=MeshService, lvl=INFO] [tid=16633] OVSM[16717]: OVSDB: Mutate: Wifi_VIF_State associated_clients 0 5df616a8-5729-49a0-be95-c6fd2032967d
+260709-18:33:27.434966 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-24: Number of leases 0.
+260709-18:33:27.435016 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: brlan0: Number of leases 11.
+260709-18:33:27.435039 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: bhaul-ap-50: Number of leases 2.
+260709-18:33:27.435061 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: erouter0: Number of leases 1.
+260709-18:33:27.435083 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22: Number of leases 0.
+260709-18:33:27.435105 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.100: Number of leases 0.
+260709-18:33:27.435127 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.106: Number of leases 0.
+260709-18:33:27.435148 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: MISC: inet_base: dhcpv4_server: pgd1-22.101: Number of leases 0.
+260709-18:33:34.564988 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.565045 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.565120 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.620674 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.620934 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.621047 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.621146 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.672236 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.672297 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.672333 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:33:34+0000'
+260709-18:33:34.672386 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:33:34+0000'
+260709-18:34:07.256994 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 3777 = 3777
+260709-18:34:07.257051 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2116 bytes
+260709-18:34:34.567840 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.567905 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.567929 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.568037 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.628533 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.677637 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.677693 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.677717 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:34:34+0000'
+260709-18:34:34.677739 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:34:34+0000'
+260709-18:35:07.256138 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 583 = 583
+260709-18:35:07.256262 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 583 + 2113 = 2682
+260709-18:35:07.256760 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1479 bytes
+260709-18:35:24.531439 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 34 (0,0|0,0|0,2)
+260709-18:35:24.531489 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:35:34.487989 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.488049 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.488099 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.488192 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.488231 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 off-chan neighbor report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.552516 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.552577 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 off-chan survey report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.552638 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.552859 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.615538 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.666942 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.667021 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:35:34+0000'
+260709-18:35:34.667045 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:35:34+0000'
+260709-18:36:07.255866 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 229 = 229
+260709-18:36:07.256076 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 229 + 4210 = 4425
+260709-18:36:07.256736 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2407 bytes
+260709-18:36:24.563177 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 43 (0,0|0,0|0,1)
+260709-18:36:24.563238 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:36:24.597176 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:36:34.567868 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.567934 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.568064 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.568140 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.568202 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.568281 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.637522 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.704370 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:36:34+0000'
+260709-18:36:34.704434 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:36:34+0000'
+260709-18:36:54.534183 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 36 (0,0|0,0|0,2)
+260709-18:36:54.534233 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:37:07.256209 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 2195 = 2195
+260709-18:37:07.256635 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1351 bytes
+260709-18:37:34.578228 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.578299 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.578349 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.578374 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.578416 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.644751 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.644833 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.707123 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.707258 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.707320 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:37:34+0000'
+260709-18:37:34.707417 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:37:34+0000'
+260709-18:37:58.548146 [mod=MeshService, lvl=INFO] [tid=16633] NM[16721]: OVSDB: MON upd: MOD table: Port row: c4d44c14-0d8e-49fa-a902-0c5298120733
+260709-18:38:06.655113 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: Start........
+260709-18:38:06.655208 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16724 name : bm: mem usage: real mem: 16800, virt mem 197408
+260709-18:38:06.655249 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16720 name : cm: mem usage: real mem: 13620, virt mem 39400
+260709-18:38:06.655305 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16722 name : lm: mem usage: real mem: 10844, virt mem 37840
+260709-18:38:06.655360 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16721 name : nm: mem usage: real mem: 12840, virt mem 38380
+260709-18:38:06.655415 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16717 name : ovsm: mem usage: real mem: 28812, virt mem 268668
+260709-18:38:06.655469 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16719 name : qm: mem usage: real mem: 15932, virt mem 39812
+260709-18:38:06.655524 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16723 name : rdkm: mem usage: real mem: 11964, virt mem 37848
+260709-18:38:06.655580 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16718 name : sm: mem usage: real mem: 13572, virt mem 39200
+260709-18:38:06.655602 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: End........
+260709-18:38:07.256430 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:38:07.256640 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 4272 = 4488
+260709-18:38:07.257313 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2492 bytes
+260709-18:38:34.545994 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.546061 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.546085 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.546113 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.604289 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.604353 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.604377 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.604439 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:38:34+0000'
+260709-18:38:34.652899 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:38:34+0000'
+260709-18:39:07.257528 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 2355 = 2355
+260709-18:39:07.257586 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1413 bytes
+260709-18:39:34.663833 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.663896 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.663934 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.664126 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.664187 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.664243 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.664296 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.664366 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.763232 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.763372 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:39:34+0000'
+260709-18:39:34.763460 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:39:34+0000'
+260709-18:40:04.523357 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 40 (0,0|0,0|0,1)
+260709-18:40:04.523531 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' handling kick_type 0
+260709-18:40:04.548407 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 4a:0d:d7:1e:65:27 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:40:07.256093 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 436 = 436
+260709-18:40:07.256301 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 436 + 3957 = 4379
+260709-18:40:07.256949 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2314 bytes
+260709-18:40:34.524787 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 39 (0,0|0,0|0,2)
+260709-18:40:34.524936 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '4a:0d:d7:1e:65:27'
+260709-18:40:34.561550 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.561613 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.561636 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.561722 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.561762 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.561891 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.561953 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.771142 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: uptime=1150, mem=1107324/2031572, cpu=14
+260709-18:40:34.771206 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending device report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.821062 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:40:34+0000'
+260709-18:40:34.884329 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:40:34+0000'
+260709-18:40:44.529077 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 41 (0,0|0,0|0,1)
+260709-18:40:44.529149 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:40:44.543895 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:41:04.526538 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 37 (0,0|0,0|0,2)
+260709-18:41:04.526599 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:41:07.256849 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 229 = 229
+260709-18:41:07.256995 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 229 + 2827 = 3042
+260709-18:41:07.257539 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1865 bytes
+260709-18:41:24.523527 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:41:24.523592 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:41:24.540164 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:41:34.560787 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.560959 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561090 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561232 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561356 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561473 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561590 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561788 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.561894 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.621057 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:41:34+0000'
+260709-18:41:34.670014 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:41:34+0000'
+260709-18:42:04.541538 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 39 (0,0|0,0|0,2)
+260709-18:42:04.541650 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:42:07.256065 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:42:07.256269 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 4065 = 4281
+260709-18:42:07.256904 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2324 bytes
+260709-18:42:34.691339 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.691403 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.691426 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.691528 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.691590 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.759104 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.759170 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.759194 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:42:34+0000'
+260709-18:42:34.759277 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:42:34+0000'
+260709-18:43:06.653746 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: Start........
+260709-18:43:06.653816 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16724 name : bm: mem usage: real mem: 16800, virt mem 197408
+260709-18:43:06.653840 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16720 name : cm: mem usage: real mem: 13620, virt mem 39400
+260709-18:43:06.653863 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16722 name : lm: mem usage: real mem: 10844, virt mem 37840
+260709-18:43:06.653885 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16721 name : nm: mem usage: real mem: 12840, virt mem 38380
+260709-18:43:06.653907 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16717 name : ovsm: mem usage: real mem: 28812, virt mem 268668
+260709-18:43:06.653929 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16719 name : qm: mem usage: real mem: 15932, virt mem 39812
+260709-18:43:06.653951 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16723 name : rdkm: mem usage: real mem: 11964, virt mem 37848
+260709-18:43:06.653973 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16718 name : sm: mem usage: real mem: 13588, virt mem 39228
+260709-18:43:06.653995 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: End........
+260709-18:43:07.256964 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:43:07.257027 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 2586 = 2802
+260709-18:43:07.257052 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1591 bytes
+260709-18:43:34.492891 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.492953 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.572268 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.572357 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.623665 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.623734 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.623796 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.623877 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.623930 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.681988 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:43:34+0000'
+260709-18:43:34.682063 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:43:34+0000'
+260709-18:44:07.255999 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 639 = 639
+260709-18:44:07.256224 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 639 + 3937 = 4562
+260709-18:44:07.256892 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2343 bytes
+260709-18:44:20.681003 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 9 (0,0|2,0|0,0)
+260709-18:44:20.687008 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:44:20.691453 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: KICK: bm_kick: 'b6:59:60:77:25:c4' switch kick type 0 -> 1
+260709-18:44:20.702195 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:44:20.896093 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [6]  terminationDelay: [0] target: 92:b3:9f:fe:0c:15 
+260709-18:44:20.896141 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC:  Neighbor 1 : 92:b3:9f:fe:0c:15 opclass[7] channel[3] phy_type[1] 
+260709-18:44:20.896164 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 6 b6:59:60:77:25:c4
+260709-18:44:24.536149 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 10 (0,0|1,0|0,0)
+260709-18:44:24.536198 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:44:27.739773 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 9 (0,0|2,0|0,0)
+260709-18:44:27.748668 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:44:27.752998 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: KICK: BSS TM Request being retried for Client 'b6:59:60:77:25:c4', ignoring
+260709-18:44:30.685163 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:44:30.818827 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [6]  terminationDelay: [0] target: 92:b3:9f:fe:0c:15 
+260709-18:44:30.818877 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC:  Neighbor 1 : 92:b3:9f:fe:0c:15 opclass[7] channel[3] phy_type[1] 
+260709-18:44:30.818901 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 6 b6:59:60:77:25:c4
+260709-18:44:34.528621 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:44:34.528726 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:44:34.544925 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:44:34.658868 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.658926 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.658949 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.659021 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.722487 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.722553 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.722632 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.722701 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:44:34+0000'
+260709-18:44:34.722776 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:44:34+0000'
+260709-18:44:44.531884 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 38 (0,0|0,0|0,2)
+260709-18:44:44.531975 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:44:54.529305 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:44:54.529406 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:44:54.547068 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:44:54.555339 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 11 (0,0|1,0|0,0)
+260709-18:44:54.555437 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:44:58.055445 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 9 (0,0|2,0|0,0)
+260709-18:44:58.061469 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:44:58.075307 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:44:58.142710 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [6]  terminationDelay: [0] target: 92:b3:9f:fe:0c:15 
+260709-18:44:58.142759 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC:  Neighbor 1 : 92:b3:9f:fe:0c:15 opclass[7] channel[3] phy_type[1] 
+260709-18:44:58.143374 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 6 b6:59:60:77:25:c4
+260709-18:45:04.529014 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 38 (0,0|0,0|0,2)
+260709-18:45:04.529118 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:45:07.256891 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 642 = 642
+260709-18:45:07.257055 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 642 + 2487 = 3115
+260709-18:45:07.257594 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1665 bytes
+260709-18:45:08.058912 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:45:08.108130 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:45:08.108176 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:45:14.543481 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:45:14.543551 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:45:14.576403 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:45:24.526179 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 39 (0,0|0,0|0,2)
+260709-18:45:24.526231 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:45:34.639543 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.639610 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.639683 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.639708 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.639773 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.639872 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 off-chan neighbor report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.640017 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.640124 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.640166 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 off-chan survey report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.640216 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.640296 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.640427 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:45:34+0000'
+260709-18:45:34.698062 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:45:34+0000'
+260709-18:45:44.522486 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 40 (0,0|0,0|0,1)
+260709-18:45:44.522596 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' handling kick_type 0
+260709-18:45:44.549012 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 4a:0d:d7:1e:65:27 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:45:44.559568 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:45:44.559671 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:45:44.580351 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:45:54.544757 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 11 (0,0|1,0|0,0)
+260709-18:45:54.544878 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:45:55.619433 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 9 (0,0|2,0|0,0)
+260709-18:45:55.627465 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:45:55.644532 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:45:55.735302 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:45:55.735435 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:46:04.541510 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 10 (0,0|1,0|0,0)
+260709-18:46:04.541609 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:46:07.256442 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 1463 = 1463
+260709-18:46:07.256753 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 1463 + 4314 = 5763
+260709-18:46:07.257508 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2590 bytes
+260709-18:46:14.535977 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 38 (0,0|0,0|0,2)
+260709-18:46:14.536075 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:46:24.517778 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '4a:0d:d7:1e:65:27' snr 39 (0,0|0,0|0,2)
+260709-18:46:24.517905 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '4a:0d:d7:1e:65:27'
+260709-18:46:24.535236 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:46:24.535329 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:46:24.552471 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:46:34.550914 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.614056 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.614116 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.662945 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.663006 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.663030 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.663053 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.663121 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:46:34+0000'
+260709-18:46:34.663195 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:46:34+0000'
+260709-18:46:44.567658 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 37 (0,0|0,0|0,2)
+260709-18:46:44.567716 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:47:07.256670 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 1583 = 1583
+260709-18:47:07.256892 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 1583 + 2343 = 3912
+260709-18:47:07.257436 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1716 bytes
+260709-18:47:24.539451 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:47:24.539520 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:47:24.564474 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:47:34.505955 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.506020 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.506089 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.565540 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.614411 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.614468 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.614566 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.614611 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.614735 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.682363 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:47:34+0000'
+260709-18:47:34.682467 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:47:34+0000'
+260709-18:47:44.539636 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 37 (0,0|0,0|0,2)
+260709-18:47:44.539688 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:48:06.650960 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: Start........
+260709-18:48:06.651049 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16724 name : bm: mem usage: real mem: 16804, virt mem 197408
+260709-18:48:06.651106 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16720 name : cm: mem usage: real mem: 13620, virt mem 39400
+260709-18:48:06.651164 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16722 name : lm: mem usage: real mem: 10844, virt mem 37840
+260709-18:48:06.651219 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16721 name : nm: mem usage: real mem: 12840, virt mem 38380
+260709-18:48:06.651277 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16717 name : ovsm: mem usage: real mem: 28812, virt mem 268668
+260709-18:48:06.651332 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16719 name : qm: mem usage: real mem: 15932, virt mem 39812
+260709-18:48:06.651388 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16723 name : rdkm: mem usage: real mem: 11964, virt mem 37848
+260709-18:48:06.651444 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16718 name : sm: mem usage: real mem: 13596, virt mem 39228
+260709-18:48:06.651466 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: End........
+260709-18:48:07.256177 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:48:07.256394 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 3984 = 4200
+260709-18:48:07.257031 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2279 bytes
+260709-18:48:24.529546 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:48:24.529600 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:48:24.545354 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:48:34.532706 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 39 (0,0|0,0|0,2)
+260709-18:48:34.532772 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:48:34.568031 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.568093 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.568122 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.629394 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.629455 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.629546 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.629608 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.682582 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:48:34+0000'
+260709-18:48:34.682643 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:48:34+0000'
+260709-18:49:07.256575 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 230 = 230
+260709-18:49:07.256704 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 230 + 2385 = 2601
+260709-18:49:07.257218 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1544 bytes
+260709-18:49:14.532344 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:49:14.532411 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:49:14.549684 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:49:34.524486 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 39 (0,0|0,0|0,2)
+260709-18:49:34.524578 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:49:34.641388 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.641455 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.641508 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.641587 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.641672 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.641722 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.641797 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.693776 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.693930 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.694119 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:49:34+0000'
+260709-18:49:34.748314 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:49:34+0000'
+260709-18:49:36.681770 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 7 (0,0|2,0|0,0)
+260709-18:49:36.689706 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:49:36.704457 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:49:36.805833 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:49:36.805879 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:49:44.534477 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 13 (0,0|1,0|0,0)
+260709-18:49:44.534527 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:49:54.551474 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 9 (0,0|2,0|0,0)
+260709-18:49:54.559188 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:49:54.575541 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:50:04.539699 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 18 (0,0|1,0|0,0)
+260709-18:50:04.539747 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:50:07.256423 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 319 = 319
+260709-18:50:07.256619 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 319 + 4092 = 4397
+260709-18:50:07.257259 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2377 bytes
+260709-18:50:34.659212 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.659275 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.659299 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.711887 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.711950 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.711973 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.712026 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.712078 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:50:34+0000'
+260709-18:50:34.769304 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:50:34+0000'
+260709-18:50:38.483081 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 34
+260709-18:50:38.483141 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' changed state DISCONNECTED -> STEERING
+260709-18:50:38.527271 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 36
+260709-18:50:38.527330 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Steer_to calculated: [5G]
+260709-18:50:44.609299 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 35
+260709-18:50:44.609360 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Steer_to calculated: [5G]
+260709-18:50:44.634810 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 35
+260709-18:50:44.634869 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: Steer_to calculated: [5G]
+260709-18:50:45.042066 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 31
+260709-18:50:45.592786 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 31
+260709-18:51:07.256609 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 612 = 612
+260709-18:51:07.256765 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 612 + 2299 = 2897
+260709-18:51:07.257290 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1556 bytes
+260709-18:51:14.528731 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 40 (0,0|0,0|0,1)
+260709-18:51:14.528807 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:51:14.554998 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:51:24.548646 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 38 (0,0|0,0|0,2)
+260709-18:51:24.548714 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:51:34.506044 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.506109 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.506139 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.561579 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.613968 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.614034 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.614058 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.614123 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.676254 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.676311 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:51:34+0000'
+260709-18:51:34.676471 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:51:34+0000'
+260709-18:51:38.484285 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' changed state STEERING -> DISCONNECTED
+260709-18:51:51.993880 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 7 (0,0|2,0|0,0)
+260709-18:51:51.999892 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:51:52.025002 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:51:52.040206 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:51:52.040259 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:51:54.534982 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 19 (0,0|1,0|0,0)
+260709-18:51:54.535034 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:52:07.256122 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 1170 = 1170
+260709-18:52:07.256394 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 1170 + 4162 = 5318
+260709-18:52:07.257087 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 2527 bytes
+260709-18:52:13.172079 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 7 (0,0|2,0|0,0)
+260709-18:52:13.178105 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:52:13.192961 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:52:13.196387 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:52:13.196433 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:52:23.176496 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:52:23.188760 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:52:23.188823 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:52:24.558285 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 17 (0,0|1,0|0,0)
+260709-18:52:24.558390 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:52:25.795254 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: [wl0.1]: client '3c:62:f0:43:70:ed' snr 34
+260709-18:52:25.795298 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' changed state DISCONNECTED -> STEERING
+260709-18:52:25.795322 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' (total: 1 times), backing off...
+260709-18:52:25.795345 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: '3c:62:f0:43:70:ed' changed state STEERING -> BACKOFF
+260709-18:52:25.795368 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 3c:62:f0:43:70:ed radio_type 1 (probe 0-0, auth 0-0, xing 0-0 xing2 0-0 xing3 0-0)
+260709-18:52:25.795401 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 3c:62:f0:43:70:ed updated on iface: wl0.1
+260709-18:52:25.795424 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 3c:62:f0:43:70:ed radio_type 2 (probe 0-0, auth 0-0, xing 0-0 xing2 0-0 xing3 0-0)
+260709-18:52:25.795447 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 3c:62:f0:43:70:ed updated on iface: wl1.1
+260709-18:52:25.795471 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: bm_client_to_bsal_conf_bs: bs 3c:62:f0:43:70:ed radio_type 5 (probe 0-0, auth 0-0, xing 0-0 xing2 0-0 xing3 0-0)
+260709-18:52:25.795493 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Client 3c:62:f0:43:70:ed updated on iface: wl2.1
+260709-18:52:25.795515 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: CLIENT: 3c:62:f0:43:70:ed using pre-assoc backoff period 120sec * 1 (1)
+260709-18:52:32.336636 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 7 (0,0|2,0|0,0)
+260709-18:52:32.342868 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:52:32.347278 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: KICK: BSS TM Request being retried for Client 'b6:59:60:77:25:c4', ignoring
+260709-18:52:34.532143 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 41 (0,0|0,0|0,1)
+260709-18:52:34.532323 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' handling kick_type 0
+260709-18:52:34.562918 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client 96:ae:3d:3a:20:31 on iface: wl1.1 first neighbor 78:b3:9f:fe:0c:16 
+260709-18:52:34.569838 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.569899 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.570013 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.570111 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.570921 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 13 (0,0|1,0|0,0)
+260709-18:52:34.570948 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:52:34.628634 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.628696 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.679893 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.679954 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:52:34+0000'
+260709-18:52:34.679997 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:52:34+0000'
+260709-18:52:50.749512 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 9 (0,0|2,0|0,0)
+260709-18:52:50.758819 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:52:50.788228 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:52:50.857526 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:52:50.857578 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:52:54.532529 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs '96:ae:3d:3a:20:31' snr 39 (0,0|0,0|0,2)
+260709-18:52:54.532582 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl1.1]: xing_bs clearing pending steering request for client '96:ae:3d:3a:20:31'
+260709-18:52:54.540582 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 13 (0,0|1,0|0,0)
+260709-18:52:54.540625 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:53:06.653006 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: Start........
+260709-18:53:06.653084 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16724 name : bm: mem usage: real mem: 16804, virt mem 197408
+260709-18:53:06.653148 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16720 name : cm: mem usage: real mem: 13620, virt mem 39400
+260709-18:53:06.653204 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16722 name : lm: mem usage: real mem: 10844, virt mem 37840
+260709-18:53:06.653259 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16721 name : nm: mem usage: real mem: 12840, virt mem 38380
+260709-18:53:06.653332 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16717 name : ovsm: mem usage: real mem: 28812, virt mem 268668
+260709-18:53:06.653387 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16719 name : qm: mem usage: real mem: 15932, virt mem 39812
+260709-18:53:06.653443 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16723 name : rdkm: mem usage: real mem: 11964, virt mem 37848
+260709-18:53:06.653498 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: pid 16718 name : sm: mem usage: real mem: 13604, virt mem 39252
+260709-18:53:06.653527 [mod=MeshService, lvl=INFO] [tid=16633] DM[16652]: MAIN: dm_check_mem_usage_cb: End........
+260709-18:53:07.256653 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 0 + 1230 = 1230
+260709-18:53:07.256860 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: merged reports stats 1230 + 2327 = 3543
+260709-18:53:07.257396 [mod=MeshService, lvl=INFO] [tid=16633] QM[16719]: MAIN: MQTT: Publishing 1613 bytes
+260709-18:53:13.939610 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 8 (0,0|2,0|0,0)
+260709-18:53:13.945924 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:53:13.961055 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:53:14.004831 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:53:14.004879 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:53:23.941648 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:53:23.949452 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:53:23.949493 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:53:24.535356 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 13 (0,0|1,0|0,0)
+260709-18:53:24.535416 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'
+260709-18:53:34.482649 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan survey report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.482848 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 client report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.483049 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan neighbor report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.549871 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan neighbor report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.550048 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 6G wl2 on-chan survey report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.550213 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 client report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.550336 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 off-chan survey report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.550520 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 client report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.603022 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan survey report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.603089 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 2.4G wl0 on-chan neighbor report at '2026-07-09 18:53:34+0000'
+260709-18:53:34.603113 [mod=MeshService, lvl=INFO] [tid=16633] SM[16718]: MAIN: Sending 5G wl1 on-chan neighbor report at '2026-07-09 18:53:34+0000'
+260709-18:53:38.152388 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 8 (0,0|2,0|0,0)
+260709-18:53:38.163298 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' handling LOW_RSSI_XING (STICKY)
+260709-18:53:38.193693 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: BSAL Sent BTM request to client b6:59:60:77:25:c4 on iface: wl2.1 first neighbor 92:b3:9f:fe:0c:15 
+260709-18:53:38.269644 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: MISC: btmResponseCallback BTM Response Mac : b6:59:60:77:25:c4 token : [16] status: [1]  terminationDelay: [0] target: 00:00:00:00:00:00 
+260709-18:53:38.269695 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [6G] wl2.1: BSAL_EVENT_BTM_STATUS status 1 b6:59:60:77:25:c4
+260709-18:53:40.438144 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_write_req(1 t:null ds:0): b:56
+260709-18:53:40.438188 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_read_res: b:48
+260709-18:53:40.438212 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_send_fd: req c:1 dt:0 ds:0 to:null result:1 response:1 err:0
+260709-18:53:40.438234 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      DPP: Q len: 0 size: 0
+260709-18:53:40.438257 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_client /tmp/opensync/qm.sock
+260709-18:53:40.438279 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_write_req(2 t:null ds:3421): b:3477
+260709-18:53:40.438303 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_read_res: b:48
+260709-18:53:40.438325 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MISC: qm_conn_send_fd: req c:2 dt:2 ds:3421 to:null result:1 response:2 err:0
+260709-18:53:40.438348 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <DEBUG>     MISC: Sent message to QM (size: 3421 type: stats)
+260709-18:53:40.438371 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438394 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438429 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438452 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438475 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438497 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438520 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438542 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438564 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438585 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438607 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438628 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438650 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438671 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438693 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438714 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438737 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <DEBUG>     MAIN: Processing 2.4G wl0 off-chan 11 (6) survey sample 1
+260709-18:53:40.438758 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: radio_entry_to_hal_radio_index input name:wl0,mapifname:wl0
+260709-18:53:40.438780 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Fetched 2.4G on-chan 6 survey {active=1675200109 busy=1069109672 tx=53838262 self=9069431 rx=1015265848 ext=0 noise=-91}
+260709-18:53:40.438809 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Processed 2.4G off-chan survey delta {active=10011023 busy=0 tx=0 self=0 rx=0 ext=6343938}
+260709-18:53:40.438832 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <DEBUG>     MAIN: Checking 2.4G wl0 off-chan survey threshold util: 0/10 delay: 10/630 count: 0/3
+260709-18:53:40.438854 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>     MAIN: Scheduling 2.4G off-chan 11 scan to #8 (2.4G off-chan 11 in progress)
+260709-18:53:40.438875 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: TRACEBACK: <TRACE>      OSA: Parsing 2.4G off-chan scan (EAGAIN - retry later...)
+260709-18:53:40.438897 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: OSA: Parsing 2.4G off-chan scan (timeout occurred)
+260709-18:53:40.438918 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Processing 2.4G wl0 off-chan 11 survey report (Failed to scan)
+260709-18:53:40.438940 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 2.4G off-chan 11 scan queues
+260709-18:53:40.438961 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 6G on-chan 133 scan queues
+260709-18:53:40.438986 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 2.4G on-chan 6 scan queues
+260709-18:53:40.439008 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 5G on-chan 157 scan queues
+260709-18:53:40.439029 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 2.4G off-chan 11 scan queues
+260709-18:53:40.439050 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 2.4G on-chan 6 scan queues
+260709-18:53:40.439072 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 6G on-chan 133 scan queues
+260709-18:53:40.439093 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 5G on-chan 157 scan queues
+260709-18:53:40.439114 [mod=MeshService, lvl=ERROR] [tid=16633] SM[16718]: MAIN: Flushed scheduled 2.4G off-chan 11 scan queues
+260709-18:53:44.540277 [mod=MeshService, lvl=INFO] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs 'b6:59:60:77:25:c4' snr 13 (0,0|1,0|0,0)
+260709-18:53:44.540327 [mod=MeshService, lvl=NOTICE] [tid=16633] BM[16724]: EVENT: [wl2.1]: xing_bs clearing pending steering request for client 'b6:59:60:77:25:c4'

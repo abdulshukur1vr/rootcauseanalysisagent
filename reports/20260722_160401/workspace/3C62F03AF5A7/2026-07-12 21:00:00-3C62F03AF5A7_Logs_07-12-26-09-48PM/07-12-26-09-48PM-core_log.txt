@@ -1,0 +1,195 @@
+[PID:2157 2026/01/07-00:07:17]: starting coredump processing
+[PID:2158 2026/01/07-00:07:18]: starting minidump processing
+[PID:2157 2026/01/07-00:07:18]: Testing the internet connection, iteration 1
+[PID:2158 2026/01/07-00:07:18]: Testing the internet connection, iteration 1
+[PID:2157 2026/01/07-00:07:18]: Waiting the IP.
+[PID:2158 2026/01/07-00:07:18]: Waiting the IP.
+[PID:2157 2026/01/07-00:07:28]: Testing the internet connection, iteration 2
+[PID:2158 2026/01/07-00:07:28]: Testing the internet connection, iteration 2
+[PID:2157 2026/01/07-00:07:28]: Waiting the IP.
+[PID:2158 2026/01/07-00:07:28]: Waiting the IP.
+[PID:2157 2026/01/07-00:07:38]: Testing the internet connection, iteration 3
+[PID:2158 2026/01/07-00:07:38]: Testing the internet connection, iteration 3
+[PID:2157 2026/01/07-00:07:38]: Waiting the IP.
+[PID:2158 2026/01/07-00:07:38]: Waiting the IP.
+[PID:2157 2026/01/07-00:07:48]: Testing the internet connection, iteration 4
+[PID:2158 2026/01/07-00:07:48]: Testing the internet connection, iteration 4
+[PID:2157 2026/01/07-00:07:48]: Waiting the IP.
+[PID:2158 2026/01/07-00:07:49]: Waiting the IP.
+[PID:2157 2026/01/07-00:07:59]: Testing the internet connection, iteration 5
+[PID:2158 2026/01/07-00:07:59]: Testing the internet connection, iteration 5
+[PID:2157 2026/01/07-00:07:59]: Waiting the IP.
+[PID:2158 2026/01/07-00:07:59]: Waiting the IP.
+[PID:2158 2026/01/07-00:08:09]: Testing the internet connection, iteration 6
+[PID:2157 2026/01/07-00:08:09]: Testing the internet connection, iteration 6
+[PID:2158 2026/01/07-00:08:09]: Waiting the IP.
+[PID:2157 2026/01/07-00:08:09]: Waiting the IP.
+[PID:2158 2026/01/07-00:08:19]: Continue without IP.
+[PID:2157 2026/01/07-00:08:19]: Continue without IP.
+[PID:2157 2026/01/07-00:08:19]: Waiting for Coredump Completion
+[PID:2158 2026/01/07-00:08:19]: Mac address is 3C62F03AF5A7
+[PID:2158 2026/01/07-00:08:19]: No minidump for uploading
+[PID:2158 2026/01/07-00:08:19]: WORKING_DIR is empty!!!
+[PID:2157 2026/01/07-00:08:22]: Waiting for Coredump Completion
+[PID:2157 2026/01/07-00:08:25]: Waiting for Coredump Completion
+[PID:2157 2026/01/07-00:08:28]: Waiting for Coredump Completion
+[PID:2157 2026/01/07-00:08:31]: Waiting for Coredump Completion
+[PID:2157 2026/01/07-00:08:35]: Waiting for Coredump Completion
+[PID:2157 2026/01/07-00:08:38]: Waiting for Coredump Completion
+[PID:2157 2026/01/07-00:08:41]: Mac address is 3C62F03AF5A7
+[PID:2157 2026/01/07-00:08:41]: No coredump for uploading
+[PID:2157 2026/01/07-00:08:41]: WORKING_DIR is empty!!!
+              total        used        free      shared  buff/cache   available
+Mem:         150752       45292       41400           0       64060           0
+-/+ buffers/cache:        45292      105460
+Swap:             0           0           0
+Mem: 109688K used, 41064K free, 8K shrd, 20128K buff, 41244K cached
+CPU: 69.2% usr 23.0% sys  0.0% nic  0.0% idle  0.0% io  0.0% irq  7.6% sirq
+Load average: 1.15 1.44 1.57 3/159 12294
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2338     1 root     R     212m144.3   0 23.0 /usr/local/bin/xvisiond 1
+ 1473     1 root     S     121m 82.6   0  7.6 /usr/local/bin/sensor_daemon --configFilePath /etc/image_config_60Hz.ini
+12226     1 root     S     2884  1.9   0  7.6 sh /lib/rdk/start_provisioning_polling.sh
+12280 12274 root     R     2752  1.8   0  7.6 top -b -n1
+ 1153     1 root     S    77780 51.5   0  0.0 /usr/bin/prvnmgr
+  820     1 root     S    52668 34.8   0  0.0 /usr/bin/ledmgrmain
+ 1716     1 root     S    51528 34.1   0  0.0 /usr/bin/streamConfigurer -e 1 -p no_overlay -r medium -a 16_9
+ 1772  1565 root     S    32752 21.6   0  0.0 {X_Main} /usr/local/bin/xstreamer --debugconfig /etc/debug.ini --configFilePath /etc/stream_config_s2l35m_medium.ini
+ 1983     1 root     S    27484 18.2   0  0.0 /usr/bin/rdkcProvider
+ 2045     1 root     S    25992 17.2   0  0.0 /usr/bin/rfcProvider
+ 1524  1477 root     S    12088  8.0   0  0.0 /usr/bin/watchDogTimer -f /dev/watchdog -s 15
+ 1051     1 root     S     8408  5.5   0  0.0 /usr/bin/wpa_supplicant -u -Dnl80211 -c /opt/SecurePartition/wifi/wpa_supplicant.conf -i wlan0 -P /var/run/wpa_supplicant/wlan0.pid -t -f /opt/logs/wpa_supplicant.log
+ 1550     1 root     S     6584  4.3   0  0.0 /usr/local/bin/read_push
+  825     1 root     S     5624  3.7   0  0.0 /usr/bin/accessManager plain
+  864     1 root     S     5304  3.5   0  0.0 /usr/bin/rtrouted
+  417     1 root     S     5276  3.4   0  0.0 /usr/local/bin/stunnel /usr/local/bin/stunnel_client.conf
+  418     1 root     S     5276  3.4   0  0.0 /usr/local/bin/stunnel /usr/local/bin/stunnel.conf
+  416     1 root     S     5264  3.4   0  0.0 /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -m /usr/lib/lighttpd
+ 1267     1 root     S     5220  3.4   0  0.0 /usr/local/bin/gpio_listen
+  392     1 root     S     4648  3.0   0  0.0 /usr/local/bin/guard_vsync_loss
+  694     1 root     S     3804  2.5   0  0.0 /usr/bin/logbackup
+  446     1 root     S     3692  2.4   0  0.0 bluetoothd
+ 1792     1 root     S     3024  2.0   0  0.0 sh /lib/rdk/RFCbase.sh
+ 3704     1 root     SN    3016  2.0   0  0.0 sh /lib/rdk/priorityProcessMonitor.sh
+ 1477     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/watchDogTimerMonitor.sh
+ 2745  2556 root     S     2884  1.9   0  0.0 sh /lib/rdk/DCMscript.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 1 0
+ 2643     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/swupdate_utility.sh
+ 2493     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_thumbnail_upload.sh
+ 2420     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_cvr_daemon.sh
+ 2259     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_webrtc_service.sh start
+  725     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_telemetry_service.sh
+ 3730     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_webconfig_service.sh
+ 3191     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_event_notification.sh
+ 3798     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_netmonitor_service.sh
+ 2192     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_xpki.sh
+ 1848     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_parodus_service.sh
+ 2079     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_webpa_service.sh
+ 1784     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_ntp.sh
+ 2970     1 root     SN    2884  1.9   0  0.0 sh /lib/rdk/webpaServiceMonitor.sh
+ 2556     1 root     S     2884  1.9   0  0.0 {StartDCM.sh} /bin/sh /lib/rdk/StartDCM.sh stblogger.ccp.xcal.tv https://xconf.xcal.tv/loguploader/getSettings logs.xcal.tv 0 stbscp.ccp.xcal.tv
+ 3660     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/systemcheck.sh
+ 3454     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/xCAMConnectionStatus.sh
+25859     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/processMonitor.sh
+25860     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_watchDogMonitor.sh
+ 1565     1 root     S     2884  1.9   0  0.0 sh /lib/rdk/startXStreamer.sh
+12288 12287 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_provisioning_polling.sh
+12287 12226 root     S     2884  1.9   0  0.0 sh /lib/rdk/start_provisioning_polling.sh
+  478     1 root     S     2880  1.9   0  0.0 crond -b -L /dev/null -c /var/spool/cron
+ 2778     1 root     S     2752  1.8   0  0.0 sh /lib/rdk/dmesg_logs.sh
+ 1198     1 root     S     2752  1.8   0  0.0 udhcpc -iwlan0 -A 1 -b 2 -s/etc/udhcpc.script -p /tmp/udhcpc.wlan0.pid
+    1     0 root     S     2752  1.8   0  0.0 {linuxrc} init
+ 2635     1 root     S     2752  1.8   0  0.0 {aar_telemetry.s} /bin/sh /etc/apparmor/aar_telemetry.sh
+ 2805     1 root     S     2752  1.8   0  0.0 klogd
+ 2798     1 root     S     2752  1.8   0  0.0 syslogd -O /opt/logs/messages.txt
+12274    13 root     S     2752  1.8   0  0.0 {core_shell.sh} /bin/sh /lib/rdk/core_shell.sh prvnmgr 11 1767790044
+ 3853     1 root     S     2752  1.8   0  0.0 /sbin/getty 115200 tts/1 vt102
+ 4630  3660 root     S     2620  1.7   0  0.0 sleep 300
+ 6732  3454 root     S     2620  1.7   0  0.0 sleep 180
+ 7461  2635 root     S     2620  1.7   0  0.0 sleep 7200
+11287  2556 root     S     2620  1.7   0  0.0 sleep 30
+11770  3704 root     SN    2620  1.7   0  0.0 sleep 15
+11953  1792 root     S     2620  1.7   0  0.0 sleep 10
+12033  2420 root     S     2620  1.7   0  0.0 sleep 5
+12034  3730 root     S     2620  1.7   0  0.0 sleep 5
+12035  3191 root     S     2620  1.7   0  0.0 sleep 5
+12036  2643 root     S     2620  1.7   0  0.0 sleep 5
+12045  2493 root     S     2620  1.7   0  0.0 sleep 5
+12072  2192 root     S     2620  1.7   0  0.0 sleep 5
+12073  1848 root     S     2620  1.7   0  0.0 sleep 5
+12074  2745 root     S     2620  1.7   0  0.0 sleep 5
+12076  1477 root     S     2620  1.7   0  0.0 sleep 5
+12083  2970 root     SN    2620  1.7   0  0.0 sleep 5
+12092  2259 root     S     2620  1.7   0  0.0 sleep 5
+12101 25859 root     S     2620  1.7   0  0.0 sleep 5
+12122     1 root     S     2620  1.7   0  0.0 sleep 5
+12129  2778 root     S     2620  1.7   0  0.0 sleep 5
+12175  1784 root     S     2620  1.7   0  0.0 sleep 5
+12176 25860 root     S     2620  1.7   0  0.0 sleep 10
+12185  3798 root     S     2620  1.7   0  0.0 sleep 5
+12194  2079 root     S     2620  1.7   0  0.0 sleep 5
+12247   725 root     S     2620  1.7   0  0.0 sleep 5
+  445     1 root     S     2312  1.5   0  0.0 dbus-daemon --system
+ 1064     2 root     SW       0  0.0   0  0.0 [RTW_CMD_THREAD]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+31641     2 root     SW       0  0.0   0  0.0 [kworker/0:1]
+   13     2 root     SW       0  0.0   0  0.0 [kworker/u2:1]
+  255     2 root     SW       0  0.0   0  0.0 [ubifs_bgt0_0]
+  841     2 root     SW<      0  0.0   0  0.0 [kworker/u3:0]
+  251     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+  343     2 root     SW       0  0.0   0  0.0 [khubd]
+   60     2 root     SW<      0  0.0   0  0.0 [kworker/0:1H]
+  879     2 root     SW<      0  0.0   0  0.0 [kworker/u3:2]
+    2     0 root     SW       0  0.0   0  0.0 [kthreadd]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+    6     2 root     SW       0  0.0   0  0.0 [kworker/u2:0]
+    7     2 root     SW<      0  0.0   0  0.0 [khelper]
+    8     2 root     SW       0  0.0   0  0.0 [kdevtmpfs]
+    9     2 root     SW<      0  0.0   0  0.0 [writeback]
+   10     2 root     SW<      0  0.0   0  0.0 [bioset]
+   11     2 root     SW<      0  0.0   0  0.0 [crypto]
+   12     2 root     SW<      0  0.0   0  0.0 [kblockd]
+   19     2 root     SW<      0  0.0   0  0.0 [rpciod]
+   20     2 root     SW       0  0.0   0  0.0 [kswapd0]
+   21     2 root     SW       0  0.0   0  0.0 [fsnotify_mark]
+   22     2 root     SW       0  0.0   0  0.0 [ecryptfs-kthrea]
+   23     2 root     SW<      0  0.0   0  0.0 [nfsiod]
+   24     2 root     SW<      0  0.0   0  0.0 [cifsiod]
+   38     2 root     SW       0  0.0   0  0.0 [spi0]
+   59     2 root     SW<      0  0.0   0  0.0 [deferwq]
+  379     2 root     SW<      0  0.0   0  0.0 [cfg80211]
+  823     2 root     SW<      0  0.0   0  0.0 [btfwwork]
+  845     2 root     SW<      0  0.0   0  0.0 [hci0]
+  846     2 root     SW<      0  0.0   0  0.0 [hci0]
+15932     2 root     SW       0  0.0   0  0.0 [kworker/0:0]
+
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root                41856     41856         0 100% /
+devtmpfs                 75296         0     75296   0% /dev
+tmpfs                    75376         0     75376   0% /dev/shm
+/dev/ubi0_0               9976       920      9056   9% /mnt/ramdisk/dyn_fs
+/opt/SecurePartition      9976       920      9056   9% /mnt/ramdisk/dyn_fs/SecurePartition
+2026/01/07-12:47:24 Starting upload processes from core_shell.sh
+[PID:12344 2026/01/07-12:47:25]: starting coredump processing
+[PID:12344 2026/01/07-12:47:25]: Testing the internet connection, iteration 1
+[PID:12344 2026/01/07-12:47:25]: Waiting the IP.
+[PID:12344 2026/01/07-12:47:35]: Testing the internet connection, iteration 2
+[PID:12344 2026/01/07-12:47:35]: Waiting the IP.
+[PID:12344 2026/01/07-12:47:45]: Testing the internet connection, iteration 3
+[PID:12344 2026/01/07-12:47:45]: Waiting the IP.
+[PID:12344 2026/01/07-12:47:56]: Testing the internet connection, iteration 4
+[PID:12344 2026/01/07-12:47:56]: Waiting the IP.
+[PID:12344 2026/01/07-12:48:06]: Testing the internet connection, iteration 5
+[PID:12344 2026/01/07-12:48:06]: Waiting the IP.
+[PID:12344 2026/01/07-12:48:16]: Testing the internet connection, iteration 6
+[PID:12344 2026/01/07-12:48:16]: Waiting the IP.
+[PID:12344 2026/01/07-12:48:26]: Continue without IP.
+[PID:12344 2026/01/07-12:48:26]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:29]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:32]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:35]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:38]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:41]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:44]: Waiting for Coredump Completion
+[PID:12344 2026/01/07-12:48:47]: Mac address is 3C62F03AF5A7
+[PID:12344 2026/01/07-12:48:47]: No coredump for uploading
+[PID:12344 2026/01/07-12:48:47]: WORKING_DIR is empty!!!

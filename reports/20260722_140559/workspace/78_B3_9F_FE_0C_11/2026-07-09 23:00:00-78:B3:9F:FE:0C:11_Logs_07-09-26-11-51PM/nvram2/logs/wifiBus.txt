@@ -1,0 +1,260 @@
+260
+[OneWifi] 260709-19:06:44.631727<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:10:34.781895<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:16:24.005618<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:16:24.005674<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-19:16:24.011980<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:16:24.012039<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-19:16:24.019826<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:16:24.019885<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-19:17:10.078290<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:21:36.583474<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:21:36.584170<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-19:21:36.616628<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-19:21:36.617552<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55824b3520
+[OneWifi] 260709-19:21:36.618220<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-19:21:36.621434<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55824b3520
+[OneWifi] 260709-19:21:37.786058<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-19:21:37.786130<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-19:22:07.716937<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-19:22:07.718009<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:22:07.785461<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-19:22:07.786787<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-19:22:08.727156<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:22:08.727810<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-19:22:08.764955<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-19:22:08.765352<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55824b27e0
+[OneWifi] 260709-19:22:08.766271<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-19:22:08.769829<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55824b27e0
+[OneWifi] 260709-19:22:08.785505<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-19:22:08.786199<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-19:25:10.436902<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:31:24.004608<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:31:24.004678<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-19:31:24.009853<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:31:24.009955<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-19:31:24.015002<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:31:24.015054<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-19:35:40.448734<I>  rbus_set_handler:723 rbus data set end comp:wifi_config
+[OneWifi] 260709-19:35:40.448792<I>  rbus_set_handler:728 rbus cb triggered for Device.WiFi.WebConfig.Data.Subdoc.South
+[ovsm] 260709-19:35:40.449101<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.WiFi.WebConfig.Data.Subdoc.South, rc:0
+[OneWifi] 260709-19:36:02.785807<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-19:36:02.787325<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-19:36:16.448850<I>  rbus_set_handler:723 rbus data set end comp:wifi_config
+[OneWifi] 260709-19:36:16.448931<I>  rbus_set_handler:728 rbus cb triggered for Device.WiFi.WebConfig.Data.Subdoc.South
+[ovsm] 260709-19:36:16.449498<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.WiFi.WebConfig.Data.Subdoc.South, rc:0
+[OneWifi] 260709-19:36:35.905391<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-19:36:35.905994<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:36:36.785829<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-19:36:36.786191<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-19:39:41.093820<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-19:46:24.005457<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:46:24.005517<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-19:46:24.009882<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:46:24.009952<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-19:46:24.016262<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-19:46:24.016352<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-20:01:24.004322<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:01:24.004378<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-20:01:24.009436<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:01:24.009544<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-20:01:24.015585<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:01:24.015666<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-20:05:47.213519<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:05:47.214237<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-20:05:47.245070<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-20:05:47.245608<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x5582484880
+[OneWifi] 260709-20:05:47.246296<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[OneWifi] 260709-20:05:47.246471<E>  rbus_method_handler:816 user cb processing failed:2 for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-20:05:47.246702<E>   bus_method_invoke failed for  with err: 'invalid input'
+[bm] 260709-20:05:47.248312<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x5582484880
+[OneWifi] 260709-20:05:48.786088<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-20:05:48.787172<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:06:43.997714<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-20:06:43.998302<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:06:44.785648<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-20:06:44.786331<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:08:16.114827<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:08:16.115636<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-20:08:16.153641<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-20:08:16.153833<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55824b6580
+[OneWifi] 260709-20:08:16.154699<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[OneWifi] 260709-20:08:16.154864<E>  rbus_method_handler:816 user cb processing failed:2 for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-20:08:16.155060<E>   bus_method_invoke failed for  with err: 'invalid input'
+[bm] 260709-20:08:16.155173<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55824b6580
+[OneWifi] 260709-20:08:17.785536<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-20:08:17.785563<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:08:46.485867<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-20:08:46.486615<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:08:46.785514<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-20:08:46.786308<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:08:47.502239<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:08:47.502830<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-20:08:47.534649<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-20:08:47.535153<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x5582595850
+[OneWifi] 260709-20:08:47.535809<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[OneWifi] 260709-20:08:47.535988<E>  rbus_method_handler:816 user cb processing failed:2 for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-20:08:47.536195<E>   bus_method_invoke failed for  with err: 'invalid input'
+[bm] 260709-20:08:47.536282<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x5582595850
+[ovsm] 260709-20:08:47.785646<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:08:47.785669<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:11:47.447027<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:14:53.949768<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-20:14:53.950476<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-20:14:53.985005<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-20:14:53.985213<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55824b6580
+[OneWifi] 260709-20:14:53.986081<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-20:14:53.986616<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55824b6580
+[OneWifi] 260709-20:14:55.785588<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-20:14:55.785660<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-20:16:24.003986<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:16:24.004041<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-20:16:24.010936<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:16:24.010988<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-20:16:24.017043<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:16:24.017140<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-20:31:24.004033<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:31:24.004089<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-20:31:24.008241<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:31:24.008322<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-20:31:24.013978<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:31:24.014039<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-20:46:24.004967<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:46:24.005046<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-20:46:24.011289<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:46:24.011371<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-20:46:24.020642<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-20:46:24.020714<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-21:01:24.004002<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:01:24.004075<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-21:01:24.009099<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:01:24.009167<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-21:01:24.019426<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:01:24.019488<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-21:16:24.003996<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:16:24.004051<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-21:16:24.008254<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:16:24.008338<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-21:16:24.013737<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:16:24.013802<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-21:31:24.004150<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:31:24.004227<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-21:31:24.008890<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:31:24.008960<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-21:31:24.015880<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:31:24.015958<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-21:37:27.699475<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-21:37:27.700637<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:37:27.786209<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-21:37:27.786726<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-21:40:31.294630<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:42:26.350514<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-21:42:26.351207<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:42:27.335425<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:42:27.336089<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-21:42:27.372435<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-21:42:27.372620<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x558253dac0
+[OneWifi] 260709-21:42:27.373545<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[OneWifi] 260709-21:42:27.373730<E>  rbus_method_handler:816 user cb processing failed:2 for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-21:42:27.373951<E>   bus_method_invoke failed for  with err: 'invalid input'
+[bm] 260709-21:42:27.374058<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x558253dac0
+[ovsm] 260709-21:42:27.786140<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-21:42:27.786175<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-21:42:31.665627<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-21:42:31.666231<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:42:31.785646<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-21:42:31.786000<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-21:45:31.542260<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:45:36.533268<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:46:24.004450<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:46:24.004532<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-21:46:24.009547<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:46:24.009605<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-21:46:24.015828<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-21:46:24.015890<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-21:54:47.933166<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:54:47.933829<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-21:54:47.966974<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-21:54:47.967155<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55824aea40
+[OneWifi] 260709-21:54:47.968024<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[OneWifi] 260709-21:54:47.968194<E>  rbus_method_handler:816 user cb processing failed:2 for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-21:54:47.968396<E>   bus_method_invoke failed for  with err: 'invalid input'
+[bm] 260709-21:54:47.968482<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55824aea40
+[OneWifi] 260709-21:54:48.786662<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-21:54:48.788687<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-21:55:02.851189<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-21:55:02.851808<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-21:55:04.785769<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-21:55:04.786990<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-21:58:07.076641<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-22:01:24.004591<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:01:24.004646<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-22:01:24.009278<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:01:24.009353<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-22:01:24.015127<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:01:24.015196<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-22:16:24.004958<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:16:24.005016<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-22:16:24.010154<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:16:24.010211<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-22:16:24.015383<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:16:24.015445<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-22:31:24.004165<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:31:24.004223<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-22:31:24.008194<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:31:24.008274<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-22:31:24.013469<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:31:24.013542<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-22:46:24.004593<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:46:24.004649<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-22:46:24.009525<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:46:24.009593<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-22:46:24.016089<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-22:46:24.016177<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-23:01:24.004931<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:01:24.004990<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-23:01:24.010275<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:01:24.010332<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-23:01:24.016822<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:01:24.016880<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-23:12:27.844044<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-23:12:27.844653<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[ovsm] 260709-23:12:28.786093<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-23:12:28.789245<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-23:13:35.452084<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-23:13:35.454536<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[bm] 260709-23:13:35.485142<I>  bus_init:1013: bus: bus_init() is successful.
+[bm] 260709-23:13:35.485335<I>  bus_open:1029: bus: rbus_open() is successful for component:BMClient,        rc:0, handle:0x55826b61b0
+[OneWifi] 260709-23:13:35.486183<I>  rbus_method_handler:804 rbus cb triggered for Device.WiFi.AP.STA.GetAssocRequest
+[bm] 260709-23:13:35.486587<I>  bus_close:1044: bus: rbus_open() is successful. rc:0, handle:0x55826b61b0
+[OneWifi] 260709-23:13:35.785667<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-23:13:35.785757<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-23:16:24.003996<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:16:24.004050<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-23:16:24.007992<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:16:24.008073<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-23:16:24.013554<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:16:24.013622<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-23:23:09.176462<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-23:23:09.177190<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-23:23:09.785938<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-23:23:09.786015<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-23:26:10.885921<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-23:31:24.005066<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:31:24.005122<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-23:31:24.010423<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:31:24.010479<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-23:31:24.017323<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:31:24.017375<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-23:32:50.128680<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.Hosts.X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, rc:0
+[OneWifi] 260709-23:32:50.129435<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-23:32:50.785959<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[ovsm] 260709-23:32:50.786121<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.WiFi.AssociatedClients
+[OneWifi] 260709-23:35:51.302030<I>  bus_set_string:1279: bus: bus_set_string() is successful for           param:Device.NotifyComponent.SetNotifi_ParamName, rc:0
+[OneWifi] 260709-23:46:24.004968<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:46:24.005024<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.1.X_RDK_DiagData
+[OneWifi] 260709-23:46:24.010276<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:46:24.010343<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.2.X_RDK_DiagData
+[OneWifi] 260709-23:46:24.014808<I>  rbus_get_handler:674 rbus data get end comp:harvester
+[OneWifi] 260709-23:46:24.014867<I>  rbus_get_handler:677 rbus cb triggered for Device.WiFi.AccessPoint.17.X_RDK_DiagData
+[OneWifi] 260709-23:48:14.247458<I>  rbus_sub_handler:853 rbus sub cb triggered for Device.DeviceInfo.X_RDKCENTRAL-COM_LastRebootReason

@@ -1,0 +1,724 @@
+06.07.2026_05:07.25 starting rdkcProvider-service !!!!
+06.07.2026_05:07.26 starting rfcProvider-service !!!!
+Conf file /etc/debug.ini open success
+260706-05:07:27.075124 [mod=BREAKPAD, lvl=INFO] [tid=2244] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-05:07:27.078947 [mod=RBUS, lvl=INFO] [tid=2244] rbus open for component: rdkc_provider
+260706-05:07:27.153388 [mod=RBUS, lvl=INFO] [tid=2244]  rbus open (rdkc_provider) success
+260706-05:07:27.153784 [mod=RBUS, lvl=INFO] [tid=2244] file /tmp/rbus_subs_rdkc_provider
+260706-05:07:27.153951 [mod=RBUS, lvl=ERROR] [tid=2244] failed to open file /tmp/rbus_subs_rdkc_provider
+260706-05:07:27.154023 [mod=RBUS, lvl=WARN] [tid=2244] removing corrupted file /tmp/rbus_subs_rdkc_provider
+260706-05:07:27.154166 [mod=RBUS, lvl=ERROR] [tid=2244] failed to remove /tmp/rbus_subs_rdkc_provider
+Conf file /etc/debug.ini open success
+260706-05:07:27.415327 [mod=BREAKPAD, lvl=INFO] [tid=2317] breakpadwrap.cpp(21):Registering breakpad handler... 
+260706-05:07:27.419540 [mod=RBUS, lvl=INFO] [tid=2317] rbus open for component: rfc_provider
+260706-05:07:27.432645 [mod=RBUS, lvl=INFO] [tid=2244] publishing ObjectCreated table=Device.DeviceInfo.ProcessStatus.Process. rowName=Device.DeviceInfo.ProcessStatus.Process.1
+260706-05:07:27.518432 [mod=RBUS, lvl=INFO] [tid=2317]  rbus open (rfc_provider) success
+260706-05:07:27.518818 [mod=RBUS, lvl=INFO] [tid=2317] file /tmp/rbus_subs_rfc_provider
+260706-05:07:27.518988 [mod=RBUS, lvl=ERROR] [tid=2317] failed to open file /tmp/rbus_subs_rfc_provider
+260706-05:07:27.519059 [mod=RBUS, lvl=WARN] [tid=2317] removing corrupted file /tmp/rbus_subs_rfc_provider
+260706-05:07:27.519183 [mod=RBUS, lvl=ERROR] [tid=2317] failed to remove /tmp/rbus_subs_rfc_provider
+260706-05:07:27.851928 [mod=RBUS, lvl=INFO] [tid=2244] publishing ObjectCreated table=Device.WiFi.SSID rowName=Device.WiFi.SSID.1
+260706-05:07:27.852655 [mod=RBUS, lvl=INFO] [tid=2244] publishing ObjectCreated table=Device.WiFi.EndPoint rowName=Device.WiFi.EndPoint.1
+260706-05:07:27.853328 [mod=RBUS, lvl=INFO] [tid=2244] publishing ObjectCreated table=Device.WiFi.Radio rowName=Device.WiFi.Radio.1
+260706-05:07:29.488623 [mod=RTMESSAGE, lvl=INFO] [tid=2329] FwDownloadProvider_setHandler Device.Time.Status
+
+260706-05:07:29.488837 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Device.Time.Status Set: synchronised
+260706-05:07:32.561235 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:07:32.561785 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:07:32.561890 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:07:37.308377 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.TimeZone
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-05:07:37.324149 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:America/Chicago
+260706-05:07:38.524468 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.TimeZone
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260706-05:07:38.525820 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:America/Chicago
+value of privacymode in live-cvr-motion-tn is : 06.07.2026_05:07.43 File not found: /opt/usr_config/privacymode.txt
+06.07.2026_05:07.43 privacy mode is disabled for live-cvr-motion-tn
+Value of privacymode in process monitor : 06.07.2026_05:07.45 File not found: /opt/usr_config/privacymode.txt
+06.07.2026_05:07.45 privacy mode is disabled for process monitor
+260706-05:08:23.023078 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:08:23.023304 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:08:23.023377 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:08:23.027636 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-05:08:23.028250 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-05:08:23.030706 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.ModelName
+260706-05:08:23.033822 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Model name= XHC3
+260706-05:08:23.033946 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3
+260706-05:08:23.036424 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-05:08:23.039219 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:08:23.043031 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:08:23.043248 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:08:23.043324 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:09:23.150121 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:09:23.150944 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:09:23.151132 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:09:23.158208 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-05:09:23.162718 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-05:09:23.163380 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-05:09:23.165823 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-05:09:23.173990 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-05:09:23.174235 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-05:09:23.178749 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:09:40.160912 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:09:40.381127 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:09:54.669059 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.MD5AccountHash
+
+260706-05:09:54.902461 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.MD5AccountHash
+
+260706-05:09:56.072919 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:09:56.304539 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:09:57.934820 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.Enable
+
+260706-05:09:58.179759 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.Enable
+
+260706-05:09:58.681268 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.UpTime
+
+260706-05:09:58.936263 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.UpTime
+
+260706-05:10:04.068029 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandlerRFC Device.WiFi.X_RDKCENTRAL-COM_Lnf.EapTls.Enable
+
+260706-05:10:04.397971 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_setHandlerRFC Device.WiFi.X_RDKCENTRAL-COM_Lnf.EapTls.Enable
+
+260706-05:10:05.071980 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_Lnf.Enable
+
+260706-05:10:05.379267 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_setHandlerRFC Device.WiFi.X_RDKCENTRAL-COM_Lnf.Enable
+
+260706-05:10:07.725358 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.LnFUseXPKI.Enable
+
+260706-05:10:07.963697 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.LnFUseXPKI.Enable
+
+260706-05:10:09.611131 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Identity.DeviceType
+
+260706-05:10:09.802004 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Identity.DeviceType
+
+260706-05:10:10.174937 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Shorts.Enable
+
+260706-05:10:10.343051 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Shorts.Enable
+
+260706-05:10:11.793464 [mod=RTMESSAGE, lvl=INFO] [tid=2357] TelemetryProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.ConfigURL
+
+260706-05:10:12.400863 [mod=RTMESSAGE, lvl=INFO] [tid=2357] TelemetryProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.Enable
+
+260706-05:10:13.003974 [mod=RTMESSAGE, lvl=INFO] [tid=2357] TelemetryProvider_setHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.Version
+
+260706-05:10:16.459535 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:10:16.651584 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-05:22:22.507095 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:22:22.507325 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:22:22.507400 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:22:22.509933 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-05:22:22.512751 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-05:22:22.513288 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-05:22:22.515982 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-05:22:22.520311 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-05:22:22.520558 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-05:22:22.529317 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:37:22.507136 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:37:22.507366 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:37:22.507446 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:37:22.509988 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-05:37:22.513650 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-05:37:22.514215 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-05:37:22.517309 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-05:37:22.519971 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-05:37:22.520215 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-05:37:22.526968 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:52:22.504084 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-05:52:22.504320 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-05:52:22.504397 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-05:52:22.506862 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-05:52:22.509650 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-05:52:22.510190 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-05:52:22.512620 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-05:52:22.523154 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-05:52:22.523406 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-05:52:22.527260 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-05:54:46.530620 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-05:54:46.622416 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-05:58:17.189651 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-05:58:17.240015 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-06:00:29.128233 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-06:00:29.199048 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-06:07:22.421657 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-06:07:22.421890 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-06:07:22.421970 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-06:07:22.424439 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-06:07:22.444207 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-06:07:22.444745 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-06:07:22.454201 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-06:07:22.474811 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-06:07:22.475116 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-06:07:22.481245 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-06:22:22.522681 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-06:22:22.522914 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-06:22:22.523016 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-06:22:22.525569 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-06:22:22.528348 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-06:22:22.528876 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-06:22:22.531343 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-06:22:22.545521 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-06:22:22.545776 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-06:22:22.558447 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-06:28:01.747459 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-06:28:01.883403 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-06:30:05.983071 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-06:30:06.019928 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-06:32:06.324556 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-06:32:06.380544 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-06:37:22.527775 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-06:37:22.528002 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-06:37:22.528081 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-06:37:22.530527 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-06:37:22.533729 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-06:37:22.534266 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-06:37:22.536779 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-06:37:22.541037 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-06:37:22.541288 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-06:37:22.558659 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-06:52:22.538608 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-06:52:22.538837 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-06:52:22.538912 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-06:52:22.541345 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-06:52:22.544123 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-06:52:22.544658 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-06:52:22.547083 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-06:52:22.560585 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-06:52:22.560834 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-06:52:22.565408 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-07:07:22.563648 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-07:07:22.563879 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-07:07:22.563955 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-07:07:22.566553 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-07:07:22.569320 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-07:07:22.569853 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-07:07:22.572293 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-07:07:22.574900 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-07:07:22.575143 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-07:07:22.577650 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-07:22:22.562638 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-07:22:22.562868 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-07:22:22.562946 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-07:22:22.565301 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-07:22:22.568084 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-07:22:22.568608 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-07:22:22.585080 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-07:22:22.601035 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-07:22:22.601485 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-07:22:22.611305 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-07:37:22.566132 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-07:37:22.566359 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-07:37:22.566438 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-07:37:22.568960 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-07:37:22.573091 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-07:37:22.573627 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-07:37:22.576103 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-07:37:22.578828 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-07:37:22.579075 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-07:37:22.595531 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-07:52:22.576060 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-07:52:22.576310 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-07:52:22.576390 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-07:52:22.578887 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-07:52:22.581665 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-07:52:22.582196 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-07:52:22.589714 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-07:52:22.604961 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-07:52:22.605443 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-07:52:22.615431 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-08:05:53.932337 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:05:53.932569 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:05:53.932644 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:05:53.940930 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-08:05:53.941175 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-08:05:53.944753 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.ModelName
+260706-08:05:53.946377 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Model name= XHC3
+260706-08:05:53.946484 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3
+260706-08:05:53.949890 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-08:05:53.959989 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-08:05:53.980557 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:05:53.980770 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:05:53.980846 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:07:00.534009 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:07:00.534242 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:07:00.534321 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:07:22.573392 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:07:22.573613 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:07:22.573690 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:07:22.576110 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-08:07:22.578899 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-08:07:22.579433 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-08:07:22.581860 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-08:07:22.593238 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-08:07:22.593518 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-08:07:22.603325 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-08:22:22.600319 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:22:22.600549 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:22:22.600625 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:22:22.603078 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-08:22:22.606114 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-08:22:22.606644 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-08:22:22.609098 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-08:22:22.631076 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-08:22:22.631877 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-08:22:22.647130 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-08:37:22.586062 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:37:22.586292 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:37:22.586368 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:37:22.588912 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-08:37:22.591730 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-08:37:22.592260 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-08:37:22.597939 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-08:37:22.609522 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-08:37:22.609843 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-08:37:22.630756 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-08:52:22.613025 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-08:52:22.613256 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-08:52:22.613334 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-08:52:22.615778 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-08:52:22.618561 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-08:52:22.619413 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-08:52:22.621888 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-08:52:22.648082 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-08:52:22.648846 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-08:52:22.656756 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-09:07:22.620816 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-09:07:22.621048 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-09:07:22.621125 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-09:07:22.624200 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-09:07:22.626994 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-09:07:22.627531 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-09:07:22.630994 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-09:07:22.650664 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-09:07:22.651279 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-09:07:22.669250 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-09:22:22.606192 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-09:22:22.606423 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-09:22:22.606499 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-09:22:22.608979 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-09:22:22.611759 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-09:22:22.612333 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-09:22:22.614836 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-09:22:22.617550 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-09:22:22.617792 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-09:22:22.620159 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-09:37:22.630203 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-09:37:22.630434 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-09:37:22.630510 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-09:37:22.632962 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-09:37:22.635885 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-09:37:22.636421 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-09:37:22.638841 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-09:37:22.641432 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-09:37:22.641678 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-09:37:22.644107 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-09:52:22.618320 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-09:52:22.618553 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-09:52:22.618633 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-09:52:22.621274 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-09:52:22.624057 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-09:52:22.624592 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-09:52:22.627066 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-09:52:22.630877 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-09:52:22.631127 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-09:52:22.663545 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-10:07:22.624245 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-10:07:22.624473 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-10:07:22.624550 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-10:07:22.627125 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-10:07:22.630289 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-10:07:22.630819 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-10:07:22.633268 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-10:07:22.671572 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-10:07:22.671883 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-10:07:22.682227 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-10:22:22.648747 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-10:22:22.649015 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-10:22:22.649098 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-10:22:22.651722 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-10:22:22.654500 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-10:22:22.655026 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-10:22:22.657469 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-10:22:22.660191 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-10:22:22.660433 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-10:22:22.684474 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-10:37:22.633071 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-10:37:22.633302 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-10:37:22.633378 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-10:37:22.635965 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-10:37:22.638757 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-10:37:22.639314 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-10:37:22.642047 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-10:37:22.646592 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-10:37:22.646922 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-10:37:22.673401 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-10:52:22.664244 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-10:52:22.664472 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-10:52:22.664551 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-10:52:22.666923 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-10:52:22.672274 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-10:52:22.672828 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-10:52:22.703407 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-10:52:22.720890 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-10:52:22.721137 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-10:52:22.723514 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-11:07:22.669408 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-11:07:22.669641 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-11:07:22.669718 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-11:07:22.672249 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-11:07:22.675140 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-11:07:22.675676 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-11:07:22.678105 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-11:07:22.699494 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-11:07:22.699831 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-11:07:22.718742 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-11:22:22.656527 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-11:22:22.656759 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-11:22:22.656836 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-11:22:22.659406 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-11:22:22.662209 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-11:22:22.662738 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-11:22:22.665179 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-11:22:22.693344 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-11:22:22.693617 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-11:22:22.698784 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-11:37:22.654218 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-11:37:22.654446 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-11:37:22.654524 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-11:37:22.657125 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-11:37:22.659942 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-11:37:22.660477 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-11:37:22.665117 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-11:37:22.689158 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-11:37:22.689399 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-11:37:22.701789 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-11:52:22.691823 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-11:52:22.692057 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-11:52:22.692133 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-11:52:22.694682 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-11:52:22.697457 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-11:52:22.697998 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-11:52:22.718987 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-11:52:22.727989 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-11:52:22.728230 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-11:52:22.730705 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-12:07:22.699280 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-12:07:22.699510 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-12:07:22.699587 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-12:07:22.702099 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-12:07:22.706933 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-12:07:22.707589 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-12:07:22.713026 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-12:07:22.734520 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-12:07:22.734764 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-12:07:22.739177 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-12:22:22.691271 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-12:22:22.691500 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-12:22:22.691578 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-12:22:22.694534 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-12:22:22.702774 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-12:22:22.719398 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-12:22:22.723706 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-12:22:22.734205 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-12:22:22.734452 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-12:22:22.738363 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-12:37:22.700186 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-12:37:22.700421 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-12:37:22.700501 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-12:37:22.702870 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-12:37:22.710735 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-12:37:22.711748 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-12:37:22.726055 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-12:37:22.731814 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-12:37:22.732058 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-12:37:22.736713 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-12:52:22.702507 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-12:52:22.702733 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-12:52:22.702808 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-12:52:22.707306 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-12:52:22.713719 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-12:52:22.732443 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-12:52:22.739738 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-12:52:22.743917 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-12:52:22.744166 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-12:52:22.746532 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-12:57:47.537653 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-12:57:47.592844 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-12:59:51.415570 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-12:59:51.466074 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-13:07:22.709678 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-13:07:22.709910 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-13:07:22.709991 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-13:07:22.714681 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-13:07:22.737890 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-13:07:22.738420 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-13:07:22.750724 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-13:07:22.756691 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-13:07:22.757030 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-13:07:22.759432 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-13:22:22.737077 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-13:22:22.737315 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-13:22:22.737392 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-13:22:22.742005 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-13:22:22.750861 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-13:22:22.764983 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-13:22:22.768336 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-13:22:22.773289 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-13:22:22.773539 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-13:22:22.780774 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-13:37:22.723785 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-13:37:22.724018 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-13:37:22.724097 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-13:37:22.728505 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-13:37:22.752736 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-13:37:22.753275 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-13:37:22.758533 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-13:37:22.770338 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-13:37:22.770588 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-13:37:22.780081 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-13:42:20.538296 [mod=RTMESSAGE, lvl=INFO] [tid=2329] CameraServiceProvider_setHandler Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration
+
+260706-13:42:20.648685 [mod=RTMESSAGE, lvl=INFO] [tid=2329] Stopping threads
+260706-13:52:22.732583 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-13:52:22.732815 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-13:52:22.732893 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-13:52:22.738967 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-13:52:22.759698 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-13:52:22.760234 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-13:52:22.764760 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-13:52:22.768486 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-13:52:22.768735 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-13:52:22.779061 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-14:07:22.743124 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-14:07:22.743357 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-14:07:22.743435 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-14:07:22.747217 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-14:07:22.767262 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-14:07:22.767792 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-14:07:22.771582 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-14:07:22.775722 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-14:07:22.775966 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-14:07:22.778379 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-14:22:22.752949 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-14:22:22.753182 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-14:22:22.753261 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-14:22:22.762171 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-14:22:22.779729 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-14:22:22.780265 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-14:22:22.786306 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-14:22:22.790853 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-14:22:22.791104 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-14:22:22.793495 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-14:37:22.758775 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-14:37:22.759027 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-14:37:22.759107 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-14:37:22.763085 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-14:37:22.784902 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-14:37:22.785434 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-14:37:22.791090 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-14:37:22.794461 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-14:37:22.794705 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-14:37:22.797153 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-14:52:22.771876 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-14:52:22.772349 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-14:52:22.772478 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-14:52:22.777206 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-14:52:22.795628 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-14:52:22.796161 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-14:52:22.800328 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-14:52:22.803917 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-14:52:22.804166 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-14:52:22.806730 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+
+260706-15:07:22.789568 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_MAC
+260706-15:07:22.790046 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] Successfully obtained MAC in getVal 3c:62:f0:3a:f5:a7
+260706-15:07:22.790183 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:3c:62:f0:3a:f5:a7
+260706-15:07:22.797079 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv4Address
+
+260706-15:07:22.818024 [mod=RTMESSAGE, lvl=INFO] [tid=2329] WifiProvider_getHandler Device.WiFi.X_RDKCENTRAL-COM_IPv6Address
+
+260706-15:07:22.818557 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] IPV6 address is 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+260706-15:07:22.821557 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId
+
+260706-15:07:22.824999 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] DeviceInfoProvider_getHandler Device.DeviceInfo.X_RDK_FirmwareName
+260706-15:07:22.825244 [mod=RDKCPROVIDER, lvl=INFO] [tid=2329] device info get value:XHC3_8.4p1s1_PROD_sdy
+260706-15:07:22.828111 [mod=RTMESSAGE, lvl=INFO] [tid=2357] RFCFeatureProvider_getHandler Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID
+

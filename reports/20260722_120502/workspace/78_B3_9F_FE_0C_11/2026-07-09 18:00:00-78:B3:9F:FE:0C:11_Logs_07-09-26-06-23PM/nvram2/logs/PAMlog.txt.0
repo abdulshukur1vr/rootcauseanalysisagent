@@ -1,0 +1,163 @@
+163
+260709-18:09:48.259192 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: CodebigSupport, bsUpdate = 3
+
+260709-18:09:48.259247 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = CodebigSupport
+260709-18:09:48.259278 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.CodebigSupport, value=false, clearDB=0
+260709-18:09:48.261167 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:48.279688 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: ContainerSupport, bsUpdate = 3
+
+260709-18:09:48.279721 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = ContainerSupport
+260709-18:09:48.279749 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.ContainerSupport, value=false, clearDB=0
+260709-18:09:48.280630 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:48.299015 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: ClearDB, bsUpdate = 3
+
+260709-18:09:48.299072 [mod=PAM, lvl=WARN] [tid=6769] g_currentParamFullName = Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.ClearDB
+260709-18:09:48.299090 [mod=PAM, lvl=WARN] [tid=6769] StartRfcProcessing 
+260709-18:09:48.526651 [mod=PAM, lvl=INFO] [tid=6769] [AutoReboot_GetParamBoolValue :] AutoReboot Getparam Enable value
+260709-18:09:48.565923 [mod=PAM, lvl=INFO] [tid=6769] [AutoReboot_GetParamBoolValue :] AutoReboot Getparam Enable value
+260709-18:09:48.565987 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:48.566005 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:48.566038 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.Enable, value=true, clearDB=1
+260709-18:09:48.566058 [mod=PAM, lvl=INFO] [tid=6769] [AutoReboot_GetParamBoolValue :] AutoReboot Getparam Enable value
+260709-18:09:48.566075 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:48.566089 [mod=PAM, lvl=INFO] [tid=6769] [AutoReboot_SetParamBoolValue:] AutoReboot Set current and previous values are same
+260709-18:09:48.670785 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: UpTime, bsUpdate = 3
+
+260709-18:09:48.670838 [mod=PAM, lvl=INFO] [tid=6769] [AutoReboot_SetParamIntValue:] AutoReboot Set uptime 
+260709-18:09:48.670871 [mod=PAM, lvl=INFO] [tid=6769] CosaDmlScheduleAutoReboot Device uptime in days 0 
+260709-18:09:48.670886 [mod=PAM, lvl=INFO] [tid=6769] CosaDmlScheduleAutoReboot Scheduling reboot after 30 days 
+260709-18:09:48.670901 [mod=PAM, lvl=INFO] [tid=6769] CosaDmlScheduleAutoReboot Scheduling cron sh /etc/ScheduleAutoReboot.sh 30 1& 
+260709-18:09:48.773094 [mod=PAM, lvl=WARN] [tid=6769] CosaNTPInitJournal : Partner = shaw 
+260709-18:09:48.773841 [mod=PAM, lvl=WARN] [tid=6769] getTimeOffset: offset_value received from ipv4-timeoffset is @-21600 
+260709-18:09:48.773877 [mod=PAM, lvl=WARN] [tid=6769] CosaDmlTimeGetTimeOffset: pTimeOffset is -21600 
+260709-18:09:49.013710 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: AccountID, bsUpdate = 3
+
+260709-18:09:49.013769 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamStringValue: param = AccountID, value = 3277006077133108326
+260709-18:09:49.013797 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID, value=3277006077133108326, clearDB=1
+260709-18:09:49.013822 [mod=PAM, lvl=WARN] [tid=6769] IsStringSame values are same...
+260709-18:09:49.124026 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:49.124059 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:49.124087 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.WifiClient.ActiveMeasurements.Enable, value=true, clearDB=1
+260709-18:09:49.124553 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:49.834122 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:49.834191 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:49.834219 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.EvoStream_DirectConnect.Enable, value=true, clearDB=1
+260709-18:09:49.834246 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:49.947306 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:49.947340 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:49.947369 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6onXHS.Enable, value=true, clearDB=1
+260709-18:09:49.947930 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:50.060743 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:50.060801 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:50.060829 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6subPrefix.Enable, value=true, clearDB=1
+260709-18:09:50.060857 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:50.189293 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:50.189355 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:50.189383 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6onLnF.Enable, value=true, clearDB=1
+260709-18:09:50.189412 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:50.294661 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:50.294715 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:50.294743 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.IPv6subPrefix.Enable, value=true, clearDB=1
+260709-18:09:50.294815 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:50.769739 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:50.769794 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:50.769822 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.newNTP.Enable, value=true, clearDB=1
+260709-18:09:50.769852 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:51.071605 [mod=PAM, lvl=ERROR] [tid=6769] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-18:09:51.071665 [mod=PAM, lvl=ERROR] [tid=6769] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-18:09:51.071682 [mod=PAM, lvl=WARN] [tid=6769] Failed to get parameter value of 'AuthMode'.
+260709-18:09:51.114787 [mod=PAM, lvl=ERROR] [tid=6769] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-18:09:51.114850 [mod=PAM, lvl=ERROR] [tid=6769] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-18:09:51.114872 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: AuthMode, bsUpdate = 3
+
+260709-18:09:51.114890 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamStringValue: param = AuthMode, value = potd
+260709-18:09:51.114917 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.OAUTH.AuthMode, value=potd, clearDB=1
+260709-18:09:51.114944 [mod=PAM, lvl=ERROR] [tid=6769] [OAUTH_GetParamStringValue] syscfg_get failed for OAUTHAuthMode
+260709-18:09:51.114959 [mod=PAM, lvl=WARN] [tid=6769] IsStringSame values are same...
+260709-18:09:51.269710 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: ServerUrl, bsUpdate = 3
+
+260709-18:09:51.269769 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamStringValue: param = ServerUrl, value = https://websec-oic.cable.comcast.com/as/authorization.oauth2
+260709-18:09:51.269797 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.OAUTH.ServerUrl, value=https://websec-oic.cable.comcast.com/as/authorization.oauth2, clearDB=1
+260709-18:09:51.269838 [mod=PAM, lvl=WARN] [tid=6769] IsStringSame values are same...
+260709-18:09:51.436272 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:51.436716 [mod=PAM, lvl=INFO] [tid=6769] Successfully set 5g off channel scan RFC 
+260709-18:09:51.451046 [mod=PAM, lvl=WARN] [tid=6769] eRT.com.cisco.spvtg.ccsp.pam component calls SET with writeId:0 
+260709-18:09:51.557975 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: DirectOCSP, bsUpdate = 3
+
+260709-18:09:51.661500 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:52.006700 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:52.006755 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:52.006782 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.PeriodicFWCheck.Enable, value=true, clearDB=1
+260709-18:09:52.006812 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:52.106213 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:52.106245 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = Enable
+260709-18:09:52.106272 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.WiFi-Interworking.Enable, value=true, clearDB=1
+260709-18:09:52.106701 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are same...
+260709-18:09:52.209183 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:52.209958 [mod=PAM, lvl=INFO] [tid=6769] Successfully set WiFiPasspointSupport 
+260709-18:09:52.209979 [mod=PAM, lvl=WARN] [tid=6769] eRT.com.cisco.spvtg.ccsp.pam component calls SET with writeId:0 
+260709-18:09:52.384894 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: Enable, bsUpdate = 3
+
+260709-18:09:52.430108 [mod=PAM, lvl=WARN] [tid=6769] Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.SyndicationFlowControl.Enable - OBJECT  Value is NULL UpdateJsonParam
+260709-18:09:53.591361 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: ClearDBEnd, bsUpdate = 3
+
+260709-18:09:53.591418 [mod=PAM, lvl=WARN] [tid=6769] g_currentParamFullName = Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.ClearDBEnd
+260709-18:09:53.591435 [mod=PAM, lvl=WARN] [tid=6769] EndRfcProcessing 
+260709-18:09:53.630302 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-18:09:53.630358 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x55afbe0dd8
+260709-18:09:53.630375 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-18:09:53.630391 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-18:09:53.630414 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: RFCUpdateDone, bsUpdate = 3
+
+260709-18:09:53.630431 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = RFCUpdateDone
+260709-18:09:53.630459 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Snmpv3DHKickstart.RFCUpdateDone, value=true, clearDB=0
+260709-18:09:53.630848 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-18:09:53.630867 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x55afbe0dd8
+260709-18:09:53.630882 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-18:09:53.630897 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-18:09:53.630912 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are different...
+260709-18:09:53.630928 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: hInsContext = 0x0
+260709-18:09:53.630943 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: pKickstart = 0x55afbe0dd8
+260709-18:09:53.630964 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: ParamName = RFCUpdateDone, bValue = 1
+260709-18:09:53.630980 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: successfully set RFCUpdateDone = TRUE
+260709-18:09:57.763745 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: XconfSelector, bsUpdate = 3
+
+260709-18:09:57.763789 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamStringValue: param = XconfSelector, value = prod
+260709-18:09:57.763817 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.XconfSelector, value=prod, clearDB=0
+260709-18:09:57.764203 [mod=PAM, lvl=WARN] [tid=6769] IsStringSame values are same...
+260709-18:09:57.782332 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: XconfUrl, bsUpdate = 3
+
+260709-18:09:57.782389 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamStringValue: param = XconfUrl, value = https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+260709-18:09:57.782416 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Control.XconfUrl, value=https://secure.xconfds.coast.xcal.tv/featureControl/getSettings, clearDB=0
+260709-18:09:57.782807 [mod=PAM, lvl=WARN] [tid=6769] IsStringSame values are same...
+260709-18:09:57.838026 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-18:09:57.838078 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x55afbe0dd8
+260709-18:09:57.838094 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-18:09:57.838124 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-18:09:57.838146 [mod=PAM, lvl=WARN] [tid=6769] DslhObjcoValidate: RFCUpdateDone, bsUpdate = 3
+
+260709-18:09:57.838164 [mod=PAM, lvl=WARN] [tid=6769] Generic_SetParamBoolValue: param = RFCUpdateDone
+260709-18:09:57.838191 [mod=PAM, lvl=WARN] [tid=6769] ProcessRfcSet : paramFullName=Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Snmpv3DHKickstart.RFCUpdateDone, value=true, clearDB=0
+260709-18:09:57.838562 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: hInsContext = 0x0
+260709-18:09:57.838581 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: pKickstart = 0x55afbe0dd8
+260709-18:09:57.838595 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: ParamName = RFCUpdateDone
+260709-18:09:57.838610 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_GetParamBoolValue: RFCUpdateDone = FALSE
+260709-18:09:57.838625 [mod=PAM, lvl=WARN] [tid=6769] IsBoolSame values are different...
+260709-18:09:57.838639 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: hInsContext = 0x0
+260709-18:09:57.838654 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: pKickstart = 0x55afbe0dd8
+260709-18:09:57.838668 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: ParamName = RFCUpdateDone, bValue = 1
+260709-18:09:57.838683 [mod=PAM, lvl=INFO] [tid=6769] Snmpv3DHKickstart_SetParamBoolValue: successfully set RFCUpdateDone = TRUE
+260709-18:10:00.636091 [mod=PAM, lvl=WARN] [tid=6769] Getting Device Networking Mode value for non-xle devices, new value = '0'

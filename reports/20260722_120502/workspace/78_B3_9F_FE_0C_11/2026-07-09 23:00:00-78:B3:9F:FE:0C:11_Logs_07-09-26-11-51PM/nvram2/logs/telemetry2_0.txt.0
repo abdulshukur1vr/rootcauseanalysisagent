@@ -1,0 +1,42 @@
+42
+260709-23:48:17.106074 [DEBUG] --OUT Function backupLogsonReboot_nvram2
+260709-23:48:19.300485 [mod=T2, lvl=INFO] [tid=12288] xcCertSelectorFree, T2:Cert selector memory free  
+260709-23:48:19.300550 [mod=T2, lvl=INFO] [tid=12288] Uninit XConf Client Successful
+260709-23:48:19.300586 [mod=T2, lvl=INFO] [tid=12288] rbuscore.c:2327 RBus Enabled
+
+260709-23:48:19.301193 [mod=T2, lvl=INFO] [tid=12288]  tProfile->tId = -1616748448 tProfile->name = XER_Telemetry_New
+260709-23:48:19.301241 [mod=T2, lvl=INFO] [tid=12288] Profile XER_Telemetry_New successfully removed from Scheduler
+260709-23:48:19.301261 [mod=T2, lvl=INFO] [tid=12288]  tProfile->tId = -1625202592 tProfile->name = DevicePrioritizationProfile
+260709-23:48:19.301274 [mod=T2, lvl=INFO] [tid=12288] Profile DevicePrioritizationProfile successfully removed from Scheduler
+260709-23:48:19.301289 [mod=T2, lvl=INFO] [tid=12375] Interrupted before TIMEOUT for profile : DevicePrioritizationProfile 
+260709-23:48:19.301311 [mod=T2, lvl=INFO] [tid=12375] get_logdemand ++in
+260709-23:48:19.301322 [mod=T2, lvl=INFO] [tid=12378] Interrupted before TIMEOUT for profile : Zilker_T2 
+260709-23:48:19.301330 [mod=T2, lvl=INFO] [tid=12373] Interrupted before TIMEOUT for profile : XER_Telemetry_New 
+260709-23:48:19.301327 [mod=T2, lvl=INFO] [tid=12375] ReportProfiles_TimeoutCb ++in
+260709-23:48:19.301348 [mod=T2, lvl=INFO] [tid=12373] get_logdemand ++in
+260709-23:48:19.301342 [mod=T2, lvl=INFO] [tid=12378] get_logdemand ++in
+260709-23:48:19.301361 [mod=T2, lvl=INFO] [tid=12373] ReportProfiles_TimeoutCb ++in
+260709-23:48:19.301367 [mod=T2, lvl=INFO] [tid=12378] ReportProfiles_TimeoutCb ++in
+260709-23:48:19.301374 [mod=T2, lvl=INFO] [tid=12373] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-23:48:19.301374 [mod=T2, lvl=INFO] [tid=12375] NotifyTimeout: profile DevicePrioritizationProfile is in Enabled state
+260709-23:48:19.301435 [mod=T2, lvl=INFO] [tid=12373] ReportProfiles_TimeoutCb --out
+260709-23:48:19.301441 [mod=T2, lvl=INFO] [tid=12378] NotifyTimeout: profile Zilker_T2 is in Enabled state
+260709-23:48:19.301449 [mod=T2, lvl=WARN] [tid=12373] Profile : XER_Telemetry_New is being removed from scheduler 
+260709-23:48:19.301457 [mod=T2, lvl=INFO] [tid=12378] Signal Thread To restart
+260709-23:48:19.301477 [mod=T2, lvl=INFO] [tid=12378] ReportProfiles_TimeoutCb --out
+260709-23:48:19.301491 [mod=T2, lvl=WARN] [tid=12378] Profile : Zilker_T2 is being removed from scheduler 
+260709-23:48:19.301294 [mod=T2, lvl=INFO] [tid=12288]  tProfile->tId = -1642110880 tProfile->name = Zilker_T2
+260709-23:48:19.301508 [mod=T2, lvl=INFO] [tid=12375] ReportProfiles_TimeoutCb --out
+260709-23:48:19.301518 [mod=T2, lvl=INFO] [tid=12288] Profile Zilker_T2 successfully removed from Scheduler
+260709-23:48:19.301521 [mod=T2, lvl=WARN] [tid=12375] Profile : DevicePrioritizationProfile is being removed from scheduler 
+260709-23:48:19.301535 [mod=T2, lvl=INFO] [tid=12288]  tProfile->tId = -1650565024 tProfile->name = RDKB_CLIENT_QOS_DATA
+260709-23:48:19.301549 [mod=T2, lvl=INFO] [tid=12288] Profile RDKB_CLIENT_QOS_DATA successfully removed from Scheduler
+260709-23:48:19.301551 [mod=T2, lvl=INFO] [tid=18780] CollectAndReport while Loop -- START 
+260709-23:48:19.301573 [mod=T2, lvl=INFO] [tid=12288]  tProfile->tId = -1659019168 tProfile->name = WIFI_MOTION_Telemetry
+260709-23:48:19.301575 [mod=T2, lvl=INFO] [tid=23663] CollectAndReportXconf while Loop -- START 
+260709-23:48:19.301586 [mod=T2, lvl=INFO] [tid=12288] Profile WIFI_MOTION_Telemetry successfully removed from Scheduler
+260709-23:48:19.301578 [mod=T2, lvl=INFO] [tid=18780] CollectAndReport ++in profileName : Zilker_T2
+260709-23:48:19.301597 [mod=T2, lvl=INFO] [tid=23663] CollectAndReportXconf ++in profileName : XER_Telemetry_New
+260709-23:48:19.301759 [mod=T2, lvl=INFO] [tid=12379] Interrupted before TIMEOUT for profile : RDKB_CLIENT_QOS_DATA 
+260709-23:48:19.301781 [mod=T2, lvl=INFO] [tid=12379] get_logdemand ++in
+260709-23:48:19.301793 [mod=T2, lvl=INFO] [tid=12379] ReportProfiles_TimeoutCb ++in

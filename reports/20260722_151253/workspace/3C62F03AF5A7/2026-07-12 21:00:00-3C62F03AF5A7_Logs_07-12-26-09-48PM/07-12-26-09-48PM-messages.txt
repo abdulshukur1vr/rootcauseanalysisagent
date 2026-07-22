@@ -1,0 +1,484 @@
+Jan  7 00:00:44 XHC33AF5A7 syslog.info syslogd started: BusyBox v1.36.1
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: klogd started: BusyBox v1.36.1 (2025-06-18 17:57:42 CST)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Booting Linux on physical CPU 0x0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Initializing cgroup subsys cpu
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000] Linux version 3.10.73+ (ubuntu@ip-96-113-103-35) (gcc version 7.4.1 20181213 (Linaro GCC 7.4-2019.02) ) #1 PREEMPT Wed Jan 7 07:20:22 UTC 2026
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.000000] CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7d
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Machine: Ambarella S2L (Flattened Device Tree), model: Ambarella S2LM Kiwi Board
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.000000] Memory policy: ECC disabled, Data cache writeback
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      AHB = 0xe0000000[0xe0000000],0x01000000 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      APB = 0xe8000000[0xe8000000],0x01000000 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      PPM = 0x00000000[0xdfe00000],0x00200000 9
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:      AXI = 0xf0000000[0xf0000000],0x00030000 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:    DRAMC = 0xdffe0000[0xef000000],0x00020000 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:   DBGBUS = 0xec000000[0xec000000],0x00200000 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:  DBGFMEM = 0xee000000[0xee000000],0x01000000 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:   IAVMEM = 0x09c00000[          ],0x06400000
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Ambarella:    FBMEM = 0x09c00000[          ],0x00000000
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000] On node 0 totalpages: 39424
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000] free_area_init_node: node 0, pgdat 80545f00, node_mem_map 80575000
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000]   Normal zone: 308 pages used for memmap
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000]   Normal zone: 0 pages reserved
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000]   Normal zone: 39424 pages, LIFO batch:7
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] CPU: All CPU(s) started in SVC mode.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    0.000000] pcpu-alloc: [0] 0 
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 39116
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000] Kernel command line: console=ttyS0 root=/dev/mtdblock5 ro rootfstype=squashfs init=/linuxrc bootimageid=2
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Memory: 154MB = 154MB total
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000] Memory: 150592k/150592k available, 7104k reserved, 0K highmem
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000] Virtual kernel memory layout:
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]     vmalloc : 0x8a000000 - 0xff000000   (1872 MB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]     lowmem  : 0x80000000 - 0x89a00000   ( 154 MB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]       .text : 0x80008000 - 0x804db038   (4941 kB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]       .init : 0x804dc000 - 0x80504ddc   ( 164 kB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]       .data : 0x80506000 - 0x8054e590   ( 290 kB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.000000]        .bss : 0x8054e590 - 0x80570320   ( 136 kB)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] NR_IRQS:240
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] sched_clock: 32 bits at 54MHz, resolution 18ns, wraps every 79536ms
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] Console: colour dummy device 80x30
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.000000] console [ttyS0] enabled
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.235052] Calibrating delay loop... 597.60 BogoMIPS (lpj=2988032)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.292599] pid_max: default: 32768 minimum: 301
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.297276] Security Framework initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.301426] AppArmor: AppArmor initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.305530] Mount-cache hash table entries: 512
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.312252] CPU: Testing write buffer coherency: ok
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.317416] Setting up static identity map for 0x803acb68 - 0x803acbd0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.326195] devtmpfs: initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.330779] pinctrl core: initialized pinctrl subsystem
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.336265] NET: Registered protocol family 16
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.341497] DMA: preallocated 256 KiB pool for atomic coherent allocations
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.348850] L310 cache controller enabled
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.352885] l2x0: 8 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x32020000, Cache size: 131072 B
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.362282] ambarella-pinctrl e8009000.pinctrl: Ambarella pinctrl driver registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.370293] ambarella-gpio gpio.0: Ambarella GPIO driver registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.380685] bio: create slab <bio-0> at 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.385746] ambarella-dma e0005000.dma: Ambarella DMA Engine 
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.392885] ambarella-i2c e8003000.i2c: Ambarella I2C adapter[0] probed!
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.399788] ambarella-i2c e8007000.i2c: Ambarella I2C adapter[2] probed!
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.407301] Switching to clocksource ambarella-cs-timer
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.412752] AppArmor: AppArmor Filesystem Enabled
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.423706] NET: Registered protocol family 2
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.428920] TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.436110] TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.442468] TCP: Hash tables configured (established 2048 bind 2048)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.448885] TCP: reno registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.452103] UDP hash table entries: 256 (order: 0, 4096 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.457944] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.464379] NET: Registered protocol family 1
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.468989] RPC: Registered named UNIX socket transport module.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.474942] RPC: Registered udp transport module.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.479623] RPC: Registered tcp transport module.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.484321] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.491526] audit: initializing netlink socket (disabled)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.496983] type=2000 audit(0.439:1): initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.502302] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.508759] msgmni has been set to 294
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.513888] NET: Registered protocol family 38
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.518398] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.525905] io scheduler noop registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.529809] io scheduler deadline registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.534112] io scheduler cfq registered (default)
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.539253] pwm-backlight 0.pwm_bl: invalid default brightness level: 100, using 99
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.547511] e8005000.uart: ttyS0 at MMIO 0xe8005000 (irq = 9) is a ambuart
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.555285] brd: module loaded
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.560894] loop: module loaded
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.566575] ambarella-nand e0001000.nand: in soft ecc-[6]bit mode
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.572770] NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit), 128MiB, page size: 2048, OOB size: 64
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    0.586612] Scanning device for bad blocks
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.885495] bootimageid=2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.888100] using the second image
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.891484] partition table start offset is 0x000C0000^M
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.897024] par_entry id=0, offset=0x00000000, length=0x03000000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.903031] par_entry id=1, offset=0x03000000, length=0x03000000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.909011] par_entry id=2, offset=0x06000000, length=0x01200000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.915006] par_entry id=3, offset=0x07200000, length=0x00400000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.920985] par_entry id=4, offset=0x07600000, length=0x00900000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.926976] par_entry id=5, offset=0x07F00000, length=0x00100000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.933255] kernel offset=0x3020000, kernel size=0x2C0000
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.938633] filesystem offset=0x32E0000, filesystem size=0x0
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.944312] s_product_size offset=0x5BC0000, s_product_size size=0x0
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    0.950921] MAC: 3C:62:F0:3A:F5:A7
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.954329] Creating 13 MTD partitions on "amba_nand":
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.959451] 0x000000000000-0x000007f00000 : "FW"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.964973] 0x000007600000-0x0000079e0000 : "CONF0"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.970436] 0x0000079e0000-0x000007dc0000 : "CONF1"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.975990] 0x000007f00000-0x000008000000 : "MAC"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.981328] 0x000003000000-0x000006000000 : "IMAGE_CURRENT"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.987616] 0x0000032e0000-0x000006000000 : "FS"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.992990] 0x000005bc0000-0x000006000000 : "PINFO"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    0.998532] 0x0000000e0000-0x000003000000 : "IMAGE_UPGRADE"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.004834] 0x000007000000-0x000007200000 : "DEBUG"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.010358] 0x000007dc0000-0x000007f00000 : "UPGLOG"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.016021] 0x000006000000-0x000007000000 : "RESERVEDPART"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.022215] 0x000007200000-0x000007600000 : "CALIBRATION"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.028314] 0x000000000000-0x000008000000 : "FLASHDUMP"
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.034602] ambarella-spi e0020000.spi: Only supports msb first tx-rx
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.041626] ambarella-spi e0020000.spi: Ambarella spi controller 0 created.^M
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.049045] mousedev: PS/2 mouse device common for all mice
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.054950] ambarella-rtc e8015000.rtc: rtc core: registered rtc-ambarella as rtc0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.062675] i2c /dev entries driver
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.066725] ambarella-wdt e800c000.wdt: Ambarella Watchdog Timer Probed.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.073597] nf_conntrack version 0.5.0 (2353 buckets, 9412 max)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.080002] ip_tables: (C) 2000-2006 Netfilter Core Team
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.085381] TCP: cubic registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.088677] Initializing XFRM netlink socket
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.093015] NET: Registered protocol family 10
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.098053] sit: IPv6 over IPv4 tunneling driver
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.103246] NET: Registered protocol family 17
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.107762] Bridge firewalling registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.111825] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.119499] ThumbEE CPU extension supported.
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.125213] Key type trusted registered
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    1.130293] Key type encrypted registered
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.134497] AppArmor: AppArmor sha1 policy hashing enabled
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.140351] ambarella-rtc e8015000.rtc: setting system clock to 2106-02-07 06:28:15 UTC (4294967295)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.153703] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.161998] devtmpfs: mounted
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    1.165195] Freeing unused kernel memory: 160K (804dc000 - 80504000)
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    2.272258] dbg: rt5670_i2c_probe line 3922
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    2.313224] dbg: rt5670_probe line 3686
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    2.317047] Codec driver version 0.0.7 alsa 1.0.25
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    2.321834] GPIO pin requested ok, AMP_SWITCH = L
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    2.332114] v_id = 7
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    3.403352] AMBARELLA SoC Audio DUMMY Codec
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [    3.410221] rt5670 0-001c: ASoC: mux Mono ADC R Mux has no paths
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [    3.416275] rt5670 0-001c: ASoC: mux Mono ADC L Mux has no paths
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [    3.423079] rt5670 0-001c: ASoC: mux INR Mux has no paths
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [    3.428468] rt5670 0-001c: ASoC: mux INL Mux has no paths
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    3.436891] snd_soc_card_amba sound.3:  rt5670-aif1 <-> e001a000.i2s mapping ok
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    3.445767] snd_soc_card_amba sound.3:  AMBARELLA_DUMMY_CODEC <-> e001a000.i2s mapping ok
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    3.987679] register "001c 4b4b
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    3.987679] " count=10
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    3.993442] addr=0x1c val=0x4b4b
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.383924] UBI: attaching mtd10 to ubi0
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.481324] UBI: scanning is finished
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.502707] UBI: attached mtd10 (name "RESERVEDPART", size 16 MiB) to ubi0
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.509565] UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.516433] UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.523143] UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.529992] UBI: good PEBs: 128, bad PEBs: 0, corrupted PEBs: 0
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.535905] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.543027] UBI: max/mean erase counter: 159/138, WL threshold: 4096, image sequence number: 1446616144
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.552388] UBI: available PEBs: 0, total reserved PEBs: 128, PEBs reserved for bad PEB handling: 20
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.561508] UBI: background thread "ubi_bgt0d" started, PID 251
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.582976] UBIFS: background thread "ubifs_bgt0_0" started, PID 255
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.649031] UBIFS: recovery needed
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.861542] UBIFS: recovery completed
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.865552] UBIFS: mounted UBI device 0, volume 0, name "angelo_rootfs"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.872182] UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.881316] UBIFS: FS size: 11808768 bytes (11 MiB, 93 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.890865] UBIFS: reserved for root: 0 bytes (0 KiB)
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    4.895911] UBIFS: media format: w4/r0 (latest is w4/r0), UUID 58118F19-FD07-40B5-9E34-791AD68E993A, small LPT model
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    8.873020] dsp_drv_probe_status(696): DSP probe op mode [3], enc mode [7].
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    8.912544] Vout notice: vout0:0 probed!
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    8.921431] Vout notice: vout1:1 probed!
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    8.925951] imgproc: module license 'unspecified' taints kernel.
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    8.931941] Disabling lock debugging due to kernel taint
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    8.938925] img: IMG KERN VIRT: WR [0x8a343000, 184 KB], RD [0x88870000, 36 KB].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    8.980194] iav_drv_probe_status(299): IAV probe status [255], dsp enc mode [3].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    9.008793] hw_pts_init(122): HW timer for pts is enabled.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    9.008823] hw_pts_init(129): Audio clock freq: 12288000, HW timer clock freq: 90000!
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.009103] VIN: vin0: probed!
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.012151] VIN: vin1: probed!
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    9.046856] Vout notice: CVBS:0@1 probed!
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [    9.083018] Vout notice: DBus-All:1@0 probed!
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    9.114619] dsplog dev init done, dev_id = 248:249.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [    9.115757] dsplog_printk: DSP log by Timer New
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.362628] SYSCLK:SO[24000000]
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.403779] VIN: JX-F22 init(2-lane mipi)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.407772] VIN: Version ID:0x04, Product ID:0x0f22
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.458882] usbcore: registered new interface driver usbfs
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.469467] usbcore: registered new interface driver hub
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.479864] usbcore: registered new device driver usb
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.507723] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.527379] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.559044] ehci-ambarella: AMBARELLA-EHCI Host Controller driver
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.569955] ambarella-ehci e0018000.ehci: EHCI Host Controller
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.575894] ambarella-ehci e0018000.ehci: new USB bus registered, assigned bus number 1
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.584125] ambarella-ehci e0018000.ehci: irq 39, io mem 0xe0018000
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.602610] ambarella-ehci e0018000.ehci: USB 2.0 started, EHCI 1.00
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.609027] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.615821] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.623034] usb usb1: Product: EHCI Host Controller
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.627890] usb usb1: Manufacturer: Linux 3.10.73+ ehci_hcd
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.633449] usb usb1: SerialNumber: AmbUSB
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.643000] hub 1-0:1.0: USB hub found
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.646766] hub 1-0:1.0: 2 ports detected
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.679365] ambarella-udc e0006000.udc: ambarella_udc: version 12 August 2015
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    9.729081] g_ether gadget: using random self ethernet address
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [    9.739557] g_ether gadget: using random host ethernet address
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.751499] usb0: MAC b2:b9:40:d2:25:3e
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.759934] usb0: HOST MAC 5a:e8:4a:a7:21:f6
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.764346] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.770942] g_ether gadget: g_ether ready
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.798594] usbcore: registered new interface driver asix
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.819378] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [    9.930775] cfg80211: Calling CRDA to update world regulatory domain
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   10.142634] usb 1-2: new high-speed USB device number 2 using ambarella-ehci
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   10.293673] usb 1-2: New USB device found, idVendor=0bda, idProduct=c82c
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   10.300378] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   10.307655] usb 1-2: Product: 802.11ac NIC
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   10.311893] usb 1-2: Manufacturer: Realtek
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   10.316138] usb 1-2: SerialNumber: 123456
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   10.678581] nl_process_session_cmd(165): NETLINK DBG: Correct connect cmd from app 392.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   10.678609] nl_send_msg(125): NETLINK DBG: Send session status 0 to session cmd 0 of app 392.
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.532642] RTW: module init start
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.536037] RTW: rtl88x2cu v5.12.1.6-0-ga6cacc154.20210615_COEX20210504-2323
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.547757] RTW: build time: Jun 18 2025 17:47:52
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.552450] RTW: rtl88x2cu BT-Coex version = COEX20210504-2323
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.558675] RTW: [HALMAC]55772M
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.558675] HALMAC_MAJOR_VER = 1
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.558675] HALMAC_PROTOTYPE_VER = 6
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.558675] HALMAC_MINOR_VER = 6
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.558675] HALMAC_PATCH_VER = 22
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.833724] RTW: HW EFUSE
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.836340] RTW: 0x000: 29 81 00 8F  FF 20 09 00  9A 04 E4 35  10 03 F1 EB  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.843387] RTW: 0x010: 5D 5D 5D 5D  5D 5D 51 51  51 51 51 FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.850406] RTW: 0x020: FF FF 5C 5C  5E 5E 59 58  57 56 55 54  50 50 50 50  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.857438] RTW: 0x030: FF FF FF FF  FF FF FF FF  FF FF 66 66  66 66 66 66  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.864466] RTW: 0x040: 57 57 57 57  57 FF FF FF  FF FF FF FF  5E 5E 61 62  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.871486] RTW: 0x050: 5C 5A 59 57  56 55 52 52  52 52 FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.878512] RTW: 0x060: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.885537] RTW: 0x070: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.892569] RTW: 0x080: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.899586] RTW: 0x090: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.906611] RTW: 0x0A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.913636] RTW: 0x0B0: FF FF FF FF  FF FF FF FF  7F 1D FF 00  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.920656] RTW: 0x0C0: FF 21 00 11  00 00 FF FF  20 33 03 FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.927681] RTW: 0x0D0: 1B 1B FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.934705] RTW: 0x0E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.941725] RTW: 0x0F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.948750] RTW: 0x100: F0 94 65 D3  58 C5 FF FF  CD F0 FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.955774] RTW: 0x110: 9D 9D FC A0  D8 D8 FD FF  35 8C FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.962799] RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.969819] RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.976843] RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.983867] RTW: 0x150: DA 0B 2C C8  FF 7E 02 00  E0 4C C8 22  01 09 03 52  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.990887] RTW: 0x160: 65 61 6C 74  65 6B 0E 03  38 30 32 2E  31 31 61 63  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   11.997912] RTW: 0x170: 20 4E 49 43  08 03 31 32  33 34 35 36  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.004937] RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.011957] RTW: 0x190: FD FE FF FF  00 00 21 0F  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.018986] RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.026010] RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.033034] RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.040054] RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.047078] RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.054103] RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.061122] RTW: 0x200: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.068148] RTW: 0x210: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.075173] RTW: 0x220: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.082193] RTW: 0x230: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.089218] RTW: 0x240: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.096374] RTW: 0x250: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.103411] RTW: 0x260: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.110430] RTW: 0x270: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.117458] RTW: 0x280: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.124483] RTW: 0x290: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.131503] RTW: 0x2A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.138528] RTW: 0x2B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.145552] RTW: 0x2C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.152583] RTW: 0x2D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.159599] RTW: 0x2E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.166624] RTW: 0x2F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.173665] RTW: hal_com_config_channel_plan chplan:0x7F
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.354687] RTW: [RF_PATH] ver_id.RF_TYPE:RF_2T2R
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.359384] RTW: [RF_PATH] HALSPEC's rf_reg_trx_path_bmp:0x33, rf_reg_path_avail_num:2, max_tx_cnt:2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.368520] RTW: [RF_PATH] PG's trx_path_bmp:0x33, max_tx_cnt:0
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.374431] RTW: [RF_PATH] Registry's trx_path_bmp:0x00, tx_path_lmt:0, rx_path_lmt:0
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.382240] RTW: [RF_PATH] HALDATA's trx_path_bmp:0x33, max_tx_cnt:2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.388586] RTW: [RF_PATH] HALDATA's rf_type:RF_2T2R, NumTotalRFPath:2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.395104] RTW: [TRX_Nss] HALSPEC - tx_nss:2, rx_nss:2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.400313] RTW: [TRX_Nss] Registry - tx_nss:0, rx_nss:0
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.405610] RTW: [TRX_Nss] HALDATA - tx_nss:2, rx_nss:2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.410813] RTW: txpath=0x3, rxpath=0x3
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.414639] RTW: txpath_1ss:0x1, num:1
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.418366] RTW: txpath_2ss:0x3, num:2
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.423548] RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.444584] RTW: default mapping domain:0x7f to regd_name:FCC
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.465972] RTW: rtw_ndev_init(wlan0) if1 mac_addr=3c:62:f0:3a:f5:a7
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   12.503240] usbcore: registered new interface driver rtl88x2cu
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   12.509061] RTW: module init ret=0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   13.179255] Bluetooth: Core ver 2.21
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   13.187959] NET: Registered protocol family 31
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   13.192392] Bluetooth: HCI device and connection manager initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   13.203522] Bluetooth: HCI socket layer initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   13.208396] Bluetooth: L2CAP socket layer initialized
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   13.213539] Bluetooth: SCO socket layer initialized
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   21.181818] type=1400 audit(1783555210.519:2): apparmor="STATUS" operation="profile_load" name="usr.bin.accessManager" pid=678 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   22.867604] rtk_btusb: Realtek Bluetooth USB driver ver 3.1.897f3bb.20201202-173003
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   22.903452] rtk_btcoex: rtk_btcoex_init: version: 1.2
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   22.942644] rtk_btcoex: create workqueue
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   22.962635] rtk_btcoex: alloc buffers 1408, 2240 for ev and l2
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   22.968553] rtk_btusb: btusb_probe intf->cur_altsetting->desc.bInterfaceNumber 0
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   22.984740] type=1400 audit(1783555212.329:3): apparmor="STATUS" operation="profile_load" name="usr.bin.ledmgrmain" pid=718 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.057477] rtk_btusb: btusb_probe can_wakeup 1, may wakeup 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.092734] rtk_btusb: patch_add
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.095956] rtk_btusb: auto suspend is disabled
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.100464] rtk_btusb: pid = 0xc82c
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.158626] rtk_btusb: patch_add: Reset gEVersion to 0xff
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.194306] rtk_btusb: set_bit(HCI_QUIRK_RESET_ON_CLOSE, &hdev->quirks);
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.253295] rtk_btusb: btusb_probe: done
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.267511] rtk_btusb: btusb_open start
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   23.271334] rtk_btusb: btusb_open hdev->promisc ==0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.276247] rtk_btusb: download_patch start
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.280411] rtk_btusb: chip type value: 0x73
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.284682] rtk_btusb: HCI reset.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.298308] usbcore: registered new interface driver rtk_btusb
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.304756] rtk_btusb: read_ver_rsp->lmp_subver = 0x8822
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.310063] rtk_btusb: read_ver_rsp->hci_rev = 0xc
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.314859] rtk_btusb: patch_entry->lmp_sub = 0x8822
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.319799] rtk_btusb: load_firmware start
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.323894] rtk_btusb: lmp_version = 0x8822
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.328055] rtk_btusb: config filename rtl8822cu_config
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.350426] rtk_btusb: size = 17
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.353756] rtk_btusb: Origin cfg len 6
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.357575] rtk_btusb: 55 ab 23 87 00 00
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.361482] rtk_btusb: bdaddr ofs 0030, 3C:62:F0:3A:F5:A8
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.366889] rtk_btusb: New cfg len 15
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.370530] rtk_btusb: 55 ab 23 87 09 00 30 00 06 a8 f5 3a f0 62 3c
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   23.376803] rtk_btusb: fw name is  rtl8822cu_fw
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   23.396915] rtk_btusb: This is not 8723a, use new patch style!
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.402843] rtk_btusb: rtk_get_eversion: gEVersion 255
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.409879] rtk_btusb: eversion->status = 0x0, eversion->version = 0x3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.416444] rtk_btusb: load_firmware: New gEVersion 3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.421488] rtk_btusb: rtk_get_fw_project_id: opcode 0, len 1, data 13
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.428017] rtk_btusb: lmp_version is 8822, project_id is 8822, match!
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.434538] rtk_btusb: fw_version = 0x99a25c3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.438870] rtk_btusb: number_of_total_patch = 3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.443483] rtk_btusb: chipID 4
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.446602] rtk_btusb: patch_length 0x788c
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.450676] rtk_btusb: start_offset 0x00005d00
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.455111] rtk_btusb: Svn version:    24075
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.459358] rtk_btusb: Coexistence: BTCOEX_20200529-1c1c
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.464659] rtk_btusb: buf_len = 0x789b
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.468604] rtk_btusb: fw: exists, config file: exists
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.473747] rtk_btusb: load_firmware done
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.477759] rtk_btusb: download_data start
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.873907] rtk_btusb: download_data done
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.877928] rtk_btusb: HCI reset.
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.894906] rtk_btusb: read_ver_rsp->lmp_subver = 0x25c3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.900225] rtk_btusb: read_ver_rsp->hci_rev = 0x99a
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.905237] rtk_btusb: patch_entry->lmp_sub = 0x8822
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.910193] rtk_btusb: Rtk patch end 0
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.913945] rtk_btusb: btusb_open set HCI_RUNNING
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.918814] rtk_btcoex: Open BTCOEX
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.922298] rtk_btusb: btusb_open end
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.934610] rtk_btcoex: BTCOEX hci_rev 0x099a
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.938953] rtk_btcoex: BTCOEX lmp_subver 0x25c3
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   23.963589] rtk_btusb: btusb_notify: hci0 evt 3
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   25.571028] type=1400 audit(1783555214.909:4): apparmor="STATUS" operation="profile_load" name="usr.bin.netsrvmgr" pid=853 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   26.236574] type=1400 audit(1783555215.579:5): apparmor="STATUS" operation="profile_load" name="usr.bin.nlmon" pid=945 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   27.343147] type=1400 audit(1767744016.659:6): apparmor="STATUS" operation="profile_load" name="usr.bin.parodus" pid=984 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   28.935247] type=1400 audit(1767744018.249:7): apparmor="STATUS" operation="profile_load" name="usr.bin.prvnmgr" pid=1066 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.warn kernel: [   29.225784] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Jan  7 00:00:44 XHC33AF5A7 user.info kernel: [   29.291612] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   29.428405] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   29.454084] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   29.480403] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   31.796516] type=1400 audit(1767744021.109:8): apparmor="STATUS" operation="profile_load" name="usr.bin.rdkcProvider" pid=1077 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   31.954318] type=1400 audit(1767744021.269:9): apparmor="STATUS" operation="profile_load" name="usr.bin.rtrouted" pid=1088 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   32.367595] type=1400 audit(1767744021.679:10): apparmor="STATUS" operation="profile_load" name="usr.bin.streamConfigurer" pid=1099 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   32.881168] type=1400 audit(1767744022.189:11): apparmor="STATUS" operation="profile_load" name="usr.bin.telemetry2_0" pid=1119 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   33.240027] type=1400 audit(1767744022.549:12): apparmor="STATUS" operation="profile_load" name="usr.bin.webconfig" pid=1130 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   36.644289] type=1400 audit(1767744025.959:13): apparmor="STATUS" operation="profile_load" name="usr.bin.webpa" pid=1141 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   37.115574] type=1400 audit(1767744026.429:14): apparmor="STATUS" operation="profile_load" name="usr.bin.wpa_supplicant" pid=1152 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   37.785342] type=1400 audit(1767744027.099:15): apparmor="STATUS" operation="profile_load" name="usr.local.bin.cvr_daemon" pid=1185 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   38.399194] type=1400 audit(1767744027.709:16): apparmor="STATUS" operation="profile_load" name="usr.local.bin.eventnotification" pid=1196 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   39.590984] type=1400 audit(1767744028.899:17): apparmor="STATUS" operation="profile_load" name="usr.local.bin.multi_client" pid=1226 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   42.610378] nl_process_session_cmd(165): NETLINK DBG: Correct connect cmd from app 1473.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   42.610406] nl_send_msg(125): NETLINK DBG: Send session status 0 to session cmd 0 of app 1473.
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   43.430137] type=1400 audit(1767744032.739:18): apparmor="STATUS" operation="profile_load" name="usr.local.bin.provpolld" pid=1358 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.610453] iav_goto_idle(881): Goto Idle from STATE_INIT.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.610474] dsp_set_op_mode(424): [debug]: dsp_set_op_mode: dsp->op_mode(3), op_mode(0)
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.610487] __reset_vin(217): dsp reset vin 
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.625561] dsp_set_op_mode(447): Entering DSP mode [0]...
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.660650] dsp_set_op_mode(454): [Done] Entered mode [0].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.769641] iav_check_vout(607): VOUT are all disabled.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.769672] check_dsp_mem_bandwidth(918): S2L chip ID [1], DSP memory bandwidth [259 MB/s], limit [1148 MB/s].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.769686] check_dsp_mem_size(1096): DSP DRAM size used [64 MB], limit [74 MB].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   45.769723] nl_send_msg(104): NETLINK DBG: Send request cmd 2 to app 1473.
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   46.030307] type=1400 audit(1767744035.319:19): apparmor="STATUS" operation="profile_load" name="usr.local.bin.sensor_daemon" pid=1771 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.054713] nl_process_request_status(219): NETLINK DBG: Request 2 succeeded from app 1473.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.054835] dsp_set_enc_sub_mode(406): Entering DSP ENC sub mode [2]
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.255450] handle_enc_msg(210): DSP DRAM Used: 72 MB, Limited: 74 MB
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.255497] dsp_set_enc_sub_mode(412): [Done] Entered sub mode.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.255548] nl_send_msg(104): NETLINK DBG: Send request cmd 0 to app 1473.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.389427] nl_process_request_status(219): NETLINK DBG: Request 0 succeeded from app 1473.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.390298] iav_enable_preview(776): preview enabled.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722281] iav_ioc_start_encode(1444): Wait 4 frames before encode for encode start delay.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722304] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722326] check_dsp_mem_bandwidth(918): S2L chip ID [1], DSP memory bandwidth [360 MB/s], limit [1148 MB/s].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722338] check_dsp_mem_size(1096): DSP DRAM size used [64 MB], limit [74 MB].
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722352] iav_ioc_start_encode(1454): Init encoder when start encoding from preview state.
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722401] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722425] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 10000
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722444] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+Jan  7 00:00:44 XHC33AF5A7 user.debug kernel: [   46.722456] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   47.914120] ambarella-i2c e8007000.i2c: No ACK from address 0x20, 0:0!
+Jan  7 00:00:44 XHC33AF5A7 user.err kernel: [   47.972689] ambarella-i2c e8007000.i2c: No ACK from address 0x88, 0:0!
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   48.676801] type=1400 audit(1767744037.969:20): apparmor="STATUS" operation="profile_load" name="usr.local.bin.thumbnail_upload" pid=2033 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   50.300566] type=1400 audit(1767744039.589:21): apparmor="STATUS" operation="profile_load" name="usr.local.bin.xstreamer" pid=2256 comm="apparmor_parser"
+Jan  7 00:00:44 XHC33AF5A7 user.notice kernel: [   52.960760] type=1400 audit(1767744042.249:22): apparmor="STATUS" operation="profile_load" name="usr.local.bin.xvisiond" pid=2422 comm="apparmor_parser"
+Jan  7 00:00:52 XHC33AF5A7 daemon.info nit: starting pid 3853, tty '': '/sbin/getty 115200 tts/1 vt102'
+Jan  7 02:23:35 XHC33AF5A7 user.warn kernel: [ 8626.527917] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 03:12:28 XHC33AF5A7 user.warn kernel: [11559.320233] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 04:01:15 XHC33AF5A7 user.warn kernel: [14485.745816] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 04:50:01 XHC33AF5A7 user.warn kernel: [17411.953670] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 06:27:35 XHC33AF5A7 user.warn kernel: [23265.800487] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 08:54:08 XHC33AF5A7 user.warn kernel: [32058.986323] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 09:42:58 XHC33AF5A7 user.warn kernel: [34988.713610] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 12:33:42 XHC33AF5A7 user.warn kernel: [45233.477897] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.204557] rtk_btcoex: LE connected, handle 0018, status 0x00, interval 24
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.211589] rtk_btusb: btusb_notify: hci0 evt 1
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.228496] rtk_btcoex: update_profile_connection: is_add 1, profile_index 1
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.239466] rtk_btcoex: update_profile_connection: btrtl_coex.profile_bitmap 0x02
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.258850] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[0] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.286758] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[1] = 1
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.300057] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[2] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.331991] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[3] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.354711] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[4] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.371411] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[5] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.388073] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[6] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.396308] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[7] = 0
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.405051] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.411280] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.426996] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0018
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.442647] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x02
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.449724] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x00
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.472653] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.478256] rtk_btcoex: update_hid_active_state: handle 0x0018, interval 24
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.489231] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.507902] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.515958] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0018
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.522451] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x12
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.529609] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x02
+Jan  7 12:47:05 XHC33AF5A7 user.info kernel: [46036.536656] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+Jan  7 12:47:06 XHC33AF5A7 user.info kernel: [46036.901673] rtk_btcoex: update_hid_active_state: handle 0x0018, interval 54
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.093574] rtk_btcoex: disconn cmpl evt: status 0x00, handle 0018, reason 0x13
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.101032] rtk_btusb: btusb_notify: hci0 evt 2
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.121344] rtk_btcoex: process disconn complete event.
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.130332] rtk_btcoex: update_profile_connection: is_add 0, profile_index 1
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.137776] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[1] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.145884] rtk_btcoex: update_profile_connection: btrtl_coex.profile_bitmap 0x00
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.153551] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[0] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.161403] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[1] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.172079] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[2] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.180435] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[3] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.188757] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[4] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.212658] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[5] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.220475] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[6] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.232736] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[7] = 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.252840] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 2
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.259047] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 0
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.279069] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x00
+Jan  7 12:48:53 XHC33AF5A7 user.info kernel: [46144.286173] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+Jan  7 13:22:41 XHC33AF5A7 user.warn kernel: [48171.893040] RTW: OnDeAuth(wlan0) reason=3, ta=cc:79:cf:90:8a:5d, ignore=0

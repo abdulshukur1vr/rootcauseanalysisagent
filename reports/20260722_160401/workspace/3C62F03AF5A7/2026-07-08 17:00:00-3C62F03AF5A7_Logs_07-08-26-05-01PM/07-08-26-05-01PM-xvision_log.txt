@@ -1,0 +1,677 @@
+starting va_daemon-process !!!!
+start xvisiond service !!!!
+Current aspect ratio in the camera is 16_9
+Passing the aspect ratio 1 to xvision
+Conf file /etc/debug.ini open success
+260707-02:34:36.037865 [mod=BREAKPAD, lvl=INFO] [tid=2614] breakpadwrap.cpp(21):Registering breakpad handler... 
+260707-02:34:36.078087 [mod=XCV, lvl=INFO] [tid=2614] xvisiond.cpp(606): OD_FRAME upload is enabled. od_frame_upload_enabled 1!!!
+260707-02:34:36.078203 [mod=XCV, lvl=INFO] [tid=2614] xvisiond.cpp(611): smart thumbnail is enabled. rfc_smart_thumbnail_enabled 1!!!
+260707-02:34:36.078258 [mod=XCV, lvl=INFO] [tid=2614]  VA_Engine : RDKCVA, frame_type : YUV
+260707-02:34:36.116056 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] rtMessageInit(611): Initialized rtMessage
+260707-02:34:36.129513 [mod=RBUS, lvl=INFO] [tid=2614] rbus open for component: t2_lib_videoAnalytics
+260707-02:34:36.186594 [mod=RBUS, lvl=INFO] [tid=2614]  rbus open (t2_lib_videoAnalytics) success
+260707-02:34:36.263546 [mod=RBUS, lvl=ERROR] [tid=2614] rbus_get for Telemetry.ReportProfiles.videoAnalytics.EventMarkerList failed with error: Entry not found error
+260707-02:34:36.278391 [mod=RBUS, lvl=INFO] [tid=2614] Telemetry.ReportProfiles.ProfilesUpdated subscribe retries succeeded
+260707-02:34:36.283682 [mod=XSTREAM, lvl=INFO] [tid=2614] stream_hal_raw_init(1488): ENCODE is ready
+260707-02:34:36.359632 [mod=XSTREAM, lvl=INFO] [tid=2614] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 1 width 512 height 288
+260707-02:34:36.359910 [mod=XSTREAM, lvl=INFO] [tid=2614] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260707-02:34:36.360020 [mod=XCV, lvl=INFO] [tid=2614]  iavInterface.cpp(241) Init_iav done: g_cur_ydata:0x70AB3008, width:512, height:288
+260707-02:34:36.361528 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] Init(58): day mode sensitivity: 1.00, night mode sensitivity: 1.00
+BlobTracking()
+MixtureOfGaussianV2BGS()
+260707-02:34:36.507589 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAInit(304): Using MixtureOfGaussianV2BGS
+260707-02:34:36.507696 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAInit(338): xVision runs on 320*240 YUV data
+260707-02:34:36.507773 [mod=XCV, lvl=INFO] [tid=2614] XCV Day mode sensitivity is set to 0.000000.
+260707-02:34:36.507825 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] 
+set property: 
+260707-02:34:36.507938 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetProperty(160): Inavalid argument to be set. Setting it to default disable.260707-02:34:36.507992 [mod=XCV, lvl=INFO] [tid=2614] 	Set RDKC_PROP_HUMAN_ENABLED OK.
+260707-02:34:36.508041 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetProperty(170): Inavalid argument to be set. Setting it to default disable.260707-02:34:36.508082 [mod=XCV, lvl=INFO] [tid=2614] 	Set RDKC_PROP_SCENE_ENABLED OK.
+260707-02:34:36.508123 [mod=XCV, lvl=INFO] [tid=2614] 	Set RDKC_PROP_SENSITIVITY OK.
+260707-02:34:36.508163 [mod=XCV, lvl=INFO] [tid=2614] 	Set RDKC_PROP_UPSCALE_RESOLUTION OK.
+260707-02:34:36.508208 [mod=XCV, lvl=INFO] [tid=2614] xvisiond.cpp(860) Engine Initialized successfully
+260707-02:34:36.508467 [mod=XCV, lvl=WARN] [tid=2614] xvisiond.cpp(323): Loading DOI settings file failed... Using default value DEFAULT_DOI_OVERLAP_THRESHOLD : 0.000000
+260707-02:34:36.508813 [mod=XCV, lvl=WARN] [tid=2614] xvisiond.cpp(347): Loading delivery settings file failed... Using default value DEFAULT_DELIVERY_UPSCALE_FACTOR
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260707-02:34:36.574225 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[0] : 0.009121
+260707-02:34:36.574356 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[1] : 0.000000
+260707-02:34:36.574421 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[2] : 0.989221
+260707-02:34:36.574505 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[3] : 0.000000
+260707-02:34:36.574558 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[4] : 0.995025
+260707-02:34:36.574607 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[5] : 0.970501
+260707-02:34:36.574653 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[6] : 0.991708
+260707-02:34:36.574699 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[7] : 1.000000
+260707-02:34:36.574746 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[8] : 0.008292
+260707-02:34:36.574791 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[9] : 1.000000
+260707-02:34:36.574837 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[10] : 0.002488
+260707-02:34:36.574881 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[11] : 0.000000
+260707-02:34:36.574928 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[12] : 0.009121
+260707-02:34:36.574974 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[13] : 0.000000
+260707-02:34:36.575372 [mod=XCV, lvl=INFO] [tid=2614] xvisiond.cpp(897): enabling md mode. od_mode[1]
+260707-02:34:36.634658 [mod=XCV, lvl=WARN] [tid=2614] xcvInterface.cpp(893):VAI Results Structure has not allocated yet!!!
+260707-02:34:46.536206 [mod=XCV, lvl=INFO] [tid=2614] xvisiond.cpp(814): Setting ROI, Coordinates are: [[0.009121-0.000000][0.989221-0.000000][0.995025-0.970501][0.991708-1.000000][0.008292-1.000000][0.002488-0.000000][0.009121-0.000000]]
+260707-02:34:46.536365 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[0] : 0.009121
+260707-02:34:46.536436 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[1] : 0.000000
+260707-02:34:46.536493 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[2] : 0.989221
+260707-02:34:46.536543 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[3] : 0.000000
+260707-02:34:46.536589 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[4] : 0.995025
+260707-02:34:46.536634 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[5] : 0.970501
+260707-02:34:46.536678 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[6] : 0.991708
+260707-02:34:46.536723 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[7] : 1.000000
+260707-02:34:46.536769 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[8] : 0.008292
+260707-02:34:46.536813 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[9] : 1.000000
+260707-02:34:46.536858 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[10] : 0.002488
+260707-02:34:46.536902 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[11] : 0.000000
+260707-02:34:46.536949 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[12] : 0.009121
+260707-02:34:46.536993 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVASetROI(1178): coords[13] : 0.000000
+260707-02:34:54.867958 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260707-02:35:20.065402 [mod=RBUS, lvl=ERROR] [tid=3163] rbus_get for Telemetry.ReportProfiles.videoAnalytics.EventMarkerList failed with error: Entry not found error
+07.07.2026_02:37.32 ROI=true!
+07.07.2026_02:37.33 DOI=false!
+07.07.2026_02:45.05 ROI=true!
+07.07.2026_02:45.05 DOI=false!
+07.07.2026_02:52.39 ROI=true!
+07.07.2026_02:52.39 DOI=false!
+07.07.2026_03:00.11 ROI=true!
+07.07.2026_03:00.11 DOI=false!
+07.07.2026_03:07.45 ROI=true!
+07.07.2026_03:07.45 DOI=false!
+07.07.2026_03:15.18 ROI=true!
+07.07.2026_03:15.18 DOI=false!
+07.07.2026_03:22.51 ROI=true!
+07.07.2026_03:22.51 DOI=false!
+07.07.2026_03:30.24 ROI=true!
+07.07.2026_03:30.24 DOI=false!
+07.07.2026_03:37.57 ROI=true!
+07.07.2026_03:37.57 DOI=false!
+07.07.2026_03:45.30 ROI=true!
+07.07.2026_03:45.31 DOI=false!
+07.07.2026_03:53.03 ROI=true!
+07.07.2026_03:53.03 DOI=false!
+07.07.2026_04:00.36 ROI=true!
+07.07.2026_04:00.36 DOI=false!
+07.07.2026_04:08.09 ROI=true!
+07.07.2026_04:08.09 DOI=false!
+07.07.2026_04:15.42 ROI=true!
+07.07.2026_04:15.42 DOI=false!
+07.07.2026_04:23.15 ROI=true!
+07.07.2026_04:23.15 DOI=false!
+07.07.2026_04:30.47 ROI=true!
+07.07.2026_04:30.48 DOI=false!
+07.07.2026_04:38.20 ROI=true!
+07.07.2026_04:38.21 DOI=false!
+07.07.2026_04:45.53 ROI=true!
+07.07.2026_04:45.53 DOI=false!
+07.07.2026_04:53.26 ROI=true!
+07.07.2026_04:53.26 DOI=false!
+07.07.2026_05:00.59 ROI=true!
+07.07.2026_05:00.59 DOI=false!
+07.07.2026_05:08.31 ROI=true!
+07.07.2026_05:08.32 DOI=false!
+07.07.2026_05:16.05 ROI=true!
+07.07.2026_05:16.05 DOI=false!
+07.07.2026_05:23.39 ROI=true!
+07.07.2026_05:23.39 DOI=false!
+07.07.2026_05:31.13 ROI=true!
+07.07.2026_05:31.13 DOI=false!
+07.07.2026_05:38.48 ROI=true!
+07.07.2026_05:38.49 DOI=false!
+07.07.2026_05:46.24 ROI=true!
+07.07.2026_05:46.24 DOI=false!
+07.07.2026_05:53.58 ROI=true!
+07.07.2026_05:53.58 DOI=false!
+07.07.2026_06:01.32 ROI=true!
+07.07.2026_06:01.32 DOI=false!
+07.07.2026_06:09.07 ROI=true!
+07.07.2026_06:09.07 DOI=false!
+07.07.2026_06:16.41 ROI=true!
+07.07.2026_06:16.41 DOI=false!
+07.07.2026_06:24.15 ROI=true!
+07.07.2026_06:24.15 DOI=false!
+07.07.2026_06:31.50 ROI=true!
+07.07.2026_06:31.50 DOI=false!
+07.07.2026_06:39.23 ROI=true!
+07.07.2026_06:39.24 DOI=false!
+07.07.2026_06:46.57 ROI=true!
+07.07.2026_06:46.57 DOI=false!
+07.07.2026_06:54.33 ROI=true!
+07.07.2026_06:54.34 DOI=false!
+07.07.2026_07:02.07 ROI=true!
+07.07.2026_07:02.07 DOI=false!
+07.07.2026_07:09.40 ROI=true!
+07.07.2026_07:09.40 DOI=false!
+07.07.2026_07:17.14 ROI=true!
+07.07.2026_07:17.14 DOI=false!
+07.07.2026_07:24.48 ROI=true!
+07.07.2026_07:24.49 DOI=false!
+07.07.2026_07:32.24 ROI=true!
+07.07.2026_07:32.24 DOI=false!
+07.07.2026_07:39.59 ROI=true!
+07.07.2026_07:39.59 DOI=false!
+07.07.2026_07:47.33 ROI=true!
+07.07.2026_07:47.33 DOI=false!
+07.07.2026_07:55.08 ROI=true!
+07.07.2026_07:55.08 DOI=false!
+07.07.2026_08:02.43 ROI=true!
+07.07.2026_08:02.43 DOI=false!
+07.07.2026_08:10.17 ROI=true!
+07.07.2026_08:10.17 DOI=false!
+260707-08:17:28.182120 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!07.07.2026_08:17.54 ROI=true!
+07.07.2026_08:17.54 DOI=false!
+260707-08:21:36.522820 [mod=RBUS, lvl=ERROR] [tid=3163] rbus_get for Telemetry.ReportProfiles.videoAnalytics.EventMarkerList failed with error: Entry not found error
+07.07.2026_08:25.28 ROI=true!
+07.07.2026_08:25.28 DOI=false!
+07.07.2026_08:33.05 ROI=true!
+07.07.2026_08:33.05 DOI=false!
+07.07.2026_08:40.38 ROI=true!
+07.07.2026_08:40.38 DOI=false!
+07.07.2026_08:48.10 ROI=true!
+07.07.2026_08:48.10 DOI=false!
+07.07.2026_08:55.44 ROI=true!
+07.07.2026_08:55.44 DOI=false!
+07.07.2026_09:03.18 ROI=true!
+07.07.2026_09:03.18 DOI=false!
+07.07.2026_09:10.52 ROI=true!
+07.07.2026_09:10.52 DOI=false!
+07.07.2026_09:18.26 ROI=true!
+07.07.2026_09:18.27 DOI=false!
+07.07.2026_09:26.00 ROI=true!
+07.07.2026_09:26.00 DOI=false!
+07.07.2026_09:33.33 ROI=true!
+07.07.2026_09:33.33 DOI=false!
+07.07.2026_09:41.07 ROI=true!
+07.07.2026_09:41.07 DOI=false!
+07.07.2026_09:48.41 ROI=true!
+07.07.2026_09:48.41 DOI=false!
+07.07.2026_09:56.15 ROI=true!
+07.07.2026_09:56.15 DOI=false!
+07.07.2026_10:03.48 ROI=true!
+07.07.2026_10:03.48 DOI=false!
+07.07.2026_10:11.21 ROI=true!
+07.07.2026_10:11.21 DOI=false!
+07.07.2026_10:18.55 ROI=true!
+07.07.2026_10:18.55 DOI=false!
+07.07.2026_10:26.29 ROI=true!
+07.07.2026_10:26.29 DOI=false!
+07.07.2026_10:34.03 ROI=true!
+07.07.2026_10:34.03 DOI=false!
+07.07.2026_10:41.36 ROI=true!
+07.07.2026_10:41.36 DOI=false!
+07.07.2026_10:49.10 ROI=true!
+07.07.2026_10:49.10 DOI=false!
+07.07.2026_10:56.43 ROI=true!
+07.07.2026_10:56.43 DOI=false!
+07.07.2026_11:04.17 ROI=true!
+07.07.2026_11:04.17 DOI=false!
+07.07.2026_11:11.52 ROI=true!
+07.07.2026_11:11.52 DOI=false!
+07.07.2026_11:19.25 ROI=true!
+07.07.2026_11:19.26 DOI=false!
+07.07.2026_11:26.58 ROI=true!
+07.07.2026_11:26.58 DOI=false!
+07.07.2026_11:34.33 ROI=true!
+07.07.2026_11:34.33 DOI=false!
+07.07.2026_11:42.06 ROI=true!
+07.07.2026_11:42.06 DOI=false!
+07.07.2026_11:49.40 ROI=true!
+07.07.2026_11:49.41 DOI=false!
+07.07.2026_11:57.14 ROI=true!
+07.07.2026_11:57.14 DOI=false!
+07.07.2026_12:04.48 ROI=true!
+07.07.2026_12:04.48 DOI=false!
+07.07.2026_12:12.22 ROI=true!
+07.07.2026_12:12.22 DOI=false!
+07.07.2026_12:19.55 ROI=true!
+07.07.2026_12:19.55 DOI=false!
+07.07.2026_12:27.29 ROI=true!
+07.07.2026_12:27.29 DOI=false!
+07.07.2026_12:35.05 ROI=true!
+07.07.2026_12:35.05 DOI=false!
+07.07.2026_12:42.38 ROI=true!
+07.07.2026_12:42.38 DOI=false!
+260707-12:43:46.704981 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260707-12:43:46.861111 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260707-12:43:47.035466 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!07.07.2026_12:50.13 ROI=true!
+07.07.2026_12:50.13 DOI=false!
+07.07.2026_12:57.45 ROI=true!
+07.07.2026_12:57.45 DOI=false!
+07.07.2026_13:05.19 ROI=true!
+07.07.2026_13:05.19 DOI=false!
+07.07.2026_13:12.52 ROI=true!
+07.07.2026_13:12.53 DOI=false!
+07.07.2026_13:20.27 ROI=true!
+07.07.2026_13:20.27 DOI=false!
+07.07.2026_13:28.00 ROI=true!
+07.07.2026_13:28.00 DOI=false!
+07.07.2026_13:35.34 ROI=true!
+07.07.2026_13:35.35 DOI=false!
+07.07.2026_13:43.08 ROI=true!
+07.07.2026_13:43.08 DOI=false!
+07.07.2026_13:50.42 ROI=true!
+07.07.2026_13:50.42 DOI=false!
+07.07.2026_13:58.16 ROI=true!
+07.07.2026_13:58.16 DOI=false!
+07.07.2026_14:05.49 ROI=true!
+07.07.2026_14:05.49 DOI=false!
+07.07.2026_14:13.23 ROI=true!
+07.07.2026_14:13.23 DOI=false!
+07.07.2026_14:20.57 ROI=true!
+07.07.2026_14:20.57 DOI=false!
+07.07.2026_14:28.32 ROI=true!
+07.07.2026_14:28.32 DOI=false!
+07.07.2026_14:36.05 ROI=true!
+07.07.2026_14:36.05 DOI=false!
+07.07.2026_14:43.38 ROI=true!
+07.07.2026_14:43.38 DOI=false!
+07.07.2026_14:51.12 ROI=true!
+07.07.2026_14:51.12 DOI=false!
+07.07.2026_14:58.45 ROI=true!
+07.07.2026_14:58.45 DOI=false!
+07.07.2026_15:06.19 ROI=true!
+07.07.2026_15:06.19 DOI=false!
+07.07.2026_15:13.53 ROI=true!
+07.07.2026_15:13.53 DOI=false!
+07.07.2026_15:21.26 ROI=true!
+07.07.2026_15:21.26 DOI=false!
+07.07.2026_15:28.59 ROI=true!
+07.07.2026_15:28.59 DOI=false!
+07.07.2026_15:36.33 ROI=true!
+07.07.2026_15:36.33 DOI=false!
+07.07.2026_15:44.07 ROI=true!
+07.07.2026_15:44.07 DOI=false!
+07.07.2026_15:51.42 ROI=true!
+07.07.2026_15:51.42 DOI=false!
+07.07.2026_15:59.15 ROI=true!
+07.07.2026_15:59.15 DOI=false!
+07.07.2026_16:06.47 ROI=true!
+07.07.2026_16:06.47 DOI=false!
+07.07.2026_16:14.21 ROI=true!
+07.07.2026_16:14.21 DOI=false!
+07.07.2026_16:21.55 ROI=true!
+07.07.2026_16:21.55 DOI=false!
+07.07.2026_16:29.29 ROI=true!
+07.07.2026_16:29.30 DOI=false!
+07.07.2026_16:37.03 ROI=true!
+07.07.2026_16:37.04 DOI=false!
+07.07.2026_16:44.38 ROI=true!
+07.07.2026_16:44.38 DOI=false!
+07.07.2026_16:52.12 ROI=true!
+07.07.2026_16:52.12 DOI=false!
+07.07.2026_16:59.46 ROI=true!
+07.07.2026_16:59.46 DOI=false!
+07.07.2026_17:07.19 ROI=true!
+07.07.2026_17:07.19 DOI=false!
+07.07.2026_17:14.52 ROI=true!
+07.07.2026_17:14.52 DOI=false!
+07.07.2026_17:22.27 ROI=true!
+07.07.2026_17:22.28 DOI=false!
+07.07.2026_17:30.01 ROI=true!
+07.07.2026_17:30.01 DOI=false!
+07.07.2026_17:37.35 ROI=true!
+07.07.2026_17:37.35 DOI=false!
+07.07.2026_17:45.09 ROI=true!
+07.07.2026_17:45.09 DOI=false!
+07.07.2026_17:52.42 ROI=true!
+07.07.2026_17:52.43 DOI=false!
+07.07.2026_18:00.16 ROI=true!
+07.07.2026_18:00.16 DOI=false!
+07.07.2026_18:07.50 ROI=true!
+07.07.2026_18:07.50 DOI=false!
+07.07.2026_18:15.24 ROI=true!
+07.07.2026_18:15.24 DOI=false!
+260707-18:22:30.184294 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!07.07.2026_18:22.58 ROI=true!
+07.07.2026_18:22.58 DOI=false!
+07.07.2026_18:30.31 ROI=true!
+07.07.2026_18:30.31 DOI=false!
+07.07.2026_18:38.04 ROI=true!
+07.07.2026_18:38.05 DOI=false!
+07.07.2026_18:45.39 ROI=true!
+07.07.2026_18:45.39 DOI=false!
+07.07.2026_18:53.12 ROI=true!
+07.07.2026_18:53.12 DOI=false!
+07.07.2026_19:00.47 ROI=true!
+07.07.2026_19:00.47 DOI=false!
+07.07.2026_19:08.21 ROI=true!
+07.07.2026_19:08.21 DOI=false!
+07.07.2026_19:15.53 ROI=true!
+07.07.2026_19:15.53 DOI=false!
+07.07.2026_19:23.27 ROI=true!
+07.07.2026_19:23.27 DOI=false!
+07.07.2026_19:30.59 ROI=true!
+07.07.2026_19:31.00 DOI=false!
+07.07.2026_19:38.34 ROI=true!
+07.07.2026_19:38.35 DOI=false!
+07.07.2026_19:46.08 ROI=true!
+07.07.2026_19:46.09 DOI=false!
+07.07.2026_19:53.42 ROI=true!
+07.07.2026_19:53.42 DOI=false!
+07.07.2026_20:01.17 ROI=true!
+07.07.2026_20:01.17 DOI=false!
+07.07.2026_20:08.50 ROI=true!
+07.07.2026_20:08.50 DOI=false!
+07.07.2026_20:16.25 ROI=true!
+07.07.2026_20:16.25 DOI=false!
+07.07.2026_20:23.59 ROI=true!
+07.07.2026_20:23.59 DOI=false!
+07.07.2026_20:31.33 ROI=true!
+07.07.2026_20:31.33 DOI=false!
+07.07.2026_20:39.07 ROI=true!
+07.07.2026_20:39.07 DOI=false!
+07.07.2026_20:46.40 ROI=true!
+07.07.2026_20:46.40 DOI=false!
+07.07.2026_20:54.14 ROI=true!
+07.07.2026_20:54.14 DOI=false!
+07.07.2026_21:01.49 ROI=true!
+07.07.2026_21:01.49 DOI=false!
+07.07.2026_21:09.22 ROI=true!
+07.07.2026_21:09.22 DOI=false!
+07.07.2026_21:16.56 ROI=true!
+07.07.2026_21:16.56 DOI=false!
+07.07.2026_21:24.30 ROI=true!
+07.07.2026_21:24.30 DOI=false!
+07.07.2026_21:32.06 ROI=true!
+07.07.2026_21:32.06 DOI=false!
+07.07.2026_21:39.38 ROI=true!
+07.07.2026_21:39.38 DOI=false!
+07.07.2026_21:47.13 ROI=true!
+07.07.2026_21:47.13 DOI=false!
+07.07.2026_21:54.47 ROI=true!
+07.07.2026_21:54.47 DOI=false!
+07.07.2026_22:02.22 ROI=true!
+07.07.2026_22:02.22 DOI=false!
+07.07.2026_22:09.58 ROI=true!
+07.07.2026_22:09.58 DOI=false!
+07.07.2026_22:17.30 ROI=true!
+07.07.2026_22:17.30 DOI=false!
+07.07.2026_22:25.04 ROI=true!
+07.07.2026_22:25.04 DOI=false!
+07.07.2026_22:32.38 ROI=true!
+07.07.2026_22:32.38 DOI=false!
+260707-22:37:43.748263 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260707-22:37:43.903809 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260707-22:37:44.066036 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!07.07.2026_22:40.12 ROI=true!
+07.07.2026_22:40.13 DOI=false!
+07.07.2026_22:47.47 ROI=true!
+07.07.2026_22:47.47 DOI=false!
+07.07.2026_22:55.21 ROI=true!
+07.07.2026_22:55.21 DOI=false!
+07.07.2026_23:02.55 ROI=true!
+07.07.2026_23:02.55 DOI=false!
+07.07.2026_23:10.29 ROI=true!
+07.07.2026_23:10.29 DOI=false!
+07.07.2026_23:18.02 ROI=true!
+07.07.2026_23:18.02 DOI=false!
+07.07.2026_23:25.38 ROI=true!
+07.07.2026_23:25.38 DOI=false!
+07.07.2026_23:33.12 ROI=true!
+07.07.2026_23:33.12 DOI=false!
+07.07.2026_23:40.46 ROI=true!
+07.07.2026_23:40.46 DOI=false!
+07.07.2026_23:48.19 ROI=true!
+07.07.2026_23:48.19 DOI=false!
+07.07.2026_23:55.53 ROI=true!
+07.07.2026_23:55.53 DOI=false!
+08.07.2026_00:03.27 ROI=true!
+08.07.2026_00:03.27 DOI=false!
+08.07.2026_00:11.01 ROI=true!
+08.07.2026_00:11.01 DOI=false!
+08.07.2026_00:18.34 ROI=true!
+08.07.2026_00:18.35 DOI=false!
+08.07.2026_00:26.08 ROI=true!
+08.07.2026_00:26.08 DOI=false!
+08.07.2026_00:33.43 ROI=true!
+08.07.2026_00:33.43 DOI=false!
+260708-00:38:26.149863 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!08.07.2026_00:41.17 ROI=true!
+08.07.2026_00:41.17 DOI=false!
+08.07.2026_00:48.50 ROI=true!
+08.07.2026_00:48.50 DOI=false!
+08.07.2026_00:56.27 ROI=true!
+08.07.2026_00:56.27 DOI=false!
+08.07.2026_01:04.00 ROI=true!
+08.07.2026_01:04.00 DOI=false!
+08.07.2026_01:11.35 ROI=true!
+08.07.2026_01:11.35 DOI=false!
+08.07.2026_01:19.09 ROI=true!
+08.07.2026_01:19.09 DOI=false!
+08.07.2026_01:26.41 ROI=true!
+08.07.2026_01:26.42 DOI=false!
+08.07.2026_01:34.15 ROI=true!
+08.07.2026_01:34.15 DOI=false!
+08.07.2026_01:41.50 ROI=true!
+08.07.2026_01:41.50 DOI=false!
+08.07.2026_01:49.24 ROI=true!
+08.07.2026_01:49.24 DOI=false!
+08.07.2026_01:56.59 ROI=true!
+08.07.2026_01:56.59 DOI=false!
+08.07.2026_02:04.33 ROI=true!
+08.07.2026_02:04.33 DOI=false!
+08.07.2026_02:12.06 ROI=true!
+08.07.2026_02:12.06 DOI=false!
+08.07.2026_02:19.39 ROI=true!
+08.07.2026_02:19.39 DOI=false!
+08.07.2026_02:27.12 ROI=true!
+08.07.2026_02:27.13 DOI=false!
+08.07.2026_02:34.49 ROI=true!
+08.07.2026_02:34.49 DOI=false!
+08.07.2026_02:42.21 ROI=true!
+08.07.2026_02:42.21 DOI=false!
+08.07.2026_02:49.55 ROI=true!
+08.07.2026_02:49.55 DOI=false!
+08.07.2026_02:57.29 ROI=true!
+08.07.2026_02:57.29 DOI=false!
+08.07.2026_03:05.04 ROI=true!
+08.07.2026_03:05.04 DOI=false!
+08.07.2026_03:12.37 ROI=true!
+08.07.2026_03:12.37 DOI=false!
+08.07.2026_03:20.10 ROI=true!
+08.07.2026_03:20.10 DOI=false!
+08.07.2026_03:27.45 ROI=true!
+08.07.2026_03:27.45 DOI=false!
+08.07.2026_03:35.18 ROI=true!
+08.07.2026_03:35.18 DOI=false!
+08.07.2026_03:42.51 ROI=true!
+08.07.2026_03:42.51 DOI=false!
+08.07.2026_03:50.25 ROI=true!
+08.07.2026_03:50.25 DOI=false!
+08.07.2026_03:57.59 ROI=true!
+08.07.2026_03:58.00 DOI=false!
+08.07.2026_04:05.34 ROI=true!
+08.07.2026_04:05.34 DOI=false!
+08.07.2026_04:13.09 ROI=true!
+08.07.2026_04:13.09 DOI=false!
+08.07.2026_04:20.41 ROI=true!
+08.07.2026_04:20.41 DOI=false!
+08.07.2026_04:28.15 ROI=true!
+08.07.2026_04:28.15 DOI=false!
+08.07.2026_04:35.48 ROI=true!
+08.07.2026_04:35.48 DOI=false!
+08.07.2026_04:43.22 ROI=true!
+08.07.2026_04:43.22 DOI=false!
+08.07.2026_04:50.57 ROI=true!
+08.07.2026_04:50.57 DOI=false!
+08.07.2026_04:58.30 ROI=true!
+08.07.2026_04:58.30 DOI=false!
+08.07.2026_05:06.04 ROI=true!
+08.07.2026_05:06.05 DOI=false!
+08.07.2026_05:13.38 ROI=true!
+08.07.2026_05:13.38 DOI=false!
+08.07.2026_05:21.12 ROI=true!
+08.07.2026_05:21.12 DOI=false!
+08.07.2026_05:28.46 ROI=true!
+08.07.2026_05:28.46 DOI=false!
+08.07.2026_05:36.21 ROI=true!
+08.07.2026_05:36.21 DOI=false!
+08.07.2026_05:43.55 ROI=true!
+08.07.2026_05:43.56 DOI=false!
+08.07.2026_05:51.28 ROI=true!
+08.07.2026_05:51.28 DOI=false!
+08.07.2026_05:59.02 ROI=true!
+08.07.2026_05:59.02 DOI=false!
+08.07.2026_06:06.36 ROI=true!
+08.07.2026_06:06.36 DOI=false!
+08.07.2026_06:14.10 ROI=true!
+08.07.2026_06:14.10 DOI=false!
+08.07.2026_06:21.44 ROI=true!
+08.07.2026_06:21.44 DOI=false!
+08.07.2026_06:29.18 ROI=true!
+08.07.2026_06:29.18 DOI=false!
+08.07.2026_06:36.52 ROI=true!
+08.07.2026_06:36.52 DOI=false!
+08.07.2026_06:44.25 ROI=true!
+08.07.2026_06:44.25 DOI=false!
+08.07.2026_06:51.58 ROI=true!
+08.07.2026_06:51.58 DOI=false!
+08.07.2026_06:59.33 ROI=true!
+08.07.2026_06:59.33 DOI=false!
+08.07.2026_07:07.06 ROI=true!
+08.07.2026_07:07.07 DOI=false!
+08.07.2026_07:14.40 ROI=true!
+08.07.2026_07:14.40 DOI=false!
+08.07.2026_07:22.12 ROI=true!
+08.07.2026_07:22.13 DOI=false!
+08.07.2026_07:29.47 ROI=true!
+08.07.2026_07:29.47 DOI=false!
+08.07.2026_07:37.21 ROI=true!
+08.07.2026_07:37.21 DOI=false!
+08.07.2026_07:44.54 ROI=true!
+08.07.2026_07:44.54 DOI=false!
+08.07.2026_07:52.29 ROI=true!
+08.07.2026_07:52.29 DOI=false!
+08.07.2026_08:00.04 ROI=true!
+08.07.2026_08:00.04 DOI=false!
+08.07.2026_08:07.36 ROI=true!
+08.07.2026_08:07.37 DOI=false!
+08.07.2026_08:15.10 ROI=true!
+08.07.2026_08:15.10 DOI=false!
+08.07.2026_08:22.44 ROI=true!
+08.07.2026_08:22.45 DOI=false!
+08.07.2026_08:30.19 ROI=true!
+08.07.2026_08:30.19 DOI=false!
+260708-08:32:55.999261 [mod=RBUS, lvl=ERROR] [tid=3163] rbus_get for Telemetry.ReportProfiles.videoAnalytics.EventMarkerList failed with error: Entry not found error
+08.07.2026_08:37.53 ROI=true!
+08.07.2026_08:37.53 DOI=false!
+08.07.2026_08:45.26 ROI=true!
+08.07.2026_08:45.26 DOI=false!
+08.07.2026_08:53.00 ROI=true!
+08.07.2026_08:53.00 DOI=false!
+08.07.2026_09:00.33 ROI=true!
+08.07.2026_09:00.33 DOI=false!
+08.07.2026_09:08.07 ROI=true!
+08.07.2026_09:08.07 DOI=false!
+08.07.2026_09:15.42 ROI=true!
+08.07.2026_09:15.42 DOI=false!
+08.07.2026_09:23.15 ROI=true!
+08.07.2026_09:23.15 DOI=false!
+08.07.2026_09:30.49 ROI=true!
+08.07.2026_09:30.49 DOI=false!
+08.07.2026_09:38.22 ROI=true!
+08.07.2026_09:38.22 DOI=false!
+08.07.2026_09:45.56 ROI=true!
+08.07.2026_09:45.56 DOI=false!
+08.07.2026_09:53.30 ROI=true!
+08.07.2026_09:53.31 DOI=false!
+08.07.2026_10:01.05 ROI=true!
+08.07.2026_10:01.05 DOI=false!
+08.07.2026_10:08.38 ROI=true!
+08.07.2026_10:08.38 DOI=false!
+08.07.2026_10:16.12 ROI=true!
+08.07.2026_10:16.13 DOI=false!
+08.07.2026_10:23.45 ROI=true!
+08.07.2026_10:23.45 DOI=false!
+08.07.2026_10:31.20 ROI=true!
+08.07.2026_10:31.20 DOI=false!
+08.07.2026_10:38.54 ROI=true!
+08.07.2026_10:38.54 DOI=false!
+08.07.2026_10:46.28 ROI=true!
+08.07.2026_10:46.29 DOI=false!
+08.07.2026_10:54.02 ROI=true!
+08.07.2026_10:54.03 DOI=false!
+08.07.2026_11:01.35 ROI=true!
+08.07.2026_11:01.35 DOI=false!
+08.07.2026_11:09.09 ROI=true!
+08.07.2026_11:09.09 DOI=false!
+08.07.2026_11:16.44 ROI=true!
+08.07.2026_11:16.44 DOI=false!
+08.07.2026_11:24.18 ROI=true!
+08.07.2026_11:24.18 DOI=false!
+08.07.2026_11:31.53 ROI=true!
+08.07.2026_11:31.53 DOI=false!
+08.07.2026_11:39.27 ROI=true!
+08.07.2026_11:39.27 DOI=false!
+08.07.2026_11:47.00 ROI=true!
+08.07.2026_11:47.00 DOI=false!
+08.07.2026_11:54.33 ROI=true!
+08.07.2026_11:54.33 DOI=false!
+08.07.2026_12:02.08 ROI=true!
+08.07.2026_12:02.08 DOI=false!
+08.07.2026_12:09.42 ROI=true!
+08.07.2026_12:09.42 DOI=false!
+08.07.2026_12:17.16 ROI=true!
+08.07.2026_12:17.16 DOI=false!
+08.07.2026_12:24.51 ROI=true!
+08.07.2026_12:24.51 DOI=false!
+08.07.2026_12:32.25 ROI=true!
+08.07.2026_12:32.25 DOI=false!
+08.07.2026_12:39.58 ROI=true!
+08.07.2026_12:39.58 DOI=false!
+08.07.2026_12:47.33 ROI=true!
+08.07.2026_12:47.33 DOI=false!
+08.07.2026_12:55.08 ROI=true!
+08.07.2026_12:55.08 DOI=false!
+08.07.2026_13:02.43 ROI=true!
+08.07.2026_13:02.43 DOI=false!
+260708-13:04:00.796411 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260708-13:04:00.951940 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260708-13:04:01.123954 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!08.07.2026_13:10.16 ROI=true!
+08.07.2026_13:10.16 DOI=false!
+08.07.2026_13:17.50 ROI=true!
+08.07.2026_13:17.50 DOI=false!
+08.07.2026_13:25.23 ROI=true!
+08.07.2026_13:25.23 DOI=false!
+08.07.2026_13:32.58 ROI=true!
+08.07.2026_13:32.58 DOI=false!
+08.07.2026_13:40.32 ROI=true!
+08.07.2026_13:40.32 DOI=false!
+08.07.2026_13:48.07 ROI=true!
+08.07.2026_13:48.07 DOI=false!
+08.07.2026_13:55.42 ROI=true!
+08.07.2026_13:55.42 DOI=false!
+08.07.2026_14:03.15 ROI=true!
+08.07.2026_14:03.15 DOI=false!
+08.07.2026_14:10.49 ROI=true!
+08.07.2026_14:10.49 DOI=false!
+08.07.2026_14:18.22 ROI=true!
+08.07.2026_14:18.22 DOI=false!
+08.07.2026_14:25.56 ROI=true!
+08.07.2026_14:25.56 DOI=false!
+08.07.2026_14:33.30 ROI=true!
+08.07.2026_14:33.31 DOI=false!
+08.07.2026_14:41.03 ROI=true!
+08.07.2026_14:41.03 DOI=false!
+08.07.2026_14:48.36 ROI=true!
+08.07.2026_14:48.36 DOI=false!
+08.07.2026_14:56.10 ROI=true!
+08.07.2026_14:56.10 DOI=false!
+08.07.2026_15:03.45 ROI=true!
+08.07.2026_15:03.45 DOI=false!
+08.07.2026_15:11.20 ROI=true!
+08.07.2026_15:11.20 DOI=false!
+08.07.2026_15:18.54 ROI=true!
+08.07.2026_15:18.54 DOI=false!
+08.07.2026_15:26.28 ROI=true!
+08.07.2026_15:26.28 DOI=false!
+08.07.2026_15:34.02 ROI=true!
+08.07.2026_15:34.02 DOI=false!
+08.07.2026_15:41.35 ROI=true!
+08.07.2026_15:41.35 DOI=false!
+08.07.2026_15:49.10 ROI=true!
+08.07.2026_15:49.11 DOI=false!
+08.07.2026_15:56.44 ROI=true!
+08.07.2026_15:56.44 DOI=false!
+08.07.2026_16:04.19 ROI=true!
+08.07.2026_16:04.19 DOI=false!
+08.07.2026_16:11.51 ROI=true!
+08.07.2026_16:11.51 DOI=false!
+08.07.2026_16:19.24 ROI=true!
+08.07.2026_16:19.24 DOI=false!
+08.07.2026_16:26.59 ROI=true!
+08.07.2026_16:26.59 DOI=false!
+08.07.2026_16:34.33 ROI=true!
+08.07.2026_16:34.33 DOI=false!
+260708-16:38:12.212037 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260708-16:38:12.346968 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260708-16:38:12.754344 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260708-16:38:13.103270 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!260708-16:38:13.594766 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2614] RdkCVAGetObject(992): 33 total objects detected. 1 objects ignored!08.07.2026_16:42.07 ROI=true!
+08.07.2026_16:42.07 DOI=false!
+08.07.2026_16:49.42 ROI=true!
+08.07.2026_16:49.42 DOI=false!

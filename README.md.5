@@ -1,0 +1,534 @@
+# Visualization and GUI Dashboard
+
+The RCA engine generates structured data that can be consumed by visualization layers.
+
+The goal of the GUI is to allow engineers to quickly understand:
+
+- What failed
+- When it failed
+- How severe the failure was
+- What evidence supports the RCA
+- What subsystem is most likely responsible
+
+---
+
+# Dashboard Architecture
+
+The visualization layer consumes the generated RCA report.
+
+```
+                 RCA Engine
+
+                     |
+
+                     v
+
+              report.json
+
+                     |
+
+        +------------+------------+
+
+        |                         |
+
+        v                         v
+
+  Web Dashboard              API Layer
+
+
+        |
+
+        v
+
+ Failure Charts
+
+ Timeline View
+
+ Evidence Explorer
+```
+
+---
+
+# Current Report Visualization Model
+
+The report contains three primary visualization datasets:
+
+```
+1. Failure Distribution
+
+2. Event Timeline
+
+3. Root Cause Candidates
+```
+
+---
+
+# Failure Distribution Chart
+
+The failure distribution analyzer calculates the percentage of failures by category.
+
+Example:
+
+```json
+{
+    "ETHERNET_FAILURE": 45,
+
+    "WIFI_CLIENT_FAILURE": 35,
+
+    "DHCP_FAILURE": 15,
+
+    "OTHER": 5
+}
+```
+
+---
+
+## Pie Chart Example
+
+Visualization:
+
+```
+Failure Distribution
+
+
+Ethernet Failure       ████████████████ 45%
+
+WiFi Client Failure    ████████████     35%
+
+DHCP Failure           █████             15%
+
+Other                  ██                5%
+```
+
+---
+
+## Bar Chart Example
+
+```
+Category                  Percentage
+
+
+ETHERNET_FAILURE          45%
+
+WIFI_CLIENT_FAILURE       35%
+
+DHCP_FAILURE              15%
+
+OTHER                     5%
+```
+
+---
+
+# Timeline Visualization
+
+The timeline view displays failure progression.
+
+Example:
+
+```
+10:00:01
+
+ETHERNET_FAILURE
+
+eth0 link down
+
+
+        |
+
+        v
+
+
+10:00:05
+
+DHCP_FAILURE
+
+DHCP timeout
+
+
+        |
+
+        v
+
+
+10:00:08
+
+WAN_FAILURE
+
+Internet unavailable
+```
+
+---
+
+# Timeline UI Concept
+
+Example:
+
+```
++------------------------------------------------+
+
+ RCA Timeline
+
++------------------------------------------------+
+
+10:00:01
+
+[RED]
+
+Ethernet Failure
+
+eth0 link down
+
+
+10:00:05
+
+[ORANGE]
+
+DHCP Timeout
+
+
+10:00:08
+
+[RED]
+
+WAN Failure
+
+
++------------------------------------------------+
+```
+
+---
+
+# Root Cause Summary View
+
+The dashboard should highlight the highest confidence RCA.
+
+Example:
+
+```
+--------------------------------------
+
+Primary Root Cause
+
+ETHERNET_FAILURE
+
+
+Confidence:
+
+92%
+
+
+Reason:
+
+Interface failure occurred before
+dependent network failures.
+
+
+--------------------------------------
+```
+
+---
+
+# Evidence Explorer
+
+Engineers should be able to drill down.
+
+Example:
+
+```
+Root Cause:
+
+ETHERNET_FAILURE
+
+
+Evidence:
+
+
+File:
+
+kernel.log
+
+
+Line:
+
+245
+
+
+Message:
+
+NETDEV WATCHDOG timeout
+```
+
+---
+
+# HTML Report Generation
+
+Future output:
+
+```
+reports/
+
+└── 20260721_153422/
+
+    ├── summary.md
+
+    ├── report.json
+
+    ├── report.html
+
+    ├── metadata.json
+
+    └── workspace/
+```
+
+---
+
+# HTML Report Components
+
+The HTML report will contain:
+
+## Summary Section
+
+```
+Root Cause:
+
+Ethernet Failure
+
+
+Confidence:
+
+92%
+```
+
+---
+
+## Failure Distribution Chart
+
+Recommended library:
+
+```
+Chart.js
+```
+
+Visualization:
+
+```
+Pie Chart
+
+Failure Categories
+```
+
+---
+
+## Timeline Component
+
+Visualization:
+
+```
+Interactive timeline
+
+sortable events
+
+severity coloring
+```
+
+---
+
+## Log Evidence Viewer
+
+Features:
+
+- Search logs
+- Highlight matching lines
+- Navigate from RCA to source evidence
+
+---
+
+# Dashboard Technology Direction
+
+Recommended architecture:
+
+```
+Frontend
+
+React / HTML / JavaScript
+
+
+        |
+
+        v
+
+
+Backend API
+
+FastAPI
+
+
+        |
+
+        v
+
+
+RCA Engine
+```
+
+---
+
+# Future FastAPI Service
+
+Planned endpoint structure:
+
+```
+POST /analyze
+```
+
+Submit:
+
+```
+support_bundle.tgz
+```
+
+Returns:
+
+```json
+{
+    "run_id":
+        "20260721_153422",
+
+    "status":
+        "completed"
+}
+```
+
+---
+
+# Report API
+
+Example:
+
+```
+GET /reports/{run_id}
+```
+
+Response:
+
+```json
+{
+    "root_causes": [],
+
+    "timeline": [],
+
+    "failure_distribution": {}
+}
+```
+
+---
+
+# Historical Analysis
+
+Future capability:
+
+Compare multiple runs.
+
+Example:
+
+```
+Device A
+
+Run 1:
+
+WiFi Failure
+
+
+Run 2:
+
+Ethernet Failure
+
+
+Run 3:
+
+DHCP Failure
+```
+
+This enables:
+
+- Trend analysis
+- Recurring issue detection
+- Regression identification
+
+---
+
+# AI Assisted RCA
+
+Future integration:
+
+```
+              report.json
+
+                   |
+
+                   v
+
+             AI Reasoning Layer
+
+                   |
+
+                   v
+
+       Human-readable RCA Explanation
+```
+
+Example:
+
+Input:
+
+```
+Ethernet link failures detected
+before DHCP failures.
+```
+
+AI output:
+
+```
+The most probable root cause is an Ethernet
+interface failure. DHCP failures appear to be
+secondary symptoms caused by loss of connectivity.
+```
+
+---
+
+# GUI Development Roadmap
+
+## Phase 1
+
+Completed:
+
+- JSON reports
+- Markdown reports
+- Failure distribution data
+
+
+## Phase 2
+
+Current:
+
+- HTML report
+- Charts
+- Timeline visualization
+
+
+## Phase 3
+
+Planned:
+
+- Web dashboard
+- Searchable logs
+- Interactive RCA exploration
+
+
+## Phase 4
+
+Planned:
+
+- API service
+- Authentication
+- Multi-device analysis

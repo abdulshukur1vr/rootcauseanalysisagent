@@ -1,0 +1,720 @@
+720
+260709-18:27:07.673529 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, bsUpdate = 3
+
+260709-18:27:07.673568 [mod=LM, lvl=WARN] [tid=7736]  
+ Hosts_SetParamStringValue : < Hosts_SetParamStringValue : 801 > <phyAddr=3c:62:f0:43:70:ed> <AssociatedDevice=Device.WiFi.AccessPoint.1.AssociatedDevice.4> <ssid=Device.WiFi.SSID.1> <RSSI=-58> <Status=1>
+260709-18:27:07.673587 [mod=LM, lvl=WARN] [tid=7736] Wifi_Server_Sync_Function [3c:62:f0:43:70:ed Device.WiFi.AccessPoint.1.AssociatedDevice.4 Device.WiFi.SSID.1 -58 1]
+260709-18:27:07.679175 [mod=LM, lvl=ERROR] [tid=7761] ValidateHost_Thread: ValidateHost execution failed
+260709-18:27:12.335892 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:27:12.351851 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:27:12.360496 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:27:12.368890 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:27:12.383934 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:27:12.391974 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:27:12.400246 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:27:12.407948 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:27:12.417204 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:27:12.433471 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:27:17.327491 [mod=LM, lvl=WARN] [tid=7762] Wifi_ServerSyncHost [3c:62:f0:43:70:ed Device.WiFi.AccessPoint.1.AssociatedDevice.4 Device.WiFi.SSID.1 -58 1]
+260709-18:27:17.327682 [mod=LM, lvl=WARN] [tid=7763] LMlite-CLIENT <Hosts_AddHostByPhysAddress> <1543> : Connected Mac = 3c:62:f0:43:70:ed 
+260709-18:27:17.327720 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Client type is WiFi, MacAddress is 3c:62:f0:43:70:ed IPAddr is not updated in ARP
+260709-18:27:17.336662 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:27:17.336760 [mod=LM, lvl=WARN] [tid=7763] CONNECTED_CLIENTS_COUNT : 12 
+260709-18:27:17.336809 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Client type is WiFi, MacAddress is 3c:62:f0:43:70:ed and HostName is 3c:62:f0:43:70:ed Connected  
+260709-18:27:17.336833 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Wait for dnsmasq to update hostname
+260709-18:27:20.341345 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Client type is WiFi, MacAddress is 3c:62:f0:43:70:ed and HostName is SC4370ED Connected 
+260709-18:27:20.341413 [mod=LM, lvl=WARN] [tid=7763] 
+Connected-Client,WiFi,3c:62:f0:43:70:ed,Connected,SC4370ED
+260709-18:27:20.341440 [mod=LM, lvl=WARN] [tid=7763] eRT.com.cisco.spvtg.ccsp.lmlite component calls SET with writeId:0 
+260709-18:27:20.353920 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:27:20.370987 [mod=LM, lvl=WARN] [tid=7763] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:27:20.397826 [mod=LM, lvl=WARN] [tid=7763] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:27:20.408826 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:27:20.418047 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:27:20.436295 [mod=LM, lvl=WARN] [tid=7763] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:27:20.449664 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:27:20.462227 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:27:20.470479 [mod=LM, lvl=WARN] [tid=7763] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:27:20.492409 [mod=LM, lvl=WARN] [tid=7763] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:27:20.511001 [mod=LM, lvl=WARN] [tid=7763] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:27:20.511199 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Client type is WiFi, MacAddress is 3c:62:f0:43:70:ed IP from DNSMASQ is 10.0.0.137 
+260709-18:27:29.558788 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, bsUpdate = 3
+
+260709-18:27:29.558846 [mod=LM, lvl=WARN] [tid=7736]  
+ Hosts_SetParamStringValue : < Hosts_SetParamStringValue : 801 > <phyAddr=3c:62:f0:3a:20:00> <AssociatedDevice=NULL> <ssid=Device.WiFi.SSID.2> <RSSI=0> <Status=0>
+260709-18:27:29.558864 [mod=LM, lvl=WARN] [tid=7736] Wifi_Server_Sync_Function [3c:62:f0:3a:20:00 NULL Device.WiFi.SSID.2 0 0]
+260709-18:27:29.565298 [mod=LM, lvl=WARN] [tid=7761] Wifi_ServerSyncHost [3c:62:f0:3a:20:00 NULL Device.WiFi.SSID.2 0 0]
+260709-18:27:29.565440 [mod=LM, lvl=WARN] [tid=7763] AP = 2 token = 8
+260709-18:27:29.565490 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Wifi client with 3c:62:f0:3a:20:00 MacAddress and 3c:62:f0:3a:20:00 HostName gone offline
+260709-18:27:29.567195 [mod=LM, lvl=WARN] [tid=7763] CONNECTED_CLIENTS_COUNT : 11 
+260709-18:27:29.567222 [mod=LM, lvl=WARN] [tid=7763] 
+Connected-Client,WiFi,3c:62:f0:3a:20:00,Offline,3c:62:f0:3a:20:00
+260709-18:27:29.567244 [mod=LM, lvl=WARN] [tid=7763] eRT.com.cisco.spvtg.ccsp.lmlite component calls SET with writeId:0 
+260709-18:27:39.200458 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, bsUpdate = 3
+
+260709-18:27:39.200501 [mod=LM, lvl=WARN] [tid=7736]  
+ Hosts_SetParamStringValue : < Hosts_SetParamStringValue : 801 > <phyAddr=3c:62:f0:3a:20:00> <AssociatedDevice=Device.WiFi.AccessPoint.2.AssociatedDevice.8> <ssid=Device.WiFi.SSID.2> <RSSI=-70> <Status=1>
+260709-18:27:39.200520 [mod=LM, lvl=WARN] [tid=7736] Wifi_Server_Sync_Function [3c:62:f0:3a:20:00 Device.WiFi.AccessPoint.2.AssociatedDevice.8 Device.WiFi.SSID.2 -70 1]
+260709-18:27:39.220316 [mod=LM, lvl=WARN] [tid=7761] Wifi_ServerSyncHost [3c:62:f0:3a:20:00 Device.WiFi.AccessPoint.2.AssociatedDevice.8 Device.WiFi.SSID.2 -70 1]
+260709-18:27:39.220487 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Client type is WiFi, MacAddress is 3c:62:f0:3a:20:00 and HostName is 3c:62:f0:3a:20:00 appeared online
+260709-18:27:39.220599 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: IP Address : 10.0.0.194 , address source : DHCP, HostName : 3c:62:f0:3a:20:00 
+260709-18:27:39.220670 [mod=LM, lvl=WARN] [tid=7763] CONNECTED_CLIENTS_COUNT : 12 
+260709-18:27:39.220694 [mod=LM, lvl=WARN] [tid=7763] 
+Connected-Client,WiFi,3c:62:f0:3a:20:00,Online,3c:62:f0:3a:20:00
+260709-18:27:39.220719 [mod=LM, lvl=WARN] [tid=7763] eRT.com.cisco.spvtg.ccsp.lmlite component calls SET with writeId:0 
+260709-18:27:42.459895 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:27:42.469750 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:27:42.483383 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:27:42.492095 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:27:42.511457 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:27:42.524644 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:27:42.551229 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:27:42.573079 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:27:42.598882 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:27:42.617973 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:27:42.639355 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:28:12.659963 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:28:12.676107 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:28:12.692072 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:28:12.700020 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:28:12.708220 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:28:12.723205 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:28:12.730949 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:28:12.738406 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:28:12.753258 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:28:12.768580 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:28:12.783487 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:28:17.143324 [mod=LM, lvl=INFO] [tid=7741] Sent message successfully to parodus
+260709-18:28:17.143383 [mod=LM, lvl=WARN] [tid=7741] NetworkDevicesTraffic report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesTraffic, Transaction-Id=0fc4f99c-eb71-4091-8df0-9e42e53b71c8, source=LMLite/WANOE
+260709-18:28:36.167073 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: Enabled, bsUpdate = 3
+
+260709-18:28:36.167107 [mod=LM, lvl=INFO] [tid=7736] NetworkDevicesStatus:Enabled
+260709-18:28:36.167122 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: ReportingPeriod, bsUpdate = 3
+
+260709-18:28:36.167139 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: PollingPeriod, bsUpdate = 3
+
+260709-18:28:36.167172 [mod=LM, lvl=WARN] [tid=7736] Before committing:Device.X_RDKCENTRAL-COM_Report.NetworkDevicesStatus.
+260709-18:28:36.169738 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:28:36.169776 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=90db5b67-413f-4a1f-b3f9-dd5208806518  
+260709-18:28:36.170004 [mod=LM, lvl=WARN] [tid=7736] After committing:Device.X_RDKCENTRAL-COM_Report.NetworkDevicesStatus.:0
+260709-18:28:42.800513 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:28:42.808420 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:28:42.823956 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:28:42.831462 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:28:42.846671 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:28:42.854483 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:28:42.869659 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:28:42.877202 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:28:42.892906 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:28:42.908045 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:28:42.915735 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:29:06.000973 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:29:06.001032 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=f2b26052-3b96-4c18-a8a1-77c02f4e6370  
+260709-18:29:12.933608 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:29:12.952801 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:29:12.962551 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:29:12.971363 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:29:12.990489 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:29:13.000124 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:29:13.009596 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:29:13.019065 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:29:13.028978 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:29:13.039496 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:29:13.048688 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:29:36.000931 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:29:36.000989 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=badfadce-9f50-4559-a77c-7175300348c1  
+260709-18:29:43.067597 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:29:43.075252 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:29:43.090326 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:29:43.097863 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:29:43.112846 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:29:43.120991 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:29:43.128520 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:29:43.143664 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:29:43.151311 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:29:43.158710 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:29:43.175163 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:30:06.000912 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:30:06.000972 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=0f611c1d-149d-4495-8f89-f200c21ac540  
+260709-18:30:13.191490 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:30:13.206457 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:30:13.221833 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:30:13.229957 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:30:13.246446 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:30:13.262879 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:30:13.270863 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:30:13.278356 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:30:13.296050 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:30:13.311593 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:30:13.326895 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:30:20.191185 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, bsUpdate = 3
+
+260709-18:30:20.191231 [mod=LM, lvl=WARN] [tid=7736]  
+ Hosts_SetParamStringValue : < Hosts_SetParamStringValue : 801 > <phyAddr=3c:62:f0:43:70:ed> <AssociatedDevice=NULL> <ssid=Device.WiFi.SSID.1> <RSSI=0> <Status=0>
+260709-18:30:20.191250 [mod=LM, lvl=WARN] [tid=7736] Wifi_Server_Sync_Function [3c:62:f0:43:70:ed NULL Device.WiFi.SSID.1 0 0]
+260709-18:30:20.197120 [mod=LM, lvl=WARN] [tid=7761] Wifi_ServerSyncHost [3c:62:f0:43:70:ed NULL Device.WiFi.SSID.1 0 0]
+260709-18:30:20.197259 [mod=LM, lvl=WARN] [tid=7763] AP = 1 token = 4
+260709-18:30:20.197326 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Wifi client with 3c:62:f0:43:70:ed MacAddress and SC4370ED HostName gone offline
+260709-18:30:20.198777 [mod=LM, lvl=WARN] [tid=7763] CONNECTED_CLIENTS_COUNT : 11 
+260709-18:30:20.198841 [mod=LM, lvl=WARN] [tid=7763] 
+Connected-Client,WiFi,3c:62:f0:43:70:ed,Offline,SC4370ED
+260709-18:30:20.198865 [mod=LM, lvl=WARN] [tid=7763] eRT.com.cisco.spvtg.ccsp.lmlite component calls SET with writeId:0 
+260709-18:30:36.000955 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:30:36.001012 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=3eb5c68b-aea7-46ba-bec8-0a840d6a6263  
+260709-18:30:43.344171 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:30:43.352031 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:30:43.366969 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:30:43.374771 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:30:43.390756 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:30:43.398478 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:30:43.414321 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:30:43.435730 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:30:43.446561 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:30:43.468292 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:30:43.488913 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:31:06.000966 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:31:06.001022 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=c51eaf38-5875-42e5-be54-3655160ff24c  
+260709-18:31:13.513013 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:31:13.529347 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:31:13.537087 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:31:13.544951 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:31:13.560338 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:31:13.570361 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:31:13.578596 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:31:13.593266 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:31:13.608687 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:31:13.624318 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:31:13.639804 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:31:36.000959 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:31:36.001016 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=34c944a6-0dce-4fcd-8214-cee7055f26da  
+260709-18:31:43.664089 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:31:43.673801 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:31:43.689430 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:31:43.697266 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:31:43.712650 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:31:43.720778 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:31:43.736102 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:31:43.743923 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:31:43.751416 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:31:43.766690 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:31:43.783370 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:32:06.000925 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:32:06.000983 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=f07fc981-0747-4ee3-b2a4-418600066ecc  
+260709-18:32:13.812024 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:32:13.827175 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:32:13.842962 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:32:13.850685 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:32:13.865750 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:32:13.882935 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:32:13.890471 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:32:13.898584 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:32:13.906385 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:32:13.921438 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:32:13.936907 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:32:36.000947 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:32:36.001004 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=c7a30610-53b3-44e1-be84-a84023e85fbe  
+260709-18:32:43.966773 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:32:43.974392 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:32:43.982085 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:32:43.989785 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:32:44.005563 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:32:44.013173 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:32:44.020903 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:32:44.028630 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:32:44.036368 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:32:44.051953 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:32:44.067293 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:33:06.000903 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:33:06.000961 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=d4898a54-efb7-4c63-8820-236c5f433281  
+260709-18:33:14.095447 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:33:14.111240 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:33:14.126775 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:33:14.134358 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:33:14.149972 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:33:14.165450 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:33:14.173672 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:33:14.181207 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:33:14.196617 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:33:14.212518 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:33:14.228272 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:33:17.931225 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, bsUpdate = 3
+
+260709-18:33:17.931262 [mod=LM, lvl=WARN] [tid=7736]  
+ Hosts_SetParamStringValue : < Hosts_SetParamStringValue : 801 > <phyAddr=1c:53:f9:8c:e2:f1> <AssociatedDevice=NULL> <ssid=Device.WiFi.SSID.2> <RSSI=0> <Status=0>
+260709-18:33:17.931280 [mod=LM, lvl=WARN] [tid=7736] Wifi_Server_Sync_Function [1c:53:f9:8c:e2:f1 NULL Device.WiFi.SSID.2 0 0]
+260709-18:33:17.936212 [mod=LM, lvl=WARN] [tid=7761] Wifi_ServerSyncHost [1c:53:f9:8c:e2:f1 NULL Device.WiFi.SSID.2 0 0]
+260709-18:33:17.936368 [mod=LM, lvl=WARN] [tid=7763] AP = 2 token = 3
+260709-18:33:17.936432 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Wifi client with 1c:53:f9:8c:e2:f1 MacAddress and 1c:53:f9:8c:e2:f1 HostName gone offline
+260709-18:33:17.937689 [mod=LM, lvl=WARN] [tid=7763] CONNECTED_CLIENTS_COUNT : 10 
+260709-18:33:17.937716 [mod=LM, lvl=WARN] [tid=7763] 
+Connected-Client,WiFi,1c:53:f9:8c:e2:f1,Offline,1c:53:f9:8c:e2:f1
+260709-18:33:17.937739 [mod=LM, lvl=WARN] [tid=7763] eRT.com.cisco.spvtg.ccsp.lmlite component calls SET with writeId:0 
+260709-18:33:26.407599 [mod=LM, lvl=WARN] [tid=7736] DslhObjcoValidate: X_RDKCENTRAL-COM_LMHost_Sync_From_WiFi, bsUpdate = 3
+
+260709-18:33:26.407637 [mod=LM, lvl=WARN] [tid=7736]  
+ Hosts_SetParamStringValue : < Hosts_SetParamStringValue : 801 > <phyAddr=1c:53:f9:8c:e2:f1> <AssociatedDevice=Device.WiFi.AccessPoint.2.AssociatedDevice.8> <ssid=Device.WiFi.SSID.2> <RSSI=-52> <Status=1>
+260709-18:33:26.407657 [mod=LM, lvl=WARN] [tid=7736] Wifi_Server_Sync_Function [1c:53:f9:8c:e2:f1 Device.WiFi.AccessPoint.2.AssociatedDevice.8 Device.WiFi.SSID.2 -52 1]
+260709-18:33:26.412448 [mod=LM, lvl=WARN] [tid=7761] Wifi_ServerSyncHost [1c:53:f9:8c:e2:f1 Device.WiFi.AccessPoint.2.AssociatedDevice.8 Device.WiFi.SSID.2 -52 1]
+260709-18:33:26.412577 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: Client type is WiFi, MacAddress is 1c:53:f9:8c:e2:f1 and HostName is 1c:53:f9:8c:e2:f1 appeared online
+260709-18:33:26.412694 [mod=LM, lvl=WARN] [tid=7763] RDKB_CONNECTED_CLIENTS: IP Address : 10.0.0.59 , address source : DHCP, HostName : 1c:53:f9:8c:e2:f1 
+260709-18:33:26.412762 [mod=LM, lvl=WARN] [tid=7763] CONNECTED_CLIENTS_COUNT : 11 
+260709-18:33:26.412786 [mod=LM, lvl=WARN] [tid=7763] 
+Connected-Client,WiFi,1c:53:f9:8c:e2:f1,Online,1c:53:f9:8c:e2:f1
+260709-18:33:26.412830 [mod=LM, lvl=WARN] [tid=7763] eRT.com.cisco.spvtg.ccsp.lmlite component calls SET with writeId:0 
+260709-18:33:36.000933 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:33:36.000988 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=b4056a46-4616-405b-81f3-34bea77ea3b1  
+260709-18:33:44.258171 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:33:44.265927 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:33:44.281180 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:33:44.296674 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:33:44.312350 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:33:44.320019 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:33:44.327672 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:33:44.335704 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:33:44.351499 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:33:44.359219 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:33:44.374820 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:34:14.403246 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:34:14.418665 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:34:14.426196 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:34:14.434965 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:34:14.454787 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:34:14.475374 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:34:14.484137 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:34:14.495983 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:34:14.506573 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:34:14.532084 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:34:14.555168 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:34:44.597745 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:34:44.607603 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:34:44.626993 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:34:44.635956 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:34:44.655045 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:34:44.664467 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:34:44.673723 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:34:44.683074 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:34:44.693371 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:34:44.711099 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:34:44.731602 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:35:14.764295 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:35:14.781456 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:35:14.798966 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:35:14.808401 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:35:14.825800 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:35:14.841252 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:35:14.849619 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:35:14.857651 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:35:14.867885 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:35:14.886523 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:35:14.905613 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:35:44.944917 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:35:44.953257 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:35:44.961454 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:35:44.974520 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:35:44.999871 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:35:45.010855 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:35:45.021819 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:35:45.032374 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:35:45.040685 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:35:45.048856 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:35:45.065206 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:36:15.099850 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:36:15.114507 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:36:15.129404 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:36:15.139284 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:36:15.154779 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:36:15.170223 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:36:15.177666 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:36:15.188494 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:36:15.198864 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:36:15.210739 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:36:15.227063 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:36:45.256690 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:36:45.264455 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:36:45.272740 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:36:45.281056 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:36:45.297024 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:36:45.305324 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:36:45.316971 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:36:45.328433 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:36:45.354859 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:36:45.366606 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:36:45.388972 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:37:15.422862 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:37:15.438072 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:37:15.453288 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:37:15.461387 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:37:15.476812 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:37:15.492308 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:37:15.500241 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:37:15.507861 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:37:15.523249 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:37:15.538256 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:37:15.553683 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:37:45.583646 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:37:45.591425 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:37:45.606861 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:37:45.614631 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:37:45.630125 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:37:45.637956 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:37:45.645654 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:37:45.653328 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:37:45.661683 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:37:45.669367 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:37:45.685254 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:38:15.718153 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:38:15.737060 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:38:15.747627 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:38:15.756565 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:38:15.767174 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:38:15.786705 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:38:15.796371 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:38:15.806552 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:38:15.825360 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:38:15.844332 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:38:15.863528 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:38:45.893998 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:38:45.901949 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:38:45.917770 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:38:45.925395 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:38:45.940719 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:38:45.948810 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:38:45.964279 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:38:45.982988 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:38:45.991221 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:38:46.007154 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:38:46.022657 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:39:16.051413 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:39:16.066772 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:39:16.082879 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:39:16.090367 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:39:16.106320 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:39:16.121991 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:39:16.130134 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:39:16.138049 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:39:16.153894 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:39:16.161727 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:39:16.179540 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:39:46.224394 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:39:46.234123 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:39:46.243690 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:39:46.253062 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:39:46.269799 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:39:46.278155 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:39:46.294689 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:39:46.311169 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:39:46.319307 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:39:46.335755 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:39:46.343177 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:40:16.375968 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:40:16.393860 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:40:16.403033 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:40:16.411170 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:40:16.427220 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:40:16.443301 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:40:16.451440 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:40:16.459949 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:40:16.468100 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:40:16.484523 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:40:16.500008 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:40:46.531788 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:40:46.542016 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:40:46.554084 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:40:46.566430 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:40:46.587612 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:40:46.597584 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:40:46.618049 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:40:46.629168 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:40:46.649875 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:40:46.671324 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:40:46.699552 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:41:16.733537 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:41:16.752719 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:41:16.769226 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:41:16.777097 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:41:16.799466 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:41:16.808189 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:41:16.819997 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:41:16.830171 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:41:16.838544 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:41:16.846775 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:41:16.863559 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:41:46.898287 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:41:46.905870 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:41:46.924948 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:41:46.932765 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:41:46.948194 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:41:46.956197 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:41:46.971827 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:41:46.991963 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:41:47.007197 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:41:47.022470 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:41:47.030590 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:42:17.060034 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:42:17.075294 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:42:17.083128 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:42:17.091403 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:42:17.106676 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:42:17.123375 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:42:17.131826 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:42:17.151667 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:42:17.161374 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:42:17.178047 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:42:17.193894 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:42:47.223664 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:42:47.231532 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:42:47.247308 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:42:47.262703 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:42:47.277820 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:42:47.285708 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:42:47.301479 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:42:47.316776 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:42:47.336912 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:42:47.357157 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:42:47.377204 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:43:17.052995 [mod=LM, lvl=INFO] [tid=7741] Sent message successfully to parodus
+260709-18:43:17.053063 [mod=LM, lvl=WARN] [tid=7741] NetworkDevicesTraffic report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesTraffic, Transaction-Id=8f050084-c10f-4b48-83c4-7594c829f7d7, source=LMLite/WANOE
+260709-18:43:17.408637 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:43:17.423690 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:43:17.439127 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:43:17.447249 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:43:17.462619 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:43:17.478276 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:43:17.485692 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:43:17.493720 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:43:17.501394 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:43:17.516961 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:43:17.532615 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:43:47.560910 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:43:47.568403 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:43:47.575891 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:43:47.583290 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:43:47.598307 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:43:47.605737 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:43:47.620540 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:43:47.636110 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:43:47.651527 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:43:47.659044 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:43:47.666615 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:44:17.695856 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:44:17.711623 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:44:17.726860 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:44:17.734470 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:44:17.750152 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:44:17.765124 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:44:17.772990 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:44:17.780591 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:44:17.795944 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:44:17.803975 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:44:17.819423 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:44:47.847728 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:44:47.855377 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:44:47.863459 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:44:47.870998 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:44:47.886782 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:44:47.894439 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:44:47.910166 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:44:47.925974 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:44:47.934299 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:44:47.941894 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:44:47.950439 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:45:17.979759 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:45:17.995079 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:45:18.002689 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:45:18.011035 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:45:18.026963 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:45:18.043281 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:45:18.051130 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:45:18.058504 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:45:18.075055 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:45:18.090181 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:45:18.105912 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:45:48.134871 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:45:48.142581 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:45:48.149959 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:45:48.157379 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:45:48.172847 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:45:48.180601 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:45:48.196556 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:45:48.211632 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:45:48.219384 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:45:48.227222 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:45:48.242027 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:46:18.271867 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:46:18.287523 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:46:18.295866 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:46:18.303528 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:46:18.318642 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:46:18.333773 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:46:18.342950 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:46:18.350633 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:46:18.366246 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:46:18.374689 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:46:18.383136 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:46:48.412618 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:46:48.420223 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:46:48.435689 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:46:48.443434 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:46:48.458411 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:46:48.466922 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:46:48.482354 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:46:48.498158 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:46:48.513991 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:46:48.529309 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:46:48.544932 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:47:18.574324 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:47:18.589813 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:47:18.605536 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:47:18.613183 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:47:18.628597 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:47:18.644084 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:47:18.651906 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:47:18.660190 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:47:18.668149 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:47:18.684069 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:47:18.700048 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:47:48.734393 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:47:48.746394 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:47:48.754679 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:47:48.762207 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:47:48.778755 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:47:48.786911 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:47:48.794985 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:47:48.803124 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:47:48.811388 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:47:48.827762 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:47:48.843949 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:48:18.881306 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:48:18.905478 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:48:18.915326 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:48:18.925695 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:48:18.947210 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:48:18.969119 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:48:18.979069 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:48:18.990203 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:48:19.000870 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:48:19.011350 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:48:19.021294 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:48:36.000939 [mod=LM, lvl=INFO] [tid=7739] Sent message successfully to parodus
+260709-18:48:36.000995 [mod=LM, lvl=WARN] [tid=7739] NetworkDevicesStatus report sent to Webpa, Destination=event:raw.kestrel.reports.NetworkDevicesStatus, Transaction-Id=46cad095-b963-41cc-9b79-53106057353d  
+260709-18:48:49.054492 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:48:49.062131 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:48:49.069697 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:48:49.077478 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:48:49.093019 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:48:49.100487 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:48:49.112021 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:48:49.123569 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:48:49.131473 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:48:49.140686 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:48:49.159452 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:49:19.192543 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:49:19.209250 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:49:19.225383 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:49:19.233118 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:49:19.248473 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:49:19.263945 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:49:19.271705 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:49:19.279520 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:49:19.299277 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:49:19.309576 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:49:19.328560 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:49:49.362803 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:49:49.371597 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:49:49.382308 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:49:49.391699 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:49:49.410511 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:49:49.421306 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:49:49.431319 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:49:49.442230 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:49:49.451610 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:49:49.470567 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:49:49.483074 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:50:19.516630 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:50:19.531759 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:50:19.539336 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:50:19.546969 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:50:19.562138 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:50:19.577265 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:50:19.584529 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:50:19.592101 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:50:19.599693 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:50:19.607612 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:50:19.615425 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:50:49.645114 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:50:49.652633 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:50:49.668271 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:50:49.676041 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:50:49.691375 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:50:49.700669 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:50:49.708555 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:50:49.716180 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:50:49.724466 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:50:49.745787 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:50:49.762486 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:51:19.790910 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:51:19.805963 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:51:19.813425 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:51:19.821003 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:51:19.842687 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:51:19.862424 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:51:19.870005 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:51:19.878190 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:51:19.886357 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:51:19.902575 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:51:19.924625 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:51:49.966788 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:51:49.975598 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:51:49.983916 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:51:49.992133 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:51:50.009339 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:51:50.017443 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:51:50.025967 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:51:50.034054 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:51:50.042187 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:51:50.050627 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:51:50.067258 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:52:20.096557 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:52:20.112419 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:52:20.129291 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:52:20.136995 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:52:20.144896 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:52:20.160241 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:52:20.167966 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:52:20.175420 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:52:20.183315 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:52:20.191064 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:52:20.206465 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:52:50.235563 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:52:50.243210 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:52:50.251112 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:52:50.258903 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:52:50.266748 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:52:50.274649 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:52:50.282136 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:52:50.290005 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:52:50.297247 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:52:50.312138 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:52:50.327458 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:53:20.358220 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:53:20.374614 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:53:20.382861 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:53:20.391173 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:53:20.408829 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:53:20.416197 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:53:20.423749 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:53:20.431815 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:53:20.441954 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:53:20.460152 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:53:20.505003 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66
+260709-18:53:50.538856 [mod=LM, lvl=WARN] [tid=8597] client mac present in dnsmasq: MAC 3c:62:f0:43:70:ed IP 10.0.0.137
+260709-18:53:50.548930 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 20:f1:b2:8d:c0:a8 IP 10.0.0.94
+260709-18:53:50.565436 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 96:ae:3d:3a:20:31 IP 10.0.0.136
+260709-18:53:50.573613 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 3c:62:f0:3a:20:00 IP 10.0.0.194
+260709-18:53:50.590381 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 4a:0d:d7:1e:65:27 IP 10.0.0.150
+260709-18:53:50.598613 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 1c:53:f9:8c:e2:f1 IP 10.0.0.59
+260709-18:53:50.606690 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC a4:57:a0:1f:d9:d5 IP 10.0.0.152
+260709-18:53:50.614778 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC 28:6b:b4:2a:74:1a IP 10.0.0.141
+260709-18:53:50.630324 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC 78:80:38:d9:b6:5a IP 10.0.0.79
+260709-18:53:50.638216 [mod=LM, lvl=WARN] [tid=8597] client is either reachable or delay: MAC b6:59:60:77:25:c4 IP 10.0.0.88
+260709-18:53:50.654145 [mod=LM, lvl=WARN] [tid=8597] client is in stale state: MAC da:5c:01:69:dd:5b IP 10.0.0.66

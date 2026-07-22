@@ -1,0 +1,91 @@
+91
+260709-17:43:24.947856 <I>  process_frame_mgmt:1042: interface:wl1.1 received auth frame from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 alg:3 seq:1 sc:126 len:135 rssi:-49
+260709-17:43:24.949351 <I>  wifi_drv_send_mlme:9815: interface:wl1.1 send auth frame from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 alg:3 seq:1 sc:126
+260709-17:43:25.013920 <I>  process_frame_mgmt:1042: interface:wl1.1 received auth frame from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 alg:3 seq:2 sc:0 len:64 rssi:-53
+260709-17:43:25.014369 <I>  wifi_drv_send_mlme:9815: interface:wl1.1 send auth frame from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 alg:3 seq:2 sc:0
+260709-17:43:25.030041 <I>  process_frame_mgmt:1108: interface:wl1.1 received reassoc frame from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 cap:0x1031 len:267 rssi:-53
+260709-17:43:25.030497 <I>  wifi_drv_sta_add:10565: Set STA b6:59:60:77:25:c4
+260709-17:43:25.030779 <I>  wifi_drv_send_mlme:9831: interface:wl1.1 send reassoc resp frame from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 cap:0x1011 aid:32 sc:0
+260709-17:43:25.032461 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=b6:59:60:77:25:c4 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:43:25.032946 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=b6:59:60:77:25:c4 total_flags=0x6e flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-17:43:25.033466 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m1 from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 replay counter:1
+260709-17:43:26.033920 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m1 from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 replay counter:2
+260709-17:43:26.051800 <I>  recv_data_frame:1897: interface:wl1.1 received eapol m2 from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 reply counter:2
+260709-17:43:26.052723 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl1.1 sending eapol m3 from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 replay counter:3
+260709-17:43:26.062614 <I>  recv_data_frame:1897: interface:wl1.1 received eapol m4 from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 reply counter:3
+260709-17:43:26.063950 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=b6:59:60:77:25:c4 total_flags=0x6f flags_or=0x1 flags_and=0xffffffff authorized=1
+260709-17:45:11.256087 <I>  process_frame_mgmt:1042: interface:wl2.1 received auth frame from:b6:59:60:77:25:c4 to:78:b3:9f:fe:0c:16 alg:3 seq:1 sc:126 len:135 rssi:-73
+260709-17:45:11.257692 <I>  wifi_drv_send_mlme:9815: interface:wl2.1 send auth frame from:78:b3:9f:fe:0c:16 to:b6:59:60:77:25:c4 alg:3 seq:1 sc:126
+260709-17:45:11.310782 <I>  process_frame_mgmt:1042: interface:wl2.1 received auth frame from:b6:59:60:77:25:c4 to:78:b3:9f:fe:0c:16 alg:3 seq:2 sc:0 len:64 rssi:-73
+260709-17:45:11.311314 <I>  wifi_drv_send_mlme:9815: interface:wl2.1 send auth frame from:78:b3:9f:fe:0c:16 to:b6:59:60:77:25:c4 alg:3 seq:2 sc:0
+260709-17:45:11.326477 <I>  process_frame_mgmt:1108: interface:wl2.1 received reassoc frame from:b6:59:60:77:25:c4 to:78:b3:9f:fe:0c:16 cap:0x1031 len:220 rssi:-73
+260709-17:45:11.326903 <I>  wifi_drv_sta_add:10565: Set STA b6:59:60:77:25:c4
+260709-17:45:11.327235 <I>  wifi_drv_send_mlme:9831: interface:wl2.1 send reassoc resp frame from:78:b3:9f:fe:0c:16 to:b6:59:60:77:25:c4 cap:0x1011 aid:25 sc:0
+260709-17:45:11.328589 <I>  nl80211: Set STA flags - ifname=wl2.1 addr=b6:59:60:77:25:c4 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:45:11.328879 <I>  nl80211: Set STA flags - ifname=wl2.1 addr=b6:59:60:77:25:c4 total_flags=0x6e flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-17:45:11.329273 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl2.1 sending eapol m1 from:78:b3:9f:fe:0c:16 to:b6:59:60:77:25:c4 replay counter:1
+260709-17:45:11.343349 <I>  process_frame_mgmt:1206: interface:wl1.1 received disassoc frame from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 len:24 reason:0
+260709-17:45:11.343587 <I>  nl80211: Set STA flags - ifname=wl1.1 addr=b6:59:60:77:25:c4 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:45:11.343882 <I>  wifi_sta_remove:8958: interface:wl1.1 send deauth from:92:b3:9f:fe:0c:15 to:b6:59:60:77:25:c4 reason:0
+260709-17:45:11.349793 <I>  process_frame_mgmt:1206: interface:wl1.1 received disassoc frame from:b6:59:60:77:25:c4 to:92:b3:9f:fe:0c:15 len:24 reason:0
+260709-17:45:12.329468 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl2.1 sending eapol m1 from:78:b3:9f:fe:0c:16 to:b6:59:60:77:25:c4 replay counter:2
+260709-17:45:12.345843 <I>  recv_data_frame:1897: interface:wl2.1 received eapol m2 from:b6:59:60:77:25:c4 to:78:b3:9f:fe:0c:16 reply counter:2
+260709-17:45:12.346800 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl2.1 sending eapol m3 from:78:b3:9f:fe:0c:16 to:b6:59:60:77:25:c4 replay counter:3
+260709-17:45:12.356380 <I>  recv_data_frame:1897: interface:wl2.1 received eapol m4 from:b6:59:60:77:25:c4 to:78:b3:9f:fe:0c:16 reply counter:3
+260709-17:45:12.357100 <I>  nl80211: Set STA flags - ifname=wl2.1 addr=b6:59:60:77:25:c4 total_flags=0x6f flags_or=0x1 flags_and=0xffffffff authorized=1
+260709-17:50:00.933387 <I>  process_frame_mgmt:1265: interface:wl1.7 received deauth frame from:9c:24:72:20:cd:68 to:92:b3:9f:fe:0c:13 disassoc sc:4 deauth sc:4 len:26 reason:0
+260709-17:50:00.933599 <I>  nl80211: Set STA flags - ifname=wl1.7 addr=9c:24:72:20:cd:68 total_flags=0x62 flags_or=0x2 flags_and=0xfffffff2 authorized=0
+260709-17:50:00.933831 <I>  wifi_sta_remove:8958: interface:wl1.7 send deauth from:92:b3:9f:fe:0c:13 to:9c:24:72:20:cd:68 reason:0
+260709-17:50:18.972582 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:1 sc:0 len:128 rssi:-69
+260709-17:50:18.979141 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:1 sc:0
+260709-17:50:19.458035 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:1 sc:0 len:128 rssi:-70
+260709-17:50:19.458545 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:1 sc:0
+260709-17:50:20.029982 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:2 sc:0 len:64 rssi:-68
+260709-17:50:20.030462 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:2 sc:0
+260709-17:50:20.045006 <I>  process_frame_mgmt:1072: interface:wl0.1 received assoc frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 cap:0x431 len:113 rssi:-69
+260709-17:50:20.045529 <I>  wifi_drv_sta_add:10565: Set STA 20:f1:b2:8d:c0:a8
+260709-17:50:20.045899 <I>  wifi_drv_send_mlme:9823: interface:wl0.1 send assoc resp frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 cap:0x1411 aid:20 sc:0
+260709-17:50:20.047470 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:50:20.047794 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-17:50:20.048148 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 replay counter:1
+260709-17:50:21.048861 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 replay counter:2
+260709-17:50:21.574929 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:1 sc:0 len:128 rssi:-70
+260709-17:50:21.582005 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:1 sc:0
+260709-17:50:21.583322 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 disassoc sc:1 deauth sc:1 len:26 reason:0
+260709-17:50:21.583435 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:50:21.583660 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 reason:0
+260709-17:50:22.147364 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:2 sc:0 len:64 rssi:-65
+260709-17:50:22.147716 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:2 sc:1
+260709-17:50:22.148711 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 reason:0
+260709-17:50:23.315836 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:1 sc:0 len:128 rssi:-70
+260709-17:50:23.322310 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:1 sc:0
+260709-17:50:23.905410 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:2 sc:0 len:64 rssi:-69
+260709-17:50:23.905896 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:2 sc:0
+260709-17:50:23.929910 <I>  process_frame_mgmt:1072: interface:wl0.1 received assoc frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 cap:0x431 len:113 rssi:-68
+260709-17:50:23.930431 <I>  wifi_drv_sta_add:10565: Set STA 20:f1:b2:8d:c0:a8
+260709-17:50:23.931621 <I>  wifi_drv_send_mlme:9823: interface:wl0.1 send assoc resp frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 cap:0x1411 aid:14 sc:0
+260709-17:50:23.933254 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:50:23.933714 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-17:50:23.934071 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 replay counter:1
+260709-17:50:24.574176 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:1 sc:0 len:128 rssi:-70
+260709-17:50:24.580751 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:1 sc:0
+260709-17:50:24.582400 <I>  process_frame_mgmt:1265: interface:wl0.1 received deauth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 disassoc sc:1 deauth sc:1 len:26 reason:0
+260709-17:50:24.582488 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:50:24.582686 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 reason:0
+260709-17:50:25.145695 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:2 sc:0 len:64 rssi:-70
+260709-17:50:25.146069 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:2 sc:1
+260709-17:50:25.146558 <I>  wifi_sta_remove:8958: interface:wl0.1 send deauth from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 reason:0
+260709-17:50:30.075457 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:1 sc:0 len:128 rssi:-70
+260709-17:50:30.082364 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:1 sc:0
+260709-17:50:30.650253 <I>  process_frame_mgmt:1042: interface:wl0.1 received auth frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 alg:3 seq:2 sc:0 len:64 rssi:-71
+260709-17:50:30.650715 <I>  wifi_drv_send_mlme:9815: interface:wl0.1 send auth frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 alg:3 seq:2 sc:0
+260709-17:50:30.665899 <I>  process_frame_mgmt:1072: interface:wl0.1 received assoc frame from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 cap:0x431 len:113 rssi:-71
+260709-17:50:30.666458 <I>  wifi_drv_sta_add:10565: Set STA 20:f1:b2:8d:c0:a8
+260709-17:50:30.667728 <I>  wifi_drv_send_mlme:9823: interface:wl0.1 send assoc resp frame from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 cap:0x1411 aid:18 sc:0
+260709-17:50:30.670798 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0xe flags_and=0xfffffffe authorized=0
+260709-17:50:30.671322 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6e flags_or=0x0 flags_and=0xfffffffe authorized=0
+260709-17:50:30.671753 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m1 from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 replay counter:1
+260709-17:50:30.739053 <I>  recv_data_frame:1897: interface:wl0.1 received eapol m2 from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 reply counter:1
+260709-17:50:30.741458 <I>  wifi_drv_hapd_send_eapol:10401: interface:wl0.1 sending eapol m3 from:8a:b3:9f:fe:0c:14 to:20:f1:b2:8d:c0:a8 replay counter:2
+260709-17:50:30.761567 <I>  recv_data_frame:1897: interface:wl0.1 received eapol m4 from:20:f1:b2:8d:c0:a8 to:8a:b3:9f:fe:0c:14 reply counter:2
+260709-17:50:30.762521 <I>  nl80211: Set STA flags - ifname=wl0.1 addr=20:f1:b2:8d:c0:a8 total_flags=0x6f flags_or=0x1 flags_and=0xffffffff authorized=1

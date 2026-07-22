@@ -1,0 +1,374 @@
+08.07.2026_00:00.30 [startXStreamer.sh] INFO Checking SecurePartition mount status
+08.07.2026_00:00.30 [startXStreamer.sh] INFO CheckSecureMount :/opt/SecurePartition is mounted successfully
+starting streamConfigurer !!!!
+start streamConfigurer service with partner Comcast
+08.07.2026_16:53.51 Starting xstreamer with /etc/stream_config_s2l35m_medium.ini
+08.07.2026_16:53.52 HDR status is disabled
+Conf file /etc/debug.ini open success
+260708-16:46:00.351673 [mod=BREAKPAD, lvl=INFO] [tid=1872] breakpadwrap.cpp(21):Registering breakpad handler... 
+260708-16:46:00.595691 [mod=XSTREAM, lvl=INFO] [tid=1872] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamConfigurer/src/xStreamerHelper.cpp:wait_for_xStreamer waiting for xstreamer to start, Init file does not exist
+Conf file /etc/debug.ini open success
+260708-16:53:54.415944 [mod=BREAKPAD, lvl=INFO] [tid=1966] breakpadwrap.cpp(21):Registering breakpad handler... 
+260708-16:53:54.418078 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp rdk logger enabled 
+enc_0.buf_id = 2    
+enc_0.enc_win.height = 720
+enc_0.enc_win.width = 1280
+enc_0_M = 1
+enc_0_N = 30
+enc_0_gop_structure = 0
+enc_0_idr_interval = 1
+enc_1.buf_id = 2   
+enc_1.enc_win.height = 720
+enc_1.enc_win.width = 1280
+enc_1_M = 1
+enc_1_N = 40
+enc_1_gop_structure = 0
+enc_1_idr_interval = 1
+enc_2.buf_id = 2
+enc_2.enc_win.height = 720
+enc_2.enc_win.width = 1280
+enc_2_M = 1
+enc_2_N = 40
+enc_2_gop_structure = 0
+enc_2_idr_interval = 1
+max_fov = 96
+max_radius = 960
+max_streams = 2
+src-buffer_0_height = 1080
+src-buffer_0_width = 1920
+src-buffer_1_height = 288
+src-buffer_1_width = 512
+src-buffer_2_height = 720
+src-buffer_2_width = 1280
+src-buffer_input_height = 1080
+src-buffer_input_width = 1920
+stream_0_average_bitrate = 576000
+stream_0_vbr_setting = 4
+stream_1_average_bitrate = 1152000
+stream_1_vbr_setting = 4
+stream_2_average_bitrate = 900000
+stream_2_vbr_setting = 4
+stream_max_size_height = 1080
+stream_max_size_width = 1920
+vin-flip = 0
+vin-fps = 15
+vin-hdr_mode = 0
+vin-mirror = 0
+vin-mode = 0
+warp_mode = 1
+260708-16:53:54.537660 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(1084) : Starts configuring 2 streams
+260708-16:53:54.538116 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(76) : Apply the HDR mode(0) from config file. HDR mode is 0
+260708-16:53:54.538270 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(85) : Initilizing bayer_pattern to default 1
+260708-16:53:54.538774 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(200) :stream_dummy_latency_flag0
+260708-16:53:54.619438 [mod=XSTREAM, lvl=INFO] [tid=1872] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamConfigurer/src/xStreamerHelper.cpp:wait_for_xStreamer waiting for xstreamer to start, Init file does not exist
+260708-16:53:54.672686 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_dsp_init(890): bsb_mem = 0x7622a000, size = 0x300000
+260708-16:53:54.817070 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(309): vsrc_info.dev_type = 0
+260708-16:53:54.819252 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(339): Done
+260708-16:53:54.819437 [mod=XSTREAM, lvl=INFO] [tid=1966] setup_resource_limit(357): resource_limit_setup.max_num_cap_sources=2, resource_limit_setup.max_num_encode=4
+260708-16:53:54.819505 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(385): setup_resource_limit buf_max_size[0]= 1920x1080
+260708-16:53:54.819556 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(385): setup_resource_limit buf_max_size[1]= 512x288
+260708-16:53:54.819604 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(385): setup_resource_limit buf_max_size[2]= 1280x720
+260708-16:53:54.819647 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(394): setup_resource_limit buf_max_size[2]= 1280x720
+260708-16:53:54.819690 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(395): setup_resource_limit buf_max_size[3]= 0x0
+260708-16:53:54.819734 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(402): setup_resource_limit stream_max_size[0]= 1920x1080
+260708-16:53:54.819775 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/soc/stream_hal_api.c(402): setup_resource_limit stream_max_size[1]= 1920x1080
+260708-16:53:54.819827 [mod=XSTREAM, lvl=INFO] [tid=1966] setup_resource_limit(406): Done
+260708-16:53:54.819927 [mod=XSTREAM, lvl=INFO] [tid=1966] 
+Main: 1920x1080
+Second: 512x288 from 1920x1080
+Third: 1280x720 from 1920x1080
+Fourth: 0x0 from 0x0
+260708-16:53:55.795558 [mod=XSTREAM, lvl=INFO] [tid=1872] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamConfigurer/src/xStreamerHelper.cpp:wait_for_xStreamer waiting for xstreamer to start, Init file does not exist
+260708-16:53:55.976120 [mod=XSTREAM, lvl=INFO] [tid=1966] 
+================================================
+260708-16:53:55.976243 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(562): PrepareEncoder stream config success for stream_id : 0
+260708-16:53:55.976297 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(563): gop_structure=0
+260708-16:53:55.976341 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(564): gop_M=1
+260708-16:53:55.976383 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(565): gop_N=30
+260708-16:53:55.976422 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(566): deblocking_filter_enable=1
+260708-16:53:55.976460 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(567): deblocking_filter_alpha=-6
+260708-16:53:55.976499 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(568): deblocking_filter_beta=-6
+260708-16:53:55.976535 [mod=XSTREAM, lvl=INFO] [tid=1966] 
+================================================
+260708-16:53:55.976636 [mod=XSTREAM, lvl=INFO] [tid=1966] set_stream_format(552): stream_idx:0, source:2, encode format: offset:[0x0], size:[1280,720]
+260708-16:53:55.976976 [mod=XSTREAM, lvl=INFO] [tid=1966] 
+================================================
+260708-16:53:55.977046 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(562): PrepareEncoder stream config success for stream_id : 1
+260708-16:53:55.977121 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(563): gop_structure=0
+260708-16:53:55.977167 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(564): gop_M=1
+260708-16:53:55.977208 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(565): gop_N=40
+260708-16:53:55.977247 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(566): deblocking_filter_enable=1
+260708-16:53:55.977286 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(567): deblocking_filter_alpha=-6
+260708-16:53:55.977324 [mod=XSTREAM, lvl=INFO] [tid=1966] PrepareEncoderConfig(568): deblocking_filter_beta=-6
+260708-16:53:55.977358 [mod=XSTREAM, lvl=INFO] [tid=1966] 
+================================================
+260708-16:53:55.977418 [mod=XSTREAM, lvl=INFO] [tid=1966] set_stream_format(552): stream_idx:1, source:2, encode format: offset:[0x0], size:[1280,720]
+map_warp: start = 0x76218000, total size = 0x12000
+
+Dewarp Library Version: Ambarella S2L Dewarp Library-1.3.11 (Last updated: 20160829)
+
+	Input size 1600x1024, offset 160x16
+	Output size 1920x1080, offset 0x0
+	Hor Table 31x33, grid 2x1 (64x32)
+	Ver Table 31x35, grid 2x1 (64x32)
+	ME1 Ver Table 16x18, grid 1x0 (32x16)
+260708-16:53:56.127946 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(1231) : XStreamerProducer initialization success
+260708-16:53:56.128083 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(177) : Initialize() success 
+260708-16:53:56.128143 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(194) : Producer initialization success param=5 
+260708-16:53:56.128304 [mod=XSTREAM, lvl=INFO] [tid=1966] streamId =1
+260708-16:53:56.128389 [mod=XSTREAM, lvl=INFO] [tid=1966] streamId =3
+260708-16:53:56.574213 [mod=XSTREAM, lvl=INFO] [tid=1966] streamId IAV_IOC_START_ENCODE =3
+260708-16:53:56.574332 [mod=XSTREAM, lvl=INFO] [tid=1966] Start encoding for stream 0x3 successfully
+260708-16:53:56.574393 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(1309) : StartEncode success
+260708-16:53:56.574539 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(278) : Encoder started successfully!!!
+Mongoose: Binding to IP Addr:Port 127.0.0.1:8010
+260708-16:53:56.576238 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(374) : Mongoose 2.6 started on port(s) [127.0.0.1:8010], serving directory [/mnt/nfs/bin/rstreamer/usr/bin/lighttpd/wwwroot]
+260708-16:53:56.576739 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(204) : Start() success 
+260708-16:53:56.576830 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4269) : MonitorDeviceDriver called
+260708-16:53:56.577073 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-16:53:57.074282 [mod=XSTREAM, lvl=INFO] [tid=1872] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamConfigurer/src/xStreamerHelper.cpp(500): high resolution(1920x1080) medium resolution(1280x720) and low resolution(640x360)
+260708-16:53:57.208360 [mod=XSTREAM, lvl=INFO] [tid=1872] main(1389): initialize  the Stream Configurer with SVQ enabled ,resolution medium and partner Id Comcast with aspectRatio 16_9
+260708-16:53:57.218372 [mod=XSTREAM, lvl=INFO] [tid=2343] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2206) : Requested URI ---> /DisableOverlay&streamID=0&areaID=1& 
+260708-16:53:57.221515 [mod=XSTREAM, lvl=INFO] [tid=2343] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2212) : First Parsed Token ---> /DisableOverlay 
+260708-16:53:57.221659 [mod=XSTREAM, lvl=INFO] [tid=2343] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2233) : Disable Overlay request received for StreamId: 0
+260708-16:53:57.221735 [mod=XSTREAM, lvl=INFO] [tid=2343] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2240) : areaID:1
+260708-16:53:57.225272 [mod=XSTREAM, lvl=INFO] [tid=1872] disableOverlay(901): Disable overlay success for Stream 0
+260708-16:53:57.235949 [mod=XSTREAM, lvl=INFO] [tid=2345] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2206) : Requested URI ---> /DisableOverlay&streamID=1&areaID=1& 
+260708-16:53:57.236069 [mod=XSTREAM, lvl=INFO] [tid=2345] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2212) : First Parsed Token ---> /DisableOverlay 
+260708-16:53:57.236140 [mod=XSTREAM, lvl=INFO] [tid=2345] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2233) : Disable Overlay request received for StreamId: 1
+260708-16:53:57.236201 [mod=XSTREAM, lvl=INFO] [tid=2345] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2240) : areaID:1
+260708-16:53:57.237732 [mod=XSTREAM, lvl=INFO] [tid=1872] disableOverlay(901): Disable overlay success for Stream 1
+260708-16:53:57.237851 [mod=XSTREAM, lvl=INFO] [tid=1872] main(1413): SVQ is enabled 
+260708-16:53:57.309229 [mod=XSTREAM, lvl=INFO] [tid=1872] getXYOffset(716): Image Height : 48, Image Width : 128
+260708-16:53:57.315283 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2086) : Requested URI ---> /SetOverlay&streamID=0&areaID=1&x=1112&y=40&BMPfilename=/etc/xfinity_logo.bmp&alpha=150 
+260708-16:53:57.315546 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2092) : First Parsed Token ---> /SetOverlay 
+260708-16:53:57.315646 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2112) : Set Overlay request received for Stream ID:0
+260708-16:53:57.315724 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2119): 	Area ID: 1
+260708-16:53:57.315780 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2126): 	Overlay x-ord: 1112
+260708-16:53:57.315897 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2133): 	Overlay y-ord: 40
+260708-16:53:57.316196 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2140): 	BMPfilename: /etc/xfinity_logo.bmp
+260708-16:53:57.316302 [mod=XSTREAM, lvl=INFO] [tid=2353] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2147): 	alpha: 150
+260708-16:53:57.317422 [mod=OVERLAY, lvl=INFO] [tid=2353] stream_hal_set_overlay(408): BMP image successfully converted
+260708-16:53:57.317693 [mod=OVERLAY, lvl=INFO] [tid=2353] save_overlay(387): IAV_IOC_GET_OVERLAY_INSERT successful.
+260708-16:53:57.317922 [mod=OVERLAY, lvl=INFO] [tid=2353] stream_hal_set_overlay(458): IAV_IOC_SET_OVERLAY_INSERT successful, for following parameters:
+260708-16:53:57.318092 [mod=OVERLAY, lvl=INFO] [tid=2353] stream_hal_set_overlay(459): 	Stream ID:
+260708-16:53:57.318159 [mod=OVERLAY, lvl=INFO] [tid=2353] stream_hal_set_overlay(460): 	Area ID: 1
+260708-16:53:57.318208 [mod=OVERLAY, lvl=INFO] [tid=2353] stream_hal_set_overlay(461): 	Overlay x-ord: 1112
+260708-16:53:57.318254 [mod=OVERLAY, lvl=INFO] [tid=2353] stream_hal_set_overlay(462): 	Overlay y-ord: 40
+260708-16:53:57.365169 [mod=XSTREAM, lvl=INFO] [tid=1872] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamConfigurer/src/xStreamerHelper.cpp(867) : Overlay success for CVR and Live Streaming with resolution medium
+260708-16:53:57.369873 [mod=RBUS, lvl=INFO] [tid=1872] rbus open for component: xsensor_provider
+260708-16:53:57.412192 [mod=RBUS, lvl=INFO] [tid=1872]  rbus open (xsensor_provider) success
+260708-16:53:57.412523 [mod=RBUS, lvl=INFO] [tid=1872] file /tmp/rbus_subs_xsensor_provider
+260708-16:53:57.412687 [mod=RBUS, lvl=ERROR] [tid=1872] failed to open file /tmp/rbus_subs_xsensor_provider
+260708-16:53:57.412758 [mod=RBUS, lvl=WARN] [tid=1872] removing corrupted file /tmp/rbus_subs_xsensor_provider
+260708-16:53:57.412878 [mod=RBUS, lvl=ERROR] [tid=1872] failed to remove /tmp/rbus_subs_xsensor_provider
+260708-16:54:34.088035 [mod=XSTREAM, lvl=INFO] [tid=4426] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(572) : Requested URI ---> /GetStreamConfig&keyvalue=1& 
+260708-16:54:34.088207 [mod=XSTREAM, lvl=INFO] [tid=4426] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(578) : First Parsed Token ---> /GetStreamConfig 
+260708-16:54:34.088322 [mod=XSTREAM, lvl=INFO] [tid=4426] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(599) : Get Stream Conf request received for Stream Id: 1
+260708-16:54:34.091567 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(447) : StartStreaming called
+260708-16:54:34.091683 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(459) : Requested URI ---> /startstream&keyvalue=17&format=1&appid=9& 
+260708-16:54:34.091744 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(465) : First Parsed Token ---> /startstream 
+260708-16:54:34.091821 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> keyvalue=17 
+260708-16:54:34.091872 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(481) : Attribute: keyvalue Value: 17
+260708-16:54:34.091922 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(487) : Streaming request received for StreamID: 17
+260708-16:54:34.091970 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> format=1 
+260708-16:54:34.092015 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(481) : Attribute: format Value: 1
+260708-16:54:34.092060 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(494) : Requested format: 1 [H264->1,H265->3,YUV->0]
+260708-16:54:34.092103 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> appid=9 
+260708-16:54:34.092147 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(481) : Attribute: appid Value: 9
+260708-16:54:34.092192 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(501) : Requested by application 9 
+260708-16:54:34.092254 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> (null) 
+260708-16:54:34.092525 [mod=XSTREAM, lvl=INFO] [tid=4428] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2441) : ProcessEncodedFrame called for stream 17 by application 9
+ 260708-16:54:34.096337 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(3997) : StartAudioStreaming called
+260708-16:54:34.096455 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4008) : Requested URI ---> /startaudiostream&keyvalue=17&appid=9& 
+260708-16:54:34.096515 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4014) : First Parsed Token ---> /startaudiostream 
+260708-16:54:34.096564 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4022) : Subsequent Parsed Token ---> keyvalue=17 
+260708-16:54:34.096609 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4030) : Attribute: keyvalue Value: 17
+260708-16:54:34.096689 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4036) : Audio request received for audio_id:17
+260708-16:54:34.096738 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4022) : Subsequent Parsed Token ---> appid=9 
+260708-16:54:34.096783 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4030) : Attribute: appid Value: 9
+260708-16:54:34.096828 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4042) : Requested by application 9 
+260708-16:54:34.096872 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4022) : Subsequent Parsed Token ---> (null) 
+260708-16:54:34.097114 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(3936) : XStreamer::AudioInit called
+260708-16:54:34.099237 [mod=XAUDIO, lvl=INFO] [tid=4427] aac encoder settings: 	mode(0), sfreq(8000), coresfreq(8000), bitrate(12000), srcch(1), quality(2), bitrate(12000)
+
+260708-16:54:36.544379 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_open(&pcm, "mixin", SND_PCM_STREAM_CAPTURE, 0): ok
+260708-16:54:36.544732 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_malloc(&params): ok
+260708-16:54:36.565531 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_any(pcm, params): ok
+260708-16:54:36.565867 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_set_format(pcm, params, format): ok
+260708-16:54:36.566063 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_set_access(pcm, params, SND_PCM_ACCESS_RW_INTERLEAVED): ok
+260708-16:54:36.566470 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_set_period_size_near(pcm, params, &period_size, 0): ok
+260708-16:54:36.566560 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_set_rate_near(pcm, params, &sample_rate, 0): ok
+260708-16:54:36.566752 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params_set_channels(pcm, params, channel_count): ok
+260708-16:54:36.641687 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_hw_params(pcm, params): ok
+260708-16:54:36.641852 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_sw_params_current(pcm, swparams): ok
+260708-16:54:36.641928 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_sw_params_set_avail_min(pcm, swparams, period_size): ok
+260708-16:54:36.641997 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_sw_params_set_start_threshold(pcm, swparams, start_threshold): ok
+260708-16:54:36.642057 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_sw_params_set_stop_threshold(pcm, swparams, buffer_size): ok
+260708-16:54:36.642148 [mod=XAUDIO, lvl=INFO] [tid=4427] snd_pcm_prepare(pcm): ok
+260708-16:54:36.642243 [mod=XAUDIO, lvl=INFO] [tid=4427] alsa configured with format=S16_LE period_size=1024 buffer_size=3072 bits_per_sample=16 bits_per_frame=16 sample_rate=8192. pcm_handler=0x74f453b0
+260708-16:54:36.642346 [mod=XSTREAM, lvl=INFO] [tid=4427] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(3733) : ProcessAudioFrame called for stream 17 by application 9
+ 260708-16:54:56.528413 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-16:55:36.368132 [mod=XSTREAM, lvl=INFO] [tid=5392] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(572) : Requested URI ---> /GetStreamConfig&keyvalue=0& 
+260708-16:55:36.368283 [mod=XSTREAM, lvl=INFO] [tid=5392] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(578) : First Parsed Token ---> /GetStreamConfig 
+260708-16:55:36.368360 [mod=XSTREAM, lvl=INFO] [tid=5392] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(599) : Get Stream Conf request received for Stream Id: 0
+260708-16:55:36.396858 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(3997) : StartAudioStreaming called
+260708-16:55:36.396980 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4008) : Requested URI ---> /startaudiostream&keyvalue=0&appid=14& 
+260708-16:55:36.397042 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4014) : First Parsed Token ---> /startaudiostream 
+260708-16:55:36.397092 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4022) : Subsequent Parsed Token ---> keyvalue=0 
+260708-16:55:36.397138 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4030) : Attribute: keyvalue Value: 0
+260708-16:55:36.397185 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4036) : Audio request received for audio_id:0
+260708-16:55:36.397231 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4022) : Subsequent Parsed Token ---> appid=14 
+260708-16:55:36.397274 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4030) : Attribute: appid Value: 14
+260708-16:55:36.397317 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4042) : Requested by application 14 
+260708-16:55:36.397359 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4022) : Subsequent Parsed Token ---> (null) 
+260708-16:55:36.397672 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(3936) : XStreamer::AudioInit called
+260708-16:55:36.398179 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xProducer/src/xStreamerProducer.cpp(2215) : No CODEC needed for PCM
+260708-16:55:36.398286 [mod=XAUDIO, lvl=INFO] [tid=5397] No codec set in config,means PCM is requested
+260708-16:55:36.410426 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_open(&pcm, "mixin", SND_PCM_STREAM_CAPTURE, 0): ok
+260708-16:55:36.410552 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_malloc(&params): ok
+260708-16:55:36.411214 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_any(pcm, params): ok
+260708-16:55:36.411500 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_set_format(pcm, params, format): ok
+260708-16:55:36.411687 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_set_access(pcm, params, SND_PCM_ACCESS_RW_INTERLEAVED): ok
+260708-16:55:36.412112 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_set_period_size_near(pcm, params, &period_size, 0): ok
+260708-16:55:36.412209 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_set_rate_near(pcm, params, &sample_rate, 0): ok
+260708-16:55:36.412408 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params_set_channels(pcm, params, channel_count): ok
+260708-16:55:36.413814 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_hw_params(pcm, params): ok
+260708-16:55:36.414003 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_sw_params_current(pcm, swparams): ok
+260708-16:55:36.414082 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_sw_params_set_avail_min(pcm, swparams, period_size): ok
+260708-16:55:36.414140 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_sw_params_set_start_threshold(pcm, swparams, start_threshold): ok
+260708-16:55:36.414190 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_sw_params_set_stop_threshold(pcm, swparams, buffer_size): ok
+260708-16:55:36.414280 [mod=XAUDIO, lvl=INFO] [tid=5397] snd_pcm_prepare(pcm): ok
+260708-16:55:36.414370 [mod=XAUDIO, lvl=INFO] [tid=5397] alsa configured with format=S16_LE period_size=1024 buffer_size=3072 bits_per_sample=16 bits_per_frame=16 sample_rate=8192. pcm_handler=0x75902af8
+260708-16:55:36.414455 [mod=XSTREAM, lvl=INFO] [tid=5397] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(3733) : ProcessAudioFrame called for stream 0 by application 14
+ 260708-16:55:36.501076 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(447) : StartStreaming called
+260708-16:55:36.503729 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(459) : Requested URI ---> /startstream&keyvalue=0&format=1&appid=14& 
+260708-16:55:36.504646 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(465) : First Parsed Token ---> /startstream 
+260708-16:55:36.506214 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> keyvalue=0 
+260708-16:55:36.506362 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(481) : Attribute: keyvalue Value: 0
+260708-16:55:36.506435 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(487) : Streaming request received for StreamID: 0
+260708-16:55:36.506489 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> format=1 
+260708-16:55:36.506536 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(481) : Attribute: format Value: 1
+260708-16:55:36.506583 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(494) : Requested format: 1 [H264->1,H265->3,YUV->0]
+260708-16:55:36.506662 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> appid=14 
+260708-16:55:36.506717 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(481) : Attribute: appid Value: 14
+260708-16:55:36.506767 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(501) : Requested by application 14 
+260708-16:55:36.506811 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(473) : Subsequent Parsed Token ---> (null) 
+260708-16:55:36.513312 [mod=XSTREAM, lvl=INFO] [tid=5398] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(2441) : ProcessEncodedFrame called for stream 0 by application 14
+ 260708-16:55:56.529018 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-16:56:56.557766 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-16:57:18.496944 [mod=XSTREAM, lvl=INFO] [tid=2366] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamConfigurer/src/xStreamerHelper.cpp(225) : SetProperty Device.DeviceInfo.X_RDKCENTRAL-COM_xOpsDeviceMgmt.Feature.SVQ.partner 
+08.07.2026_16:57.18 Notifying streamConfigurer service to set overlay after partnerid change
+260708-16:57:56.558343 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-16:58:56.580136 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-16:59:56.581137 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:00:56.582180 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:01:56.585820 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:02:56.564716 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:03:56.560941 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:04:56.569156 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:05:56.589084 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:06:56.589624 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:07:56.590652 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:08:56.592447 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:09:56.481997 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-17:09:56.482857 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:10:56.483704 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:11:56.598040 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:12:56.598636 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:13:56.602477 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:14:56.578232 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:15:56.579086 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:16:56.585521 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:17:56.586755 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:18:56.588393 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:19:56.594518 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:20:56.595082 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:21:56.592223 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:22:56.592771 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:23:56.599156 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:24:56.599741 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-17:24:56.600284 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:25:56.601929 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:26:56.603324 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:27:56.613709 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:28:56.576307 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:29:56.576863 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:30:56.609990 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:31:56.628411 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:32:56.628970 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:33:56.630545 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:34:56.603207 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:35:56.603928 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:36:56.598056 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:37:56.598593 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:38:56.615194 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:39:56.615890 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-17:39:56.616309 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:40:56.617403 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:41:56.618033 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:42:56.619351 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:43:56.623685 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:44:56.624364 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:45:56.618748 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:46:56.619340 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:47:56.629361 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:48:56.628583 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:49:56.629351 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:50:56.653959 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:51:56.637602 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:52:56.657327 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:53:56.659308 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:54:56.659607 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-17:54:56.659996 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:55:56.650671 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:56:56.651334 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:57:56.664874 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:58:56.665975 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-17:59:56.667466 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:00:56.646933 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:01:56.647653 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:02:56.647187 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:03:56.661311 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:04:56.655153 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:05:56.655698 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:06:56.654742 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:07:56.661775 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:08:56.662005 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:09:56.662806 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-18:09:56.663817 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:10:56.664524 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:11:56.611725 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:12:56.687796 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:13:56.688337 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:14:56.689026 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:15:56.692717 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:16:56.693974 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:17:56.699401 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:18:56.700662 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:19:56.701324 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:20:56.701926 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:21:56.705095 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:22:56.689221 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:23:56.649934 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:24:56.650263 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-18:24:56.650794 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:25:56.692709 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:26:56.690572 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:27:56.714968 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:28:56.685904 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:29:56.701057 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:30:56.699380 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:31:56.699936 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:32:56.700473 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:33:56.722036 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:34:56.723102 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:35:56.724366 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:36:56.647723 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:37:56.648264 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:38:56.648822 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:39:56.730778 [mod=XSTREAM, lvl=INFO] [tid=1966] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-apps/1.0-r0/git/xStreamer/src/xStreamer.cpp(4399) : XStreamer : Device driver is in encoding state
+260708-18:39:56.731179 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:40:56.731690 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:41:56.732389 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2
+260708-18:42:56.733908 [mod=XSTREAM, lvl=INFO] [tid=1966] stream_hal_check_iav_state(2614): IAV STATE in Encoding. state : 2

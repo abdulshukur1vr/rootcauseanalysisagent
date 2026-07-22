@@ -69,19 +69,63 @@ Evidence:
         )
 
 
-        for event in report.timeline:
+        for group in report.timeline:
+
 
             lines.append(
 
                 f"""
-{event.sequence}. \
-{event.event.category.value} \
-({event.event.severity.value})
+### {group.category.value}
 
-{event.event.message}
+Occurrences: {group.count}
+
+Start Time: 
+{group.start_time}
+
+End Time: 
+{group.end_time}
+
+Sources:
 
 """
+            )
 
+
+            for source in group.sources:
+
+                lines.append(
+                    f"- {source}\n"
+                )
+
+
+            lines.append(
+                "\nEvents:\n\n"
+            )
+
+
+            for event in group.events:
+
+
+                timestamp = ""
+
+                if event.timestamp:
+
+                    timestamp = (
+                        str(event.timestamp)
+                        + " "
+                    )
+
+
+                lines.append(
+
+                    f"- {timestamp}"
+                    f"{event.message}\n"
+
+                )
+
+
+            lines.append(
+                "\n"
             )
 
 

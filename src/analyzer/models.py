@@ -2,7 +2,10 @@
 RCA domain models.
 """
 
-from dataclasses import dataclass
+from dataclasses import( 
+    dataclass,
+    field
+)
 
 from detector.models import EventCategory
 
@@ -18,3 +21,11 @@ class RootCauseCandidate:
     explanation: str
 
     evidence: list[str]
+
+    affected_components: list[str] = field(
+        default_factory=list
+    )
+
+    recommendations: list[str] = field(
+        default_factory=list
+    )

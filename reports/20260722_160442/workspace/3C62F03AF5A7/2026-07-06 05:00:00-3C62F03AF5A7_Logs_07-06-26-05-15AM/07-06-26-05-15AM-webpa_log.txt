@@ -1,0 +1,749 @@
+04.07.2026_14:26.03 checkIP - called from webpa-service
+0
+04.07.2026_14:26.54 starting webpa-service !!!!
+04.07.2026_14:26.54 webpa service is running!!!
+Conf file /etc/debug.ini open success
+260704-14:26:55.918272 [mod=WEBPA, lvl=INFO] [tid=5403] value  of debug_file = /etc/debug.ini
+260704-14:26:55.919139 [mod=WEBPA, lvl=INFO] [tid=5403] MSQID : 0260704-14:26:56.976988 [mod=BREAKPAD, lvl=INFO] [tid=5403] breakpadwrap.cpp(21):Registering breakpad handler... 
+260704-14:26:56.978897 [mod=WEBPA, lvl=INFO] [tid=5403] ********** Starting component: com.cisco.spvtg.ccsp.webpaagent **********
+ 260704-14:26:56.979175 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_provider
+260704-14:26:56.992302 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_provider) success
+260704-14:26:56.992754 [mod=RBUS, lvl=INFO] [tid=5403] file /tmp/rbus_subs_webpa_provider
+260704-14:26:56.992923 [mod=RBUS, lvl=ERROR] [tid=5403] failed to open file /tmp/rbus_subs_webpa_provider
+260704-14:26:56.992994 [mod=RBUS, lvl=WARN] [tid=5403] removing corrupted file /tmp/rbus_subs_webpa_provider
+260704-14:26:56.993158 [mod=RBUS, lvl=ERROR] [tid=5403] failed to remove /tmp/rbus_subs_webpa_provider
+260704-14:26:57.072349 [mod=RDKCPROVIDER, lvl=INFO] [tid=5403] 
+serial_number is [C3SC1260900AEC]!
+260704-14:26:57.072476 [mod=RDKCPROVIDER, lvl=INFO] [tid=5403] model is [XHC3]!
+260704-14:26:57.072530 [mod=RDKCPROVIDER, lvl=INFO] [tid=5403] mac_addr is [3C:62:F0:3A:F5:A7]!
+260704-14:26:57.072665 [mod=RTMESSAGE, lvl=INFO] [tid=5403] Mac address =3C:62:F0:3A:F5:A7
+
+260704-14:26:57.278357 [mod=WEBPA, lvl=INFO] [tid=5403] Starting webpa dm provider!!
+260704-14:26:57.278524 [mod=WEBPA, lvl=INFO] [tid=5403] max_retry_sleep is 511
+260704-14:26:57.278656 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:30:59.882895 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:31:09.883212 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:31:11.892930 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:31:21.893195 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:31:23.903465 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:31:33.903728 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:31:35.916894 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:31:45.917383 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:31:47.933326 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:31:57.933600 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:31:59.944624 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:32:09.945247 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:32:11.958427 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:32:21.958735 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:32:23.968702 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:32:33.969395 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:32:35.971940 [mod=WEBPA, lvl=ERROR] [tid=5403] Init for parodus failed: '-106'
+260704-14:32:45.972200 [mod=WEBPA, lvl=INFO] [tid=5403] New backoffRetryTime value calculated as 10 seconds
+260704-14:32:45.976406 [mod=WEBPA, lvl=INFO] [tid=5403] Init for parodus Success..!!
+260704-14:32:45.976738 [mod=WEBPA, lvl=INFO] [tid=5403] Search completed in Hashtable
+260704-14:32:45.976839 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:32:45.982400 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:32:45.995268 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:32:46.001244 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:32:46.001446 [mod=WEBPA, lvl=INFO] [tid=5403] parameterValue 3c:62:f0:3a:f5:a7
+260704-14:32:46.002245 [mod=WEBPA, lvl=INFO] [tid=7353] WebPA is now ready to process requests
+Inside xOpsDeviceInfoProvider_setHandler at 63
+260704-14:33:27.719487 [mod=WEBPA, lvl=INFO] [tid=5494] Inside xOpsDeviceMgmt::sendNotification!! 
+260704-14:33:27.723048 [mod=WEBPA, lvl=INFO] [tid=5494] event : ConfigAcquiredNotification
+260704-14:33:27.723743 [mod=WEBPA, lvl=INFO] [tid=5494] Notification payload {"device_id":"mac:3C:62:F0:3A:F5:A7","status":"config_ready","ready-time":1783175607}
+260704-14:33:27.723916 [mod=WEBPA, lvl=INFO] [tid=5494] Cam Readiness event type
+260704-14:33:27.724013 [mod=WEBPA, lvl=INFO] [tid=5494] Notification Event  Parameter Name: CAM_READINESS, New Value: {"device_id":"mac:3C:62:F0:3A:F5:A7","status":"config_ready","ready-time":1783175607}, Data Type: 0, Change Source: 256
+260704-14:33:31.021432 [mod=WEBPA, lvl=INFO] [tid=7353] Notification notifyPayload = {"device_id":"mac:3c62f03af5a7","cam":"{\"device_id\":\"mac:3C:62:F0:3A:F5:A7\",\"status\":\"config_ready\",\"ready-time\":1783175607}"} 
+260704-14:33:31.021587 [mod=WEBPA, lvl=INFO] [tid=7353] Notification payload: {"device_id":"mac:3c62f03af5a7","cam":"{\"device_id\":\"mac:3C:62:F0:3A:F5:A7\",\"status\":\"config_ready\",\"ready-time\":1783175607}"}
+260704-14:33:31.022208 [mod=WEBPA, lvl=INFO] [tid=7353] Notification successfully sent to parodus
+260704-14:40:10.758668 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:40:10.759457 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:40:10.759621 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:40:10.759693 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:40:10.759752 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:40:10.759866 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:40:10.766447 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:40:10.886144 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:40:10.886805 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:40:10.894088 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:40:10.894327 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 136 ms
+260704-14:42:33.488564 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:42:33.488816 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:42:33.488886 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:42:33.488939 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:42:33.488987 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:42:33.489048 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:42:33.491346 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:42:33.552108 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:42:33.552664 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:42:33.554883 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:42:33.554997 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 66 ms
+260704-14:47:28.387202 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:47:28.387449 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:47:28.387519 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:47:28.387575 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:47:28.387623 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:47:28.387683 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:47:28.392667 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:47:28.502735 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:47:28.503305 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:47:28.505496 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:47:28.505614 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 118 ms
+260704-14:51:44.957308 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:51:44.957770 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:51:44.957854 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:51:44.957927 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:51:44.957976 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:51:44.958052 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:51:44.962312 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:51:45.173882 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:51:45.174448 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:51:45.176490 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:51:45.176605 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 220 ms
+260704-14:54:00.302227 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:54:00.302554 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:54:00.302628 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:54:00.302681 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:54:00.302729 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:54:00.302788 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:54:00.304374 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:54:00.421107 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:54:00.421782 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:54:00.423878 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:54:00.423991 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 121 ms
+260704-14:56:12.810733 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:56:12.811295 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:56:12.811429 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:56:12.811501 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:56:12.811553 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:56:12.811632 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:56:12.814534 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:56:12.918705 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:56:12.919280 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:56:12.921454 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:56:12.921573 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 111 ms
+260704-14:58:16.799866 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-14:58:16.800118 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-14:58:16.800186 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-14:58:16.800241 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-14:58:16.800290 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-14:58:16.800347 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:58:16.801966 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:58:16.924604 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:58:16.925166 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:58:16.927260 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:58:16.927376 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 127 ms
+260704-14:59:52.505480 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: Request {"command":"GET","names":["Device.DeviceInfo.ModelName","Device.DeviceInfo.Manufacturer","Device.DeviceInfo.X_RDKCENTRAL-COM_IMAGENAME"]}
+260704-14:59:52.505878 [mod=WEBPA, lvl=INFO] [tid=5403] Search completed in Hashtable
+260704-14:59:52.505988 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:59:52.506740 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:59:52.520219 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:59:52.522061 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:59:52.522350 [mod=WEBPA, lvl=INFO] [tid=5403] parameterValue XHC3
+260704-14:59:52.522678 [mod=WEBPA, lvl=INFO] [tid=5403] Search completed in Hashtable
+260704-14:59:52.539040 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:59:52.547054 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:59:52.551303 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:59:52.553291 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:59:52.554085 [mod=WEBPA, lvl=INFO] [tid=5403] parameterValue Sercomm
+260704-14:59:52.554925 [mod=WEBPA, lvl=INFO] [tid=5403] Search completed in Hashtable
+260704-14:59:52.555779 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-14:59:52.558361 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-14:59:52.562538 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-14:59:52.564342 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-14:59:52.564452 [mod=WEBPA, lvl=INFO] [tid=5403] parameterValue XHC3_8.4p1s1_PROD_sdy
+260704-14:59:52.568130 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-14:59:52.568250 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 62 ms
+260704-15:00:17.390032 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:00:17.390632 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:00:17.390761 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:00:17.390838 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:00:17.390899 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:00:17.391005 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:00:17.396193 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:00:17.496422 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:00:17.496993 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:00:17.499252 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:00:17.499370 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 109 ms
+260704-15:02:28.791405 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:02:28.791666 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:02:28.791735 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:02:28.791789 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:02:28.793435 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:02:28.793576 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:02:28.797084 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:02:28.913993 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:02:28.914635 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:02:28.917075 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:02:28.917196 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 125 ms
+260704-15:04:33.485419 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:04:33.485708 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:04:33.485777 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:04:33.485829 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:04:33.485877 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:04:33.485935 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:04:33.489299 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:04:33.534662 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:04:33.535779 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:04:33.542476 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:04:33.542852 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 57 ms
+260704-15:06:37.585686 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:06:37.585935 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:06:37.586006 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:06:37.586059 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:06:37.586108 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:06:37.586168 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:06:37.586897 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:06:37.682123 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:06:37.682692 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:06:37.686800 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:06:37.686920 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 101 ms
+260704-15:09:44.111974 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:09:44.112222 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:09:44.112290 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:09:44.112344 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:09:44.112393 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:09:44.112454 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:09:44.113185 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:09:44.271162 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:09:44.272349 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:09:44.276917 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:09:44.285380 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 165 ms
+260704-15:11:55.228801 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:11:55.229111 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:11:55.229181 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:11:55.229233 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:11:55.229281 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:11:55.229340 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:11:55.230064 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:11:55.386633 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:11:55.387210 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:11:55.389420 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:11:55.389539 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 160 ms
+260704-15:14:29.892075 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:14:29.892325 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:14:29.892395 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:14:29.892447 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:14:29.892496 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:14:29.892554 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:14:29.893279 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:14:30.060923 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:14:30.061496 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:14:30.063585 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:14:30.063701 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 172 ms
+260704-15:20:19.793997 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:20:19.794242 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:20:19.794310 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:20:19.794362 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:20:19.794411 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:20:19.794470 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:20:19.796597 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:20:19.898786 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:20:19.899399 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:20:19.901883 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:20:19.902096 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 108 ms
+260704-15:26:21.642195 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:26:21.642443 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:26:21.642511 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:26:21.642567 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:26:21.642615 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:26:21.642676 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:26:21.644201 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:26:21.720941 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:26:21.721508 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:26:21.728616 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:26:21.728737 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 86 ms
+260704-15:28:21.969028 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:28:21.985340 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:28:21.985450 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:28:21.986305 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:28:21.986404 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:28:21.986476 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:28:21.990953 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:28:22.147646 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:28:22.148225 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:28:22.150491 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:28:22.150608 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 183 ms
+260704-15:31:58.177764 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:31:58.178013 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:31:58.178084 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:31:58.178136 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:31:58.178184 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:31:58.178243 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:31:58.178969 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:31:58.276731 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:31:58.277335 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:31:58.279591 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:31:58.279708 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 102 ms
+260704-15:36:07.396118 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:36:07.396365 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:36:07.396435 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:36:07.396489 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:36:07.396537 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:36:07.396597 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:36:07.398118 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:36:07.539880 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:36:07.540459 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:36:07.542860 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:36:07.542978 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 147 ms
+260704-15:58:41.126227 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-15:58:41.126479 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-15:58:41.126547 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-15:58:41.126600 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-15:58:41.126646 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-15:58:41.126706 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-15:58:41.127417 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-15:58:41.206338 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-15:58:41.206903 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-15:58:41.209448 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-15:58:41.209570 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 83 ms
+260704-16:09:55.992381 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-16:09:55.992633 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-16:09:55.992703 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-16:09:55.992755 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-16:09:55.992803 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-16:09:55.992864 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-16:09:55.994463 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-16:09:56.106651 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-16:09:56.107235 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-16:09:56.109365 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-16:09:56.109481 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 118 ms
+260704-16:27:18.542534 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-16:27:18.542781 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-16:27:18.542894 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-16:27:18.542954 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-16:27:18.543003 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-16:27:18.543063 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-16:27:18.546161 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-16:27:18.823312 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-16:27:18.824030 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-16:27:18.826251 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-16:27:18.826368 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 283 ms
+260704-18:06:09.458083 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-18:06:09.458588 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-18:06:09.458689 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-18:06:09.458754 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-18:06:09.458812 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-18:06:09.458899 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-18:06:09.465097 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-18:06:09.507817 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-18:06:09.508395 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-18:06:09.510846 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-18:06:09.511059 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 53 ms
+260704-18:08:37.260663 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-18:08:37.260980 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-18:08:37.261060 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-18:08:37.261113 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-18:08:37.261162 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-18:08:37.261229 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-18:08:37.264702 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-18:08:37.375020 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-18:08:37.375629 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-18:08:37.379817 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-18:08:37.380043 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 119 ms
+260704-18:15:46.408180 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-18:15:46.408438 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-18:15:46.408508 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-18:15:46.408561 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-18:15:46.408609 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-18:15:46.408668 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-18:15:46.409395 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-18:15:46.491350 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-18:15:46.491925 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-18:15:46.498276 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-18:15:46.498523 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 90 ms
+260704-19:20:12.100783 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-19:20:12.101033 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-19:20:12.101103 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-19:20:12.101155 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-19:20:12.101202 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-19:20:12.101261 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-19:20:12.101988 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-19:20:12.251032 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-19:20:12.251602 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-19:20:12.255947 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-19:20:12.256063 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 155 ms
+260704-20:26:10.219260 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-20:26:10.219763 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-20:26:10.219875 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-20:26:10.219940 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-20:26:10.219993 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-20:26:10.220086 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-20:26:10.225007 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-20:26:10.322379 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-20:26:10.322952 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-20:26:10.325114 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-20:26:10.325230 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 106 ms
+260704-20:41:46.069406 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260704-20:41:46.069726 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260704-20:41:46.069811 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260704-20:41:46.069867 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260704-20:41:46.069916 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260704-20:41:46.069974 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260704-20:41:46.072773 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260704-20:41:46.263421 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260704-20:41:46.263987 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260704-20:41:46.268318 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260704-20:41:46.268434 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 199 ms
+260705-04:52:02.600641 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260705-04:52:02.600889 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260705-04:52:02.600960 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-04:52:02.601014 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260705-04:52:02.601061 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260705-04:52:02.601121 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260705-04:52:02.602708 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260705-04:52:02.761192 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260705-04:52:02.761760 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260705-04:52:02.763882 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260705-04:52:02.763995 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 163 ms
+260705-04:54:06.904475 [mod=WEBPA, lvl=INFO] [tid=5403] WDMP-C: SET Request
+260705-04:54:06.904729 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 0 
+260705-04:54:06.904799 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-04:54:06.904852 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 parameterValue=120 
+260705-04:54:06.904899 [mod=WEBPA, lvl=INFO] [tid=5403] Inside setValues2 dataType=2 
+260705-04:54:06.904959 [mod=RBUS, lvl=INFO] [tid=5403] rbus open for component: webpa_consumer
+260705-04:54:06.905677 [mod=RBUS, lvl=INFO] [tid=5403]  rbus open (webpa_consumer) success
+260705-04:54:07.045174 [mod=RBUS, lvl=INFO] [tid=5403] rbus close for (webpa_consumer)
+260705-04:54:07.045782 [mod=RBUS, lvl=INFO] [tid=5403] rbus close (webpa_consumer) success
+260705-04:54:07.048628 [mod=WEBPA, lvl=INFO] [tid=5403] Sent message successfully to parodus
+260705-04:54:07.048748 [mod=WEBPA, lvl=INFO] [tid=5403] Elapsed time : 145 ms
+05.07.2026_08:17.25 Restarting webpa client in maintenance window
+05.07.2026_08:17.26 checkIP - called from webpa-service
+0
+05.07.2026_08:17.27 starting webpa-service !!!!
+05.07.2026_08:17.27 webpa service is running!!!
+Conf file /etc/debug.ini open success
+260705-08:17:27.622156 [mod=WEBPA, lvl=INFO] [tid=16772] value  of debug_file = /etc/debug.ini
+260705-08:17:27.623014 [mod=WEBPA, lvl=INFO] [tid=16772] MSQID : 0260705-08:17:28.631928 [mod=BREAKPAD, lvl=INFO] [tid=16772] breakpadwrap.cpp(21):Registering breakpad handler... 
+260705-08:17:28.633884 [mod=WEBPA, lvl=INFO] [tid=16772] ********** Starting component: com.cisco.spvtg.ccsp.webpaagent **********
+ 260705-08:17:28.634163 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_provider
+260705-08:17:28.642380 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_provider) success
+260705-08:17:28.644313 [mod=RBUS, lvl=INFO] [tid=16772] file /tmp/rbus_subs_webpa_provider
+260705-08:17:28.644507 [mod=RBUS, lvl=ERROR] [tid=16772] failed to open file /tmp/rbus_subs_webpa_provider
+260705-08:17:28.644577 [mod=RBUS, lvl=WARN] [tid=16772] removing corrupted file /tmp/rbus_subs_webpa_provider
+260705-08:17:28.644943 [mod=RBUS, lvl=ERROR] [tid=16772] failed to remove /tmp/rbus_subs_webpa_provider
+260705-08:17:28.666948 [mod=RDKCPROVIDER, lvl=INFO] [tid=16772] 
+serial_number is [C3SC1260900AEC]!
+260705-08:17:28.667065 [mod=RDKCPROVIDER, lvl=INFO] [tid=16772] model is [XHC3]!
+260705-08:17:28.667116 [mod=RDKCPROVIDER, lvl=INFO] [tid=16772] mac_addr is [3C:62:F0:3A:F5:A7]!
+260705-08:17:28.667246 [mod=RTMESSAGE, lvl=INFO] [tid=16772] Mac address =3C:62:F0:3A:F5:A7
+
+260705-08:17:28.698823 [mod=WEBPA, lvl=INFO] [tid=16772] Starting webpa dm provider!!
+260705-08:17:28.699708 [mod=WEBPA, lvl=INFO] [tid=16772] max_retry_sleep is 511
+260705-08:17:28.699871 [mod=WEBPA, lvl=INFO] [tid=16772] New backoffRetryTime value calculated as 10 seconds
+260705-08:17:28.800670 [mod=WEBPA, lvl=INFO] [tid=16772] Init for parodus Success..!!
+260705-08:17:28.800944 [mod=WEBPA, lvl=INFO] [tid=16772] Search completed in Hashtable
+260705-08:17:28.801041 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-08:17:28.804600 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-08:17:28.810367 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-08:17:28.812430 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-08:17:28.812559 [mod=WEBPA, lvl=INFO] [tid=16772] parameterValue 3c:62:f0:3a:f5:a7
+260705-08:17:28.813284 [mod=WEBPA, lvl=INFO] [tid=16787] WebPA is now ready to process requests
+260705-11:04:20.752614 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-11:04:20.753119 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-11:04:20.753215 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-11:04:20.753271 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-11:04:20.753319 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-11:04:20.753445 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-11:04:20.754957 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-11:04:20.818049 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-11:04:20.997659 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-11:04:21.572057 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-11:04:21.572179 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 820 ms
+260705-11:26:08.504293 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-11:26:08.504551 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-11:26:08.504624 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-11:26:08.504678 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-11:26:08.504726 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-11:26:08.504785 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-11:26:08.528826 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-11:26:08.607614 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-11:26:08.863729 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-11:26:09.148843 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-11:26:09.186666 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 683 ms
+260705-11:40:23.062329 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-11:40:23.071689 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-11:40:23.071781 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-11:40:23.071838 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-11:40:23.071886 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-11:40:23.071945 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-11:40:23.073382 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-11:40:23.129028 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-11:40:23.251401 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-11:40:23.469497 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-11:40:23.469625 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 407 ms
+260705-11:59:00.547575 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-11:59:00.550538 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-11:59:00.550652 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-11:59:00.550709 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-11:59:00.550755 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-11:59:00.550814 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-11:59:00.552265 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-11:59:00.621529 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-11:59:00.786782 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-11:59:00.921723 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-11:59:00.930800 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 383 ms
+260705-13:22:59.709113 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-13:22:59.709399 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-13:22:59.709474 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-13:22:59.709526 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-13:22:59.709574 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-13:22:59.709632 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-13:22:59.711064 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-13:22:59.784447 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-13:22:59.900370 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-13:23:00.031253 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-13:23:00.031384 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 324 ms
+260705-13:31:07.120973 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-13:31:07.121222 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-13:31:07.121290 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-13:31:07.121341 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-13:31:07.122100 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-13:31:07.122254 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-13:31:07.123687 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-13:31:07.194773 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-13:31:07.316592 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-13:31:07.434272 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-13:31:07.434436 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 313 ms
+260705-13:38:59.420013 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-13:38:59.420261 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-13:38:59.420329 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-13:38:59.420381 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-13:38:59.420493 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-13:38:59.420558 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-13:38:59.426860 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-13:38:59.547239 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-13:38:59.603278 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-13:38:59.767101 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-13:38:59.767470 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 347 ms
+260705-13:45:59.722160 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-13:45:59.722416 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-13:45:59.722486 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-13:45:59.722536 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-13:45:59.722582 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-13:45:59.722639 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-13:45:59.724659 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-13:45:59.771785 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-13:45:59.911447 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-13:46:00.083411 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-13:46:00.083570 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 362 ms
+260705-13:48:15.274328 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-13:48:15.275037 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-13:48:15.276081 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-13:48:15.276422 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-13:48:15.276572 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-13:48:15.278052 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-13:48:15.295733 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-13:48:15.426360 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-13:48:15.524027 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-13:48:15.658566 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-13:48:15.658732 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 394 ms
+260705-13:54:36.096420 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-13:54:36.096671 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-13:54:36.096736 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-13:54:36.096788 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-13:54:36.096834 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-13:54:36.096892 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-13:54:36.116885 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-13:54:36.190941 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-13:54:36.325733 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-13:54:36.459646 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-13:54:36.459810 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 363 ms
+260705-14:06:52.803987 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-14:06:52.804231 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-14:06:52.804300 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-14:06:52.804352 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-14:06:52.804399 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-14:06:52.804685 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-14:06:52.806150 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-14:06:52.884632 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-14:06:52.990446 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-14:06:53.126058 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-14:06:53.126187 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 323 ms
+260705-14:19:31.494528 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-14:19:31.494842 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-14:19:31.494923 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-14:19:31.494981 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-14:19:31.495031 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-14:19:31.495098 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-14:19:31.498526 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-14:19:31.577123 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-14:19:31.577802 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-14:19:31.817584 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-14:19:31.863783 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 369 ms
+260705-14:39:51.950993 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-14:39:51.969837 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-14:39:52.055595 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-14:39:52.055810 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-14:39:52.055877 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-14:39:52.055944 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-14:39:52.078089 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-14:39:52.122757 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-14:39:52.255678 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-14:39:52.427464 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-14:39:52.427590 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 477 ms
+260705-14:50:25.974421 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-14:50:25.975549 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-14:50:25.975678 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-14:50:25.975747 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-14:50:25.975798 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-14:50:25.975880 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-14:50:26.019905 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-14:50:26.089590 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-14:50:26.196060 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-14:50:26.271283 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-14:50:26.271410 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 298 ms
+260705-14:57:31.854483 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-14:57:31.854734 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-14:57:31.854805 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-14:57:31.854858 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-14:57:31.854904 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-14:57:31.854961 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-14:57:31.857397 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-14:57:31.920772 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-14:57:32.071875 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-14:57:32.216857 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-14:57:32.216985 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 363 ms
+260705-14:59:34.224728 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-14:59:34.224981 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-14:59:34.225049 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-14:59:34.225102 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-14:59:34.225148 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-14:59:34.225206 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-14:59:34.392974 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-14:59:34.891061 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-14:59:35.022710 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-14:59:35.204989 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-14:59:35.205119 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 981 ms
+260705-15:06:07.836396 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-15:06:07.836973 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-15:06:07.837084 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-15:06:07.837145 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-15:06:07.837200 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-15:06:07.837277 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-15:06:08.278186 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-15:06:08.615679 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-15:06:08.808725 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-15:06:08.945770 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-15:06:08.945898 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 1109 ms
+260705-15:16:33.036147 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-15:16:33.036401 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-15:16:33.036469 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-15:16:33.036522 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-15:16:33.036569 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-15:16:33.036625 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-15:16:33.038089 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-15:16:33.106202 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-15:16:33.260882 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-15:16:33.472552 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-15:16:33.472679 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 438 ms
+260705-15:41:52.887313 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-15:41:52.887560 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-15:41:52.887628 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-15:41:52.887680 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-15:41:52.887725 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-15:41:52.887783 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-15:41:52.917939 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-15:41:52.985161 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-15:41:53.083389 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-15:41:53.206191 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-15:41:53.266068 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 320 ms
+260705-15:49:13.687894 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-15:49:13.746297 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-15:49:13.746424 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-15:49:13.746485 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-15:49:13.746534 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-15:49:13.746593 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-15:49:13.861912 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-15:49:14.203572 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-15:49:14.425465 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-15:49:14.557384 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-15:49:14.557510 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 870 ms
+260705-15:52:04.569218 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-15:52:04.569469 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-15:52:04.569540 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-15:52:04.569592 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-15:52:04.569640 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-15:52:04.569697 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-15:52:04.636070 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-15:52:04.701371 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-15:52:04.806100 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-15:52:04.891464 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-15:52:04.891588 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 322 ms
+260705-16:06:07.134650 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-16:06:07.134896 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-16:06:07.134968 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-16:06:07.135023 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-16:06:07.135070 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-16:06:07.135129 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-16:06:07.136687 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-16:06:07.251821 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-16:06:07.318703 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-16:06:07.475134 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-16:06:07.475302 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 340 ms
+260705-16:31:15.365023 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-16:31:15.365269 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-16:31:15.365337 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-16:31:15.365387 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-16:31:15.365433 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-16:31:15.365492 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-16:31:15.370516 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-16:31:15.427008 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-16:31:15.550990 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-16:31:15.666505 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-16:31:15.734659 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 301 ms
+260705-16:46:43.291369 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-16:46:43.291620 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-16:46:43.291691 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-16:46:43.291742 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-16:46:43.291789 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-16:46:43.291847 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-16:46:43.930690 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-16:46:45.080840 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-16:46:45.081512 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-16:46:46.109511 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-16:46:46.109876 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 2819 ms
+260705-16:59:32.753288 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-16:59:32.753536 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-16:59:32.753628 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-16:59:32.753685 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-16:59:32.753733 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-16:59:32.753802 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-16:59:32.802622 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-16:59:32.868284 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-16:59:32.952713 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-16:59:33.062020 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-16:59:33.177997 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 310 ms
+260705-17:48:48.957444 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-17:48:48.957697 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-17:48:48.957770 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-17:48:48.957825 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-17:48:48.957871 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-17:48:48.957928 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-17:48:48.997708 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-17:48:49.069613 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-17:48:49.227572 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-17:48:49.354857 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-17:48:49.354985 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 398 ms
+260705-18:53:09.802406 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-18:53:09.802664 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-18:53:09.802734 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-18:53:09.802786 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-18:53:09.802832 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-18:53:09.802890 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-18:53:09.804317 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-18:53:09.927306 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-18:53:10.012617 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-18:53:10.129658 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-18:53:10.209983 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 328 ms
+260705-19:15:37.831560 [mod=WEBPA, lvl=INFO] [tid=16772] WDMP-C: SET Request
+260705-19:15:37.831860 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 0 
+260705-19:15:37.831937 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterName= Device.X_RDKCENTRAL-COM_Camera.Thumbnail.Upload.ActiveUploadDuration 
+260705-19:15:37.831992 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 parameterValue=120 
+260705-19:15:37.832039 [mod=WEBPA, lvl=INFO] [tid=16772] Inside setValues2 dataType=2 
+260705-19:15:37.832097 [mod=RBUS, lvl=INFO] [tid=16772] rbus open for component: webpa_consumer
+260705-19:15:37.870430 [mod=RBUS, lvl=INFO] [tid=16772]  rbus open (webpa_consumer) success
+260705-19:15:37.919172 [mod=RBUS, lvl=INFO] [tid=16772] rbus close for (webpa_consumer)
+260705-19:15:38.168492 [mod=RBUS, lvl=INFO] [tid=16772] rbus close (webpa_consumer) success
+260705-19:15:38.270021 [mod=WEBPA, lvl=INFO] [tid=16772] Sent message successfully to parodus
+260705-19:15:38.270153 [mod=WEBPA, lvl=INFO] [tid=16772] Elapsed time : 474 ms

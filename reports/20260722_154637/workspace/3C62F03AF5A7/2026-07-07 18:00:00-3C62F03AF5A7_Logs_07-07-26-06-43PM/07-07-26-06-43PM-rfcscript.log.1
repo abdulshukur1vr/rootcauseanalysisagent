@@ -1,0 +1,791 @@
+07.07.2026_02:34.20 starting rfc service !!!!
+07.07.2026_02:34.21 RFC: Old time or New time is empty. The value of oldTime = 0 and newTime = .
+07.07.2026_02:34.24 xpki is enabled for rfc
+07.07.2026_02:34.24 RFCbase: calling getMtlsCreds
+Initial URL: https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+07.07.2026_02:34.24 [RFC]:: Setting MTLS default
+07.07.2026_02:34.24 [RFC]:: xpki based mtls support =true
+07.07.2026_02:34.25 [RFC]:: rfc-agent process not running or rfc_blob_processing is empty. Not waiting rfc_blob_processing
+07.07.2026_02:34.25 [RFC]:: RFC: Starting service, creating lock 
+07.07.2026_02:34.25 [RFC]:: RFC: Waiting for IP Acquistion...
+07.07.2026_02:34.25 [RFC]:: Acquired Box estb ip : 10.0.0.52 , Count = 0
+07.07.2026_02:34.25 [RFC]:: Starting execution of RFCbase.sh
+07.07.2026_02:34.26 [RFC]:: Starting Pre Processing
+07.07.2026_02:34.26 [RFC]:: Waiting two minutes before attempting to query xconf
+07.07.2026_02:34.26 [RFC]:: PREPROCESSING IS RUN NOW !!!
+07.07.2026_02:36.26 [RFC]:: CALLING Initally PROD XConf FOR RFC CONFIGURATION, state INIT
+07.07.2026_02:36.26 [RFC]::     URL: https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+07.07.2026_02:36.27 [RFC]:: CallXconf: Box IP is 10.0.0.52
+RFC: Sending request to URL=https://secure.xconfds.coast.xcal.tv/featureControl/getSettings?
+07.07.2026_02:36.28 [RFC]:: RFC_TM_Track : CURL_CMD: curl   --cert-type P12 --cert /opt/usr_config/xpki.p12:changeit  -w '%{http_code} %{remote_ip} %{remote_port}\n' -D /tmp/curl_header  --connect-timeout 10 -m 10 --tlsv1.2  -H configsethash: -H configsettime: -o  "/tmp/rfc-parsed.txt" 'https://secure.xconfds.coast.xcal.tv/featureControl/getSettings?estbMacAddress=3C:62:F0:3A:F5:A7&firmwareVersion=XHC3_8.4p1s1_PROD_sdy&env=vbn&model=XHC3&accountHash=1DLUULi92KWGVyzJ51Hf82pEUSxRBwwgb9&partnerId=Comcast&accountId=1265581878899132731&experience=&version=2'
+07.07.2026_02:36.31 [RFC]:: RFC_TM_Track : Curl Connected to secure.xconfds.coast.xcal.tv (2001:558:fd01:ea03:367e:4d74:f9ea:a6be) port 443
+07.07.2026_02:36.31 [RFC]:: RFC_TM_Track : Curl return code TLSRet = 0 http_code: 200
+07.07.2026_02:36.31 [RFC]:: RFC_TM_Track : uptime =  02:36:31 up 2 min,  0 users,  load average: 2.14, 1.34, 0.54
+07.07.2026_02:36.31 [RFC]:: HTTP request success. Processing response..
+07.07.2026_02:36.31 [RFC]:: calling getValidDataForRetry
+07.07.2026_02:36.37 [RFC]:: NO NEW XCONF in RFC, finish production Xconf response...
+07.07.2026_02:36.37 [RFC]:: preProcessJsonResponse returned 0
+07.07.2026_02:36.37 [RFC]:: Continue processing RFC response rfcState=CONTINUE
+{"featureControl":{"features":[{"name":"AccountHash","enable":true,"effectiveImmediate":true,"configData":{"tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.MD5AccountHash":"1DLUULi92KWGVyzJ51Hf82pEUSxRBwwgb9"},"featureInstance":"AccountHash"},{"name":"AccountId","enable":true,"effectiveImmediate":true,"configData":{"tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID":"1265581878899132731"},"featureInstance":"AccountId"},{"name":"RDKC_AUTO_REBOOT","enable":true,"effectiveImmediate":true,"configData":{"tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.Enable":"true","tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.UpTime":"30"},"featureInstance":"RDKC_AUTO_REBOOT:E_30"},{"name":"RDKC_CACHE_IFRAME","enable":true,"effectiveImmediate":false,"configData":{},"featureInstance":"RDKC_CACHE_IFRAME:E"},{"name":"RDKC_EVENT_NOTIFICATION","enable":true,"effectiveImmediate":false,"configData":{},"featureInstance":"RDKC_EVENT_NOTIFICATION:E"},{"name":"RDKC_LNF","enable":true,"effectiveImmediate":false,"configData":{"tr181.Device.WiFi.X_RDKCENTRAL-COM_Lnf.EapTls.Enable":"0","tr181.Device.WiFi.X_RDKCENTRAL-COM_Lnf.Enable":"1","tr181.Device.WiFi.X_RDKCENTRAL-COM_Lnf.Psk.Enable":"1"},"featureInstance":"RDKC_LNF:E"},{"name":"RDKC_LNF_USE_XPKI","enable":true,"effectiveImmediate":false,"configData":{"tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.LnFUseXPKI.Enable":"true"},"featureInstance":"RDKC_LNF_USE_XPKI:E"},{"name":"RDKC_SHORTS","enable":true,"effectiveImmediate":true,"configData":{"tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Identity.DeviceType":"PROD","tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Shorts.Enable":"true"},"featureInstance":"RDKC_SHORTS:E"},{"name":"RDKC_Telemetry_2_0","enable":true,"effectiveImmediate":true,"configData":{"tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.ConfigURL":"https://xconf.xcal.tv/loguploader/getSettings","tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.Enable":"true","tr181.Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.Version":"2.0.1"},"featureInstance":"RDKC_Telemetry_2_0:E"},{"name":"RDKC_WEBRTC","enable":true,"effectiveImmediate":true,"configData":{},"featureInstance":"RDKC_WEBRTC:E"},{"name":"SSHWhiteList","enable":true,"effectiveImmediate":false,"configData":{},"listType":"SSH WhiteList","listSize":26,"SSHWhiteList_ipList_DEV":["96.118.217.151","2001:558:fc11:2:f816:3eff:fe0a:11d3","96.118.26.235","2001:558:fc11:2:f816:3eff:fe1e:80d2","96.118.222.28","2600:1f18:227b:c00:d9ec:bda7:a022:93dc","96.116.227.89","2001:558:fc18:1:f816:3eff:fef5:1aae","96.118.221.43","2001:558:fc11:2:f816:3eff:fe43:b502","2001:558:4000:cc:f96a:b5c8:aae7:3dae","2001:558:fc0a:3:f816:3eff:fe28:9df6","2001:558:fc0a:6:f816:3eff:fe07:913e","2001:558:fc11:2:f816:3eff:feeb:d6f7","2600:1f18:227b:c00:a302:d349:3e6e:82d9","96.118.137.237","96.118.223.74","2001:558:fc11:2:f816:3eff:fedf:740d","2001:0558:fc11:0002:f816:3eff:fe05:915f","2001:558:fc0a:6:f816:3eff:fe46:d532","2001:558:fc18:0:f816:3eff:fe87:df49","2600:1f18:227b:c01:d0c5:f6ba:8e50:504d","96.118.148.27","96.118.149.9","96.118.25.196","2001:558:fc18:1:f816:3eff:fec4:1f44"],"featureInstance":"SSHWhiteList:E_DEV"}]}}07.07.2026_02:36.37 [RFC]:: Utility rfctool is processing /tmp/rfc-current.json
+07.07.2026_02:36.37 [RFC]:: Utility rfctool is COMPLETED
+07.07.2026_02:36.38 RFC: clearing tr181 store
+07.07.2026_02:36.38 setvalues succeeded..
+07.07.2026_02:36.38 [RFC]:: RFC: Restored AccountID=1265581878899132731
+07.07.2026_02:36.52 [RFC]:: [Features Enabled]-[STAGING]:  AccountHash=true, AccountId=true, RDKC_AUTO_REBOOT:E_30=true, RDKC_CACHE_IFRAME:E=true, RDKC_EVENT_NOTIFICATION:E=true, RDKC_LNF:E=true, RDKC_LNF_USE_XPKI:E=true, RDKC_SHORTS:E=true, RDKC_Telemetry_2_0:E=true, RDKC_WEBRTC:E=true, SSHWhiteList:E_DEV=true,
+07.07.2026_02:36.53 [RFC]:: export RFC_ENABLE_AccountHash = true
+07.07.2026_02:36.54 setvalues succeeded..
+07.07.2026_02:36.54 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.MD5AccountHash from value old=, to new=1DLUULi92KWGVyzJ51Hf82pEUSxRBwwgb9
+07.07.2026_02:36.54 [RFC]:: export RFC_ENABLE_AccountId = true
+07.07.2026_02:36.55 setvalues succeeded..
+07.07.2026_02:36.55 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AccountInfo.AccountID from value old=, to new=1265581878899132731
+07.07.2026_02:36.56 [RFC]:: export RFC_ENABLE_RDKC_AUTO_REBOOT = true
+07.07.2026_02:36.57 setvalues succeeded..
+07.07.2026_02:36.57 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.Enable from value old=, to new=true
+07.07.2026_02:36.58 setvalues succeeded..
+07.07.2026_02:36.58 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.AutoReboot.UpTime from value old=, to new=30
+07.07.2026_02:36.59 [RFC]:: export RFC_ENABLE_RDKC_CACHE_IFRAME = true
+07.07.2026_02:37.00 [RFC]:: export RFC_ENABLE_RDKC_EVENT_NOTIFICATION = true
+07.07.2026_02:37.01 [RFC]:: export RFC_ENABLE_RDKC_LNF = true
+07.07.2026_02:37.02 setvalues succeeded..
+07.07.2026_02:37.02 [RFC]:: RFC:  updated for Device.WiFi.X_RDKCENTRAL-COM_Lnf.EapTls.Enable from value old=, to new=0
+07.07.2026_02:37.03 setvalues succeeded..
+07.07.2026_02:37.03 [RFC]:: RFC:  updated for Device.WiFi.X_RDKCENTRAL-COM_Lnf.Enable from value old=, to new=1
+07.07.2026_02:37.04 setvalues failed with return value: 5
+07.07.2026_02:37.04 [RFC]:: RFC:  updated for Device.WiFi.X_RDKCENTRAL-COM_Lnf.Psk.Enable from value old=, to new=1
+07.07.2026_02:37.05 [RFC]:: export RFC_ENABLE_RDKC_LNF_USE_XPKI = true
+07.07.2026_02:37.06 setvalues succeeded..
+07.07.2026_02:37.06 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.LnFUseXPKI.Enable from value old=, to new=true
+07.07.2026_02:37.06 [RFC]:: export RFC_ENABLE_RDKC_SHORTS = true
+07.07.2026_02:37.07 setvalues succeeded..
+07.07.2026_02:37.07 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Identity.DeviceType from value old=, to new=PROD
+07.07.2026_02:37.08 setvalues succeeded..
+07.07.2026_02:37.08 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Shorts.Enable from value old=, to new=true
+07.07.2026_02:37.08 [RFC]:: export RFC_ENABLE_RDKC_Telemetry_2_0 = true
+07.07.2026_02:37.09 setvalues succeeded..
+07.07.2026_02:37.09 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.ConfigURL from value old=, to new=https://xconf.xcal.tv/loguploader/getSettings
+07.07.2026_02:37.10 setvalues succeeded..
+07.07.2026_02:37.10 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.Enable from value old=, to new=true
+07.07.2026_02:37.10 setvalues succeeded..
+07.07.2026_02:37.11 [RFC]:: RFC:  updated for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.Version from value old=, to new=2.0.1
+07.07.2026_02:37.11 [RFC]:: export RFC_ENABLE_RDKC_WEBRTC = true
+07.07.2026_02:37.12 [RFC]:: export RFC_ENABLE_SSHWhiteList = true
+07.07.2026_02:37.14 [RFC]:: Process JSON Response returned 0
+07.07.2026_02:37.14 [RFC]:: COMPLETED RFC PASS
+07.07.2026_02:37.15 [RFC]:: resp = 0
+07.07.2026_02:37.15 [RFC]:: RFC: configsethash=1HwKHdLUoheKHZjf5QmSjnpf5AVyjHGPaD at configsettime=1783391835
+07.07.2026_02:37.15 [RFC]:: Starting Post Processing
+07.07.2026_02:37.15 [RFC]:: sendHttpRequestToServer returned 0
+07.07.2026_02:37.15 [RFC]:: POSTPROCESSING IS RUN NOW !!!
+07.07.2026_02:37.15 [RFC]:: First call Returned 1
+07.07.2026_02:37.15 [RFC]:: POSTPROCESSING IS COMPLETE !!!
+07.07.2026_02:37.15 [RFC]:: Finish the IP Firewall Configuration
+07.07.2026_02:37.15 [RFC]:: START CONFIGURING RFC CRON
+07.07.2026_02:37.15 [RFC]:: RFC: Completed service, deleting lock 
+RFC Settings for SNMPv3 is : true .
+RFC Settings for SNMPv2 is : false .
+07.07.2026_02:37.15 [RFC]:: RFC_TM_Track : Configuring cron job for RFCbase.sh, cron = 40 8 * * *
+07.07.2026_02:37.16 /var/spool/cron/root:
+07.07.2026_02:37.30  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_02:37.30  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_02:37.31  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_02:37.31  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_02:37.31  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_02:37.32  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_02:37.32  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_02:37.32  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_02:37.32  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_02:37.32  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_02:37.33  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_02:45.03  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_02:45.03  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_02:45.03  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_02:45.03  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_02:45.04  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_02:45.04  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_02:45.04  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_02:45.04  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_02:45.05  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_02:45.05  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_02:45.05  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_02:52.36  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_02:52.37  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_02:52.37  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_02:52.37  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_02:52.37  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_02:52.38  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_02:52.38  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_02:52.38  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_02:52.39  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_02:52.39  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_02:52.39  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:00.10  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:00.10  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:00.10  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:00.10  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:00.11  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:00.11  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:00.11  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:00.11  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:00.11  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:00.12  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:00.12  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:07.44  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:07.44  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:07.44  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:07.44  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:07.44  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:07.45  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:07.45  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:07.45  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:07.45  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:07.45  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:07.46  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:15.16  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:15.17  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:15.17  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:15.17  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:15.17  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:15.18  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:15.18  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:15.18  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:15.18  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:15.19  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:15.19  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:22.49  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:22.49  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:22.49  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:22.49  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:22.50  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:22.50  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:22.50  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:22.50  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:22.51  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:22.51  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:22.51  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:30.22  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:30.22  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:30.22  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:30.23  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:30.23  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:30.23  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:30.24  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:30.24  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:30.24  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:30.24  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:30.24  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:37.55  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:37.55  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:37.56  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:37.56  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:37.56  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:37.56  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:37.57  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:37.57  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:37.57  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:37.57  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:37.57  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:45.29  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:45.29  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:45.29  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:45.29  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:45.29  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:45.30  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:45.30  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:45.30  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:45.30  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:45.31  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:45.31  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_03:53.01  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_03:53.02  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_03:53.02  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_03:53.02  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_03:53.02  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_03:53.02  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_03:53.03  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_03:53.03  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_03:53.03  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_03:53.03  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_03:53.03  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:00.34  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:00.34  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:00.35  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:00.35  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:00.35  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:00.35  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:00.36  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:00.36  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:00.36  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:00.36  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:00.37  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:08.07  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:08.07  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:08.07  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:08.07  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:08.08  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:08.08  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:08.08  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:08.08  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:08.08  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:08.09  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:08.09  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:15.40  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:15.40  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:15.40  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:15.40  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:15.41  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:15.41  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:15.41  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:15.41  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:15.41  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:15.42  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:15.42  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:23.13  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:23.13  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:23.13  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:23.13  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:23.14  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:23.14  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:23.14  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:23.14  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:23.15  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:23.15  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:23.15  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:30.45  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:30.46  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:30.46  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:30.46  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:30.46  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:30.47  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:30.47  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:30.47  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:30.47  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:30.47  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:30.48  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:38.18  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:38.18  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:38.19  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:38.19  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:38.19  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:38.19  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:38.20  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:38.20  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:38.20  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:38.20  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:38.21  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:45.51  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:45.51  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:45.51  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:45.51  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:45.52  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:45.52  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:45.52  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:45.52  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:45.53  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:45.53  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:45.53  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_04:53.24  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_04:53.24  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_04:53.24  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_04:53.24  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_04:53.25  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_04:53.25  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_04:53.25  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_04:53.25  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_04:53.25  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_04:53.26  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_04:53.26  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:00.57  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:00.57  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:00.57  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:00.57  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:00.58  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:00.58  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:00.58  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:00.58  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:00.58  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:00.59  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:00.59  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:08.29  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:08.30  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:08.30  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:08.30  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:08.30  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:08.31  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:08.31  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:08.31  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:08.31  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:08.31  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:08.32  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:16.03  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:16.03  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:16.03  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:16.04  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:16.04  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:16.04  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:16.04  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:16.05  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:16.05  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:16.05  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:16.05  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:23.37  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:23.37  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:23.37  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:23.37  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:23.38  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:23.38  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:23.38  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:23.38  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:23.39  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:23.39  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:23.39  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:31.11  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:31.11  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:31.11  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:31.12  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:31.12  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:31.12  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:31.13  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:31.13  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:31.13  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:31.13  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:31.14  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:38.46  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:38.46  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:38.47  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:38.47  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:38.47  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:38.48  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:38.48  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:38.48  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:38.48  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:38.49  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:38.49  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:46.22  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:46.22  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:46.22  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:46.23  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:46.23  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:46.23  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:46.23  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:46.24  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:46.24  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:46.24  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:46.24  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_05:53.56  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_05:53.56  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_05:53.57  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_05:53.57  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_05:53.57  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_05:53.57  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_05:53.58  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_05:53.58  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_05:53.58  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_05:53.58  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_05:53.58  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:01.30  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:01.30  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:01.31  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:01.31  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:01.31  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:01.31  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:01.32  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:01.32  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:01.32  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:01.32  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:01.32  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:09.05  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:09.05  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:09.05  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:09.05  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:09.06  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:09.06  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:09.06  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:09.06  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:09.07  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:09.07  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:09.07  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:16.39  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:16.39  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:16.39  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:16.40  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:16.40  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:16.40  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:16.40  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:16.41  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:16.41  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:16.41  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:16.41  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:24.13  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:24.13  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:24.13  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:24.14  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:24.14  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:24.14  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:24.15  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:24.15  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:24.15  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:24.15  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:24.15  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:31.47  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:31.47  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:31.48  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:31.48  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:31.48  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:31.49  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:31.49  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:31.49  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:31.50  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:31.50  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:31.50  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:39.21  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:39.21  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:39.21  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:39.22  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:39.22  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:39.22  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:39.23  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:39.23  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:39.23  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:39.24  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:39.24  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:46.55  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:46.55  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:46.56  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:46.56  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:46.56  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:46.56  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:46.57  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:46.57  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:46.57  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:46.57  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:46.58  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_06:54.30  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_06:54.31  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_06:54.31  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_06:54.31  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_06:54.32  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_06:54.32  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_06:54.33  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_06:54.33  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_06:54.33  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_06:54.34  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_06:54.34  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:02.05  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:02.05  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:02.05  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:02.05  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:02.06  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:02.06  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:02.06  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:02.06  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:02.07  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:02.07  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:02.07  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:09.38  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:09.38  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:09.38  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:09.38  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:09.39  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:09.39  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:09.39  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:09.40  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:09.40  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:09.40  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:09.40  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:17.12  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:17.12  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:17.12  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:17.12  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:17.13  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:17.13  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:17.13  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:17.13  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:17.14  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:17.14  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:17.14  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:24.46  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:24.46  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:24.47  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:24.47  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:24.47  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:24.47  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:24.48  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:24.48  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:24.48  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:24.48  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:24.49  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:32.22  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:32.22  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:32.22  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:32.22  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:32.23  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:32.23  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:32.23  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:32.23  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:32.24  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:32.24  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:32.24  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:39.57  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:39.57  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:39.57  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:39.58  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:39.58  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:39.58  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:39.58  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:39.59  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:39.59  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:39.59  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:39.59  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:47.31  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:47.31  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:47.31  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:47.32  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:47.32  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:47.32  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:47.32  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:47.33  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:47.33  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:47.33  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:47.33  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_07:55.06  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_07:55.06  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_07:55.06  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_07:55.06  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_07:55.07  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_07:55.07  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_07:55.07  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_07:55.07  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_07:55.08  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_07:55.08  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_07:55.08  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:02.41  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:02.41  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:02.42  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:02.42  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:02.42  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:02.42  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:02.43  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:02.43  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:02.43  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:02.43  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:02.43  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:10.15  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:10.15  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:10.16  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:10.16  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:10.16  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:10.16  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:10.17  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:10.17  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:10.17  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:10.17  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:10.17  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:17.52  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:17.52  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:17.52  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:17.52  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:17.53  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:17.53  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:17.53  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:17.53  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:17.54  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:17.54  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:17.54  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:25.26  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:25.26  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:25.26  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:25.26  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:25.27  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:25.27  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:25.27  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:25.27  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:25.28  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:25.28  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:25.28  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:33.02  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:33.02  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:33.02  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:33.03  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:33.03  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:33.04  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:33.04  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:33.04  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:33.05  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:33.05  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:33.05  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:40.02 xpki is enabled for rfc
+07.07.2026_08:40.02 RFCbase: calling getMtlsCreds
+07.07.2026_08:40.02 [RFC]:: Setting MTLS default
+07.07.2026_08:40.02 [RFC]:: xpki based mtls support =true
+07.07.2026_08:40.02 [RFC]:: rfc-agent process not running or rfc_blob_processing is empty. Not waiting rfc_blob_processing
+07.07.2026_08:40.02 [RFC]:: RFC: Starting service, creating lock 
+07.07.2026_08:40.02 [RFC]:: RFC: Waiting for IP Acquistion...
+07.07.2026_08:40.02 [RFC]:: Acquired Box estb ip : 10.0.0.52 , Count = 0
+07.07.2026_08:40.03 [RFC]:: Starting execution of RFCbase.sh
+07.07.2026_08:40.03 [RFC]:: Starting Pre Processing
+07.07.2026_08:40.03 [RFC]:: Waiting two minutes before attempting to query xconf
+07.07.2026_08:40.03 [RFC]:: PREPROCESSING IS RUN NOW !!!
+07.07.2026_08:40.35  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:40.35  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:40.36  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:40.36  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:40.36  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:40.37  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:40.37  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:40.37  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:40.37  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:40.38  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:40.38  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:42.03 [RFC]:: CALLING Initally PROD XConf FOR RFC CONFIGURATION, state INIT
+07.07.2026_08:42.03 [RFC]::     URL: https://secure.xconfds.coast.xcal.tv/featureControl/getSettings
+07.07.2026_08:42.04 [RFC]:: CallXconf: Box IP is 10.0.0.52
+07.07.2026_08:42.05 [RFC]:: RFC_TM_Track : CURL_CMD: curl   --cert-type P12 --cert /opt/usr_config/xpki.p12:changeit  -w '%{http_code} %{remote_ip} %{remote_port}\n' -D /tmp/curl_header  --connect-timeout 10 -m 10 --tlsv1.2  -H configsethash: -H configsettime: -o  "/tmp/rfc-parsed.txt" 'https://secure.xconfds.coast.xcal.tv/featureControl/getSettings?estbMacAddress=3C:62:F0:3A:F5:A7&firmwareVersion=XHC3_8.4p1s1_PROD_sdy&env=vbn&model=XHC3&accountHash=1DLUULi92KWGVyzJ51Hf82pEUSxRBwwgb9&partnerId=Comcast&accountId=1265581878899132731&experience=&version=2'
+07.07.2026_08:42.08 [RFC]:: RFC_TM_Track : Curl Connected to secure.xconfds.coast.xcal.tv (2001:558:fd02:8501:2af8:e955:bdc4:5eae) port 443
+07.07.2026_08:42.08 [RFC]:: RFC_TM_Track : Curl return code TLSRet = 0 http_code: 304
+07.07.2026_08:42.08 [RFC]:: RFC_TM_Track : uptime =  08:42:08 up  6:08,  0 users,  load average: 2.27, 2.14, 2.02
+07.07.2026_08:42.08 [RFC]:: HTTP request success. Response unchanged (304). No processing
+07.07.2026_08:42.08 [RFC]:: [Features Enabled]-[ACTIVE]:  AccountHash=true, AccountId=true, RDKC_AUTO_REBOOT:E_30=true, RDKC_CACHE_IFRAME:E=true, RDKC_EVENT_NOTIFICATION:E=true, RDKC_LNF:E=true, RDKC_LNF_USE_XPKI:E=true, RDKC_SHORTS:E=true, RDKC_Telemetry_2_0:E=true, RDKC_WEBRTC:E=true, SSHWhiteList:E_DEV=true,
+07.07.2026_08:42.08 [RFC]:: resp = 0
+07.07.2026_08:42.08 [RFC]:: RFC: configsethash=1HwKHdLUoheKHZjf5QmSjnpf5AVyjHGPaD at configsettime=1783413728
+07.07.2026_08:42.08 [RFC]:: Starting Post Processing
+07.07.2026_08:42.09 [RFC]:: sendHttpRequestToServer returned 0
+07.07.2026_08:42.09 [RFC]:: POSTPROCESSING IS RUN NOW !!!
+07.07.2026_08:42.09 [RFC]:: POSTPROCESSING IS COMPLETE !!!
+07.07.2026_08:42.09 [RFC]:: First call Returned 1
+07.07.2026_08:42.09 [RFC]:: Finish the IP Firewall Configuration
+07.07.2026_08:42.09 [RFC]:: START CONFIGURING RFC CRON
+07.07.2026_08:42.09 [RFC]:: RFC: Completed service, deleting lock 
+07.07.2026_08:42.09 [RFC]:: RFC_TM_Track : Configuring cron job for RFCbase.sh, cron = 40 8 * * *
+07.07.2026_08:42.10 /var/spool/cron/root:
+07.07.2026_08:48.08  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:48.08  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:48.09  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:48.09  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:48.09  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:48.09  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:48.10  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:48.10  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:48.10  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:48.10  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:48.11  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_08:55.42  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_08:55.42  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_08:55.42  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_08:55.43  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_08:55.43  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_08:55.43  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_08:55.44  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_08:55.44  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_08:55.44  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_08:55.44  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_08:55.45  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:03.16  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:03.16  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:03.16  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:03.17  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:03.17  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:03.17  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:03.17  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:03.18  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:03.18  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:03.18  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:03.18  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:10.50  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:10.50  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:10.50  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:10.50  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:10.51  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:10.51  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:10.51  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:10.51  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:10.52  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:10.52  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:10.52  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:18.24  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:18.25  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:18.25  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:18.25  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:18.25  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:18.26  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:18.26  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:18.26  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:18.27  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:18.27  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:18.27  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:25.57  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:25.58  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:25.58  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:25.58  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:25.58  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:25.59  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:25.59  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:25.59  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:25.59  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:26.00  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:26.00  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:33.31  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:33.31  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:33.31  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:33.32  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:33.32  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:33.32  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:33.32  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:33.33  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:33.33  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:33.33  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:33.33  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:41.05  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:41.05  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:41.05  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:41.05  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:41.06  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:41.06  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:41.06  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:41.06  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:41.06  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:41.07  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:41.07  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:48.39  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:48.39  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:48.39  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:48.39  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:48.40  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:48.40  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:48.40  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:48.41  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:48.41  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:48.41  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:48.41  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_09:56.13  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_09:56.13  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_09:56.13  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_09:56.13  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_09:56.14  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_09:56.14  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_09:56.15  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_09:56.15  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_09:56.15  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_09:56.15  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_09:56.16  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_10:03.46  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_10:03.46  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_10:03.46  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_10:03.46  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_10:03.47  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_10:03.47  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_10:03.47  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_10:03.47  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_10:03.47  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_10:03.48  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_10:03.48  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC
+07.07.2026_10:11.19  [RFCTELEMETRY]:: AccountHash is enabled through RFC
+07.07.2026_10:11.19  [RFCTELEMETRY]:: AccountId is enabled through RFC
+07.07.2026_10:11.19  [RFCTELEMETRY]:: RDKC_AUTO_REBOOT is enabled through RFC
+07.07.2026_10:11.20  [RFCTELEMETRY]:: RDKC_CACHE_IFRAME is enabled through RFC
+07.07.2026_10:11.20  [RFCTELEMETRY]:: RDKC_EVENT_NOTIFICATION is enabled through RFC
+07.07.2026_10:11.20  [RFCTELEMETRY]:: RDKC_LNF is enabled through RFC
+07.07.2026_10:11.21  [RFCTELEMETRY]:: RDKC_LNF_USE_XPKI is enabled through RFC
+07.07.2026_10:11.21  [RFCTELEMETRY]:: RDKC_SHORTS is enabled through RFC
+07.07.2026_10:11.21  [RFCTELEMETRY]:: RDKC_Telemetry_2_0 is enabled through RFC
+07.07.2026_10:11.21  [RFCTELEMETRY]:: RDKC_WEBRTC is enabled through RFC
+07.07.2026_10:11.22  [RFCTELEMETRY]:: SSHWhiteList is enabled through RFC

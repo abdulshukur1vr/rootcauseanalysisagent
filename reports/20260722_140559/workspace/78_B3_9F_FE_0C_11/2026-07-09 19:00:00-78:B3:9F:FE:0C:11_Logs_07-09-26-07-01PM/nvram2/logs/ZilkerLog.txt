@@ -1,0 +1,1479 @@
+1479
+2026-07-09 18:26:50.571229 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:26:50.571448 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":12}
+2026-07-09 18:26:50.610137 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":12,"pid":13777,"initialized":true}
+2026-07-09 18:26:50.610737 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:26:50.610786 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:26:50.611003 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:26:50.943776 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:26:50.943879 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:26:50.944607 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:26:50.945278 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:26:50.945335 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:26:50.945541 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:27:20.945684 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:27:20.945758 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:27:20.946596 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:27:20.947314 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:27:20.947383 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:27:20.947573 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:27:43.732002 [rdkIntSvc 13814] INFO getMotionRestoreTimerEnabled()
+2026-07-09 18:27:43.732555 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:27:45.992215 [rdkIntSvc 13814] INFO Called tr181PropertyGetStringHandler for [Device.DeviceInfo.X_RDKCENTRAL-COM_XHFW.device.subsystem.disable]
+2026-07-09 18:27:45.992855 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:27:46.380561 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:27:46.454878 [rdkIntSvc 13814] INFO getAwsIotEnabled()
+2026-07-09 18:27:46.455470 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:27:46.530986 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:27:46.607737 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:27:46.716729 [backupRestoreService 14035] DEBUG job: elapsed time is 300; 6900 seconds to go...
+2026-07-09 18:27:50.611139 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:27:50.611336 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":13}
+2026-07-09 18:27:50.623559 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":13,"pid":13777,"initialized":true}
+2026-07-09 18:27:50.624320 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:27:50.624392 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:27:50.624595 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:27:50.947854 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:27:50.947937 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:27:50.948833 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:27:50.949640 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:27:50.949701 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:27:50.949973 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:28:20.950101 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:28:20.950194 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:28:20.950923 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:28:20.951534 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:28:20.951584 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:28:20.951744 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:28:46.716919 [backupRestoreService 14035] DEBUG job: elapsed time is 360; 6840 seconds to go...
+2026-07-09 18:28:50.624721 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:28:50.624932 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":14}
+2026-07-09 18:28:50.633253 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":14,"pid":13777,"initialized":true}
+2026-07-09 18:28:50.634001 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:28:50.634056 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:28:50.634220 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:28:50.951856 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:28:50.951953 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:28:50.952668 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:28:50.953313 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:28:50.953362 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:28:50.953520 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:29:20.953625 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:29:20.953712 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:29:20.954447 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:29:20.955053 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:29:20.955102 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:29:20.955277 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:29:46.717114 [backupRestoreService 14035] DEBUG job: elapsed time is 420; 6780 seconds to go...
+2026-07-09 18:29:50.634348 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:29:50.634548 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":15}
+2026-07-09 18:29:50.644250 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":15,"pid":13777,"initialized":true}
+2026-07-09 18:29:50.644998 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:29:50.645053 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:29:50.645302 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:29:50.955383 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:29:50.955483 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:29:50.956243 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:29:50.956872 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:29:50.956917 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:29:50.957078 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:30:20.957200 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:30:20.957309 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:30:20.958069 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:30:20.958757 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:30:20.958850 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:30:20.959019 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:30:46.717295 [backupRestoreService 14035] DEBUG job: elapsed time is 480; 6720 seconds to go...
+2026-07-09 18:30:50.645425 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:30:50.645585 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":16}
+2026-07-09 18:30:50.652107 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":16,"pid":13777,"initialized":true}
+2026-07-09 18:30:50.652621 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:30:50.652673 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:30:50.652853 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:30:50.959132 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:30:50.959214 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:30:50.959948 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:30:50.960590 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:30:50.960636 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:30:50.960796 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:31:20.960906 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:31:20.960990 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:31:20.961688 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:31:20.962291 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:31:20.962341 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:31:20.962512 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:31:46.717474 [backupRestoreService 14035] DEBUG job: elapsed time is 540; 6660 seconds to go...
+2026-07-09 18:31:50.652982 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:31:50.653171 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":17}
+2026-07-09 18:31:50.660673 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":17,"pid":13777,"initialized":true}
+2026-07-09 18:31:50.661225 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:31:50.661273 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:31:50.661436 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:31:50.962627 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:31:50.962728 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:31:50.963504 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:31:50.964213 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:31:50.964281 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:31:50.964485 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:31:52.148561 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783621912146","eui64":"880f62fffe1020fa","eventType":"clusterCommandReceived","sourceEndpoint":1,"profileId":260,"direction":1,"clusterId":32,"commandId":0,"mfgSpecific":false,"mfgCode":0,"seqNum":7,"apsSeqNum":147,"rssi":-59,"lqi":255,"encodedBuf":""}
+2026-07-09 18:31:52.148699 [zigbeeEventHandler 13813] DEBUG clusterCommandReceived callback: 880f62fffe1020fa ep 1, profileId 0104, cluster 0020
+2026-07-09 18:31:52.148755 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783621912147","eui64":"880f62fffe1020fa","eventType":"deviceCommunicationSucceededEvent","rssi":-59,"lqi":255}
+2026-07-09 18:31:52.148805 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 880f62fffe1020fa
+2026-07-09 18:31:52.148807 [zigbeeDriverCommon 13813] DEBUG clusterCommandReceived
+2026-07-09 18:31:52.148826 [zigbeeDriverCommon 13813] DEBUG updateNeRssiAndLqi
+2026-07-09 18:31:52.148849 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe1020fa
+2026-07-09 18:31:52.148870 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=neRssi, newValue=-59
+2026-07-09 18:31:52.148895 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=neLqi, newValue=255
+2026-07-09 18:31:52.149034 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=linkQuality, newValue=good
+2026-07-09 18:31:52.149524 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting resource updated event, uri=/880f62fffe1020fa/r/linkQuality, newValue=good
+2026-07-09 18:31:52.150439 [securityService 14029] DEBUG received device resource updated event of a securityZone; id=linkQuality device id=880f62fffe1020fa uri=/880f62fffe1020fa/r/linkQuality value=good type=com.icontrol.linkQuality
+2026-07-09 18:31:52.150537 [securityService 14029] DEBUG (processTroubleForResource): received device trouble event; type=linkQuality, clear=true
+2026-07-09 18:31:52.151080 [deviceService 13813] DEBUG processing request GET_ENDPOINT_BY_URI
+2026-07-09 18:31:52.151152 [deviceService 13813] DEBUG deviceServiceGetEndpointByUri: uri=/880f62fffe1020fa/r/linkQuality
+2026-07-09 18:31:52.151312 [IPC 14029] WARN service response from servicePort=1600 returned failure; 5 - IPC_GENERAL_ERROR; msg=45
+2026-07-09 18:31:52.151405 [securityService 14029] ERROR Failed to get endpoint for uri /880f62fffe1020fa/r/linkQuality
+2026-07-09 18:31:52.151422 [pollControlCluster 13813] DEBUG handleClusterCommand
+2026-07-09 18:31:52.151469 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:31:52.151503 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=temp
+2026-07-09 18:31:52.151556 [zigbeeDriverCommon 13813] DEBUG getClustersNeedingPollControlRefresh: going to refresh temperature measurement
+2026-07-09 18:31:52.151574 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=battVolts
+2026-07-09 18:31:52.151602 [zigbeeDriverCommon 13813] DEBUG resourceNeedsRefreshing: resource battVolts does not need refreshing yet
+2026-07-09 18:31:52.151618 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=feRssi
+2026-07-09 18:31:52.151649 [zigbeeDriverCommon 13813] DEBUG getClustersNeedingPollControlRefresh: going to refresh diagnostics
+2026-07-09 18:31:52.151694 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:31:52.151725 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_URI
+2026-07-09 18:31:52.151838 [zhalImpl 13813] DEBUG Creating device queue for 880f62fffe1020fa
+2026-07-09 18:31:52.151964 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe1020fa","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":0,"encodedMessage":"AQAA","requestDefaultResponse":false,"useApsEncryption":false,"requestId":18}
+2026-07-09 18:31:52.152901 [securityService 14029] DEBUG processing request GET_ZONE_FOR_ENDPOINT
+2026-07-09 18:31:52.154368 [securityService 14029] DEBUG looking for primary endpoint for device: 880f62fffe1020fa
+2026-07-09 18:31:52.154398 [IPC 14034] WARN service response from servicePort=1530 returned failure; 4 - IPC_INVALID_ERROR; msg=317
+2026-07-09 18:31:52.154828 [deviceService 13813] DEBUG processing request READ_METADATA
+2026-07-09 18:31:52.154923 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_ID
+2026-07-09 18:31:52.155341 [securityService 14029] DEBUG falling back to finding zones using device id: 880f62fffe1020fa
+2026-07-09 18:31:52.155578 [securityService 14029] DEBUG creating new trouble event: [trouble eventId=166; troubleId=0, type=TROUBLE_TYPE_DEVICE, reason=TROUBLE_REASON_LINK_QUALITY, critical=TROUBLE_CRIT_INFO, restore=true, payload={
+	"rootId":	"880f62fffe1020fa",
+	"ownerUri":	"/880f62fffe1020fa",
+	"resourceUri":	"/880f62fffe1020fa/r/linkQuality",
+	"deviceClass":	"sensor",
+	"zoneNumber":	1,
+	"zoneType":	1,
+	"alarmArmType":	0,
+	"alarmStatusType":	0
+}]
+2026-07-09 18:31:52.155614 [securityService 14029] WARN unable to find trouble (for clear) with troubleId=0, type=TROUBLE_TYPE_DEVICE, reason=TROUBLE_REASON_LINK_QUALITY
+2026-07-09 18:31:52.158047 [securityService 14029] DEBUG processing request GET_TROUBLES_FOR_DEVICE
+2026-07-09 18:31:52.158303 [commService 14034] DEBUG aws: queueAwsMessage - Adding message 167 (evId:166,evCd:303,evVal:0) to connected queue
+2026-07-09 18:31:52.158362 [commService 14034] DEBUG queue: safe to proceed with msg processing since 'sent list' has 0 items in it
+2026-07-09 18:31:52.158400 [commService 14034] DEBUG aws: sending aws message id=167 (evId:166,evCd:303,evVal:0)
+2026-07-09 18:31:52.158539 [commService 14034] DEBUG aws: publishing to topic '$aws/things/iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe1020fa/shadow/update' message: {
+	"state":	{
+		"reported":	{
+			"zigbee":	{
+				"linkQuality":	{
+					"value":	"GOOD"
+				},
+				"rssi":	{
+					"nearEnd":	-59,
+					"farEnd":	-26
+				},
+				"lqi":	{
+					"nearEnd":	255,
+					"farEnd":	255
+				}
+			},
+			"battery":	{
+				"voltage":	{
+					"value":	2983,
+					"unit":	"mV"
+				},
+				"health":	"GOOD"
+			},
+			"traceId":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:36913fb2-945c-4d4f-8258-04559a2eac6f",
+			"lastChangeSource":	"manual",
+			"originSource":	null,
+			"errors":	[]
+		},
+		"desired":	null
+	},
+	"clientToken":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:a7"
+}
+2026-07-09 18:31:52.158589 [commService 14034] INFO aws: publish of message 167 to topic $aws/things/iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe1020fa/shadow/update returned No error.
+2026-07-09 18:31:52.158609 [telemetry 14034] INFO AwsMessagesSent
+2026-07-09 18:31:52.159358 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:31:52.219345 [commService 14034] DEBUG aws: Got puback for 167
+2026-07-09 18:31:52.284942 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe1020fa, schema https://dhdm.xfinity.com/sensor.v1.schema.json
+2026-07-09 18:31:52.286940 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/sensor.v1.schema.json
+2026-07-09 18:31:52.702890 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":18,"defaultResponseCode":0}
+2026-07-09 18:31:52.703006 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin: notifying cluster 0x0402 that it can do poll control checkin work
+2026-07-09 18:31:52.703033 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:31:52.703118 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe1020fa","endpointId":1,"clusterId":1026,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":0}],"requestId":19}
+2026-07-09 18:31:53.215903 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":19,"attributeData":[{"id":0,"type":41,"success":true,"dataLen":2,"data":"TQc="}]}
+2026-07-09 18:31:53.216029 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=temp, newValue=1869
+2026-07-09 18:31:53.216075 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin: notifying cluster 0x0b05 that it can do poll control checkin work
+2026-07-09 18:31:53.216094 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:31:53.216176 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe1020fa","endpointId":1,"clusterId":2821,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":285}],"requestId":20}
+2026-07-09 18:31:53.742759 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":20,"attributeData":[{"id":285,"type":40,"success":true,"dataLen":1,"data":"3A=="}]}
+2026-07-09 18:31:53.742929 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:31:53.743046 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe1020fa","endpointId":1,"clusterId":2821,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":284}],"requestId":21}
+2026-07-09 18:31:54.247176 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":21,"attributeData":[{"id":284,"type":32,"success":true,"dataLen":1,"data":"/w=="}]}
+2026-07-09 18:31:54.247296 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=feRssi, newValue=-36
+2026-07-09 18:31:54.247341 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=feLqi, newValue=255
+2026-07-09 18:31:54.247482 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe1020fa, endpointId=(null), resourceId=linkQuality, newValue=good
+2026-07-09 18:31:54.247534 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:31:54.247623 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe1020fa","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":1,"encodedMessage":"","requestDefaultResponse":false,"useApsEncryption":false,"requestId":22}
+2026-07-09 18:31:54.725168 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":22,"defaultResponseCode":0}
+2026-07-09 18:31:54.725311 [ZigBeeSensorDD 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:32:20.964597 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:32:20.964691 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:32:20.965395 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:32:20.966038 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:32:20.966084 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:32:20.966239 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:32:25.176629 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783621945175","eui64":"880f62fffe102ef1","eventType":"deviceCommunicationSucceededEvent","rssi":-69,"lqi":255}
+2026-07-09 18:32:25.176692 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 880f62fffe102ef1
+2026-07-09 18:32:25.176721 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+2026-07-09 18:32:25.177071 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783621945176","eui64":"880f62fffe102ef1","eventType":"deviceOtaUpgradeMessageReceivedEvent","otaEventType":"queryNextImageRequest","encodedBuf":"AB0RDwAgZkIB"}
+2026-07-09 18:32:25.177111 [zigbeeEventHandler 13813] DEBUG zigbeeDeviceOtaUpgradeMessageReceived callback: 880f62fffe102ef1
+2026-07-09 18:32:25.177133 [zigbeeSubsystem 13813] DEBUG deviceCallbacksOtaUpgradeMessageReceived
+2026-07-09 18:32:25.177167 [zigbeeDriverCommon 13813] DEBUG otaUpgradeMessageReceived
+2026-07-09 18:32:25.177187 [zigbeeDriverCommon 13813] DEBUG otaQueryNextImageRequest
+2026-07-09 18:32:25.177473 [deviceService 13813] DEBUG setMetadata: deviceUuid=880f62fffe102ef1, endpointId=(null), name=otaUpgradeInfo, value={
+	"QNIRequestDate":	"1783621945176",
+	"UpgradeStartedDate":	"1781025659932",
+	"UERequestDate":	"1781055454916",
+	"UERequestStatus":	"0"
+}
+2026-07-09 18:32:25.179070 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.tmp' changed
+2026-07-09 18:32:25.183811 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.tmp' changed
+2026-07-09 18:32:25.183993 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.bak' renamed from '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1'
+2026-07-09 18:32:25.184133 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1 in 6ms
+2026-07-09 18:32:25.184180 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1' renamed from '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.tmp'
+2026-07-09 18:32:25.184399 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device metadata updated event
+2026-07-09 18:32:25.185251 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=firmwareVersion
+2026-07-09 18:32:25.185349 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=firmwareVersion, newValue=0x01426620
+2026-07-09 18:32:25.185387 [zigbeeSubsystem 13813] DEBUG Scanning for unused firmware files...
+2026-07-09 18:32:25.187383 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:25.187489 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102248, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:25.187506 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102248 we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:25.187539 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:25.187562 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102ef1, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:25.187577 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102ef1 we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:25.187600 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Universal Electronics Inc, model=H74470BA00-00007, hardwareVersion=1, firmwareVersion=0x04076620
+2026-07-09 18:32:25.187622 [zigbeeSubsystem 13813] DEBUG For device 980c33fffeb87d1d, found device descriptor uuid 2a143680-8752-46da-b44b-822c887dce4c
+2026-07-09 18:32:25.187636 [zigbeeSubsystem 13813] DEBUG For device 980c33fffeb87d1d we are at version 0x04076620, latest version is 0x04076620
+2026-07-09 18:32:25.187657 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:25.187679 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102cc2, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:25.187694 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102cc2 we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:25.187717 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:25.187740 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe1020fa, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:25.187754 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe1020fa we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:25.187956 [zigbeeSubsystem 13813] DEBUG Checking for firmware files to cleanup in /nvram/icontrol/zigbeeFirmware/legacy
+2026-07-09 18:32:25.188164 [zigbeeSubsystem 13813] DEBUG Checking for firmware files to cleanup in /nvram/icontrol/zigbeeFirmware/ota
+2026-07-09 18:32:28.428563 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783621948427","eui64":"880f62fffe102248","eventType":"deviceCommunicationSucceededEvent","rssi":-64,"lqi":255}
+2026-07-09 18:32:28.428627 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 880f62fffe102248
+2026-07-09 18:32:28.428656 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+2026-07-09 18:32:28.428800 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783621948427","eui64":"880f62fffe102248","eventType":"deviceOtaUpgradeMessageReceivedEvent","otaEventType":"queryNextImageRequest","encodedBuf":"AB0RDwAgZkIB"}
+2026-07-09 18:32:28.428836 [zigbeeEventHandler 13813] DEBUG zigbeeDeviceOtaUpgradeMessageReceived callback: 880f62fffe102248
+2026-07-09 18:32:28.428858 [zigbeeSubsystem 13813] DEBUG deviceCallbacksOtaUpgradeMessageReceived
+2026-07-09 18:32:28.428878 [zigbeeDriverCommon 13813] DEBUG otaUpgradeMessageReceived
+2026-07-09 18:32:28.428897 [zigbeeDriverCommon 13813] DEBUG otaQueryNextImageRequest
+2026-07-09 18:32:28.428941 [deviceService 13813] DEBUG setMetadata: deviceUuid=880f62fffe102248, endpointId=(null), name=otaUpgradeInfo, value={
+	"QNIRequestDate":	"1783621948427",
+	"UpgradeStartedDate":	"1781025363925",
+	"UERequestDate":	"1781055130268",
+	"UERequestStatus":	"0"
+}
+2026-07-09 18:32:28.430075 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102248.tmp' changed
+2026-07-09 18:32:28.435545 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/880f62fffe102248 in 6ms
+2026-07-09 18:32:28.435816 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device metadata updated event
+2026-07-09 18:32:28.436504 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=firmwareVersion
+2026-07-09 18:32:28.436564 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=firmwareVersion, newValue=0x01426620
+2026-07-09 18:32:28.437586 [zigbeeSubsystem 13813] DEBUG Scanning for unused firmware files...
+2026-07-09 18:32:28.438505 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:28.438546 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102248, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:28.438563 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102248 we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:28.438598 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:28.438620 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102ef1, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:28.438636 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102ef1 we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:28.438658 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Universal Electronics Inc, model=H74470BA00-00007, hardwareVersion=1, firmwareVersion=0x04076620
+2026-07-09 18:32:28.438680 [zigbeeSubsystem 13813] DEBUG For device 980c33fffeb87d1d, found device descriptor uuid 2a143680-8752-46da-b44b-822c887dce4c
+2026-07-09 18:32:28.438694 [zigbeeSubsystem 13813] DEBUG For device 980c33fffeb87d1d we are at version 0x04076620, latest version is 0x04076620
+2026-07-09 18:32:28.438713 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:28.438736 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102cc2, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:28.438760 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe102cc2 we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:28.438782 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Leedarson, model=LDHD2AZW, hardwareVersion=3, firmwareVersion=0x01426620
+2026-07-09 18:32:28.438813 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe1020fa, found device descriptor uuid 2a5b80ef-7a33-41f3-b542-0ca0e812fb30
+2026-07-09 18:32:28.438829 [zigbeeSubsystem 13813] DEBUG For device 880f62fffe1020fa we are at version 0x01426620, latest version is 0x01426620
+2026-07-09 18:32:28.438996 [zigbeeSubsystem 13813] DEBUG Checking for firmware files to cleanup in /nvram/icontrol/zigbeeFirmware/legacy
+2026-07-09 18:32:28.439174 [zigbeeSubsystem 13813] DEBUG Checking for firmware files to cleanup in /nvram/icontrol/zigbeeFirmware/ota
+2026-07-09 18:32:28.530467 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102248.tmp' changed
+2026-07-09 18:32:28.530597 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102248.bak' renamed from '/nvram/icontrol/etc/storage/devicedb/880f62fffe102248'
+2026-07-09 18:32:28.530632 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102248' renamed from '/nvram/icontrol/etc/storage/devicedb/880f62fffe102248.tmp'
+2026-07-09 18:32:30.181359 [deviceServiceMain 13813] DEBUG storageChangedTask: Notifying backup/restore configuration changed
+2026-07-09 18:32:30.181999 [backupRestoreService 14035] DEBUG processing request CONFIG_UPDATED
+2026-07-09 18:32:30.182039 [backupRestoreService 14035] DEBUG asked to schedule backup, but current state = 1
+2026-07-09 18:32:46.717625 [backupRestoreService 14035] DEBUG job: elapsed time is 600; 6600 seconds to go...
+2026-07-09 18:32:50.661562 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:32:50.661726 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":23}
+2026-07-09 18:32:50.770371 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":23,"pid":13777,"initialized":true}
+2026-07-09 18:32:50.771202 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:32:50.771276 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:32:50.771492 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:32:50.966351 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:32:50.966447 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:32:50.967166 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:32:50.967847 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:32:50.967891 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:32:50.968040 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:33:20.968173 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:33:20.968252 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:33:20.968972 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:33:20.969604 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:33:20.969649 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:33:20.969812 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:33:46.717793 [backupRestoreService 14035] DEBUG job: elapsed time is 660; 6540 seconds to go...
+2026-07-09 18:33:50.771628 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:33:50.771832 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":24}
+2026-07-09 18:33:50.874039 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":24,"pid":13777,"initialized":true}
+2026-07-09 18:33:50.874944 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:33:50.875013 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:33:50.875199 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:33:50.969934 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:33:50.970019 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:33:50.970821 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:33:50.971512 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:33:50.971575 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:33:50.971777 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:34:20.971934 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:34:20.972007 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:34:20.972763 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:34:20.973515 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:34:20.973580 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:34:20.973766 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:34:46.717959 [backupRestoreService 14035] DEBUG job: elapsed time is 720; 6480 seconds to go...
+2026-07-09 18:34:50.875329 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:34:50.875528 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":25}
+2026-07-09 18:34:50.905707 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":25,"pid":13777,"initialized":true}
+2026-07-09 18:34:50.906399 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:34:50.906447 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:34:50.906612 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:34:50.973888 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:34:50.973933 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:34:50.974655 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:34:50.975185 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:34:50.975229 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:34:50.975377 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:35:20.975492 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:35:20.975617 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:35:20.976353 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:35:20.976971 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:35:20.977021 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:35:20.977181 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:35:46.718139 [backupRestoreService 14035] DEBUG job: elapsed time is 780; 6420 seconds to go...
+2026-07-09 18:35:50.906747 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:35:50.906961 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":26}
+2026-07-09 18:35:50.922972 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":26,"pid":13777,"initialized":true}
+2026-07-09 18:35:50.923506 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:35:50.923555 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:35:50.923717 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:35:50.977299 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:35:50.977390 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:35:50.978148 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:35:50.978677 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:35:50.978724 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:35:50.978914 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:36:20.979026 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:36:20.979133 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:36:20.979891 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:36:20.980331 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:36:20.980378 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:36:20.980549 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:36:46.718300 [backupRestoreService 14035] DEBUG job: elapsed time is 840; 6360 seconds to go...
+2026-07-09 18:36:50.923831 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:36:50.924006 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":27}
+2026-07-09 18:36:50.947049 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":27,"pid":13777,"initialized":true}
+2026-07-09 18:36:50.948238 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:36:50.948296 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:36:50.948512 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:36:50.980672 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:36:50.980766 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:36:50.981526 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:36:50.982154 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:36:50.982223 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:36:50.982390 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:37:02.370010 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_CREATED for id iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED, schema https://dhdm.xfinity.com/iotCamera.v1.schema.json
+2026-07-09 18:37:02.371599 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/iotCamera.v1.schema.json
+2026-07-09 18:37:02.371821 [cloudCameraDD 13813] DEBUG addNewDevice: 
+2026-07-09 18:37:02.371855 [deviceService 13813] DEBUG deviceServiceDeviceFound: deviceClass=camera, deviceClassVersion=1, uuid=5036746190847523387:3C62F04370ED, manufacturer=Sercomm, model=Sercomm, hardwareVersion=1, firmwareVersion=1.0.0
+2026-07-09 18:37:02.372637 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:37:02.373084 [libdeviceDescriptors 13813] DEBUG deviceDescriptorsGet: manufacturer=Sercomm, model=Sercomm, hardwareVersion=1, firmwareVersion=1.0.0
+2026-07-09 18:37:02.373167 [deviceService 13813] DEBUG deviceServiceDeviceFound: device added with 'neverReject'; allowing device to be paired
+2026-07-09 18:37:02.373495 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting early device event, code=300, uuid=5036746190847523387:3C62F04370ED, manufacturer=Sercomm, model=Sercomm, hardwareVersion=1, firmwareVersion=1.0.0
+2026-07-09 18:37:02.374749 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device configuration started event
+2026-07-09 18:37:02.375936 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device configuration completed event
+2026-07-09 18:37:02.376982 [initialResourceValues 13813] DEBUG Initial Resource Values:
+2026-07-09 18:37:02.377073 [initialResourceValues 13813] DEBUG    hardwareVersion=1
+2026-07-09 18:37:02.377091 [initialResourceValues 13813] DEBUG    model=Sercomm
+2026-07-09 18:37:02.377106 [initialResourceValues 13813] DEBUG    communicationFailure=false
+2026-07-09 18:37:02.377121 [initialResourceValues 13813] DEBUG    firmwareVersion=1.0.0
+2026-07-09 18:37:02.377135 [initialResourceValues 13813] DEBUG    sensor/bypassed=true
+2026-07-09 18:37:02.377157 [initialResourceValues 13813] DEBUG    dateLastContacted=1783622222376
+2026-07-09 18:37:02.377173 [initialResourceValues 13813] DEBUG    firmwareUpdateStatus=NULL
+2026-07-09 18:37:02.377187 [initialResourceValues 13813] DEBUG    sensor/type=motion
+2026-07-09 18:37:02.377202 [initialResourceValues 13813] DEBUG    sensor/alertPreferences=[]
+2026-07-09 18:37:02.377216 [initialResourceValues 13813] DEBUG    sensor/label=Garage
+2026-07-09 18:37:02.377230 [initialResourceValues 13813] DEBUG    manufacturer=Sercomm
+2026-07-09 18:37:02.377246 [initialResourceValues 13813] DEBUG    dateAdded=1783622222376
+2026-07-09 18:37:02.377262 [initialResourceValues 13813] DEBUG    sensor/notifyPreferences=[{"categories":["person"],"mode":"none"},{"categories":["person"],"mode":"away"},{"categories":["person"],"mode":"night"}]
+2026-07-09 18:37:02.377299 [initialResourceValues 13813] DEBUG    cloudObjectId=iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.377396 [initialResourceValues 13813] DEBUG    sensor/faulted=false
+2026-07-09 18:37:02.377417 [initialResourceValues 13813] DEBUG    sensor/qualified=true
+2026-07-09 18:37:02.377435 [initialResourceValues 13813] DEBUG    sensor/tampered=false
+2026-07-09 18:37:02.377517 [cloudCameraDD 13813] DEBUG registerResources: uuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.377600 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.377620 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/manufacturer
+2026-07-09 18:37:02.377635 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/model
+2026-07-09 18:37:02.377684 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/hardwareVersion
+2026-07-09 18:37:02.377700 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/firmwareVersion
+2026-07-09 18:37:02.377716 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/firmwareUpdateStatus
+2026-07-09 18:37:02.377735 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/dateAdded
+2026-07-09 18:37:02.377751 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/dateLastContacted
+2026-07-09 18:37:02.377769 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/communicationFailure
+2026-07-09 18:37:02.377787 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/r/resetToFactoryDefaults
+2026-07-09 18:37:02.377820 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor
+2026-07-09 18:37:02.377837 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/faulted
+2026-07-09 18:37:02.377858 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/tampered
+2026-07-09 18:37:02.377875 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/type
+2026-07-09 18:37:02.377891 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/bypassed
+2026-07-09 18:37:02.377919 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/label
+2026-07-09 18:37:02.377935 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/qualified
+2026-07-09 18:37:02.377950 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/alertPreferences
+2026-07-09 18:37:02.377965 [deviceService 13813] DEBUG Created URI: /5036746190847523387:3C62F04370ED/ep/sensor/r/notifyPreferences
+2026-07-09 18:37:02.378747 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.384413 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED in 6ms
+2026-07-09 18:37:02.384684 [deviceService 13813] DEBUG device finalized:
+2026-07-09 18:37:02.384705 [deviceService 13813] DEBUG Device
+2026-07-09 18:37:02.384720 [deviceService 13813] DEBUG 	uuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.384734 [deviceService 13813] DEBUG 	deviceClass=camera
+2026-07-09 18:37:02.384748 [deviceService 13813] DEBUG 	deviceClassVersion=1
+2026-07-09 18:37:02.384763 [deviceService 13813] DEBUG 	uri=/5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.384777 [deviceService 13813] DEBUG 	managingDeviceDriver=cloudCameraDD
+2026-07-09 18:37:02.384815 [deviceService 13813] DEBUG 	resources:
+2026-07-09 18:37:02.384832 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/manufacturer] [id=manufacturer] [endpointId=(null)] [type=com.icontrol.string] [mode=0x1] [cache policy=1]: Sercomm
+2026-07-09 18:37:02.384849 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/model] [id=model] [endpointId=(null)] [type=com.icontrol.string] [mode=0x21] [cache policy=1]: Sercomm
+2026-07-09 18:37:02.384865 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/hardwareVersion] [id=hardwareVersion] [endpointId=(null)] [type=com.icontrol.version] [mode=0x1] [cache policy=1]: 1
+2026-07-09 18:37:02.384881 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/firmwareVersion] [id=firmwareVersion] [endpointId=(null)] [type=com.icontrol.version] [mode=0x39] [cache policy=1]: 1.0.0
+2026-07-09 18:37:02.384897 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/firmwareUpdateStatus] [id=firmwareUpdateStatus] [endpointId=(null)] [type=com.icontrol.firmwareVersionStatus] [mode=0x39] [cache policy=1]: (null)
+2026-07-09 18:37:02.384914 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/dateAdded] [id=dateAdded] [endpointId=(null)] [type=com.icontrol.dateTime] [mode=0x1] [cache policy=1]: 1783622222376
+2026-07-09 18:37:02.384931 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/dateLastContacted] [id=dateLastContacted] [endpointId=(null)] [type=com.icontrol.dateTime] [mode=0x59] [cache policy=1]: 1783622222376
+2026-07-09 18:37:02.384949 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/communicationFailure] [id=communicationFailure] [endpointId=(null)] [type=com.icontrol.trouble] [mode=0x39] [cache policy=1]: false
+2026-07-09 18:37:02.384967 [deviceService 13813] DEBUG 		Resource [uri=/5036746190847523387:3C62F04370ED/r/resetToFactoryDefaults] [id=resetToFactoryDefaults] [endpointId=(null)] [type=com.icontrol.resetToFactoryOperation] [mode=0x4] [cache policy=0]: (null)
+2026-07-09 18:37:02.384988 [deviceService 13813] DEBUG 	endpoints:
+2026-07-09 18:37:02.385006 [deviceService 13813] DEBUG 		Endpoint
+2026-07-09 18:37:02.385023 [deviceService 13813] DEBUG 			id=sensor
+2026-07-09 18:37:02.385039 [deviceService 13813] DEBUG 			uri=/5036746190847523387:3C62F04370ED/ep/sensor
+2026-07-09 18:37:02.385055 [deviceService 13813] DEBUG 			profile=sensor
+2026-07-09 18:37:02.385069 [deviceService 13813] DEBUG 			profileVersion=2
+2026-07-09 18:37:02.385092 [deviceService 13813] DEBUG 			deviceUuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.385106 [deviceService 13813] DEBUG 			enabled=true
+2026-07-09 18:37:02.385121 [deviceService 13813] DEBUG 			resources:
+2026-07-09 18:37:02.385135 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/faulted] [id=faulted] [endpointId=sensor] [type=com.icontrol.boolean] [mode=0x79] [cache policy=1]: false
+2026-07-09 18:37:02.385151 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/tampered] [id=tampered] [endpointId=sensor] [type=com.icontrol.boolean] [mode=0x39] [cache policy=1]: false
+2026-07-09 18:37:02.385168 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/type] [id=type] [endpointId=sensor] [type=com.icontrol.sensorType] [mode=0x1] [cache policy=1]: motion
+2026-07-09 18:37:02.385183 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/bypassed] [id=bypassed] [endpointId=sensor] [type=com.icontrol.boolean] [mode=0x23] [cache policy=1]: true
+2026-07-09 18:37:02.385198 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/label] [id=label] [endpointId=sensor] [type=com.icontrol.label] [mode=0x3b] [cache policy=1]: Garage
+2026-07-09 18:37:02.385214 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/qualified] [id=qualified] [endpointId=sensor] [type=com.icontrol.boolean] [mode=0x1] [cache policy=1]: true
+2026-07-09 18:37:02.385230 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/alertPreferences] [id=alertPreferences] [endpointId=sensor] [type=com.icontrol.string] [mode=0x23] [cache policy=1]: []
+2026-07-09 18:37:02.385245 [deviceService 13813] DEBUG 				Resource [uri=/5036746190847523387:3C62F04370ED/ep/sensor/r/notifyPreferences] [id=notifyPreferences] [endpointId=sensor] [type=com.icontrol.string] [mode=0x23] [cache policy=1]: [{"categories":["person"],"mode":"none"},{"categories":["person"],"mode":"away"},{"categories":["person"],"mode":"night"}]
+2026-07-09 18:37:02.385268 [deviceService 13813] DEBUG 			metadata:
+2026-07-09 18:37:02.385284 [deviceService 13813] DEBUG 	metadata:
+2026-07-09 18:37:02.385299 [deviceService 13813] DEBUG 		Metadata [uri=/5036746190847523387:3C62F04370ED/m/cloudObjectId] [id=cloudObjectId] [endpointId=(null)] [value=iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED]
+2026-07-09 18:37:02.385689 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device added event, uuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.388516 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting endpoint added event, endpoint uri=/5036746190847523387:3C62F04370ED/ep/sensor
+2026-07-09 18:37:02.390106 [deviceService 13813] DEBUG processing request GET_ENDPOINT_BY_URI
+2026-07-09 18:37:02.390208 [deviceService 13813] DEBUG deviceServiceGetEndpointByUri: uri=/5036746190847523387:3C62F04370ED/ep/sensor
+2026-07-09 18:37:02.392265 [securityService 14029] DEBUG zone: received 'qualified endpoint' added notification; endpoint=sensor
+2026-07-09 18:37:02.392573 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device discovery completed event, uuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.392970 [deviceService 13813] DEBUG processing request READ_METADATA
+2026-07-09 18:37:02.395177 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogMonitorDevice: start monitoring 5036746190847523387:3C62F04370ED with commFailTimeoutSeconds 3360, inCommFail false
+2026-07-09 18:37:02.396193 [deviceService 13813] DEBUG processing request READ_METADATA
+2026-07-09 18:37:02.397806 [securityService 14029] DEBUG createZoneFromEndpoint: zone label='Garage', type=SECURITY_ZONE_TYPE_MOTION identified as 'cloud managed'
+2026-07-09 18:37:02.399947 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_ID
+2026-07-09 18:37:02.400018 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_ID
+2026-07-09 18:37:02.403701 [securityService 14029] DEBUG zone: Searching for available zone number for 5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.403777 [securityService 14029] DEBUG zone: Found already allocated zone number 6 for key 5606513531447361710:3C62F03962A0.sensor
+2026-07-09 18:37:02.403820 [securityService 14029] DEBUG zone: Found already allocated zone number 7 for key 6423273862783913371:3C62F03A2000.sensor
+2026-07-09 18:37:02.403838 [securityService 14029] DEBUG zone: Found already allocated zone number 5 for key 880f62fffe102cc2.1
+2026-07-09 18:37:02.403854 [securityService 14029] DEBUG zone: Found already allocated zone number 1 for key 880f62fffe1020fa.1
+2026-07-09 18:37:02.403870 [securityService 14029] DEBUG zone: Found already allocated zone number 2 for key 880f62fffe102ef1.1
+2026-07-09 18:37:02.403886 [securityService 14029] DEBUG zone: Found already allocated zone number 3 for key 880f62fffe102248.1
+2026-07-09 18:37:02.403903 [securityService 14029] DEBUG zone: Found already allocated zone number 4 for key 980c33fffeb87d1d.1
+2026-07-09 18:37:02.403920 [securityService 14029] DEBUG zone: No gap found, using next available number
+2026-07-09 18:37:02.403935 [securityService 14029] DEBUG zone: Using zone number 8 for key 5036746190847523387:3C62F04370ED.sensor
+2026-07-09 18:37:02.403957 [securityService 14029] DEBUG zone: No gap found, using next available number
+2026-07-09 18:37:02.403992 [securityService 14029] DEBUG alarmPanel: ignoring event for 'bypassed' zone 5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.406198 [deviceService 13813] DEBUG processing request WRITE_METADATA
+2026-07-09 18:37:02.406354 [deviceService 13813] DEBUG setMetadata: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, name=secZone, value={
+	"zoneNumber":	8,
+	"sensorId":	8,
+	"displayIndex":	8,
+	"isTroubled":	false,
+	"isConfigured":	false,
+	"inSwingerShutdown":	false,
+	"isInTestMode":	false,
+	"isWirelessDevice":	false,
+	"isBatteryDevice":	false,
+	"hasTemperature":	false,
+	"zoneType":	3,
+	"zoneFunction":	10,
+	"zoneMute":	0,
+	"alertTriggers":	[],
+	"notifyTriggers":	[{
+			"categories":	["person"],
+			"mode":	"none"
+		}, {
+			"categories":	["person"],
+			"mode":	"away"
+		}, {
+			"categories":	["person"],
+			"mode":	"night"
+		}]
+}
+2026-07-09 18:37:02.411235 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED in 5ms
+2026-07-09 18:37:02.411481 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device metadata updated event
+2026-07-09 18:37:02.413709 [securityService 14029] DEBUG zone: stored securityZone metadata for endpoint=sensor
+2026-07-09 18:37:02.413827 [securityService 14029] DEBUG zone: zoneNum=8 displayOrder=8 sensorId=5036746190847523387:3C62F04370ED endpointId=sensor label=Garage faulted=false bypassed=true, simpleDevice=true
+2026-07-09 18:37:02.414565 [deviceService 13813] DEBUG processing request WRITE_METADATA
+2026-07-09 18:37:02.414709 [deviceService 13813] DEBUG setMetadata: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, name=nightDowngradeBypass, value=false
+2026-07-09 18:37:02.420244 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED in 5ms
+2026-07-09 18:37:02.420515 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device metadata updated event
+2026-07-09 18:37:02.421664 [securityService 14029] DEBUG zone: stored night mode downgrade metadata for endpoint=sensor
+2026-07-09 18:37:02.422248 [deviceService 13813] DEBUG processing request WRITE_METADATA
+2026-07-09 18:37:02.422357 [deviceService 13813] DEBUG setMetadata: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=(null), name=lpmPolicy, value=armedAway
+2026-07-09 18:37:02.426657 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED in 4ms
+2026-07-09 18:37:02.426920 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device metadata updated event
+2026-07-09 18:37:02.428168 [securityService 14029] DEBUG zone: stored the LPM policy to be armedAway for device 5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.428267 [securityService 14029] INFO zone: successfully saved securityZone for endpoint sensor
+2026-07-09 18:37:02.428350 [securityService 14029] DEBUG broadcasting securityZoneEvent, eventId=191, zoneNum=8, zoneLabel=Garage, code=224, value=0, alarmSes=0 cid=(null) ind=INDICATION_VISUAL
+2026-07-09 18:37:02.429280 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_ID
+2026-07-09 18:37:02.429593 [deviceServiceEventHandler 13813] DEBUG handleSecurityZoneEvent
+2026-07-09 18:37:02.430759 [commService 14034] DEBUG aws: (handleCloudCameraZoneEvent): 
+2026-07-09 18:37:02.430964 [commService 14034] DEBUG aws: queueAwsMessage - Adding message 192 (evId:191,evCd:224,evVal:0) to connected queue
+2026-07-09 18:37:02.431009 [commService 14034] DEBUG Zone 8 added, starting timer 900 seconds to skip all delayed motion restore events
+2026-07-09 18:37:02.431853 [commService 14034] DEBUG queue: safe to proceed with msg processing since 'sent list' has 0 items in it
+2026-07-09 18:37:02.431895 [commService 14034] DEBUG aws: sending aws message id=192 (evId:191,evCd:224,evVal:0)
+2026-07-09 18:37:02.432039 [commService 14034] DEBUG aws: publishing to topic '$aws/things/iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED/shadow/update' message: {
+	"state":	{
+		"desired":	{
+			"cameraSensor":	{
+				"zoneBypassed":	true,
+				"zoneNumber":	8,
+				"zoneType":	"motion"
+			},
+			"preferences":	{
+				"alertTriggers":	[],
+				"notificationTriggers":	[{
+						"categories":	["person"],
+						"mode":	"none"
+					}, {
+						"categories":	["person"],
+						"mode":	"away"
+					}, {
+						"categories":	["person"],
+						"mode":	"night"
+					}]
+			},
+			"originSource":	"xhf",
+			"traceId":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:1f3b9d79-f5f4-4b31-9366-b45e2be54d2e"
+		}
+	}
+}
+2026-07-09 18:37:02.432094 [commService 14034] INFO aws: publish of message 192 to topic $aws/things/iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED/shadow/update returned No error.
+2026-07-09 18:37:02.432113 [telemetry 14034] INFO AwsMessagesSent
+2026-07-09 18:37:02.432916 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:37:02.479187 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479311 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp'
+2026-07-09 18:37:02.479345 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479382 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479415 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.bak' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED'
+2026-07-09 18:37:02.479445 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp'
+2026-07-09 18:37:02.479474 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479504 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479535 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.bak' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED'
+2026-07-09 18:37:02.479564 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp'
+2026-07-09 18:37:02.479605 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479635 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp' changed
+2026-07-09 18:37:02.479666 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.bak' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED'
+2026-07-09 18:37:02.479695 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED' renamed from '/nvram/icontrol/etc/storage/devicedb/5036746190847523387:3C62F04370ED.tmp'
+2026-07-09 18:37:02.495668 [commService 14034] DEBUG aws: Got puback for 192
+2026-07-09 18:37:02.563364 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED, schema https://dhdm.xfinity.com/iotCamera.v1.schema.json
+2026-07-09 18:37:02.564975 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/iotCamera.v1.schema.json
+2026-07-09 18:37:02.565179 [cloudCameraDD 13813] DEBUG processCloudUpdate: uuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:02.565214 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=faulted, newValue=false
+2026-07-09 18:37:02.565247 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=bypassed, newValue=true
+2026-07-09 18:37:02.565274 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=label, newValue=Garage
+2026-07-09 18:37:02.565302 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=alertPreferences, newValue=[]
+2026-07-09 18:37:02.565332 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=notifyPreferences, newValue=[{"categories":["person"],"mode":"none"},{"categories":["person"],"mode":"away"},{"categories":["person"],"mode":"night"}]
+2026-07-09 18:37:03.247906 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:per:cam:5036746190847523387:3C62F04370ED, schema https://dhdm.xfinity.com/iotCamera.v1.schema.json
+2026-07-09 18:37:03.249483 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/iotCamera.v1.schema.json
+2026-07-09 18:37:03.249681 [cloudCameraDD 13813] DEBUG processCloudUpdate: uuid=5036746190847523387:3C62F04370ED
+2026-07-09 18:37:03.249714 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=faulted, newValue=false
+2026-07-09 18:37:03.249746 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=bypassed, newValue=true
+2026-07-09 18:37:03.249770 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=label, newValue=Garage
+2026-07-09 18:37:03.249814 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=alertPreferences, newValue=[]
+2026-07-09 18:37:03.249844 [deviceService 13813] DEBUG updateResource: deviceUuid=5036746190847523387:3C62F04370ED, endpointId=sensor, resourceId=notifyPreferences, newValue=[{"categories":["person"],"mode":"none"},{"categories":["person"],"mode":"away"},{"categories":["person"],"mode":"night"}]
+2026-07-09 18:37:04.317946 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity, schema https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.319348 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.378393 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity, schema https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.379709 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.520885 [commService 14034] DEBUG aws: (handleThingUpdate): got thing update for iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity
+2026-07-09 18:37:04.521062 [commService 14034] DEBUG aws: (awsThingEventCorrelationRegisterTraceId) registering correlation for traceId 450cf3d023beaedd5579320ba3545188-3631 and thing 22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity
+2026-07-09 18:37:04.521132 [commService 14034] ERROR aws: (handleThingUpdate): thing update failed with error XFI.IOT.DEVICE.BAD_REQUEST 
+2026-07-09 18:37:04.521169 [commService 14034] DEBUG aws: Correlation for traceId 450cf3d023beaedd5579320ba3545188-3631 cancelled
+2026-07-09 18:37:04.521267 [commService 14034] DEBUG aws: queueAwsMessage - Adding message 207 (traceId:450cf3d023beaedd5579320ba3545188-3631) to connected queue
+2026-07-09 18:37:04.521330 [commService 14034] DEBUG queue: safe to proceed with msg processing since 'sent list' has 0 items in it
+2026-07-09 18:37:04.521377 [commService 14034] DEBUG aws: sending aws message id=207 (traceId:450cf3d023beaedd5579320ba3545188-3631)
+2026-07-09 18:37:04.521462 [commService 14034] DEBUG aws: publishing to topic '$aws/things/iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0/shadow/name/homeSecurity/update' message: {
+	"state":	{
+		"reported":	{
+			"traceId":	"450cf3d023beaedd5579320ba3545188-3631",
+			"lastChangeSource":	"grs",
+			"originSource":	null,
+			"errors":	[{
+					"code":	"XFI.IOT.DEVICE.BAD_REQUEST",
+					"title":	"Request is invalid or missing required parameters"
+				}]
+		},
+		"desired":	null
+	},
+	"clientToken":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:cf"
+}
+2026-07-09 18:37:04.521508 [commService 14034] INFO aws: publish of message 207 to topic $aws/things/iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0/shadow/name/homeSecurity/update returned No error.
+2026-07-09 18:37:04.521527 [telemetry 14034] INFO AwsMessagesSent
+2026-07-09 18:37:04.522342 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:37:04.544611 [commService 14034] DEBUG aws: (handleThingUpdate): got thing update for iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity
+2026-07-09 18:37:04.544715 [commService 14034] DEBUG aws: (awsThingEventCorrelationRegisterTraceId) registering correlation for traceId 450cf3d023beaedd5579320ba3545188-9476 and thing 22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity
+2026-07-09 18:37:04.544778 [commService 14034] ERROR aws: (handleThingUpdate): thing update failed with error XFI.IOT.DEVICE.BAD_REQUEST 
+2026-07-09 18:37:04.544844 [commService 14034] DEBUG aws: Correlation for traceId 450cf3d023beaedd5579320ba3545188-9476 cancelled
+2026-07-09 18:37:04.544922 [commService 14034] DEBUG aws: queueAwsMessage - Adding message 208 (traceId:450cf3d023beaedd5579320ba3545188-9476) to connected queue
+2026-07-09 18:37:04.544984 [TIME_TRACKER 14034] DEBUG tracker-dump: tracker run=true timeout=30000 start=940233 now=940257 elapsed=24 remain=29976
+2026-07-09 18:37:04.545013 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:37:04.583196 [commService 14034] DEBUG aws: Got puback for 207
+2026-07-09 18:37:04.583306 [commService 14034] DEBUG queue: safe to proceed with msg processing since 'sent list' has 0 items in it
+2026-07-09 18:37:04.583350 [commService 14034] DEBUG aws: sending aws message id=208 (traceId:450cf3d023beaedd5579320ba3545188-9476)
+2026-07-09 18:37:04.583440 [commService 14034] DEBUG aws: publishing to topic '$aws/things/iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0/shadow/name/homeSecurity/update' message: {
+	"state":	{
+		"reported":	{
+			"traceId":	"450cf3d023beaedd5579320ba3545188-9476",
+			"lastChangeSource":	"grs",
+			"originSource":	null,
+			"errors":	[{
+					"code":	"XFI.IOT.DEVICE.BAD_REQUEST",
+					"title":	"Request is invalid or missing required parameters"
+				}]
+		},
+		"desired":	null
+	},
+	"clientToken":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:d0"
+}
+2026-07-09 18:37:04.583485 [commService 14034] INFO aws: publish of message 208 to topic $aws/things/iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0/shadow/name/homeSecurity/update returned No error.
+2026-07-09 18:37:04.583504 [telemetry 14034] INFO AwsMessagesSent
+2026-07-09 18:37:04.584257 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:37:04.649549 [commService 14034] DEBUG aws: Got puback for 208
+2026-07-09 18:37:04.659852 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity, schema https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.661055 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.727806 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:adp:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:homeSecurity, schema https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:04.729244 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/homeSecurity.v1.schema.json
+2026-07-09 18:37:07.384671 [deviceServiceMain 13813] DEBUG storageChangedTask: Notifying backup/restore configuration changed
+2026-07-09 18:37:07.385315 [backupRestoreService 14035] DEBUG processing request CONFIG_UPDATED
+2026-07-09 18:37:07.385382 [backupRestoreService 14035] DEBUG asked to schedule backup, but current state = 1
+2026-07-09 18:37:20.982526 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:37:20.982613 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:37:20.983406 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:37:20.983957 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:37:20.984012 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:37:20.984168 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:37:43.096752 [diag_service 14032] INFO Collecting stats for T2.0
+2026-07-09 18:37:43.097386 [watchdogService 13759] DEBUG processing request GET_ALL_SERVICES
+2026-07-09 18:37:43.098058 [diag_service 14032] DEBUG collecting stats from propsService
+2026-07-09 18:37:43.098427 [propsService 13773] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.098717 [telemetry 14032] INFO propsService_procStartT_split:1783616828000.000000
+2026-07-09 18:37:43.099472 [telemetry 14032] INFO propsService_isRunning_split:true
+2026-07-09 18:37:43.099880 [telemetry 14032] INFO propsService_procDied_split:0.000000
+2026-07-09 18:37:43.100219 [telemetry 14032] INFO propsService_rfcProperties_split:device.subsystem.disable=matter, awsChannel.motionRestoreTimer.enabled=false
+2026-07-09 18:37:43.100566 [diag_service 14032] DEBUG collecting stats from ZigbeeCore
+2026-07-09 18:37:43.100584 [diag_service 14032] DEBUG collecting stats from deviceService
+2026-07-09 18:37:43.100970 [deviceService 13813] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.101053 [zhalImpl 13813] DEBUG zhalGetSystemStatus
+2026-07-09 18:37:43.101149 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"getSystemStatus","requestId":28}
+2026-07-09 18:37:43.158754 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"getSystemStatusResponse","resultCode":0,"requestId":28,"networkIsUp":true,"networkIsOpenForJoin":false,"eui64":"001bad3b58feee16","originalEui64":"0000000000000000","channel":25,"panId":34935,"networkKey":"<REDACTED>","version":"5.0.1.0-20260613-193954"}
+2026-07-09 18:37:43.160035 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"getCounters","requestId":29}
+2026-07-09 18:37:43.262254 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"getCountersResponse","resultCode":0,"requestId":29,"sampleIntervalMillis":893448,"macRxBcast":0,"macTxBcast":140,"macRxUcast":121,"macTxUcastSuccesses":44,"macTxUcastRetries":0,"macTxUcastFailures":2,"apsRxBcast":7,"apsTxBcast":7,"apsRxUcast":13,"apsTxUcastSuccesses":8,"apsTxUcastRetries":0,"apsTxUcastFailures":0,"nwkFrameCounterFailures":0,"apsFrameCounterFailures":0,"nwkLinkKeyNotAuthorized":0,"nwkDecryptionFailures":0,"apsDecryptionFailures":0,"bufferAllocationFailures":0,"queueOverruns":0,"packetValidationFailures":0,"nwkRetryQueueOverflows":0,"phyCcaFailures":0,"badChanCnt":0}
+2026-07-09 18:37:43.262913 [deviceServiceGather 13813] ERROR collectCameraDeviceStats: unable to locate MAC Address for camera 5036746190847523387:3C62F04370ED
+2026-07-09 18:37:43.262954 [deviceServiceGather 13813] ERROR collectCameraDeviceStats: unable to locate MAC Address for camera 5606513531447361710:3C62F03962A0
+2026-07-09 18:37:43.262972 [deviceServiceGather 13813] ERROR collectCameraDeviceStats: unable to locate MAC Address for camera 6423273862783913371:3C62F03A2000
+2026-07-09 18:37:43.263064 [deviceServiceGather 13813] DEBUG collectZigbeeNetworkMap: scheduling task to gather zigbee network map after 20 hour(s)
+2026-07-09 18:37:43.265921 [telemetry 14032] INFO deviceService_zigbeeDeviceHealthStats_split:LDHD2AZW,-64/-39,1,0,0,0|LDHD2AZW,-70/-30,1,0,0,0|H74470BA00-00007,-64/-58,1,0,0,0|LDHD2AZW,-70/-46,0,0,0,0|LDHD2AZW,-59/-36,0,0,0,0
+2026-07-09 18:37:43.266760 [telemetry 14032] INFO deviceService_TotalZigbeeSensor_split:LDHD2AZW,4;H74470BA00-00007,1;
+2026-07-09 18:37:43.267959 [telemetry 14032] INFO deviceService_isRunning_split:true
+2026-07-09 18:37:43.268422 [telemetry 14032] INFO deviceService_channel_split:25.000000
+2026-07-09 18:37:43.268828 [telemetry 14032] INFO deviceService_macTxUcastFailures_split:2.000000
+2026-07-09 18:37:43.269182 [telemetry 14032] INFO deviceService_macRxUcast_split:121.000000
+2026-07-09 18:37:43.269523 [telemetry 14032] INFO deviceService_apsRxUcast_split:13.000000
+2026-07-09 18:37:43.269929 [telemetry 14032] INFO deviceService_procStartT_split:1783616828000.000000
+2026-07-09 18:37:43.270274 [telemetry 14032] INFO deviceService_halleffect_split:
+2026-07-09 18:37:43.270296 [telemetry 14032] INFO deviceService_macTxBcast_split:140.000000
+2026-07-09 18:37:43.270633 [telemetry 14032] INFO deviceService_Device 1_split:880f62fffe102248,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783621421,false,,,,,,,,,,,,,,sensor,3,255/244,-64/-39,1855,3044,GOOD,false,false,,false,false,false,1,0,1,0,0
+2026-07-09 18:37:43.270984 [telemetry 14032] INFO deviceService_isAvailable_split:true
+2026-07-09 18:37:43.271318 [telemetry 14032] INFO deviceService_Device 2_split:880f62fffe102ef1,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783616863,false,,,,,,,,,,,,,,sensor,3,255/255,-70/-30,1823,3016,GOOD,false,false,,false,false,false,1,0,1,0,0
+2026-07-09 18:37:43.271652 [telemetry 14032] INFO deviceService_apsTxBcast_split:7.000000
+2026-07-09 18:37:43.272002 [telemetry 14032] INFO deviceService_apsTxUcastSuccesses_split:8.000000
+2026-07-09 18:37:43.272339 [telemetry 14032] INFO deviceService_Device 3_split:980c33fffeb87d1d,Universal Electronics Inc,H74470BA00-00007,0x04076620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783616848,false,,,,,,,,,,,,,,sensor,1,255/168,-64/-58,2098,3062,GOOD,false,false,,false,false,false,1,0,1,0,0
+2026-07-09 18:37:43.272683 [telemetry 14032] INFO deviceService_procDied_split:0.000000
+2026-07-09 18:37:43.273025 [telemetry 14032] INFO deviceService_TotalLocalCamera_split:Sercomm,3;
+2026-07-09 18:37:43.273360 [telemetry 14032] INFO deviceService_Device 4_split:880f62fffe102cc2,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783616842,1783616840,,,,sensor,3,255/216,-70/-46,2025,3029,GOOD,false,false,,false,false,false,0,0,0,0,0
+2026-07-09 18:37:43.273694 [telemetry 14032] INFO deviceService_Device 5_split:880f62fffe1020fa,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783621914,,,,,sensor,3,255/255,-59/-36,1869,2983,GOOD,false,false,,false,false,true,0,0,0,0,0
+2026-07-09 18:37:43.274043 [telemetry 14032] INFO deviceService_eui64_split:001bad3b58feee16
+2026-07-09 18:37:43.274378 [telemetry 14032] INFO deviceService_panid_split:34935.000000
+2026-07-09 18:37:43.274716 [telemetry 14032] INFO deviceService_TotalLocalCameraCount_split:3
+2026-07-09 18:37:43.275064 [telemetry 14032] INFO deviceService_isConfigured_split:true
+2026-07-09 18:37:43.275393 [telemetry 14032] INFO deviceService_openForJoin_split:false
+2026-07-09 18:37:43.275720 [telemetry 14032] INFO deviceService_apsRxBcast_split:7.000000
+2026-07-09 18:37:43.276072 [telemetry 14032] INFO deviceService_macTxUcastSuccesses_split:44.000000
+2026-07-09 18:37:43.276404 [telemetry 14032] INFO deviceService_zigbeeCounters_split:893448,0,140,121,44,0,2,7,7,13,8,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-09 18:37:43.276733 [telemetry 14032] INFO deviceService_networkUp_split:true
+2026-07-09 18:37:43.277065 [telemetry 14032] INFO deviceService_TotalZigbeeSensorCount_split:5
+2026-07-09 18:37:43.277726 [telemetry 14032] INFO deviceService_sampleIntervalMillis_split:893448.000000
+2026-07-09 18:37:43.278157 [diag_service 14032] DEBUG collecting stats from rdkIntegrationService
+2026-07-09 18:37:43.278666 [rdkIntegrationService 13814] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.278945 [telemetry 14032] INFO rdkIntegrationService_isRunning_split:true
+2026-07-09 18:37:43.279433 [telemetry 14032] INFO rdkIntegrationService_procDied_split:0.000000
+2026-07-09 18:37:43.279781 [telemetry 14032] INFO rdkIntegrationService_procStartT_split:1783616828000.000000
+2026-07-09 18:37:43.280137 [diag_service 14032] DEBUG collecting stats from pkiService
+2026-07-09 18:37:43.280515 [pkiService 14028] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.280819 [telemetry 14032] INFO pkiService_isRunning_split:true
+2026-07-09 18:37:43.281269 [telemetry 14032] INFO pkiService_procDied_split:0.000000
+2026-07-09 18:37:43.281621 [telemetry 14032] INFO pkiService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.281982 [diag_service 14032] DEBUG collecting stats from securityService
+2026-07-09 18:37:43.282434 [securityService 14029] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.283031 [telemetry 14032] INFO securityService_SECURITY_ZONE_TYPE_MOTION_TRBL_tamp_split:1,6423273862783913371:3C62F03A2000
+2026-07-09 18:37:43.283532 [telemetry 14032] INFO securityService_secSysState_split:disarmed
+2026-07-09 18:37:43.283912 [telemetry 14032] INFO securityService_procDied_split:0.000000
+2026-07-09 18:37:43.284249 [telemetry 14032] INFO securityService_SECURITY_ZONE_TYPE_DOOR_TRBL_linkQual_split:1,880f62fffe102ef1
+2026-07-09 18:37:43.284580 [telemetry 14032] INFO securityService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.284922 [telemetry 14032] INFO securityService_unackAlarmEvents_split:0.000000
+2026-07-09 18:37:43.285255 [telemetry 14032] INFO securityService_isRunning_split:true
+2026-07-09 18:37:43.285607 [diag_service 14032] DEBUG collecting stats from userService
+2026-07-09 18:37:43.285943 [userService 14031] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.286170 [telemetry 14032] INFO userService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.286612 [telemetry 14032] INFO userService_isRunning_split:true
+2026-07-09 18:37:43.287000 [telemetry 14032] INFO userService_procDied_split:0.000000
+2026-07-09 18:37:43.287346 [diag_service 14032] DEBUG collecting stats from diagService
+2026-07-09 18:37:43.287720 [diagService 14032] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.287954 [telemetry 14032] INFO diagService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.288441 [telemetry 14032] INFO diagService_procDied_split:0.000000
+2026-07-09 18:37:43.288849 [telemetry 14032] INFO diagService_isRunning_split:true
+2026-07-09 18:37:43.289314 [diag_service 14032] DEBUG collecting stats from automationService
+2026-07-09 18:37:43.290282 [telemetry 14032] INFO automationService_isRunning_split:true
+2026-07-09 18:37:43.290888 [telemetry 14032] INFO automationService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.291263 [telemetry 14032] INFO automationService_procDied_split:0.000000
+2026-07-09 18:37:43.291615 [diag_service 14032] DEBUG collecting stats from commService
+2026-07-09 18:37:43.291989 [commService 14034] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.292046 [commService 14034] DEBUG collectChannelMessageStatisticsIPC
+2026-07-09 18:37:43.292444 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:37:43.292727 [telemetry 14034] INFO wfmCogAgentConnected:false
+2026-07-09 18:37:43.293779 [telemetry 14034] INFO wfmCogAgentCommFailCnt:0.000000
+2026-07-09 18:37:43.294180 [telemetry 14034] INFO wfmCogAgentCommRestoreCnt:0.000000
+2026-07-09 18:37:43.294519 [telemetry 14034] INFO wfmCogAgentHeartbeats:0.000000
+2026-07-09 18:37:43.294867 [telemetry 14034] INFO wfmGatekeeperRequests_split:0.000000
+2026-07-09 18:37:43.295659 [telemetry 14032] INFO commService_enabledChannels_split:aws
+2026-07-09 18:37:43.296092 [telemetry 14032] INFO commService_commChannelPrimary_split:aws
+2026-07-09 18:37:43.296437 [telemetry 14032] INFO commService_procDied_split:0.000000
+2026-07-09 18:37:43.296778 [telemetry 14032] INFO commService_isRunning_split:true
+2026-07-09 18:37:43.297119 [telemetry 14032] INFO commService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.297479 [diag_service 14032] DEBUG collecting stats from backupRestoreService
+2026-07-09 18:37:43.297947 [backupRestoreService 14035] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.298256 [telemetry 14032] INFO backupRestoreService_backupRestore_lastSuccessfulBackupTime_split:2026-07-09T14:26:22.702Z
+2026-07-09 18:37:43.298693 [telemetry 14032] INFO backupRestoreService_procStartT_split:1783616829000.000000
+2026-07-09 18:37:43.299065 [telemetry 14032] INFO backupRestoreService_isRunning_split:true
+2026-07-09 18:37:43.299397 [telemetry 14032] INFO backupRestoreService_procDied_split:0.000000
+2026-07-09 18:37:43.299743 [diag_service 14032] DEBUG collecting stats from cronService
+2026-07-09 18:37:43.300047 [cronService 13775] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.300277 [telemetry 14032] INFO cronService_procDied_split:0.000000
+2026-07-09 18:37:43.300706 [telemetry 14032] INFO cronService_isRunning_split:true
+2026-07-09 18:37:43.301063 [telemetry 14032] INFO cronService_procStartT_split:1783616828000.000000
+2026-07-09 18:37:43.301414 [diag_service 14032] DEBUG collecting stats from watchdogService
+2026-07-09 18:37:43.301845 [watchdogService 13759] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:37:43.302131 [telemetry 14032] INFO watchdogService_procDied_split:0.000000
+2026-07-09 18:37:43.302585 [telemetry 14032] INFO watchdogService_procStartT_split:1783616828108.000000
+2026-07-09 18:37:43.302953 [telemetry 14032] INFO watchdogService_isRunning_split:true
+2026-07-09 18:37:46.718493 [backupRestoreService 14035] DEBUG job: elapsed time is 900; 6300 seconds to go...
+2026-07-09 18:37:50.948638 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:37:50.948839 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":30}
+2026-07-09 18:37:50.978482 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":30,"pid":13777,"initialized":true}
+2026-07-09 18:37:50.979139 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:37:50.979202 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:37:50.979427 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:37:50.984310 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:37:50.984418 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:37:50.985127 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:37:50.985699 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:37:50.985753 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:37:50.985926 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:38:20.986073 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:38:20.986163 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:38:20.987047 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:38:20.987613 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:38:20.987681 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:38:20.987869 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:38:46.718686 [backupRestoreService 14035] DEBUG job: elapsed time is 960; 6240 seconds to go...
+2026-07-09 18:38:50.979565 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:38:50.979760 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":31}
+2026-07-09 18:38:50.987994 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:38:50.988049 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:38:50.988765 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:38:50.989183 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:38:50.989228 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:38:50.989379 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:38:51.001735 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":31,"pid":13777,"initialized":true}
+2026-07-09 18:38:51.002313 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:38:51.002357 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:38:51.002518 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:39:20.989483 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:39:20.989573 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:39:20.990284 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:39:20.990760 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:39:20.990815 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:39:20.990976 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:39:46.718826 [backupRestoreService 14035] DEBUG job: elapsed time is 1020; 6180 seconds to go...
+2026-07-09 18:39:50.991106 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:39:50.991184 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:39:50.991946 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:39:50.992452 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:39:50.992502 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:39:50.992717 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:39:51.002629 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:39:51.002766 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":32}
+2026-07-09 18:39:51.020225 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":32,"pid":13777,"initialized":true}
+2026-07-09 18:39:51.020830 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:39:51.020879 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:39:51.021039 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:40:20.992837 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:40:20.992919 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:40:20.993600 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:40:20.994097 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:40:20.994142 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:40:20.994348 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:40:46.719019 [backupRestoreService 14035] DEBUG job: elapsed time is 1080; 6120 seconds to go...
+2026-07-09 18:40:50.994481 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:40:50.994554 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:40:50.995335 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:40:50.996079 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:40:50.996151 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:40:50.996349 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:40:51.021185 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:40:51.021425 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":33}
+2026-07-09 18:40:51.038462 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":33,"pid":13777,"initialized":true}
+2026-07-09 18:40:51.039037 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:40:51.039086 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:40:51.039260 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:41:20.996469 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:41:20.996583 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:41:20.997313 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:41:20.997944 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:41:20.997989 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:41:20.998188 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:41:38.330092 [rdkIntSvc 13814] INFO Called tr181PropertyGetStringHandler for [Device.DeviceInfo.X_RDKCENTRAL-COM_XHFW.WiFiMotionStatus]
+2026-07-09 18:41:38.330640 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:41:46.719186 [backupRestoreService 14035] DEBUG job: elapsed time is 1140; 6060 seconds to go...
+2026-07-09 18:41:50.998296 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:41:50.998380 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:41:50.999160 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:41:50.999778 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:41:50.999835 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:41:51.000049 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:41:51.039396 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:41:51.039624 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":34}
+2026-07-09 18:41:51.054421 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":34,"pid":13777,"initialized":true}
+2026-07-09 18:41:51.055296 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:41:51.055359 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:41:51.055545 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:42:21.000163 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:42:21.000247 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:42:21.001013 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:42:21.001548 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:42:21.001594 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:42:21.001800 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:42:46.719361 [backupRestoreService 14035] DEBUG job: elapsed time is 1200; 6000 seconds to go...
+2026-07-09 18:42:51.001919 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:42:51.002017 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:42:51.002758 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:42:51.003296 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:42:51.003358 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:42:51.003578 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:42:51.055676 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:42:51.055973 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":35}
+2026-07-09 18:42:51.072961 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":35,"pid":13777,"initialized":true}
+2026-07-09 18:42:51.074043 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:42:51.074128 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:42:51.074659 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:43:06.731990 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622586730","eui64":"880f62fffe102cc2","eventType":"deviceCommunicationSucceededEvent","rssi":-69,"lqi":255}
+2026-07-09 18:43:06.732069 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622586730","eui64":"880f62fffe102cc2","eventType":"clusterCommandReceived","sourceEndpoint":1,"profileId":260,"direction":1,"clusterId":32,"commandId":0,"mfgSpecific":true,"mfgCode":4381,"seqNum":76,"apsSeqNum":147,"rssi":-69,"lqi":255,"encodedBuf":"1Qv7BfgH0NAAAAAALAAAAA=="}
+2026-07-09 18:43:06.732101 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 880f62fffe102cc2
+2026-07-09 18:43:06.732121 [zigbeeEventHandler 13813] DEBUG clusterCommandReceived callback: 880f62fffe102cc2 ep 1, profileId 0104, cluster 0020
+2026-07-09 18:43:06.732145 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102cc2
+2026-07-09 18:43:06.732168 [zigbeeDriverCommon 13813] DEBUG clusterCommandReceived
+2026-07-09 18:43:06.732195 [zigbeeDriverCommon 13813] DEBUG updateNeRssiAndLqi
+2026-07-09 18:43:06.732213 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=neRssi, newValue=-69
+2026-07-09 18:43:06.732236 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=neLqi, newValue=255
+2026-07-09 18:43:06.732353 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=linkQuality, newValue=fair
+2026-07-09 18:43:06.732403 [pollControlCluster 13813] DEBUG handleClusterCommand
+2026-07-09 18:43:06.732424 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:43:06.732443 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=battVolts, newValue=3029
+2026-07-09 18:43:06.732462 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=feRssi, newValue=-48
+2026-07-09 18:43:06.732482 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=feLqi, newValue=208
+2026-07-09 18:43:06.732502 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=temp, newValue=2040
+2026-07-09 18:43:06.732529 [deviceService 13813] DEBUG setMetadata: deviceUuid=880f62fffe102cc2, endpointId=(null), name=rejoins, value=44
+2026-07-09 18:43:06.732549 [deviceService 13813] DEBUG setMetadata: deviceUuid=880f62fffe102cc2, endpointId=(null), name=retries, value=0
+2026-07-09 18:43:06.732567 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:43:06.732592 [zhalImpl 13813] DEBUG Creating device queue for 880f62fffe102cc2
+2026-07-09 18:43:06.733856 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe102cc2","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":0,"encodedMessage":"AAAA","requestDefaultResponse":false,"useApsEncryption":false,"requestId":36}
+2026-07-09 18:43:07.279869 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":36,"defaultResponseCode":0}
+2026-07-09 18:43:07.279989 [ZigBeeSensorDD 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:43:07.280105 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102cc2, endpointId=1, resourceId=faulted
+2026-07-09 18:43:07.280156 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102cc2, endpointId=(null), resourceId=model
+2026-07-09 18:43:07.280183 [zigbeeEventTracker 13813] WARN zigbeeEventTrackerAddMagneticStrengthReport: unable to add magnetic strength report event for device 880f62fffe102cc2
+2026-07-09 18:43:21.003699 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:43:21.003820 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:43:21.004597 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:43:21.005086 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:43:21.005133 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:43:21.005344 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:43:46.719532 [backupRestoreService 14035] DEBUG job: elapsed time is 1260; 5940 seconds to go...
+2026-07-09 18:43:51.005461 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:43:51.005578 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:43:51.006338 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:43:51.006977 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:43:51.007021 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:43:51.007232 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:43:51.074838 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:43:51.074994 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":37}
+2026-07-09 18:43:51.100668 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":37,"pid":13777,"initialized":true}
+2026-07-09 18:43:51.101388 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:43:51.101436 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:43:51.101601 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:44:21.007349 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:44:21.007419 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:44:21.007954 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:44:21.008607 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:44:21.008651 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:44:21.008857 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:44:46.719713 [backupRestoreService 14035] DEBUG job: elapsed time is 1320; 5880 seconds to go...
+2026-07-09 18:44:51.009024 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:44:51.009134 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:44:51.010464 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:44:51.011364 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:44:51.011439 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:44:51.011659 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:44:51.101729 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:44:51.101946 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":38}
+2026-07-09 18:44:51.120882 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":38,"pid":13777,"initialized":true}
+2026-07-09 18:44:51.121671 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:44:51.121730 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:44:51.121923 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:45:21.011804 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:45:21.011905 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:45:21.012698 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:45:21.013240 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:45:21.013303 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:45:21.013467 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:45:46.719900 [backupRestoreService 14035] DEBUG job: elapsed time is 1380; 5820 seconds to go...
+2026-07-09 18:45:51.013584 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:45:51.013695 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:45:51.014442 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:45:51.014906 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:45:51.014954 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:45:51.015191 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:45:51.122071 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:45:51.122306 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":39}
+2026-07-09 18:45:51.139323 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":39,"pid":13777,"initialized":true}
+2026-07-09 18:45:51.140433 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:45:51.140493 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:45:51.141433 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:46:21.015317 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:46:21.015410 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:46:21.016148 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:46:21.016724 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:46:21.016781 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:46:21.017036 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:46:46.720092 [backupRestoreService 14035] DEBUG job: elapsed time is 1440; 5760 seconds to go...
+2026-07-09 18:46:51.017163 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:46:51.017248 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:46:51.017990 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:46:51.018612 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:46:51.018655 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:46:51.018875 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:46:51.141578 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:46:51.141820 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":40}
+2026-07-09 18:46:51.155634 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":40,"pid":13777,"initialized":true}
+2026-07-09 18:46:51.156202 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:46:51.156251 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:46:51.156417 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:47:21.019000 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:47:21.019107 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:47:21.019864 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:47:21.020511 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:47:21.020573 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:47:21.020773 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:47:46.720273 [backupRestoreService 14035] DEBUG job: elapsed time is 1500; 5700 seconds to go...
+2026-07-09 18:47:51.020900 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:47:51.020996 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:47:51.021735 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:47:51.022383 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:47:51.022431 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:47:51.022624 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:47:51.156538 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:47:51.156739 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":41}
+2026-07-09 18:47:51.176144 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":41,"pid":13777,"initialized":true}
+2026-07-09 18:47:51.176703 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:47:51.176749 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:47:51.176928 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:48:21.022742 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:48:21.022859 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:48:21.023605 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:48:21.024262 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:48:21.024311 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:48:21.024536 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:48:40.734687 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622920733","eui64":"880f62fffe102248","eventType":"deviceCommunicationSucceededEvent","rssi":-65,"lqi":255}
+2026-07-09 18:48:40.734751 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 880f62fffe102248
+2026-07-09 18:48:40.734783 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102248
+2026-07-09 18:48:40.737297 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622920735","eui64":"880f62fffe102248","eventType":"clusterCommandReceived","sourceEndpoint":1,"profileId":260,"direction":1,"clusterId":32,"commandId":0,"mfgSpecific":false,"mfgCode":0,"seqNum":7,"apsSeqNum":4,"rssi":-65,"lqi":255,"encodedBuf":""}
+2026-07-09 18:48:40.737393 [zigbeeEventHandler 13813] DEBUG clusterCommandReceived callback: 880f62fffe102248 ep 1, profileId 0104, cluster 0020
+2026-07-09 18:48:40.737433 [zigbeeDriverCommon 13813] DEBUG clusterCommandReceived
+2026-07-09 18:48:40.737448 [zigbeeDriverCommon 13813] DEBUG updateNeRssiAndLqi
+2026-07-09 18:48:40.737464 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=neRssi, newValue=-65
+2026-07-09 18:48:40.737497 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=neLqi, newValue=255
+2026-07-09 18:48:40.737614 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=linkQuality, newValue=fair
+2026-07-09 18:48:40.737663 [pollControlCluster 13813] DEBUG handleClusterCommand
+2026-07-09 18:48:40.737679 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:48:40.737699 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=temp
+2026-07-09 18:48:40.737735 [zigbeeDriverCommon 13813] DEBUG getClustersNeedingPollControlRefresh: going to refresh temperature measurement
+2026-07-09 18:48:40.737750 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=battVolts
+2026-07-09 18:48:40.737775 [zigbeeDriverCommon 13813] DEBUG resourceNeedsRefreshing: resource battVolts does not need refreshing yet
+2026-07-09 18:48:40.737802 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=feRssi
+2026-07-09 18:48:40.737830 [zigbeeDriverCommon 13813] DEBUG getClustersNeedingPollControlRefresh: going to refresh diagnostics
+2026-07-09 18:48:40.737847 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:48:40.737873 [zhalImpl 13813] DEBUG Creating device queue for 880f62fffe102248
+2026-07-09 18:48:40.737971 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe102248","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":0,"encodedMessage":"AQAA","requestDefaultResponse":false,"useApsEncryption":false,"requestId":42}
+2026-07-09 18:48:41.302594 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":42,"defaultResponseCode":0}
+2026-07-09 18:48:41.302731 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin: notifying cluster 0x0402 that it can do poll control checkin work
+2026-07-09 18:48:41.302758 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:48:41.302872 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe102248","endpointId":1,"clusterId":1026,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":0}],"requestId":43}
+2026-07-09 18:48:41.820337 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":43,"attributeData":[{"id":0,"type":41,"success":true,"dataLen":2,"data":"TQc="}]}
+2026-07-09 18:48:41.820462 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=temp, newValue=1869
+2026-07-09 18:48:41.820506 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin: notifying cluster 0x0b05 that it can do poll control checkin work
+2026-07-09 18:48:41.820526 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:48:41.820608 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe102248","endpointId":1,"clusterId":2821,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":285}],"requestId":44}
+2026-07-09 18:48:42.379439 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":44,"attributeData":[{"id":285,"type":40,"success":true,"dataLen":1,"data":"2A=="}]}
+2026-07-09 18:48:42.379559 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:48:42.379662 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe102248","endpointId":1,"clusterId":2821,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":284}],"requestId":45}
+2026-07-09 18:48:42.857995 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":45,"attributeData":[{"id":284,"type":32,"success":true,"dataLen":1,"data":"8A=="}]}
+2026-07-09 18:48:42.858110 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=feRssi, newValue=-40
+2026-07-09 18:48:42.858149 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=feLqi, newValue=240
+2026-07-09 18:48:42.858277 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102248, endpointId=(null), resourceId=linkQuality, newValue=fair
+2026-07-09 18:48:42.858325 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:48:42.858411 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe102248","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":1,"encodedMessage":"","requestDefaultResponse":false,"useApsEncryption":false,"requestId":46}
+2026-07-09 18:48:43.334882 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":46,"defaultResponseCode":0}
+2026-07-09 18:48:43.334994 [ZigBeeSensorDD 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:48:46.720466 [backupRestoreService 14035] DEBUG job: elapsed time is 1560; 5640 seconds to go...
+2026-07-09 18:48:48.839642 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622928836","eui64":"980c33fffeb87d1d","eventType":"clusterCommandReceived","sourceEndpoint":1,"profileId":260,"direction":1,"clusterId":32,"commandId":0,"mfgSpecific":true,"mfgCode":4381,"seqNum":75,"apsSeqNum":230,"rssi":-64,"lqi":255,"encodedBuf":"9AsAADIIw5wAAAAAAAAAAA=="}
+2026-07-09 18:48:48.839724 [zigbeeEventHandler 13813] DEBUG clusterCommandReceived callback: 980c33fffeb87d1d ep 1, profileId 0104, cluster 0020
+2026-07-09 18:48:48.839766 [zigbeeDriverCommon 13813] DEBUG clusterCommandReceived
+2026-07-09 18:48:48.839803 [zigbeeDriverCommon 13813] DEBUG updateNeRssiAndLqi
+2026-07-09 18:48:48.839822 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=neRssi, newValue=-64
+2026-07-09 18:48:48.839852 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=neLqi, newValue=255
+2026-07-09 18:48:48.839967 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=linkQuality, newValue=fair
+2026-07-09 18:48:48.840018 [pollControlCluster 13813] DEBUG handleClusterCommand
+2026-07-09 18:48:48.840049 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:48:48.840074 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=battVolts, newValue=3060
+2026-07-09 18:48:48.841196 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting resource updated event, uri=/980c33fffeb87d1d/r/battVolts, newValue=3060
+2026-07-09 18:48:48.842809 [securityService 14029] DEBUG received device resource updated event of a securityZone; id=battVolts device id=980c33fffeb87d1d uri=/980c33fffeb87d1d/r/battVolts value=3060 type=battery.voltage
+2026-07-09 18:48:48.843192 [securityService 14029] DEBUG processing request GET_ZONE_FOR_ENDPOINT
+2026-07-09 18:48:48.843207 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=feRssi, newValue=-61
+2026-07-09 18:48:48.843286 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=feLqi, newValue=156
+2026-07-09 18:48:48.843313 [deviceService 13813] DEBUG updateResource: deviceUuid=980c33fffeb87d1d, endpointId=(null), resourceId=temp, newValue=2098
+2026-07-09 18:48:48.843398 [deviceService 13813] DEBUG setMetadata: deviceUuid=980c33fffeb87d1d, endpointId=(null), name=battUsedMilliAmpHr, value=0
+2026-07-09 18:48:48.843428 [IPC 14034] WARN service response from servicePort=1530 returned failure; 4 - IPC_INVALID_ERROR; msg=317
+2026-07-09 18:48:48.844056 [deviceService 13813] DEBUG setMetadata: deviceUuid=980c33fffeb87d1d, endpointId=(null), name=rejoins, value=0
+2026-07-09 18:48:48.844126 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_ID
+2026-07-09 18:48:48.844162 [deviceService 13813] DEBUG setMetadata: deviceUuid=980c33fffeb87d1d, endpointId=(null), name=retries, value=0
+2026-07-09 18:48:48.844436 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622928836","eui64":"980c33fffeb87d1d","eventType":"deviceCommunicationSucceededEvent","rssi":-64,"lqi":255}
+2026-07-09 18:48:48.844471 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 980c33fffeb87d1d
+2026-07-09 18:48:48.844495 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 980c33fffeb87d1d
+2026-07-09 18:48:48.844590 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:48:48.844626 [zhalImpl 13813] DEBUG Creating device queue for 980c33fffeb87d1d
+2026-07-09 18:48:48.844724 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"980c33fffeb87d1d","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":0,"encodedMessage":"AAAA","requestDefaultResponse":false,"useApsEncryption":false,"requestId":47}
+2026-07-09 18:48:49.408944 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":47,"defaultResponseCode":0}
+2026-07-09 18:48:49.409057 [ZigBeeSensorDD 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:48:51.024661 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:48:51.024744 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:48:51.025470 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:48:51.026108 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:48:51.026162 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:48:51.026353 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:48:51.177053 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:48:51.177251 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":48}
+2026-07-09 18:48:51.279690 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":48,"pid":13777,"initialized":true}
+2026-07-09 18:48:51.280255 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:48:51.280300 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:48:51.280461 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:49:21.026472 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:49:21.026581 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:49:21.027336 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:49:21.027971 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:49:21.028016 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:49:21.028209 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:49:22.870335 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622962869","eui64":"880f62fffe102ef1","eventType":"deviceCommunicationSucceededEvent","rssi":-69,"lqi":255}
+2026-07-09 18:49:22.870425 [zhalImpl 13813] DEBUG got event: {"timestamp":"1783622962868","eui64":"880f62fffe102ef1","eventType":"clusterCommandReceived","sourceEndpoint":1,"profileId":260,"direction":1,"clusterId":32,"commandId":0,"mfgSpecific":false,"mfgCode":0,"seqNum":7,"apsSeqNum":227,"rssi":-69,"lqi":255,"encodedBuf":""}
+2026-07-09 18:49:22.870457 [zigbeeEventHandler 13813] DEBUG deviceCommunicationSucceeded callback: 880f62fffe102ef1
+2026-07-09 18:49:22.870477 [zigbeeEventHandler 13813] DEBUG clusterCommandReceived callback: 880f62fffe102ef1 ep 1, profileId 0104, cluster 0020
+2026-07-09 18:49:22.870502 [deviceCommunicationWatchdog 13813] DEBUG deviceCommunicationWatchdogPetDevice: petting 880f62fffe102ef1
+2026-07-09 18:49:22.870526 [zigbeeDriverCommon 13813] DEBUG clusterCommandReceived
+2026-07-09 18:49:22.870541 [zigbeeDriverCommon 13813] DEBUG updateNeRssiAndLqi
+2026-07-09 18:49:22.870558 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=neRssi, newValue=-69
+2026-07-09 18:49:22.870580 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=neLqi, newValue=255
+2026-07-09 18:49:22.870701 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=linkQuality, newValue=fair
+2026-07-09 18:49:22.871412 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting resource updated event, uri=/880f62fffe102ef1/r/linkQuality, newValue=fair
+2026-07-09 18:49:22.872433 [securityService 14029] DEBUG received device resource updated event of a securityZone; id=linkQuality device id=880f62fffe102ef1 uri=/880f62fffe102ef1/r/linkQuality value=fair type=com.icontrol.linkQuality
+2026-07-09 18:49:22.872526 [securityService 14029] DEBUG (processTroubleForResource): received device trouble event; type=linkQuality, clear=true
+2026-07-09 18:49:22.872910 [pollControlCluster 13813] DEBUG handleClusterCommand
+2026-07-09 18:49:22.872959 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:49:22.872990 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=temp
+2026-07-09 18:49:22.873044 [zigbeeDriverCommon 13813] DEBUG getClustersNeedingPollControlRefresh: going to refresh temperature measurement
+2026-07-09 18:49:22.873061 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=battVolts
+2026-07-09 18:49:22.873105 [zigbeeDriverCommon 13813] DEBUG resourceNeedsRefreshing: resource battVolts does not need refreshing yet
+2026-07-09 18:49:22.873122 [deviceService 13813] DEBUG deviceServiceGetResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=feRssi
+2026-07-09 18:49:22.873151 [zigbeeDriverCommon 13813] DEBUG getClustersNeedingPollControlRefresh: going to refresh diagnostics
+2026-07-09 18:49:22.873189 [securityService 14029] DEBUG processing request GET_ZONE_FOR_ENDPOINT
+2026-07-09 18:49:22.873414 [IPC 14034] WARN service response from servicePort=1530 returned failure; 4 - IPC_INVALID_ERROR; msg=317
+2026-07-09 18:49:22.873766 [deviceService 13813] DEBUG processing request GET_ENDPOINT_BY_URI
+2026-07-09 18:49:22.873816 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:49:22.873843 [deviceService 13813] DEBUG deviceServiceGetEndpointByUri: uri=/880f62fffe102ef1/r/linkQuality
+2026-07-09 18:49:22.873864 [zhalImpl 13813] DEBUG Creating device queue for 880f62fffe102ef1
+2026-07-09 18:49:22.873977 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe102ef1","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":0,"encodedMessage":"AQAA","requestDefaultResponse":false,"useApsEncryption":false,"requestId":49}
+2026-07-09 18:49:22.874463 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_ID
+2026-07-09 18:49:22.874891 [IPC 14029] WARN service response from servicePort=1600 returned failure; 5 - IPC_GENERAL_ERROR; msg=45
+2026-07-09 18:49:22.875019 [securityService 14029] ERROR Failed to get endpoint for uri /880f62fffe102ef1/r/linkQuality
+2026-07-09 18:49:22.875487 [deviceService 13813] DEBUG processing request GET_DEVICE_BY_URI
+2026-07-09 18:49:22.877920 [securityService 14029] DEBUG looking for primary endpoint for device: 880f62fffe102ef1
+2026-07-09 18:49:22.877987 [securityService 14029] DEBUG processing request GET_TROUBLES_FOR_DEVICE
+2026-07-09 18:49:22.878377 [deviceService 13813] DEBUG processing request READ_METADATA
+2026-07-09 18:49:22.878416 [commService 14034] DEBUG aws: queueAwsMessage - Adding message 213 (evId:212,evCd:303,evVal:0) to connected queue
+2026-07-09 18:49:22.878519 [commService 14034] DEBUG queue: safe to proceed with msg processing since 'sent list' has 0 items in it
+2026-07-09 18:49:22.878550 [commService 14034] DEBUG aws: sending aws message id=213 (evId:212,evCd:303,evVal:0)
+2026-07-09 18:49:22.878699 [commService 14034] DEBUG aws: publishing to topic '$aws/things/iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe102ef1/shadow/update' message: {
+	"state":	{
+		"reported":	{
+			"zigbee":	{
+				"linkQuality":	{
+					"value":	"FAIR"
+				},
+				"rssi":	{
+					"nearEnd":	-69,
+					"farEnd":	-30
+				},
+				"lqi":	{
+					"nearEnd":	255,
+					"farEnd":	255
+				}
+			},
+			"battery":	{
+				"voltage":	{
+					"value":	3016,
+					"unit":	"mV"
+				},
+				"health":	"GOOD"
+			},
+			"traceId":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:cb7639de-9c17-493f-bfe7-e538e67339bf",
+			"lastChangeSource":	"manual",
+			"originSource":	null,
+			"errors":	[]
+		},
+		"desired":	null
+	},
+	"clientToken":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:d5"
+}
+2026-07-09 18:49:22.878750 [commService 14034] INFO aws: publish of message 213 to topic $aws/things/iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe102ef1/shadow/update returned No error.
+2026-07-09 18:49:22.878770 [telemetry 14034] INFO AwsMessagesSent
+2026-07-09 18:49:22.879029 [securityService 14029] DEBUG falling back to finding zones using device id: 880f62fffe102ef1
+2026-07-09 18:49:22.879245 [securityService 14029] DEBUG creating new trouble event: [trouble eventId=212; troubleId=0, type=TROUBLE_TYPE_DEVICE, reason=TROUBLE_REASON_LINK_QUALITY, critical=TROUBLE_CRIT_INFO, restore=true, payload={
+	"rootId":	"880f62fffe102ef1",
+	"ownerUri":	"/880f62fffe102ef1",
+	"resourceUri":	"/880f62fffe102ef1/r/linkQuality",
+	"deviceClass":	"sensor",
+	"zoneNumber":	2,
+	"zoneType":	1,
+	"alarmArmType":	0,
+	"alarmStatusType":	0
+}]
+2026-07-09 18:49:22.879289 [securityService 14029] INFO Found existing trouble to clear id=159
+2026-07-09 18:49:22.879904 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:49:22.880056 [deviceService 13813] DEBUG processing request READ_METADATA
+2026-07-09 18:49:22.880719 [deviceService 13813] DEBUG processing request WRITE_METADATA
+2026-07-09 18:49:22.880766 [deviceService 13813] DEBUG setMetadata: deviceUuid=880f62fffe102ef1, endpointId=(null), name=troubles, value={
+}
+2026-07-09 18:49:22.881857 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.tmp' changed
+2026-07-09 18:49:22.886828 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.tmp' changed
+2026-07-09 18:49:22.886879 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.bak' renamed from '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1'
+2026-07-09 18:49:22.886944 [storage 13813] DEBUG storageSave: saved file /nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1 in 6ms
+2026-07-09 18:49:22.886966 [glib 13813] DEBUG (null): File '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1' renamed from '/nvram/icontrol/etc/storage/devicedb/880f62fffe102ef1.tmp'
+2026-07-09 18:49:22.887087 [deviceServiceIPCEventProducer 13813] DEBUG broadcasting device metadata updated event
+2026-07-09 18:49:22.888159 [securityService 14029] DEBUG broadcasting troubleEvent (cleared); code=256, val=0, eventId=214, troubleId=159, type=TROUBLE_TYPE_DEVICE, critical=TROUBLE_CRIT_INFO ind=INDICATION_NONE cat=INDICATION_CATEGORY_BURG alarmSes=0 cid=(null) 
+2026-07-09 18:49:22.889178 [commService 14034] DEBUG aws: got trouble event for device 880f62fffe102ef1
+2026-07-09 18:49:22.889915 [securityService 14029] DEBUG processing request GET_TROUBLES_FOR_DEVICE
+2026-07-09 18:49:22.890178 [commService 14034] DEBUG aws: queueAwsMessage - Adding message 216 (evId:214,evCd:256,evVal:0) to connected queue
+2026-07-09 18:49:22.890478 [TIME_TRACKER 14034] DEBUG tracker-dump: tracker run=true timeout=30000 start=1678590 now=1678602 elapsed=12 remain=29988
+2026-07-09 18:49:22.890508 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:49:22.890615 [securityService 14029] DEBUG processing request GET_ZONE_FOR_NUM
+2026-07-09 18:49:22.940354 [commService 14034] DEBUG aws: Got puback for 213
+2026-07-09 18:49:22.940464 [commService 14034] DEBUG queue: safe to proceed with msg processing since 'sent list' has 0 items in it
+2026-07-09 18:49:22.940488 [commService 14034] DEBUG aws: sending aws message id=216 (evId:214,evCd:256,evVal:0)
+2026-07-09 18:49:22.940578 [commService 14034] DEBUG aws: publishing to topic '$aws/things/iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe102ef1/shadow/update' message: {
+	"state":	{
+		"reported":	{
+			"troubles":	[],
+			"traceId":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:261fda3b-ce9a-4c79-af45-9fa4e557d7fc",
+			"errors":	[]
+		}
+	},
+	"clientToken":	"xhfw:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:d8"
+}
+2026-07-09 18:49:22.940619 [commService 14034] INFO aws: publish of message 216 to topic $aws/things/iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe102ef1/shadow/update returned No error.
+2026-07-09 18:49:22.940637 [telemetry 14034] INFO AwsMessagesSent
+2026-07-09 18:49:22.941504 [commService 14034] DEBUG queue: pausing msg processing for 30 seconds since 'sent list' has 1 items in it...
+2026-07-09 18:49:23.001822 [commService 14034] DEBUG aws: Got puback for 216
+2026-07-09 18:49:23.051576 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe102ef1, schema https://dhdm.xfinity.com/sensor.v1.schema.json
+2026-07-09 18:49:23.053780 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/sensor.v1.schema.json
+2026-07-09 18:49:23.096807 [awsPlatformLifecycle 14034] DEBUG handleLifecycleEvent: Got cloud object detected event of type CLOUD_OBJ_DETECTED_UPDATED for id iot:shaw_3277006077133108326:per:xhf:22ad362f-0ce4-41cd-8dbb-fdb416155ee0:880f62fffe102ef1, schema https://dhdm.xfinity.com/sensor.v1.schema.json
+2026-07-09 18:49:23.099211 [cloudCameraDD 13813] DEBUG cloudEventHandler: jsonSchema=https://dhdm.xfinity.com/sensor.v1.schema.json
+2026-07-09 18:49:23.440504 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":49,"defaultResponseCode":0}
+2026-07-09 18:49:23.440631 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin: notifying cluster 0x0402 that it can do poll control checkin work
+2026-07-09 18:49:23.440661 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:49:23.440983 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe102ef1","endpointId":1,"clusterId":1026,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":0}],"requestId":50}
+2026-07-09 18:49:23.954311 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":50,"attributeData":[{"id":0,"type":41,"success":true,"dataLen":2,"data":"Hwc="}]}
+2026-07-09 18:49:23.954444 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=temp, newValue=1823
+2026-07-09 18:49:23.954487 [zigbeeDriverCommon 13813] DEBUG handlePollControlCheckin: notifying cluster 0x0b05 that it can do poll control checkin work
+2026-07-09 18:49:23.954507 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:49:23.954612 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe102ef1","endpointId":1,"clusterId":2821,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":285}],"requestId":51}
+2026-07-09 18:49:24.483456 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":51,"attributeData":[{"id":285,"type":40,"success":true,"dataLen":1,"data":"0Q=="}]}
+2026-07-09 18:49:24.483574 [zhalImpl 13813] DEBUG zhalAttributesRead
+2026-07-09 18:49:24.483686 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"attributesRead","address":"880f62fffe102ef1","endpointId":1,"clusterId":2821,"clientToServer":1,"isMfgSpecific":0,"infos":[{"id":284}],"requestId":52}
+2026-07-09 18:49:24.995556 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"attributesReadResponse","resultCode":0,"requestId":52,"attributeData":[{"id":284,"type":32,"success":true,"dataLen":1,"data":"1A=="}]}
+2026-07-09 18:49:24.995691 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=feRssi, newValue=-47
+2026-07-09 18:49:24.995733 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=feLqi, newValue=212
+2026-07-09 18:49:24.995931 [deviceService 13813] DEBUG updateResource: deviceUuid=880f62fffe102ef1, endpointId=(null), resourceId=linkQuality, newValue=fair
+2026-07-09 18:49:24.995985 [zhalImpl 13813] DEBUG zhalSendCommand
+2026-07-09 18:49:24.996098 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"sendCommand","address":"880f62fffe102ef1","endpointId":1,"clusterId":32,"direction":"clientToServer","isMfgSpecific":0,"mfgId":0,"commandId":1,"encodedMessage":"","requestDefaultResponse":false,"useApsEncryption":false,"requestId":53}
+2026-07-09 18:49:25.468975 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"sendCommandResponse","resultCode":0,"requestId":53,"defaultResponseCode":0}
+2026-07-09 18:49:25.469092 [ZigBeeSensorDD 13813] DEBUG handlePollControlCheckin
+2026-07-09 18:49:27.887036 [deviceServiceMain 13813] DEBUG storageChangedTask: Notifying backup/restore configuration changed
+2026-07-09 18:49:27.887688 [backupRestoreService 14035] DEBUG processing request CONFIG_UPDATED
+2026-07-09 18:49:27.887736 [backupRestoreService 14035] DEBUG asked to schedule backup, but current state = 1
+2026-07-09 18:49:46.720643 [backupRestoreService 14035] DEBUG job: elapsed time is 1620; 5580 seconds to go...
+2026-07-09 18:49:51.028328 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:49:51.028435 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:49:51.029187 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:49:51.029770 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:49:51.029826 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:49:51.030052 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:49:51.280588 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:49:51.280805 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":54}
+2026-07-09 18:49:51.383679 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":54,"pid":13777,"initialized":true}
+2026-07-09 18:49:51.384331 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:49:51.384398 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:49:51.384566 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:50:21.030217 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:50:21.030363 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:50:21.031179 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:50:21.031868 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:50:21.031929 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:50:21.032138 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:50:46.720817 [backupRestoreService 14035] DEBUG job: elapsed time is 1680; 5520 seconds to go...
+2026-07-09 18:50:51.032263 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:50:51.032342 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:50:51.033084 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:50:51.033695 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:50:51.033739 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:50:51.033942 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:50:51.384694 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:50:51.384915 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":55}
+2026-07-09 18:50:51.488549 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":55,"pid":13777,"initialized":true}
+2026-07-09 18:50:51.489117 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:50:51.489166 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:50:51.489333 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:51:21.034057 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:51:21.034155 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:51:21.034921 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:51:21.035493 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:51:21.035555 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:51:21.035779 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:51:46.720996 [backupRestoreService 14035] DEBUG job: elapsed time is 1740; 5460 seconds to go...
+2026-07-09 18:51:51.035933 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:51:51.036044 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:51:51.036784 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:51:51.037548 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:51:51.037620 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:51:51.037850 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:51:51.489455 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:51:51.489660 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":56}
+2026-07-09 18:51:51.573665 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":56,"pid":13777,"initialized":true}
+2026-07-09 18:51:51.574324 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:51:51.574385 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:51:51.574605 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:52:21.037995 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:52:21.038098 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:52:21.038860 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:52:21.039494 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:52:21.039554 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:52:21.039756 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:52:43.303399 [diag_service 14032] INFO Collecting stats for T2.0
+2026-07-09 18:52:43.303909 [watchdogService 13759] DEBUG processing request GET_ALL_SERVICES
+2026-07-09 18:52:43.304581 [diag_service 14032] DEBUG collecting stats from propsService
+2026-07-09 18:52:43.304944 [propsService 13773] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.305227 [telemetry 14032] INFO propsService_isRunning_split:true
+2026-07-09 18:52:43.305988 [telemetry 14032] INFO propsService_procStartT_split:1783616828000.000000
+2026-07-09 18:52:43.306373 [telemetry 14032] INFO propsService_rfcProperties_split:device.subsystem.disable=matter, awsChannel.motionRestoreTimer.enabled=false
+2026-07-09 18:52:43.306709 [telemetry 14032] INFO propsService_procDied_split:0.000000
+2026-07-09 18:52:43.307071 [diag_service 14032] DEBUG collecting stats from ZigbeeCore
+2026-07-09 18:52:43.307089 [diag_service 14032] DEBUG collecting stats from deviceService
+2026-07-09 18:52:43.307526 [deviceService 13813] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.307585 [zhalImpl 13813] DEBUG zhalGetSystemStatus
+2026-07-09 18:52:43.307683 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"getSystemStatus","requestId":57}
+2026-07-09 18:52:43.410986 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"getSystemStatusResponse","resultCode":0,"requestId":57,"networkIsUp":true,"networkIsOpenForJoin":false,"eui64":"001bad3b58feee16","originalEui64":"0000000000000000","channel":25,"panId":34935,"networkKey":"<REDACTED>","version":"5.0.1.0-20260613-193954"}
+2026-07-09 18:52:43.412265 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"getCounters","requestId":58}
+2026-07-09 18:52:43.514756 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"getCountersResponse","resultCode":0,"requestId":58,"sampleIntervalMillis":1793700,"macRxBcast":0,"macTxBcast":116,"macRxUcast":74,"macTxUcastSuccesses":32,"macTxUcastRetries":0,"macTxUcastFailures":0,"apsRxBcast":0,"apsTxBcast":0,"apsRxUcast":10,"apsTxUcastSuccesses":12,"apsTxUcastRetries":0,"apsTxUcastFailures":0,"nwkFrameCounterFailures":0,"apsFrameCounterFailures":0,"nwkLinkKeyNotAuthorized":0,"nwkDecryptionFailures":0,"apsDecryptionFailures":0,"bufferAllocationFailures":0,"queueOverruns":0,"packetValidationFailures":0,"nwkRetryQueueOverflows":0,"phyCcaFailures":0,"badChanCnt":0}
+2026-07-09 18:52:43.515306 [deviceServiceGather 13813] ERROR collectCameraDeviceStats: unable to locate MAC Address for camera 5036746190847523387:3C62F04370ED
+2026-07-09 18:52:43.515339 [deviceServiceGather 13813] ERROR collectCameraDeviceStats: unable to locate MAC Address for camera 5606513531447361710:3C62F03962A0
+2026-07-09 18:52:43.515355 [deviceServiceGather 13813] ERROR collectCameraDeviceStats: unable to locate MAC Address for camera 6423273862783913371:3C62F03A2000
+2026-07-09 18:52:43.517192 [telemetry 14032] INFO deviceService_Device 2_split:880f62fffe102ef1,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783616863,false,,,,,,,,,1783622965,,,,,sensor,3,255/212,-69/-47,1823,3016,GOOD,false,false,,false,false,false,1,0,1,0,0
+2026-07-09 18:52:43.518002 [telemetry 14032] INFO deviceService_Device 3_split:980c33fffeb87d1d,Universal Electronics Inc,H74470BA00-00007,0x04076620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783616848,false,,,,,,,,,1783622929,,,,,sensor,1,255/156,-64/-61,2098,3060,GOOD,false,false,,false,false,false,1,0,1,0,0
+2026-07-09 18:52:43.518443 [telemetry 14032] INFO deviceService_procDied_split:0.000000
+2026-07-09 18:52:43.518862 [telemetry 14032] INFO deviceService_isRunning_split:true
+2026-07-09 18:52:43.519266 [telemetry 14032] INFO deviceService_macTxUcastSuccesses_split:32.000000
+2026-07-09 18:52:43.519672 [telemetry 14032] INFO deviceService_TotalZigbeeSensor_split:LDHD2AZW,4;H74470BA00-00007,1;
+2026-07-09 18:52:43.520418 [telemetry 14032] INFO deviceService_TotalLocalCamera_split:Sercomm,3;
+2026-07-09 18:52:43.520770 [telemetry 14032] INFO deviceService_Device 4_split:880f62fffe102cc2,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783622587,1783616842,1783616840,,,sensor,3,255/208,-69/-48,2040,3029,GOOD,false,false,,false,false,false,0,0,0,0,0
+2026-07-09 18:52:43.521120 [telemetry 14032] INFO deviceService_channel_split:25.000000
+2026-07-09 18:52:43.521466 [telemetry 14032] INFO deviceService_Device 5_split:880f62fffe1020fa,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783621914,,,,,sensor,3,255/255,-59/-36,1869,2983,GOOD,false,false,,false,false,true,0,0,0,0,0
+2026-07-09 18:52:43.521809 [telemetry 14032] INFO deviceService_eui64_split:001bad3b58feee16
+2026-07-09 18:52:43.522145 [telemetry 14032] INFO deviceService_panid_split:34935.000000
+2026-07-09 18:52:43.522483 [telemetry 14032] INFO deviceService_sampleIntervalMillis_split:1793700.000000
+2026-07-09 18:52:43.522826 [telemetry 14032] INFO deviceService_zigbeeDeviceHealthStats_split:LDHD2AZW,-65/-40,1,0,0,0|LDHD2AZW,-69/-47,1,0,0,0|H74470BA00-00007,-64/-61,1,0,0,0|LDHD2AZW,-69/-48,0,0,0,0|LDHD2AZW,-59/-36,0,0,0,0
+2026-07-09 18:52:43.523163 [telemetry 14032] INFO deviceService_zigbeeCounters_split:1793700,0,116,74,32,0,0,0,0,10,12,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-09 18:52:43.523497 [telemetry 14032] INFO deviceService_isAvailable_split:true
+2026-07-09 18:52:43.523841 [telemetry 14032] INFO deviceService_TotalZigbeeSensorCount_split:5
+2026-07-09 18:52:43.524504 [telemetry 14032] INFO deviceService_isConfigured_split:true
+2026-07-09 18:52:43.524848 [telemetry 14032] INFO deviceService_apsTxUcastSuccesses_split:12.000000
+2026-07-09 18:52:43.525192 [telemetry 14032] INFO deviceService_networkUp_split:true
+2026-07-09 18:52:43.525528 [telemetry 14032] INFO deviceService_macRxUcast_split:74.000000
+2026-07-09 18:52:43.525873 [telemetry 14032] INFO deviceService_halleffect_split:LDHD2AZW,1.531
+2026-07-09 18:52:43.526207 [telemetry 14032] INFO deviceService_macTxBcast_split:116.000000
+2026-07-09 18:52:43.526540 [telemetry 14032] INFO deviceService_TotalLocalCameraCount_split:3
+2026-07-09 18:52:43.526884 [telemetry 14032] INFO deviceService_openForJoin_split:false
+2026-07-09 18:52:43.527218 [telemetry 14032] INFO deviceService_Device 1_split:880f62fffe102248,Leedarson,LDHD2AZW,0x01426620,upToDate,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1783621421,false,,,,,,,,,1783622923,,,,,sensor,3,255/240,-65/-40,1869,3044,GOOD,false,false,,false,false,false,1,0,1,0,0
+2026-07-09 18:52:43.527549 [telemetry 14032] INFO deviceService_apsRxUcast_split:10.000000
+2026-07-09 18:52:43.527887 [telemetry 14032] INFO deviceService_procStartT_split:1783616828000.000000
+2026-07-09 18:52:43.528304 [diag_service 14032] DEBUG collecting stats from rdkIntegrationService
+2026-07-09 18:52:43.528825 [rdkIntegrationService 13814] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.529108 [telemetry 14032] INFO rdkIntegrationService_procStartT_split:1783616828000.000000
+2026-07-09 18:52:43.529604 [telemetry 14032] INFO rdkIntegrationService_procDied_split:0.000000
+2026-07-09 18:52:43.529967 [telemetry 14032] INFO rdkIntegrationService_isRunning_split:true
+2026-07-09 18:52:43.530317 [diag_service 14032] DEBUG collecting stats from pkiService
+2026-07-09 18:52:43.530621 [pkiService 14028] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.530891 [telemetry 14032] INFO pkiService_isRunning_split:true
+2026-07-09 18:52:43.531321 [telemetry 14032] INFO pkiService_procDied_split:0.000000
+2026-07-09 18:52:43.531673 [telemetry 14032] INFO pkiService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.532032 [diag_service 14032] DEBUG collecting stats from securityService
+2026-07-09 18:52:43.532318 [securityService 14029] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.532708 [telemetry 14032] INFO securityService_procDied_split:0.000000
+2026-07-09 18:52:43.533188 [telemetry 14032] INFO securityService_unackAlarmEvents_split:0.000000
+2026-07-09 18:52:43.533543 [telemetry 14032] INFO securityService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.533892 [telemetry 14032] INFO securityService_secSysState_split:disarmed
+2026-07-09 18:52:43.534227 [telemetry 14032] INFO securityService_isRunning_split:true
+2026-07-09 18:52:43.534560 [telemetry 14032] INFO securityService_SECURITY_ZONE_TYPE_MOTION_TRBL_tamp_split:1,6423273862783913371:3C62F03A2000
+2026-07-09 18:52:43.534923 [diag_service 14032] DEBUG collecting stats from userService
+2026-07-09 18:52:43.535239 [userService 14031] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.535482 [telemetry 14032] INFO userService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.535966 [telemetry 14032] INFO userService_isRunning_split:true
+2026-07-09 18:52:43.536325 [telemetry 14032] INFO userService_procDied_split:0.000000
+2026-07-09 18:52:43.536676 [diag_service 14032] DEBUG collecting stats from diagService
+2026-07-09 18:52:43.537062 [diagService 14032] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.537287 [telemetry 14032] INFO diagService_procDied_split:0.000000
+2026-07-09 18:52:43.537718 [telemetry 14032] INFO diagService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.538089 [telemetry 14032] INFO diagService_isRunning_split:true
+2026-07-09 18:52:43.538445 [diag_service 14032] DEBUG collecting stats from automationService
+2026-07-09 18:52:43.539055 [telemetry 14032] INFO automationService_isRunning_split:true
+2026-07-09 18:52:43.539485 [telemetry 14032] INFO automationService_procDied_split:0.000000
+2026-07-09 18:52:43.539844 [telemetry 14032] INFO automationService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.540199 [diag_service 14032] DEBUG collecting stats from commService
+2026-07-09 18:52:43.540490 [commService 14034] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.540533 [commService 14034] DEBUG collectChannelMessageStatisticsIPC
+2026-07-09 18:52:43.540950 [propsService 13773] DEBUG processing request GET_CPE_PROPERTY
+2026-07-09 18:52:43.541184 [telemetry 14034] INFO wfmCogAgentConnected:false
+2026-07-09 18:52:43.542088 [telemetry 14034] INFO wfmCogAgentCommFailCnt:0.000000
+2026-07-09 18:52:43.542451 [telemetry 14034] INFO wfmCogAgentCommRestoreCnt:0.000000
+2026-07-09 18:52:43.542795 [telemetry 14034] INFO wfmCogAgentHeartbeats:0.000000
+2026-07-09 18:52:43.543133 [telemetry 14034] INFO wfmGatekeeperRequests_split:0.000000
+2026-07-09 18:52:43.543826 [telemetry 14032] INFO commService_isRunning_split:true
+2026-07-09 18:52:43.544237 [telemetry 14032] INFO commService_commChannelPrimary_split:aws
+2026-07-09 18:52:43.544583 [telemetry 14032] INFO commService_procDied_split:0.000000
+2026-07-09 18:52:43.544935 [telemetry 14032] INFO commService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.545279 [telemetry 14032] INFO commService_enabledChannels_split:aws
+2026-07-09 18:52:43.545633 [diag_service 14032] DEBUG collecting stats from backupRestoreService
+2026-07-09 18:52:43.546154 [backupRestoreService 14035] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.546416 [telemetry 14032] INFO backupRestoreService_procStartT_split:1783616829000.000000
+2026-07-09 18:52:43.546873 [telemetry 14032] INFO backupRestoreService_isRunning_split:true
+2026-07-09 18:52:43.547228 [telemetry 14032] INFO backupRestoreService_backupRestore_lastSuccessfulBackupTime_split:2026-07-09T14:26:22.702Z
+2026-07-09 18:52:43.547564 [telemetry 14032] INFO backupRestoreService_procDied_split:0.000000
+2026-07-09 18:52:43.547921 [diag_service 14032] DEBUG collecting stats from cronService
+2026-07-09 18:52:43.548237 [cronService 13775] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.548483 [telemetry 14032] INFO cronService_procStartT_split:1783616828000.000000
+2026-07-09 18:52:43.548924 [telemetry 14032] INFO cronService_procDied_split:0.000000
+2026-07-09 18:52:43.549282 [telemetry 14032] INFO cronService_isRunning_split:true
+2026-07-09 18:52:43.549630 [diag_service 14032] DEBUG collecting stats from watchdogService
+2026-07-09 18:52:43.549962 [watchdogService 13759] DEBUG processing request GET_RUNTIME_STATS
+2026-07-09 18:52:43.550243 [telemetry 14032] INFO watchdogService_procDied_split:0.000000
+2026-07-09 18:52:43.550695 [telemetry 14032] INFO watchdogService_isRunning_split:true
+2026-07-09 18:52:43.551056 [telemetry 14032] INFO watchdogService_procStartT_split:1783616828108.000000
+2026-07-09 18:52:46.721146 [backupRestoreService 14035] DEBUG job: elapsed time is 1800; 5400 seconds to go...
+2026-07-09 18:52:51.039843 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:52:51.039941 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:52:51.040752 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:52:51.041458 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:52:51.041525 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:52:51.041775 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:52:51.574740 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:52:51.574962 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":59}
+2026-07-09 18:52:51.594543 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":59,"pid":13777,"initialized":true}
+2026-07-09 18:52:51.595170 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:52:51.595293 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:52:51.595481 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat
+2026-07-09 18:53:21.041934 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:53:21.041992 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:53:21.042728 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:53:21.043244 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:53:21.043289 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:53:21.043459 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:53:46.721317 [backupRestoreService 14035] DEBUG job: elapsed time is 1860; 5340 seconds to go...
+2026-07-09 18:53:51.043578 [commService 14034] DEBUG aws: monitor channel state, enabled=true, bband=COMPLETE cell=DOWN
+2026-07-09 18:53:51.043677 [telemetry 14034] INFO AWSActive_split:state=COMPLETE cell=DOWN
+2026-07-09 18:53:51.044402 [commService 14034] DEBUG aws: monitor network state: bband-avail=true cell-avail=false
+2026-07-09 18:53:51.044892 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:53:51.044938 [SWWDog 13759] DEBUG swWatchdogPet: AWS Channel
+2026-07-09 18:53:51.045095 [SWWDogClient 14034] DEBUG softwareWatchdogPet: successfully pet entity AWS Channel
+2026-07-09 18:53:51.595613 [zhalImpl 13813] DEBUG zhalHeartbeat
+2026-07-09 18:53:51.595823 [zhalImpl 13813] DEBUG Worker processing JSON: {"request":"heartbeat","requestId":60}
+2026-07-09 18:53:51.615323 [zhalImpl 13813] DEBUG got response: {"eventType":"ipcResponse","ipcResponseType":"heartbeatResponse","resultCode":0,"requestId":60,"pid":13777,"initialized":true}
+2026-07-09 18:53:51.615957 [watchdogService 13759] DEBUG processing request SOFTWARE_WATCHDOG_PET_ENTITY
+2026-07-09 18:53:51.616010 [SWWDog 13759] DEBUG swWatchdogPet: heartbeat
+2026-07-09 18:53:51.616177 [SWWDogClient 13813] DEBUG softwareWatchdogPet: successfully pet entity heartbeat

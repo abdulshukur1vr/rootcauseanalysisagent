@@ -1,0 +1,252 @@
+252
+260709-19:35:00.815057 before running aphealth.sh printing top output
+[H[JMem: 1428976K used, 602596K free, 48796K shrd, 178028K buff, 224812K cached
+CPU:  26% usr  16% sys   0% nic  54% idle   0% io   0% irq   2% sirq
+Load average: 0.47 0.40 0.38 2/596 1472
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 8744     1 root     R    12144   1%  21% ecbd
+ 9354     1 root     S     902m  45%  10% /usr/bin/OneWifi -subsys eRT.
+14035 13847 root     S     954m  48%   2% /opt/icontrol/sbin/xhDiagService
+ 1469  1462 root     R     3412   0%   2% top -n1
+13929 13847 root     S    2098m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+12288     1 non-root S    1176m  59%   0% /usr/bin/telemetry2_0
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+260709-19:35:01.931972 after running aphealth.sh printing top output
+[H[JMem: 1429116K used, 602456K free, 48808K shrd, 178028K buff, 224832K cached
+CPU:   4% usr   2% sys   0% nic  92% idle   0% io   0% irq   0% sirq
+Load average: 0.47 0.40 0.38 1/596 1572
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 8744     1 root     S    12144   1%   5% ecbd
+ 3737     2 root     SW       0   0%   2% [dhd_watchdog_th]
+13929 13847 root     S    2098m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+12288     1 non-root S    1176m  59%   0% /usr/bin/telemetry2_0
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+260709-20:35:00.035655 before running aphealth.sh printing top output
+[H[JMem: 1434428K used, 597144K free, 50424K shrd, 178032K buff, 227876K cached
+CPU:  26% usr  12% sys   0% nic  60% idle   0% io   0% irq   0% sirq
+Load average: 0.26 0.27 0.29 1/600 12239
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 8744     1 root     S    12148   1%  17% ecbd
+ 4417     1 root     S     376m  19%   5% ovs-vswitchd --pidfile=/var/run/openvs
+17034     1 root     S     230m  12%   5% acsd2
+18928     1 _cujo-ag S     121m   6%   2% /usr/lib/cujo-agent
+12236 12229 root     R     3412   0%   2% top -n1
+13929 13847 root     S    2098m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+260709-20:35:01.102027 after running aphealth.sh printing top output
+[H[JMem: 1434272K used, 597300K free, 50444K shrd, 178032K buff, 227896K cached
+CPU:   2% usr   4% sys   0% nic  93% idle   0% io   0% irq   0% sirq
+Load average: 0.32 0.28 0.30 2/600 12336
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 8744     1 root     R    12148   1%   3% ecbd
+12336 12229 root     R     3412   0%   2% top -n1
+ 1745     2 root     SW       0   0%   2% [bcmFlwStatsTask]
+13929 13847 root     S    2098m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+260709-21:35:00.233092 before running aphealth.sh printing top output
+[H[JMem: 1437480K used, 594092K free, 51708K shrd, 178044K buff, 230080K cached
+CPU:   7% usr   7% sys   0% nic  85% idle   0% io   0% irq   0% sirq
+Load average: 0.36 0.31 0.28 1/601 21088
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+21084 21076 root     R     3412   0%   2% top -n1
+13929 13847 root     S    2098m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+ 7591     1 non-root S     832m  42%   0% /usr/bin/CcspLMLite -subsys eRT.
+260709-21:35:01.318437 after running aphealth.sh printing top output
+[H[JMem: 1437480K used, 594092K free, 51708K shrd, 178044K buff, 230080K cached
+CPU:   0% usr   0% sys   0% nic 100% idle   0% io   0% irq   0% sirq
+Load average: 0.36 0.31 0.28 1/601 21179
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+21179 21076 root     R     3412   0%   0% top -n1
+13929 13847 root     S    2098m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+ 7591     1 non-root S     832m  42%   0% /usr/bin/CcspLMLite -subsys eRT.
+260709-22:35:00.436111 before running aphealth.sh printing top output
+[H[JMem: 1440260K used, 591312K free, 52884K shrd, 178112K buff, 232440K cached
+CPU:   9% usr   7% sys   0% nic  83% idle   0% io   0% irq   0% sirq
+Load average: 0.54 0.37 0.30 1/601 31784
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+15892     1 root     S    13840   1%   2% ceventd
+31780 31772 root     R     3412   0%   2% top -n1
+13929 13847 root     S    2102m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+260709-22:35:01.545539 after running aphealth.sh printing top output
+[H[JMem: 1440512K used, 591060K free, 52892K shrd, 178112K buff, 232448K cached
+CPU:   4% usr   2% sys   0% nic  92% idle   0% io   0% irq   0% sirq
+Load average: 0.54 0.37 0.30 1/601 31876
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 8744     1 root     S    12148   1%   5% ecbd
+31876 31772 root     R     3412   0%   2% top -n1
+13929 13847 root     S    2102m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+260709-23:35:00.636581 before running aphealth.sh printing top output
+[H[JMem: 1443948K used, 587624K free, 53556K shrd, 178196K buff, 234060K cached
+CPU:  16% usr  30% sys   0% nic  52% idle   0% io   0% irq   0% sirq
+Load average: 0.29 0.29 0.27 2/600 9128
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 9083 12288 non-root R    1216m  61%  29% /usr/bin/telemetry2_0
+ 4417     1 root     S     376m  19%   2% ovs-vswitchd --pidfile=/var/run/openvs
+ 9124  9117 root     R     3412   0%   2% top -n1
+13929 13847 root     S    2102m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+260709-23:35:01.747290 after running aphealth.sh printing top output
+[H[JMem: 1442688K used, 588884K free, 53556K shrd, 178196K buff, 234060K cached
+CPU:   4% usr   2% sys   0% nic  92% idle   0% io   0% irq   0% sirq
+Load average: 0.29 0.29 0.27 2/599 9216
+[7m  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND[m
+ 8744     1 root     R    12148   1%   2% ecbd
+13929 13847 root     S    2102m 106%   0% /opt/icontrol/sbin/xhDeviceService
+14037 13847 root     S    2091m 105%   0% /opt/icontrol/sbin/xhCommService
+14036 13847 root     S    1550m  78%   0% /opt/icontrol/sbin/xhAutomationService
+14033 13847 root     S    1416m  71%   0% /opt/icontrol/sbin/xhSecurityService
+12288     1 non-root S    1320m  66%   0% /usr/bin/telemetry2_0
+ 6819     1 root     S    1287m  65%   0% /usr/bin/CcspPandMSsp -subsys eRT.
+13847  2069 root     S    1212m  61%   0% /opt/icontrol/sbin/xhWatchdogService -
+13873 13847 root     S    1211m  61%   0% /opt/icontrol/sbin/xhCronService
+13868 13847 root     S    1146m  58%   0% /opt/icontrol/sbin/xhPropsService -c /
+14039 13847 root     S    1084m  55%   0% /opt/icontrol/sbin/xhBackupRestoreServ
+14032 13847 root     S    1018m  51%   0% /opt/icontrol/sbin/xhPkiService
+ 6803     1 non-root S     974m  49%   0% /usr/rdk/wanmanager/wanmanager -subsys
+14035 13847 root     S     954m  48%   0% /opt/icontrol/sbin/xhDiagService
+ 9354     1 root     S     902m  45%   0% /usr/bin/OneWifi -subsys eRT.
+13931 13847 root     S     893m  45%   0% /opt/icontrol/sbin/xhRdkIntegrationSer
+14034 13847 root     S     884m  44%   0% /opt/icontrol/sbin/xhUserService
+ 7669     1 root     S     882m  44%   0% /usr/bin/gateway_manager -subsys eRT.
+ 7541     1 root     S     855m  43%   0% /usr/bin/CcspTandDSsp -subsys eRT.
+ 7591     1 non-root S     832m  42%   0% /usr/bin/CcspLMLite -subsys eRT.
+260709-23:48:14.112534 Taking copy of WiFi vAP SSID statistics from /tmp/wifihealth/ directory

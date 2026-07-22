@@ -1,0 +1,450 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.10.73+ (ubuntu@ip-96-113-103-35) (gcc version 7.4.1 20181213 (Linaro GCC 7.4-2019.02) ) #1 PREEMPT Wed Jan 7 07:20:22 UTC 2026
+[    0.000000] CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Ambarella S2L (Flattened Device Tree), model: Ambarella S2LM Kiwi Board
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] Ambarella:      AHB = 0xe0000000[0xe0000000],0x01000000 0
+[    0.000000] Ambarella:      APB = 0xe8000000[0xe8000000],0x01000000 0
+[    0.000000] Ambarella:      PPM = 0x00000000[0xdfe00000],0x00200000 9
+[    0.000000] Ambarella:      AXI = 0xf0000000[0xf0000000],0x00030000 0
+[    0.000000] Ambarella:    DRAMC = 0xdffe0000[0xef000000],0x00020000 0
+[    0.000000] Ambarella:   DBGBUS = 0xec000000[0xec000000],0x00200000 0
+[    0.000000] Ambarella:  DBGFMEM = 0xee000000[0xee000000],0x01000000 0
+[    0.000000] Ambarella:   IAVMEM = 0x09c00000[          ],0x06400000
+[    0.000000] Ambarella:    FBMEM = 0x09c00000[          ],0x00000000
+[    0.000000] On node 0 totalpages: 39424
+[    0.000000] free_area_init_node: node 0, pgdat 80545f00, node_mem_map 80575000
+[    0.000000]   Normal zone: 308 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 39424 pages, LIFO batch:7
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 39116
+[    0.000000] Kernel command line: console=ttyS0 root=/dev/mtdblock5 ro rootfstype=squashfs init=/linuxrc bootimageid=2
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 154MB = 154MB total
+[    0.000000] Memory: 150592k/150592k available, 7104k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x8a000000 - 0xff000000   (1872 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x89a00000   ( 154 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x804db038   (4941 kB)
+[    0.000000]       .init : 0x804dc000 - 0x80504ddc   ( 164 kB)
+[    0.000000]       .data : 0x80506000 - 0x8054e590   ( 290 kB)
+[    0.000000]        .bss : 0x8054e590 - 0x80570320   ( 136 kB)
+[    0.000000] NR_IRQS:240
+[    0.000000] sched_clock: 32 bits at 54MHz, resolution 18ns, wraps every 79536ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [ttyS0] enabled
+[    0.235052] Calibrating delay loop... 597.60 BogoMIPS (lpj=2988032)
+[    0.292599] pid_max: default: 32768 minimum: 301
+[    0.297275] Security Framework initialized
+[    0.301424] AppArmor: AppArmor initialized
+[    0.305528] Mount-cache hash table entries: 512
+[    0.312275] CPU: Testing write buffer coherency: ok
+[    0.317438] Setting up static identity map for 0x803acb68 - 0x803acbd0
+[    0.326217] devtmpfs: initialized
+[    0.330800] pinctrl core: initialized pinctrl subsystem
+[    0.336289] NET: Registered protocol family 16
+[    0.341522] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.348879] L310 cache controller enabled
+[    0.352915] l2x0: 8 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x32020000, Cache size: 131072 B
+[    0.362309] ambarella-pinctrl e8009000.pinctrl: Ambarella pinctrl driver registered
+[    0.370325] ambarella-gpio gpio.0: Ambarella GPIO driver registered
+[    0.380743] bio: create slab <bio-0> at 0
+[    0.385804] ambarella-dma e0005000.dma: Ambarella DMA Engine 
+[    0.392952] ambarella-i2c e8003000.i2c: Ambarella I2C adapter[0] probed!
+[    0.399855] ambarella-i2c e8007000.i2c: Ambarella I2C adapter[2] probed!
+[    0.407360] Switching to clocksource ambarella-cs-timer
+[    0.412808] AppArmor: AppArmor Filesystem Enabled
+[    0.423779] NET: Registered protocol family 2
+[    0.428989] TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.436175] TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.442534] TCP: Hash tables configured (established 2048 bind 2048)
+[    0.448949] TCP: reno registered
+[    0.452167] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.458010] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.464443] NET: Registered protocol family 1
+[    0.469051] RPC: Registered named UNIX socket transport module.
+[    0.475005] RPC: Registered udp transport module.
+[    0.479688] RPC: Registered tcp transport module.
+[    0.484384] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.491588] audit: initializing netlink socket (disabled)
+[    0.497046] type=2000 audit(0.439:1): initialized
+[    0.502362] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.508818] msgmni has been set to 294
+[    0.513942] NET: Registered protocol family 38
+[    0.518454] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.525956] io scheduler noop registered
+[    0.529861] io scheduler deadline registered
+[    0.534165] io scheduler cfq registered (default)
+[    0.539306] pwm-backlight 0.pwm_bl: invalid default brightness level: 100, using 99
+[    0.547577] e8005000.uart: ttyS0 at MMIO 0xe8005000 (irq = 9) is a ambuart
+[    0.555348] brd: module loaded
+[    0.560955] loop: module loaded
+[    0.566638] ambarella-nand e0001000.nand: in soft ecc-[6]bit mode
+[    0.572834] NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit), 128MiB, page size: 2048, OOB size: 64
+[    0.586677] Scanning device for bad blocks
+[    0.885222] bootimageid=2
+[    0.887828] using the second image
+[    0.891212] partition table start offset is 0x000C0000
+[    0.896752] par_entry id=0, offset=0x00000000, length=0x03000000
+[    0.902760] par_entry id=1, offset=0x03000000, length=0x03000000
+[    0.908741] par_entry id=2, offset=0x06000000, length=0x01200000
+[    0.914735] par_entry id=3, offset=0x07200000, length=0x00400000
+[    0.920715] par_entry id=4, offset=0x07600000, length=0x00900000
+[    0.926705] par_entry id=5, offset=0x07F00000, length=0x00100000
+[    0.932983] kernel offset=0x3020000, kernel size=0x2C0000
+[    0.938360] filesystem offset=0x32E0000, filesystem size=0x0
+[    0.944038] s_product_size offset=0x5BC0000, s_product_size size=0x0
+[    0.950649] MAC: 3C:62:F0:3A:F5:A7
+[    0.954057] Creating 13 MTD partitions on "amba_nand":
+[    0.959178] 0x000000000000-0x000007f00000 : "FW"
+[    0.964703] 0x000007600000-0x0000079e0000 : "CONF0"
+[    0.970163] 0x0000079e0000-0x000007dc0000 : "CONF1"
+[    0.975719] 0x000007f00000-0x000008000000 : "MAC"
+[    0.981058] 0x000003000000-0x000006000000 : "IMAGE_CURRENT"
+[    0.987348] 0x0000032e0000-0x000006000000 : "FS"
+[    0.992723] 0x000005bc0000-0x000006000000 : "PINFO"
+[    0.998279] 0x0000000e0000-0x000003000000 : "IMAGE_UPGRADE"
+[    1.004587] 0x000007000000-0x000007200000 : "DEBUG"
+[    1.010109] 0x000007dc0000-0x000007f00000 : "UPGLOG"
+[    1.015774] 0x000006000000-0x000007000000 : "RESERVEDPART"
+[    1.021985] 0x000007200000-0x000007600000 : "CALIBRATION"
+[    1.028091] 0x000000000000-0x000008000000 : "FLASHDUMP"
+[    1.034387] ambarella-spi e0020000.spi: Only supports msb first tx-rx
+[    1.041412] ambarella-spi e0020000.spi: Ambarella spi controller 0 created.
+[    1.048835] mousedev: PS/2 mouse device common for all mice
+[    1.054745] ambarella-rtc e8015000.rtc: rtc core: registered rtc-ambarella as rtc0
+[    1.062436] i2c /dev entries driver
+[    1.066532] ambarella-wdt e800c000.wdt: Ambarella Watchdog Timer Probed.
+[    1.073401] nf_conntrack version 0.5.0 (2353 buckets, 9412 max)
+[    1.079799] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.085179] TCP: cubic registered
+[    1.088475] Initializing XFRM netlink socket
+[    1.092815] NET: Registered protocol family 10
+[    1.097844] sit: IPv6 over IPv4 tunneling driver
+[    1.103051] NET: Registered protocol family 17
+[    1.107568] Bridge firewalling registered
+[    1.111630] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    1.119301] ThumbEE CPU extension supported.
+[    1.125012] Key type trusted registered
+[    1.130078] Key type encrypted registered
+[    1.134282] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.140134] ambarella-rtc e8015000.rtc: setting system clock to 2106-02-07 06:28:15 UTC (4294967295)
+[    1.153503] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+[    1.161803] devtmpfs: mounted
+[    1.165008] Freeing unused kernel memory: 160K (804dc000 - 80504000)
+[    2.269682] dbg: rt5670_i2c_probe line 3922
+[    2.315263] dbg: rt5670_probe line 3686
+[    2.319087] Codec driver version 0.0.7 alsa 1.0.25
+[    2.323956] GPIO pin requested ok, AMP_SWITCH = L
+[    2.329577] v_id = 7
+[    3.394022] AMBARELLA SoC Audio DUMMY Codec
+[    3.400881] rt5670 0-001c: ASoC: mux Mono ADC R Mux has no paths
+[    3.406934] rt5670 0-001c: ASoC: mux Mono ADC L Mux has no paths
+[    3.413697] rt5670 0-001c: ASoC: mux INR Mux has no paths
+[    3.419083] rt5670 0-001c: ASoC: mux INL Mux has no paths
+[    3.427510] snd_soc_card_amba sound.3:  rt5670-aif1 <-> e001a000.i2s mapping ok
+[    3.436382] snd_soc_card_amba sound.3:  AMBARELLA_DUMMY_CODEC <-> e001a000.i2s mapping ok
+[    3.978897] register "001c 4b4b
+[    3.978897] " count=10
+[    3.984699] addr=0x1c val=0x4b4b
+[    4.374775] UBI: attaching mtd10 to ubi0
+[    4.455571] UBI: scanning is finished
+[    4.476966] UBI: attached mtd10 (name "RESERVEDPART", size 16 MiB) to ubi0
+[    4.483921] UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    4.490684] UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    4.497382] UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    4.504243] UBI: good PEBs: 128, bad PEBs: 0, corrupted PEBs: 0
+[    4.510137] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    4.517257] UBI: max/mean erase counter: 144/125, WL threshold: 4096, image sequence number: 1446616144
+[    4.526628] UBI: available PEBs: 0, total reserved PEBs: 128, PEBs reserved for bad PEB handling: 20
+[    4.535748] UBI: background thread "ubi_bgt0d" started, PID 251
+[    4.557152] UBIFS: background thread "ubifs_bgt0_0" started, PID 255
+[    4.623623] UBIFS: recovery needed
+[    5.552193] UBIFS: recovery completed
+[    5.556211] UBIFS: mounted UBI device 0, volume 0, name "angelo_rootfs"
+[    5.562878] UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    5.571987] UBIFS: FS size: 11808768 bytes (11 MiB, 93 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    5.581540] UBIFS: reserved for root: 0 bytes (0 KiB)
+[    5.586588] UBIFS: media format: w4/r0 (latest is w4/r0), UUID 58118F19-FD07-40B5-9E34-791AD68E993A, small LPT model
+[    9.571150] dsp_drv_probe_status(696): DSP probe op mode [3], enc mode [7].
+[    9.612605] Vout notice: vout0:0 probed!
+[    9.621490] Vout notice: vout1:1 probed!
+[    9.626001] imgproc: module license 'unspecified' taints kernel.
+[    9.631992] Disabling lock debugging due to kernel taint
+[    9.638979] img: IMG KERN VIRT: WR [0x8a343000, 184 KB], RD [0x88840000, 36 KB].
+[    9.680361] iav_drv_probe_status(299): IAV probe status [255], dsp enc mode [3].
+[    9.708948] hw_pts_init(122): HW timer for pts is enabled.
+[    9.708979] hw_pts_init(129): Audio clock freq: 12288000, HW timer clock freq: 90000!
+[    9.709264] VIN: vin0: probed!
+[    9.712314] VIN: vin1: probed!
+[    9.747123] Vout notice: CVBS:0@1 probed!
+[    9.783083] Vout notice: DBus-All:1@0 probed!
+[    9.814893] dsplog dev init done, dev_id = 248:249.
+[    9.816033] dsplog_printk: DSP log by Timer New
+[   10.062689] SYSCLK:SO[74175824]
+[   10.103835] VIN: JX-F22 init(2-lane mipi)
+[   10.107829] VIN: Version ID:0x04, Product ID:0x0f22
+[   10.158036] usbcore: registered new interface driver usbfs
+[   10.169422] usbcore: registered new interface driver hub
+[   10.179873] usbcore: registered new device driver usb
+[   10.207736] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   10.227337] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[   10.259414] ehci-ambarella: AMBARELLA-EHCI Host Controller driver
+[   10.270309] ambarella-ehci e0018000.ehci: EHCI Host Controller
+[   10.276246] ambarella-ehci e0018000.ehci: new USB bus registered, assigned bus number 1
+[   10.284469] ambarella-ehci e0018000.ehci: irq 39, io mem 0xe0018000
+[   10.302668] ambarella-ehci e0018000.ehci: USB 2.0 started, EHCI 1.00
+[   10.309087] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[   10.315880] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   10.323092] usb usb1: Product: EHCI Host Controller
+[   10.327948] usb usb1: Manufacturer: Linux 3.10.73+ ehci_hcd
+[   10.333507] usb usb1: SerialNumber: AmbUSB
+[   10.343062] hub 1-0:1.0: USB hub found
+[   10.346829] hub 1-0:1.0: 2 ports detected
+[   10.379485] ambarella-udc e0006000.udc: ambarella_udc: version 12 August 2015
+[   10.429186] g_ether gadget: using random self ethernet address
+[   10.439630] g_ether gadget: using random host ethernet address
+[   10.451561] usb0: MAC d6:5d:0a:da:06:c3
+[   10.460000] usb0: HOST MAC ae:92:a2:7d:9a:79
+[   10.464413] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[   10.471008] g_ether gadget: g_ether ready
+[   10.498664] usbcore: registered new interface driver asix
+[   10.519373] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[   10.630207] cfg80211: Calling CRDA to update world regulatory domain
+[   10.832693] usb 1-2: new high-speed USB device number 2 using ambarella-ehci
+[   10.983638] usb 1-2: New USB device found, idVendor=0bda, idProduct=c82c
+[   10.990345] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   10.997625] usb 1-2: Product: 802.11ac NIC
+[   11.001860] usb 1-2: Manufacturer: Realtek
+[   11.006104] usb 1-2: SerialNumber: 123456
+[   11.368412] nl_process_session_cmd(165): NETLINK DBG: Correct connect cmd from app 392.
+[   11.368439] nl_send_msg(125): NETLINK DBG: Send session status 0 to session cmd 0 of app 392.
+[   12.225634] RTW: module init start
+[   12.229030] RTW: rtl88x2cu v5.12.1.6-0-ga6cacc154.20210615_COEX20210504-2323
+[   12.240818] RTW: build time: Jun 18 2025 17:47:52
+[   12.245589] RTW: rtl88x2cu BT-Coex version = COEX20210504-2323
+[   12.251743] RTW: [HALMAC]55772M
+[   12.251743] HALMAC_MAJOR_VER = 1
+[   12.251743] HALMAC_PROTOTYPE_VER = 6
+[   12.251743] HALMAC_MINOR_VER = 6
+[   12.251743] HALMAC_PATCH_VER = 22
+[   12.526829] RTW: HW EFUSE
+[   12.529434] RTW: 0x000: 29 81 00 8F  FF 20 09 00  9A 04 E4 35  10 03 F1 EB  
+[   12.536481] RTW: 0x010: 5D 5D 5D 5D  5D 5D 51 51  51 51 51 FF  FF FF FF FF  
+[   12.543510] RTW: 0x020: FF FF 5C 5C  5E 5E 59 58  57 56 55 54  50 50 50 50  
+[   12.550533] RTW: 0x030: FF FF FF FF  FF FF FF FF  FF FF 66 66  66 66 66 66  
+[   12.557559] RTW: 0x040: 57 57 57 57  57 FF FF FF  FF FF FF FF  5E 5E 61 62  
+[   12.564584] RTW: 0x050: 5C 5A 59 57  56 55 52 52  52 52 FF FF  FF FF FF FF  
+[   12.571604] RTW: 0x060: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.578629] RTW: 0x070: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.585656] RTW: 0x080: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.592687] RTW: 0x090: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.599703] RTW: 0x0A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.606728] RTW: 0x0B0: FF FF FF FF  FF FF FF FF  7F 1D FF 00  FF FF FF FF  
+[   12.613753] RTW: 0x0C0: FF 21 00 11  00 00 FF FF  20 33 03 FF  FF FF FF FF  
+[   12.620773] RTW: 0x0D0: 1B 1B FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.627797] RTW: 0x0E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.634822] RTW: 0x0F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.641841] RTW: 0x100: F0 94 65 D3  58 C5 FF FF  CD F0 FF FF  FF FF FF FF  
+[   12.648869] RTW: 0x110: 9D 9D FC A0  D8 D8 FD FF  35 8C FF FF  FF FF FF FF  
+[   12.655894] RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.662918] RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.669938] RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.676962] RTW: 0x150: DA 0B 2C C8  FF 7E 02 00  E0 4C C8 22  01 09 03 52  
+[   12.683985] RTW: 0x160: 65 61 6C 74  65 6B 0E 03  38 30 32 2E  31 31 61 63  
+[   12.691005] RTW: 0x170: 20 4E 49 43  08 03 31 32  33 34 35 36  FF FF FF FF  
+[   12.698030] RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.705054] RTW: 0x190: FD FE FF FF  00 00 21 0F  FF FF FF FF  FF FF FF FF  
+[   12.712074] RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.719098] RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.726123] RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.733147] RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.740167] RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.747192] RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.754216] RTW: 0x200: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.761236] RTW: 0x210: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.768261] RTW: 0x220: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.775285] RTW: 0x230: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.782305] RTW: 0x240: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.789329] RTW: 0x250: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.796353] RTW: 0x260: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.803377] RTW: 0x270: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.810397] RTW: 0x280: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.817421] RTW: 0x290: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.824445] RTW: 0x2A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.831465] RTW: 0x2B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.838490] RTW: 0x2C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.845514] RTW: 0x2D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.852534] RTW: 0x2E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.859559] RTW: 0x2F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+[   12.866600] RTW: hal_com_config_channel_plan chplan:0x7F
+[   13.047783] RTW: [RF_PATH] ver_id.RF_TYPE:RF_2T2R
+[   13.052479] RTW: [RF_PATH] HALSPEC's rf_reg_trx_path_bmp:0x33, rf_reg_path_avail_num:2, max_tx_cnt:2
+[   13.061608] RTW: [RF_PATH] PG's trx_path_bmp:0x33, max_tx_cnt:0
+[   13.067517] RTW: [RF_PATH] Registry's trx_path_bmp:0x00, tx_path_lmt:0, rx_path_lmt:0
+[   13.075333] RTW: [RF_PATH] HALDATA's trx_path_bmp:0x33, max_tx_cnt:2
+[   13.081669] RTW: [RF_PATH] HALDATA's rf_type:RF_2T2R, NumTotalRFPath:2
+[   13.088190] RTW: [TRX_Nss] HALSPEC - tx_nss:2, rx_nss:2
+[   13.093553] RTW: [TRX_Nss] Registry - tx_nss:0, rx_nss:0
+[   13.098843] RTW: [TRX_Nss] HALDATA - tx_nss:2, rx_nss:2
+[   13.104072] RTW: txpath=0x3, rxpath=0x3
+[   13.107887] RTW: txpath_1ss:0x1, num:1
+[   13.111613] RTW: txpath_2ss:0x3, num:2
+[   13.116792] RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+[   13.137860] RTW: default mapping domain:0x7f to regd_name:FCC
+[   13.159185] RTW: rtw_ndev_init(wlan0) if1 mac_addr=3c:62:f0:3a:f5:a7
+[   13.197631] usbcore: registered new interface driver rtl88x2cu
+[   13.208124] RTW: module init ret=0
+[   13.875819] Bluetooth: Core ver 2.21
+[   13.882998] NET: Registered protocol family 31
+[   13.887432] Bluetooth: HCI device and connection manager initialized
+[   13.900146] Bluetooth: HCI socket layer initialized
+[   13.905125] Bluetooth: L2CAP socket layer initialized
+[   13.910199] Bluetooth: SCO socket layer initialized
+[   22.195530] type=1400 audit(1783468810.849:2): apparmor="STATUS" operation="profile_load" name="usr.bin.accessManager" pid=780 comm="apparmor_parser"
+[   23.553051] rtk_btusb: Realtek Bluetooth USB driver ver 3.1.897f3bb.20201202-173003
+[   23.560693] rtk_btcoex: rtk_btcoex_init: version: 1.2
+[   23.620246] rtk_btcoex: create workqueue
+[   23.662820] rtk_btcoex: alloc buffers 1408, 2240 for ev and l2
+[   23.668733] rtk_btusb: btusb_probe intf->cur_altsetting->desc.bInterfaceNumber 0
+[   23.728362] rtk_btusb: btusb_probe can_wakeup 1, may wakeup 0
+[   23.768868] rtk_btusb: patch_add
+[   23.772089] rtk_btusb: auto suspend is disabled
+[   23.792214] type=1400 audit(1783468812.439:3): apparmor="STATUS" operation="profile_load" name="usr.bin.ledmgrmain" pid=811 comm="apparmor_parser"
+[   23.807807] rtk_btusb: pid = 0xc82c
+[   23.830774] rtk_btusb: patch_add: Reset gEVersion to 0xff
+[   23.850760] rtk_btusb: set_bit(HCI_QUIRK_RESET_ON_CLOSE, &hdev->quirks);
+[   23.913158] rtk_btusb: btusb_probe: done
+[   23.929119] rtk_btusb: btusb_open start
+[   23.933040] rtk_btusb: btusb_open hdev->promisc ==0
+[   23.937899] rtk_btusb: download_patch start
+[   23.942060] rtk_btusb: chip type value: 0x73
+[   23.946346] rtk_btusb: HCI reset.
+[   23.955493] usbcore: registered new interface driver rtk_btusb
+[   23.965260] rtk_btusb: read_ver_rsp->lmp_subver = 0x8822
+[   23.970579] rtk_btusb: read_ver_rsp->hci_rev = 0xc
+[   23.975416] rtk_btusb: patch_entry->lmp_sub = 0x8822
+[   23.980367] rtk_btusb: load_firmware start
+[   23.984463] rtk_btusb: lmp_version = 0x8822
+[   23.988633] rtk_btusb: config filename rtl8822cu_config
+[   24.044378] rtk_btusb: size = 17
+[   24.047621] rtk_btusb: Origin cfg len 6
+[   24.051461] rtk_btusb: 55 ab 23 87 00 00
+[   24.055454] rtk_btusb: bdaddr ofs 0030, 3C:62:F0:3A:F5:A8
+[   24.060832] rtk_btusb: New cfg len 15
+[   24.064501] rtk_btusb: 55 ab 23 87 09 00 30 00 06 a8 f5 3a f0 62 3c
+[   24.070757] rtk_btusb: fw name is  rtl8822cu_fw
+[   24.085920] rtk_btusb: This is not 8723a, use new patch style!
+[   24.091747] rtk_btusb: rtk_get_eversion: gEVersion 255
+[   24.099230] rtk_btusb: eversion->status = 0x0, eversion->version = 0x3
+[   24.105808] rtk_btusb: load_firmware: New gEVersion 3
+[   24.110852] rtk_btusb: rtk_get_fw_project_id: opcode 0, len 1, data 13
+[   24.117381] rtk_btusb: lmp_version is 8822, project_id is 8822, match!
+[   24.123901] rtk_btusb: fw_version = 0x99a25c3
+[   24.128234] rtk_btusb: number_of_total_patch = 3
+[   24.132846] rtk_btusb: chipID 4
+[   24.135965] rtk_btusb: patch_length 0x788c
+[   24.140038] rtk_btusb: start_offset 0x00005d00
+[   24.144474] rtk_btusb: Svn version:    24075
+[   24.148720] rtk_btusb: Coexistence: BTCOEX_20200529-1c1c
+[   24.154020] rtk_btusb: buf_len = 0x789b
+[   24.157963] rtk_btusb: fw: exists, config file: exists
+[   24.163103] rtk_btusb: load_firmware done
+[   24.167113] rtk_btusb: download_data start
+[   24.553239] rtk_btusb: download_data done
+[   24.557259] rtk_btusb: HCI reset.
+[   24.574240] rtk_btusb: read_ver_rsp->lmp_subver = 0x25c3
+[   24.579558] rtk_btusb: read_ver_rsp->hci_rev = 0x99a
+[   24.584677] rtk_btusb: patch_entry->lmp_sub = 0x8822
+[   24.589628] rtk_btusb: Rtk patch end 0
+[   24.593408] rtk_btusb: btusb_open set HCI_RUNNING
+[   24.598281] rtk_btcoex: Open BTCOEX
+[   24.601765] rtk_btusb: btusb_open end
+[   24.611946] rtk_btcoex: BTCOEX hci_rev 0x099a
+[   24.626463] rtk_btcoex: BTCOEX lmp_subver 0x25c3
+[   24.640926] rtk_btusb: btusb_notify: hci0 evt 3
+[   26.768180] type=1400 audit(1783468815.419:4): apparmor="STATUS" operation="profile_load" name="usr.bin.netsrvmgr" pid=951 comm="apparmor_parser"
+[   27.608236] type=1400 audit(1783468816.259:5): apparmor="STATUS" operation="profile_load" name="usr.bin.nlmon" pid=1083 comm="apparmor_parser"
+[   28.381777] type=1400 audit(1783468817.029:6): apparmor="STATUS" operation="profile_load" name="usr.bin.parodus" pid=1117 comm="apparmor_parser"
+[   30.037730] type=1400 audit(1783468818.689:7): apparmor="STATUS" operation="profile_load" name="usr.bin.prvnmgr" pid=1177 comm="apparmor_parser"
+[   30.837129] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+[   30.912227] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   31.045420] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+[   31.072796] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+[   31.092969] ambarella-i2c e8007000.i2c: No ACK from address 0x91, 0:0!
+[   33.434259] type=1400 audit(1783468822.089:8): apparmor="STATUS" operation="profile_load" name="usr.bin.rdkcProvider" pid=1233 comm="apparmor_parser"
+[   33.614449] type=1400 audit(1783468822.269:9): apparmor="STATUS" operation="profile_load" name="usr.bin.rtrouted" pid=1244 comm="apparmor_parser"
+[   34.045134] type=1400 audit(1783468822.699:10): apparmor="STATUS" operation="profile_load" name="usr.bin.streamConfigurer" pid=1264 comm="apparmor_parser"
+[   34.601245] type=1400 audit(1783468823.249:11): apparmor="STATUS" operation="profile_load" name="usr.bin.telemetry2_0" pid=1275 comm="apparmor_parser"
+[   34.984124] type=1400 audit(1783468823.639:12): apparmor="STATUS" operation="profile_load" name="usr.bin.webconfig" pid=1286 comm="apparmor_parser"
+[   35.802916] RTW: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+[   36.325438] RTW: start auth
+[   36.328251] RTW: SAE: start external auth
+[   36.694178] RTW: SAE: auth success, start assoc
+[   36.711828] RTW: assoc success
+[   36.719105] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   36.725825] RTW: recv eapol packet 1/4
+[   36.737376] RTW: ============ STA [fa:d0:0e:fb:8f:0a]  ===================
+[   36.756153] RTW: send eapol packet 2/4
+[   36.760865] RTW: mac_id : 0
+[   36.764241] RTW: wireless_mode : 0x44
+[   36.767890] RTW: mimo_type : 2
+[   36.770924] RTW: static smps : N
+[   36.792690] RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+[   36.797643] RTW: rate_id : 9
+[   36.800519] RTW: rssi : 71 (%), rssi_level : 0
+[   36.812668] RTW: is_support_sgi : Y, is_vht_enable : Y
+[   36.817788] RTW: disable_ra : N, disable_pt : N
+[   36.822293] RTW: is_noisy : N
+[   36.837645] RTW: txrx_state : 0
+[   36.840790] RTW: curr_tx_rate : CCK_1M (L)
+[   36.852668] RTW: curr_tx_bw : 20MHz
+[   36.856166] RTW: curr_retry_ratio : 0
+[   36.859807] RTW: ra_mask : 0x00000000fffffff0
+[   36.859807] 
+[   36.894523] RTW: recv eapol packet 3/4
+[   36.899748] RTW: send eapol packet 4/4
+[   36.957048] RTW: set pairwise key camid:0, addr:fa:d0:0e:fb:8f:0a, kid:0, type:AES
+[   36.981284] RTW: set group key camid:1, addr:fa:d0:0e:fb:8f:0a, kid:1, type:AES
+[   41.932832] nl_process_session_cmd(165): NETLINK DBG: Correct connect cmd from app 1599.
+[   41.932859] nl_send_msg(125): NETLINK DBG: Send session status 0 to session cmd 0 of app 1599.
+[   46.410984] iav_goto_idle(881): Goto Idle from STATE_INIT.
+[   46.411004] dsp_set_op_mode(424): [debug]: dsp_set_op_mode: dsp->op_mode(3), op_mode(0)
+[   46.411017] __reset_vin(217): dsp reset vin 
+[   46.416382] dsp_set_op_mode(447): Entering DSP mode [0]...
+[   46.451489] dsp_set_op_mode(454): [Done] Entered mode [0].
+[   46.558186] iav_check_vout(607): VOUT are all disabled.
+[   46.558216] check_dsp_mem_bandwidth(918): S2L chip ID [1], DSP memory bandwidth [259 MB/s], limit [1148 MB/s].
+[   46.558231] check_dsp_mem_size(1096): DSP DRAM size used [64 MB], limit [74 MB].
+[   46.558268] nl_send_msg(104): NETLINK DBG: Send request cmd 2 to app 1599.
+[   47.331659] nl_process_request_status(219): NETLINK DBG: Request 2 succeeded from app 1599.
+[   47.331787] dsp_set_enc_sub_mode(406): Entering DSP ENC sub mode [2]
+[   47.578784] handle_enc_msg(210): DSP DRAM Used: 72 MB, Limited: 74 MB
+[   47.578827] dsp_set_enc_sub_mode(412): [Done] Entered sub mode.
+[   47.578880] nl_send_msg(104): NETLINK DBG: Send request cmd 0 to app 1599.
+[   47.712822] nl_process_request_status(219): NETLINK DBG: Request 0 succeeded from app 1599.
+[   47.713690] iav_enable_preview(776): preview enabled.
+[   48.112357] iav_ioc_start_encode(1444): Wait 4 frames before encode for encode start delay.
+[   48.112381] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[   48.112403] check_dsp_mem_bandwidth(918): S2L chip ID [1], DSP memory bandwidth [360 MB/s], limit [1148 MB/s].
+[   48.112415] check_dsp_mem_size(1096): DSP DRAM size used [64 MB], limit [74 MB].
+[   48.112428] iav_ioc_start_encode(1454): Init encoder when start encoding from preview state.
+[   48.112476] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+[   48.112500] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 10000
+[   48.112519] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+[   48.112531] calc_frame_rate(333): idsp out fps 34133333 (scan format: 0, den_encode_fps: 1000), encode fps 15000
+[   49.287531] ambarella-i2c e8007000.i2c: No ACK from address 0x20, 0:0!
+[   49.360723] ambarella-i2c e8007000.i2c: No ACK from address 0x88, 0:0!
+[   49.743557] type=1400 audit(1783529637.952:13): apparmor="STATUS" operation="profile_load" name="usr.bin.webpa" pid=1297 comm="apparmor_parser"
+[   51.314251] type=1400 audit(1783529639.462:14): apparmor="STATUS" operation="profile_load" name="usr.bin.wpa_supplicant" pid=2434 comm="apparmor_parser"
+[   56.033209] type=1400 audit(1783529644.242:15): apparmor="STATUS" operation="profile_load" name="usr.local.bin.cvr_daemon" pid=2577 comm="apparmor_parser"

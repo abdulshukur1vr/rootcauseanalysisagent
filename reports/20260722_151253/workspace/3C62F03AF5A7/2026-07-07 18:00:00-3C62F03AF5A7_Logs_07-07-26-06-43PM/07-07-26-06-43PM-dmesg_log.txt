@@ -1,0 +1,134 @@
+2026-07-07T16:35:12 APPARMOR_ENTRY_COUNT0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+[51374.414309] audit_printk_skb: 96 callbacks suppressed
+[51374.436362] type=1400 audit(1783442992.329:2815): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainPplBN1" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[51374.463043] type=1400 audit(1783442992.379:2816): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainPplBN1" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[51374.492130] type=1400 audit(1783442992.399:2817): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainPplBN1" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[51374.539624] type=1400 audit(1783442992.449:2818): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainiRJ8Dw" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[51374.596887] type=1400 audit(1783442992.509:2819): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainiRJ8Dw" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[51374.632492] type=1400 audit(1783442992.539:2820): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainiRJ8Dw" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[51374.808074] type=1400 audit(1783442992.719:2821): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainlxOmvo" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[51374.835535] type=1400 audit(1783442992.749:2822): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainlxOmvo" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[51374.943583] type=1400 audit(1783442992.859:2823): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainlxOmvo" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[51374.987102] type=1400 audit(1783442992.899:2824): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainwzsQPq" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[52275.262688] audit_printk_skb: 132 callbacks suppressed
+[52275.288487] type=1400 audit(1783443893.190:2869): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainBRGj5o" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[52275.335002] type=1400 audit(1783443893.260:2870): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainBRGj5o" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[52275.389742] type=1400 audit(1783443893.310:2871): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainBRGj5o" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[52275.438112] type=1400 audit(1783443893.360:2872): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainV4mjcQ" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[52275.461387] type=1400 audit(1783443893.390:2873): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainV4mjcQ" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[52275.505741] type=1400 audit(1783443893.430:2874): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainV4mjcQ" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[52275.841679] type=1400 audit(1783443893.760:2875): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNr7w6F" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[52275.937536] type=1400 audit(1783443893.860:2876): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNr7w6F" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[52276.036563] type=1400 audit(1783443893.960:2877): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNr7w6F" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[52276.115676] type=1400 audit(1783443894.040:2878): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainKnsz9J" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[53176.554597] audit_printk_skb: 96 callbacks suppressed
+[53176.566895] type=1400 audit(1783444794.480:2911): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain5kFn9h" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[53176.591883] type=1400 audit(1783444794.520:2912): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain5kFn9h" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[53176.623126] type=1400 audit(1783444794.550:2913): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain5kFn9h" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[53176.658592] type=1400 audit(1783444794.580:2914): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainow3Ky0" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[53176.691105] type=1400 audit(1783444794.610:2915): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainow3Ky0" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[53176.725349] type=1400 audit(1783444794.650:2916): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainow3Ky0" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[53176.840576] type=1400 audit(1783444794.760:2917): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedbvDlmT" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[53176.917225] type=1400 audit(1783444794.840:2918): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedbvDlmT" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[53176.953912] type=1400 audit(1783444794.880:2919): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedbvDlmT" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[53177.122756] type=1400 audit(1783444795.050:2920): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainTvJJVV" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54076.998627] audit_printk_skb: 114 callbacks suppressed
+[54077.046434] type=1400 audit(1783445694.938:2959): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainIjMKY8" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54077.131060] type=1400 audit(1783445695.068:2960): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainIjMKY8" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[54077.197721] type=1400 audit(1783445695.138:2961): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainIjMKY8" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[54077.261462] type=1400 audit(1783445695.198:2962): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainugYXHo" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54077.352726] type=1400 audit(1783445695.288:2963): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainugYXHo" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[54077.461363] type=1400 audit(1783445695.398:2964): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainugYXHo" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[54077.719730] type=1400 audit(1783445695.658:2965): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainaMHsQa" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54077.825856] type=1400 audit(1783445695.768:2966): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainaMHsQa" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[54077.994489] type=1400 audit(1783445695.938:2967): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainaMHsQa" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[54078.109600] type=1400 audit(1783445696.048:2968): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainlSf89d" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54974.636201] audit_printk_skb: 105 callbacks suppressed
+[54974.641330] type=1400 audit(1783446592.578:3004): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjVsPcw" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54974.763857] type=1400 audit(1783446592.708:3005): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjVsPcw" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[54974.844812] type=1400 audit(1783446592.788:3006): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainjVsPcw" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[54974.915300] type=1400 audit(1783446592.858:3007): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainUWxcKw" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54974.968001] type=1400 audit(1783446592.908:3008): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainUWxcKw" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[54974.993864] type=1400 audit(1783446592.938:3009): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainUWxcKw" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[54975.169085] type=1400 audit(1783446593.108:3010): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainEp8LEE" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[54975.218686] type=1400 audit(1783446593.158:3011): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainEp8LEE" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[54975.255113] type=1400 audit(1783446593.198:3012): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainEp8LEE" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[54975.323831] type=1400 audit(1783446593.268:3013): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainipDz6Y" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[55874.581614] audit_printk_skb: 123 callbacks suppressed
+[55874.587297] type=1400 audit(1783447492.528:3055): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainBOr9Bt" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[55874.621080] type=1400 audit(1783447492.568:3056): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainBOr9Bt" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[55874.665559] type=1400 audit(1783447492.618:3057): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainBOr9Bt" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[55874.724245] type=1400 audit(1783447492.678:3058): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainm7dWwe" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[55874.758821] type=1400 audit(1783447492.708:3059): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainm7dWwe" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[55874.816575] type=1400 audit(1783447492.768:3060): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainm7dWwe" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[55875.045082] type=1400 audit(1783447492.998:3061): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSi8Ang" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[55875.086726] type=1400 audit(1783447493.038:3062): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSi8Ang" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[55875.110610] type=1400 audit(1783447493.058:3063): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainSi8Ang" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[55875.140751] type=1400 audit(1783447493.088:3064): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainOv2Sqp" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[56774.463196] audit_printk_skb: 96 callbacks suppressed
+[56774.472513] type=1400 audit(1783448392.419:3097): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxZWs0d" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[56774.497572] type=1400 audit(1783448392.459:3098): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxZWs0d" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[56774.553059] type=1400 audit(1783448392.509:3099): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainxZWs0d" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[56774.631508] type=1400 audit(1783448392.579:3100): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainWq4HyV" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[56774.706364] type=1400 audit(1783448392.659:3101): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainWq4HyV" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[56774.803575] type=1400 audit(1783448392.759:3102): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainWq4HyV" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[56774.893359] type=1400 audit(1783448392.849:3103): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedNEtjEW" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[56775.018802] type=1400 audit(1783448392.969:3104): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedNEtjEW" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[56775.191405] type=1400 audit(1783448393.139:3105): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdrotatedNEtjEW" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[56775.499528] type=1400 audit(1783448393.449:3106): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmain5aRGDv" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[56924.748680] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56925.148983] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56925.748828] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56926.616858] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56928.282561] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56933.150013] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56933.550009] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56934.350576] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56936.217113] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56937.151401] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56941.151139] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56943.284769] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56977.023496] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56978.556685] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56979.026243] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56980.223537] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56983.490684] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56985.157575] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56990.625031] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56991.625183] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56994.625620] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[56999.559717] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57027.963914] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57029.964182] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57548.774100] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57549.440554] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57550.707466] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57551.840880] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57552.176294] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57554.107931] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57554.908015] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57556.776238] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57558.443038] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57562.709239] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57563.042565] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57566.043043] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57644.187810] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57645.121342] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57674.392283] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57675.192364] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57675.325803] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57675.659182] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57676.757445] audit_printk_skb: 105 callbacks suppressed
+[57676.763036] type=1400 audit(1783449294.726:3142): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyaQxbQ" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[57676.804054] type=1400 audit(1783449294.776:3143): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyaQxbQ" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[57676.871369] type=1400 audit(1783449294.836:3144): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainyaQxbQ" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[57676.922418] type=1400 audit(1783449294.886:3145): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainDEWJ5S" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[57676.953964] type=1400 audit(1783449294.926:3146): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainDEWJ5S" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[57676.993802] type=1400 audit(1783449294.966:3147): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainDEWJ5S" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[57677.186343] type=1400 audit(1783449295.156:3148): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNHNtZ2" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[57677.242651] type=1400 audit(1783449295.206:3149): apparmor="ALLOWED" operation="open" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNHNtZ2" pid=5561 comm="telemetry2_0" requested_mask="rwc" denied_mask="rwc" fsuid=0 ouid=0
+[57677.295546] type=1400 audit(1783449295.266:3150): apparmor="ALLOWED" operation="unlink" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainNHNtZ2" pid=5561 comm="telemetry2_0" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+[57677.333320] type=1400 audit(1783449295.306:3151): apparmor="ALLOWED" operation="mknod" parent=1 profile="usr.bin.telemetry2_0" name="/mnt/ramdisk/tmp/dca_tmpfile_fdmainL28aPp" pid=5561 comm="telemetry2_0" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+[57677.659439] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+[57683.593664] check_encode_resource_limit(788): Check encode resource limit : VIN [15], system load 90000.
+2026-07-07T18:35:15 APPARMOR_ENTRY_COUNT0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

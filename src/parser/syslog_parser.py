@@ -11,8 +11,12 @@ from pathlib import Path
 from datetime import datetime
 import re
 
+from parser.base_parser import(
+    extract_timestamp,
+    BaseParser
+)
 
-from parser.base_parser import BaseParser
+
 from parser.models import (
     LogEntry,
     Severity
@@ -84,7 +88,7 @@ class SyslogParser(BaseParser):
 
                         LogEntry(
 
-                            timestamp=None,
+                            timestamp=extract_timestamp(line),
 
                             severity=severity,
 

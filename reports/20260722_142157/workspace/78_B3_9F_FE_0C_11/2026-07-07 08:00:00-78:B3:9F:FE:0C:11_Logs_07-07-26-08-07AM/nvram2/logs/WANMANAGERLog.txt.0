@@ -1,0 +1,506 @@
+506
+260707-02:49:18.013930 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-03:04:17.086555 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-03:06:59.854421 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-03:06:59.896517 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-03:06:59.896815 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-03:06:59.896831 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-03:06:59.897089 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-03:06:59.897113 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-03:06:59.897127 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-03:06:59.897139 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-03:06:59.902700 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-03:06:59.903198 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-03:06:59.903241 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-03:07:11.627085 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-03:07:11.627176 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-03:07:11.627193 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-03:07:11.627225 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-03:07:11.628112 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-03:07:11.628648 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-03:07:11.628803 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-03:07:11.628913 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-03:07:11.629000 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-03:07:11.629097 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-03:07:11.629112 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-03:07:11.629127 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-03:07:11.629220 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-03:07:11.629315 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-03:07:11.629432 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-03:07:11.629536 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-03:07:11.629622 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-03:07:11.629780 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-03:07:11.672224 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-03:07:11.672263 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-03:07:11.672276 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-03:07:11.672292 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-03:07:11.672310 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-03:07:11.672323 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-03:07:11.672364 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-03:07:11.672378 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-03:07:11.672390 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-03:07:11.672406 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-03:19:17.093860 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-03:34:17.076876 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-03:36:59.979725 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-03:37:00.000503 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-03:37:00.000882 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-03:37:00.000899 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-03:37:00.001193 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-03:37:00.001225 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-03:37:00.001240 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-03:37:00.001252 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-03:37:00.007222 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-03:37:00.007766 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-03:37:00.007797 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-03:37:12.430068 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-03:37:12.430170 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-03:37:12.430187 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-03:37:12.430217 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-03:37:12.430829 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-03:37:12.430989 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-03:37:12.431099 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-03:37:12.431200 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-03:37:12.431316 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-03:37:12.431434 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-03:37:12.431451 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-03:37:12.431466 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-03:37:12.431574 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-03:37:12.431667 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-03:37:12.431764 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-03:37:12.431882 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-03:37:12.431968 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-03:37:12.432126 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-03:37:12.477622 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-03:37:12.477660 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-03:37:12.477674 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-03:37:12.477690 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-03:37:12.477708 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-03:37:12.477721 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-03:37:12.477760 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-03:37:12.477773 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-03:37:12.477786 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-03:37:12.477802 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-03:49:17.084477 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-04:04:17.087601 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-04:07:00.136381 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-04:07:00.150568 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-04:07:00.150955 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-04:07:00.150978 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-04:07:00.151253 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-04:07:00.151276 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-04:07:00.151290 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-04:07:00.151303 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-04:07:00.157346 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-04:07:00.157939 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-04:07:00.157983 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-04:07:12.250563 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-04:07:12.250657 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-04:07:12.250675 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-04:07:12.250697 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-04:07:12.251023 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-04:07:12.251919 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-04:07:12.252109 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-04:07:12.252251 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-04:07:12.252383 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-04:07:12.252480 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-04:07:12.252495 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-04:07:12.252509 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-04:07:12.252595 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-04:07:12.252692 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-04:07:12.252792 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-04:07:12.252882 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-04:07:12.253028 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-04:07:12.253194 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-04:07:12.277482 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-04:07:12.277539 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-04:07:12.277553 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-04:07:12.277570 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-04:07:12.277589 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-04:07:12.277602 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-04:07:12.277639 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-04:07:12.277653 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-04:07:12.277666 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-04:07:12.277682 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-04:19:17.080892 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-04:34:17.076927 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-04:37:00.270409 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-04:37:00.295513 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-04:37:00.295899 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-04:37:00.295918 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-04:37:00.296166 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-04:37:00.296188 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-04:37:00.296201 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-04:37:00.296223 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-04:37:00.302037 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-04:37:00.302531 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-04:37:00.302565 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-04:37:12.059125 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-04:37:12.059269 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-04:37:12.059289 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-04:37:12.059311 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-04:37:12.059675 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-04:37:12.059801 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-04:37:12.059902 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-04:37:12.059994 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-04:37:12.060112 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-04:37:12.060304 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-04:37:12.060319 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-04:37:12.060333 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-04:37:12.060422 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-04:37:12.060514 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-04:37:12.060599 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-04:37:12.060690 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-04:37:12.060799 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-04:37:12.060956 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-04:37:12.071190 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-04:37:12.071265 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-04:37:12.071280 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-04:37:12.071297 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-04:37:12.071315 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-04:37:12.071328 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-04:37:12.071365 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-04:37:12.071378 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-04:37:12.071391 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-04:37:12.071407 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-04:49:17.080201 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-05:04:17.079520 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-05:07:00.404487 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-05:07:00.408090 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-05:07:00.408464 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-05:07:00.408485 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-05:07:00.408748 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-05:07:00.408772 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-05:07:00.408785 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-05:07:00.408798 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-05:07:00.416346 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-05:07:00.416902 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-05:07:00.416940 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-05:07:11.951020 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-05:07:11.951100 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-05:07:11.951116 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-05:07:11.951139 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-05:07:11.951941 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-05:07:11.952147 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-05:07:11.952572 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-05:07:11.952695 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-05:07:11.952785 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-05:07:11.952898 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-05:07:11.952913 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-05:07:11.952928 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-05:07:11.953062 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-05:07:11.953174 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-05:07:11.953425 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-05:07:11.953569 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-05:07:11.953672 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-05:07:11.953868 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-05:07:11.986194 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-05:07:11.986269 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-05:07:11.986283 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-05:07:11.986300 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-05:07:11.986318 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-05:07:11.986331 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-05:07:11.986369 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-05:07:11.986383 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-05:07:11.986395 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-05:07:11.986411 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-05:19:17.078032 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-05:34:17.074282 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-05:37:00.561202 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-05:37:00.604988 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-05:37:00.605437 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-05:37:00.605455 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-05:37:00.605711 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-05:37:00.605735 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-05:37:00.605749 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-05:37:00.605762 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-05:37:00.612067 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-05:37:00.612619 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-05:37:00.612655 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-05:37:12.748458 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-05:37:12.748566 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-05:37:12.748583 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-05:37:12.748605 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-05:37:12.749282 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-05:37:12.749426 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-05:37:12.749530 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-05:37:12.749631 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-05:37:12.749733 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-05:37:12.749822 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-05:37:12.749837 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-05:37:12.749851 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-05:37:12.749941 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-05:37:12.750037 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-05:37:12.750128 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-05:37:12.750256 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-05:37:12.750347 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-05:37:12.750519 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-05:37:12.782812 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-05:37:12.782872 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-05:37:12.782886 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-05:37:12.782903 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-05:37:12.782922 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-05:37:12.782934 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-05:37:12.782972 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-05:37:12.782985 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-05:37:12.782998 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-05:37:12.783014 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-05:49:17.078266 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-06:04:17.075306 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-06:07:00.729507 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-06:07:00.772901 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-06:07:00.773276 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-06:07:00.773295 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-06:07:00.773558 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-06:07:00.773581 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-06:07:00.773594 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-06:07:00.773607 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-06:07:00.779151 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-06:07:00.779679 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-06:07:00.779712 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-06:07:13.551036 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-06:07:13.551129 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-06:07:13.551146 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-06:07:13.551168 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-06:07:13.551454 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-06:07:13.551589 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-06:07:13.551687 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-06:07:13.552115 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-06:07:13.552275 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-06:07:13.552369 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-06:07:13.552385 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-06:07:13.552399 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-06:07:13.552487 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-06:07:13.552573 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-06:07:13.552667 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-06:07:13.552764 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-06:07:13.552850 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-06:07:13.553015 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-06:07:13.600147 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-06:07:13.600187 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-06:07:13.600201 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-06:07:13.600229 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-06:07:13.600247 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-06:07:13.600260 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-06:07:13.600298 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-06:07:13.600311 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-06:07:13.600324 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-06:07:13.600352 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-06:19:17.074684 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-06:34:17.077141 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-06:37:00.864071 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-06:37:00.910702 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-06:37:00.911119 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-06:37:00.911162 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-06:37:00.911440 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-06:37:00.911463 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-06:37:00.911476 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-06:37:00.911489 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-06:37:00.917086 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-06:37:00.917603 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-06:37:00.917651 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-06:37:14.376429 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-06:37:14.376537 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-06:37:14.376553 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-06:37:14.376575 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-06:37:14.377492 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-06:37:14.377744 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-06:37:14.377975 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-06:37:14.378076 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-06:37:14.378160 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-06:37:14.378265 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-06:37:14.378282 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-06:37:14.378296 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-06:37:14.378405 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-06:37:14.378496 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-06:37:14.378589 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-06:37:14.378683 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-06:37:14.378770 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-06:37:14.378929 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-06:37:14.391401 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-06:37:14.391466 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-06:37:14.391480 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-06:37:14.391497 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-06:37:14.391516 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-06:37:14.391529 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-06:37:14.391565 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-06:37:14.391579 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-06:37:14.391592 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-06:37:14.391608 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-06:49:17.079753 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-07:04:17.075243 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-07:07:00.993228 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-07:07:01.038933 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-07:07:01.039234 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-07:07:01.039252 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-07:07:01.039515 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-07:07:01.039539 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-07:07:01.039553 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-07:07:01.039566 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-07:07:01.045106 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-07:07:01.045649 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-07:07:01.045684 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-07:07:14.163801 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-07:07:14.163895 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-07:07:14.163911 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-07:07:14.163933 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-07:07:14.165538 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-07:07:14.165790 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-07:07:14.165934 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-07:07:14.166030 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-07:07:14.166119 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-07:07:14.166203 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-07:07:14.166231 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-07:07:14.166246 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-07:07:14.166333 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-07:07:14.166423 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-07:07:14.166522 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-07:07:14.166616 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-07:07:14.166755 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-07:07:14.166915 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-07:07:14.216764 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-07:07:14.216802 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-07:07:14.216814 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-07:07:14.216831 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-07:07:14.216849 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-07:07:14.216862 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-07:07:14.216901 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-07:07:14.216914 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-07:07:14.216927 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-07:07:14.216943 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-07:19:17.076484 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-07:34:17.075656 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-07:37:01.131013 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-07:37:01.145967 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-07:37:01.146270 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-07:37:01.146288 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-07:37:01.146552 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-07:37:01.146575 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-07:37:01.146589 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-07:37:01.146606 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-07:37:01.152249 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-07:37:01.152752 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-07:37:01.152785 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-07:37:14.054601 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: get message dibbler-client add 'erouter0' '2604:3d08:3:33::b50d:1e81' '1' '\0' '\0' '3600' '3600' '2604:3d09:917a:8700::' '56' '1' '\0' '\0' '3600' '3600' ''
+
+260707-07:37:14.054706 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: add
+260707-07:37:14.054723 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 673 Prefix Assigned
+260707-07:37:14.054745 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6pref to 2604:3d09:917a:8700::/56 
+260707-07:37:14.055016 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_iaid to 1 
+260707-07:37:14.055158 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t1 to \0 
+260707-07:37:14.055305 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_t2 to \0 
+260707-07:37:14.055410 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_pretm to 3600 
+260707-07:37:14.055511 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_pref_vldtm to 3600 
+260707-07:37:14.055612 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler: MAP-T configuration not available.
+260707-07:37:14.055627 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 719 Addr Assigned
+260707-07:37:14.055641 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_v6addr to 2604:3d08:3:33::b50d:1e81 
+260707-07:37:14.055739 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_iaid to 1 
+260707-07:37:14.055832 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t1 to \0 
+260707-07:37:14.055926 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_t2 to \0 
+260707-07:37:14.056015 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_pretm to 3600 
+260707-07:37:14.056099 [mod=WANMANAGER, lvl=INFO] [tid=6864] processIpv6LeaseSysevents - 548: Setting sysevent tr_erouter0_dhcpv6_client_addr_vldtm to 3600 
+260707-07:37:14.056278 [mod=WANMANAGER, lvl=INFO] [tid=6864] WanMgr_DhcpV6MsgHandler 763 IPv6 lease info add to Interface ID(1), Virtual interface Name : erouter0 , Alias WANoE 
+260707-07:37:14.073112 [mod=WANMANAGER, lvl=INFO] [tid=10056] IPv6 new Lease info: 
+prefixAssigned=1 prefixCmd=0 sitePrefix=2604:3d09:917a:8700::/56 pdIfAddress= 
+prefixPltime=3600 prefixVltime=3600
+addrAssigned=1 addrCmd=0 address=2604:3d08:3:33::b50d:1e81 ifname=erouter0
+maptAssigned=0 mapeAssigned=0
+dnsAssigned=1 nameserver=2001:4e8:0:4004::11,2001:4e8:0:4005::11 aftrAssigned=0 aftr= isExpired=0 
+260707-07:37:14.073152 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned IPv6 address 
+260707-07:37:14.073166 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned prefix=2604:3d09:917a:8700::/56 
+260707-07:37:14.073183 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: UP
+260707-07:37:14.073201 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv6_UP_split.
+260707-07:37:14.073223 [mod=WANMANAGER, lvl=NOTICE] [tid=10056] FEATURE_MAPT: MAP-T Enable 0
+260707-07:37:14.073259 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: N/A, ipv6: N/A
+260707-07:37:14.073273 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_ERROR_MAPT_STATUS_DOWN_split.
+260707-07:37:14.073286 [mod=WANMANAGER, lvl=INFO] [tid=10056] mapt: DOWN 
+260707-07:37:14.073302 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 
+260707-07:49:17.076433 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-08:04:17.075886 [mod=WANMANAGER, lvl=WARN] [tid=6800] rbus.c:1969 Not able to retrieve element [Device.X_RDK_WanManager.Interface.2.Selection.Enable]
+
+260707-08:07:01.266632 [mod=WANMANAGER, lvl=INFO] [tid=6863] WanMgr_IpcNewIpv4Msg 72 - Received Ipc Ipv4Msg for erouter0
+260707-08:07:01.297235 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 123 - Enter 
+260707-08:07:01.297555 [mod=WANMANAGER, lvl=INFO] [tid=10056] assigned ip=24.65.240.148 netmask=255.255.252.0 gateway=24.65.240.1 dns server=64.59.184.13,64.59.190.245 leasetime = 3600, rebindtime = 0, renewaltime = 0, dhcp state = renew mtu = 0
+260707-08:07:01.297573 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 196 - IPV4 optional configuration received 
+260707-08:07:01.297840 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 227 -  Received Ipv4 lease for interface erouter0. Configuring address on interface
+260707-08:07:01.297863 [mod=WANMANAGER, lvl=INFO] [tid=10056] wanmgr_handle_dhcpv4_event_data 241 -  IP configuration = ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-08:07:01.297876 [mod=WANMANAGER, lvl=INFO] [tid=10056] setupIPv4: -- ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500 
+260707-08:07:01.297889 [mod=WANMANAGER, lvl=INFO] [tid=10056] executing ifconfig erouter0 24.65.240.148 netmask 255.255.252.0 broadcast 24.65.243.255 mtu 1500
+260707-08:07:01.303495 [mod=WANMANAGER, lvl=INFO] [tid=10056] ifName: erouter0, link: N/A, ipv4: UP, ipv6: N/A
+260707-08:07:01.304050 [mod=WANMANAGER, lvl=INFO] [tid=10056] WanMgr_ProcessTelemetryMarker 40: SUCCESS processing telemetry event WAN_INFO_IPv4_UP_split.
+260707-08:07:01.304083 [mod=WANMANAGER, lvl=INFO] [tid=10056] [WanMgr_SendMsgTo_ConnectivityCheck:1717] 

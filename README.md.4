@@ -1,0 +1,714 @@
+# Failure Detection Engine
+
+The Failure Detection Engine converts normalized log events into meaningful failure categories.
+
+The detection process is:
+
+```
+Raw Logs
+
+   |
+
+   v
+
+Parser
+
+   |
+
+   v
+
+Normalized Events
+
+   |
+
+   v
+
+Pattern Detector
+
+   |
+
+   v
+
+Failure Categories
+
+   |
+
+   v
+
+Root Cause Engine
+```
+
+---
+
+# Detection Architecture
+
+The detector layer is intentionally rule-based and extensible.
+
+Current design:
+
+```
+src/
+
+└── detector/
+
+    └── pattern_detector.py
+```
+
+The detector receives parsed events and evaluates them against known failure signatures.
+
+---
+
+# Event Processing Model
+
+A log entry is converted into a normalized event.
+
+Example:
+
+Input:
+
+```
+Jan 01 10:00:01 eth0: link down
+```
+
+Normalized event:
+
+```json
+{
+    "timestamp":
+        "10:00:01",
+
+    "category":
+        "ETHERNET_FAILURE",
+
+    "severity":
+        "ERROR",
+
+    "message":
+        "eth0 link down"
+}
+```
+
+---
+
+# Supported Failure Categories
+
+Current supported categories:
+
+```
+ETHERNET_FAILURE
+
+WIFI_CLIENT_FAILURE
+```
+
+Additional categories can be added without changing the pipeline.
+
+---
+
+# Ethernet Failure Detection
+
+Category:
+
+```
+ETHERNET_FAILURE
+```
+
+---
+
+## Detection Patterns
+
+Examples:
+
+### Link Failure
+
+Pattern:
+
+```
+link down
+```
+
+Example:
+
+```
+eth0: link down
+```
+
+Detection:
+
+```
+ETHERNET_FAILURE
+```
+
+---
+
+### Network Watchdog Timeout
+
+Pattern:
+
+```
+NETDEV WATCHDOG
+```
+
+Example:
+
+```
+NETDEV WATCHDOG timeout
+```
+
+Detection:
+
+```
+ETHERNET_FAILURE
+```
+
+---
+
+### Interface Reset
+
+Patterns:
+
+```
+interface reset
+
+driver reset
+
+adapter reset
+```
+
+Detection:
+
+```
+ETHERNET_FAILURE
+```
+
+---
+
+# WiFi Client Failure Detection
+
+Category:
+
+```
+WIFI_CLIENT_FAILURE
+```
+
+---
+
+## Authentication Failure
+
+Patterns:
+
+```
+authentication failed
+
+auth failure
+
+802.1x failure
+```
+
+Example:
+
+```
+wlan0 authentication failed
+```
+
+Detection:
+
+```
+WIFI_CLIENT_FAILURE
+```
+
+---
+
+## WPA Handshake Failure
+
+Patterns:
+
+```
+handshake timeout
+
+WPA failed
+
+4-way handshake failed
+```
+
+Example:
+
+```
+wpa handshake timeout
+```
+
+Detection:
+
+```
+WIFI_CLIENT_FAILURE
+```
+
+---
+
+## Association Failure
+
+Patterns:
+
+```
+association failed
+
+unable to associate
+
+connect timeout
+```
+
+Detection:
+
+```
+WIFI_CLIENT_FAILURE
+```
+
+---
+
+# Adding a New Failure Category
+
+Example:
+
+Adding DHCP failure detection.
+
+---
+
+## Step 1
+
+Add category enum.
+
+Example:
+
+```
+src/parser/models.py
+```
+
+Add:
+
+```python
+DHCP_FAILURE
+```
+
+---
+
+## Step 2
+
+Add detection rules.
+
+Example:
+
+```
+src/detector/pattern_detector.py
+```
+
+Add:
+
+```python
+"DHCP":
+[
+    "dhcp timeout",
+    "dhcp failed",
+    "lease expired"
+]
+```
+
+---
+
+## Step 3
+
+Add tests.
+
+Create:
+
+```
+tests/10_test_dhcp_detector.py
+```
+
+Example:
+
+```python
+def test_dhcp_failure_detection():
+
+    event = create_event(
+        "dhcp timeout"
+    )
+
+    result = detector.detect(
+        event
+    )
+
+    assert result.category == DHCP_FAILURE
+```
+
+---
+
+## Step 4
+
+Validate RCA output
+
+Run:
+
+```bash
+pytest
+```
+
+Expected:
+
+```
+all tests passed
+```
+
+---
+
+# Parser Framework
+
+The parser framework converts different log formats into a common event structure.
+
+Architecture:
+
+```
+                Log File
+
+                   |
+
+                   v
+
+             Parser Factory
+
+                   |
+
+        +----------+----------+
+
+        |                     |
+
+        v                     v
+
+ Syslog Parser        Generic Parser
+
+                   |
+
+                   v
+
+             Normalized Event
+```
+
+---
+
+# Parser Factory
+
+Location:
+
+```
+src/parser/parser_factory.py
+```
+
+Responsibilities:
+
+- Identify log format
+- Select parser
+- Return parser instance
+
+Example:
+
+```
+kernel.log
+
+      |
+
+      v
+
+SyslogParser
+```
+
+---
+
+# Adding a New Parser
+
+Example:
+
+Adding a WiFi-specific parser.
+
+---
+
+## Step 1
+
+Create:
+
+```
+src/parser/wifi_parser.py
+```
+
+Example:
+
+```python
+from parser.base_parser import BaseParser
+
+
+class WifiParser(BaseParser):
+
+    def parse(self, logfile):
+
+        events = []
+
+        # parse wifi format
+
+        return events
+```
+
+---
+
+## Step 2
+
+Register parser.
+
+Update:
+
+```
+parser_factory.py
+```
+
+Example:
+
+```python
+if "wifi" in filename:
+
+    return WifiParser()
+```
+
+---
+
+## Step 3
+
+Add tests.
+
+Example:
+
+```
+tests/11_test_wifi_parser.py
+```
+
+---
+
+# Root Cause Analysis Logic
+
+The Root Cause Engine evaluates:
+
+```
+Failure Events
+
+      +
+
+Timeline Position
+
+      +
+
+Frequency
+
+      +
+
+Evidence
+
+      |
+
+      v
+
+Root Cause Candidate
+```
+
+---
+
+# Example Analysis
+
+Input:
+
+```
+10:00:01 eth0 link down
+
+10:00:03 DHCP timeout
+
+10:00:05 internet unavailable
+```
+
+Analysis:
+
+```
+Primary Cause:
+
+ETHERNET_FAILURE
+
+
+Confidence:
+
+92%
+
+
+Reason:
+
+Ethernet failure occurred before downstream failures.
+```
+
+---
+
+# Engineering Guidelines
+
+When adding functionality:
+
+## Always add:
+
+- Unit tests
+- Documentation
+- Sample logs
+- Evidence validation
+
+---
+
+## Avoid:
+
+- Hardcoded assumptions
+- Direct file dependencies
+- Changing existing interfaces
+
+---
+
+# Development Checklist
+
+Before submitting changes:
+
+```
+[ ] Code formatted
+
+[ ] Unit tests added
+
+[ ] pytest passes
+
+[ ] README updated
+
+[ ] Report format unchanged
+```
+
+---
+
+# Debugging Tips
+
+Enable detailed logs:
+
+```bash
+export PYTHONPATH=src
+```
+
+Run:
+
+```bash
+python3 -m app.main \
+    --input sample_bundle.tgz \
+    --output reports
+```
+
+Review:
+
+```
+reports/
+
+└── timestamp/
+
+    ├── summary.md
+
+    ├── report.json
+
+    └── metadata.json
+```
+
+---
+
+# Troubleshooting Common Issues
+
+## Module Not Found
+
+Error:
+
+```
+ModuleNotFoundError
+```
+
+Solution:
+
+```bash
+export PYTHONPATH=src
+```
+
+or:
+
+```bash
+pip install -e .
+```
+
+---
+
+## Unsupported Archive
+
+Error:
+
+```
+Not a valid archive
+```
+
+Verify:
+
+- File extension
+- Archive integrity
+- Compression format
+
+Supported:
+
+```
+.tar
+
+.tgz
+
+.tar.gz
+
+.zip
+```
+
+---
+
+## Missing Logs
+
+Verify extracted workspace:
+
+```
+workspace/
+
+└── bundle/
+
+    └── nvram2/
+
+        └── log/
+```
+
+---
+
+# Developer Extension Philosophy
+
+The project grows by adding:
+
+```
+New Input
+
+    |
+
+New Parser
+
+    |
+
+New Detector
+
+    |
+
+New Test
+
+    |
+
+Better RCA
+```
+
+The existing pipeline should remain stable while capabilities expand.

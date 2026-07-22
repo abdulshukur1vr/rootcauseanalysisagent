@@ -1,0 +1,588 @@
+# Repository Structure
+
+The project follows a modular Python package layout.
+
+```
+rootcauseanalysisagent/
+
+├── src/
+│
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   └── pipeline.py
+│   │
+│   ├── extractor/
+│   │   ├── __init__.py
+│   │   ├── archive_utils.py
+│   │   └── recursive_extractor.py
+│   │
+│   ├── discovery/
+│   │   ├── __init__.py
+│   │   └── log_discovery.py
+│   │
+│   ├── parser/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── base_parser.py
+│   │   ├── generic_parser.py
+│   │   ├── syslog_parser.py
+│   │   └── parser_factory.py
+│   │
+│   ├── detector/
+│   │   ├── __init__.py
+│   │   └── pattern_detector.py
+│   │
+│   ├── timeline/
+│   │   ├── __init__.py
+│   │   └── timeline_builder.py
+│   │
+│   ├── analyzer/
+│   │   ├── __init__.py
+│   │   ├── failure_category_analyzer.py
+│   │   └── rootcause_engine.py
+│   │
+│   └── report/
+│       ├── __init__.py
+│       ├── models.py
+│       ├── markdown_report.py
+│       ├── json_report.py
+│       └── run_metadata.py
+│
+├── tests/
+│   ├── 01_test_recursive_extractor.py
+│   ├── 02_test_log_discovery.py
+│   ├── 03_test_log_parser.py
+│   ├── 04_test_pattern_detector.py
+│   ├── 05_test_timeline_builder.py
+│   ├── 06_test_rootcause_engine.py
+│   ├── 07_test_report_generator.py
+│   ├── 08_test_pipeline.py
+│   └── 09_test_failure_category_analyzer.py
+│
+├── reports/
+│
+├── requirements.txt
+├── pyproject.toml
+├── run.sh
+└── README.md
+```
+
+---
+
+# Module Responsibilities
+
+## Application Layer
+
+Location:
+
+```
+src/app/
+```
+
+Responsible for:
+
+- Application entry point
+- Pipeline orchestration
+- Command-line execution
+
+Main components:
+
+### main.py
+
+Responsibilities:
+
+- Parse command-line arguments
+- Initialize RCA pipeline
+- Trigger analysis
+
+Example:
+
+```bash
+python3 -m app.main \
+    --input sample_bundle.tgz \
+    --output reports
+```
+
+---
+
+### pipeline.py
+
+The central workflow controller.
+
+Responsibilities:
+
+- Create execution workspace
+- Invoke extractor
+- Discover logs
+- Parse events
+- Run detectors
+- Generate reports
+
+---
+
+# Extractor Module
+
+Location:
+
+```
+src/extractor/
+```
+
+Responsible for archive handling.
+
+Supported formats:
+
+- `.tar`
+- `.tgz`
+- `.tar.gz`
+- `.zip`
+
+Capabilities:
+
+- Recursive extraction
+- Nested archive handling
+- Workspace isolation
+
+Example:
+
+```
+support_bundle.tgz
+
+    device_logs.tar
+
+        nvram2.tar
+
+            logs/
+```
+
+All levels are automatically extracted.
+
+---
+
+# Discovery Module
+
+Location:
+
+```
+src/discovery/
+```
+
+Responsible for locating relevant log files.
+
+Example:
+
+```
+nvram2/
+
+└── log/
+
+    ├── kernel.log
+
+    ├── wifi.log
+
+    ├── messages.log
+```
+
+The discovery layer returns log inventory information to the parser subsystem.
+
+---
+
+# Parser Module
+
+Location:
+
+```
+src/parser/
+```
+
+Converts raw log files into normalized events.
+
+Architecture:
+
+```
+             Log File
+
+                |
+
+                v
+
+        Parser Factory
+
+                |
+
+     +----------+----------+
+
+     |                     |
+
+ Syslog Parser      Generic Parser
+
+                |
+
+                v
+
+          Normalized Event
+```
+
+---
+
+# Detector Module
+
+Location:
+
+```
+src/detector/
+```
+
+Analyzes parsed events and identifies failure patterns.
+
+Examples:
+
+Input:
+
+```
+NETDEV WATCHDOG timeout
+```
+
+Detection:
+
+```
+Category:
+
+ETHERNET_FAILURE
+```
+
+Evidence:
+
+```
+kernel.log
+
+line 245
+```
+
+---
+
+# Timeline Module
+
+Location:
+
+```
+src/timeline/
+```
+
+Responsible for:
+
+- Event ordering
+- Sequence creation
+- Failure progression
+
+Example:
+
+```
+10:00:01
+
+eth0 link down
+
+
+10:00:05
+
+DHCP timeout
+
+
+10:00:08
+
+WAN unavailable
+```
+
+---
+
+# Analyzer Module
+
+Location:
+
+```
+src/analyzer/
+```
+
+Responsible for RCA reasoning.
+
+Components:
+
+## Failure Category Analyzer
+
+Calculates:
+
+- Failure counts
+- Failure percentages
+- Distribution
+
+
+## Root Cause Engine
+
+Determines:
+
+- Root cause candidates
+- Confidence score
+- Evidence correlation
+
+---
+
+# Report Module
+
+Location:
+
+```
+src/report/
+```
+
+Generates analysis artifacts.
+
+Current outputs:
+
+```
+reports/
+
+└── YYYYMMDD_HHMMSS/
+
+    ├── metadata.json
+
+    ├── report.json
+
+    ├── summary.md
+
+    └── workspace/
+```
+
+---
+
+# Installation
+
+## Requirements
+
+Recommended:
+
+- Python 3.11+
+- pip
+- virtualenv
+
+---
+
+# Quick Setup
+
+Clone repository:
+
+```bash
+git clone <repository-url>
+
+cd rootcauseanalysisagent
+```
+
+---
+
+Create environment:
+
+```bash
+python3 -m venv rootcauseanalysisagent
+```
+
+Activate:
+
+macOS/Linux:
+
+```bash
+source rootcauseanalysisagent/bin/activate
+```
+
+Windows:
+
+```powershell
+rootcauseanalysisagent\Scripts\activate
+```
+
+---
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Automated Setup
+
+The project includes:
+
+```
+run.sh
+```
+
+The script:
+
+- Creates virtual environment
+- Validates Python version
+- Installs dependencies
+- Performs sanity checks
+- Runs the application
+
+Example:
+
+```bash
+./run.sh
+```
+
+---
+
+# Dependencies
+
+Current dependencies include:
+
+```
+openai
+PyYAML
+pandas
+rich
+tqdm
+pytest
+pytest-cov
+pytest-order
+```
+
+Dependencies are pinned in:
+
+```
+requirements.txt
+```
+
+---
+
+# Running the Analyzer
+
+Example:
+
+```bash
+PYTHONPATH=src python3 -m app.main \
+    --input sample_bundle.tgz \
+    --output reports
+```
+
+---
+
+# Example Output
+
+Successful execution:
+
+```
+Starting RCA pipeline
+
+Extracted TAR sample_bundle.tgz
+
+Discovered 108 log files
+
+Detected 3089 events
+
+Timeline created
+
+Generating reports
+```
+
+Generated:
+
+```
+reports/
+
+└── 20260721_153422/
+
+    ├── metadata.json
+
+    ├── report.json
+
+    ├── summary.md
+
+    └── workspace/
+```
+
+---
+
+# Running Tests
+
+Run complete test suite:
+
+```bash
+pytest
+```
+
+Expected:
+
+```
+==============================
+
+11 passed
+
+==============================
+```
+
+---
+
+# Test Ordering
+
+Tests are intentionally numbered:
+
+```
+01_
+02_
+03_
+...
+```
+
+Execution order:
+
+```
+01 Recursive Extraction
+
+02 Log Discovery
+
+03 Parsing
+
+04 Detection
+
+05 Timeline
+
+06 RCA Engine
+
+07 Reports
+
+08 Pipeline
+
+09 Failure Distribution
+```
+
+This mirrors the actual application pipeline.
+
+---
+
+# Development Workflow
+
+Recommended workflow:
+
+```
+1. Add feature
+
+2. Add unit test
+
+3. Run pytest
+
+4. Update documentation
+
+5. Commit changes
+```
+
+Example:
+
+```bash
+pytest
+
+git status
+
+git commit -m "Add DHCP failure detector"
+```

@@ -6,6 +6,7 @@ Consumes LogEntry objects and produces DetectedEvent objects.
 
 
 import logging
+import re
 
 from parser.models import LogEntry
 
@@ -17,7 +18,7 @@ from detector.models import (
 
 from detector.signatures import SIGNATURES
 
-
+from collections import Counter
 
 class PatternDetector:
 
@@ -46,6 +47,18 @@ class PatternDetector:
                 .lower()
             )
 
+            ignore_patterns = [
+                "watchdogpet",
+                "successfully pet",
+                "heartbeat",
+            ]
+
+            if any(
+                ignore in message
+                for ignore in ignore_patterns
+            ):
+                continue
+
 
             for category, patterns in SIGNATURES.items():
 
@@ -53,7 +66,7 @@ class PatternDetector:
                 for pattern in patterns:
 
 
-                    if pattern in message:
+                    if re.search(pattern, message):
 
 
                         events.append(
@@ -74,8 +87,9 @@ class PatternDetector:
 
                                 message=entry.message,
 
-                                source=entry.file
+                                source=entry.file,
 
+                                timestamp=entry.timestamp
                             )
 
                         )
@@ -83,6 +97,16 @@ class PatternDetector:
 
                         break
 
+
+        distribution = Counter(
+            event.category.value
+            for event in events
+        )
+
+        self.logger.info(
+            "Detection distribution: %s",
+            dict(distribution)
+        )
 
 
         self.logger.info(

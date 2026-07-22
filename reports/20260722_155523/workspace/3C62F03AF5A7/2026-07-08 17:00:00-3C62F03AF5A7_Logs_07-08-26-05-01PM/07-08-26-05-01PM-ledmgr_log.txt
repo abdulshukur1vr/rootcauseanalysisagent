@@ -1,0 +1,29 @@
+Starting led manager
+Conf file /etc/debug.ini open success
+260707-00:00:15.027543 [mod=BREAKPAD, lvl=INFO] [tid=975] breakpadwrap.cpp(21):Registering breakpad handler... 
+260707-00:00:15.058938 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 8 Next state 0 
+260707-00:00:15.059070 [mod=LEDMGR, lvl=INFO] [tid=975] Led set white with ledHalApi during bootup
+260707-00:00:15.059129 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_BOOT_UP
+260707-02:34:45.278030 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 0 Next state 4 
+260707-02:34:45.278176 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_TROUBLE_CONNECTING
+260707-02:34:45.278806 [mod=RBUS, lvl=INFO] [tid=975] rbus open for component: t2_lib_ledmgr
+260707-02:34:45.285777 [mod=RBUS, lvl=INFO] [tid=975]  rbus open (t2_lib_ledmgr) success
+260707-02:34:45.326038 [mod=RBUS, lvl=ERROR] [tid=975] rbus_get for Telemetry.ReportProfiles.ledmgr.EventMarkerList failed with error: Entry not found error
+260707-02:34:45.337846 [mod=RBUS, lvl=INFO] [tid=975] Telemetry.ReportProfiles.ProfilesUpdated subscribe retries succeeded
+260707-02:34:49.524396 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 4 Next state 5 
+260707-02:34:49.524542 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_WORKING_NORMALLY
+260707-02:35:20.074335 [mod=RBUS, lvl=ERROR] [tid=3897] rbus_get for Telemetry.ReportProfiles.ledmgr.EventMarkerList failed with error: Entry not found error
+260707-08:21:36.539257 [mod=RBUS, lvl=ERROR] [tid=3897] rbus_get for Telemetry.ReportProfiles.ledmgr.EventMarkerList failed with error: Entry not found error
+260707-14:34:26.165936 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 5 Next state 4 
+260707-14:34:26.166095 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_TROUBLE_CONNECTING
+260707-14:34:45.397286 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 4 Next state 5 
+260707-14:34:45.397614 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_WORKING_NORMALLY
+260708-02:34:48.154517 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 5 Next state 4 
+260708-02:34:48.154660 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_TROUBLE_CONNECTING
+260708-02:35:07.720163 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 4 Next state 5 
+260708-02:35:07.720452 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_WORKING_NORMALLY
+260708-08:32:56.005252 [mod=RBUS, lvl=ERROR] [tid=3897] rbus_get for Telemetry.ReportProfiles.ledmgr.EventMarkerList failed with error: Entry not found error
+260708-14:35:13.152222 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 5 Next state 4 
+260708-14:35:13.152365 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_TROUBLE_CONNECTING
+260708-14:35:56.510424 [mod=LEDMGR, lvl=INFO] [tid=975] Current state 4 Next state 5 
+260708-14:35:56.510834 [mod=LEDMGR, lvl=INFO] [tid=975] Led State = LED_MGR_STATE_WORKING_NORMALLY

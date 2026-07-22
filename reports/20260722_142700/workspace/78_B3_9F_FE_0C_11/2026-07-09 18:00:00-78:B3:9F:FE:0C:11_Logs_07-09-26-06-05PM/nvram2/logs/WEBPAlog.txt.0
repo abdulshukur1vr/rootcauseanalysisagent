@@ -1,0 +1,13 @@
+13
+260709-17:41:56.746121 [mod=WEBPA, lvl=INFO] [tid=13130] WDMP-C: Request {"command":"GET","names":["Device.DeviceInfo.SerialNumber","Device.DeviceInfo.SoftwareVersion","Device.DeviceInfo.Manufacturer","Device.DeviceInfo.X_RDKCENTRAL-COM_BootTime","Device.DeviceInfo.X_CISCO_COM_FirmwareName","Device.DeviceInfo.X_RDKCENTRAL-COM_LastRebootReason","Device.DeviceInfo.Description","Device.DeviceInfo.ProductClass","Device.DeviceInfo.HardwareVersion","Device.DeviceInfo.X_RDKCENTRAL-COM_Syndication.PartnerId"]}
+260709-17:41:56.746165 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: transactionId : 3c2f6e8b-873a-4e10-bc76-5d01b8d46e10_____006563123F18EB5, traceParent : traceparent: 00-000000000000000047ad4669dde998b2-5a4381c86598cf8f-01, traceState : tracestate: dd=s:1;o:rum;p:6ab410a9d95faecc in request
+260709-17:41:56.746256 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: Invoked setTraceContext function with value traceParent - traceparent: 00-000000000000000047ad4669dde998b2-5a4381c86598cf8f-01, traceState - tracestate: dd=s:1;o:rum;p:6ab410a9d95faecc
+260709-17:41:56.747910 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: CompName = eRT.com.cisco.spvtg.ccsp.pam, dbusPath : eRT.com.cisco.spvtg.ccsp.pam, paramCount = 10
+260709-17:41:56.749084 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: traceContext value, traceParent - traceparent: 00-000000000000000047ad4669dde998b2-5a4381c86598cf8f-01, traceState - tracestate: dd=s:1;o:rum;p:6ab410a9d95faecc
+260709-17:41:56.749240 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: ClearTraceContext request success
+260709-17:41:56.749256 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: The response wrp_msg header fields
+260709-17:41:56.749270 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: res header count in res_wrp_msg - 2
+260709-17:41:56.749283 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: res header 0 in res_wrp_msg - traceparent: 00-000000000000000047ad4669dde998b2-5a4381c86598cf8f-01
+260709-17:41:56.749297 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: res header 1 in res_wrp_msg - tracestate: dd=s:1;o:rum;p:6ab410a9d95faecc
+260709-17:41:56.749464 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: Sent message successfully to parodus
+260709-17:41:56.749480 [mod=WEBPA, lvl=INFO] [tid=13130] WEBPA: Elapsed time : 3 ms

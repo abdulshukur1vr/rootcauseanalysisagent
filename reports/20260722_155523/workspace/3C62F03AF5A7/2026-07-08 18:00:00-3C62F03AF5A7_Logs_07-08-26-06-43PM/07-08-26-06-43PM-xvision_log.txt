@@ -1,0 +1,97 @@
+starting va_daemon-process !!!!
+start xvisiond service !!!!
+Current aspect ratio in the camera is 16_9
+Passing the aspect ratio 1 to xvision
+Conf file /etc/debug.ini open success
+260708-16:54:07.652595 [mod=BREAKPAD, lvl=INFO] [tid=2622] breakpadwrap.cpp(21):Registering breakpad handler... 
+260708-16:54:07.747819 [mod=XCV, lvl=INFO] [tid=2622] xvisiond.cpp(606): OD_FRAME upload is enabled. od_frame_upload_enabled 1!!!
+260708-16:54:07.747968 [mod=XCV, lvl=INFO] [tid=2622] xvisiond.cpp(611): smart thumbnail is enabled. rfc_smart_thumbnail_enabled 1!!!
+260708-16:54:07.748033 [mod=XCV, lvl=INFO] [tid=2622]  VA_Engine : RDKCVA, frame_type : YUV
+260708-16:54:07.828664 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] rtMessageInit(611): Initialized rtMessage
+260708-16:54:07.829481 [mod=RBUS, lvl=INFO] [tid=2622] rbus open for component: t2_lib_videoAnalytics
+260708-16:54:07.859272 [mod=RBUS, lvl=INFO] [tid=2622]  rbus open (t2_lib_videoAnalytics) success
+260708-16:54:07.912242 [mod=RBUS, lvl=ERROR] [tid=2622] rbus_get for Telemetry.ReportProfiles.videoAnalytics.EventMarkerList failed with error: Entry not found error
+260708-16:54:07.917485 [mod=RBUS, lvl=INFO] [tid=2622] Telemetry.ReportProfiles.ProfilesUpdated subscribe retries succeeded
+260708-16:54:07.920840 [mod=XSTREAM, lvl=INFO] [tid=2622] stream_hal_raw_init(1488): ENCODE is ready
+260708-16:54:07.924136 [mod=XSTREAM, lvl=INFO] [tid=2622] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1020) : Buffer_id 1 width 512 height 288
+260708-16:54:07.924293 [mod=XSTREAM, lvl=INFO] [tid=2622] /mnt/jenkins/workspace/SERXHC3-Yocto-Release-Pipeline/build-xcam3/tmp/work/armv7ahf-vfp-rdk-linux-gnueabi/camera-hal/1.0-r0/git/streamer/xBroker/xConsumer/xStreamerConsumer.cpp(1037) : RAWInit done
+260708-16:54:07.924362 [mod=XCV, lvl=INFO] [tid=2622]  iavInterface.cpp(241) Init_iav done: g_cur_ydata:0x72C52008, width:512, height:288
+260708-16:54:07.924950 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] Init(58): day mode sensitivity: 1.00, night mode sensitivity: 1.00
+BlobTracking()
+MixtureOfGaussianV2BGS()
+260708-16:54:09.086312 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVAInit(304): Using MixtureOfGaussianV2BGS
+260708-16:54:09.086417 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVAInit(338): xVision runs on 320*240 YUV data
+260708-16:54:09.086500 [mod=XCV, lvl=INFO] [tid=2622] XCV Day mode sensitivity is set to 0.000000.
+260708-16:54:09.086555 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] 
+set property: 
+260708-16:54:09.086673 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetProperty(160): Inavalid argument to be set. Setting it to default disable.260708-16:54:09.086730 [mod=XCV, lvl=INFO] [tid=2622] 	Set RDKC_PROP_HUMAN_ENABLED OK.
+260708-16:54:09.086781 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetProperty(170): Inavalid argument to be set. Setting it to default disable.260708-16:54:09.086825 [mod=XCV, lvl=INFO] [tid=2622] 	Set RDKC_PROP_SCENE_ENABLED OK.
+260708-16:54:09.086868 [mod=XCV, lvl=INFO] [tid=2622] 	Set RDKC_PROP_SENSITIVITY OK.
+260708-16:54:09.086910 [mod=XCV, lvl=INFO] [tid=2622] 	Set RDKC_PROP_UPSCALE_RESOLUTION OK.
+260708-16:54:09.086957 [mod=XCV, lvl=INFO] [tid=2622] xvisiond.cpp(860) Engine Initialized successfully
+260708-16:54:09.087215 [mod=XCV, lvl=WARN] [tid=2622] xvisiond.cpp(323): Loading DOI settings file failed... Using default value DEFAULT_DOI_OVERLAP_THRESHOLD : 0.000000
+260708-16:54:09.087554 [mod=XCV, lvl=WARN] [tid=2622] xvisiond.cpp(347): Loading delivery settings file failed... Using default value DEFAULT_DELIVERY_UPSCALE_FACTOR
+getUsrConfigPath(59) Retrieving secure partition mount status...
+getUsrConfigPath(69) INFO - Secure mount status is enabled. Returning secure config path.
+260708-16:54:09.183877 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[0] : 0.009121
+260708-16:54:09.184015 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[1] : 0.000000
+260708-16:54:09.184082 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[2] : 0.989221
+260708-16:54:09.184167 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[3] : 0.000000
+260708-16:54:09.184226 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[4] : 0.995025
+260708-16:54:09.184278 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[5] : 0.970501
+260708-16:54:09.184328 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[6] : 0.991708
+260708-16:54:09.184375 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[7] : 1.000000
+260708-16:54:09.184424 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[8] : 0.008292
+260708-16:54:09.184473 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[9] : 1.000000
+260708-16:54:09.184523 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[10] : 0.002488
+260708-16:54:09.184572 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[11] : 0.000000
+260708-16:54:09.184621 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[12] : 0.009121
+260708-16:54:09.184668 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[13] : 0.000000
+260708-16:54:09.217131 [mod=XCV, lvl=INFO] [tid=2622] xvisiond.cpp(897): enabling md mode. od_mode[1]
+260708-16:54:09.221970 [mod=XCV, lvl=WARN] [tid=2622] xcvInterface.cpp(893):VAI Results Structure has not allocated yet!!!
+260708-16:54:18.638072 [mod=XCV, lvl=INFO] [tid=2622] xvisiond.cpp(814): Setting ROI, Coordinates are: [[0.009121-0.000000][0.989221-0.000000][0.995025-0.970501][0.991708-1.000000][0.008292-1.000000][0.002488-0.000000][0.009121-0.000000]]
+260708-16:54:18.638226 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[0] : 0.009121
+260708-16:54:18.638301 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[1] : 0.000000
+260708-16:54:18.638359 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[2] : 0.989221
+260708-16:54:18.638411 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[3] : 0.000000
+260708-16:54:18.638461 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[4] : 0.995025
+260708-16:54:18.638511 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[5] : 0.970501
+260708-16:54:18.638561 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[6] : 0.991708
+260708-16:54:18.638610 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[7] : 1.000000
+260708-16:54:18.638658 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[8] : 0.008292
+260708-16:54:18.638706 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[9] : 1.000000
+260708-16:54:18.638755 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[10] : 0.002488
+260708-16:54:18.638802 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[11] : 0.000000
+260708-16:54:18.638852 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[12] : 0.009121
+260708-16:54:18.638900 [mod=VIDEOANALYTICS, lvl=INFO] [tid=2622] RdkCVASetROI(1178): coords[13] : 0.000000
+260708-16:54:51.116399 [mod=RBUS, lvl=ERROR] [tid=3191] rbus_get for Telemetry.ReportProfiles.videoAnalytics.EventMarkerList failed with error: Entry not found error
+08.07.2026_16:57.06 ROI=true!
+08.07.2026_16:57.06 DOI=false!
+08.07.2026_17:04.41 ROI=true!
+08.07.2026_17:04.41 DOI=false!
+08.07.2026_17:12.15 ROI=true!
+08.07.2026_17:12.15 DOI=false!
+08.07.2026_17:19.49 ROI=true!
+08.07.2026_17:19.49 DOI=false!
+08.07.2026_17:27.22 ROI=true!
+08.07.2026_17:27.22 DOI=false!
+08.07.2026_17:34.56 ROI=true!
+08.07.2026_17:34.57 DOI=false!
+08.07.2026_17:42.31 ROI=true!
+08.07.2026_17:42.31 DOI=false!
+08.07.2026_17:50.05 ROI=true!
+08.07.2026_17:50.05 DOI=false!
+08.07.2026_17:57.38 ROI=true!
+08.07.2026_17:57.38 DOI=false!
+08.07.2026_18:05.11 ROI=true!
+08.07.2026_18:05.11 DOI=false!
+08.07.2026_18:12.45 ROI=true!
+08.07.2026_18:12.46 DOI=false!
+08.07.2026_18:20.20 ROI=true!
+08.07.2026_18:20.20 DOI=false!
+08.07.2026_18:27.54 ROI=true!
+08.07.2026_18:27.54 DOI=false!
+08.07.2026_18:35.28 ROI=true!
+08.07.2026_18:35.28 DOI=false!
+08.07.2026_18:43.01 ROI=true!
+08.07.2026_18:43.01 DOI=false!

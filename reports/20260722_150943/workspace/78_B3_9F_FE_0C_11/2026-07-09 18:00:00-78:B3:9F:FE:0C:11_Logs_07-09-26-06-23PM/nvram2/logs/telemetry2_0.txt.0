@@ -1,0 +1,35 @@
+35
+260709-18:08:57.561073 [DEBUG] --OUT function backupnvram2logs
+260709-18:09:02.204952 [mod=T2, lvl=INFO] [tid=32053] cJSON Report = {"Report":[{"Profile_Name":"WIFI_MOTION_Telemetry"},{"Profile":"RDKB"},{"Time":"2026-07-09 18:08:47"},{"mac":"78:b3:9f:fe:0c:11"},{"CMMAC_split":"78:B3:9F:FE:0C:0F"},{"erouterIpv4":"24.65.240.148"},{"erouterIpv6":"2604:3d08:3:33::b50d:1e81"},{"PartnerId":"shaw"},{"Version":"SCER11BEL_8.2p11s1_PROD_sey"},{"AccountId":"3277006077133108326"},{"WFMStatus_split":"Disabled"}]}
+260709-18:09:02.205055 [mod=T2, lvl=INFO] [tid=32053] Report Size = 373
+260709-18:09:02.210341 [mod=T2, lvl=INFO] [tid=32053] sendReportOverHTTP: state_red_enable: 0
+260709-18:09:02.210949 [mod=T2, lvl=INFO] [tid=32053] mTLS defaulted for telemetry
+260709-18:09:02.212958 [mod=T2, lvl=INFO] [tid=25316] Grep complete for 1176 markers 
+260709-18:09:02.213374 [mod=T2, lvl=INFO] [tid=25316] cJSON Report = {"searchResult":[{"T2":"1.0"},{"Profile":"RDKB"},{"Time":"2026-07-09 18:08:47"},{"mac":"78:b3:9f:fe:0c:11"},{"erouterIpv4":"24.65.240.148"},{"erouterIpv6":"2604:3d08:3:33::b50d:1e81"},{"PartnerId":"shaw"},{"Version":"SCER11BEL_8.2p11s1_PROD_sey"},{"AccountId":"3277006077133108326"},{"LT_split":"2026-07-09T12:08:47Z"},{"SecHSEnable_split":"false"},{"PortMap_split":"0"},{"CMMAC_split":"78:B3:9F:FE:0C:0F"},{"Wifi_2G_utilization_split":"79"},{"Wifi_5G_utilization_split":"32"},{"Wifi_6G_utilization_split":"5"},{"SYS_INFO_LogUpload_Disabled":"1"},{"POD_BH_split":" WiFi,"},{"WIFI_INFO_PODLinkChanged":"2"},{"SYS_ERROR_SH_MeshVlanFail":"4"},{"PODBH_MAC_split":" 8c:c5:b4:e7:8a:d0,"},{"WIFI_INFO_Deauth_AssocWoAuth":"1"},{"WIFI_INFO_Steered5G":"1"},{"WIFI_INFO_4W_Hndske_Tmout":"2"},{"WIFI_INFO_MeshLostDeauth":"1"},{"WIFI_INFO_PlumeBS_AuthFail":"16"},{"WIFI_INFO_MeshDeauth":"28"},{"WIFI_INFO_dhcpServerStop":"8"},{"WIFI_INFO_ClientOffline":"4"},{"HS_AWSActive_split":"state=COMPLETE cell=DOWN"},{"SYS_INFO_dnsmasqFalse":"15"},{"cpu_PsmSsp":"0.0"},{"mem_PsmSsp":"13m"},{"cpu_cujo-agent":"0.0"},{"mem_cujo-agent":"20m"},{"cpu_ovsdb-server":"0.0"},{"mem_ovsdb-server":"13m"},{"cpu_telemetry2_0":"0.0"},{"mem_telemetry2_0":"9m"},{"cpu_aker":"0.0"},{"mem_aker":"7m"},{"cpu_rdkthermalmanager":"0.0"},{"mem_rdkthermalmanager":"5m"},{"WIFI_INFO_clientdisconnect":"15"},{"WIFI_INFO_mesh_enabled":"2"},{"Total_5G_PodClients_split":"1"}]}
+260709-18:09:02.213417 [mod=T2, lvl=INFO] [tid=25316] Report Size = 1427
+260709-18:09:02.213587 [mod=T2, lvl=INFO] [tid=25316] sendReportOverHTTP: state_red_enable: 0
+260709-18:09:02.214376 [mod=T2, lvl=INFO] [tid=25316] mTLS defaulted for telemetry
+260709-18:09:03.243690 [mod=T2, lvl=INFO] [tid=32053] The return status from the child with pid 32494 is CurlStatus : 1
+260709-18:09:03.243767 [mod=T2, lvl=INFO] [tid=32053] The return status from the child with pid 32494 SetopCode: No error; ResponseCode : No error; HTTP_CODE : 200; Line Number : 524 
+260709-18:09:03.243782 [mod=T2, lvl=INFO] [tid=32053] Report Sent Successfully over HTTP : 200
+260709-18:09:03.243805 [mod=T2, lvl=INFO] [tid=32053] Elapsed Time for : WIFI_MOTION_Telemetry = 15.588728686 (Sec.NanoSec)
+260709-18:09:03.243827 [mod=T2, lvl=INFO] [tid=32053] CollectAndReport while Loop -- END; wait for restart event
+260709-18:09:03.243840 [mod=T2, lvl=INFO] [tid=32053] CollectAndReport --out
+260709-18:09:03.447047 [mod=T2, lvl=INFO] [tid=25316] The return status from the child with pid 32497 is CurlStatus : 1
+260709-18:09:03.447118 [mod=T2, lvl=INFO] [tid=25316] The return status from the child with pid 32497 SetopCode: No error; ResponseCode : No error; HTTP_CODE : 200; Line Number : 524 
+260709-18:09:03.447134 [mod=T2, lvl=INFO] [tid=25316] Report Sent Successfully over HTTP : 200
+260709-18:09:03.447156 [mod=T2, lvl=INFO] [tid=25316] Elapsed Time for : XER_Telemetry_New = 15.791953766 (Sec.NanoSec)
+260709-18:09:03.447174 [mod=T2, lvl=INFO] [tid=25316] CollectAndReportXconf while Loop -- END 
+260709-18:09:03.447186 [mod=T2, lvl=INFO] [tid=25316] CollectAndReportXconf --out
+260709-18:09:03.447232 [mod=T2, lvl=INFO] [tid=12965] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-18:09:03.447360 [mod=T2, lvl=INFO] [tid=12965] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-18:09:57.744321 [mod=T2, lvl=INFO] [tid=12965] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-18:10:14.246239 [mod=T2, lvl=INFO] [tid=12296] rbus.c:1088 Consumer=rbus.bm.INBOX.16725 SUBSCRIBED to event=Telemetry.ReportProfiles.ProfilesUpdated
+
+260709-18:10:14.246277 [mod=T2, lvl=INFO] [tid=12296] eventSubHandler called:
+ 	action=subscribe 	eventName=Telemetry.ReportProfiles.ProfilesUpdated
+260709-18:10:14.428009 [mod=T2, lvl=INFO] [tid=12965] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-18:10:47.658086 /lib/rdk/dca_utility.sh : Clearing markers from /nvram/.telemetry
+260709-18:10:47.663852 /lib/rdk/dca_utility.sh : Exiting ...
+260709-18:11:24.477452 [mod=T2, lvl=INFO] [tid=12965] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New
+260709-18:11:24.538815 [mod=T2, lvl=INFO] [tid=12965] singleProfile->name = XER_Telemetry_New and profileName = XER_Telemetry_New

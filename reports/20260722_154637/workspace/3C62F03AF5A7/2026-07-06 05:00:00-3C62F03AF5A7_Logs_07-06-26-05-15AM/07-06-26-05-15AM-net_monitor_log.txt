@@ -1,0 +1,215 @@
+04.07.2026_14:26.20 checkIP - called from netmonitor-service
+0
+04.07.2026_14:26.57 starting netmonitor-service !!!!
+Conf file /etc/debug.ini open success
+260704-14:31:00.032272 [mod=BREAKPAD, lvl=INFO] [tid=5544] breakpadwrap.cpp(21):Registering breakpad handler... 
+260704-14:31:00.193398 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 lo 127.0.0.1 local 
+260704-14:31:00.193650 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 lo 127.0.0.1 local & 
+260704-14:31:00.204231 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 usb0 169.254.17.1 global 
+260704-14:31:00.204366 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 usb0 169.254.17.1 global & 
+260704-14:31:00.227121 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 192.168.106.132 global 
+260704-14:31:00.227256 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 192.168.106.132 global & 
+260704-14:31:00.383891 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv6 lo ::1 local 
+260704-14:31:00.384288 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv6 lo ::1 local & 
+260704-14:31:00.413793 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv6 wlan0 2601:240:de03:13e5:3e62:f0ff:fe3a:f5a7 global 
+260704-14:31:00.413933 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv6 wlan0 2601:240:de03:13e5:3e62:f0ff:fe3a:f5a7 global & 
+260704-14:31:00.483198 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv6 wlan0 fe80::3e62:f0ff:fe3a:f5a7 local 
+260704-14:31:00.483338 [mod=NLMON, lvl=INFO] [tid=5544] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv6 wlan0 fe80::3e62:f0ff:fe3a:f5a7 local & 
+260704-14:31:00.549172 [mod=NLMON, lvl=INFO] [tid=5544] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 192.168.106.254; NA; 0; add 
+260704-14:31:00.553104 [mod=NLMON, lvl=INFO] [tid=5544] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::4ccf:c0ff:fea2:644e; NA; 1024; add 
+04.07.2026_14:31.01 Action:add
+04.07.2026_14:31.01 Addr_type:ipv6
+04.07.2026_14:31.01 Interface:wlan0
+04.07.2026_14:31.01 Address:2601:240:de03:13e5:3e62:f0ff:fe3a:f5a7
+04.07.2026_14:31.02 Scope:global
+260704-14:31:50.160844 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 192.168.106.132 global 
+260704-14:31:50.160993 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 192.168.106.132 global & 
+260704-14:31:50.242679 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:31:50.242821 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:31:50.285798 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:31:50.285944 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:31:50.356096 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:31:50.356247 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:31:50.400543 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:31:50.400756 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:31:50.455805 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:31:50.456134 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:31:50.541852 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:31:58.752619 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::fad0:eff:fef3:8f07; NA; 1024; add 
+260704-14:32:00.448894 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv6 wlan0 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7 global 
+260704-14:32:00.449039 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv6 wlan0 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7 global & 
+04.07.2026_14:32.00 Action:add
+04.07.2026_14:32.00 Addr_type:ipv6
+04.07.2026_14:32.00 Interface:wlan0
+04.07.2026_14:32.00 Address:2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+04.07.2026_14:32.00 Scope:global
+260704-14:32:18.120168 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260704-14:32:18.159688 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:32:32.619270 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260704-14:32:32.665904 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:32:43.440385 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260704-14:32:43.513946 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:33:04.176776 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260704-14:33:04.220734 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:33:50.857225 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260704-14:33:50.897452 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:34:21.292150 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::fad0:eff:fef3:8f07; NA; 1024; add 
+260704-14:35:27.098869 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::4ccf:c0ff:fea2:644e; NA; 1024; add 
+260704-14:35:39.051510 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:35:39.051654 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:35:49.163280 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 192.168.106.132 global 
+260704-14:35:49.163461 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 192.168.106.132 global & 
+260704-14:35:49.186682 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 192.168.106.254; NA; 0; add 
+260704-14:36:12.173980 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 192.168.106.132 global 
+260704-14:36:12.174128 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 192.168.106.132 global & 
+260704-14:36:14.757174 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:36:14.757620 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:36:14.794013 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:36:14.794162 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:36:14.843114 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:36:14.843264 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:36:14.903235 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:36:14.903384 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:36:14.972320 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:36:14.972463 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:36:14.989261 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:36:32.531542 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260704-14:36:32.555107 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:38:47.936636 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:38:47.936786 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:38:48.058282 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 192.168.106.132 global 
+260704-14:38:48.058441 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 192.168.106.132 global & 
+260704-14:38:48.155051 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 192.168.106.254; NA; 0; add 
+260704-14:39:09.335247 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 192.168.106.132 global 
+260704-14:39:09.335393 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 192.168.106.132 global & 
+260704-14:39:09.539499 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:39:09.539672 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:39:09.651927 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:39:09.652081 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:39:09.667132 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:39:09.667282 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:39:09.786595 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260704-14:39:09.786745 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260704-14:39:09.930093 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260704-14:39:09.930246 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260704-14:39:10.065707 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260704-14:42:21.201570 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::fad0:eff:fef3:8f07; NA; 1024; add 
+260704-16:33:27.269030 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv6 wlan0 2601:240:de03:13e5:3e62:f0ff:fe3a:f5a7 global 
+260704-16:33:27.269179 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv6 wlan0 2601:240:de03:13e5:3e62:f0ff:fe3a:f5a7 global & 
+04.07.2026_16:33.27 Action:delete
+04.07.2026_16:33.27 Addr_type:ipv6
+04.07.2026_16:33.27 Interface:wlan0
+04.07.2026_16:33.27 Address:2601:240:de03:13e5:3e62:f0ff:fe3a:f5a7
+04.07.2026_16:33.27 Scope:global
+04.07.2026_16:33.27
+ lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:3177566 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3177566 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1098230727 (1.0 GiB)  TX bytes:1098230727 (1.0 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 02:16:17:C4:72:E0  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:96654 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:258483 errors:0 dropped:30 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:16633483 (15.8 MiB)  TX bytes:292283344 (278.7 MiB)
+04.07.2026_16:33.28 Ignoring delete event since ipv6 address is already available
+260705-02:39:20.192652 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260705-02:39:20.246154 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260705-14:39:34.631508 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260705-14:39:34.643823 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260706-02:40:01.217548 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::fad0:eff:fef3:8f07; NA; 1024; delete 
+260706-02:40:01.270816 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv6 wlan0 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7 global 
+260706-02:40:01.270956 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv6 wlan0 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7 global & 
+260706-02:40:01.310151 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv6 wlan0 fe80::3e62:f0ff:fe3a:f5a7 local 
+260706-02:40:01.313459 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv6 wlan0 fe80::3e62:f0ff:fe3a:f5a7 local & 
+06.07.2026_02:40.01 Action:delete
+06.07.2026_02:40.01 Addr_type:ipv6
+06.07.2026_02:40.01 Interface:wlan0
+06.07.2026_02:40.01 Address:2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+06.07.2026_02:40.02 Scope:global
+06.07.2026_02:40.02
+ lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:57147593 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:57147593 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:18424003667 (17.1 GiB)  TX bytes:18424003667 (17.1 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 02:16:17:C4:72:E0  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+06.07.2026_02:40.02 After ten minutes executing netmonitor recovery script file to recover ipv6 address
+260706-02:40:03.291142 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260706-02:40:03.291295 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260706-02:40:13.605348 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260706-02:40:13.605503 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260706-02:40:13.677080 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260706-02:40:13.677228 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260706-02:40:13.716897 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260706-02:40:13.717041 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260706-02:40:13.766362 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global 
+260706-02:40:13.766646 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh delete ipv4 wlan0 10.0.0.52 global & 
+260706-02:40:13.822922 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global 
+260706-02:40:13.823074 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv4 wlan0 10.0.0.52 global & 
+260706-02:40:13.935261 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; delete 
+260706-02:40:14.110895 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 2; wlan0; 0.0.0.0; 10.0.0.1; NA; 0; add 
+260706-02:40:14.384246 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv6 wlan0 fe80::3e62:f0ff:fe3a:f5a7 local 
+260706-02:40:14.384424 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv6 wlan0 fe80::3e62:f0ff:fe3a:f5a7 local & 
+260706-02:40:14.464395 [mod=NLMON, lvl=INFO] [tid=5798] ../git/netlinkifc.cpp(1469):Publishing default Route: Args msgargs = 10; wlan0; ::0; fe80::fad0:eff:fef3:8f07; NA; 1024; add 
+260706-02:40:16.282498 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(56):COMMAND = /lib/rdk/addressmonitor.sh add ipv6 wlan0 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7 global 
+260706-02:40:16.282646 [mod=NLMON, lvl=INFO] [tid=5798] ../git/subscribers.h(65):COMMAND After Sanitizing= /lib/rdk/addressmonitor.sh add ipv6 wlan0 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7 global & 
+06.07.2026_02:40.16 Action:add
+06.07.2026_02:40.16 Addr_type:ipv6
+06.07.2026_02:40.16 Interface:wlan0
+06.07.2026_02:40.16 Address:2601:240:de00:b470:3e62:f0ff:fe3a:f5a7
+06.07.2026_02:40.16 Scope:global
+06.07.2026_02:40.16 Delete recoveripv6 file after adding the ipv6 address
+06.07.2026_02:40.16 
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:57153821 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:57153821 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:18425869774 (17.1 GiB)  TX bytes:18425869774 (17.1 GiB)
+
+usb0      Link encap:Ethernet  HWaddr 02:16:17:C4:72:E0  
+          inet addr:169.254.17.1  Bcast:169.254.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 3C:62:F0:3A:F5:A7  
+          inet addr:10.0.0.52  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3e62:f0ff:fe3a:f5a7/64 Scope:Link
+          inet6 addr: 2601:240:de00:b470:3e62:f0ff:fe3a:f5a7/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1065623 errors:0 dropped:2 overruns:0 frame:0
+          TX packets:2310059 errors:0 dropped:56 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:146787502 (139.9 MiB)  TX bytes:3025524711 (2.8 GiB)
